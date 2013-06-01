@@ -120,6 +120,7 @@
 
     Getup.language.verifyAndRedirect = function() {
         if (Getup.language._default == Getup.language.current) return;
+        if (U.lang == Getup.language.current) return;
 
         location.href = U.base + '/' + Getup.language.current.slice(0, 2);
     };
