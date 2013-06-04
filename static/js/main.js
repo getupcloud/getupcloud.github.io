@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    var Getup = {};
+    var Getup = window.Getup || {};
 
     Getup.elements = {};
 
@@ -10,6 +10,7 @@
         Getup.elements.window = $(window);
         Getup.elements.body = $('body');
         Getup.elements.html = $('html');
+        Getup.elements.languages = $('.languages a');
 
         Getup.menu.init();
         Getup.sections.init();
@@ -51,13 +52,22 @@
     Getup.menu.init = function() {
         Getup.menu.elements.content = $('#menu');
         Getup.menu.elements.fixedLinks = Getup.menu.elements.content.find('li');
-        Getup.menu.elements.links = $('nav a');
+        Getup.menu.elements.links = $('nav li a');
 
         Getup.menu.bindEvents();
     };
 
     Getup.menu.bindEvents = function() {
         Getup.menu.elements.links.click(Getup.menu.goTo);
+
+        Getup.elements.languages.click(function() {
+            console.log(this.rel, Getup.language);
+
+            Getup.language.set(this.rel);
+            Getup.language.verifyAndRedirect();
+
+            return false;
+        })
     };
 
     Getup.menu.goTo = function() {
@@ -81,7 +91,8 @@
         var current;
 
         $(Getup.sections.itemsToScroll).map(function() {
-            if (this.offset().top <= Getup.scrollTop) {
+            var offset = this.offset();
+            if (offset && offset.top <= Getup.scrollTop) {
                 return (current = this);
             }
         });
@@ -177,10 +188,18 @@
         Getup.sections.pricing.elements.gear = $('#gear');
         Getup.sections.pricing.elements.form = $('#signup');
         Getup.sections.pricing.elements.inputs = {};
+        Getup.sections.pricing.elements.inputs.name = $('#name');
+        Getup.sections.pricing.elements.inputs.terms = $('#check-terms input');
         Getup.sections.pricing.elements.inputs.email = $('#email');
         Getup.sections.pricing.elements.inputs.password = $('#password');
         Getup.sections.pricing.elements.inputs.passwordConfirm = $('#password-confirm');
         Getup.sections.pricing.elements.postButton = Getup.sections.pricing.elements.form.find('button');
+        Getup.sections.pricing.elements.message = $('#message');
+        Getup.sections.pricing.elements.success = $('#success');
+
+        Getup.sections.pricing.elements.terms = $('#modal-terms');
+        Getup.sections.pricing.elements.checkTerms = $('#check-terms a');
+        Getup.sections.pricing.elements.closeTerms = Getup.sections.pricing.elements.terms.find('.close');
 
         Getup.sections.itemsToScroll.push(Getup.sections.pricing.elements.content);
 
@@ -188,6 +207,15 @@
         panels(Getup.sections.pricing.elements.gearPanel);
 
         Getup.sections.pricing.bindEvents();
+
+
+        setTimeout(function() {
+            Getup.sections.pricing.elements.inputs.name.val('User testing').prev().fadeOut('fast');
+            Getup.sections.pricing.elements.inputs.email.val('nagib.kanaan@safari.to').prev().fadeOut('fast');
+            Getup.sections.pricing.elements.inputs.password.val('12345678').prev().fadeOut('fast');
+            Getup.sections.pricing.elements.inputs.passwordConfirm.val('12345678').prev().fadeOut('fast');
+        }, 1);
+
     };
 
     Getup.sections.pricing.bindEvents = function() {
@@ -207,6 +235,18 @@
         }).blur(function() {
             var element = $(this);
             if (element.val() == '') element.prev().fadeIn('fast');
+        });
+
+        Getup.sections.pricing.elements.checkTerms.click(function() {
+            Getup.sections.pricing.terms.show();
+
+            return false;
+        });
+
+        Getup.sections.pricing.elements.closeTerms.click(function() {
+            Getup.sections.pricing.terms.hide();
+
+            return false;
         });
     };
 
@@ -234,7 +274,7 @@
     
     Getup.sections.pricing.signup.show = function() {
         Getup.sections.pricing.gear.hide(false, function() {
-            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight + 150)
+            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight + 200)
             Getup.sections.pricing.elements.form.fadeIn();
         });
     };
@@ -256,37 +296,102 @@
     Getup.sections.pricing.signup.post = function() {
         if (Getup.sections.pricing.signup.submiting) return false;
 
-        var email           = Getup.sections.pricing.elements.inputs.email;;
+        var name            = Getup.sections.pricing.elements.inputs.name;
+        var email           = Getup.sections.pricing.elements.inputs.email;
         var password        = Getup.sections.pricing.elements.inputs.password;
         var passwordConfirm = Getup.sections.pricing.elements.inputs.passwordConfirm;
+        var terms           = Getup.sections.pricing.elements.inputs.terms;
 
         var valid        = true;
         var emailValue   = email.val();
         var emailInvalid = ((emailValue.search(Getup.sections.pricing.signup.validation.exclude) != -1) || (emailValue.search(Getup.sections.pricing.signup.validation.check)) == -1) || (emailValue.search(Getup.sections.pricing.signup.validation.checkend) == -1);
 
+        (name.val().length < 1)                   ? valid = !name.parent().addClass('error') : name.parent().removeClass('error');
         (emailInvalid)                            ? valid = !email.parent().addClass('error') : email.parent().removeClass('error');
-        (password.val().length < 6)               ? valid = !password.parent().addClass('error') : password.parent().removeClass('error');
+        (password.val().length < 8)               ? valid = !password.parent().addClass('error') : password.parent().removeClass('error');
         (passwordConfirm.val() != password.val()) ? valid = !passwordConfirm.parent().addClass('error')   : passwordConfirm.parent().removeClass('error');
+        (!terms.is(':checked'))                   ? valid = !terms.parent().addClass('error') : terms.parent().removeClass('error');
 
         if (valid) {
             Getup.sections.pricing.signup.submiting = true;
             Getup.sections.pricing.elements.postButton.addClass('loading');
 
-            $.post(U.broker + '/registration/first-step', R.sections.more.elements.form.serialize(), function(transport) {
-                email.val('');
-                password.val('');
-                passwordConfirm.val('');
+            var save = $.post(U.register, Getup.sections.pricing.elements.form.serialize());
 
-                email.prev().fadeIn('fast');
-                password.prev().fadeIn('fast');
-                passwordConfirm.prev().fadeIn('fast');
+            save
+                .done(function(transport) {
+                    if (transport.status == "ok") {
+                        Getup.sections.pricing.elements.form.fadeOut(function() {
+                            Getup.sections.pricing.elements.success.fadeIn();
 
-                Getup.sections.pricing.elements.postButton.removeClass('loading');
-                Getup.sections.pricing.signup.submiting = false;
-            });
+                            Getup.sections.pricing.elements.postButton.removeClass('loading');
+                            Getup.sections.pricing.signup.submiting = false;
+
+                            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight);
+                        });
+                    } else {
+                        Getup.sections.pricing.elements.postButton.removeClass('loading');
+                        Getup.sections.pricing.signup.submiting = false;                        
+                    }
+                })
+
+                .fail(function(transport) {
+                    var errors = $.parseJSON(transport.responseText).errors;
+
+                    Getup.sections.pricing.error.clear();
+
+                    for (var i = 0, t = errors.length; i < t; ++i) {
+                        var error = errors[i];
+                        Getup.sections.pricing.error.append(error);
+                    }
+
+                    Getup.sections.pricing.error.show();
+
+                    Getup.sections.pricing.elements.postButton.removeClass('loading');
+                    Getup.sections.pricing.signup.submiting = false;
+                }, 'json');
         }
 
         return false;
+    };
+
+    Getup.sections.pricing.error = {};
+
+    Getup.sections.pricing.error._content = '';
+
+    Getup.sections.pricing.error.append = function(error) {
+        if (error.name != '_all_') {
+            $('input[name=' + error.name + ']').parent().addClass('error');
+        }
+
+        if (error.value != 'This field is required.') {
+            Getup.sections.pricing.error._content
+                += (Getup.sections.pricing.error._content == '' ? '' : '<br/>')
+                +  error.value;
+        }
+    };
+    Getup.sections.pricing.error.clear = function() {
+        Getup.sections.pricing.error._content = '';
+    };
+
+    Getup.sections.pricing.error.show = function() {
+        Getup.sections.pricing.elements.message.html(Getup.sections.pricing.error._content).fadeIn();
+    };
+
+    Getup.sections.pricing.error.hide = function() {
+        Getup.sections.pricing.elements.message.fadeOut();
+    };
+
+    Getup.sections.pricing.terms = {};
+
+    Getup.sections.pricing.terms.hide = function() {
+        Getup.elements.body.css('overflow', 'auto');
+        Getup.sections.pricing.elements.terms.fadeOut();
+    };
+
+    Getup.sections.pricing.terms.show = function() {
+        Getup.elements.body.css('overflow', 'hidden');
+        Getup.sections.pricing.elements.terms.fadeIn();
     };
 
     Getup.sections.about = {};

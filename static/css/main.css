@@ -173,6 +173,10 @@ header, footer, section { margin: 0 auto; position: relative; z-index: 2; max-wi
 .sprite { background: url(../img/sprite.png) no-repeat; text-indent: -5000em; }
 .content { width: 100%; height: 100%; }
 
+.languages { position: absolute; right: 0; top: -40px; }
+.languages a { font-size: 11px; }
+.languages a:hover { font-weight: bold; }
+
 #what { height: 479px; background: url(../img/header.png) no-repeat top center; }
 #what h1 { width: 182px; height: 81px; margin: 0; border-top: 5px solid #FF4C4D; background-position: 0 0; }
 #what h1 img { display: none; }
@@ -283,18 +287,28 @@ header, footer, section { margin: 0 auto; position: relative; z-index: 2; max-wi
 #pricing .left form fieldset { }
 
 #pricing .left form h2 { font-family: 'ostrich medium'; font-size: 48px; margin: 0; text-align: center; }
-#pricing .left form p { font-family: 'roboto light'; font-size: 13px; margin: 0 auto 10px; text-align: center; width: 250px; }
+#pricing .left form p { font-family: 'roboto light'; font-size: 13px; margin: 0 0 10px 6px; text-align: center; width: 300px; color: #f23f2c; }
 
 #pricing .left form label { display: block; float: left; margin: 10px 5px 0 5px; position: relative; }
 #pricing .left form label span { font-family: 'roboto light'; font-size: 15px; left: 10px; line-height: 43px; position: absolute; top: 0; }
 #pricing .left form label input { border: none; border-top: 1px solid #e4e4e4; font-family: 'roboto light'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 300px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
 #pricing .left form label input.small { width: 145px; }
 
-#pricing .left form label.error span { color: #f23f2c; }
-#pricing .left form label.error input { border-color: #f23f2c; }
+#pricing .left form label.checkbox { width: 100%; }
+#pricing .left form label.checkbox span { cursor: pointer; display: inline-block; left: 20px; top: -2px; width: 200px; }
+#pricing .left form label.checkbox span a { text-decoration: underline; }
+#pricing .left form label.checkbox input { width: auto; }
 
-#pricing .left form button { background: #333; border: none; color: #fff; display: block; font-family: 'ostrich medium'; font-size: 38px; line-height: 49px; height: 49px; margin: 0 auto; padding: 0; position: relative; top: 20px; text-align: center; width: 130px; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
+#pricing .left form label.error span,
+#pricing .left form label.error a { color: #f23f2c; }
+
+#pricing .left form label.error input { color: #f23f2c; border-color: #f23f2c; }
+
+#pricing .left form button { background: #333; border: none; color: #fff; display: block; font-family: 'ostrich medium'; font-size: 38px; line-height: 49px; height: 49px; margin: 0 auto; padding: 0; position: relative; top: 0px; text-align: center; width: 130px; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
 #pricing .left form button.loading { background: 50px 13px url(../img/black-gray-loader.gif) no-repeat transparent; text-indent: -5000em; }
+
+#success { color: #f23f2c; display: none; font-size: 17px; font-weight: bold; margin: 40px 0 0; text-align: center; }
+#success small { color: #333; font-size: 11px; font-weight: normal; }
 
 #gear { float: left; display: none; }
 #gear h2 { display: none; }
@@ -322,6 +336,23 @@ dl.panel { margin: 1em 0 0; }
 #pricing .right h2 { font-size: 16px; margin: 15px 0 5px; }
 #pricing .right p { font-size: 13px; }
 #pricing .right p small { font-size: 9px; }
+
+.modal { display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 20; }
+
+.modal-mask { background: #000; height: 100%; left: 0; opacity: 0.5; position: fixed; top: 0; width: 100%; z-index: 1; }
+.modal-content { background: #fff; height: 400px; left: 50%; margin: -200px 0 0 -350px; position: absolute; top: 50%; width: 700px; z-index: 2; }
+
+.modal .close { font-weight: normal; font-family: 'roboto light'; font-size: 30px; position: absolute; right: 10px; top: 10px; }
+
+#terms { }
+
+#terms h1 { background: #efefef; font-family: 'ostrich medium'; font-size: 30px; margin: 0; padding: 20px; }
+#terms h2 { font-size: 16px; margin: 10px 10px; }
+#terms p { margin: 15px 10px; }
+#terms p, #terms a { font-size: 13px; }
+#terms ul { list-style: none; }
+
+#terms .scroll { height: 298px; margin: 10px; overflow: auto; width: 680px; }
 
 #about { background-color: #fff; height: 500px; width: 100%; }
 #about h2 { color: #333; font-family: 'ostrich medium'; font-size: 90px; line-height: 90px; margin: 0; padding: 100px 0 40px; width: 600px; }
