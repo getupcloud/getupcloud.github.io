@@ -13,7 +13,7 @@
     Getup.language.init = function() {
         if (U.debug) return;
 
-        var language = Cookies.set(Getup.language.cookieName) || navigator.language.toLowerCase().replace('_', '-');
+        var language = Cookies.get(Getup.language.cookieName) || navigator.language.toLowerCase().replace('_', '-');
         Getup.language.set(language);
 
         Getup.language.verifyAndRedirect();
