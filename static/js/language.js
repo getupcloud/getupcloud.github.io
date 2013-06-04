@@ -8,6 +8,7 @@
     Getup.language = {};
     Getup.language.cookieName = 'getup_site_language';
     Getup.language.current = '';
+    Getup.language._default = 'pt-br';
 
     Getup.language.init = function() {
         if (U.debug) return;
@@ -30,7 +31,11 @@
     Getup.language.verifyAndRedirect = function() {
         if (Getup.language.current == U.language) return;
 
-        location.href = U.base + '/' + Getup.language.current.slice(0, 2);
+        var language = Getup.language._default == Getup.language.current
+            ? ''
+            : Getup.language.current.slice(0, 2);
+
+        location.href = U.base + '/' + language;
     };
 
     Getup.language.init();
