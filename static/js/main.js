@@ -61,8 +61,6 @@
         Getup.menu.elements.links.click(Getup.menu.goTo);
 
         Getup.elements.languages.click(function() {
-            console.log(this.rel, Getup.language);
-
             Getup.language.set(this.rel);
             Getup.language.verifyAndRedirect();
 

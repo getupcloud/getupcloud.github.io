@@ -12,16 +12,19 @@
 
     Getup.language.init = function() {
         if (U.debug) return;
+        Getup.language.current = Cookies.set(Getup.language.cookieName);
 
-        var language = Cookies.get(Getup.language.cookieName) || navigator.language.toLowerCase().replace('_', '-');
-        Getup.language.set(language);
+        if (!Getup.language.current) {
+            var language = navigator.language.toLowerCase().replace('_', '-');
+            Getup.language.set(language);
+        }
 
         Getup.language.verifyAndRedirect();
     };
 
     Getup.language.set = function(language) {
         Getup.language.current = language;
-        Cookies.set(Getup.language.cookieName, Getup.language.current);
+        Cookies.set(Getup.language.cookieName, Getup.language.current, { path: '/' });
     };
 
     Getup.language.get = function() {
