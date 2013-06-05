@@ -205,15 +205,6 @@
         panels(Getup.sections.pricing.elements.gearPanel);
 
         Getup.sections.pricing.bindEvents();
-
-
-        setTimeout(function() {
-            Getup.sections.pricing.elements.inputs.name.val('User testing').prev().fadeOut('fast');
-            Getup.sections.pricing.elements.inputs.email.val('nagib.kanaan@safari.to').prev().fadeOut('fast');
-            Getup.sections.pricing.elements.inputs.password.val('12345678').prev().fadeOut('fast');
-            Getup.sections.pricing.elements.inputs.passwordConfirm.val('12345678').prev().fadeOut('fast');
-        }, 1);
-
     };
 
     Getup.sections.pricing.bindEvents = function() {
