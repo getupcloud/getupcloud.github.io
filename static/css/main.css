@@ -353,7 +353,7 @@ dl.panel { margin: 1em 0 0; }
 #terms h2 { font-size: 16px; margin: 10px 10px; }
 #terms p { margin: 15px 10px; }
 #terms p, #terms a, #terms p, #terms li { font-size: 13px; }
-#terms ul { list-style: none; margin: 15px 10px; }
+#terms ul { list-style: none; }
 
 #terms .scroll { height: 298px; margin: 10px; overflow: auto; width: 680px; }
 

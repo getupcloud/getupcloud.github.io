@@ -217,7 +217,7 @@
 
         Getup.sections.pricing.elements.form.submit(Getup.sections.pricing.signup.post);
 
-        Getup.sections.pricing.elements.form.find('input[type="text"]').focus(function() {
+        Getup.sections.pricing.elements.form.find('input[type="text"], input[type="password"]').focus(function() {
             $(this).prev().fadeOut('fast');
         }).blur(function() {
             var element = $(this);
