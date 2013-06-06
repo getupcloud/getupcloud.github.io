@@ -225,7 +225,7 @@
         });
 
         Getup.sections.pricing.elements.checkTerms.click(function() {
-            Getup.sections.terms.show('terms-of-service.html');
+            Getup.sections.terms.show(this.href.replace(location.protocol + U.base + '/', ''));
 
             return false;
         });
