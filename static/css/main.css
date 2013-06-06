@@ -298,7 +298,7 @@ header, footer, section { margin: 0 auto; position: relative; z-index: 2; max-wi
 #pricing .left form label input.small { width: 145px; }
 
 #pricing .left form label.checkbox { width: 100%; }
-#pricing .left form label.checkbox span { cursor: pointer; display: inline-block; left: 20px; top: -2px; width: 200px; }
+#pricing .left form label.checkbox span { cursor: pointer; display: inline-block; left: 20px; top: -2px; }
 #pricing .left form label.checkbox span a { text-decoration: underline; }
 #pricing .left form label.checkbox input { width: auto; }
 
@@ -326,10 +326,10 @@ dl.panel { margin: 1em 0 0; }
 .panel dd.open { display: block; }
 
 .panel dd ul { list-style: none; margin: 0; overflow: hidden; }
-.panel dd ul li { border-left: 1px solid #efefef; float: left; padding: 0 5px; }
+.panel dd ul li { float: left; width: 33%; padding: 0; }
 .panel dd ul li:first-child { border-left: none; }
 .panel dd ul li h3 { font-size: 14px; font-weight: normal; margin: 0 0 5px; }
-.panel dd ul li small { color: #999; }
+.panel dd ul li small { color: #333; }
 
 .panel dt:before { border: 4px solid transparent; border-color: #f23f2c transparent transparent transparent; content: ""; height: 0; position: absolute; top: 19px; right: 15px; width: 0; }
 .panel dt.open:before { border-color: transparent transparent #f23f2c transparent; top: 15px; }
@@ -337,23 +337,23 @@ dl.panel { margin: 1em 0 0; }
 #pricing .right { margin: 50px 0 0 20px; width: 431px; }
 
 #pricing .right h2 { font-size: 16px; margin: 15px 0 5px; }
-#pricing .right p { font-size: 13px; }
-#pricing .right p small { font-size: 10px; }
+#pricing .right p { font-size: 13px; margin: 20px 0 10px; }
+#pricing .right p small { font-size: 13px; }
 
 .modal { display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 20; }
 
 .modal-mask { background: #000; height: 100%; left: 0; opacity: 0.5; position: fixed; top: 0; width: 100%; z-index: 1; }
 .modal-content { background: #fff; height: 400px; left: 50%; margin: -200px 0 0 -350px; position: absolute; top: 50%; width: 700px; z-index: 2; }
 
-.modal .close { font-weight: normal; font-family: 'roboto light'; font-size: 30px; position: absolute; right: 10px; top: 10px; }
+.modal .close { font-weight: normal; font-family: 'roboto light'; font-size: 30px; position: absolute; right: 20px; top: 20px; }
 
 #terms { }
 
-#terms h1 { background: #efefef; font-family: 'ostrich medium'; font-size: 30px; margin: 0; padding: 20px; }
+#terms h1 { background: #efefef; font-family: 'roboto light'; font-size: 30px; margin: 0; padding: 20px; }
 #terms h2 { font-size: 16px; margin: 10px 10px; }
 #terms p { margin: 15px 10px; }
-#terms p, #terms a { font-size: 13px; }
-#terms ul { list-style: none; }
+#terms p, #terms a, #terms p, #terms li { font-size: 13px; }
+#terms ul { list-style: none; margin: 15px 10px; }
 
 #terms .scroll { height: 298px; margin: 10px; overflow: auto; width: 680px; }
 
@@ -373,6 +373,7 @@ footer article address { float: right; font-style: normal; margin-top: 70px; }
 footer article address p { font-family: 'roboto regular'; font-size: 16px; color: #666; }
 footer article address p strong { display: block; font-family: 'ostrich medium'; line-height: 90px; font-size: 90px; color: #fff; font-weight: normal; }
 
+.terms a { color: #666; display: inline-block; font-size: 12px; font-weight: normal; margin: 0 15px 0 0; }
 
 /* ==========================================================================
    Helper classes

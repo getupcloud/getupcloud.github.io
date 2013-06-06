@@ -195,9 +195,7 @@
         Getup.sections.pricing.elements.message = $('#message');
         Getup.sections.pricing.elements.success = $('#success');
 
-        Getup.sections.pricing.elements.terms = $('#modal-terms');
         Getup.sections.pricing.elements.checkTerms = $('#check-terms a');
-        Getup.sections.pricing.elements.closeTerms = Getup.sections.pricing.elements.terms.find('.close');
 
         Getup.sections.itemsToScroll.push(Getup.sections.pricing.elements.content);
 
@@ -219,7 +217,7 @@
 
         Getup.sections.pricing.elements.form.submit(Getup.sections.pricing.signup.post);
 
-        Getup.sections.pricing.elements.form.find('input').focus(function() {
+        Getup.sections.pricing.elements.form.find('input[type="text"]').focus(function() {
             $(this).prev().fadeOut('fast');
         }).blur(function() {
             var element = $(this);
@@ -227,13 +225,7 @@
         });
 
         Getup.sections.pricing.elements.checkTerms.click(function() {
-            Getup.sections.pricing.terms.show();
-
-            return false;
-        });
-
-        Getup.sections.pricing.elements.closeTerms.click(function() {
-            Getup.sections.pricing.terms.hide();
+            Getup.sections.terms.show('terms-of-service.html');
 
             return false;
         });
@@ -371,18 +363,6 @@
         Getup.sections.pricing.elements.message.fadeOut();
     };
 
-    Getup.sections.pricing.terms = {};
-
-    Getup.sections.pricing.terms.hide = function() {
-        Getup.elements.body.css('overflow', 'auto');
-        Getup.sections.pricing.elements.terms.fadeOut();
-    };
-
-    Getup.sections.pricing.terms.show = function() {
-        Getup.elements.body.css('overflow', 'hidden');
-        Getup.sections.pricing.elements.terms.fadeIn();
-    };
-
     Getup.sections.about = {};
     Getup.sections.about.elements = {};
 
@@ -401,6 +381,61 @@
 
         Getup.sections.itemsToScroll.push(Getup.sections.getInTouch.elements.content);
     };
+
+    Getup.sections.terms = {};
+
+    Getup.sections.terms._cache = {};
+
+    Getup.sections.terms.elements = {};
+    Getup.sections.terms.elements.modal = $('#modal-terms');
+    Getup.sections.terms.elements.content = Getup.sections.terms.elements.modal.find('.modal-content');
+
+    Getup.sections.terms.elements.close = $('<a href="javascript:;" class="close">X</a>');
+    Getup.sections.terms.elements.links = $('nav.terms a');
+
+    Getup.sections.terms.show = function(section) {
+        Getup.elements.body.css('overflow', 'hidden');
+
+        if (Getup.sections.terms._cache[section]) {
+            Getup.sections.terms.elements.content.html(Getup.sections.terms._cache[section]);
+            Getup.elements.body.css('overflow', 'hidden');
+            Getup.sections.terms.elements.modal.fadeIn();
+
+            Getup.sections.terms.elements.content.append(Getup.sections.terms.elements.close);
+            Getup.sections.terms.closeEvent();
+        } else {
+            Getup.sections.terms.load(section);
+        }
+    };
+
+    Getup.sections.terms.load = function(section) {
+        $.get(U.base + '/' + section, function(transport) {
+            Getup.sections.terms._cache[section] = transport;
+            Getup.sections.terms.show(section);
+        });
+    };
+
+    Getup.sections.terms.bindEvents = function() {
+        Getup.sections.terms.elements.links.click(function() {
+            Getup.sections.terms.show(this.href.replace(location.protocol + U.base + '/', ''));
+            return false;
+        });
+    };
+
+    Getup.sections.terms.closeEvent = function() {
+        Getup.sections.terms.elements.close.click(function() {
+            Getup.sections.terms.hide();
+
+            return false;
+        });
+    };
+
+    Getup.sections.terms.hide = function() {
+        Getup.elements.body.css('overflow', 'auto');
+        Getup.sections.terms.elements.modal.fadeOut();
+    };
+
+    Getup.sections.terms.bindEvents();
 
     Getup.networks = {};
     Getup.networks.elements = {};
