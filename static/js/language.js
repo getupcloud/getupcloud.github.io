@@ -36,9 +36,9 @@
 
         var language = Getup.language._default == Getup.language.current
             ? ''
-            : Getup.language.current.slice(0, 2);
+            : (Getup.language.current.slice(0, 2) + '/index.html');
 
-        location.href = U.base + '/' + language;
+        location.href = '/' + language;
     };
 
     Getup.language.init();

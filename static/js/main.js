@@ -225,7 +225,7 @@
         });
 
         Getup.sections.pricing.elements.checkTerms.click(function() {
-            Getup.sections.terms.show(this.href.replace(location.protocol + U.base + '/', ''));
+            Getup.sections.terms.show(this.href.replace(location.origin + '/', ''));
 
             return false;
         });
@@ -409,7 +409,7 @@
     };
 
     Getup.sections.terms.load = function(section) {
-        $.get(U.base + '/' + section, function(transport) {
+        $.get('/' + section, function(transport) {
             Getup.sections.terms._cache[section] = transport;
             Getup.sections.terms.show(section);
         });
@@ -417,7 +417,7 @@
 
     Getup.sections.terms.bindEvents = function() {
         Getup.sections.terms.elements.links.click(function() {
-            Getup.sections.terms.show(this.href.replace(location.protocol + U.base + '/', ''));
+            Getup.sections.terms.show(this.href.replace(location.origin + '/', ''));
             return false;
         });
     };
@@ -456,7 +456,7 @@
         FB.ui({
           method: 'feed',
           link: 'http://getupcloud.com',
-          picture: U.assets + '/img/fb.png',
+          picture: 'http://getupcloud.com/static/img/fb.png',
           name: 'Getupcloud.com',
           caption: 'Grow in the cloud',
           description: description //'Get Free Access to Getup - An easy, fast and scalable way to build and deploy web apps.'
