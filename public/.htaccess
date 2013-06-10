@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+Header unset ETag
+FileETag None
+<filesMatch "(?i)^.*.(ico|jpg|jpeg|png|gif|js|css)$">
+Header unset Last-Modified
+Header set Expires "Fri, 21 Dec 2014 00:00:00 GMT"
+Header set Cache-Control "public, no-transform"
+</filesMatch>
+
+<ifModule mod_deflate.c>
+<filesMatch ".(js|css)$">
+SetOutputFilter DEFLATE
+</filesMatch>
+</ifModule>

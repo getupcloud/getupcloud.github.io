@@ -1,0 +1,7 @@
+#
+# i18n Configuration
+#
+
+default: pt_BR
+domain: site
+codeset: UTF-8

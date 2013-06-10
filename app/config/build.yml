@@ -1,0 +1,7 @@
+#
+# i18n Configuration
+#
+
+avaliable_builds:
+  pt_BR: ""
+  en_US: "en/"
