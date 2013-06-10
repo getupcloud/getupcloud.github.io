@@ -15,6 +15,8 @@
         Getup.menu.init();
         Getup.sections.init();
 
+        Getup.billing.update();
+
         Getup.bindEvents();
     };
 
