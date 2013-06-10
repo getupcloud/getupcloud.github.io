@@ -24,7 +24,7 @@ $app['debug'] = false;
  * Initial Config
  *
  */
-$app['path']  = __DIR__ . '/app';
+$app['path']  = __DIR__ . '/App';
 
 $app['paths'] = array(
 	'config'	=> $app['path'] . '/config',
