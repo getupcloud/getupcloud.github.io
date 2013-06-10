@@ -453,6 +453,9 @@
 
             element.text(value.toFixed(2));
         });
+
+        $('#gear-value-hour').text(Getup.billing[U.language]);
+        $('#gear-value-month').text(Getup.billing[U.language] * Getup.billing.GEAR_HOURS);
     };
 
     Getup.networks = {};
