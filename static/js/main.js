@@ -437,6 +437,22 @@
 
     Getup.sections.terms.bindEvents();
 
+    Getup.billing = {
+        'pt-br': 0.156,
+        'en-us': 0.074,
+        GEAR_HOURS: 750
+    };
+
+    Getup.billing.update = function() {
+        $('.gears-value').each(function(i, e) {
+            var element = $(e);
+            var gears = element.attr('data-gears');
+            var value = parseFloat(gears * Getup.billing[U.language] * Getup.billing.GEAR_HOURS);
+
+            element.text(value.toFixed(2));
+        });
+    };
+
     Getup.networks = {};
     Getup.networks.elements = {};
 
