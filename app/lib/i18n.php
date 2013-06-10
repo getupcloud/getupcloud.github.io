@@ -187,6 +187,8 @@ class I18n
 	 *
 	 */
 	private function getBrowserLanguage() {
-		return \Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+		return isset($_SERVER) && isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])
+			? \Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE'])
+			: false;
 	}
 }

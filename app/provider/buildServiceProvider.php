@@ -16,7 +16,8 @@ class BuildServiceProvider implements ServiceProviderInterface
             $app['build.options'] = array_replace(
                 array(
                     'builds_directory' => $app['paths']['builds'],
-                    'config_directory' => $app['paths']['config']
+                    'config_directory' => $app['paths']['config'],
+                    'static_directory' => './static',
                 ), $app['build.options']
             );
 

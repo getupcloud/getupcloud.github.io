@@ -20,12 +20,27 @@ class Directory {
 
 			if (is_dir($sourceFile)) {
 				self::copy($sourceFile, $destinationFile);
-			}  else { 
+			}  else {
 				copy($sourceFile, $destinationFile);
 			} 
 		}
 
 		closedir($diretory); 
 	}
-	
+
+	static public function delete($directory) {
+		if (!file_exists($directory)) return true; 
+		if (!is_dir($directory) || is_link($directory)) return unlink($directory);
+
+		foreach (scandir($directory) as $item) {
+			if ($item == '.' || $item == '..') continue; 
+			
+			if (!self::delete($directory . "/" . $item)) { 
+				chmod($directory . "/" . $item, 0777);
+				if (!self::delete($directory . "/" . $item)) return false; 
+			};
+		}
+
+		return rmdir($directory); 
+	}	
 }
