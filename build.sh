@@ -10,7 +10,7 @@ export DEBUG=0
 # languages we support
 LANGS=(
 	pt_BR
-	en
+	en_US
 )
 
 # what is the main site language
@@ -56,7 +56,7 @@ find -type f -name '*.sh' | while read source; do
 		export LANGUAGE_ID=`echo $lang|tr -t _[A-Z] -[a-z]`
 
 		# find out where this file lives inside ../build/
-		[ $lang == $ROOT_LANG ] && unset LANG_DIR || LANG_DIR=$LANGUAGE_ID/
+		[ $lang == $ROOT_LANG ] && unset LANG_DIR || LANG_DIR=${LANGUAGE_ID%-*}/
 
 		# cosmetics
 		target=$LANG_DIR${source#./}
