@@ -366,7 +366,6 @@ cat <<EOF
                     <ul class="contact">
                         <li><strong>Latin &amp; South America</strong><br/> poa@getupcloud.com<br/> Av. Coronel Marcos, 1919<br/> Porto Alegre - RS</li>
                         <li><strong>North America</strong><br/> losangeles@getupcloud.com</li>
-                        <li><strong>Europe, Africa, Middle East</strong><br/> london@getupcloud.com</li>
                         <li><strong>Asia Pacific</strong><br/> sydney@getupcloud.com </li>
                     </ul>
                 </article>
