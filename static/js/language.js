@@ -19,7 +19,7 @@
             Getup.language.set(language);
         }
 
-        Getup.language.verifyAndRedirect();
+        //Getup.language.verifyAndRedirect();
     };
 
     Getup.language.set = function(language) {
