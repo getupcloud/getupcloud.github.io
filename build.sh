@@ -33,6 +33,12 @@ echo
 echo Copying common files...
 cp -rva common/* build/
 
+if [ -n "`find -name '*.swp'`" ]; then
+	echo Refusing to commit temp files...
+	find -name '*.swp' -o -name '*.bak' -o -name '*.bkp'
+	exit 1
+fi
+
 # execute all templates, creating resulting file inside build/ with
 # extension striped
 echo

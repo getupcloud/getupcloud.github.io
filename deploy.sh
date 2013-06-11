@@ -6,7 +6,7 @@ if [ $# -eq 1 -a "$1" == '-b' ]; then
 fi
 set -u
 
-# ensure we  dont nedd a bit
+# ensure we dont lose a bit
 git commit -a || true
 
 # tag this build
@@ -24,3 +24,4 @@ git commit -m $BUILD_TAG
 
 # push this build
 git push origin master
+git push origin $BUILD_TAG
