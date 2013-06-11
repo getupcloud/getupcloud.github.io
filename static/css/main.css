@@ -259,7 +259,7 @@ header, footer, section { margin: 0 auto; position: relative; z-index: 2; max-wi
 #get-in-touch article > ul.talk li a { color: #fff; }
 #get-in-touch article > ul.talk li:first-of-type { margin-left: 0; }
 #get-in-touch article > ul.contact { float: left; width: 898px; padding-top: 45px; border-top: 1px solid #EB6857; }
-#get-in-touch article > ul.contact li { list-style: none; float: left; margin-left: 39px; padding-left: 35px; font-family: 'roboto regular'; font-size: 13px; color: #fff; background: url(../img/sprite.png) -37px -378px no-repeat; }
+#get-in-touch article > ul.contact li { list-style: none; float: left; margin-left: 160px; padding-left: 35px; font-family: 'roboto regular'; font-size: 13px; color: #fff; background: url(../img/sprite.png) -37px -378px no-repeat; }
 #get-in-touch article > ul.contact li:first-of-type { margin-left: 0; }
 #get-in-touch article > ul.contact li a { color: #fff; }
 
