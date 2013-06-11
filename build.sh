@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -xe
 
 php composer.phar install
 for po in App/i18n/*/LC_MESSAGES/*.po; do
