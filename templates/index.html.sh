@@ -230,7 +230,7 @@ cat <<EOF
                                 </label>
 
                                 <label class="checkbox" id="check-terms">
-                                    <span>$(gettext "I read and agree to the") <a href="$(gettext "terms-of-service").html">$(gettext "Terms of Service")</a></span>
+                                    <span>$(gettext "I read and agree to the") <a href="/termos-de-uso.html">$(gettext "Terms of Service")</a></span>
                                     <input type="checkbox" name="use_terms" />
                                 </label>
 
@@ -396,10 +396,10 @@ cat <<EOF
                         <p>Getupcloud.com <strong>GROW IN THE CLOUD.</strong></p>
 
                         <nav class="terms">
-                            <a href="$(gettext "terms-of-service").html">$(gettext "Terms of Service")</a>
-                            <a href="$(gettext "privacy-policy").html">$(gettext "Privacy policy")</a>
-                            <a href="$(gettext "acceptable-use-policy").html">$(gettext "Acceptable use policy")</a>
-                            <a href="$(gettext "support-policy").html">$(gettext "Support policy")</a>
+                            <a href="/termos-de-uso.html">$(gettext "Terms of Service")</a>
+                            <a href="/politica-de-privacidade.html">$(gettext "Privacy policy")</a>
+                            <a href="/politica-de-utilizacao-aceitavel.html">$(gettext "Acceptable use policy")</a>
+                            <a href="/politica-de-suporte.html">$(gettext "Support policy")</a>
                         </nav>
                     </address>
                 </article>

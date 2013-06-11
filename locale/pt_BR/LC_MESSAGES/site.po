@@ -366,16 +366,3 @@ msgstr "Política de utilização aceitável - PUA"
 
 msgid "Support policy"
 msgstr "Política de suporte"
-
-msgid "terms-of-service"
-msgstr "termos-de-uso"
-
-msgid "privacy-policy"
-msgstr "politica-de-privacidade"
-
-msgid "acceptable-use-policy"
-msgstr "politica-de-utilizacao-aceitavel"
-
-msgid "support-policy"
-msgstr "politica-de-suporte"
-
