@@ -4,12 +4,12 @@ set -e
 usage()
 {
 	echo "Usage: $1 [-b] [BUILD_ID]"
-	echo "  -b        Build site before deploy"
-	echo "  BUILD_ID  Git tag used."
+	echo "  -b          Build site before deploy"
+	echo "  BUILD_ID    Git tag used."
 }
 
 DO_BUILD=0
-BUILD_ID=
+export BUILD_ID=
 for opt; do
 	case $opt in
 		-h) usage; exit 0 ;;

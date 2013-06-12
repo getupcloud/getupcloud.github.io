@@ -6,7 +6,7 @@ export BROKER=https://broker.getupcloud.com
 export SITE=http://getupcloud.com/
 export REGISTER=https://broker.getupcloud.com/getup/account/signup/
 export DEBUG=0
-export BUILD_ID=build-`date +%Y%m%d%H%M%S`
+export BUILD_ID=${BUILD_ID:-testing-`date +%Y%m%d%H%M%S`}
 
 # languages we support
 LANGS=(
