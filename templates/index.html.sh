@@ -230,7 +230,7 @@ cat <<EOF
                                 </label>
 
                                 <label class="checkbox" id="check-terms">
-                                    <span>$(gettext "I read and agree to the") <a href="/termos-de-uso.html">$(gettext "Terms of Service")</a></span>
+                                    <span>$(gettext "I read and agree to the") <a href="/termos-de-uso.html">$(gettext "Terms of Use")</a></span>
                                     <input type="checkbox" name="use_terms" />
                                 </label>
 
