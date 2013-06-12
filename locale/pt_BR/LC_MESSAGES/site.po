@@ -355,8 +355,8 @@ msgstr "R$"
 msgid "I read and agree to the"
 msgstr "Li e aceito os "
 
-msgid "Terms of Use"
-msgstr "Termos de Uso"
+msgid "Terms of use"
+msgstr "Termos de uso"
 
 msgid "Privacy policy"
 msgstr "Política de privacidade"

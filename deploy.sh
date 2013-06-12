@@ -25,3 +25,6 @@ git commit -m $BUILD_TAG
 # push this build
 git push origin master
 git push origin $BUILD_TAG
+
+echo You are now on branch:
+git branch
