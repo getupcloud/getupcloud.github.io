@@ -6,6 +6,7 @@ export BROKER=https://broker.getupcloud.com
 export SITE=http://getupcloud.com/
 export REGISTER=https://broker.getupcloud.com/getup/account/signup/
 export DEBUG=0
+export BUILD_ID=build-`date +%Y%m%d%H%M%S`
 
 # languages we support
 LANGS=(
@@ -32,12 +33,6 @@ done
 echo
 echo Copying common files...
 cp -rva common/* build/
-
-if [ -n "`find -name '*.swp'`" ]; then
-	echo Refusing to commit temp files...
-	find -name '*.swp' -o -name '*.bak' -o -name '*.bkp'
-	exit 1
-fi
 
 # execute all templates, creating resulting file inside build/ with
 # extension striped
@@ -77,3 +72,11 @@ find -type f -name '*.sh' | while read source; do
 		LANGUAGE=$lang source $source > $target
 	done
 done
+
+TEMP_FILES=`find ../build -name '*.swp' -o -name '*.bak' -o -name '*.bkp'`
+if [ -n "$TEMP_FILES" ]; then
+	echo
+	echo Removing temp files...
+	rm -vf $TEMP_FILES
+fi
+
