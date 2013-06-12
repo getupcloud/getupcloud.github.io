@@ -31,7 +31,7 @@ done
 # copy common files
 echo
 echo Copying common files...
-cp -rva common/* build/
+cp -a common/* build/
 
 if [ -n "`find -name '*.swp'`" ]; then
 	echo Refusing to commit temp files...
