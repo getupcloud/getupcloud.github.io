@@ -34,6 +34,9 @@ msgstr "preço"
 msgid "get in touch"
 msgstr "entre em contato"
 
+msgid "support"
+msgstr "suporte"
+
 msgid "login"
 msgstr "login"
 

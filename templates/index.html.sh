@@ -43,6 +43,7 @@ cat <<EOF
                                 <li><a href="how-it-works" rel="how-it-works">$(gettext "how it works")</a></li>
                                 <li><a href="pricing" rel="pricing">$(gettext "pricing")</a></li>
                                 <li><a href="get-in-touch" rel="get-in-touch">$(gettext "get in touch")</a></li>
+                                <li><a href="$SUPPORT" rel="support">$(gettext "support")</a></li>
                                 <li><a href="$BROKER/console/signin">$(gettext "login")</a></li>
                             </ul>
 
@@ -379,6 +380,7 @@ cat <<EOF
                             <li><a href="#how-it-works" rel="how-it-works">$(gettext "how it works")</a></li>
                             <li><a href="pricing" rel="pricing">$(gettext "pricing")</a></li>
                             <li><a href="get-in-touch" rel="get-in-touch">$(gettext "get in touch")</a></li>
+                            <li><a href="$SUPPORT" rel="support">$(gettext "support")</a></li>
                             <li><a href="$BROKER/console/signin">$(gettext "login")</a></li>
                         </ul>
                     </div>
