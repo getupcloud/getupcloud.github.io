@@ -32,7 +32,7 @@ done
 # copy common files
 echo
 echo Copying common files...
-cp -rva common/* build/
+cp -a common/* build/
 
 # execute all templates, creating resulting file inside build/ with
 # extension striped
