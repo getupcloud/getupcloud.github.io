@@ -39,9 +39,11 @@ set -xu
 
 # ensure we dont lose a bit
 git commit -a || true
+git tag "source-$BUILD_ID"
 
 # push latests changes
 git push origin source
+git push origin "source-$BUILD_ID"
 
 # prepare master to push
 git checkout master
