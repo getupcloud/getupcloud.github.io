@@ -19,7 +19,7 @@ for opt; do
 				usage
 				exit 1
 			fi
-			BUILD_ID=$1
+			BUILD_ID="$1"
 	esac
 	shift
 done
@@ -40,8 +40,8 @@ set -xu
 # ensure we dont lose a bit
 git commit -a || true
 
-# tag this build
-git tag $BUILD_ID
+# push latests changes
+git push origin source
 
 # prepare master to push
 git checkout master
@@ -49,12 +49,15 @@ mv build .build
 rm -rf *  # wont remove .build
 mv .build/* .
 rmdir .build
+
+# add latests build and tag it
 git add .
-git commit -m $BUILD_ID
+git commit -m "$BUILD_ID"
+git tag "$BUILD_ID"
 
 # push this build
 git push origin master
-git push origin $BUILD_ID
+git push origin "$BUILD_ID"
 
 echo You are now on branch:
 git branch
