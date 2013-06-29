@@ -20,7 +20,7 @@ cat <<EOF
         <meta property="og:description" name="description" content="$(gettext "Getup is a scalable cloud application platform.") $(gettext "An easy and fast way to build and deploy web apps.") $(gettext "You only have to worry about coding your app - we take care of everything else.")">
         <meta property="gc:build_id" content="$BUILD_ID">
 
-        <script>var U = { register: '$REGISTER', language: '$LANGUAGE_ID', debug: $DEBUG };</script>
+        <script>var U = { register: '$SIGNUP', language: '$LANGUAGE_ID', debug: $DEBUG };</script>
         <script src="/static/js/language.js"></script>
         
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 

@@ -3,8 +3,8 @@ set -e
 
 # site config
 export BROKER=${BROKER:-https://broker.getupcloud.com}
+export SIGNUP=${SIGNUP:-$BROKER/getup/account/signup/}
 export SITE=${SITE:-http://getupcloud.com/}
-export REGISTER=${REGISTER:-https://broker.getupcloud.com/getup/account/signup/}
 export SUPPORT=${SUPPORT:-https://getup.zendesk.com/home/}
 export DEBUG=0
 export BUILD_ID=${BUILD_ID:-testing-`date +%Y%m%d%H%M%S`}
@@ -42,7 +42,7 @@ echo Building from template...
 cat <<EOF
   BROKER=$BROKER
   SITE=$SITE
-  REGISTER=$REGISTER
+  SIGNUP=$SIGNUP
   DEBUG=$DEBUG
   LANGS=${LANGS[*]}
 
