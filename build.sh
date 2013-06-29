@@ -2,10 +2,10 @@
 set -e
 
 # site config
-export BROKER=https://broker.getupcloud.com
-export SITE=http://getupcloud.com/
-export REGISTER=https://broker.getupcloud.com/getup/account/signup/
-export SUPPORT=https://getup.zendesk.com/home/
+export BROKER=${BROKER:-https://broker.getupcloud.com}
+export SITE=${SITE:-http://getupcloud.com/}
+export REGISTER=${REGISTER:-https://broker.getupcloud.com/getup/account/signup/}
+export SUPPORT=${SUPPORT:-https://getup.zendesk.com/home/}
 export DEBUG=0
 export BUILD_ID=${BUILD_ID:-testing-`date +%Y%m%d%H%M%S`}
 
@@ -19,8 +19,8 @@ LANGS=(
 ROOT_LANG=pt_BR
 
 # gettext config
-export TEXTDOMAINDIR=$PWD/locale
-export TEXTDOMAIN=site
+export TEXTDOMAINDIR=${TEXTDOMAINDIR:-$PWD/locale}
+export TEXTDOMAIN=${TEXTDOMAIN:-site}
 
 echo
 echo Creating initial build...
