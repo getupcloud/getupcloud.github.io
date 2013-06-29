@@ -193,6 +193,7 @@
         Getup.sections.pricing.elements.inputs.email = $('#email');
         Getup.sections.pricing.elements.inputs.password = $('#password');
         Getup.sections.pricing.elements.inputs.passwordConfirm = $('#password-confirm');
+        Getup.sections.pricing.elements.inputs.couponCode = $('#coupon-code');
         Getup.sections.pricing.elements.postButton = Getup.sections.pricing.elements.form.find('button');
         Getup.sections.pricing.elements.message = $('#message');
         Getup.sections.pricing.elements.success = $('#success');
@@ -283,6 +284,7 @@
         var email           = Getup.sections.pricing.elements.inputs.email;
         var password        = Getup.sections.pricing.elements.inputs.password;
         var passwordConfirm = Getup.sections.pricing.elements.inputs.passwordConfirm;
+        var couponCode      = Getup.sections.pricing.elements.inputs.couponCode;
         var terms           = Getup.sections.pricing.elements.inputs.terms;
 
         var valid        = true;

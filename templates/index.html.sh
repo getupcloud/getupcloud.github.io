@@ -230,6 +230,10 @@ cat <<EOF
                                     <span>$(gettext "Confirm password")</span>
                                     <input type="password" name="password2" id="password-confirm" class="small" />
                                 </label>
+                                <label>
+                                    <span>$(gettext "Coupon code")</span>
+                                    <input type="text" name="coupon_code" id="coupon-code" class="small" />
+                                </label>
 
                                 <label class="checkbox" id="check-terms">
                                     <span>$(gettext "I read and agree to the") <a href="/termos-de-uso.html">$(gettext "Terms of use")</a></span>

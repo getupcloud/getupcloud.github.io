@@ -283,6 +283,9 @@ msgstr "Senha"
 msgid "Confirm password"
 msgstr "Confirme a senha"
 
+msgid "Coupon code"
+msgstr "Promo code"
+
 msgid "Almost finished..."
 msgstr "Quase lá..."
 
