@@ -231,8 +231,8 @@ cat <<EOF
                                     <input type="password" name="password2" id="password-confirm" class="small" />
                                 </label>
                                 <label>
-                                    <span>$(gettext "Coupon code")</span>
-                                    <input type="text" name="coupon_code" id="coupon-code" class="small" />
+                                    <span>$(gettext "Coupon code (optional)")</span>
+                                    <input type="text" name="coupon_code" id="coupon-code" />
                                 </label>
 
                                 <label class="checkbox" id="check-terms">
