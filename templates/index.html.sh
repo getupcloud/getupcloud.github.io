@@ -231,7 +231,7 @@ cat <<EOF
                                     <input tabindex="4" type="password" name="password2" id="password-confirm" class="small" />
                                 </label>
                                 <label>
-                                    <span>$(gettext "Coupon code (optional)")</span>
+                                    <span>$(gettext "Promo code (optional)")</span>
                                     <input tabindex="5" type="text" name="coupon_code" id="coupon-code" />
                                 </label>
 
