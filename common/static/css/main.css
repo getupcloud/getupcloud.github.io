@@ -294,7 +294,7 @@ header, footer, section { margin: 0 auto; position: relative; z-index: 2; max-wi
 #pricing .left form h2 { font-family: 'ostrich medium'; font-size: 48px; margin: 0; text-align: center; }
 #pricing .left form p { font-family: 'roboto light'; font-size: 13px; margin: 0 0 10px 6px; text-align: center; width: 300px; color: #f23f2c; }
 
-#pricing .left form label { display: block; float: left; margin: 10px 5px 0 5px; position: relative; }
+#pricing .left form label { display: block; float: left; height: 42px; margin: 10px 5px 0 5px; position: relative; }
 #pricing .left form label span { font-family: 'roboto light'; font-size: 15px; left: 10px; line-height: 43px; position: absolute; top: 0; }
 #pricing .left form label input { border: none; border-top: 1px solid #e4e4e4; font-family: 'roboto light'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 300px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
 #pricing .left form label input.small { width: 145px; }

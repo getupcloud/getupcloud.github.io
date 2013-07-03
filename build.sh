@@ -51,11 +51,11 @@ EOF
 cd templates
 
 # templates are simple shell scripts ending in .sh
-find -type f -name '*.sh' | while read source; do
+find . -type f -name '*.sh' | while read source; do
 	for lang in ${LANGS[*]}; do
 		# format language name to use in templates
 		# ex: pt_BR -> pt-br
-		export LANGUAGE_ID=`echo $lang|tr -t _[A-Z] -[a-z]`
+		export LANGUAGE_ID=`echo $lang|tr _[A-Z] -[a-z]`
 
 		# find out where this file lives inside ../build/
 		[ $lang == $ROOT_LANG ] && unset LANG_DIR || LANG_DIR=${LANGUAGE_ID%-*}/
