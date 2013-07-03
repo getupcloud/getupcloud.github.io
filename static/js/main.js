@@ -77,7 +77,7 @@
         var top = $('#' + rel).offset().top;
         Getup.menu.scrolling = true;
 
-        Getup.elements.body.animate({scrollTop: top }, {queue: false, duration: '400', easing: 'easeOutQuad', complete: function() {
+        Getup.elements[window.mozRequestAnimationFrame ? 'html' : 'body'].animate({scrollTop: top }, {queue: false, duration: '400', easing: 'easeOutQuad', complete: function() {
             setTimeout(function() {
                 Getup.menu.scrolling = false;
                 Getup.menu.setActive();
@@ -258,7 +258,7 @@
     
     Getup.sections.pricing.signup.show = function() {
         Getup.sections.pricing.gear.hide(false, function() {
-            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight + 200)
+            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight + 300)
             Getup.sections.pricing.elements.form.fadeIn();
         });
     };
