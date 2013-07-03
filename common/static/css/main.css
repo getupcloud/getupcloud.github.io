@@ -302,7 +302,7 @@ header, footer, section { margin: 0 auto; position: relative; z-index: 2; max-wi
 #pricing .left form label.checkbox { width: 100%; height: 36px; }
 #pricing .left form label.checkbox span { cursor: pointer; display: inline-block; left: 20px; top: -2px; line-height: 24px; }
 #pricing .left form label.checkbox span a { text-decoration: underline; }
-#pricing .left form label.checkbox input { width: auto; }
+#pricing .left form label.checkbox input { width: auto; height: 24px; }
 
 #pricing .left form label.error span,
 #pricing .left form label.error a { color: #f23f2c; }
