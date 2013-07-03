@@ -216,33 +216,33 @@ cat <<EOF
 
                                 <label>
                                     <span>$(gettext "What's your name")</span>
-                                    <input type="text" name="name" id="name" />
+                                    <input tabindex="1" type="text" name="name" id="name" />
                                 </label>
                                 <label>
                                     <span>$(gettext "What's your e-mail")</span>
-                                    <input type="text" name="email" id="email" />
+                                    <input tabindex="2" type="text" name="email" id="email" />
                                 </label>
                                 <label>
                                     <span>$(gettext "Password")</span>
-                                    <input type="password" name="password1" id="password" class="small" />
+                                    <input tabindex="3" type="password" name="password1" id="password" class="small" />
                                 </label>
                                 <label>
                                     <span>$(gettext "Confirm password")</span>
-                                    <input type="password" name="password2" id="password-confirm" class="small" />
+                                    <input tabindex="4" type="password" name="password2" id="password-confirm" class="small" />
                                 </label>
                                 <label>
                                     <span>$(gettext "Coupon code (optional)")</span>
-                                    <input type="text" name="coupon_code" id="coupon-code" />
+                                    <input tabindex="5" type="text" name="coupon_code" id="coupon-code" />
                                 </label>
 
                                 <label class="checkbox" id="check-terms">
-                                    <span>$(gettext "I read and agree to the") <a href="/termos-de-uso.html">$(gettext "Terms of use")</a></span>
-                                    <input type="checkbox" name="use_terms" />
+                                    <span>$(gettext "I read and agree to the") <a tabindex="7" href="/termos-de-uso.html">$(gettext "Terms of use")</a></span>
+                                    <input tabindex="6" type="checkbox" name="use_terms" />
                                 </label>
 
                                 <p id="message"></p>
 
-                                <button>OK</button>
+                                <button tabindex="8">OK</button>
                             </fieldset>
                         </form>
 
