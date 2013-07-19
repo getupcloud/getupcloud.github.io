@@ -61,10 +61,10 @@ msgstr "Segurança"
 msgid "Have a beer!"
 msgstr "Pegue sua cerveja"
 
-msgid "Create and deploy web-based applications without the cost and complexity of buying and managing server."
+msgid "Create and deploy web-based applications without the cost and complexity of buying and managing servers."
 msgstr "Crie e publique aplicações web sem o custo e a complexidade de comprar e administrar servidores."
 
-msgid "With Getup you pay only for what you use and only for the applications that are using."
+msgid "With Getup you pay only for what you use and only for the applications that are using it."
 msgstr "Na Getup você paga pelo que você usa."
 
 msgid "With getup you only need to manage:"

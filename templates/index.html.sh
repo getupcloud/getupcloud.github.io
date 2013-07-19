@@ -72,8 +72,8 @@ cat <<EOF
                         <li>$(gettext "Have a beer!")</li>
                     </ul>
                     <div class="details">
-                        <p><strong>$(gettext "Create and deploy web-based applications without the cost and complexity of buying and managing server.")</strong>
-                            <br/>$(gettext "With Getup you pay only for what you use and only for the applications that are using.")
+                        <p><strong>$(gettext "Create and deploy web-based applications without the cost and complexity of buying and managing servers.")</strong>
+                            <br/>$(gettext "With Getup you pay only for what you use and only for the applications that are using it.")
                         </p>
                         <div class="explanation left">
                             <p>$(gettext "With getup you only need to manage:")</p>
