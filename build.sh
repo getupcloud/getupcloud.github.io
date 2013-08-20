@@ -8,6 +8,9 @@ export SITE=${SITE:-http://getupcloud.com/}
 export SUPPORT=${SUPPORT:-https://getup.zendesk.com/home/}
 export DEBUG=0
 export BUILD_ID=${BUILD_ID:-testing-`date +%Y%m%d%H%M%S`}
+export TEXTDOMAINDIR=$PWD/locale
+export TEXTDOMAIN=site
+export GETTEXT_PATH=$PWD/gettext
 
 # languages we support
 LANGS=(
@@ -17,10 +20,6 @@ LANGS=(
 
 # what is the main site language
 ROOT_LANG=pt_BR
-
-# gettext config
-export TEXTDOMAINDIR=${TEXTDOMAINDIR:-$PWD/locale}
-export TEXTDOMAIN=${TEXTDOMAIN:-site}
 
 echo
 echo Creating initial build...
@@ -50,6 +49,14 @@ EOF
 
 cd templates
 
+function gettext()
+{
+	$GETTEXT_PATH $@
+	#echo -n "GETTEXT($LANGUAGE): $@ -> " >&2
+	#$GETTEXT_PATH $@ >&2
+	#echo
+}
+
 # templates are simple shell scripts ending in .sh
 find . -type f -name '*.sh' | while read source; do
 	for lang in ${LANGS[*]}; do
@@ -70,7 +77,8 @@ find . -type f -name '*.sh' | while read source; do
 		mkdir -p ${target%/*}
 
 		# real work
-		LANGUAGE=$lang source $source > $target
+		export LANGUAGE=$lang
+		source $source > $target
 	done
 done
 
