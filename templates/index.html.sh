@@ -39,12 +39,13 @@ cat <<EOF
                         <h1 class="sprite">$(gettext "Getup - Grow in the cloud")</h1>
                         <nav>
                             <ul>
-                                <li class="active"><a href="what" rel="what">$(gettext "what")</a></li>
+                                <li><a href="what" rel="what">$(gettext "what")</a></li>
                                 <li><a href="how-it-works" rel="how-it-works">$(gettext "how it works")</a></li>
                                 <li><a href="pricing" rel="pricing">$(gettext "pricing")</a></li>
                                 <li><a href="get-in-touch" rel="get-in-touch">$(gettext "get in touch")</a></li>
                                 <li><a href="$SUPPORT" rel="support">$(gettext "support")</a></li>
                                 <li><a href="$BROKER/console/signin">$(gettext "login")</a></li>
+                                <li class="active"><a href="" rel="create-account" class="signup">$(gettext "Sign up")</a></li>
                             </ul>
 
                             <div class="languages">
@@ -57,6 +58,7 @@ cat <<EOF
                             <br/>$(gettext "You only have to worry about coding your app - we take care of everything else.")
                         </p>
                         <img src="/static/img/astronaut.png">
+                        <a href="" rel="create-account" class="button signup">$(gettext "Sign up")</a>
                     </div>
                 </header>
             </div>
@@ -188,7 +190,7 @@ cat <<EOF
                             <dt>$(gettext "Scaling")</dt>
                             <dd>$(gettext "Included")</dd>
 
-                            <dt>$(gettext "Suport")</dt>
+                            <dt>$(gettext "Support")</dt>
                             <dd><small>$(gettext "Ticket, Forum, Community")</small></dd>
 
                             <dt>$(gettext "SSL")</dt>
@@ -207,8 +209,8 @@ cat <<EOF
                             </dd>
                         </dl>
 
-                        <a href="" class="button signup">$(gettext "SIGNUP")</a>
-
+                        <a href="" class="button signup">$(gettext "Sign up")</a>
+                        <div id="create-account"></div>
                         <form action="" method="post" id="signup">
                             <fieldset>
                                 <h2>$(gettext "First Step")</h2>
@@ -253,14 +255,16 @@ cat <<EOF
                         </p>
                     </div>
                     <div class="right">
-                        <h2>$(gettext "A few examples of applications running on Getup")</h2>
-                        <p>$(gettext "An application will run in one or more gears and the number will be determined by amount of traffic - users accessing your application.")
-                            <br/> $(gettext "The monthly fee is calculated by the number of gears used and the number of hours that they were active.")
-                            <br/>$(gettext "To help you understand and get an estimated cost, we created a reference chart with 3 types of application.")
-                        </p>
                         <dl class="panel">
-                            <dt class="open">$(gettext "PHP Application")</dt>
+                            <dt class="open">$(gettext "A few examples of applications running on Getup")</dt>
                             <dd class="open">
+                                <p>$(gettext "An application will run in one or more gears and the number will be determined by amount of traffic - users accessing your application.")
+                                    <br/> $(gettext "The monthly fee is calculated by the number of gears used and the number of hours that they were active.")
+                                    <br/>$(gettext "To help you understand and get an estimated cost, we created a reference chart with 3 types of application.")
+                                </p>
+                            </dd>
+                            <dt>$(gettext "PHP Application")</dt>
+                            <dd>
                                 <ul>
                                     <li>
                                         <h3>$(gettext "Just started")</h3>
@@ -361,8 +365,8 @@ cat <<EOF
 
             <section id="get-in-touch">
                 <article class="wrap">
-                    <h2>$(gettext "Don’t be shy.")
-                        <br/>$(gettext "Let’s talk about clouds.")
+                    <h2>$(gettext "Don't be shy.")
+                        <br/>$(gettext "Let's talk about clouds.")
                     </h2>
                     <ul class="talk">
                         <li><a href="mailto:ship@getupcloud.com">ship@getupcloud.com</a></li>
@@ -386,6 +390,7 @@ cat <<EOF
                             <li><a href="get-in-touch" rel="get-in-touch">$(gettext "get in touch")</a></li>
                             <li><a href="$SUPPORT" rel="support">$(gettext "support")</a></li>
                             <li><a href="$BROKER/console/signin">$(gettext "login")</a></li>
+                            <li><a href="" rel="create-account" class="signup">$(gettext "Sign up")</a></li>
                         </ul>
                     </div>
                 </nav>

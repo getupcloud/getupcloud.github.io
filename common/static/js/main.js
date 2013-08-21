@@ -61,6 +61,7 @@
 
     Getup.menu.bindEvents = function() {
         Getup.menu.elements.links.click(Getup.menu.goTo);
+        $('#what a.signup').click(Getup.menu.goTo);
 
         Getup.elements.languages.click(function() {
             Getup.language.set(this.rel);
@@ -183,7 +184,7 @@
         Getup.sections.pricing.elements.gearPanel = $('#gear .panel');
 
         Getup.sections.pricing.elements.gearInfo = Getup.sections.pricing.elements.content.find('.gear.info');
-        Getup.sections.pricing.elements.signupButton = Getup.sections.pricing.elements.content.find('.signup.button');
+        Getup.sections.pricing.elements.signupButton = $('a.signup');
 
         Getup.sections.pricing.elements.gear = $('#gear');
         Getup.sections.pricing.elements.form = $('#signup');
@@ -201,6 +202,7 @@
         Getup.sections.pricing.elements.checkTerms = $('#check-terms a');
 
         Getup.sections.itemsToScroll.push(Getup.sections.pricing.elements.content);
+        Getup.sections.itemsToScroll.push($("#create-account"));
 
         panels(Getup.sections.pricing.elements.infoPanel);
         panels(Getup.sections.pricing.elements.gearPanel);
