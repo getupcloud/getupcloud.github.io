@@ -110,7 +110,7 @@ cat <<EOF
                                 <br/>$(gettext "Once deployed, it will take care of all the components, utilization spikes and scalability.")
                                 <br/>
                                 <br/>$(gettext "Servers, storage, load balancer?")
-                                <br/>$(gettext "Forget about this crap. We’ll do all that boring stuff for you!")
+                                <br/>$(gettext "Forget about this crap. We'll do all that boring stuff for you!")
                             </p>
                         </div>
                     </div>
@@ -122,20 +122,20 @@ cat <<EOF
                         </p>
 
                         <h2>$(gettext "Scalability")</h2>
-                        <p>$(gettext "We take care of scale so you don’t need to worry about traffic spikes and scalability complexity.")</p>
+                        <p>$(gettext "We take care of scale so you don't need to worry about traffic spikes and scalability complexity.")</p>
 
                         <h2>$(gettext "SSL")</h2>
                         <p>$(gettext "All applications are up and running on your own URL with shared SSL by default.")</p>
 
                         <h2>$(gettext "Cartridges")</h2>
                         <p>$(gettext "Add components to your app through cartridges like MySQL, PHPMyAdmin, PostgreSQL, Ruby, PHP, Django.")
-                            <br/>$(gettext "You can add a cartridge using our powerful Web Console or CLI ")
+                            <br/>$(gettext "You can add a cartridge using our powerful Web Console or CLI")
                             <br/>$(gettext "$ rhc cartridge add MySQL-5.1 -a AppName.")
                         </p>
                     </div>
                     <div class="details">
                         <img src="/static/img/deploy.png">
-                        <p><strong>$(gettext "Just type ‘git push’ and voilá! Your application is up and running!")</strong></p>
+                        <p><strong>$(gettext "Just type 'git push' and voil&aacute;! Your application is up and running!")</strong></p>
 
                         <h2>$(gettext "Development life-cycle")</h2>
                         <p>$(gettext "Warp-speed and too-damn-easy swapping to work with test, stage or production versions of your app.")</p>
@@ -152,11 +152,11 @@ cat <<EOF
                         </p>
 
                         <h2>$(gettext "Scaling")</h2>
-                        <p>$(gettext "Don’t get caught by traffic spikes. Auto-scaling enables your application to react to them without the pain in the neck of dealing with load balancers, replication and others things.")</p>
+                        <p>$(gettext "Don't get caught by traffic spikes. Auto-scaling enables your application to react to them without the pain in the neck of dealing with load balancers, replication and others things.")</p>
 
                         <h2>$(gettext "Pay as you go")</h2>
                         <p>$(gettext "When you create or scale an application, you pay by hour usage, for what you use and only for the running applications - nothing more, nothing less.")
-                            <br/>$(gettext "It’s more efficient and versatile than traditional computing.")
+                            <br/>$(gettext "It's more efficient and versatile than traditional computing.")
                         </p>
 
                         <h2>$(gettext "Monitor")</h2>
@@ -166,7 +166,7 @@ cat <<EOF
                     </div>
                     <div class="details">
                         <img src="/static/img/security.jpg" />
-                        <p>$(gettext "Getup is built on the Red Hat OpenShift Platform and runs Red Hat Enterprise Linux OS (RHEL), one of the most respected Linux distributions. The security layer is guaranteed by SELinux, which acts as a “firewall” among customers’ applications.")</p>
+                        <p>$(gettext "Getup is built on the Red Hat OpenShift Platform and runs Red Hat Enterprise Linux OS (RHEL), one of the most respected Linux distributions. The security layer is guaranteed by SELinux, which acts as a \"firewall\" among customers' applications.")</p>
 
                         <p><strong>$(gettext "Workload distribution and redundancy")</strong>
                         $(gettext "Our infrastructure is distributed across multiple servers, spread in multiple Amazon AZ (Availability Zones).")<br/>
@@ -174,8 +174,8 @@ cat <<EOF
                     </div>
                     <div class="details">
                         <img src="/static/img/beer.png">
-                        <h2>$(gettext "That’s it.")</h2>
-                        <p>$(gettext "If you don’t care too much for the liquid gold, do whatever you want with your")
+                        <h2>$(gettext "That's it.")</h2>
+                        <p>$(gettext "If you don't care too much for the liquid gold, do whatever you want with your")
                             <br/>$(gettext "spare time. Told you it was six simple steps, right? ;)")
                         </p>
                     </div>
@@ -351,7 +351,7 @@ cat <<EOF
                             <dd class="open">$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")</dd>
                             <dt>$(gettext "Scalability - What it is and how it works")</dt>
                             <dd>$(gettext "Scalability empowers your application with traffic management automation, extending and reducing the capacity by adding and removing gears on demand.")
-                                <br/>$(gettext "Some gears can be temporary, as your demand is, so you pay only for the time that each gear is running. You can also set the max number of gears that your application uses - that’s financial control.")
+                                <br/>$(gettext "Some gears can be temporary, as your demand is, so you pay only for the time that each gear is running. You can also set the max number of gears that your application uses - that's financial control.")
                             </dd>
                         </dl>
                     </div>                    

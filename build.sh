@@ -51,7 +51,7 @@ cd templates
 
 function gettext()
 {
-	$GETTEXT_PATH $@
+	$GETTEXT_PATH "$@"
 	#echo -n "GETTEXT($LANGUAGE): $@ -> " >&2
 	#$GETTEXT_PATH $@ >&2
 	#echo
