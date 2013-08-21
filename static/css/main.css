@@ -185,19 +185,20 @@ header, footer, section { margin: 0 auto; position: relative; z-index: 2; max-wi
 #what { height: 479px; background: url(../img/header.png) no-repeat top center; }
 #what h1 { width: 182px; height: 81px; margin: 0; border-top: 5px solid #FF4C4D; background-position: 0 0; }
 #what h1 img { display: none; }
-#what h2 { margin: 77px 0 0 30px; line-height: 90px; font-family: 'ostrich black'; font-size: 90px; color: #2D2D2D; }
-#what p { margin: 7px 0 0 30px; font-family: 'roboto regular'; color: #FF4C4C; }
+#what h2 { margin: 67px 0 0 0px; line-height: 64px; font-family: 'roboto light'; font-size: 64px; color: #2D2D2D; text-transform: uppercase;}
+#what p { margin: 7px 0 0 0px; font-family: 'roboto regular'; color: #2D2D2D; text-transform: uppercase; }
 #what .wrap > nav { position: absolute; top: 50px; right: 40px; }
-#what .wrap > nav ul li { float: left; list-style: none; margin-left: 40px; font-family: 'roboto regular'; font-size: 16px; font-weight: bold; color: #FF4C4C; }
+#what .wrap > nav ul li { float: left; list-style: none; margin-left: 30px; font-family: 'roboto regular'; font-size: 16px; font-weight: normal; color: #FF4C4C; }
 #what .wrap > nav ul li a:hover, #what nav ul li.active a { color: #FF4C4C; }
-#what img { position: absolute; right: 0; bottom: 0; }
+#what img { position: absolute; right: 0; bottom: -50px; }
+#what .button { margin: 20px 0 0 0px; background: #f23f2c; color: #fff; display: block; font-size: 15px; line-height: 49px; height: 49px; position: relative; text-align: center; width: 180px; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
 
 #menu { width: 100%; height: 60px; position: absolute; top: 479px; left: 0; z-index: 10; }
 #menu.fixed { position: fixed; top: 0; left: 0; }
 
 #menu > nav { position: relative; width: 100%; height: 60px; background-color: #fff; }
 #menu > nav .wrap ul { float: right; margin-right: 40px; }
-#menu > nav .wrap ul li { float: left; list-style: none; margin-left: 40px; line-height: 60px; font-family: 'roboto regular'; font-size: 16px; font-weight: bold; color: #FF4C4C; }
+#menu > nav .wrap ul li { float: left; list-style: none; margin-left: 30px; line-height: 60px; font-family: 'roboto regular'; font-size: 16px; font-weight: normal; color: #FF4C4C; }
 #menu > nav .wrap ul li a:hover, #menu > nav .wrap ul li.active a { color: #FF4C4C; }
 
 #how-it-works { width: 100%; background-color: #fff; height: 1155px; }
@@ -285,7 +286,7 @@ header, footer, section { margin: 0 auto; position: relative; z-index: 2; max-wi
 #pricing .left > dl dt:last-of-type { padding-bottom: 30px; }
 #pricing .left > dl dt:last-of-type small { cursor: pointer; font-size: 10px; display: inline-block; position: relative; top: -5px; }
 
-#pricing .left .button { background: #f23f2c; color: #fff; display: block; font-size: 15px; line-height: 49px; height: 49px; margin: 0 auto; position: relative; text-align: center; width: 130px; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
+#pricing .left .button { background: #f23f2c; color: #fff; display: block; font-size: 15px; line-height: 49px; height: 49px; margin: 0 auto; position: relative; text-align: center; width: 180px; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
 #pricing .left .button span { position: absolute; left: 50%; margin-left: -21px; bottom: -8px; width: 0px; height: 0px; border-style: solid; border-width: 8px 21px 0 21px; border-color: #ef4036 transparent transparent transparent; }
 
 #pricing .left form { display: none; margin: 10px auto 0; width: 314px; }
@@ -312,6 +313,8 @@ header, footer, section { margin: 0 auto; position: relative; z-index: 2; max-wi
 #pricing .left form button { background: #333; border: none; color: #fff; display: block; font-family: 'ostrich medium'; font-size: 38px; line-height: 49px; height: 49px; margin: 0 auto; padding: 0; position: relative; top: 0px; text-align: center; width: 130px; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
 #pricing .left form button.loading { background: 50px 13px url(../img/black-gray-loader.gif) no-repeat transparent; text-indent: -5000em; }
 
+#pricing .left #create-account { padding-top: 40px; margin-top: -40px;}
+
 #success { color: #f23f2c; display: none; font-size: 17px; font-weight: bold; margin: 40px 0 0; text-align: center; }
 #success small { color: #333; font-size: 11px; font-weight: normal; }
 
@@ -333,7 +336,7 @@ dl.panel { margin: 1em 0 0; }
 .panel dd ul li h3 { font-size: 14px; font-weight: normal; margin: 0 0 5px; }
 .panel dd ul li small { color: #333; font-size: 90%; }
 
-.panel dt:before { border: 4px solid transparent; border-color: #f23f2c transparent transparent transparent; content: ""; height: 0; position: absolute; top: 19px; right: 15px; width: 0; }
+.panel dt:before { border: 5px solid transparent; border-color: #f23f2c transparent transparent transparent; content: ""; height: 0; position: absolute; top: 19px; right: 15px; width: 0; }
 .panel dt.open:before { border-color: transparent transparent #f23f2c transparent; top: 15px; }
 
 #pricing .right { margin: 50px 0 0 20px; width: 431px; }

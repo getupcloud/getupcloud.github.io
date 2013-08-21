@@ -17,7 +17,7 @@
         <meta property="og:url" content="http://getupcloud.com">
         <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
         <meta property="og:description" name="description" content="Getup is a scalable cloud application platform. An easy and fast way to build and deploy web apps. You only have to worry about coding your app - we take care of everything else.">
-        <meta property="gc:build_id" content="build-20130719162855">
+        <meta property="gc:build_id" content="testing-20130821134219">
 
         <script>var U = { register: 'https://broker.getupcloud.com/getup/account/signup/', language: 'en-us', debug: 0 };</script>
         <script src="/static/js/language.js"></script>
@@ -38,12 +38,13 @@
                         <h1 class="sprite">Getup - Grow in the cloud</h1>
                         <nav>
                             <ul>
-                                <li class="active"><a href="what" rel="what">what</a></li>
+                                <li><a href="what" rel="what">what</a></li>
                                 <li><a href="how-it-works" rel="how-it-works">how it works</a></li>
                                 <li><a href="pricing" rel="pricing">pricing</a></li>
                                 <li><a href="get-in-touch" rel="get-in-touch">get in touch</a></li>
                                 <li><a href="https://getup.zendesk.com/home/" rel="support">support</a></li>
                                 <li><a href="https://broker.getupcloud.com/console/signin">login</a></li>
+                                <li class="active"><a href="" rel="create-account" class="signup">Sign up</a></li>
                             </ul>
 
                             <div class="languages">
@@ -56,6 +57,7 @@
                             <br/>You only have to worry about coding your app - we take care of everything else.
                         </p>
                         <img src="/static/img/astronaut.png">
+                        <a href="" rel="create-account" class="button signup">Sign up</a>
                     </div>
                 </header>
             </div>
@@ -107,7 +109,7 @@
                                 <br/>Once deployed, it will take care of all the components, utilization spikes and scalability.
                                 <br/>
                                 <br/>Servers, storage, load balancer?
-                                <br/>Forget about this crap. We’ll do all that boring stuff for you!
+                                <br/>Forget about this crap. We'll do all that boring stuff for you!
                             </p>
                         </div>
                     </div>
@@ -119,20 +121,20 @@
                         </p>
 
                         <h2>Scalability</h2>
-                        <p>We take care of scale so you don’t need to worry about traffic spikes and scalability complexity.</p>
+                        <p>We take care of scale so you don't need to worry about traffic spikes and scalability complexity.</p>
 
                         <h2>SSL</h2>
                         <p>All applications are up and running on your own URL with shared SSL by default.</p>
 
                         <h2>Cartridges</h2>
                         <p>Add components to your app through cartridges like MySQL, PHPMyAdmin, PostgreSQL, Ruby, PHP, Django.
-                            <br/>You can add a cartridge using our powerful Web Console or CLI 
+                            <br/>You can add a cartridge using our powerful Web Console or CLI
                             <br/>$ rhc cartridge add MySQL-5.1 -a AppName.
                         </p>
                     </div>
                     <div class="details">
                         <img src="/static/img/deploy.png">
-                        <p><strong>Just type ‘git push’ and voilá! Your application is up and running!</strong></p>
+                        <p><strong>Just type 'git push' and voil&aacute;! Your application is up and running!</strong></p>
 
                         <h2>Development life-cycle</h2>
                         <p>Warp-speed and too-damn-easy swapping to work with test, stage or production versions of your app.</p>
@@ -149,11 +151,11 @@
                         </p>
 
                         <h2>Scaling</h2>
-                        <p>Don’t get caught by traffic spikes. Auto-scaling enables your application to react to them without the pain in the neck of dealing with load balancers, replication and others things.</p>
+                        <p>Don't get caught by traffic spikes. Auto-scaling enables your application to react to them without the pain in the neck of dealing with load balancers, replication and others things.</p>
 
                         <h2>Pay as you go</h2>
                         <p>When you create or scale an application, you pay by hour usage, for what you use and only for the running applications - nothing more, nothing less.
-                            <br/>It’s more efficient and versatile than traditional computing.
+                            <br/>It's more efficient and versatile than traditional computing.
                         </p>
 
                         <h2>Monitor</h2>
@@ -163,7 +165,7 @@
                     </div>
                     <div class="details">
                         <img src="/static/img/security.jpg" />
-                        <p>Getup is built on the Red Hat OpenShift Platform and runs Red Hat Enterprise Linux OS (RHEL), one of the most respected Linux distributions. The security layer is guaranteed by SELinux, which acts as a “firewall” among customers’ applications.</p>
+                        <p>Getup is built on the Red Hat OpenShift Platform and runs Red Hat Enterprise Linux OS (RHEL), one of the most respected Linux distributions. The security layer is guaranteed by SELinux, which acts as a "firewall" among customers' applications.</p>
 
                         <p><strong>Workload distribution and redundancy</strong>
                         Our infrastructure is distributed across multiple servers, spread in multiple Amazon AZ (Availability Zones).<br/>
@@ -171,8 +173,8 @@
                     </div>
                     <div class="details">
                         <img src="/static/img/beer.png">
-                        <h2>That’s it.</h2>
-                        <p>If you don’t care too much for the liquid gold, do whatever you want with your
+                        <h2>That's it.</h2>
+                        <p>If you don't care too much for the liquid gold, do whatever you want with your
                             <br/>spare time. Told you it was six simple steps, right? ;)
                         </p>
                     </div>
@@ -187,7 +189,7 @@
                             <dt>Scaling</dt>
                             <dd>Included</dd>
 
-                            <dt>Suport</dt>
+                            <dt>Support</dt>
                             <dd><small>Ticket, Forum, Community</small></dd>
 
                             <dt>SSL</dt>
@@ -206,8 +208,8 @@
                             </dd>
                         </dl>
 
-                        <a href="" class="button signup">SIGNUP</a>
-
+                        <a href="" class="button signup">Sign up</a>
+                        <div id="create-account"></div>
                         <form action="" method="post" id="signup">
                             <fieldset>
                                 <h2>First Step</h2>
@@ -252,14 +254,16 @@
                         </p>
                     </div>
                     <div class="right">
-                        <h2>A few examples of applications running on Getup</h2>
-                        <p>An application will run in one or more gears and the number will be determined by amount of traffic - users accessing your application.
-                            <br/> The monthly fee is calculated by the number of gears used and the number of hours that they were active.
-                            <br/>To help you understand and get an estimated cost, we created a reference chart with 3 types of application.
-                        </p>
                         <dl class="panel">
-                            <dt class="open">PHP Application</dt>
+                            <dt class="open">A few examples of applications running on Getup</dt>
                             <dd class="open">
+                                <p>An application will run in one or more gears and the number will be determined by amount of traffic - users accessing your application.
+                                    <br/> The monthly fee is calculated by the number of gears used and the number of hours that they were active.
+                                    <br/>To help you understand and get an estimated cost, we created a reference chart with 3 types of application.
+                                </p>
+                            </dd>
+                            <dt>PHP Application</dt>
+                            <dd>
                                 <ul>
                                     <li>
                                         <h3>Just started</h3>
@@ -346,7 +350,7 @@
                             <dd class="open">Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.</dd>
                             <dt>Scalability - What it is and how it works</dt>
                             <dd>Scalability empowers your application with traffic management automation, extending and reducing the capacity by adding and removing gears on demand.
-                                <br/>Some gears can be temporary, as your demand is, so you pay only for the time that each gear is running. You can also set the max number of gears that your application uses - that’s financial control.
+                                <br/>Some gears can be temporary, as your demand is, so you pay only for the time that each gear is running. You can also set the max number of gears that your application uses - that's financial control.
                             </dd>
                         </dl>
                     </div>                    
@@ -360,8 +364,8 @@
 
             <section id="get-in-touch">
                 <article class="wrap">
-                    <h2>Don’t be shy.
-                        <br/>Let’s talk about clouds.
+                    <h2>Don't be shy.
+                        <br/>Let's talk about clouds.
                     </h2>
                     <ul class="talk">
                         <li><a href="mailto:ship@getupcloud.com">ship@getupcloud.com</a></li>
@@ -385,6 +389,7 @@
                             <li><a href="get-in-touch" rel="get-in-touch">get in touch</a></li>
                             <li><a href="https://getup.zendesk.com/home/" rel="support">support</a></li>
                             <li><a href="https://broker.getupcloud.com/console/signin">login</a></li>
+                            <li><a href="" rel="create-account" class="signup">Sign up</a></li>
                         </ul>
                     </div>
                 </nav>
