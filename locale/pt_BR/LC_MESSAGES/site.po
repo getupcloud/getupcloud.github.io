@@ -14,7 +14,7 @@ msgid "Getup - Grow in the cloud"
 msgstr "Getup - Grow in the cloud"
 
 msgid "Getup is a scalable cloud application platform."
-msgstr "Getup is a scalable cloud application platform."
+msgstr "Getup é uma plataforma para hospedagem na nuvem"
 
 msgid "An easy and fast way to build and deploy web apps."
 msgstr "Uma forma fácil e rápida de desenvolver e publicar aplicações web."
@@ -32,13 +32,16 @@ msgid "pricing"
 msgstr "preço"
 
 msgid "get in touch"
-msgstr "entre em contato"
+msgstr "contato"
 
 msgid "support"
 msgstr "suporte"
 
 msgid "login"
 msgstr "login"
+
+msgid "Sign up"
+msgstr "Crie sua conta"
 
 msgid "simple steps to deploy your app"
 msgstr "simples passos para o deploy"
@@ -265,9 +268,6 @@ msgstr "Gear"
 msgid "hour"
 msgstr "hora"
 
-msgid "SIGNUP"
-msgstr "REGISTRE"
-
 msgid "First Step"
 msgstr "PRIMEIRO PASSO"
 
@@ -340,10 +340,10 @@ msgstr "A escalabilidade permite que sua aplicação atenda qualquer volume de a
 msgid "Some gears can be temporary, as your demand is, so you pay only for the time that each gear is running. You can also set the max number of gears that your application uses - that’s financial control."
 msgstr "Os gears criados temporariamente para atender os picos de acesso são cobrados por hora de utilização, você paga apenas pelo período em que ficaram ativos e você determina o número máximo de gears que serão criados - mais controle sobre os gastos."
 
-msgid "Don’t be shy."
+msgid "Don't be shy."
 msgstr "Venha conversar sobre nuvem."
 
-msgid "Let’s talk about clouds."
+msgid "Let's talk about clouds."
 msgstr " "
 
 msgid "Our Infrastructure is based on:"
