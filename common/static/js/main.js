@@ -61,6 +61,7 @@
 
     Getup.menu.bindEvents = function() {
         Getup.menu.elements.links.click(Getup.menu.goTo);
+        $('#what a.signup').click(Getup.menu.goTo);
 
         Getup.elements.languages.click(function() {
             Getup.language.set(this.rel);
@@ -77,7 +78,7 @@
         var top = $('#' + rel).offset().top;
         Getup.menu.scrolling = true;
 
-        Getup.elements.body.animate({scrollTop: top }, {queue: false, duration: '400', easing: 'easeOutQuad', complete: function() {
+        Getup.elements[window.mozRequestAnimationFrame ? 'html' : 'body'].animate({scrollTop: top }, {queue: false, duration: '400', easing: 'easeOutQuad', complete: function() {
             setTimeout(function() {
                 Getup.menu.scrolling = false;
                 Getup.menu.setActive();
@@ -183,7 +184,7 @@
         Getup.sections.pricing.elements.gearPanel = $('#gear .panel');
 
         Getup.sections.pricing.elements.gearInfo = Getup.sections.pricing.elements.content.find('.gear.info');
-        Getup.sections.pricing.elements.signupButton = Getup.sections.pricing.elements.content.find('.signup.button');
+        Getup.sections.pricing.elements.signupButton = $('a.signup');
 
         Getup.sections.pricing.elements.gear = $('#gear');
         Getup.sections.pricing.elements.form = $('#signup');
@@ -193,6 +194,7 @@
         Getup.sections.pricing.elements.inputs.email = $('#email');
         Getup.sections.pricing.elements.inputs.password = $('#password');
         Getup.sections.pricing.elements.inputs.passwordConfirm = $('#password-confirm');
+        Getup.sections.pricing.elements.inputs.couponCode = $('#coupon-code');
         Getup.sections.pricing.elements.postButton = Getup.sections.pricing.elements.form.find('button');
         Getup.sections.pricing.elements.message = $('#message');
         Getup.sections.pricing.elements.success = $('#success');
@@ -200,6 +202,7 @@
         Getup.sections.pricing.elements.checkTerms = $('#check-terms a');
 
         Getup.sections.itemsToScroll.push(Getup.sections.pricing.elements.content);
+        Getup.sections.itemsToScroll.push($("#create-account"));
 
         panels(Getup.sections.pricing.elements.infoPanel);
         panels(Getup.sections.pricing.elements.gearPanel);
@@ -257,7 +260,7 @@
     
     Getup.sections.pricing.signup.show = function() {
         Getup.sections.pricing.gear.hide(false, function() {
-            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight + 200)
+            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight + 300)
             Getup.sections.pricing.elements.form.fadeIn();
         });
     };
@@ -283,6 +286,7 @@
         var email           = Getup.sections.pricing.elements.inputs.email;
         var password        = Getup.sections.pricing.elements.inputs.password;
         var passwordConfirm = Getup.sections.pricing.elements.inputs.passwordConfirm;
+        var couponCode      = Getup.sections.pricing.elements.inputs.couponCode;
         var terms           = Getup.sections.pricing.elements.inputs.terms;
 
         var valid        = true;

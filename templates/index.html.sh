@@ -20,7 +20,7 @@ cat <<EOF
         <meta property="og:description" name="description" content="$(gettext "Getup is a scalable cloud application platform.") $(gettext "An easy and fast way to build and deploy web apps.") $(gettext "You only have to worry about coding your app - we take care of everything else.")">
         <meta property="gc:build_id" content="$BUILD_ID">
 
-        <script>var U = { register: '$REGISTER', language: '$LANGUAGE_ID', debug: $DEBUG };</script>
+        <script>var U = { register: '$SIGNUP', language: '$LANGUAGE_ID', debug: $DEBUG };</script>
         <script src="/static/js/language.js"></script>
         
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
@@ -39,12 +39,13 @@ cat <<EOF
                         <h1 class="sprite">$(gettext "Getup - Grow in the cloud")</h1>
                         <nav>
                             <ul>
-                                <li class="active"><a href="what" rel="what">$(gettext "what")</a></li>
+                                <li><a href="what" rel="what">$(gettext "what")</a></li>
                                 <li><a href="how-it-works" rel="how-it-works">$(gettext "how it works")</a></li>
                                 <li><a href="pricing" rel="pricing">$(gettext "pricing")</a></li>
                                 <li><a href="get-in-touch" rel="get-in-touch">$(gettext "get in touch")</a></li>
                                 <li><a href="$SUPPORT" rel="support">$(gettext "support")</a></li>
                                 <li><a href="$BROKER/console/signin">$(gettext "login")</a></li>
+                                <li class="active"><a href="" rel="create-account" class="signup">$(gettext "Sign up")</a></li>
                             </ul>
 
                             <div class="languages">
@@ -57,6 +58,7 @@ cat <<EOF
                             <br/>$(gettext "You only have to worry about coding your app - we take care of everything else.")
                         </p>
                         <img src="/static/img/astronaut.png">
+                        <a href="" rel="create-account" class="button signup">$(gettext "Sign up")</a>
                     </div>
                 </header>
             </div>
@@ -72,8 +74,8 @@ cat <<EOF
                         <li>$(gettext "Have a beer!")</li>
                     </ul>
                     <div class="details">
-                        <p><strong>$(gettext "Create and deploy web-based applications without the cost and complexity of buying and managing server.")</strong>
-                            <br/>$(gettext "With Getup you pay only for what you use and only for the applications that are using.")
+                        <p><strong>$(gettext "Create and deploy web-based applications without the cost and complexity of buying and managing servers.")</strong>
+                            <br/>$(gettext "With Getup you pay only for what you use and only for the applications that are using it.")
                         </p>
                         <div class="explanation left">
                             <p>$(gettext "With getup you only need to manage:")</p>
@@ -108,7 +110,7 @@ cat <<EOF
                                 <br/>$(gettext "Once deployed, it will take care of all the components, utilization spikes and scalability.")
                                 <br/>
                                 <br/>$(gettext "Servers, storage, load balancer?")
-                                <br/>$(gettext "Forget about this crap. We’ll do all that boring stuff for you!")
+                                <br/>$(gettext "Forget about this crap. We'll do all that boring stuff for you!")
                             </p>
                         </div>
                     </div>
@@ -120,20 +122,20 @@ cat <<EOF
                         </p>
 
                         <h2>$(gettext "Scalability")</h2>
-                        <p>$(gettext "We take care of scale so you don’t need to worry about traffic spikes and scalability complexity.")</p>
+                        <p>$(gettext "We take care of scale so you don't need to worry about traffic spikes and scalability complexity.")</p>
 
                         <h2>$(gettext "SSL")</h2>
                         <p>$(gettext "All applications are up and running on your own URL with shared SSL by default.")</p>
 
                         <h2>$(gettext "Cartridges")</h2>
                         <p>$(gettext "Add components to your app through cartridges like MySQL, PHPMyAdmin, PostgreSQL, Ruby, PHP, Django.")
-                            <br/>$(gettext "You can add a cartridge using our powerful Web Console or CLI ")
+                            <br/>$(gettext "You can add a cartridge using our powerful Web Console or CLI")
                             <br/>$(gettext "$ rhc cartridge add MySQL-5.1 -a AppName.")
                         </p>
                     </div>
                     <div class="details">
                         <img src="/static/img/deploy.png">
-                        <p><strong>$(gettext "Just type ‘git push’ and voilá! Your application is up and running!")</strong></p>
+                        <p><strong>$(gettext "Just type 'git push' and voil&aacute;! Your application is up and running!")</strong></p>
 
                         <h2>$(gettext "Development life-cycle")</h2>
                         <p>$(gettext "Warp-speed and too-damn-easy swapping to work with test, stage or production versions of your app.")</p>
@@ -150,11 +152,11 @@ cat <<EOF
                         </p>
 
                         <h2>$(gettext "Scaling")</h2>
-                        <p>$(gettext "Don’t get caught by traffic spikes. Auto-scaling enables your application to react to them without the pain in the neck of dealing with load balancers, replication and others things.")</p>
+                        <p>$(gettext "Don't get caught by traffic spikes. Auto-scaling enables your application to react to them without the pain in the neck of dealing with load balancers, replication and others things.")</p>
 
                         <h2>$(gettext "Pay as you go")</h2>
                         <p>$(gettext "When you create or scale an application, you pay by hour usage, for what you use and only for the running applications - nothing more, nothing less.")
-                            <br/>$(gettext "It’s more efficient and versatile than traditional computing.")
+                            <br/>$(gettext "It's more efficient and versatile than traditional computing.")
                         </p>
 
                         <h2>$(gettext "Monitor")</h2>
@@ -164,7 +166,7 @@ cat <<EOF
                     </div>
                     <div class="details">
                         <img src="/static/img/security.jpg" />
-                        <p>$(gettext "Getup is built on the Red Hat OpenShift Platform and runs Red Hat Enterprise Linux OS (RHEL), one of the most respected Linux distributions. The security layer is guaranteed by SELinux, which acts as a “firewall” among customers’ applications.")</p>
+                        <p>$(gettext "Getup is built on the Red Hat OpenShift Platform and runs Red Hat Enterprise Linux OS (RHEL), one of the most respected Linux distributions. The security layer is guaranteed by SELinux, which acts as a \"firewall\" among customers' applications.")</p>
 
                         <p><strong>$(gettext "Workload distribution and redundancy")</strong>
                         $(gettext "Our infrastructure is distributed across multiple servers, spread in multiple Amazon AZ (Availability Zones).")<br/>
@@ -172,8 +174,8 @@ cat <<EOF
                     </div>
                     <div class="details">
                         <img src="/static/img/beer.png">
-                        <h2>$(gettext "That’s it.")</h2>
-                        <p>$(gettext "If you don’t care too much for the liquid gold, do whatever you want with your")
+                        <h2>$(gettext "That's it.")</h2>
+                        <p>$(gettext "If you don't care too much for the liquid gold, do whatever you want with your")
                             <br/>$(gettext "spare time. Told you it was six simple steps, right? ;)")
                         </p>
                     </div>
@@ -188,7 +190,7 @@ cat <<EOF
                             <dt>$(gettext "Scaling")</dt>
                             <dd>$(gettext "Included")</dd>
 
-                            <dt>$(gettext "Suport")</dt>
+                            <dt>$(gettext "Support")</dt>
                             <dd><small>$(gettext "Ticket, Forum, Community")</small></dd>
 
                             <dt>$(gettext "SSL")</dt>
@@ -207,8 +209,8 @@ cat <<EOF
                             </dd>
                         </dl>
 
-                        <a href="" class="button signup">$(gettext "SIGNUP")</a>
-
+                        <a href="" class="button signup">$(gettext "Sign up")</a>
+                        <div id="create-account"></div>
                         <form action="" method="post" id="signup">
                             <fieldset>
                                 <h2>$(gettext "First Step")</h2>
@@ -216,29 +218,33 @@ cat <<EOF
 
                                 <label>
                                     <span>$(gettext "What's your name")</span>
-                                    <input type="text" name="name" id="name" />
+                                    <input tabindex="1" type="text" name="name" id="name" />
                                 </label>
                                 <label>
                                     <span>$(gettext "What's your e-mail")</span>
-                                    <input type="text" name="email" id="email" />
+                                    <input tabindex="2" type="text" name="email" id="email" />
                                 </label>
                                 <label>
                                     <span>$(gettext "Password")</span>
-                                    <input type="password" name="password1" id="password" class="small" />
+                                    <input tabindex="3" type="password" name="password1" id="password" class="small" />
                                 </label>
                                 <label>
                                     <span>$(gettext "Confirm password")</span>
-                                    <input type="password" name="password2" id="password-confirm" class="small" />
+                                    <input tabindex="4" type="password" name="password2" id="password-confirm" class="small" />
+                                </label>
+                                <label>
+                                    <span>$(gettext "Promo code (optional)")</span>
+                                    <input tabindex="5" type="text" name="coupon_code" id="coupon-code" />
                                 </label>
 
                                 <label class="checkbox" id="check-terms">
-                                    <span>$(gettext "I read and agree to the") <a href="/termos-de-uso.html">$(gettext "Terms of use")</a></span>
-                                    <input type="checkbox" name="use_terms" />
+                                    <span>$(gettext "I read and agree to the") <a tabindex="7" href="/termos-de-uso.html">$(gettext "Terms of use")</a></span>
+                                    <input tabindex="6" type="checkbox" name="use_terms" />
                                 </label>
 
                                 <p id="message"></p>
 
-                                <button>OK</button>
+                                <button tabindex="8">OK</button>
                             </fieldset>
                         </form>
 
@@ -249,14 +255,16 @@ cat <<EOF
                         </p>
                     </div>
                     <div class="right">
-                        <h2>$(gettext "A few examples of applications running on Getup")</h2>
-                        <p>$(gettext "An application will run in one or more gears and the number will be determined by amount of traffic - users accessing your application.")
-                            <br/> $(gettext "The monthly fee is calculated by the number of gears used and the number of hours that they were active.")
-                            <br/>$(gettext "To help you understand and get an estimated cost, we created a reference chart with 3 types of application.")
-                        </p>
                         <dl class="panel">
-                            <dt class="open">$(gettext "PHP Application")</dt>
+                            <dt class="open">$(gettext "A few examples of applications running on Getup")</dt>
                             <dd class="open">
+                                <p>$(gettext "An application will run in one or more gears and the number will be determined by amount of traffic - users accessing your application.")
+                                    <br/> $(gettext "The monthly fee is calculated by the number of gears used and the number of hours that they were active.")
+                                    <br/>$(gettext "To help you understand and get an estimated cost, we created a reference chart with 3 types of application.")
+                                </p>
+                            </dd>
+                            <dt>$(gettext "PHP Application")</dt>
+                            <dd>
                                 <ul>
                                     <li>
                                         <h3>$(gettext "Just started")</h3>
@@ -343,7 +351,7 @@ cat <<EOF
                             <dd class="open">$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")</dd>
                             <dt>$(gettext "Scalability - What it is and how it works")</dt>
                             <dd>$(gettext "Scalability empowers your application with traffic management automation, extending and reducing the capacity by adding and removing gears on demand.")
-                                <br/>$(gettext "Some gears can be temporary, as your demand is, so you pay only for the time that each gear is running. You can also set the max number of gears that your application uses - that’s financial control.")
+                                <br/>$(gettext "Some gears can be temporary, as your demand is, so you pay only for the time that each gear is running. You can also set the max number of gears that your application uses - that's financial control.")
                             </dd>
                         </dl>
                     </div>                    
@@ -357,8 +365,8 @@ cat <<EOF
 
             <section id="get-in-touch">
                 <article class="wrap">
-                    <h2>$(gettext "Don’t be shy.")
-                        <br/>$(gettext "Let’s talk about clouds.")
+                    <h2>$(gettext "Don't be shy.")
+                        <br/>$(gettext "Let's talk about clouds.")
                     </h2>
                     <ul class="talk">
                         <li><a href="mailto:ship@getupcloud.com">ship@getupcloud.com</a></li>
@@ -382,6 +390,7 @@ cat <<EOF
                             <li><a href="get-in-touch" rel="get-in-touch">$(gettext "get in touch")</a></li>
                             <li><a href="$SUPPORT" rel="support">$(gettext "support")</a></li>
                             <li><a href="$BROKER/console/signin">$(gettext "login")</a></li>
+                            <li><a href="" rel="create-account" class="signup">$(gettext "Sign up")</a></li>
                         </ul>
                     </div>
                 </nav>

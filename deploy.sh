@@ -24,6 +24,11 @@ for opt; do
 	shift
 done
 
+if ! git branch --no-color | grep -q '* source'; then
+	echo Must deploy only from branch source
+	exit 1
+fi
+
 [ -n "$BUILD_ID" ] || BUILD_ID=build-`date +%Y%m%d%H%M%S`
 
 if git tag|grep -q "^$BUILD_ID$"; then
@@ -62,4 +67,4 @@ git push origin master
 git push origin "$BUILD_ID"
 
 echo You are now on branch:
-git branch
+git checkout source

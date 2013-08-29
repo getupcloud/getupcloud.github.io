@@ -2,12 +2,15 @@
 set -e
 
 # site config
-export BROKER=https://broker.getupcloud.com
-export SITE=http://getupcloud.com/
-export REGISTER=https://broker.getupcloud.com/getup/account/signup/
-export SUPPORT=https://getup.zendesk.com/home/
+export BROKER=${BROKER:-https://broker.getupcloud.com}
+export SIGNUP=${SIGNUP:-$BROKER/getup/account/signup/}
+export SITE=${SITE:-http://getupcloud.com/}
+export SUPPORT=${SUPPORT:-https://getup.zendesk.com/home/}
 export DEBUG=0
 export BUILD_ID=${BUILD_ID:-testing-`date +%Y%m%d%H%M%S`}
+export TEXTDOMAINDIR=$PWD/locale
+export TEXTDOMAIN=site
+export GETTEXT_PATH=$PWD/gettext
 
 # languages we support
 LANGS=(
@@ -17,10 +20,6 @@ LANGS=(
 
 # what is the main site language
 ROOT_LANG=pt_BR
-
-# gettext config
-export TEXTDOMAINDIR=$PWD/locale
-export TEXTDOMAIN=site
 
 echo
 echo Creating initial build...
@@ -42,7 +41,7 @@ echo Building from template...
 cat <<EOF
   BROKER=$BROKER
   SITE=$SITE
-  REGISTER=$REGISTER
+  SIGNUP=$SIGNUP
   DEBUG=$DEBUG
   LANGS=${LANGS[*]}
 
@@ -50,12 +49,20 @@ EOF
 
 cd templates
 
+function gettext()
+{
+	$GETTEXT_PATH "$@"
+	#echo -n "GETTEXT($LANGUAGE): $@ -> " >&2
+	#$GETTEXT_PATH $@ >&2
+	#echo
+}
+
 # templates are simple shell scripts ending in .sh
-find -type f -name '*.sh' | while read source; do
+find . -type f -name '*.sh' | while read source; do
 	for lang in ${LANGS[*]}; do
 		# format language name to use in templates
 		# ex: pt_BR -> pt-br
-		export LANGUAGE_ID=`echo $lang|tr -t _[A-Z] -[a-z]`
+		export LANGUAGE_ID=`echo $lang|tr _[A-Z] -[a-z]`
 
 		# find out where this file lives inside ../build/
 		[ $lang == $ROOT_LANG ] && unset LANG_DIR || LANG_DIR=${LANGUAGE_ID%-*}/
@@ -70,7 +77,8 @@ find -type f -name '*.sh' | while read source; do
 		mkdir -p ${target%/*}
 
 		# real work
-		LANGUAGE=$lang source $source > $target
+		export LANGUAGE=$lang
+		source $source > $target
 	done
 done
 
