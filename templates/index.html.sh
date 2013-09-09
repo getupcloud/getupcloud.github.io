@@ -1,8 +1,8 @@
-
+cat <<EOF
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<title>Getup - Grow in the cloud</title>
+<title>$(gettext "Getup - Grow in the cloud")</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,11 +10,11 @@
 <meta name="viewport" content="width=device-width">
 
 <meta property="fb:app_id" content="360523914066509">
-<meta property="og:title" content="Getup - Grow in the cloud">
+<meta property="og:title" content="$(gettext "Getup - Grow in the cloud")">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://getupcloud.com">
 <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
-<meta property="og:description" name="description" content="Getup é uma plataforma para hospedagem na nuvem Uma forma fácil e rápida de desenvolver e publicar aplicações web. Você se preocupa com o código - nós cuidamos do resto.">
+<meta property="og:description" name="description" content="$gettext "GETUP IS A SCALABLE CLOUD APPLICATION PLATFORM." $(gettext "An easy and fast way to build and deploy web apps.") $(gettext "You only have to worry about coding your app - we take care of everything else.")">
 <meta property="gc:build_id" content="testing-20130821134219">
 
 <script>var U = { register: 'https://broker.getupcloud.com/getup/account/signup/', language: 'pt-br', debug: 0 };</script>
@@ -40,14 +40,14 @@
 
         <div class="fix">
 
-            <a href="index.php"><img src="static/img/logo_getup.png" class="logo" border="0" /></a>
+            <a href="index.html"><img src="static/img/logo_getup.png" class="logo" border="0" /></a>
 
             <nav>
 
-                <a href="#comofunciona" class="advantages-link">Como funciona</a>
-                <a href="#preco" class="price-link">Preço</a>
-                <a href="#contato" class="contact-link">Contato</a>
-                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;">Suporte</a>
+                <a href="#comofunciona" class="advantages-link">$(gettext "how it works")</a>
+                <a href="#preco" class="price-link">$(gettext "pricing")</a>
+                <a href="#contato" class="contact-link">$(gettext "get in touch")</a>
+                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;">$(gettext "support")</a>
                 <a href="#blog" class="blog" style="color: #232323;">Blog</a>
 
             </nav><!-- menu -->
@@ -58,7 +58,7 @@
 
                 <div class="for-ipad">
 
-                    <a href="https://getup.zendesk.com/home/" rel="support" style="color: #232323;">Suporte</a>
+                    <a href="https://getup.zendesk.com/home/" rel="support" style="color: #232323;">$(gettext "support")</a>
                     <a href="#blog" style="color: #232323;">Blog</a>
 
                 </div><!-- for ipad -->
@@ -74,9 +74,9 @@
 
                 <div class="register">
 
-                    <a class="enter fl" href="#entrar">Entrar</a>
+                    <a class="enter fl" href="#entrar">$(gettext "login")</a>
 
-                    <a class="btn create-your-account fl" href="#criesuaconta">Crie sua conta</a>
+                    <a class="btn create-your-account fl" href="#criesuaconta">$(gettext "Sign up")</a>
 
                 </div><!-- register -->
 
@@ -93,17 +93,17 @@
                 <li>
                     <div class="each-image">
 
-                        <img src="../common/static/img/slider_001.jpg" border="0" />
+                        <img src="/static/img/slider_001.jpg" border="0" />
 
                         <div class="caption">
 
-                            <h1>GETUP É UMA<br class="mobile-space"> PLATAFORMA<br class="desktop-space"> PARA<br class="mobile-space"> HOSPEDAGEM NA NUVEM</h1>
+                            <h1>$(gettext "GETUP IS A")<br class="mobile-space"> $(gettext "SCALABLE CLOUD")<br class="desktop-space"> $(gettext "APPLICATION") <br class="mobile-space"> $(gettext "PLATFORM")</h1>
                             <br>
-                            <h2>UMA FORMA FÁCIL E RÁPIDA DE DESENVOLVER E PUBLICAR APLICAÇÕES WEB.<div class="mobile-hidden"><br class="dekstop-space">VOCÊ SE PREOCUPA COM O CÓDIGO - NÓS CUIDAMOS DO RESTO.</div></h2>
+                            <h2>$(gettext "An easy and fast way to build and deploy web apps."<div class="mobile-hidden"><br class="dekstop-space">$(gettext "You only have to worry about coding your app - we take care of everything else."</div></h2>
 
                             <div class="buttons">
-                                <a class="btn compare">Compare Valores</a>
-                                <a class="btn create-your-account">Crie sua conta</a>
+                                <a class="btn compare">$(gettext "Compare benefits and price")</a>
+                                <a class="btn create-your-account">$(gettext "Sign up")</a>
                             </div><!-- buttons -->
 
                         </div><!-- caption -->
@@ -114,24 +114,44 @@
                 <li>
                     <div class="each-image">
 
-                        <img src="../common/static/img/slider_001.jpg" border="0" />
+                        <img src="/static/img/slider_001.jpg" border="0" />
 
                         <div class="caption">
 
-                            <h1>GETUP É UMA PLATAFORMA<br class="desktop-space"> PARA HOSPEDAGEM NA NUVEM</h1>
+                            <h1>$(gettext "AUTO SCALE")<br class="mobile-space"><br class="desktop-space"><br class="mobile-space"></h1>
                             <br>
-                            <h2>UMA FORMA FÁCIL E RÁPIDA DE DESENVOLVER E PUBLICAR APLICAÇÕES WEB.<br>VOCÊ SE PREOCUPA COM O CÓDIGO - NÓS CUIDAMOS DO RESTO.</h2>
+                            <h2>$(gettext "Don’t get caught by traffic spikes. Deploy and scale to millions of users."</h2>
 
                             <div class="buttons">
-                                <a class="btn compare">Compare Valores</a>
-                                <a class="btn create-your-account">Crie sua conta</a>
+                                <a class="btn compare">$(gettext "Compare benefits and price")</a>
+                                <a class="btn create-your-account">$(gettext "Sign up")</a>
                             </div><!-- buttons -->
 
                         </div><!-- caption -->
 
                     </div><!-- each image -->
                 </li>
+                
+                <li>
+                    <div class="each-image">
 
+                        <img src="/static/img/slider_001.jpg" border="0" />
+
+                        <div class="caption">
+
+                            <h1>$(gettext "GROW IN THE CLOUD")<br class="mobile-space"><br class="desktop-space"><br class="mobile-space"></h1>
+                            <br>
+                            <h2>$(gettext "Compute power when you need it most."</h2>
+
+                            <div class="buttons">
+                                <a class="btn compare">$(gettext "Compare benefits and price")</a>
+                                <a class="btn create-your-account">$(gettext "Sign up")</a>
+                            </div><!-- buttons -->
+
+                        </div><!-- caption -->
+
+                    </div><!-- each image -->
+                </li>
             </ul><!-- list -->
         </div><!-- flex slider -->
     </div><!-- flex container -->
@@ -140,29 +160,29 @@
 
         <div class="advantages-section">
 
-            <h1 class="title">Publique sua aplicação em minutos</h1>
-            <h2 class="sub-title">Crie e publique aplicações web sem o custo e a complexidade de comprar e administrar servidores.<br>É mais rápido e barato que subir servidores na Amazon.</h2>
+            <h1 class="title">$(gettext "Deploy your application in minutes"</h1>
+            <h2 class="sub-title">$(gettext "Create and deploy web applications without the cost and complexity of buying and managing servers."<br>$(gettext "It's faster and cheaper than create AWS instances."</h2>
 
             <br>
 
             <div class="each first first-ipad">
 
-                <img src="static/img/arrow.png" class="each-arrow" border="0" />
+                <img src="/static/img/arrow.png" class="each-arrow" border="0" />
 
                 <div class="image">
                     <center>
-                        <span class="advantages-section-application images no-text">Aplicação</span>
+                        <span class="advantages-section-application images no-text">$(gettext "Application")/span>
                     </center>
                 </div><!-- image -->
 
-                <h1 class="each-title">Crie sua aplicação</h1>
+                <h1 class="each-title">$(gettext "Create your application"</h1>
                 <br>
-                <h2 class="each-sub-title">Escolha a tecnologia da<br class="mobile-space"><br class="ipad-space"> aplicação:<br>PHP, Ruby, Python, Node.js</h2>
-                <h3 class="each-see-more see-application" id="application">Veja mais</h3>
+                <h2 class="each-sub-title">$(gettext "Choose the technology"<br class="mobile-space"><br class="ipad-space">$(gettext "of your app -")<br>$(gettext "PHP, Ruby, Python, Node.js")</h2>
+                <h3 class="each-see-more see-application" id="application">$(gettext "See More")</h3>
 
                 <div class="more-application">
 
-                    <h1 style="margin: 20px;">More about how to application...</h1>
+                    <h1 style="margin: 20px;">SSL</h1>
 
                 </div><!-- more about application -->
 
@@ -170,22 +190,22 @@
 
             <div class="each">
 
-                <img src="static/img/arrow.png" class="each-arrow" border="0" />
+                <img src="/static/img/arrow.png" class="each-arrow" border="0" />
 
                 <div class="image">
                     <center>
-                        <span class="advantages-section-publish images no-text">Publique</span>
+                        <span class="advantages-section-publish images no-text">$(gettext "Deploy")</span>
                     </cemter>
                 </div><!-- image -->
 
-                <h1 class="each-title">Publique</h1>
+                <h1 class="each-title">$(gettext "Deploy")</h1>
                 <br>
-                <h2 class="each-sub-title">Digite ‘git push’ e voilá! <br class="mobile-space"><br class="ipad-space"> Sua aplicação<br class="desktop-space"> está up<br class="ipad-space"> and<br class="mobile-space"> running!</h2>
-                <h3 class="each-see-more see-publish" id="publish">Veja mais</h3>
+                <h2 class="each-sub-title">$(gettext "Just type 'git push' and voil&aacute;!"<br class="mobile-space"><br class="ipad-space"> $(gettext "Your application")<br class="desktop-space"> $(gettext "is up")<br class="ipad-space"> $(gettext "and")<br class="mobile-space"> $(gettext "running!")</h2>
+                <h3 class="each-see-more see-application" id="application">$(gettext "See More")</h3>
 
                 <div class="more-publish">
 
-                    <h1 style="margin: 20px;">More about how to publish...</h1>
+                    <h1 style="margin: 20px;">$(gettext "Development life-cycle")</h1>
 
                 </div><!-- more about publish -->
 
@@ -195,18 +215,18 @@
 
                 <div class="image">
                     <center>
-                        <span class="advantages-section-climb images no-text">Escale</span>
+                        <span class="advantages-section-climb images no-text">$(gettext "Scale")</span>
                     </cemter>
                 </div><!-- image -->
 
-                <h1 class="each-title">Escale</h1>
+                <h1 class="each-title">$(gettext "Scale")</h1>
                 <br>
-                <h2 class="each-sub-title">Com a escalabilidade<br class="mobile-space"><br class="ipad-space"> automática<br class="desktop-space"> você não precisa se<br class="mobile-space"> preocupar com<br class="desktop-space"> crescimento<span class="hidden-work">, mesmo que seja do dia<br class="desktop-space"> para a noite.</span></h2>
-                <h3 class="each-see-more see-climb" id="climb">Veja mais</h3>
+                <h2 class="each-sub-title">$(gettext "With auto-scale")<br class="mobile-space"><br class="ipad-space"><br class="desktop-space"> $(gettext "you don't need")<br class="mobile-space"> $(gettext "to worry about")<br class="desktop-space"> $(gettext "growth,")<span class="hidden-work"><br class="desktop-space"> $(gettext "don't get caught by traffic spikes.")</span></h2>
+                <h3 class="each-see-more see-application" id="application">$(gettext "See More")</h3>
 
                 <div class="more-climb">
 
-                    <h1 style="margin: 20px;">More about how to climb...</h1>
+                    <h1 style="margin: 20px;">Gears</h1>
 
                 </div><!-- more about climb -->
 
@@ -220,16 +240,16 @@
 
         <div class="price-section">
 
-            <h1 class="title">Preços e benefícios</h1>
+            <h1 class="title">$(gettext "Pricing and benefits")</h1>
 
             <div class="text-mobile">
 
                 <p class="roboto_14c">
-                    A Getup é a melhor opção de hospedagem para quem não quer perder tempo configurando servidores.
+                    $(gettext "Getup is the best hosting option for those who do not want to waste time setting up servers.")
                     <br><br>
-                    Uma aplicação poderá rodar usando um ou mais gears e a quantidade será determinada pelo volume de acessos. 
+                    $(gettext "An application can run using one or more gears and the amount will be determined by the volume of access.")
                     <br><br>
-                    Já o valor mensal é calculado através do número de gears utilizados e número de horas em que ficaram ativos.
+                    $(gettext "The monthly cost is calculated by the number of gears used and the number of hours that each gear were active.")
                 </p>
 
             </div><!-- text-->
@@ -237,45 +257,45 @@
             <div class="left">
 
                 <dl class="first">
-                    <dt>Escalabilidade</dt>
-                    <dd>Incluso</dd>
+                    <dt>$(gettext "Auto Scaling")</dt>
+                    <dd>$(gettext "included"</dd>
 
                     <span class="separator"></span>
 
-                    <dt>Suporte</dt>
-                    <dd>Ticket, Fórum, Comunidade</dd>
+                    <dt>$(gettext "Support")</dt>
+                    <dd>$(gettext "Ticket, Forum, Community")</dd>
 
                     <span class="separator"></span>
 
                     <dt>SSL</dt>
-                    <dd>SSL compartilhado incluso</dd>
+                    <dd>$(gettext "Shared SSL included")</dd>
 
                     <span class="separator"></span>
 
-                    <dt>Storage adicional</dt>
-                    <dd>R$ 1,87/Gb/mês</dd>
+                    <dt>$(gettext "Additional Storage") </dt>
+                    <dd>$(gettext "US$ 0,935/GB/Month")</dd>
 
                     <span class="separator"></span>
 
-                    <dt>Requisições de API</dt>
-                    <dd>ilimitadas</dd>
+                    <dt>$(gettext "API requests")</dt>
+                    <dd>$(gettext "Unlimited")</dd>
                 </dl>
 
                 <dl class="second">
                     <dt><span class="fl">GEAR</span> <a class="info-gear"><img src="static/img/info-gear.png" class="fl" border="0" /></a></dt>
-                    <dd>R$ 0.156/hora</dd>
+                    <dd>$(gettext "US$ 0,074/hour")</dd>
 
                     <span class="separator"></span>
 
-                    <dt>CUSTO MENSAL</dt>
-                    <dd>R$ ~113,88</dd>
+                    <dt>$(gettext "Monthly cost")</dt>
+                    <dd>$(gettext "US$ ~54,23")</dd>
                 </dl>
 
                 <div class="info-gear-show">
 
                     <h1 class="roboto_14v">Gear</h1>
                     <br>
-                    <p class="roboto_14c">Gear é um contâiner com uma quantidade específica de recursos e permite aos usuários rodarem suas aplicações. Pense no gear como um servidor na nuvem ;) O Gear possui 512Mb RAM e 1GB de disco. Se uma aplicação precisar de mais recursos, ela poderá usar múltiplos gears, o que chamamos de escalabilidade.</p>
+                    <p class="roboto_14c">$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")</p>
 
                 </div><!-- show info gear -->
 
@@ -284,11 +304,11 @@
             <div class="text">
 
                 <p class="roboto_14c">
-                    A Getup é a melhor opção de hospedagem para quem não quer perder tempo configurando servidores.
+                    $(gettext "Getup is the best hosting option for those who do not want to waste time setting up servers.")
                     <br><br>
-                    Uma aplicação poderá rodar usando um ou mais gears e a quantidade será determinada pelo volume de acessos. 
+                    $(gettext "An application can run using one or more gears and the amount will be determined by the volume of access.")
                     <br><br>
-                    Já o valor mensal é calculado através do número de gears utilizados e número de horas em que ficaram ativos.
+                    $(gettext "The monthly cost is calculated by the number of gears used and the number of hours that each gear were active.")
                 </p>
 
             </div><!-- text-->
@@ -302,11 +322,11 @@
                     <div class="info">
 
                         <div class="title-info">
-                            <h1 class="roboto_14v">Comparativo com outros serviços</h1>
+                            <h1 class="roboto_14v">$(gettext "Compare with other services")</h1>
                         </div>
                         <br>
                         <div class="description">
-                            <h2 class="roboto_14c">Compare Getup com outros serviços durante um mês com um Pico de acesso como exemplo. <b><u>Confira.</u></b></h2>
+                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <b><u>$(gettext "Check it out.")</u></b></h2>
                         </div>
 
                     </div><!-- info -->
@@ -327,13 +347,13 @@
 
                 <div class="introduction">
 
-                    <h1 class="roboto_20v">Na Getup você paga apenas<br class="mobile-space"> pelo que usou <br class="ipad-space">e ainda<br class="mobile-space"> economiza seu tempo.</h1>
+                    <h1 class="roboto_20v">$(gettext "With Getup you pay only")<br class="mobile-space"> $(gettext "for what you use") <br class="ipad-space"><br class="mobile-space"> $(gettext "and saves time.")</h1>
 
                 </div><!-- introduction -->
 
                 <div class="register">
 
-                    <a class="btn create-account fl" href="#criesuaconta">Crie sua conta</a>
+                    <a class="btn create-account fl" href="#criesuaconta">$(gettext "Sign up")</a>
 
                 </div><!-- register -->
 
@@ -343,32 +363,32 @@
 
                     <form action="" method="post" id="signup">
                         <fieldset>
-                            <h2>PRIMEIRO PASSO</h2>
+                            <h2>$(gettext  "First Step")</h2>
                             <input type="hidden" name="lang" id="language" value="pt-br">
 
                             <label>
-                            <span class="blur">Qual seu nome</span>
+                            <span class="blur">$(gettext "What's your name")</span>
                             <input tabindex="1" type="text" name="name" id="name" />
                             </label>
                             <label>
-                            <span class="blur">Qual seu e-mail</span>
+                            <span class="blur">$(gettext "What's your e-mail")</span>
                             <input tabindex="2" type="text" name="email" id="email" />
                             </label>
                             <label>
-                            <span class="blur">Senha</span>
+                            <span class="blur">$(gettext "Password")</span>
                             <input tabindex="3" type="password" name="password1" id="password" class="small" />
                             </label>
                             <label>
-                            <span class="blur">Confirme a senha</span>
+                            <span class="blur">$(gettext "Confirm password")</span>
                             <input tabindex="4" type="password" name="password2" id="password-confirm" class="small" />
                             </label>
                             <label>
-                            <span class="blur">Código promocional (opcional)</span>
+                            <span class="blur">$(gettext "Promo code (optional)")</span>
                             <input tabindex="5" type="text" name="coupon_code" id="coupon-code" />
                             </label>
 
                             <label class="checkbox" id="check-terms">
-                            <span class="accept-terms">Li e aceito os  <a tabindex="7" href="/termos-de-uso.html">Termos de uso</a></span>
+                            <span class="accept-terms">$(gettext "I read and agree to the")  <a tabindex="7" href="/termos-de-uso.html">$(gettext "Terms of use")</a></span>
                             <input tabindex="6" type="checkbox" name="use_terms" />
                             </label>
 
@@ -390,7 +410,7 @@
 
         <article class="get-in-touch-section">
 
-            <h1 class="title">Venha conversar<br class="mobile-space"> sobre nuvens.</h1>
+            <h1 class="title">$(gettext "Let's talk")<br class="mobile-space"> $(gettext "about clouds")</h1>
 
             <br>
             <br>
@@ -442,7 +462,7 @@
     <footer class="primary">
         <article class="footer-section">
             <div class="infrastructure">
-                <p>Our Infrastructure is based on:</p>
+                <p>$(gettext "Our Infrastructure is based on:")</p>
                 <br>
                 <ul>
                     <li class="amazon">Amazon</li>
@@ -466,11 +486,11 @@
 
                 <nav class="nav-footer roboto_14c">
 
-                    <a href="#comofunciona" class="advantages-link first-child">Como Funciona</a>
-                    <a href="#valores">Valores</a>
-                    <a href="#contato">Contato</a>
+                    <a href="#comofunciona" class="advantages-link first-child">$(gettext "how it works")</a>
+                    <a href="#valores">$(gettext "pricing")</a>
+                    <a href="#contato">$(gettext "get in touch")</a>
                     <a href="#blog">Blog</a>
-                    <a href="https://getup.zendesk.com/home/" rel="support">Suporte</a>
+                    <a href="https://getup.zendesk.com/home/" rel="support">$(gettext "support")</a>
 
                 </nav><!-- nav footer -->
 
@@ -480,10 +500,10 @@
 
                 <nav class="terms">
 
-                    <a href="/termos-de-uso.html">Termos de uso</a>
-                    <a href="/politica-de-privacidade.html">Política de privacidade</a>
-                    <a href="/politica-de-utilizacao-aceitavel.html">Política de utilização aceitável - PUA</a>
-                    <a href="/politica-de-suporte.html">Política de suporte</a>
+                    <a href="/termos-de-uso.html">$(gettext "Terms of use")</a>
+                    <a href="/politica-de-privacidade.html">$(gettext "Privacy policy")</a>
+                    <a href="/politica-de-utilizacao-aceitavel.html">$(gettext "Acceptable use policy")</a>
+                    <a href="/politica-de-suporte.html">$(gettext "Support policy")</a>
 
                 </nav><!-- terms -->
 
@@ -670,3 +690,4 @@ $(function(){
 </script-->
 
 </html>
+EOF
