@@ -99,7 +99,7 @@ cat <<EOF
 
                             <h1>$(gettext "GETUP IS A")<br class="mobile-space"> $(gettext "SCALABLE CLOUD")<br class="desktop-space"> $(gettext "APPLICATION") <br class="mobile-space"> $(gettext "PLATFORM")</h1>
                             <br>
-                            <h2>$(gettext "An easy and fast way to build and deploy web apps."<div class="mobile-hidden"><br class="dekstop-space">$(gettext "You only have to worry about coding your app - we take care of everything else."</div></h2>
+                            <h2>$(gettext "An easy and fast way to build and deploy web apps.)"<div class="mobile-hidden"><br class="dekstop-space">$(gettext "You only have to worry about coding your app - we take care of everything else.)"</div></h2>
 
                             <div class="buttons">
                                 <a class="btn compare">$(gettext "Compare benefits and price")</a>
@@ -120,7 +120,7 @@ cat <<EOF
 
                             <h1>$(gettext "AUTO SCALE")<br class="mobile-space"><br class="desktop-space"><br class="mobile-space"></h1>
                             <br>
-                            <h2>$(gettext "Don’t get caught by traffic spikes. Deploy and scale to millions of users."</h2>
+                            <h2>$(gettext "Don’t get caught by traffic spikes. Deploy and scale to millions of users.")</h2>
 
                             <div class="buttons">
                                 <a class="btn compare">$(gettext "Compare benefits and price")</a>
@@ -141,7 +141,7 @@ cat <<EOF
 
                             <h1>$(gettext "GROW IN THE CLOUD")<br class="mobile-space"><br class="desktop-space"><br class="mobile-space"></h1>
                             <br>
-                            <h2>$(gettext "Compute power when you need it most."</h2>
+                            <h2>$(gettext "Compute power when you need it most.")</h2>
 
                             <div class="buttons">
                                 <a class="btn compare">$(gettext "Compare benefits and price")</a>
@@ -160,8 +160,8 @@ cat <<EOF
 
         <div class="advantages-section">
 
-            <h1 class="title">$(gettext "Deploy your application in minutes"</h1>
-            <h2 class="sub-title">$(gettext "Create and deploy web applications without the cost and complexity of buying and managing servers."<br>$(gettext "It's faster and cheaper than create AWS instances."</h2>
+            <h1 class="title">$(gettext "Deploy your application in minutes")</h1>
+            <h2 class="sub-title">$(gettext "Create and deploy web applications without the cost and complexity of buying and managing servers.")<br>$(gettext "It's faster and cheaper than create AWS instances.")</h2>
 
             <br>
 
@@ -175,9 +175,9 @@ cat <<EOF
                     </center>
                 </div><!-- image -->
 
-                <h1 class="each-title">$(gettext "Create your application"</h1>
+                <h1 class="each-title">$(gettext "Create your application")</h1>
                 <br>
-                <h2 class="each-sub-title">$(gettext "Choose the technology"<br class="mobile-space"><br class="ipad-space">$(gettext "of your app -")<br>$(gettext "PHP, Ruby, Python, Node.js")</h2>
+                <h2 class="each-sub-title">$(gettext "Choose the technology")<br class="mobile-space"><br class="ipad-space">$(gettext "of your app -")<br>$(gettext "PHP, Ruby, Python, Node.js")</h2>
                 <h3 class="each-see-more see-application" id="application">$(gettext "See More")</h3>
 
                 <div class="more-application">
@@ -200,7 +200,7 @@ cat <<EOF
 
                 <h1 class="each-title">$(gettext "Deploy")</h1>
                 <br>
-                <h2 class="each-sub-title">$(gettext "Just type 'git push' and voil&aacute;!"<br class="mobile-space"><br class="ipad-space"> $(gettext "Your application")<br class="desktop-space"> $(gettext "is up")<br class="ipad-space"> $(gettext "and")<br class="mobile-space"> $(gettext "running!")</h2>
+                <h2 class="each-sub-title">$(gettext "Just type 'git push' and voil&aacute;!")<br class="mobile-space"><br class="ipad-space"> $(gettext "Your application")<br class="desktop-space"> $(gettext "is up")<br class="ipad-space"> $(gettext "and")<br class="mobile-space"> $(gettext "running!")</h2>
                 <h3 class="each-see-more see-application" id="application">$(gettext "See More")</h3>
 
                 <div class="more-publish">
@@ -258,7 +258,7 @@ cat <<EOF
 
                 <dl class="first">
                     <dt>$(gettext "Auto Scaling")</dt>
-                    <dd>$(gettext "included"</dd>
+                    <dd>$(gettext "included")</dd>
 
                     <span class="separator"></span>
 
