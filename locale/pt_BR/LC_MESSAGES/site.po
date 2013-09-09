@@ -286,8 +286,8 @@ msgstr "Esqueça servidores, rede, firewall ou VM's."
 msgid "Scaling"
 msgstr "Escalabilidade"
 
-msgid "Don't get caught by traffic spikes. Auto-scaling enables your application to react to them without the pain in the neck of dealing with load balancers, replication and others things."
-msgstr "Não seja pego pelos picos de tráfego. A escalabilidade automática permite que sua aplicação reaja aos picos sem a dor de cabeça de ter de lidar com load balancer, replicação e outros detalhes."
+msgid "Don’t get caught by traffic spikes. Deploy and scale to millions of users."
+msgstr "Não seja pego pelos picos de acesso. Publique e escale para milhões de usuários."
 
 msgid "Pay as you go"
 msgstr "Pay as you go"

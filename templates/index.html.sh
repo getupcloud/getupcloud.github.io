@@ -240,7 +240,7 @@ cat <<EOF
 
         <div class="price-section">
 
-            <h1 class="title">$(gettext "Pricing and benefits")</h1>
+            <h1 class="title">$(gettext "Pricing and Benefits")</h1>
 
             <div class="text-mobile">
 
