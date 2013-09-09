@@ -171,13 +171,13 @@ cat <<EOF
 
                 <div class="image">
                     <center>
-                        <span class="advantages-section-application images no-text">$(gettext "Application")/span>
+                        <span class="advantages-section-application images no-text">$(gettext "Application")</span>
                     </center>
                 </div><!-- image -->
 
                 <h1 class="each-title">$(gettext "Create your application")</h1>
                 <br>
-                <h2 class="each-sub-title">$(gettext "Choose the technology")<br class="mobile-space"><br class="ipad-space">$(gettext "of your app -")<br>$(gettext "PHP, Ruby, Python, Node.js")</h2>
+                <h2 class="each-sub-title">$(gettext "Choose the technology")<br class="mobile-space"><br class="ipad-space">$(gettext "of your app -")<br>PHP, Ruby, Python, Node.js</h2>
                 <h3 class="each-see-more see-application" id="application">$(gettext "See More")</h3>
 
                 <div class="more-application">
@@ -410,7 +410,7 @@ cat <<EOF
 
         <article class="get-in-touch-section">
 
-            <h1 class="title">$(gettext "Let's talk")<br class="mobile-space"> $(gettext "about clouds")</h1>
+            <h1 class="title">$(gettext "Let's talk")<br class="mobile-space"> $(gettext "about clouds.")</h1>
 
             <br>
             <br>

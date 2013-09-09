@@ -43,14 +43,29 @@ msgstr "Compare os benefícios e valores"
 msgid "Deploy your application in minutes"
 msgstr "Publique sua aplicação em minutos"
 
+msgid "Compare with other services"
+msgstr "Comparativo com outros serviços"
+
 msgid "Application"
 msgstr "Aplicação"
 
-msgid "See more"
+msgid "See More"
 msgstr "Veja mais"
 
-msgid "With auto-scale you don't need to worry about growth, don't get caught by traffic spikes."
-msgstr "Com a escalabilidade é automática você não precisa se preocupar com crescimento, mesmo que aconteça do dia para a noite."
+msgid "With auto-scale"
+msgstr "Com a escalabilidade automática"
+
+msgid "you don't need"
+msgstr "você não precisa"
+
+msgid "to worry about"
+msgstr "se preocupar"
+
+msgid "growth,"
+msgstr "com o crescimento,"
+
+msgid "don't get caught by traffic spikes."
+msgstr "mesmo que aconteça do dia para a noite."
 
 
 msgid "Getup is the best hosting option for those who do not want to waste time setting up servers."
@@ -117,8 +132,17 @@ msgstr "Segurança"
 msgid "Have a beer!"
 msgstr "Pegue sua cerveja"
 
-msgid "Create and deploy web-based applications without the cost and complexity of buying and managing servers."
+msgid "Create and deploy web applications without the cost and complexity of buying and managing servers."
 msgstr "Crie e publique aplicações web sem o custo e a complexidade de comprar e administrar servidores."
+
+msgid "Create your application"
+msgstr "Crie sua aplicação"
+
+msgid "Choose the technology "
+msgstr "Escolha a tecnologia "
+
+msgid "of your app -"
+msgstr "de sua aplicação -"
 
 msgid "With Getup you pay only"
 msgstr "Na Getup voce paga"
@@ -223,8 +247,20 @@ msgstr "Você pode adicionar um cartridge usando o Console WEB ou CLI"
 msgid "$ rhc cartridge add MySQL-5.1 -a AppName."
 msgstr "$ rhc cartridge add MySQL-5.1 -a AppName"
 
-msgid "Just type 'git push' and voil&aacute;! Your application is up and running!"
-msgstr "Digite 'git push' e voil&aacute;! Sua aplicação está up and running!"
+msgid "Just type 'git push' and voil&aacute;!"
+msgstr "Digite 'git push' e voil&aacute;!"
+
+msgid "Your application"
+msgstr "Sua aplicação"
+
+msgid "is up"
+msgstr "está up"
+
+msgid "and"
+msgstr "and"
+
+msgid "running!"
+msgstr "running!"
 
 msgid "Development life-cycle"
 msgstr "Ciclo de vida do desenvolvimento"
@@ -421,6 +457,9 @@ msgstr "R$"
 
 msgid "Monthly cost"
 msgstr "Custo Mensal"
+
+msgid "Pricing and Benefits"
+msgstr "Preços e benefícios"
 
 
 msgid "US$ ~54,23"
