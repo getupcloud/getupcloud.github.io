@@ -14,7 +14,7 @@ cat <<EOF
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://getupcloud.com">
 <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
-<meta property="og:description" name="description" content="$gettext "GETUP IS A SCALABLE CLOUD APPLICATION PLATFORM.)" $(gettext "An easy and fast way to build and deploy web apps.") $(gettext "You only have to worry about coding your app - we take care of everything else.")">
+<meta property="og:description" name="description" content="$(gettext "GETUP IS A SCALABLE CLOUD APPLICATION PLATFORM.)" $(gettext "An easy and fast way to build and deploy web apps.") $(gettext "You only have to worry about coding your app - we take care of everything else.")">
 <meta property="gc:build_id" content="testing-20130821134219">
 
 <script>var U = { register: 'https://broker.getupcloud.com/getup/account/signup/', language: 'pt-br', debug: 0 };</script>
@@ -99,7 +99,7 @@ cat <<EOF
 
                             <h1>$(gettext "GETUP IS A")<br class="mobile-space"> $(gettext "SCALABLE CLOUD")<br class="desktop-space"> $(gettext "APPLICATION") <br class="mobile-space"> $(gettext "PLATFORM")</h1>
                             <br>
-                            <h2>$(gettext "An easy and fast way to build and deploy web apps.)"<div class="mobile-hidden"><br class="dekstop-space">$(gettext "You only have to worry about coding your app - we take care of everything else.)"</div></h2>
+                            <h2>$(gettext "An easy and fast way to build and deploy web apps.")<div class="mobile-hidden"><br class="dekstop-space">$(gettext "You only have to worry about coding your app - we take care of everything else.")</div></h2>
 
                             <div class="buttons">
                                 <a class="btn compare">$(gettext "Compare benefits and price")</a>
