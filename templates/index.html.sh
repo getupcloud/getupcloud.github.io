@@ -14,7 +14,7 @@ cat <<EOF
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://getupcloud.com">
 <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
-<meta property="og:description" name="description" content="$gettext "GETUP IS A SCALABLE CLOUD APPLICATION PLATFORM." $(gettext "An easy and fast way to build and deploy web apps.") $(gettext "You only have to worry about coding your app - we take care of everything else.")">
+<meta property="og:description" name="description" content="$gettext "GETUP IS A SCALABLE CLOUD APPLICATION PLATFORM.)" $(gettext "An easy and fast way to build and deploy web apps.") $(gettext "You only have to worry about coding your app - we take care of everything else.")">
 <meta property="gc:build_id" content="testing-20130821134219">
 
 <script>var U = { register: 'https://broker.getupcloud.com/getup/account/signup/', language: 'pt-br', debug: 0 };</script>
