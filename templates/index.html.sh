@@ -41,7 +41,7 @@ cat <<EOF
 
         <div class="fix">
 
-            <a href="index.html"><img src="static/img/logo_getup.png" class="logo" border="0" /></a>
+            <a href="index.html"><img src="/static/img/logo_getup.png" class="logo" border="0" /></a>
 
             <nav>
 
@@ -49,7 +49,7 @@ cat <<EOF
                 <a href="#preco" class="price-link">$(gettext "pricing")</a>
                 <a href="#contato" class="contact-link">$(gettext "get in touch")</a>
                 <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;">$(gettext "support")</a>
-                <a href="#blog" class="blog" style="color: #232323;">Blog</a>
+                <a href="#blog" class="blog" style="color: #232323;">blog</a>
 
             </nav><!-- menu -->
 
@@ -60,7 +60,7 @@ cat <<EOF
                 <div class="for-ipad">
 
                     <a href="https://getup.zendesk.com/home/" rel="support" style="color: #232323;">$(gettext "support")</a>
-                    <a href="#blog" style="color: #232323;">Blog</a>
+                    <a href="#blog" style="color: #232323;">blog</a>
 
                 </div><!-- for ipad -->
 
@@ -103,7 +103,7 @@ cat <<EOF
                             <h2>$(gettext "An easy and fast way to build and deploy web apps.")<div class="mobile-hidden"><br class="dekstop-space">$(gettext "You only have to worry about coding your app - we take care of everything else.")</div></h2>
 
                             <div class="buttons">
-                                <a class="btn compare">$(gettext "Compare benefits and price")</a>
+                                <a class="btn compare">$(gettext "Compare benefits")</a>
                                 <a class="btn create-your-account">$(gettext "Sign up")</a>
                             </div><!-- buttons -->
 
@@ -121,10 +121,10 @@ cat <<EOF
 
                             <h1>$(gettext "AUTO SCALE")<br class="mobile-space"><br class="desktop-space"><br class="mobile-space"></h1>
                             <br>
-                            <h2>$(gettext "Don’t get caught by traffic spikes. Deploy and scale to millions of users.")</h2>
+                            <h2>$(gettext "Don't get caught by traffic spikes. Deploy and scale to millions of users.")</h2>
 
                             <div class="buttons">
-                                <a class="btn compare">$(gettext "Compare benefits and price")</a>
+                                <a class="btn compare">$(gettext "Compare benefits")</a>
                                 <a class="btn create-your-account">$(gettext "Sign up")</a>
                             </div><!-- buttons -->
 
@@ -145,7 +145,7 @@ cat <<EOF
                             <h2>$(gettext "Compute power when you need it most.")</h2>
 
                             <div class="buttons">
-                                <a class="btn compare">$(gettext "Compare benefits and price")</a>
+                                <a class="btn compare">$(gettext "Compare benefits")</a>
                                 <a class="btn create-your-account">$(gettext "Sign up")</a>
                             </div><!-- buttons -->
 
@@ -283,7 +283,7 @@ cat <<EOF
                 </dl>
 
                 <dl class="second">
-                    <dt><span class="fl">GEAR</span> <a class="info-gear"><img src="static/img/info-gear.png" class="fl" border="0" /></a></dt>
+                    <dt><span class="fl">GEAR</span> <a class="info-gear"><img src="/static/img/info-gear.png" class="fl" border="0" /></a></dt>
                     <dd>$(gettext "US$ 0,074/hour")</dd>
 
                     <span class="separator"></span>
@@ -318,7 +318,7 @@ cat <<EOF
 
                 <div class="comparative">
 
-                    <img src="static/img/prices-1.png" border="0" />
+                    <img src="/static/img/prices-1.png" border="0" />
 
                     <div class="info">
 
@@ -490,7 +490,7 @@ cat <<EOF
                     <a href="#comofunciona" class="advantages-link first-child">$(gettext "how it works")</a>
                     <a href="#valores">$(gettext "pricing")</a>
                     <a href="#contato">$(gettext "get in touch")</a>
-                    <a href="#blog">Blog</a>
+                    <a href="#blog">blog</a>
                     <a href="https://getup.zendesk.com/home/" rel="support">$(gettext "support")</a>
 
                 </nav><!-- nav footer -->
