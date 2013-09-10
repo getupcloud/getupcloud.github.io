@@ -1,0 +1,425 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th {margin: 0;padding: 0;border: 0;outline: 0;font-weight: inherit;font-style: inherit;font-size: 100%;font-family: inherit; }
+address{font-style: normal}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+body { line-height: 1; zoom: 1; font-family: 'Roboto'; }
+ol, ul, li {list-style: none;}
+/* tables still need 'cellspacing="0"' in the markup */
+/*
+caption, th, td {text-align: left;font-weight: normal;}*/
+blockquote:before, blockquote:after,q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+img { display: block; }
+strong { font-weight: bold; }
+nav, section, article, header, footer, time {display: block;}
+.clear {clear: both;}
+
+::-moz-selection {
+background: #b3d4fc;
+text-shadow: none;
+}
+
+::selection {
+background: #b3d4fc;
+text-shadow: none;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ostrich medium';
+    src: url('http://getupcloud.com/static/fonts/ostrich-regular-webfont.eot');
+    src: url('http://getupcloud.com/static/fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('http://getupcloud.com/static/fonts/ostrich-regular-webfont.woff') format('woff'),
+    url('http://getupcloud.com/static/fonts/ostrich-regular-webfont.ttf') format('truetype'),
+    url('http://getupcloud.com/static/fonts/ostrich-regular-webfont.svg#ostrich_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Default */
+
+.desktop-space { display: block !important; }
+.mobile-space, .ipad-space { display: none; }
+
+.first-child { margin-left: 2px !important; }
+
+sup { font-size: 18px !important; }
+
+header { background: #ff4c4d; width: 100%; height: 122px; font-size: 15px; position: fixed; top: 0; z-index: 9999; }
+header .fix { width: 942px; margin: 0 auto; }
+header .logo { margin-top: 44px; float: left; }
+header nav { float: left; margin-top: 54px; margin-left: 73px; }
+header nav a { font-weight: 300; color: #fff; text-decoration: none; }
+header nav a.advantages-link { margin-right: 47px; }
+header nav a.price-link { margin-right: 37px; }
+header nav a.contact-link { margin-right: 39px; }
+header nav a.support { margin-right: 33px; }
+header nav a.blog {}
+a.button-mobile { background: url(../img/button-mobile.png) no-repeat; cursor: pointer; width: 33px; height: 30px; margin: 20px 0 0 0; position: absolute; right: 0; display: none; }
+
+.fl { float: left; }
+.fr { float: right; }
+.clear { clear: both; }
+
+.btn { border-radius: 5px; }
+.create-your-account, .create-account { width: 142px; height: 47px; background: #de3527; line-height: 47px; font-weight: 300; text-align: center; color: #fff; text-decoration: none; }
+
+.right-side { margin-top: 15px; }
+
+.for-ipad { display: none; float: left; margin-left: 20px; }
+.for-ipad a { margin-right: 10px; font-weight: 300; text-decoration: none; }
+
+.languages { margin-bottom: 8px; }
+.languages a { font-size: 12px; font-weight: 400; color: #fff; text-decoration: none; }
+.register { float: left; }
+.register .enter { font-weight: 300; margin: 16px 19px 0 0; color: #fff; text-decoration: none; }
+
+.roboto_14v { font-family: 'Roboto'; font-size: 14px; line-height: 19px; font-weight: 400; color: #eb3e33; }
+.roboto_14v a { color: #eb3e33; text-decoration: none; }
+
+.roboto_20v { font-family: 'Roboto'; font-size: 20px; line-height: 25px; font-weight: 300; color: #eb3e33; }
+.roboto_20v a { color: #eb3e33; text-decoration: none; }
+
+.roboto_14c { font-family: 'Roboto'; font-size: 14px; line-height: 19px; font-weight: 300; color: #666666; }
+.roboto_14c a { color: #666666; text-decoration: none; }
+
+/* Slider */
+
+.each-image { position: relative; }
+/* .caption { position: absolute; top: 90px; left: 20.5%; }*/
+.flexslider .slides .caption h1 { font-size: 62px; font-weight: 400; color: #232323; }
+.flexslider .slides .caption { font-size: 17px; font-weight: 400; color: #333333; }
+.flexslider .slides .caption .buttons { margin-top: 45px; float: left; }
+.flexslider .slides .caption .buttons .compare { cursor: pointer; width: 142px; height: 47px; margin-right: 11px; background: #282828; line-height: 47px; font-weight: 300; text-align: center; color: #fff; text-decoration: none; float: left; }
+.flexslider .slides .caption .buttons .create-your-account { cursor: pointer; width: 122px; height: 47px; background: #de3527; line-height: 47px; font-weight: 300; text-align: center; color: #fff; text-decoration: none; float: left; }
+
+/* Advantages */
+
+.advantages { position: relative; width: 100%; overflow: hidden; }
+.advantages-section { width: 942px; height: 100%; margin: 97px auto; overflow: hidden; }
+.advantages-section .title { color: #eb3e33; }
+.title { font-size: 55px; margin-left: 2px; font-weight: 300; float: left; width: 100%; }
+.sub-title { color: #666666; font-size: 15px; line-height: 20px; font-weight: 400; float: left; width: 100%; margin: 25px 0 25px 6px; }
+
+.no-text { text-indent: -9999px; }
+.images { background: url(../img/images.png) 0 0 no-repeat; display: block; }
+.advantages-section-application { width: 60px; height: 53px; }
+.advantages-section-publish { background-position: -67px 0; width: 83px; height: 43px; }
+.advantages-section-climb { background-position: -157px 0; width: 60px; height: 56px; }
+
+.advantages .each { position: relative; width: 295px; min-height: 286px; margin-left: 17px; margin-bottom: 15px; border-radius: 10px; border: 2px solid #eaeaea; float: left; text-align: center; }
+.advantages .first { margin-left: 0px; }
+.advantages .each .each-arrow { position: absolute; top: -8px; right: -60px; z-index: 99; }
+.advantages .each .image { height: 60px; margin-top: 50px; margin-bottom: 30px; }
+.advantages .each .each-title { font-size: 22px; font-weight: normal; color: #2d2d2d; }
+.advantages .each .each-sub-title { font-size: 14px; line-height: 19px; font-weight: 400; color: #585858; }
+.advantages .each .each-see-more { cursor: pointer; position: absolute; background: url(../img/bg-seemore.png) no-repeat; width: 111px; padding-top: 15px; top: 265px; left: 32%; display: block; z-index: 99; font-size: 14px; font-weight: 400; color: #737373; } 
+
+.advantages-section .each .more-application { display: none; width: 299px; float: left; }
+.advantages-section .each .more-publish { display: none; width: 299px; float: left; }
+.advantages-section .each .more-climb { display: none; width: 299px; float: left; }
+
+/* Price */
+
+.price { position: relative; width: 100%; background: url(../img/bg-price.png) repeat #e8e8e8; overflow: hidden; }
+.price-section { width: 942px; height: 100%; margin: 97px auto; overflow: hidden; }
+.price-section .title { color: #eb3e33; }
+.price-section .left { width: 420px; float: left; }
+.price-section .left dl.first { margin: 45px 0 0 21px; overflow: hidden; font-weight: 300; }
+.price-section .left dl.first dt { width: 190px; margin-bottom: 10px; float: left; color: #eb3e33; }
+.price-section .left dl.first dd { width: 190px; float: left; color: #666666; }
+.price-section .left dl.first .separator { width: 100%; height: 1px; margin: 10px 0; float: left; background: #8fe8e5; display: block; }
+
+.price-section .left dl.second { width: 100%; float: left; margin-top: 26px; margin-left: 2px; background: #82d3d1; border-radius: 5px; }
+.price-section .left dl.second dt { width: 225px; float: left; padding: 20px 20px 15px 20px; font-size: 14px; color: #fff;  }
+.price-section .left dl.second dd { padding: 20px 20px 15px 20px; font-size: 18px; color: #fff; }
+.price-section .left dl.second .separator { width: 375px; height: 1px; margin-left: 20px; background: #8fe8e5; display: block; }
+
+.price-section .left dl.second .info-gear { cursor: pointer; }
+.price-section .left dl.second .info-gear img { margin-top: -4px; margin-left: 10px; }
+.price-section .left .info-gear-show { margin-top: 10px; float: left; background: #fff; border-radius: 5px; padding: 10px; display: none; }
+
+.price-section .text-mobile { display: none; }
+.price-section .text, .price-section .text-mobile, .price-section .right { width: 480px; float: left; margin: 45px 0 0 39px; }
+.price-section .right .comparative { width: 100%; margin: 48px 0 0 0; float: left; border-radius: 5px; border: 2px solid #fff; }
+.price-section .right .comparative img { float: left; margin: 21px 0; }
+.price-section .right .comparative .info { width: 340px; float: left; margin: 21px 0 10px 20px; }
+
+/* Interval */
+
+.interval { position: relative; width: 100%; overflow: hidden; }
+.interval-section { width: 942px; height: 100%; margin: 35px auto; overflow: hidden; }
+.interval-section .about { width: 650px; margin: 0px auto; } 
+.interval-section .about .introduction { float: left; width: 60%; text-align: right; }
+.interval-section .about .register { margin-left: 46px; float: left; }
+
+/* Get in touch */
+
+.get-in-touch { position: relative; width: 100%; background: #ef3e36; overflow: hidden; }
+.get-in-touch-section { width: 942px; height: 100%; margin: 97px auto; overflow: hidden; }
+.get-in-touch-section .title { color: #fff; }
+.get-in-touch-section ul.talk { float: left; margin: 50px 0 0 0; }
+.get-in-touch-section ul.talk li { font-family: 'Roboto'; font-size: 24px; font-weight: 100; color: #fff; min-height: 35px; list-style: none; background: url(../img/li-talk.png) no-repeat; padding-left: 37px; }
+.get-in-touch-section ul.talk li a { text-decoration: none; color: #fff; }
+
+.separator-talk { width: 280px; height: 1px; margin-top: 50px; background: #ef665b; display: none; }
+
+.get-in-touch-section .right { float: left; margin: 50px 0 0 180px; }
+.get-in-touch-section .right ul.contact { float: left; }
+.get-in-touch-section .right ul.contact li { float: left; list-style: none; background: url(../img/li-contact.png) no-repeat; padding-left: 40px; color: #fff; font-weight: 300; font-size: 14px; line-height: 19px; }
+.get-in-touch-section .right ul.contact .contact-title { font-family: 'Roboto'; font-size: 24px; font-weight: 100; }
+
+/* Footer primary */
+
+footer.primary { position: relative; overflow: hidden; width: 100%; height: 100%; background-color: #3D3D3D; background: -webkit-linear-gradient(top, #3D3D3D, #2E2E2E); background: -moz-linear-gradient(top, #3D3D3D, #2E2E2E); background: -ms-linear-gradient(top, #3D3D3D, #2E2E2E); background: -o-linear-gradient(top, #3D3D3D, #2E2E2E); }
+footer.primary .footer-section { width: 942px; height: 100%; margin: 97px auto; overflow: hidden; }
+footer.primary .footer-section .infrastructure { float: left; margin-left: 23px; width: 215px; }
+footer.primary .footer-section .infrastructure p { font-family: 'Roboto'; font-size: 16px; font-weight: 300; color: #666666; }
+footer.primary .footer-section .infrastructure ul {}
+footer.primary .footer-section .infrastructure ul li { float: left; background: url(../img/infrastructure.png) no-repeat; text-indent: -9999px; }
+footer.primary .footer-section .infrastructure ul li.amazon { width: 112px; height: 43px; margin: 10px 44px 0 0; background-position: 0 !important; }
+footer.primary .footer-section .infrastructure ul li.openshift { width: 59px; height: 59px; background-position: -158px 0; }
+footer.primary .footer-section .mark { float: left; margin-left: 80px; }
+footer.primary .footer-section .mark strong { display: block; font-family: 'ostrich medium'; line-height: 110px; font-size: 110px; color: #323232; font-weight: normal; }
+
+/* Footer secondary */
+
+footer.secondary { position: relative; overflow: hidden; width: 100%; border-top: 1px #f1f1f1; }
+footer.secondary .footer-section { width: 942px; height: 100%; margin: 0 auto; overflow: hidden; }
+footer.secondary .footer-section .left { float: left; }
+footer.secondary .footer-section .left .nav-footer a { line-height: 40px; margin-left: 20px; font-weight: 400; }
+footer.secondary .footer-section .right { float: right; line-height: 40px; }
+footer.secondary .footer-section .right .terms { font-size: 11px; color: #999999; }
+footer.secondary .footer-section .right .terms a { text-decoration: none; color: #999999; margin-left: 20px; }
+
+/* Site antigo */
+
+.interval-section .about .open-create-your-account { position: relative; float: left; margin-top: 30px; display: none; }
+
+.interval-section .about .open-create-your-account form { margin: 10px auto 0; width: 314px; }
+.interval-section .about .open-create-your-account form fieldset { }
+
+.interval-section .about .open-create-your-account form h2 { font-family: 'ostrich medium'; font-size: 48px; margin: 0; text-align: center; }
+.interval-section .about .open-create-your-account form p { font-family: 'Roboto'; font-size: 13px; margin: 0 0 10px 6px; text-align: center; width: 300px; color: #f23f2c; }
+
+.interval-section .about .open-create-your-account form label { display: block; float: left; height: 42px; margin: 10px 5px 0 5px; position: relative; }
+.interval-section .about .open-create-your-account form label span { font-family: 'Roboto'; font-size: 15px; left: 10px; line-height: 43px; position: absolute; top: 0; }
+.interval-section .about .open-create-your-account form label input { border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 300px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+.interval-section .about .open-create-your-account form label input.small { width: 145px; }
+
+.interval-section .about .open-create-your-account form label.checkbox { width: 100%; height: 36px; }
+.interval-section .about .open-create-your-account form label.checkbox span { cursor: pointer; display: inline-block; left: 20px; top: -2px; line-height: 24px; }
+.interval-section .about .open-create-your-account form label.checkbox span a { text-decoration: underline; }
+.interval-section .about .open-create-your-account form label.checkbox input { width: auto; height: 24px; }
+
+.interval-section .about .open-create-your-account form label.error span,
+.interval-section .about .open-create-your-account form label.error a { color: #f23f2c; }
+
+.interval-section .about .open-create-your-account form label.error input { color: #f23f2c; border-color: #f23f2c; }
+
+.interval-section .about .open-create-your-account form button { cursor: pointer; background: #333; border: none; color: #fff; display: block; font-family: 'ostrich medium'; font-size: 38px; line-height: 49px; height: 49px; margin: 0 auto; padding: 0; position: relative; top: 0px; text-align: center; width: 130px; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
+.interval-section .about .open-create-your-account form button.loading { text-indent: -5000em; }
+
+/* Ipad */
+@media (max-width: 768px) {
+
+/* Default */
+
+.title { font-size: 40px !important; margin: 0 20px; }
+.sub-title { margin-left: 20px; }
+header .fix { width: 100%; }
+header .logo { margin-left: 20px; }
+.right-side { margin-right: 20px; }
+.for-ipad { display: block; }
+.support, .blog { display: none; }
+.ipad-space { display: block; }
+.mobile-space { display: none !important; }
+.desktop-space { display: none !important; }
+.hidden-work { display: none !important; }
+
+/* Slider */
+
+.flexslider img { height: 360px; }
+.flexslider .slides { height: 360px !important; }
+.flexslider .slides .caption h1 { font-size: 44px !important; }
+.flexslider .slides .caption h2 { font-size: 13px !important; }
+.flexslider .slides .caption { width: 768px !important; padding-left: 20px; bottom: 290px !important; }
+
+.flex-direction-nav .flex-next {
+position: absolute;
+right: 46% !important;
+}
+
+.flex-direction-nav .flex-prev {
+position: absolute;
+left: 46% !important;
+}
+
+/* Advantages */
+
+.advantages .each { width: 225px; }
+.advantages .first-ipad { margin-left: 17px !important; }
+
+/* Price */
+
+.price-section .right { float: none; margin-top: 20px; margin-left: 20px; }
+.price-section .right .text { float: right; }
+.price-section .left dl.second { margin-left: 20px; }
+.price-section .right .comparative { margin: 40px 0 0 0; }
+.price-section .text { width: 245px; }
+.price-section .left .info-gear-show { margin-left: 20px; }
+
+.price-section .left dl.first { margin-left: 41px; font-size: 14px; }
+.price-section .left dl.first dt { width: 187px; }
+.price-section .left dl.first dd { width: 192px; }
+
+/* Interval */
+
+.interval-section { width: 768px; }
+.interval-section .about { width: 100%; }
+.interval-section .about .introduction { width: 55%; text-align: right; }
+
+.interval-section .about .open-create-your-account { margin-left: 20px; }
+
+/* Get in touch */
+
+.get-in-touch-section .right ul.contact li { float: none; margin-bottom: 50px; }
+.get-in-touch-section ul.talk { margin-left: 20px; }
+.get-in-touch-section .right { margin-left: 110px; }
+
+/* Footer primary */
+
+footer.primary .footer-section .infrastructure { margin-left: 40px; }
+footer.primary .footer-section .mark { display: none; }
+
+/* Footer secondary */
+
+footer.secondary .footer-section .left, footer.secondary .footer-section .right { float: none; }
+footer.secondary .footer-section .left nav a.first-child { margin-left: 20px !important; }
+
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+
+/* Default */
+
+body { font-size: 12px; }
+.title { font-size: 24px !important; line-height: 29px; width: 280px; margin: 0 20px; }
+.sub-title { width: 280px; margin: 20px 0 10px 20px; }
+footer.secondary .footer-section .left .nav-footer a.first-child { margin-left: 13px !important; }
+.mobile-space { display: block !important; }
+.ipad-space { display: none !important; }
+.desktop-space { display: none !important; }
+.support, .blog { display: inline-block !important; }
+.mobile-hidden { display: none !important; }
+
+/* Header */
+
+header { height: 70px; }
+header .logo { margin-top: 20px; margin-left: 20px; }
+header nav { width: 100%; height: auto; margin: 0; padding-left: 20px; display: none; }
+header nav a { line-height: 50px; }
+header .fix { width: 100%; }
+header .button-mobile { margin-right: 20px; display: block; }
+.right-side { display: none; }
+
+/* Slider */
+
+.flexslider { margin: 70px 0 0 0 !important; height: 320px; }
+.flexslider img { height: 320px; }
+.flexslider .slides { height: 320px !important; }
+.flexslider .slides .caption h1 { font-size: 24px !important; }
+.flexslider .slides .caption h2 { font-size: 12px !important; }
+.flexslider .slides .caption { width: 280px !important; padding-left: 20px; bottom: 290px !important; }
+
+.flex-direction-nav .flex-next {
+position: absolute;
+right: 41% !important;
+}
+
+.flex-direction-nav .flex-prev {
+position: absolute;
+left: 41% !important;
+}
+
+.flex-direction-nav { bottom: 24px; }
+
+/* Advantages */
+
+.advantages-section { width: 100%; }
+.advantages .each { width: 280px !important; margin-top: 15px; margin-left: 20px; }
+.advantages .each .each-arrow { display: none; }
+
+/* Price */
+
+.price-section .left dl.first { width: 280px; font-size: 12px; font-weight: 400; margin-left: 20px; }
+.price-section .left dl.first dt { width: 130px; }
+.price-section .left dl.first dd { width: 150px; }
+
+.price-section { width: 100%; }
+.price-section .left { width: 100%; }
+.price-section .left dl.first .separator { width: 100%; }
+.price-section .left dl.second { width: 280px; margin: 30px 20px 0 20px; }
+.price-section .left dl.second dt { width: 117px; font-size: 13px; font-weight: 400; }
+.price-section .left dl.second dd { font-size: 16px; font-weight: 400; }
+.price-section .left dl.second .separator { width: 250px; }
+.price-section .left .info-gear-show { width: 260px; margin: 20px 20px 0 20px; }
+
+.price-section .right { width: 80%; margin: 30px 0 0 20px; }
+
+.price-section .text-mobile { width: 280px; margin-left: 20px; display: block; }
+.price-section .text { display: none; }
+
+.price-section .right .comparative { width: 275px; margin: 20px 0 0 0; }
+.price-section .right .comparative .info { width: 275px; float: none; margin-left: 10px; }
+.price-section .right .comparative .title-info { width: 130px; float: left; margin-top: 10px; margin-left: 40px; }
+.price-section .right .comparative .description { width: 256px; clear: both; }
+.register { float: none; }
+
+/* Interval */
+
+.interval-section { width: 320px; padding: 0 20px; }
+.interval-section .about { width: 320px; }
+.interval-section .about .register { margin: 20px auto; width: 142px; float: none; overflow: hidden; padding-top: 20px; }
+.interval-section .about .introduction { width: 100%; text-align: center; }
+
+.interval-section .about .open-create-your-account { margin-left: 0; }
+
+/* Get in Touch */
+
+.get-in-touch-section { padding-left: 20px; padding-right: 20px; }
+.get-in-touch-section ul.talk { float: none; width: 280px !important; margin-left: 0 !important; }
+.get-in-touch-section .right { margin: 0; float: none; }
+.get-in-touch-section .right ul.contact li { margin: 50px 0 50px 0; float: none; }
+.get-in-touch-section .right ul.contact li:last-child { margin: 50px 0 0 0; float: none; }
+.get-in-touch-section .title { margin: 0; }
+
+.separator-talk { display: block; }
+
+/* Footer primary */
+
+footer.primary .footer-section { width: 100%; }
+footer.primary .footer-section .infrastructure { float: none; margin: 0 auto; }
+footer.primary .footer-section .mark { display: none; }
+
+/* Footer secondary */
+
+footer.secondary { min-height: 145px; }
+footer.secondary .footer-section .left { padding: 0 5px; }
+footer.secondary .footer-section .left .nav-footer a { margin-left: 23px; }
+
+footer.secondary .footer-section .right { float: none; clear: left; }
+footer.secondary .footer-section .right .terms { width: 400px; margin-bottom: 20px; }
+footer.secondary .footer-section .right .terms a { display: block; height: 25px; }
+footer.secondary .footer-section .right .terms a.first-child { margin-left: 20px !important; }
+
+/* Fonts */
+
+.roboto_14c { font-size: 13px !important; }
+
+}
