@@ -45,7 +45,7 @@ cat <<EOF
 
             <nav>
 
-                <a href="#comofunciona" class="advantages-link">$(gettext "How it works")</a>
+                <a href="#comofunciona" class="advantages-link">$(gettext "How it Works")</a>
                 <a href="#preco" class="price-link">$(gettext "Pricing")</a>
                 <a href="#contato" class="contact-link">$(gettext "Get in Touch")</a>
                 <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;">$(gettext "Support")</a>
@@ -67,7 +67,7 @@ cat <<EOF
                 <div class="languages fr">
 
                     <a href="" rel="pt-br" class="pt">PT</a>
-                    <a href="/en/" rel="en-us" class="en" style="color: #232323;">EN</a>
+                    <a href="/index_en.html" rel="en-us" class="en" style="color: #232323;">EN</a>
 
                 </div><!-- languages -->
 
@@ -75,7 +75,7 @@ cat <<EOF
 
                 <div class="register">
 
-                    <a class="enter fl" href="#entrar">$(gettext "Login")</a>
+                    <a class="enter fl" href="#entrar">$(gettext "Log In")</a>
 
                     <a class="btn create-your-account fl" href="#criesuaconta">$(gettext "Sign Up")</a>
 
@@ -104,7 +104,7 @@ cat <<EOF
 
                             <div class="buttons">
                                 <a class="btn compare">$(gettext "Compare benefits")</a>
-                                <a class="btn create-your-account">$(gettext "Sign up")</a>
+                                <a class="btn create-your-account">$(gettext "Sign Up")</a>
                             </div><!-- buttons -->
 
                         </div><!-- caption -->
@@ -125,7 +125,7 @@ cat <<EOF
 
                             <div class="buttons">
                                 <a class="btn compare">$(gettext "Compare benefits")</a>
-                                <a class="btn create-your-account">$(gettext "Sign up")</a>
+                                <a class="btn create-your-account">$(gettext "Sign Up")</a>
                             </div><!-- buttons -->
 
                         </div><!-- caption -->
@@ -146,7 +146,7 @@ cat <<EOF
 
                             <div class="buttons">
                                 <a class="btn compare">$(gettext "Compare benefits")</a>
-                                <a class="btn create-your-account">$(gettext "Sign up")</a>
+                                <a class="btn create-your-account">$(gettext "Sign Up")</a>
                             </div><!-- buttons -->
 
                         </div><!-- caption -->
@@ -354,7 +354,7 @@ cat <<EOF
 
                 <div class="register">
 
-                    <a class="btn create-account fl" href="#criesuaconta">$(gettext "Sign up")</a>
+                    <a class="btn create-account fl" href="#criesuaconta">$(gettext "Sign Up")</a>
 
                 </div><!-- register -->
 
