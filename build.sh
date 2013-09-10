@@ -93,11 +93,19 @@ find . -type f -name '*.sh' | while read source; do
 		export LANGUAGE_ID=`echo $lang|tr _[A-Z] -[a-z]`
 
 		# find out where this file lives inside ../build/
-		[ $lang == $ROOT_LANG ] && unset LANG_DIR || LANG_DIR=${LANGUAGE_ID%-*}/
+		[ $lang == $ROOT_LANG ] && unset LANG_SUFFIX || LANG_SUFFIX=_${LANGUAGE_ID%-*}
 
 		# cosmetics
-		target=$LANG_DIR${source#./}
+		target=${source#./}
 		target=../build/${target%.sh}
+
+		# prepend lang suffix
+		# ex: index.html -> index_lang.html
+		if [ -n "$LANG_SUFFIX" ]; then
+			base="${target%.*}"
+			ext="${target##*.}"
+			target="${base}${LANG_SUFFIX}.${ext}"
+		fi
 		echo " $source -> $target ($LANGUAGE_ID)"
 
 		# create prefix dir
