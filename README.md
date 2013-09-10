@@ -40,8 +40,10 @@ Olá, eu sou o usuario mateus.
 Estou no diretório /home/mateus/git/getupcloud.github.io.
 ```
 
-Para visualizar as alterações (a.k.a. testar o site) execute o comando `./build.sh` e acesse a url que aparece na tela.
-Use a opção `--server` para iniciar um servidor HTTP do novo build, escutando na porta 9090 (padrão). Se desejar utilizar
+Para visualizar as alterações (a.k.a. testar o site) execute o comando `./build.sh`. Os arquivos finais do site são gerados
+no diretório `build/`.
+
+Use a opção `--server` para iniciar um servidor HTTP do novo build, escutando na porta 9090 (padrão). Se deseja utilizar
 outra porta, passe-a como argumento:
 
 ```./build.sh --server=8080```
