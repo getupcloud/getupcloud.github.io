@@ -1,5 +1,5 @@
 #!/bin/bash
-set -xe
+set -e
 
 # site config
 export BROKER=${BROKER:-https://broker.getupcloud.com}

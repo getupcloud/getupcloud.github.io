@@ -1,5 +1,5 @@
 #!/bin/bash
-set -xe
+set -e
 
 usage()
 {
@@ -56,7 +56,7 @@ rm -rf .build
 mv build .build
 rm -rf *  # wont remove .build
 mv -v .build/* .
-exit 0
+find . -name '*.swp' -exec rm -f {} \;
 rmdir .build
 
 # add latests build and tag it
