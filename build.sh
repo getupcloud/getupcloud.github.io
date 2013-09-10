@@ -1,6 +1,34 @@
 #!/bin/bash
 set -e
 
+usage()
+{
+	echo "Usage: $1 [--server[=PORT]]"
+	echo "  --server[=PORT]     Start serving built files on port [PORT] (default=9090)."
+}
+
+
+PORT=9090
+SERVER=0
+
+for opt; do
+	case $opt in
+		-h|--help) usage; exit 0 ;;
+		--server*)
+			SERVER=1
+			_port=`echo $opt|sed -ne 's/--server=\(.*\)/\1/p'`
+			[ -n "$_port" ] && PORT=$_port
+			;;
+		*)
+			if [ -n "$BUILD_ID" ]; then
+				usage
+				exit 1
+			fi
+			BUILD_ID="$1"
+	esac
+	shift
+done
+
 # site config
 export BROKER=${BROKER:-https://broker.getupcloud.com}
 export SIGNUP=${SIGNUP:-$BROKER/getup/account/signup/}
@@ -89,3 +117,6 @@ if [ -n "$TEMP_FILES" ]; then
 	rm -vf $TEMP_FILES
 fi
 
+if [ $SERVER -eq 1 ]; then
+	( cd ../build && python -m SimpleHTTPServer $PORT )
+fi

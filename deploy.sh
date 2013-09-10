@@ -3,17 +3,17 @@ set -e
 
 usage()
 {
-	echo "Usage: $1 [-b] [BUILD_ID]"
-	echo "  -b          Build site before deploy"
-	echo "  BUILD_ID    Git tag used."
+	echo "Usage: $1 [--dont-build] [BUILD_ID]"
+	echo "  --dont-build       Dont build."
+	echo "  BUILD_ID           Git tag used."
 }
 
-DO_BUILD=0
+DONT_BUILD=0
 export BUILD_ID=
 for opt; do
 	case $opt in
-		-h) usage; exit 0 ;;
-		-b) DO_BUILD=1 ;;
+		-h|--help) usage; exit 0 ;;
+		--dont-build) DONT_BUILD=1 ;;
 		*)
 			if [ -n "$BUILD_ID" ]; then
 				usage
@@ -36,7 +36,7 @@ if git tag|grep -q "^$BUILD_ID$"; then
 	exit 1
 fi
 
-if [ "$DO_BUILD" == 1 ]; then
+if [ "$DONT_BUILD" == 0 ]; then
 	./build.sh
 fi
 
@@ -54,7 +54,7 @@ git push origin "source-$BUILD_ID"
 git checkout master
 rm -rf .build
 mv build .build
-rm -rf *  # wont remove .build
+rm -rf *  # dont remove .build
 mv -v .build/* .
 find . -name '*.swp' -exec rm -f {} \;
 rmdir .build
