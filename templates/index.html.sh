@@ -45,11 +45,11 @@ cat <<EOF
 
             <nav>
 
-                <a href="#comofunciona" class="advantages-link">$(gettext "how it works")</a>
-                <a href="#preco" class="price-link">$(gettext "pricing")</a>
-                <a href="#contato" class="contact-link">$(gettext "get in touch")</a>
-                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;">$(gettext "support")</a>
-                <a href="#blog" class="blog" style="color: #232323;">blog</a>
+                <a href="#comofunciona" class="advantages-link">$(gettext "How it works")</a>
+                <a href="#preco" class="price-link">$(gettext "Pricing")</a>
+                <a href="#contato" class="contact-link">$(gettext "Get in Touch")</a>
+                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;">$(gettext "Support")</a>
+                <a href="#blog" class="blog" style="color: #232323;">Blog</a>
 
             </nav><!-- menu -->
 
@@ -60,7 +60,7 @@ cat <<EOF
                 <div class="for-ipad">
 
                     <a href="https://getup.zendesk.com/home/" rel="support" style="color: #232323;">$(gettext "support")</a>
-                    <a href="#blog" style="color: #232323;">blog</a>
+                    <a href="#blog" style="color: #232323;">Blog</a>
 
                 </div><!-- for ipad -->
 
@@ -75,9 +75,9 @@ cat <<EOF
 
                 <div class="register">
 
-                    <a class="enter fl" href="#entrar">$(gettext "login")</a>
+                    <a class="enter fl" href="#entrar">$(gettext "Login")</a>
 
-                    <a class="btn create-your-account fl" href="#criesuaconta">$(gettext "Sign up")</a>
+                    <a class="btn create-your-account fl" href="#criesuaconta">$(gettext "Sign Up")</a>
 
                 </div><!-- register -->
 
@@ -487,11 +487,11 @@ cat <<EOF
 
                 <nav class="nav-footer roboto_14c">
 
-                    <a href="#comofunciona" class="advantages-link first-child">$(gettext "how it works")</a>
-                    <a href="#valores">$(gettext "pricing")</a>
-                    <a href="#contato">$(gettext "get in touch")</a>
-                    <a href="#blog">blog</a>
-                    <a href="https://getup.zendesk.com/home/" rel="support">$(gettext "support")</a>
+                    <a href="#comofunciona" class="advantages-link first-child">$(gettext "How it Works")</a>
+                    <a href="#valores">$(gettext "Pricing")</a>
+                    <a href="#contato">$(gettext "Get in Touch")</a>
+                    <a href="#blog">Blog</a>
+                    <a href="https://getup.zendesk.com/home/" rel="support">$(gettext "Support")</a>
 
                 </nav><!-- nav footer -->
 
