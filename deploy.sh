@@ -59,7 +59,7 @@ rmdir .build
 
 # add latests build and tag it
 git add .
-git commit -m "$BUILD_ID"
+git commit -a -m "$BUILD_ID"
 git tag "$BUILD_ID"
 
 # push this build
