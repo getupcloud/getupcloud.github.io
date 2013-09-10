@@ -1,4 +1,4 @@
-<script>
+
 
 $("#application").click(function() {
 
@@ -33,9 +33,6 @@ $("#climb").click(function() {
 
 });
 
-</script>
-
-<script>
 
 $(".interval-section .about .open-create-your-account span.blur").click(function(){
 
@@ -43,18 +40,13 @@ $(".interval-section .about .open-create-your-account span.blur").click(function
 
 });
 
-</script>
-
-<script>
 $(document).ready(function () {
     $('.flexslider').flexslider({
         animation: 'fade',
         controlsContainer: '.flexslider'
     });
 });
-</script>
 
-<script>
 
     $(".button-mobile").click(function(){
 
@@ -73,19 +65,12 @@ $(document).ready(function () {
     });
     });
 
-</script>
-
-<script>
 
 jQuery(".info-gear").click(function(){
 
     jQuery(".info-gear-show").slideDown();
 
 });
-
-</script>
-
-<script>
 
 $(".interval-section .about .register").click(function(){
 
@@ -99,9 +84,6 @@ function Close() {
 
 }
 
-</script>
-
-<script>
 
 jQuery(".advantages-link").click(function() {
     jQuery('html, body').animate({
@@ -128,18 +110,13 @@ jQuery(".create-your-account").click(function() {
         }, 2000);
     });
 
-</script>
-
-<!--script>
 $(function(){
   $("#slider").slidesjs({
     width: 2000,
     height: 500
   });
 });
-</script-->         
 
-<!--script>
 $(function(){
   $("#slider").slidesjs({
     pagination: {
@@ -151,9 +128,6 @@ $(function(){
     }
   });
 });
-</script-->            
-
-<!--script>
 
 $(function(){
   $("#slider").slidesjs({
@@ -169,5 +143,3 @@ $(function(){
     }
   });
 });
-
-</script-->
