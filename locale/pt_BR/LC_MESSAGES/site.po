@@ -145,9 +145,6 @@ msgstr "Auto Escalável"
 msgid "included"
 msgstr "incluso"
 
-msgid "Support"
-msgstr "Suporte"
-
 msgid "Ticket, Forum, Community"
 msgstr "Ticket, Fórum, Comunidade"
 
