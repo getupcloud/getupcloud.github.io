@@ -1,4 +1,9 @@
 cat <<EOF
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -183,7 +188,13 @@ cat <<EOF
 
                 <div class="more-application">
 
-                    <h1 style="margin: 20px;">SSL</h1>
+                    <br>$(gettext "Or choose an application from our Fast Start App repo")
+                    <h2 style="margin: 20px;">SSL</h2>
+                    <br>$(gettext "All applications are up and running on your own URL with shared SSL by default.")
+                    <h2 style="margin: 20px;">Cartridges</h2>
+                    <br>$(gettext "Add components to your app through cartridges like MySQL, PHPMyAdmin, PostgreSQL, MongoDB, Memcached and others.")
+                    <br>$(gettext "You can add a cartridge using our powerful Web Console or CLI")
+                    <br> $ rhc cartridge add MySQL-5.1 -a AppName
 
                 </div><!-- more about application -->
 
@@ -206,7 +217,11 @@ cat <<EOF
 
                 <div class="more-publish">
 
-                    <h1 style="margin: 20px;">$(gettext "Development life-cycle")</h1>
+                    <br>$(gettext "Development life-cycle")
+                    <br>$(gettext "Warp-speed and too-damn-easy swapping to work with test, stage or production versions of your app.")
+                    <h2 style="marginL 20px;">$(gettext "Built-in Databases")
+                    <br>$(gettext "Add a database just adding a new cartridge.")
+                    $  rhc cartridge add mysql-5.1 -a AppName
 
                 </div><!-- more about publish -->
 
@@ -227,7 +242,10 @@ cat <<EOF
 
                 <div class="more-climb">
 
-                    <h1 style="margin: 20px;">Gears</h1>
+                    <h2 style="margin: 20px;">Gears</h2>
+                    <br> $(gettext "Your app set in one or more gears - as many as you want or your application requests demand. Forget servers, network, firewall or virtual machines.")
+                    <h2 stype="margin: 20px;">$(gettext "That's it.")
+                    <br> $(gettext "If you don't care too much for the liquid gold, do whatever you want with your spare time. Told you it was six simple steps, right? ;)")
 
                 </div><!-- more about climb -->
 
