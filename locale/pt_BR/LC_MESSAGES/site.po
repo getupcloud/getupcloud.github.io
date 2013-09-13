@@ -196,6 +196,12 @@ msgstr "R$ ~113,88"
 msgid "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing."
 msgstr "Pense no gear como um servidor na nuvem que você não precisará administrar ;) Cada Gear possui 512MB RAM e 1GB de disco. Se uma aplicação precisar de mais recursos, ela poderá usar múltiplos gears, o que chamamos de escalabilidade."
 
+msgid "730h monthly."
+msgstr "Considere uma média de 730hs mensais."
+
+msgid "Trying minimize the user impact you did upgrade one day before and returned on day after the peak."
+msgstr "Considerando que para reduzir o impacto, você fez o upgrade um dia antes do pico e retornou um dia depois."
+
 msgid "Compare with other services"
 msgstr "Comparativo com outros serviços"
 

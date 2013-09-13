@@ -406,7 +406,7 @@ cat <<EOF
                                     </div>
                                     <div class="info-valor-mensal-1">
                                         <div class="top-info-open"></div>
-                                        <div class="info-opened roboto_14ce">$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")</div>
+                                        <div class="info-opened roboto_14ce">$(gettext "730h monthly.")</div>
                                         <div class="bottom-info-open"></div>
                                     </div>
                                 </div>
@@ -549,7 +549,7 @@ cat <<EOF
                                         </div>
                                         <div class="info-custo-adicional-cloud">
                                             <div class="top-info-open"></div>
-                                            <div class="info-opened roboto_14ce">$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")</div>
+                                            <div class="info-opened roboto_14ce">$(gettext "Trying minimize the user impact you did upgrade one day before and returned on day after the peak.")</div>
                                             <div class="bottom-info-open-right"></div>
                                         </div>
                                     </div>
