@@ -186,10 +186,10 @@ a.button-mobile { background: url(../img/button-mobile.png) no-repeat; cursor: p
 .price-section .right .comparative .info { width: 340px; float: left; margin: 21px 0 10px 20px; }
 
 #recurso, #valor-mensal-1, #custo-adicional-cloud, #info-gear { cursor: pointer; }
-.info-gear-show { display: none; position: absolute; bottom: 185px; left: 292px; z-index: 999; }
-.info-recurso { display: none; position: absolute; top: -40px; left: 288px; z-index: 999; }
-.info-valor-mensal-1 { display: none; position: absolute; top: 49px; left: 296px; z-index: 999; }
-.info-custo-adicional-cloud { display: none; position: absolute; top: 287px; right: 208px; z-index: 999; }
+.info-gear-show { display: none; position: absolute; top: 279px; left: 292px; z-index: 999; }
+.info-recurso { display: none; position: absolute; top: -22px; left: 295px; z-index: 999; }
+.info-valor-mensal-1 { display: none; position: absolute; top: 142px; left: 308px; z-index: 999; }
+.info-custo-adicional-cloud { display: none; position: absolute; top: 324px; right: 191px; z-index: 999; }
 .info-opened { position: relative; background: url(../img/content-info-open.png) repeat-y; width: 326px; padding: 0 10px; text-align: left; }
 .top-info-open { background: url(../img/top-info-open.png) no-repeat center bottom; width: 346px; height: 11px; }
 .bottom-info-open { background: url(../img/bottom-info-open.png) no-repeat center bottom; width: 346px; height: 22px; }
@@ -333,7 +333,7 @@ footer.secondary .footer-section .right .terms a { text-decoration: none; color:
 .interval-section .about .open-create-your-account form label { display: block; float: left; margin: 10px 5px 0 5px; position: relative; }
 .interval-section .about .open-create-your-account form label span { font-family: 'Roboto'; font-size: 15px; left: 10px; line-height: 43px; position: absolute; top: 0; color: #616161; }
 .interval-section .about .open-create-your-account form label input.name, .interval-section .about .open-create-your-account form label input.email { float: left; border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 205px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
-.interval-section .about .open-create-your-account form label input.promotional { float: left; border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 182px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+.interval-section .about .open-create-your-account form label input.promotional { float: left; border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 235px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
 .interval-section .about .open-create-your-account form label input.pass, .interval-section .about .open-create-your-account form label input.confirm-pass { float: left; border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 182px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
 .interval-section .about .open-create-your-account form label input.small { width: 145px; }
 .interval-section .about .open-create-your-account form .passwords { margin-left: 31px; }
