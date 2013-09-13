@@ -130,6 +130,15 @@ msgstr "running!"
 msgid "Development life-cycle"
 msgstr "Ciclo de vida do desenvolvimento"
 
+msgid "Warp-speed and too-damn-easy swapping to work with test, stage or production versions of your app."
+msgstr "Trabalhe e mude a versão da sua aplicação entre teste, stage e produção em velocidade de dobra"
+
+msgid "Built-in Databases"
+msgstr "Bancos de dados embutido"
+
+msgid "Add a database just adding a new cartridge."
+msgstr "Adicione um banco de dados adicionando um cartridge."
+
 msgid "Scale"
 msgstr "Escale"
 
@@ -147,6 +156,15 @@ msgstr "com o crescimento,"
 
 msgid "don't get caught by traffic spikes."
 msgstr "mesmo que aconteça do dia para a noite."
+
+msgid "Your app set in one or more gears - as many as you want or your application requests demand. Forget servers, network, firewall or virtual machines."
+msgstr "Sua aplicação em um ou mais gears - quantos você quiser ou quantos forem necessários para atender as requisições. Esqueça servidores, redes, firewall ou VM's"
+
+msgid "That's it."
+msgstr "É só isso. Mesmo!"
+
+msgid "If you don't care too much for the liquid gold, do whatever you want with your spare time. Told you it was six simple steps, right? ;)"
+msgstr "Agora se você não liga para o néctar dourado, faça o que você quiser com seu tempo livre. Como dissemos, são simples passos, certo? ;)"
 
 msgid "Pricing and Benefits"
 msgstr "Preços e benefícios"
