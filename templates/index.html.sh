@@ -208,7 +208,7 @@ cat <<EOF
                 <h1 class="each-title">$(gettext "Deploy")</h1>
                 <br>
                 <h2 class="each-sub-title">$(gettext "Just type 'git push' and voil&aacute;!")<br class="mobile-space"><br class="ipad-space"> $(gettext "Your application")<br class="desktop-space"> $(gettext "is up")<br class="ipad-space"> $(gettext "and")<br class="mobile-space"> $(gettext "running!")</h2>
-                <h3 class="each-see-more see-application" id="application"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
+                <h3 class="each-see-more see-publish" id="publish"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
                 <div class="more-publish">
 
@@ -233,15 +233,16 @@ cat <<EOF
                 <h1 class="each-title">$(gettext "Scale")</h1>
                 <br>
                 <h2 class="each-sub-title">$(gettext "With auto-scale")<br class="mobile-space"><br class="ipad-space"><br class="desktop-space"> $(gettext "you don't need")<br class="mobile-space"> $(gettext "to worry about")<br class="desktop-space"> $(gettext "growth,")<span class="hidden-work"><br class="desktop-space"> $(gettext "don't get caught by traffic spikes.")</span></h2>
-                <h3 class="each-see-more see-application" id="application">$(gettext "See More")</h3>
+                <h3 class="each-see-more see-climb" id="climb">$(gettext "See More")</h3>
 
                 <div class="more-climb">
-                    <h2 style="margin: 20px;">Gears</h2>
+                    <h2>Gears</h2>
                     <br> $(gettext "Your app set in one or more gears - as many as you want or your application requests demand. Forget servers, network, firewall or virtual machines.")
-                    <h2 stype="margin: 20px;">$(gettext "That's it.")
+                    <h2>$(gettext "That's it.")
                     <br> $(gettext "If you don't care too much for the liquid gold, do whatever you want with your spare time. Told you it was six simple steps, right? ;)")
+                    <br>
                     <center>
-                        <img src="static/img/beer.png" border="0"/>
+                        <img src="static/img/beer.png" style="margin: 20px 0;" border="0"/>
                     </center>
 
 
@@ -341,7 +342,7 @@ cat <<EOF
                         </div>
                         <br>
                         <div class="description">
-                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example")<b><u><a class="comparative-show">$(gettext "Check it out.")</a></u></b></h2>
+                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <b><u><a class="comparative-show">$(gettext "Check it out.")</a></u></b></h2>
                         </div>
 
                     </div><!-- info -->
