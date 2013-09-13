@@ -213,7 +213,7 @@ a.button-mobile { background: url(../img/button-mobile.png) no-repeat; cursor: p
 .comparative-table .normal-big-without-border { width: 310px; height: 44px; text-align: center; }
 .comparative-table .normal-without-border-bg { width: 128px; height: 44px; background: #ebf7f6; text-align: right; }
 .comparative-table .normal-big-without-border-bg { width: 310px; height: 44px; background: #ebf7f6; text-align: center; }
-.comparative-table .normal-big-without-border-bg .align { width: 80px; margin: auto; }
+.comparative-table .normal-big-without-border-bg .align { width: 89px; margin: auto; }
 .comparative-table .normal-big-without-border-bg-padding { width: 310px; height: 44px; background: #ebf7f6; text-align: center; padding-left: 50px; }
 
 .start-title { position: absolute; top: 22px; right: 160px; background: #fff; }
