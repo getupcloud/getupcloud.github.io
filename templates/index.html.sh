@@ -1,13 +1,8 @@
 cat <<EOF
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<title>$(gettext "Getup - Grow in the cloud")</title>
+<title>Getup - Grow in the cloud</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,11 +10,11 @@ cat <<EOF
 <meta name="viewport" content="width=device-width">
 
 <meta property="fb:app_id" content="360523914066509">
-<meta property="og:title" content="$(gettext "Getup - Grow in the cloud")">
+<meta property="og:title" content="Getup - Grow in the cloud">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://getupcloud.com">
 <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
-<meta property="og:description" name="description" content="$(gettext "GETUP IS A SCALABLE CLOUD APPLICATION PLATFORM.") $(gettext "An easy and fast way to build and deploy web apps.") $(gettext "You only have to worry about coding your app - we take care of everything else.")">
+<meta property="og:description" name="description" content="Getup é uma plataforma para hospedagem na nuvem Uma forma fácil e rápida de desenvolver e publicar aplicações web. Você se preocupa com o código - nós cuidamos do resto.">
 <meta property="gc:build_id" content="testing-20130821134219">
 
 <script>var U = { register: 'https://broker.getupcloud.com/getup/account/signup/', language: 'pt-br', debug: 0 };</script>
@@ -28,13 +23,13 @@ cat <<EOF
 <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico"> 
 
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="/static/js/html5_ie.js"></script>
+<script src="static/js/html5_ie.js"></script>
 
-<script src="/static/js/jquery.flexslider-min.js"></script>
+<script src="static/js/getup.js"></script>
+<script src="static/js/jquery.flexslider-min.js"></script>
 
-
-<link href="/static/css/main.css" rel="stylesheet" />
-<link href="/static/css/slide.css" rel="stylesheet" />
+<link href="static/css/main.css" rel="stylesheet" />
+<link href="static/css/slide.css" rel="stylesheet" />
 
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
@@ -46,15 +41,15 @@ cat <<EOF
 
         <div class="fix">
 
-            <a href="index.html"><img src="/static/img/logo_getup.png" class="logo" border="0" /></a>
+            <a href="index.html"><img src="static/img/logo_getup.png" class="logo" border="0" /></a>
 
             <nav>
 
-                <a href="#comofunciona" class="advantages-link">$(gettext "How it Works")</a>
-                <a href="#preco" class="price-link">$(gettext "Pricing")</a>
-                <a href="#contato" class="contact-link">$(gettext "Get in Touch")</a>
+                <a class="advantages-link">$(gettext "How it Works")</a>
+                <a class="price-link">$(gettext "Pricing")</a>
+                <a class="contact-link">$(gettext "Get in Touch")</a>
                 <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;">$(gettext "Support")</a>
-                <a href="#blog" class="blog" style="color: #232323;">Blog</a>
+                <a href="/blog" class="blog" style="color: #232323;">Blog</a>
 
             </nav><!-- menu -->
 
@@ -64,15 +59,15 @@ cat <<EOF
 
                 <div class="for-ipad">
 
-                    <a href="https://getup.zendesk.com/home/" rel="support" style="color: #232323;">$(gettext "support")</a>
-                    <a href="#blog" style="color: #232323;">Blog</a>
+                    <a href="https://getup.zendesk.com/home/" rel="support" style="color: #232323;">$(gettext "Support")</a>
+                    <a href="/blog" style="color: #232323;">Blog</a>
 
                 </div><!-- for ipad -->
 
                 <div class="languages fr">
 
-                    <a href="" rel="pt-br" class="pt">PT</a>
-                    <a href="/index_en.html" rel="en-us" class="en" style="color: #232323;">EN</a>
+                    <a href="index.html" rel="pt-br" class="pt">PT</a>
+                    <a href="index_en.html" rel="en-us" class="en" style="color: #232323;">EN</a>
 
                 </div><!-- languages -->
 
@@ -99,11 +94,11 @@ cat <<EOF
                 <li>
                     <div class="each-image">
 
-                        <img src="/static/img/slider_001.jpg" border="0" />
+                        <img src="static/img/slider_001.jpg" border="0" />
 
                         <div class="caption">
 
-                            <h1>$(gettext "GETUP IS A")<br class="mobile-space"> $(gettext "SCALABLE CLOUD")<br class="desktop-space"> $(gettext "APPLICATION") <br class="mobile-space"> $(gettext "PLATFORM")</h1>
+                            <h1>$(gettext "GETUP IS A")<br class="mobile-space"> $(gettext "SCALABLE CLOUD")<br class="desktop-space"> $(gettext "APPLICATION")<br class="mobile-space"> $(gettext "PLATFORM")</h1>
                             <br>
                             <h2>$(gettext "An easy and fast way to build and deploy web apps.")<div class="mobile-hidden"><br class="dekstop-space">$(gettext "You only have to worry about coding your app - we take care of everything else.")</div></h2>
 
@@ -120,13 +115,13 @@ cat <<EOF
                 <li>
                     <div class="each-image">
 
-                        <img src="/static/img/slider_001.jpg" border="0" />
+                        <img src="static/img/slider_001.jpg" border="0" />
 
                         <div class="caption">
 
-                            <h1>$(gettext "AUTO SCALE")<br class="mobile-space"><br class="desktop-space"><br class="mobile-space"></h1>
+                            <h1>$(gettext "AUTO SCALE")</h1>
                             <br>
-                            <h2>$(gettext "Don't get caught by traffic spikes. Deploy and scale to millions of users.")</h2>
+                            <h2>$(gettext "Don't get caught by traffic spikes.")<br>$(gettext "Deploy and scale to millions of users.")</h2>
 
                             <div class="buttons">
                                 <a class="btn compare">$(gettext "Compare benefits")</a>
@@ -137,15 +132,15 @@ cat <<EOF
 
                     </div><!-- each image -->
                 </li>
-                
+
                 <li>
                     <div class="each-image">
 
-                        <img src="/static/img/slider_001.jpg" border="0" />
+                        <img src="static/img/slider_001.jpg" border="0" />
 
                         <div class="caption">
 
-                            <h1>$(gettext "GROW IN THE CLOUD")<br class="mobile-space"><br class="desktop-space"><br class="mobile-space"></h1>
+                            <h1>$(gettext "GROW IN THE CLOUD")</h1>
                             <br>
                             <h2>$(gettext "Compute power when you need it most.")</h2>
 
@@ -173,7 +168,7 @@ cat <<EOF
 
             <div class="each first first-ipad">
 
-                <img src="/static/img/arrow.png" class="each-arrow" border="0" />
+                <img src="static/img/arrow.png" class="each-arrow" border="0" />
 
                 <div class="image">
                     <center>
@@ -183,8 +178,8 @@ cat <<EOF
 
                 <h1 class="each-title">$(gettext "Create your application")</h1>
                 <br>
-                <h2 class="each-sub-title">$(gettext "Choose the technology")<br class="mobile-space"><br class="ipad-space">$(gettext "of your app -")<br>PHP, Ruby, Python, Node.js</h2>
-                <h3 class="each-see-more see-application" id="application">$(gettext "See More")</h3>
+                <h2 class="each-sub-title">$(gettext "Choose the technology")<br class="mobile-space"><br class="ipad-space"> $(gettext "of your app -")<br>PHP, Ruby, Python, Node.js</h2>
+                <h3 class="each-see-more see-application" id="application"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
                 <div class="more-application">
 
@@ -202,18 +197,18 @@ cat <<EOF
 
             <div class="each">
 
-                <img src="/static/img/arrow.png" class="each-arrow" border="0" />
+                <img src="static/img/arrow.png" class="each-arrow" border="0" />
 
                 <div class="image">
                     <center>
                         <span class="advantages-section-publish images no-text">$(gettext "Deploy")</span>
-                    </cemter>
+                    </center>
                 </div><!-- image -->
 
                 <h1 class="each-title">$(gettext "Deploy")</h1>
                 <br>
                 <h2 class="each-sub-title">$(gettext "Just type 'git push' and voil&aacute;!")<br class="mobile-space"><br class="ipad-space"> $(gettext "Your application")<br class="desktop-space"> $(gettext "is up")<br class="ipad-space"> $(gettext "and")<br class="mobile-space"> $(gettext "running!")</h2>
-                <h3 class="each-see-more see-application" id="application">$(gettext "See More")</h3>
+                <h3 class="each-see-more see-application" id="application"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
                 <div class="more-publish">
 
@@ -232,7 +227,7 @@ cat <<EOF
                 <div class="image">
                     <center>
                         <span class="advantages-section-climb images no-text">$(gettext "Scale")</span>
-                    </cemter>
+                    </center>
                 </div><!-- image -->
 
                 <h1 class="each-title">$(gettext "Scale")</h1>
@@ -241,11 +236,14 @@ cat <<EOF
                 <h3 class="each-see-more see-application" id="application">$(gettext "See More")</h3>
 
                 <div class="more-climb">
-
                     <h2 style="margin: 20px;">Gears</h2>
                     <br> $(gettext "Your app set in one or more gears - as many as you want or your application requests demand. Forget servers, network, firewall or virtual machines.")
                     <h2 stype="margin: 20px;">$(gettext "That's it.")
                     <br> $(gettext "If you don't care too much for the liquid gold, do whatever you want with your spare time. Told you it was six simple steps, right? ;)")
+                    <center>
+                        <img src="static/img/beer.png" border="0"/>
+                    </center>
+
 
                 </div><!-- more about climb -->
 
@@ -291,7 +289,7 @@ cat <<EOF
 
                     <span class="separator"></span>
 
-                    <dt>$(gettext "Additional Storage") </dt>
+                    <dt>$(gettext "Additional Storage")</dt>
                     <dd>$(gettext "US$ 0,935/GB/Month")</dd>
 
                     <span class="separator"></span>
@@ -301,7 +299,13 @@ cat <<EOF
                 </dl>
 
                 <dl class="second">
-                    <dt><span class="fl">GEAR</span> <a class="info-gear"><img src="/static/img/info-gear.png" class="fl" border="0" /></a></dt>
+                    <dt><span class="fl">GEAR</span> <a class="info-gear" id="info-gear"><img src="static/img/info-gear.png" class="fl" border="0" /></a>
+                        <div class="info-gear-show">
+                            <div class="top-info-open"></div>
+                            <div class="info-opened roboto_14ce">$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")</div>
+                            <div class="bottom-info-open"></div>
+                        </div>
+                    </dt>
                     <dd>$(gettext "US$ 0,074/hour")</dd>
 
                     <span class="separator"></span>
@@ -309,14 +313,6 @@ cat <<EOF
                     <dt>$(gettext "Monthly cost")</dt>
                     <dd>$(gettext "US$ ~54,23")</dd>
                 </dl>
-
-                <div class="info-gear-show">
-
-                    <h1 class="roboto_14v">Gear</h1>
-                    <br>
-                    <p class="roboto_14c">$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")</p>
-
-                </div><!-- show info gear -->
 
             </div><!-- left -->
 
@@ -336,7 +332,7 @@ cat <<EOF
 
                 <div class="comparative">
 
-                    <img src="/static/img/prices-1.png" border="0" />
+                    <img src="static/img/prices-1.png" border="0" />
 
                     <div class="info">
 
@@ -345,7 +341,7 @@ cat <<EOF
                         </div>
                         <br>
                         <div class="description">
-                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <b><u>$(gettext "Check it out.")</u></b></h2>
+                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example")<b><u><a class="comparative-show">$(gettext "Check it out.")</a></u></b></h2>
                         </div>
 
                     </div><!-- info -->
@@ -353,6 +349,257 @@ cat <<EOF
                 </div><!-- comparative -->
 
             </div><!-- right -->
+
+            <div class="comparative-opened">
+
+                <div style="margin-top: 30px;">
+
+                    <a class="close-comparative fr"></a>
+
+                    <table class="fl comparative-table" cellspacing="0" cellpadding="0">
+
+                        <tr>
+                            <td class="first-with-border">
+                            </td>
+                            <td class="second-with-border">
+                                <img src="static/img/table_logo_getup.jpg" style="margin: auto;" border="0" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="normal-with-border">
+                                <h1 class="roboto_14ce">$(gettext "Resource")</h1>
+                            </td>
+                            <td class="normal-big-with-border">
+                                <div class="align">
+                                    <h1 class="fl roboto_14ce">1 gear</h1>
+                                    <div id="recurso">
+                                        <img src="static/img/info-gear.png" class="fr" border="0" />
+                                    </div>
+                                    <div class="info-recurso">
+                                        <div class="top-info-open"></div>
+                                        <div class="info-opened roboto_14ce">$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")<br></div>
+                                        <div class="bottom-info-open"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="normal-without-border">
+                                <h1 class="roboto_14ce">$(gettext "Auto Scaling")</h1>
+                            </td>
+                            <td class="normal-big-without-border">
+                                <h1 class="roboto_14ce">$(gettext "Yes")</h1>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="normal-without-border-bg">
+                                <h1 class="roboto_11cc">$(gettext "Monthly fee")</h1>
+                            </td>
+                            <td class="normal-big-without-border-bg">
+                                <div class="align">
+                                    <h1 class="fl roboto_13ae">$(gettext "US$ ~54,23")</h1>
+                                    <div id="valor-mensal-1">
+                                        <img src="static/img/info-gear.png" class="fr" border="0" />
+                                    </div>
+                                    <div class="info-valor-mensal-1">
+                                        <div class="top-info-open"></div>
+                                        <div class="info-opened roboto_14ce">$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")</div>
+                                        <div class="bottom-info-open"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="normal-without-border">
+                                <h1 class="roboto_14ce">$(gettext "+ Server Admin")</h1>
+                            </td>
+                            <td class="normal-big-without-border">
+                                <h1 class="roboto_14ce">$(gettext "included")</h1>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="normal-without-border-bg">
+                                <h1 class="roboto_11cc">$(gettext "Monthly fee")</h1>
+                            </td>
+                            <td class="normal-big-without-border-bg">
+                                <h1 class="roboto_13ae">$(gettext "US$ ~54,23")</h1>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="normal-with-border">
+                                <h1 class="roboto_14ce">$(gettext "Traffic Peak")</h1>
+                            </td>
+                            <td class="normal-big-with-border">
+                                <h1 class="roboto_14ce">$(gettext "Auto Scale out")<br>+2 web gears</h1>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="normal-without-border">
+                                <h1 class="roboto_14ce">$(gettext "End of Peak - 6 hours")</h1>
+                            </td>
+                            <td class="normal-big-without-border">
+                                <h1 class="roboto_14ce">$(gettext "Auto Scale down")</h1>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="normal-without-border-bg">
+                                <h1 class="roboto_11cc">$(gettext "Additional charge")</h1>
+                            </td>
+                            <td class="normal-big-without-border-bg-padding">
+                                <h1 class="fl roboto_14ce">$(gettext "2 gears x 6 hours x US$ 0.074 =")</h1> <h1 class="fl roboto_13ae" style="margin-left: 3px;">$(gettext "US$ 0.89")</h1>
+                            </td>
+                        </tr>
+
+                        </table>
+
+                        <table class="comparative-table-1" cellspacing="0" cellpadding="0">
+
+                            <div class="start-title">
+                                <h1 class="roboto_12cc">$(gettext "Other hosting companies")</h1>
+                            </div>
+
+                            <tr>
+                                <td class="first-with-padding">
+                                    <h1 class="roboto_13ver">$(gettext "Cloud Server")</h1>
+                                </td>
+                                <td class="second-with-padding">
+                                    <h1 class="roboto_13ver">$(gettext "Shared")<br>$(gettext "Hosting")</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="normal-big-with-border">
+                                    <h1 class="roboto_14ce">$(gettext "Cloud Server")<br>512Mb RAM</h1>
+                                </td>
+                                <td class="normal-with-border">
+                                    <h1 class="roboto_14ce">$(gettext "1 hosting")</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="normal-big-without-border">
+                                    <h1 class="roboto_14ce">$(gettext "No")</h1>
+                                </td>
+                                <td class="normal-without-border">
+                                    <h1 class="roboto_14ce">$(gettext "What?")</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="normal-big-without-border-bg">
+                                    <h1 class="roboto_13ae">$(gettext "~US$ 17")</h1>
+                                </td>
+                                <td class="normal-without-border-bg">
+                                    <h1 class="roboto_13ae">$(gettext "~US$ 20")</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="normal-big-without-border">
+                                    <h1 class="roboto_14ce">$(gettext "need subscription")</h1>
+                                </td>
+                                <td class="normal-without-border">
+                                    <h1 class="roboto_14ce">$(gettext "included")</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="normal-big-without-border-bg">
+                                    <h1 class="roboto_13ae">$(gettext "~US$ 103.66")</h1>
+                                </td>
+                                <td class="normal-without-border-bg">
+                                    <h1 class="roboto_13ae">$(gettext "~US$ 20")</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="normal-big-with-border">
+                                    <h1 class="roboto_14ce">$(gettext "turn off server, add")<br>
+                                    $(gettext "1GB, turn on server")</h1>
+                                </td>
+                                <td class="normal-with-border">
+                                    <h1 class="roboto_14ce">$(gettext "Light a candle!")</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="normal-big-without-border">
+                                    <h1 class="roboto_14ce">$(gettext "turn off server, remove")<br>
+                                    $(gettext "1GB, turn on server")</h1>
+                                </td>
+                                <td class="normal-without-border">
+                                    <h1 class="roboto_14ce">-</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="normal-big-without-border-bg">
+                                    <div style="width: 221px; margin: auto;">
+                                        <h1 class="fl roboto_14ce">$(gettext "24hs x ~US$ 0.06 (1GB) =")</h1> <h1 class="fl roboto_13ae" style="margin-left: 3px;">$(gettext "US$ 1.44")</h1>
+                                        <div id="custo-adicional-cloud">
+                                            <img src="static/img/info-gear.png" class="fr" border="0" />
+                                        </div>
+                                        <div class="info-custo-adicional-cloud">
+                                            <div class="top-info-open"></div>
+                                            <div class="info-opened roboto_14ce">$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")</div>
+                                            <div class="bottom-info-open-right"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="normal-without-border-bg">
+                                    <h1 class="roboto_14ce">-</h1>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <table class="comparative-table-2" cellspacing="0" cellpadding="0">
+ 
+                            <tr>
+
+                                <td class="result1">
+                                    <h1 class="roboto_16b">TOTAL</h1>
+                                </td>
+
+                                <td class="result2">
+                                    <h1 class="roboto_30b">$(gettext "US$ 56.38")</h1>
+                                    <h2 class="roboto_14ce">$(gettext "Peace of mind")</h1>
+                                    <h3 class="roboto_12ce">$(gettext "You just get the traffics")<br>
+                                    $(gettext "peaks on analytics")</h1>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="result3">
+                                    <h1 class="roboto_30b">$(gettext "US$ 105.10")</h1>
+                                    <h2 class="roboto_14ce">$(gettext "Hard Work.")</h2>
+                                    <h3 class="roboto_12ce">$(gettext "You had to reboot")<br>
+                                    $(gettext "your server twice")</h3>
+                                </td>
+                                <td class="result4">
+                                    <h1 class="roboto_30b">$(gettext "US$ 20")</h1>
+                                    <h2 class="roboto_14ce">$(gettext "Don't be cheap")</h2>
+                                    <h3 class="roboto_12ce">$(gettext "Your site went down and")<br>
+                                    $(gettext "you lost pageviews.")</h3>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </table>
+
+                </div>
+
+            </div><!-- show info gear -->
 
         </div><!-- fix price -->
 
@@ -380,42 +627,68 @@ cat <<EOF
 
                 <div class="open-create-your-account">
 
+                    <div class="start-register">
+                        <h1 class="fl">$(gettext "Create Account")</h1>
+                        <a class="fr close-register"></a>
+                    </div>
+
                     <form action="" method="post" id="signup">
                         <fieldset>
-                            <h2>$(gettext  "First Step")</h2>
                             <input type="hidden" name="lang" id="language" value="pt-br">
 
-                            <label>
-                            <span class="blur">$(gettext "What's your name")</span>
-                            <input tabindex="1" type="text" name="name" id="name" />
-                            </label>
-                            <label>
-                            <span class="blur">$(gettext "What's your e-mail")</span>
-                            <input tabindex="2" type="text" name="email" id="email" />
-                            </label>
-                            <label>
-                            <span class="blur">$(gettext "Password")</span>
-                            <input tabindex="3" type="password" name="password1" id="password" class="small" />
-                            </label>
-                            <label>
-                            <span class="blur">$(gettext "Confirm password")</span>
-                            <input tabindex="4" type="password" name="password2" id="password-confirm" class="small" />
-                            </label>
-                            <label>
-                            <span class="blur">$(gettext "Promo code (optional)")</span>
-                            <input tabindex="5" type="text" name="coupon_code" id="coupon-code" />
-                            </label>
+                            <div class="fl">
+                                <label>
+                                    <span class="blur">$(gettext "What's your name")</span>
+                                    <input tabindex="1" type="text" class="name" name="name" id="name" />
+                                </label>
+                                <label>
+                                    <span class="blur">$(gettext "What's your e-mail")</span>
+                                    <input tabindex="2" type="text" class="email" name="email" id="email" />
+                                </label>
+                                <div class="promotional-code">
+                                    <h1 class="fl roboto_14ce"></h1>
+                                    <label>
+                                        <span class="blur">$(gettext "Promo code (optional)")</span>
+                                        <input tabindex="3" type="text" class="promotional" name="coupon_code" id="coupon-code" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="fl passwords">
+                                <label>
+                                    <span class="blur">$(gettext "Password")</span>
+                                    <input tabindex="4" type="password" name="password1" id="password" class="pass" />
+                                </label>
+                                <label>
+                                    <span class="blur">$(gettext "Confirm password")</span>
+                                    <input tabindex="5" type="password" name="password2" id="password-confirm" class="confirm-pass" />
+                                </label>
 
-                            <label class="checkbox" id="check-terms">
-                            <span class="accept-terms">$(gettext "I read and agree to the")  <a tabindex="7" href="/termos-de-uso.html">$(gettext "Terms of use")</a></span>
-                            <input tabindex="6" type="checkbox" name="use_terms" />
-                            </label>
+                                <p id="message"></p>
 
-                            <p id="message"></p>
+                            </div>
 
-                            <button tabindex="8">OK</button>
+                            <div class="fl separator-button"></div>
+
+                            <div class="fr">
+
+                                <fieldset class="fl" style="margin-right: 20px;">
+                                    <input id="terms-of-use" class="css-checkbox" type="checkbox" name="terms-of-use" value="5" />
+                                    <label for="terms-of-use" name="terms-of-use" class="c18r css-label">$(gettext "I read and agree to the")<u><a href="#termodeuso" style="color: #585858;">$(gettext "Terms of use")</a>.</u></label>
+                                </fieldset>
+
+                                <button tabindex="8" class="fr btn continue">$(gettext "Continue")</button>
+
+                            </div>
+
                         </fieldset>
-                    </form>
+                    </form><!-- form -->
+
+                    <div class="thank">
+
+                        <h1 class="roboto_20ver">$(gettext "Welcome aboard.")</h1>
+                        <h2 class="roboto_14ce">$(gettext "We sent you a email confirmation. Thank you!")</h2>
+
+                    </div><!-- thank -->
 
                 </div>
 
@@ -501,20 +774,6 @@ cat <<EOF
 
         <article class="footer-section">
 
-            <div class="left">
-
-                <nav class="nav-footer roboto_14c">
-
-                    <a href="#comofunciona" class="advantages-link first-child">$(gettext "How it Works")</a>
-                    <a href="#valores">$(gettext "Pricing")</a>
-                    <a href="#contato">$(gettext "Get in Touch")</a>
-                    <a href="#blog">Blog</a>
-                    <a href="https://getup.zendesk.com/home/" rel="support">$(gettext "Support")</a>
-
-                </nav><!-- nav footer -->
-
-            </div><!-- left -->
-
             <div class="right">
 
                 <nav class="terms">
@@ -533,6 +792,6 @@ cat <<EOF
     </footer><!-- footer secondary -->
 
 </body>
-<script src="/static/js/getup.js"></script>
+
 </html>
 EOF

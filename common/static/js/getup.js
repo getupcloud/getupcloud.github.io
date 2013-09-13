@@ -1,9 +1,81 @@
+$(document).ready(function(){
 
+/* novo */
+
+$(".comparative-show").click(function(){
+
+    $(".comparative-opened").slideDown();
+
+});
+
+$(".close-comparative").click(function(){
+
+    $(".comparative-opened").slideUp();
+
+});
+
+$("#recurso").hover(function(){
+
+    $(this).next().show("fast");
+
+});
+
+$("#recurso").mouseleave(function(){
+
+    $(this).next().hide("fast");
+
+});
+
+
+$("#valor-mensal-1").hover(function(){
+
+    $(this).next().show("fast");
+
+});
+
+$("#valor-mensal-1").mouseleave(function(){
+
+    $(this).next().hide("fast");
+
+});
+
+$("#custo-adicional-cloud").hover(function(){
+
+    $(this).next().show("fast");
+
+});
+
+$("#custo-adicional-cloud").mouseleave(function(){
+
+    $(this).next().hide("fast");
+
+});
+
+$(".close-register").click(function(){
+
+    $(".open-create-your-account").slideUp();
+
+});
+
+$("#info-gear").hover(function(){
+
+    $(this).next().show("fast");
+
+});
+
+$("#info-gear").mouseleave(function(){
+
+    $(this).next().hide("fast");
+
+});
+
+/* */
 
 $("#application").click(function() {
 
-    $(".more-application").show("fast");
-    $(this).hide();
+    $(".more-application").toggle("fast");
+    $(this).find(".see-less-text").toggle("fast");
+    $(this).find(".see-more-text").toggle("fast");
     $(".see-publish").show();
     $(".see-climb").show();
     $(".more-publish").hide("fast");
@@ -13,8 +85,9 @@ $("#application").click(function() {
 
 $("#publish").click(function() {
 
-    $(".more-publish").show("fast");
-    $(this).hide();
+    $(".more-publish").toggle("fast");
+    $(this).find(".see-less-text").toggle("fast");
+    $(this).find(".see-more-text").toggle("fast");
     $(".see-climb").show();
     $(".see-application").show();
     $(".more-application").hide("fast");
@@ -24,8 +97,9 @@ $("#publish").click(function() {
 
 $("#climb").click(function() {
 
-    $(".more-climb").show("fast");
-    $(this).hide();
+    $(".more-climb").toggle("fast");
+    $(this).find(".see-less-text").toggle("fast");
+    $(this).find(".see-more-text").toggle("fast");
     $(".see-application").show();
     $(".see-publish").show();
     $(".more-publish").hide("fast");
@@ -78,13 +152,6 @@ $(".interval-section .about .register").click(function(){
 
 });
 
-function Close() { 
-
-    $(".open-create-your-account").hide();
-
-}
-
-
 jQuery(".advantages-link").click(function() {
     jQuery('html, body').animate({
         scrollTop: jQuery(".advantages").offset().top - 122
@@ -100,6 +167,13 @@ jQuery(".price-link").click(function() {
 jQuery(".contact-link").click(function() {
     jQuery('html, body').animate({
         scrollTop: jQuery(".get-in-touch").offset().top - 122
+        }, 2000);
+    });
+
+jQuery(".compare").click(function() {
+    jQuery(".comparative-opened").show();
+    jQuery('html, body').animate({
+        scrollTop: jQuery(".comparative-opened").offset().top - 122
         }, 2000);
     });
 
@@ -142,4 +216,6 @@ $(function(){
         // [string] Can be either "slide" or "fade".
     }
   });
+});
+
 });

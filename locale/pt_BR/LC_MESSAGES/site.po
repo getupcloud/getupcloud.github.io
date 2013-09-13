@@ -58,8 +58,11 @@ msgstr "Compare"
 msgid "AUTO SCALE"
 msgstr "AUTO ESCALÁVEL"
 
-msgid "Don't get caught by traffic spikes. Deploy and scale to millions of users."
-msgstr "Não seja pego pelos picos de acesso. Publique e escale para milhões de usuários."
+msgid "Don't get caught by traffic spikes."
+msgstr "Não seja pego pelos picos de acesso."
+
+msgid "Deploy and scale to millions of users."
+msgstr "Publique e escale para milhões de usuários."
 
 msgid "GROW IN THE CLOUD"
 msgstr ""
@@ -75,6 +78,9 @@ msgstr "Crie e publique aplicações web sem o custo e a complexidade de comprar
 
 msgid "It's faster and cheaper than create AWS instances."
 msgstr "É mais rápido e barato que subir servidores na Amazon."
+
+msgid "Application"
+msgstr "Aplicação"
 
 msgid "Create your application"
 msgstr "Crie sua aplicação"
@@ -98,7 +104,10 @@ msgid "You can add a cartridge using our powerful Web Console or CLI"
 msgstr "Você pode adicionar um cartridge usando o Console WEB ou CLI"
 
 msgid "See More"
-msgstr "Veja mais"
+msgstr "Veja Mais"
+
+msgid "Less"
+msgstr "Menos"
 
 msgid "Deploy"
 msgstr "Publique"
@@ -121,15 +130,6 @@ msgstr "running!"
 msgid "Development life-cycle"
 msgstr "Ciclo de vida do desenvolvimento"
 
-msgid "Warp-speed and too-damn-easy swapping to work with test, stage or production versions of your app."
-msgstr "Trabalhe e mude a versão da sua aplicação entre teste, stage e produção em velocidade de dobra."
-
-msgid "Built-in Databases"
-msgstr "Banco de Dados Embutido"
-
-msgid "Add a database just adding a new cartridge."
-msgstr "Adicione um banco de dados adicionando um cartridge."
-
 msgid "Scale"
 msgstr "Escale"
 
@@ -147,15 +147,6 @@ msgstr "com o crescimento,"
 
 msgid "don't get caught by traffic spikes."
 msgstr "mesmo que aconteça do dia para a noite."
-
-msgid "Your app set in one or more gears - as many as you want or your application requests demand. Forget servers, network, firewall or virtual machines."
-msgstr "Sua aplicação em um ou mais gears - quantos você quiser ou quantos forem necessários para atender as requisições. Esqueça servidores, rede, firewall ou VM's."
-
-msgid "That's it"
-msgstr "É só isso. Mesmo."
-
-msgid "If you don't care too much for the liquid gold, do whatever you want with your spare time. Told you it was six simple steps, right? ;)"
-msgstr "Agora se você não liga para o néctar dourado, faça o que você quiser com seu tempo livre. Como dissemos, são simples passos, certo? ;)"
 
 msgid "Pricing and Benefits"
 msgstr "Preços e benefícios"
@@ -203,7 +194,7 @@ msgid "US$ ~54,23"
 msgstr "R$ ~113,88"
 
 msgid "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing."
-msgstr "Gear é um contâiner com uma quantidade específica de recursos e permite aos usuários rodarem suas aplicações. Pense no gear como um servidor na nuvem ;) O Gear possui 512Mb RAM e 1GB de disco. Se uma aplicação precisar de mais recursos, ela poderá usar múltiplos gears, o que chamamos de escalabilidade."
+msgstr "Pense no gear como um servidor na nuvem que você não precisará administrar ;) Cada Gear possui 512MB RAM e 1GB de disco. Se uma aplicação precisar de mais recursos, ela poderá usar múltiplos gears, o que chamamos de escalabilidade."
 
 msgid "Compare with other services"
 msgstr "Comparativo com outros serviços"
@@ -214,6 +205,126 @@ msgstr "Compare Getup com outros serviços durante um mês com um Pico de acesso
 msgid "Check it out."
 msgstr "Confira"
 
+msgid "Resource"
+msgstr "Recurso"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "No"
+msgstr "Não"
+
+msgid "Monthly fee"
+msgstr "Valor mensal"
+
+msgid "+ Server Admin"
+msgstr "+ Admin do Servidor"
+
+msgid "Traffic Peak"
+msgstr "Pico de Acesso"
+
+msgid "Auto Scale out"
+msgstr "Scale out automático"
+
+msgid "End of Peak - 6 hours"
+msgstr "Fim - duração 6hs"
+
+msgid "Auto Scale down"
+msgstr "Scale down automático"
+
+msgid "Additional charge"
+msgstr "Custo adicional"
+
+msgid "2 gears x 6 hours x US$ 0.074 ="
+msgstr "2 gears x 6 horas x R$ 0,156 ="
+
+msgid "US$ 0.89"
+msgstr "R$ 1,87"
+
+msgid "Other hosting companies"
+msgstr "Serviços de outras empresas"
+
+msgid "Cloud Server"
+msgstr "Servidor Cloud"
+
+msgid "Shared"
+msgstr "Hospedagem"
+
+msgid "Hosting"
+msgstr "Compartilhada"
+
+msgid "1 hosting"
+msgstr "1 hospedagem"
+
+msgid "What?"
+msgstr "Hein?"
+
+msgid "~US$ 17"
+msgstr "~R$ 99,00"
+
+msgid "~US$ 20"
+msgstr "~R$ 25,00"
+
+msgid "US$ 20"
+msgstr "R$ 25,00"
+
+msgid "need subscription"
+msgstr "Precisa contratar"
+
+msgid "~US$ 103.66"
+msgstr "~R$ 299,00"
+
+msgid "turn off server, add"
+msgstr "desliga servidor, adiciona"
+
+msgid "1GB, turn on server"
+msgstr "1GB, liga servidor"
+
+msgid "Light a candle!"
+msgstr "Acenda uma vela!"
+
+msgid "turn off server, remove"
+msgstr "desliga servidor, remove"
+
+msgid "24hs x ~US$ 0.06 (1GB) ="
+msgstr "24hs x ~R$ 0,14 (1GB) ="
+
+msgid "US$ 1.44"
+msgstr "R$ 3,36"
+
+msgid "US$ 56.38"
+msgstr "R$ 115,75"
+
+msgid "Peace of mind"
+msgstr "Tranquilidade"
+
+msgid "You just get the traffics"
+msgstr "Você só sabe que teve picos pelo"
+
+msgid "peaks on analytics"
+msgstr "impacto nas vendas."
+
+msgid "US$ 105.10"
+msgstr "R$ 302,36"
+
+msgid "Hard Work."
+msgstr "CAOS TOTAL."
+
+msgid "You had to reboot"
+msgstr "Voce precisou reiniciar"
+
+msgid "your server twice"
+msgstr "seu servidor 2x"
+
+msgid "Don't be cheap"
+msgstr "Mão de Vaca!"
+
+msgid "Your site went down and"
+msgstr "Seu site ficou fora do ar e"
+
+msgid "you lost pageviews."
+msgstr "você perdeu conversão."
+
 msgid "With Getup you pay only"
 msgstr "Na Getup voce paga"
 
@@ -222,6 +333,9 @@ msgstr "apenas pelo que usou"
 
 msgid "and saves time."
 msgstr "e ainda economiza tempo"
+
+msgid "Create Account"
+msgstr "Criar Conta"
 
 msgid "First Step"
 msgstr "PRIMEIRO PASSO"
@@ -246,6 +360,15 @@ msgstr "Li e aceito os "
 
 msgid "Terms of use"
 msgstr "Termos de uso"
+
+msgid "Continue"
+msgstr "Continuar"
+
+msgid "Welcome aboard."
+msgstr "Bem vindo à bordo."
+
+msgid "We sent you a email confirmation. Thank you!"
+msgstr "Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado por se cadastrar."
 
 msgid "Let's talk"
 msgstr "Venha conversar"
