@@ -430,6 +430,13 @@ left: 46% !important;
 
 .start-title { right: 65px; }
 
+/* tooltips */
+
+.price-section .info-gear-show { top: 255px; left: 50px; }
+.info-recurso { left: 253px; }
+.info-valor-mensal-1 { left: 267px; }
+.info-custo-adicional-cloud { right: 68px; }
+
 /* Interval */
 
 .interval-section { width: 768px; }
@@ -546,7 +553,7 @@ left: 41% !important;
 .interval-section .about .register { margin: 20px auto; width: 142px; float: none; overflow: hidden; padding-top: 20px; }
 .interval-section .about .introduction { width: 100%; text-align: center; }
 
-.interval-section .about .open-create-your-account { margin-left: 0; }
+.interval-section .about .open-create-your-account { width: 280px;margin-left: 0; }
 
 .interval-section .about .open-create-your-account form .passwords { margin-left: 0; }
 .continue { margin-top: 20px; float: left; }

@@ -185,9 +185,9 @@ cat <<EOF
 
     
                     <br>$(gettext "Or choose an application from our Fast Start App repo")
-                    <h2 style="margin: 20px;">SSL</h2>
+                    <h2>SSL</h2>
                     <br>$(gettext "All applications are up and running on your own URL with shared SSL by default.")
-                    <h2 style="margin: 20px;">Cartridges</h2>
+                    <h2>Cartridges</h2>
                     <br>$(gettext "Add components to your app through cartridges like MySQL, PHPMyAdmin, PostgreSQL, MongoDB, Memcached and others.")
                     <br>$(gettext "You can add a cartridge using our powerful Web Console or CLI")
                     <br> $ rhc cartridge add MySQL-5.1 -a AppName
@@ -216,7 +216,7 @@ cat <<EOF
 
                     <br>$(gettext "Development life-cycle")
                     <br>$(gettext "Warp-speed and too-damn-easy swapping to work with test, stage or production versions of your app.")
-                    <h2 style="marginL 20px;">$(gettext "Built-in Databases")
+                    <h2>$(gettext "Built-in Databases")
                     <br>$(gettext "Add a database just adding a new cartridge.")
                     $  rhc cartridge add mysql-5.1 -a AppName
 
