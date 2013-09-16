@@ -183,7 +183,6 @@ cat <<EOF
 
                 <div class="more-application">
 
-                    <br>$(gettext "Or choose an application from our Fast Start App repo")
                     <h2 style="margin: 20px;">SSL</h2>
                     <br>$(gettext "All applications are up and running on your own URL with shared SSL by default.")
                     <h2 style="margin: 20px;">Cartridges</h2>

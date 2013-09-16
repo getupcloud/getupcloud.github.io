@@ -91,9 +91,6 @@ msgstr "Escolha a tecnologia"
 msgid "of your app -"
 msgstr "de sua aplicação -"
 
-msgid "Or choose an application from our Fast Start App repo"
-msgstr "Ou escolha uma aplicação em nosso Fast Start APP"
-
 msgid "All applications are up and running on your own URL with shared SSL by default."
 msgstr "Todas as aplicações rodam com uma URL própria e um certificado SSL compartilhado."
 
