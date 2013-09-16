@@ -88,14 +88,11 @@ msgstr "Crie sua aplicação"
 msgid "Choose the technology"
 msgstr "Escolha a tecnologia"
 
-msgid "of your app -"
-msgstr "de sua aplicação -"
+msgid "Included to all applications."
+msgstr "Incluso para todas as aplicações."
 
-msgid "All applications are up and running on your own URL with shared SSL by default."
-msgstr "Todas as aplicações rodam com uma URL própria e um certificado SSL compartilhado."
-
-msgid "Add components to your app through cartridges like MySQL, PHPMyAdmin, PostgreSQL, MongoDB, Memcached and others."
-msgstr "Adicione componentes na aplicação através dos cartridges como MySQL, PHPMyAdmin, PostgreSQL, MongoDB, Memcached e outros."
+msgid "Add components to your app."
+msgstr "Adicione componentes na aplicação."
 
 msgid "You can add a cartridge using our powerful Web Console or CLI"
 msgstr "Você pode adicionar um cartridge usando o Console WEB ou CLI"
@@ -124,14 +121,8 @@ msgstr "and"
 msgid "running!"
 msgstr "running!"
 
-msgid "Development life-cycle"
-msgstr "Ciclo de vida do desenvolvimento"
-
-msgid "Warp-speed and too-damn-easy swapping to work with test, stage or production versions of your app."
-msgstr "Trabalhe e mude a versão da sua aplicação entre teste, stage e produção em velocidade de dobra"
-
 msgid "Built-in Databases"
-msgstr "Bancos de dados embutido"
+msgstr ""
 
 msgid "Add a database just adding a new cartridge."
 msgstr "Adicione um banco de dados adicionando um cartridge."
@@ -154,14 +145,29 @@ msgstr "com o crescimento,"
 msgid "don't get caught by traffic spikes."
 msgstr "mesmo que aconteça do dia para a noite."
 
-msgid "Your app set in one or more gears - as many as you want or your application requests demand. Forget servers, network, firewall or virtual machines."
-msgstr "Sua aplicação em um ou mais gears - quantos você quiser ou quantos forem necessários para atender as requisições. Esqueça servidores, redes, firewall ou VM's"
+msgid "Monitor"
+msgstr "Monitoramento"
+
+msgid "New gears to handle traffic spikes."
+msgstr "Mais ou menos gears, de acordo com o tráfego."
+
+msgid "Scale to millions of users."
+msgstr "Escale para milhões de usuários."
+
+msgid "Pay by hour usage and just for the time that each gear was active."
+msgstr "Pague por hora e apenas pelo período que o gear ficou ativo."
+
+msgid "It's more efficient and versatile than traditional computing."
+msgstr "É mais eficiente e versátil que os modelos tradicionais de hosting."
 
 msgid "That's it."
-msgstr "É só isso. Mesmo!"
+msgstr "É isso!"
 
-msgid "If you don't care too much for the liquid gold, do whatever you want with your spare time. Told you it was six simple steps, right? ;)"
-msgstr "Agora se você não liga para o néctar dourado, faça o que você quiser com seu tempo livre. Como dissemos, são simples passos, certo? ;)"
+msgid "Just lean back and enjoy the ride."
+msgstr "É reclinar na poltrona e curtir o passeio."
+
+msgid "And  don't forget the liquid gold!"
+msgstr "E não esqueça do néctar dourado!"
 
 msgid "Pricing and Benefits"
 msgstr "Preços e benefícios"
@@ -391,14 +397,17 @@ msgstr "Bem vindo à bordo."
 msgid "We sent you a email confirmation. Thank you!"
 msgstr "Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado por se cadastrar."
 
+msgid "Don't br shy!"
+msgstr "Não seja tímido!"
+
 msgid "Let's talk"
 msgstr "Venha conversar"
 
 msgid "about clouds."
 msgstr "sobre nuvem."
 
-msgid "Our Infrastructure is based on:"
-msgstr "Nossa infraestrutura é baseada em:"
+msgid "Infrastructure is based on:"
+msgstr "Infraestrutura é baseada em:"
 
 msgid "Privacy policy"
 msgstr "Política de privacidade"
