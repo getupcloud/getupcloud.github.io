@@ -178,18 +178,15 @@ cat <<EOF
 
                 <h1 class="each-title">$(gettext "Create your application")</h1>
                 <br>
-                <h2 class="each-sub-title">$(gettext "Choose the technology")<br class="mobile-space"><br class="ipad-space"> $(gettext "of your app -")<br>PHP, Ruby, Python, Node.js</h2>
+                <h2 class="each-sub-title">$(gettext "Choose the technology")<br class="mobile-space"><br class="ipad-space"> <br>PHP, Ruby, Python, Node.js</h2>
                 <h3 class="each-see-more see-application" id="application"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
                 <div class="more-application roboto_14ce">
-
-    
-                    <br>$(gettext "Or choose an application from our Fast Start App repo")
-                    <h2>SSL</h2>
-                    <br>$(gettext "All applications are up and running on your own URL with shared SSL by default.")
-                    <h2>Cartridges</h2>
-                    <br>$(gettext "Add components to your app through cartridges like MySQL, PHPMyAdmin, PostgreSQL, MongoDB, Memcached and others.")
-                    <br>$(gettext "You can add a cartridge using our powerful Web Console or CLI")
+                  <h2 style="margin: 20px;">SSL</h2>
+                    <br>$(gettext "Included to all applications.")
+                    <h2 style="margin: 20px;">Cartridges</h2>
+                    <br>$(gettext "Add components to your app.")
+                    <br>
                     <br> $ rhc cartridge add MySQL-5.1 -a AppName
          
 
@@ -214,9 +211,7 @@ cat <<EOF
 
                 <div class="more-publish roboto_14ce">
 
-                    <br>$(gettext "Development life-cycle")
-                    <br>$(gettext "Warp-speed and too-damn-easy swapping to work with test, stage or production versions of your app.")
-                    <h2>$(gettext "Built-in Databases")
+                    <h2 style="marginL 20px;">$(gettext "Built-in Databases")
                     <br>$(gettext "Add a database just adding a new cartridge.")
                     $  rhc cartridge add mysql-5.1 -a AppName
 
@@ -239,11 +234,15 @@ cat <<EOF
 
                 <div class="more-climb roboto_14ce">
 
-                    <h2>Gears</h2>
-                    <br> $(gettext "Your app set in one or more gears - as many as you want or your application requests demand. Forget servers, network, firewall or virtual machines.")
-                    <h2>$(gettext "That's it.")
-                    <br> $(gettext "If you don't care too much for the liquid gold, do whatever you want with your spare time. Told you it was six simple steps, right? ;)")
-                    <br>
+                    <h2>$(gettext "Monitor")</h2>
+                    <br>$(gettext "New gears to handle traffic spikes.")
+                    <h2>$(gettext "Scale to millions of users")
+                    <br>Pay as you go
+                    <br>$(gettext "Pay by hour usage and just for the time that each gear was active.")
+                    <br>$(gettext "It's more efficient and versatile than traditional computing.")
+                    <br>$(gettext "That's it.")
+                    <br>$(gettext "Just lean back and enjoy the ride.")
+                    <br>$(gettext "And  don't forget the liquid gold!")
                     <center>
                         <div style="margin: 20px 0;">
                             <img src="static/img/beer.png" style="margin: 20px 0;" border="0"/>
@@ -707,7 +706,7 @@ cat <<EOF
 
         <article class="get-in-touch-section">
 
-            <h1 class="title">$(gettext "Let's talk")<br class="mobile-space"> $(gettext "about clouds.")</h1>
+            <h1 class="title">$(gettext "Don't br shy!") $(gettext "Let's talk")<br class="mobile-space"> $(gettext "about clouds.")</h1>
 
             <br>
             <br>
@@ -734,20 +733,21 @@ cat <<EOF
                     <li>
                         <h1 class="contact-title">Porto Alegre</h1>
                         <br>
-                        Av. Coronel Marcos, 1919
-                        <br>
-                        Porto Alegre - RS
-                        <br>
                         poa@getupcloud.com
                     </li>
 
                     <li>
                         <h1 class="contact-title">São Paulo</h1>
                         <br>
-                        Av. Coronel Marcos, 1919
-                        <br>
-                        Porto Alegre - RS
+                        sampa@getupcloud.com
                     </li>
+
+                    <li>
+                        <h1 class="contact-title">Overseas</h1>
+                        <br>
+                        overseas@getupcloud.com
+                    </li>
+
                 </ul><!-- contact list -->
 
             </div><!-- right -->
@@ -759,7 +759,7 @@ cat <<EOF
     <footer class="primary">
         <article class="footer-section">
             <div class="infrastructure">
-                <p>$(gettext "Our Infrastructure is based on:")</p>
+                <p>$(gettext "Infrastructure is based on:")</p>
                 <br>
                 <ul>
                     <li class="amazon">Amazon</li>
