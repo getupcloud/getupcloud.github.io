@@ -54,6 +54,7 @@ $("#custo-adicional-cloud").mouseleave(function(){
 $(".close-register").click(function(){
 
     $(".open-create-your-account").slideUp();
+    $(".register, .introduction").show();
 
 });
 
@@ -149,6 +150,8 @@ jQuery(".info-gear").click(function(){
 $(".interval-section .about .register").click(function(){
 
     $(this).next().next().slideDown();
+    $(this).prev().hide();
+    $(this).hide();
 
 });
 
@@ -179,6 +182,7 @@ jQuery(".compare").click(function() {
 
 jQuery(".create-your-account").click(function() {
     jQuery(".open-create-your-account").show();
+    $(".interval-section .about .register, .interval-section .about .introduction").hide();
     jQuery('html, body').animate({
         scrollTop: jQuery(".interval").offset().top - 122
         }, 2000);

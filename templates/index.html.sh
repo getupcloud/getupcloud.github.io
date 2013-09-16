@@ -181,14 +181,15 @@ cat <<EOF
                 <h2 class="each-sub-title">$(gettext "Choose the technology")<br class="mobile-space"><br class="ipad-space"> $(gettext "of your app -")<br>PHP, Ruby, Python, Node.js</h2>
                 <h3 class="each-see-more see-application" id="application"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
-                <div class="more-application">
-
+                <div class="more-application roboto_14ce">
+   
                     <h2 style="margin: 20px;">SSL</h2>
                     <br>$(gettext "All applications are up and running on your own URL with shared SSL by default.")
                     <h2 style="margin: 20px;">Cartridges</h2>
                     <br>$(gettext "Add components to your app through cartridges like MySQL, PHPMyAdmin, PostgreSQL, MongoDB, Memcached and others.")
                     <br>$(gettext "You can add a cartridge using our powerful Web Console or CLI")
                     <br> $ rhc cartridge add MySQL-5.1 -a AppName
+         
 
                 </div><!-- more about application -->
 
@@ -209,7 +210,7 @@ cat <<EOF
                 <h2 class="each-sub-title">$(gettext "Just type 'git push' and voil&aacute;!")<br class="mobile-space"><br class="ipad-space"> $(gettext "Your application")<br class="desktop-space"> $(gettext "is up")<br class="ipad-space"> $(gettext "and")<br class="mobile-space"> $(gettext "running!")</h2>
                 <h3 class="each-see-more see-publish" id="publish"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
-                <div class="more-publish">
+                <div class="more-publish roboto_14ce">
 
                     <br>$(gettext "Development life-cycle")
                     <br>$(gettext "Warp-speed and too-damn-easy swapping to work with test, stage or production versions of your app.")
@@ -234,16 +235,18 @@ cat <<EOF
                 <h2 class="each-sub-title">$(gettext "With auto-scale")<br class="mobile-space"><br class="ipad-space"><br class="desktop-space"> $(gettext "you don't need")<br class="mobile-space"> $(gettext "to worry about")<br class="desktop-space"> $(gettext "growth,")<span class="hidden-work"><br class="desktop-space"> $(gettext "don't get caught by traffic spikes.")</span></h2>
                 <h3 class="each-see-more see-climb" id="climb">$(gettext "See More")</h3>
 
-                <div class="more-climb">
+                <div class="more-climb roboto_14ce">
+
                     <h2>Gears</h2>
                     <br> $(gettext "Your app set in one or more gears - as many as you want or your application requests demand. Forget servers, network, firewall or virtual machines.")
                     <h2>$(gettext "That's it.")
                     <br> $(gettext "If you don't care too much for the liquid gold, do whatever you want with your spare time. Told you it was six simple steps, right? ;)")
                     <br>
                     <center>
-                        <img src="static/img/beer.png" style="margin: 20px 0;" border="0"/>
+                        <div style="margin: 20px 0;">
+                            <img src="static/img/beer.png" style="margin: 20px 0;" border="0"/>
+                        </div>
                     </center>
-
 
                 </div><!-- more about climb -->
 
