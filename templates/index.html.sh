@@ -31,6 +31,8 @@ cat <<EOF
 <link href="static/css/main.css" rel="stylesheet" />
 <link href="static/css/slide.css" rel="stylesheet" />
 
+<script src="static/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
 </head>
@@ -48,7 +50,7 @@ cat <<EOF
                 <a class="advantages-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")']);">$(gettext "How it Works")</a>
                 <a class="price-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")']);">$(gettext "Pricing")</a>
                 <a class="contact-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "get_in_touch")']);">$(gettext "Get in Touch")</a>
-                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")]);">$(gettext "Support")</a>
+                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;" target="_blank" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")]);">$(gettext "Support")</a>
                 <br class="mobile-space">
                 <a href="/blog" class="blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog')]);">Blog</a>
 
@@ -57,13 +59,15 @@ cat <<EOF
                     <a href="index_en.html" style="color: #232323; margin-left: 20px;" class="fl" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">English</a>
                 </div>
 
-                <div class="register mobile-space">
+                <div class="separator-register_mobile"></div>
 
-                    <a class="enter fl" href="#entrar" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'menu_superior', 'login']);">$(gettext "Log In")</a>
+                <div class="register_mobile mobile-space">
+
+                    <a class="enter fl" href="https://broker.getupcloud.com/console/signin" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'menu_superior', 'login']);" target="_blank">$(gettext "Log In")</a>
 
                     <a class="btn create-your-account fl" href="#criesuaconta" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'menu_superior', '$(gettext "signup")']);">$(gettext "Sign Up")</a>
 
-                </div><!-- register -->
+                </div><!-- register mobile -->
 
             </nav><!-- menu -->
 
@@ -73,7 +77,7 @@ cat <<EOF
 
                 <div class="for-ipad">
 
-                    <a href="https://getup.zendesk.com/home/" rel="support" style="color: #232323;" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")]);">$(gettext "Support")</a>
+                    <a href="https://getup.zendesk.com/home/" rel="support" target="_blank" style="color: #232323;" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")]);">$(gettext "Support")</a>
                     <a href="/blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog')]);">Blog</a>
 
                 </div><!-- for ipad -->
@@ -89,7 +93,7 @@ cat <<EOF
 
                 <div class="register">
 
-                    <a class="enter fl" href="#entrar" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'menu_superior', 'login']);">$(gettext "Log In")</a>
+                    <a class="enter fl" href="https://broker.getupcloud.com/console/signin" target="_blank" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'menu_superior', 'login']);">$(gettext "Log In")</a>
 
                     <a class="btn create-your-account fl" href="#criesuaconta" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'menu_superior', '$(gettext "signup")']);">$(gettext "Sign Up")</a>
 
@@ -356,7 +360,7 @@ cat <<EOF
 
             <div class="right">
 
-                <div class="comparative">
+                <div class="comparative comparative-show">
 
                     <img src="static/img/prices-1.png" border="0" />
 
@@ -367,7 +371,7 @@ cat <<EOF
                         </div>
                         <br>
                         <div class="description">
-                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <b><u><a class="comparative-show"   onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")/$(gettext "checkitout")')]);">$(gettext "Check it out.")</a></u></b></h2>
+                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <b><u><a class="comparative-show" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")/$(gettext "checkitout")')]);">$(gettext "Check it out.")</a></u></b></h2>
                         </div>
 
                     </div><!-- info -->
@@ -720,6 +724,11 @@ cat <<EOF
                 </article>
             </section>
 
+            <section class="modal" id="modal-terms">
+                <div class="modal-mask"></div>
+                <div class="modal-content"></div>
+            </section>
+
     <section class="get-in-touch">
 
         <article class="get-in-touch-section">
@@ -801,10 +810,10 @@ cat <<EOF
 
                 <nav class="terms">
 
-                    <a href="/termos-de-uso.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "terms_of_use")')]);">$(gettext "Terms of use")</a>
-                    <a href="/politica-de-privacidade.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "privacy_police")')]);">$(gettext "Privacy policy")</a>
-                    <a href="/politica-de-utilizacao-aceitavel.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "aup")')]);">$(gettext "Acceptable use policy")</a>
-                    <a href="/politica-de-suporte.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "support_policy")')]);">$(gettext "Support policy")</a>
+                    <a href="termos-de-uso.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "terms_of_use")')]);">$(gettext "Terms of use")</a>
+                    <a href="politica-de-privacidade.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "privacy_police")')]);">$(gettext "Privacy policy")</a>
+                    <a href="politica-de-utilizacao-aceitavel.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "aup")')]);">$(gettext "Acceptable use policy")</a>
+                    <a href="politica-de-suporte.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "support_policy")')]);">$(gettext "Support policy")</a>
 
                 </nav><!-- terms -->
 
@@ -814,10 +823,9 @@ cat <<EOF
 
     </footer><!-- footer secondary -->
     
-    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
-    <script>window.jQuery || document.write('<script src="http://www.getupcloud.com/static/js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="http://www.getupcloud.com/static/js/plugins.js"></script>
-    <script src="http://getupcloud.com/static/js/main.js"></script>
+    <script>window.jQuery || document.write('<script src="static/js/jquery-1.9.1.min.js"><\/script>')</script>    
+    <script src="static/js/plugins.js"></script>
+    <script src="static/js/main.js"></script>
 
     <script type="text/javascript">
 
