@@ -77,11 +77,7 @@ $("#application").click(function() {
     $(".more-application").toggle("fast");
     $(this).find(".see-less-text").toggle("fast");
     $(this).find(".see-more-text").toggle("fast");
-    $(".see-publish").show();
-    $(".see-climb").show();
-    $(".more-publish").hide("fast");
-    $(".more-climb").hide("fast");
-
+    $(".see-application").show();
 });
 
 $("#publish").click(function() {
@@ -89,10 +85,7 @@ $("#publish").click(function() {
     $(".more-publish").toggle("fast");
     $(this).find(".see-less-text").toggle("fast");
     $(this).find(".see-more-text").toggle("fast");
-    $(".see-climb").show();
-    $(".see-application").show();
-    $(".more-application").hide("fast");
-    $(".more-climb").hide("fast");
+    $(".see-publish").show();
 
 });
 
@@ -101,15 +94,11 @@ $("#climb").click(function() {
     $(".more-climb").toggle("fast");
     $(this).find(".see-less-text").toggle("fast");
     $(this).find(".see-more-text").toggle("fast");
-    $(".see-application").show();
-    $(".see-publish").show();
-    $(".more-publish").hide("fast");
-    $(".more-application").hide("fast");
+    $(".see-climb").show();
 
 });
 
-
-$(".interval-section .about .open-create-your-account span.blur").click(function(){
+$(".wrap .about .open-create-your-account span.blur").click(function(){
 
     $(this).fadeOut();
 
@@ -147,12 +136,14 @@ jQuery(".info-gear").click(function(){
 
 });
 
-$(".interval-section .about .register").click(function(){
+$(".wrap .about .register").click(function(){
 
     $(this).next().next().slideDown();
     $(this).prev().hide();
     $(this).hide();
-
+    jQuery('html, body').animate({
+        scrollTop: jQuery("#pricing").offset().top - 122
+        }, 2000);
 });
 
 jQuery(".advantages-link").click(function() {
@@ -182,9 +173,9 @@ jQuery(".compare").click(function() {
 
 jQuery(".create-your-account").click(function() {
     jQuery(".open-create-your-account").show();
-    $(".interval-section .about .register, .interval-section .about .introduction").hide();
+    $(".wrap .about .register, .wrap-section .about .introduction").hide();
     jQuery('html, body').animate({
-        scrollTop: jQuery(".interval").offset().top - 122
+        scrollTop: jQuery("#pricing").offset().top - 122
         }, 2000);
     });
 

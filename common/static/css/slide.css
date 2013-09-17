@@ -103,13 +103,13 @@ height: 0;
 
 .flex-direction-nav .flex-next {
 position: absolute;
-right: 48%;
+right: 47.5%;
 background-position: -65px 0;
 }
 
 .flex-direction-nav .flex-prev {
 position: absolute;
-left: 48%;
+left: 47.5%;
 background-position: 0;
 }
 

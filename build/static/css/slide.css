@@ -1,0 +1,174 @@
+/* #########################################################
+
+HOW TO CREATE A RESPONSIVE IMAGE SLIDER [TUTORIAL]
+
+"How to create a Responsive Image Slider [Tutorial]" was specially made for DesignModo by our friend Valeriu Timbuc.
+
+Links:
+http://vtimbuc.net
+http://designmodo.com
+http://vladimirkudinov.com
+
+######################################################### */
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.flexslider a img { outline: none; border: none; }
+
+.flexslider {
+margin: 122px 0 0 0;
+padding: 0;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li {
+display: none;
+-webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+display: block;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+
+html[xmlns] .slides { display: block; }
+* html .slides { height: 1%; }
+
+.flex-direction-nav { width: 100%; bottom: 25px; position: relative; }
+
+/* Theme Styles */
+.flexslider {
+position: relative;
+zoom: 1;
+}
+
+/* Edit it if you want */
+.flex-container {
+width: 100%;
+overflow: hidden;
+}
+
+.flexslider .slides { zoom: 1; height: 472px; overflow: hidden; /* novos codigos */ }
+
+
+
+/* Direction Nav */
+.flex-direction-nav a {
+display: block;
+margin: 0 0 0 0;
+width: 7px;
+height: 13px;
+cursor: pointer;
+text-indent: -9999px;
+z-index: 99;
+background: url(../img/sprites-slide.png);
+}
+
+.flex-direction-nav a:before {
+display: block;
+position: absolute;
+content: '';
+width: 7px;
+height: 13px;
+}
+
+.flex-direction-nav a:after {
+display: block;
+position: absolute;
+content: '';
+width: 0;
+height: 0;
+}
+
+.flex-direction-nav .flex-next {
+position: absolute;
+right: 47.5%;
+background-position: -65px 0;
+}
+
+.flex-direction-nav .flex-prev {
+position: absolute;
+left: 47.5%;
+background-position: 0;
+}
+
+.flex-direction-nav .flex-next:before { background-position: -9px 0; }
+.flex-direction-nav .flex-prev:before { background-position: 0 0; }
+
+.flex-direction-nav .flex-next:after {
+right: 0;
+}
+
+.flex-direction-nav .flex-prev:after {
+left: 0;
+}
+
+
+
+/* Control Nav */
+.flexslider .flex-control-nav {
+position: absolute;
+width: 100%;
+bottom: 10px;
+text-align: center;
+}
+
+.flex-control-nav li {
+display: inline-block;
+zoom: 1;
+width: 12px;
+height: 13px;
+margin: 0 2px;
+}
+
+.flex-control-paging li a {
+display: block;
+cursor: pointer;
+text-indent: -9999px;
+width: 12px;
+height: 13px;
+background: url(../img/sprites-slide.png) no-repeat;
+background-position: -31px 0;
+}
+
+.flex-control-paging li a.flex-active {
+background-position: -14px 0;
+}
+
+/* Captions */
+.flexslider .slides .caption {
+/*position: absolute;
+left: 17.1%;
+bottom: 100px;
+margin: 0;*/
+/* novos codigos */
+position: relative; width: 942px; margin: 0 auto; bottom: 367px;
+}
+
+.flexslider .slides .caption h1 {
+
+font-size: 62px; font-weight: normal; color: #232323;
+}
+
+.flexslider .slides .caption h2 { margin-left: 4px; }

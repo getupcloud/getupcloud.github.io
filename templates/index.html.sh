@@ -1,24 +1,24 @@
 cat <<EOF
 <!DOCTYPE html>
-<html lang="pt-br">
 <head>
-<title>Getup - Grow in the cloud</title>
+
+<title>$(gettext "Getup - Grow in the cloud")</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta http-equiv="Content-Language" Content="pt-br">
+<META http-equiv="Content-Language" Content="$LANGUAGE_ID">
 <meta name="viewport" content="width=device-width">
 
 <meta property="fb:app_id" content="360523914066509">
-<meta property="og:title" content="Getup - Grow in the cloud">
+<meta property="og:title" content="$(gettext "Getup - Grow in the cloud")">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://getupcloud.com">
 <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
-<meta property="og:description" name="description" content="Getup é uma plataforma para hospedagem na nuvem Uma forma fácil e rápida de desenvolver e publicar aplicações web. Você se preocupa com o código - nós cuidamos do resto.">
-<meta property="gc:build_id" content="testing-20130821134219">
+<meta property="og:description" name="description" content="$(gettext "Getup is a scalable cloud application platform.") $(gettext "An easy and fast way to build and deploy web apps.") $(gettext "You only have to worry about coding your app - we take care of everything else.")">
+<meta property="gc:build_id" content="$BUILD_ID">
 
-<script>var U = { register: 'https://broker.getupcloud.com/getup/account/signup/', language: 'pt-br', debug: 0 };</script>
-<script src="http://getupcloud.com/static/js/language.js"></script>
+<script>var U = { register: '$SIGNUP', language: '$LANGUAGE_ID', debug: $DEBUG };</script>
+<script src="http://www.getupcloud.com/static/js/language.js"></script>
 
 <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico"> 
 
@@ -45,11 +45,25 @@ cat <<EOF
 
             <nav>
 
-                <a class="advantages-link">$(gettext "How it Works")</a>
-                <a class="price-link">$(gettext "Pricing")</a>
-                <a class="contact-link">$(gettext "Get in Touch")</a>
-                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;">$(gettext "Support")</a>
-                <a href="/blog" class="blog" style="color: #232323;">Blog</a>
+                <a class="advantages-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")']);">$(gettext "How it Works")</a>
+                <a class="price-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")']);">$(gettext "Pricing")</a>
+                <a class="contact-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "get_in_touch")']);">$(gettext "Get in Touch")</a>
+                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")]);">$(gettext "Support")</a>
+                <br class="mobile-space">
+                <a href="/blog" class="blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog')]);">Blog</a>
+
+                <div class="fl mobile-space" style="width: 100%;">
+                    <a href="index.html" rel="pt-br" class="fl pt" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'pt']);">Português</a>
+                    <a href="index_en.html" style="color: #232323; margin-left: 20px;" class="fl" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">English</a>
+                </div>
+
+                <div class="register mobile-space">
+
+                    <a class="enter fl" href="#entrar" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'menu_superior', 'login']);">$(gettext "Log In")</a>
+
+                    <a class="btn create-your-account fl" href="#criesuaconta" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'menu_superior', '$(gettext "signup")']);">$(gettext "Sign Up")</a>
+
+                </div><!-- register -->
 
             </nav><!-- menu -->
 
@@ -59,15 +73,15 @@ cat <<EOF
 
                 <div class="for-ipad">
 
-                    <a href="https://getup.zendesk.com/home/" rel="support" style="color: #232323;">$(gettext "Support")</a>
-                    <a href="/blog" style="color: #232323;">Blog</a>
+                    <a href="https://getup.zendesk.com/home/" rel="support" style="color: #232323;" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")]);">$(gettext "Support")</a>
+                    <a href="/blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog')]);">Blog</a>
 
                 </div><!-- for ipad -->
 
                 <div class="languages fr">
 
-                    <a href="index.html" rel="pt-br" class="pt">PT</a>
-                    <a href="index_en.html" rel="en-us" class="en" style="color: #232323;">EN</a>
+                    <a href="index.html" rel="pt-br" class="pt" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'pt']);">PT</a>
+                    <a href="index_en.html" style="color: #232323;" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">EN</a>
 
                 </div><!-- languages -->
 
@@ -75,9 +89,9 @@ cat <<EOF
 
                 <div class="register">
 
-                    <a class="enter fl" href="#entrar">$(gettext "Log In")</a>
+                    <a class="enter fl" href="#entrar" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'menu_superior', 'login']);">$(gettext "Log In")</a>
 
-                    <a class="btn create-your-account fl" href="#criesuaconta">$(gettext "Sign Up")</a>
+                    <a class="btn create-your-account fl" href="#criesuaconta" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'menu_superior', '$(gettext "signup")']);">$(gettext "Sign Up")</a>
 
                 </div><!-- register -->
 
@@ -103,8 +117,8 @@ cat <<EOF
                             <h2>$(gettext "An easy and fast way to build and deploy web apps.")<div class="mobile-hidden"><br class="dekstop-space">$(gettext "You only have to worry about coding your app - we take care of everything else.")</div></h2>
 
                             <div class="buttons">
-                                <a class="btn compare">$(gettext "Compare benefits")</a>
-                                <a class="btn create-your-account">$(gettext "Sign Up")</a>
+                                <a class="btn compare" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")')]);">$(gettext "Compare benefits")</a>
+                                <a class="btn create-your-account" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'carrossel', '$(gettext "signup")')]);">$(gettext "Sign Up")</a>
                             </div><!-- buttons -->
 
                         </div><!-- caption -->
@@ -115,7 +129,28 @@ cat <<EOF
                 <li>
                     <div class="each-image">
 
-                        <img src="static/img/slider_001.jpg" border="0" />
+                        <img src="static/img/slider_002.jpg" border="0" />
+
+                        <div class="caption">
+
+                            <h1 style="color: #fff;">$(gettext "GROW IN THE CLOUD")</h1>
+                            <br>
+                            <h2 style="color: #80d2d1;">$(gettext "Compute power when you need it most.")</h2>
+
+                            <div class="buttons">
+                                <a class="btn compare" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")')]);">$(gettext "Compare benefits")</a>
+                                <a class="btn create-your-account" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'carrossel', '$(gettext "signup")')]);">$(gettext "Sign Up")</a>
+                            </div><!-- buttons -->
+
+                        </div><!-- caption -->
+
+                    </div><!-- each image -->
+                </li>
+
+                <li>
+                    <div class="each-image">
+
+                        <img src="static/img/slider_003.jpg" border="0" />
 
                         <div class="caption">
 
@@ -124,8 +159,8 @@ cat <<EOF
                             <h2>$(gettext "Don't get caught by traffic spikes.")<br>$(gettext "Deploy and scale to millions of users.")</h2>
 
                             <div class="buttons">
-                                <a class="btn compare">$(gettext "Compare benefits")</a>
-                                <a class="btn create-your-account">$(gettext "Sign Up")</a>
+                                <a class="btn compare" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")')]);">$(gettext "Compare benefits")</a>
+                                <a class="btn create-your-account" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'carrossel', '$(gettext "signup")')]);">$(gettext "Sign Up")</a>
                             </div><!-- buttons -->
 
                         </div><!-- caption -->
@@ -133,26 +168,6 @@ cat <<EOF
                     </div><!-- each image -->
                 </li>
 
-                <li>
-                    <div class="each-image">
-
-                        <img src="static/img/slider_001.jpg" border="0" />
-
-                        <div class="caption">
-
-                            <h1>$(gettext "GROW IN THE CLOUD")</h1>
-                            <br>
-                            <h2>$(gettext "Compute power when you need it most.")</h2>
-
-                            <div class="buttons">
-                                <a class="btn compare">$(gettext "Compare benefits")</a>
-                                <a class="btn create-your-account">$(gettext "Sign Up")</a>
-                            </div><!-- buttons -->
-
-                        </div><!-- caption -->
-
-                    </div><!-- each image -->
-                </li>
             </ul><!-- list -->
         </div><!-- flex slider -->
     </div><!-- flex container -->
@@ -179,15 +194,16 @@ cat <<EOF
                 <h1 class="each-title">$(gettext "Create your application")</h1>
                 <br>
                 <h2 class="each-sub-title">$(gettext "Choose the technology")<br class="mobile-space"><br class="ipad-space"> <br>PHP, Ruby, Python, Node.js</h2>
-                <h3 class="each-see-more see-application" id="application"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
+                <h3 class="each-see-more see-application" id="application" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")/$(gettext "create")')]);"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
                 <div class="more-application roboto_14ce">
-                  <h2 style="margin: 20px;">SSL</h2>
+                  <b>SSL</b>
                     <br>$(gettext "Included to all applications.")
-                    <h2 style="margin: 20px;">Cartridges</h2>
+                    <br><br>
+                    <b>Cartridges</b>
                     <br>$(gettext "Add components to your app.")
                     <br>
-                    <br> $ rhc cartridge add MySQL-5.1 -a AppName
+                    <br>$ rhc cartridge add MySQL-5.1 -a AppName
          
 
                 </div><!-- more about application -->
@@ -207,12 +223,14 @@ cat <<EOF
                 <h1 class="each-title">$(gettext "Deploy")</h1>
                 <br>
                 <h2 class="each-sub-title">$(gettext "Just type 'git push' and voil&aacute;!")<br class="mobile-space"><br class="ipad-space"> $(gettext "Your application")<br class="desktop-space"> $(gettext "is up")<br class="ipad-space"> $(gettext "and")<br class="mobile-space"> $(gettext "running!")</h2>
-                <h3 class="each-see-more see-publish" id="publish"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
+                <h3 class="each-see-more see-publish" id="publish" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")/$(gettext "deploy")')]);"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
                 <div class="more-publish roboto_14ce">
 
-                    <h2 style="marginL 20px;">$(gettext "Built-in Databases")
-                    <br>$(gettext "Add a database just adding a new cartridge.")
+                    <b>$(gettext "Built-in Databases")</b>
+                    <br>
+                    $(gettext "Add a database just adding a new cartridge.")
+                    <br><br>
                     $  rhc cartridge add mysql-5.1 -a AppName
 
                 </div><!-- more about publish -->
@@ -230,17 +248,21 @@ cat <<EOF
                 <h1 class="each-title">$(gettext "Scale")</h1>
                 <br>
                 <h2 class="each-sub-title">$(gettext "With auto-scale")<br class="mobile-space"><br class="ipad-space"><br class="desktop-space"> $(gettext "you don't need")<br class="mobile-space"> $(gettext "to worry about")<br class="desktop-space"> $(gettext "growth,")<span class="hidden-work"><br class="desktop-space"> $(gettext "don't get caught by traffic spikes.")</span></h2>
-                <h3 class="each-see-more see-climb" id="climb">$(gettext "See More")</h3>
+                <h3 class="each-see-more see-climb" id="climb"  onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")/$(gettext "scale")')]);"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
                 <div class="more-climb roboto_14ce">
 
-                    <h2>$(gettext "Monitor")</h2>
-                    <br>$(gettext "New gears to handle traffic spikes.")
+                    <b>$(gettext "Monitor")</b>
+                    <br>
+                    $(gettext "New gears to handle traffic spikes.")
                     <h2>$(gettext "Scale to millions of users")
-                    <br>Pay as you go
+                    <br><br>
+                    <b>Pay as you go</b>
                     <br>$(gettext "Pay by hour usage and just for the time that each gear was active.")
                     <br>$(gettext "It's more efficient and versatile than traditional computing.")
-                    <br>$(gettext "That's it.")
+                    <br>
+                    <br>
+                    <b>$(gettext "That's it.")</b>
                     <br>$(gettext "Just lean back and enjoy the ride.")
                     <br>$(gettext "And  don't forget the liquid gold!")
                     <center>
@@ -345,7 +367,7 @@ cat <<EOF
                         </div>
                         <br>
                         <div class="description">
-                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <b><u><a class="comparative-show">$(gettext "Check it out.")</a></u></b></h2>
+                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <b><u><a class="comparative-show"   onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")/$(gettext "checkitout")')]);">$(gettext "Check it out.")</a></u></b></h2>
                         </div>
 
                     </div><!-- info -->
@@ -609,98 +631,94 @@ cat <<EOF
 
     </section><!-- price -->
 
-    <section class="interval">
+            <section id="pricing">
+                <article class="wrap">
+                 
+                    <div class="about">
 
-        <div class="interval-section">
+                        <div class="introduction">
 
-            <div class="about">
+                            <h1 class="roboto_20v">Na Getup você paga apenas<br class="mobile-space"> pelo que usou <br class="ipad-space">e ainda<br class="mobile-space"> economiza seu tempo.</h1>
 
-                <div class="introduction">
+                        </div><!-- introduction -->
 
-                    <h1 class="roboto_20v">$(gettext "With Getup you pay only")<br class="mobile-space"> $(gettext "for what you use") <br class="ipad-space"><br class="mobile-space"> $(gettext "and saves time.")</h1>
+                        <div class="register">
 
-                </div><!-- introduction -->
+                            <a class="btn create-account fl">Crie sua conta</a>
 
-                <div class="register">
+                        </div><!-- register -->
 
-                    <a class="btn create-account fl" href="#criesuaconta">$(gettext "Sign Up")</a>
+                        <div style="clear: both;"></div>
 
-                </div><!-- register -->
+                        <div class="open-create-your-account">
 
-                <div style="clear: both;"></div>
+                        <div class="start-register">
+                            <h1 class="fl">Criar conta</h1>
+                            <a class="fr close-register"></a>
+                        </div>
 
-                <div class="open-create-your-account">
+                        <div id="create-account"></div>
+                        <form action="" method="post" id="signup">
+                            <fieldset>
+                                <input type="hidden" name="lang" id="language" value="pt-br">
 
-                    <div class="start-register">
-                        <h1 class="fl">$(gettext "Create Account")</h1>
-                        <a class="fr close-register"></a>
-                    </div>
-
-                    <form action="" method="post" id="signup">
-                        <fieldset>
-                            <input type="hidden" name="lang" id="language" value="pt-br">
-
-                            <div class="fl">
-                                <label>
-                                    <span class="blur">$(gettext "What's your name")</span>
-                                    <input tabindex="1" type="text" class="name" name="name" id="name" />
-                                </label>
-                                <label>
-                                    <span class="blur">$(gettext "What's your e-mail")</span>
-                                    <input tabindex="2" type="text" class="email" name="email" id="email" />
-                                </label>
-                                <div class="promotional-code">
-                                    <h1 class="fl roboto_14ce"></h1>
+                                <div class="fl">
                                     <label>
-                                        <span class="blur">$(gettext "Promo code (optional)")</span>
-                                        <input tabindex="3" type="text" class="promotional" name="coupon_code" id="coupon-code" />
+                                        <span>Qual seu nome?</span>
+                                        <input tabindex="1" type="text" class="name" name="name" id="name" />
                                     </label>
+                                    <label>
+                                        <span>Qual seu e-mail?</span>
+                                        <input tabindex="2" type="text" name="email" id="email" class="email" />
+                                    </label>
+                                    <div class="promotional-code">
+                                        <h1 class="fl roboto_14ce">Código promocional?</h1>
+                                        <label>
+                                            <span>Código promocional</span>
+                                            <input tabindex="3" type="text" class="promotional" name="coupon_code" id="coupon-code" />
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="fl passwords">
-                                <label>
-                                    <span class="blur">$(gettext "Password")</span>
-                                    <input tabindex="4" type="password" name="password1" id="password" class="pass" />
-                                </label>
-                                <label>
-                                    <span class="blur">$(gettext "Confirm password")</span>
-                                    <input tabindex="5" type="password" name="password2" id="password-confirm" class="confirm-pass" />
-                                </label>
+                                <div class="fl" style="margin-left: 31px;">
+                                    <label>
+                                        <span>Senha</span>
+                                        <input tabindex="3" type="password" name="password1" id="password" class="pass" />
+                                    </label>
+                                    <label>
+                                        <span>Confirme a senha</span>
+                                        <input tabindex="4" type="password" name="password2" id="password-confirm" class="confirm-pass" />
+                                    </label>
 
-                                <p id="message"></p>
+                                </div>
 
-                            </div>
+                                <div class="fl separator-button"></div>
 
-                            <div class="fl separator-button"></div>
+                                <div class="fr">
 
-                            <div class="fr">
+                                    <fieldset class="fl checkbox" id="check-terms" style="margin-right: 20px;">
+                                        <input id="use_terms" class="css-checkbox" type="checkbox" name="use_terms" value="5">
+                                        <label for="use_terms" name="use_terms" class="c18r css-label">Li e aceito os <u><a href="#termodeuso" style="color: #585858;">Termos de uso</a>.</u></label>
+                                    </fieldset>
 
-                                <fieldset class="fl" style="margin-right: 20px;">
-                                    <input id="terms-of-use" class="css-checkbox" type="checkbox" name="terms-of-use" value="5" />
-                                    <label for="terms-of-use" name="terms-of-use" class="c18r css-label">$(gettext "I read and agree to the")<u><a href="#termodeuso" style="color: #585858;">$(gettext "Terms of use")</a>.</u></label>
-                                </fieldset>
+                                    <p id="message"></p>
 
-                                <button tabindex="8" class="fr btn continue">$(gettext "Continue")</button>
+                                    <button tabindex="8" class="fl btn continue">Continuar</button>
 
-                            </div>
+                                </div>
 
-                        </fieldset>
-                    </form><!-- form -->
+                            </fieldset>
+                        </form>
 
-                    <div class="thank">
+                        <p id="success">
+                            <p class="roboto_20ver">$(gettext "Welcome aboard.")</h1>
+                            <p class="roboto_14ce">$(gettext "We sent you a email confirmation. Thank you!")</h2>
+                        </p>
+            
+                        </div></div></div>
 
-                        <h1 class="roboto_20ver">$(gettext "Welcome aboard.")</h1>
-                        <h2 class="roboto_14ce">$(gettext "We sent you a email confirmation. Thank you!")</h2>
-
-                    </div><!-- thank -->
-
-                </div>
-
-            </div><!-- about -->
-
-        </div><!-- interval section -->
-
-    </section><!-- interval -->
+                    
+                </article>
+            </section>
 
     <section class="get-in-touch">
 
@@ -713,15 +731,15 @@ cat <<EOF
 
             <ul class="talk">
                 <li>
-                    ship@getupcloud.com
+                    <a onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "contact")', 'ship']);">ship@getupcloud.com</a>
                 </li>
 
                 <li>
-                    <a href="http://www.twitter.com/getupcloud" target="_blank">twitter.com/getupcloud</a>
+                    <a href="http://www.twitter.com/getupcloud" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "contact")', 'twitter']);" target="_blank">twitter.com/getupcloud</a>
                 </li>
 
                 <li>
-                    <a href="http://www.facebook.com/getupcloud" target="_blank">fb.com/getupcloud</a>
+                    <a href="http://www.facebook.com/getupcloud" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "contact")', 'facebook']);" target="_blank">fb.com/getupcloud</a>
                 </li>
             </ul><!-- talk list -->
 
@@ -783,10 +801,10 @@ cat <<EOF
 
                 <nav class="terms">
 
-                    <a href="/termos-de-uso.html">$(gettext "Terms of use")</a>
-                    <a href="/politica-de-privacidade.html">$(gettext "Privacy policy")</a>
-                    <a href="/politica-de-utilizacao-aceitavel.html">$(gettext "Acceptable use policy")</a>
-                    <a href="/politica-de-suporte.html">$(gettext "Support policy")</a>
+                    <a href="/termos-de-uso.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "terms_of_use")')]);">$(gettext "Terms of use")</a>
+                    <a href="/politica-de-privacidade.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "privacy_police")')]);">$(gettext "Privacy policy")</a>
+                    <a href="/politica-de-utilizacao-aceitavel.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "aup")')]);">$(gettext "Acceptable use policy")</a>
+                    <a href="/politica-de-suporte.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "support_policy")')]);">$(gettext "Support policy")</a>
 
                 </nav><!-- terms -->
 
@@ -795,6 +813,27 @@ cat <<EOF
         </article><!-- footer section -->
 
     </footer><!-- footer secondary -->
+    
+    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+    <script>window.jQuery || document.write('<script src="http://www.getupcloud.com/static/js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="http://www.getupcloud.com/static/js/plugins.js"></script>
+    <script src="http://getupcloud.com/static/js/main.js"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39510729-1']);
+      _gaq.push(['_setDomainName', 'getupcloud.com']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 
 </body>
 

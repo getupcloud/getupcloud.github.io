@@ -417,3 +417,52 @@ msgstr "Política de utilização aceitável - PUA"
 
 msgid "Support policy"
 msgstr "Política de suporte"
+
+msgid "en"
+msgstr "pt"
+
+msgid "pricing"
+msgstr "preco"
+
+msgid "signup"
+msgstr "crieconta"
+
+msgid "contact"
+msgstr "contato"
+
+msgid "section"
+msgstr "secao"
+
+msgid "support"
+msgstr "suporte"
+
+msgid "how"
+msgstr "como"
+
+msgid "get_in_touch"
+msgstr "contato"
+
+msgid "create"
+msgstr "crie"
+
+msgid "deploy"
+msgstr "publique"
+
+msgid "scale"
+msgstr "escale"
+
+msgid "checkitout"
+msgstr "confira"
+
+msgid "terms_of_use"
+msgstr "termos_de_uso"
+
+msgid "privacy_police"
+msgstr "politica_privacidade"
+
+msgid "aup"
+msgstr "pua"
+
+msgid "support_policy"
+msgstr "politica_suporte"
+

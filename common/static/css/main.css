@@ -95,7 +95,7 @@ a.button-mobile { background: url(../img/button-mobile.png) no-repeat; cursor: p
 .clear { clear: both; }
 
 .btn { border-radius: 5px; }
-.create-your-account, .create-account { width: 142px; height: 47px; background: #de3527; line-height: 47px; font-weight: 300; text-align: center; color: #fff; text-decoration: none; }
+.create-your-account, .create-account { cursor: pointer; width: 142px; height: 47px; background: #de3527; line-height: 47px; font-weight: 300; text-align: center; color: #fff; text-decoration: none; }
 .continue { width: 142px; height: 47px; border: 0; background: #de3527; font-size: 14px; line-height: 47px; font-weight: 300; text-align: center; color: #fff; text-decoration: none; }
 .create-your-account:hover, .create-account:hover, .continue:hover { background: #c12a1e; } 
 
@@ -151,12 +151,12 @@ a.button-mobile { background: url(../img/button-mobile.png) no-repeat; cursor: p
 .advantages .each .each-arrow { position: absolute; top: -8px; right: -58px; z-index: 99; }
 .advantages .each .image { height: 60px; margin-top: 50px; margin-bottom: 30px; }
 .advantages .each .each-title { font-size: 22px; font-weight: normal; color: #2d2d2d; }
-.advantages .each .each-sub-title { font-size: 14px; line-height: 19px; font-weight: 400; color: #585858; width: 238px; margin-left: 40px; }
+.advantages .each .each-sub-title { font-size: 14px; line-height: 19px; font-weight: 400; color: #585858; width: 240px; /*margin-left: 40px;*/ margin: auto; }
 .advantages .each .each-see-more  { cursor: pointer; position: absolute; background: url(../img/bg-seemore.png) no-repeat; width: 111px; padding-top: 15px; bottom: -5px; left: 32%; display: block; z-index: 99; font-size: 14px; font-weight: 400; color: #737373; } 
 .advantages .each .each-see-more:hover { color: red; }
 .advantages .each .see-less-text { display: none; }
 
-.advantages-section .each .more-application, .advantages-section .each .more-publish, .advantages-section .each .more-climb { display: none; text-align: center; width: 235px; margin: 20px 0 20px 41px; }
+.advantages-section .each .more-application, .advantages-section .each .more-publish, .advantages-section .each .more-climb { display: none; text-align: center; width: 235px; /*margin: 20px 0 20px 41px;*/ margin: 25px auto; }
 
 /* Price */
 
@@ -239,11 +239,11 @@ a.button-mobile { background: url(../img/button-mobile.png) no-repeat; cursor: p
 
 /* Interval */
 
-.interval { position: relative; width: 100%; overflow: hidden; }
-.interval-section { width: 942px; height: 100%; margin: 35px auto; overflow: hidden; }
-.interval-section .about {} 
-.interval-section .about .introduction { float: left; width: 60%; text-align: right; }
-.interval-section .about .register { margin-left: 46px; float: left; }
+#pricing { position: relative; width: 100%; overflow: hidden; }
+.wrap { width: 942px; height: 100%; margin: 35px auto; overflow: hidden; }
+.wrap .about {} 
+.wrap .about .introduction { float: left; width: 60%; text-align: right; }
+.wrap .about .register { margin-left: 46px; float: left; }
 
 input[type=checkbox].css-checkbox {
 position: absolute; 
@@ -290,7 +290,7 @@ background-image:url(../img/checkbox.png);
 
 .separator-talk { width: 280px; height: 1px; margin-top: 50px; background: #ef665b; display: none; }
 
-.get-in-touch-section .right { float: left; margin: 50px 0 0 180px; }
+.get-in-touch-section .right { float: left; margin: 50px 0 0 80px; }
 .get-in-touch-section .right ul.contact { float: left; }
 .get-in-touch-section .right ul.contact li { float: left; list-style: none; background: url(../img/li-contact.png) no-repeat; padding-left: 40px; color: #fff; font-weight: 300; font-size: 14px; line-height: 19px; }
 .get-in-touch-section .right ul.contact .contact-title { font-family: 'Roboto'; font-size: 24px; font-weight: 100; }
@@ -320,49 +320,49 @@ footer.secondary .footer-section .right .terms a { text-decoration: none; color:
 
 /* Site antigo */
 
-.interval-section .about .open-create-your-account { position: relative; float: left; margin-top: 30px; display: none; }
+.wrap .about .open-create-your-account { position: relative; float: left; margin-top: 30px; display: none; }
 
-.interval-section .about .open-create-your-account form { margin: 10px auto 0; }
-.interval-section .about .open-create-your-account form fieldset {}
+.wrap .about .open-create-your-account form { margin: 10px auto 0; }
+.wrap .about .open-create-your-account form fieldset {}
 
-.interval-section .about .open-create-your-account form input { background: #eeeeee; }
+.wrap .about .open-create-your-account form input { background: #eeeeee; }
 
-.interval-section .about .open-create-your-account form h2 { font-family: 'ostrich medium'; font-size: 48px; margin: 0; text-align: center; }
-.interval-section .about .open-create-your-account form p { font-family: 'Roboto'; font-size: 13px; margin: 0 0 10px 6px; text-align: center; width: 300px; color: #f23f2c; }
+.wrap .about .open-create-your-account form h2 { font-family: 'ostrich medium'; font-size: 48px; margin: 0; text-align: center; }
+.wrap .about .open-create-your-account form p { font-family: 'Roboto'; font-size: 13px; margin: 0 0 10px 6px; text-align: center; width: 300px; color: #f23f2c; }
 
-.interval-section .about .open-create-your-account form label { display: block; float: left; margin: 10px 5px 0 5px; position: relative; }
-.interval-section .about .open-create-your-account form label span { font-family: 'Roboto'; font-size: 15px; left: 10px; line-height: 43px; position: absolute; top: 0; color: #616161; }
-.interval-section .about .open-create-your-account form label input.name, .interval-section .about .open-create-your-account form label input.email { float: left; border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 205px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
-.interval-section .about .open-create-your-account form label input.promotional { float: left; border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 235px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
-.interval-section .about .open-create-your-account form label input.pass, .interval-section .about .open-create-your-account form label input.confirm-pass { float: left; border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 182px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
-.interval-section .about .open-create-your-account form label input.small { width: 145px; }
-.interval-section .about .open-create-your-account form .passwords { margin-left: 31px; }
+.wrap .about .open-create-your-account form label { display: block; float: left; margin: 10px 5px 0 5px; position: relative; }
+.wrap .about .open-create-your-account form label span { font-family: 'Roboto'; font-size: 15px; left: 10px; line-height: 43px; position: absolute; top: 0; color: #616161; }
+.wrap .about .open-create-your-account form label input.name, .wrap .about .open-create-your-account form label input.email { float: left; border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 205px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+.wrap .about .open-create-your-account form label input.promotional { float: left; border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 235px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+.wrap .about .open-create-your-account form label input.pass, .wrap .about .open-create-your-account form label input.confirm-pass { float: left; border: none; border-top: 1px solid #e4e4e4; font-family: 'Roboto'; font-size: 15px; line-height: 38px; height: 38px; text-indent: 10px; width: 182px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+.wrap .about .open-create-your-account form label input.small { width: 145px; }
+.wrap .about .open-create-your-account form .passwords { margin-left: 31px; }
 
-.interval-section .about .open-create-your-account form .promotional-code { float: left; clear: left; margin-top: 21px; }
-.interval-section .about .open-create-your-account form .promotional-code h1 { margin-left: 5px; margin-right: 5px; line-height: 61px; }
+.wrap .about .open-create-your-account form .promotional-code { float: left; clear: left; margin-top: 21px; }
+.wrap .about .open-create-your-account form .promotional-code h1 { margin-left: 5px; margin-right: 5px; line-height: 61px; }
 
-.interval-section .about .open-create-your-account form .separator-button { margin: 20px 0; background: #eeeeee; width: 100%; height: 1px; }
+.wrap .about .open-create-your-account form .separator-button { margin: 20px 0; background: #eeeeee; width: 100%; height: 1px; }
 
-.interval-section .about .open-create-your-account .start-register { width: 100%; overflow: hidden; font-size: 22px; font-weight: 300; }
+.wrap .about .open-create-your-account .start-register { width: 100%; overflow: hidden; font-size: 22px; font-weight: 300; }
 
 /* Thank */
 
-.interval-section .about .open-create-your-account .thank { margin-top: 70px; text-align: center; }
+#success {}
 
 /* Thank. */
 
-.interval-section .about .open-create-your-account form label.checkbox { width: 100%; height: 36px; }
-.interval-section .about .open-create-your-account form label.checkbox span { cursor: pointer; display: inline-block; left: 20px; top: -2px; line-height: 24px; }
-.interval-section .about .open-create-your-account form label.checkbox span a { text-decoration: underline; }
-.interval-section .about .open-create-your-account form label.checkbox input { width: auto; height: 24px; }
+.wrap .about .open-create-your-account form label.checkbox { width: 100%; }
+.wrap .about .open-create-your-account form label.checkbox span { cursor: pointer; display: inline-block; left: 20px; top: -3px; line-height: 24px; }
+.wrap .about .open-create-your-account form label.checkbox span a { text-decoration: underline; }
+.wrap .about .open-create-your-account form label.checkbox input { width: auto; height: 12px; }
 
-.interval-section .about .open-create-your-account form label.error span,
-.interval-section .about .open-create-your-account form label.error a { color: #f23f2c; }
+.wrap .about .open-create-your-account form label.error span,
+.wrap .about .open-create-your-account form label.error a { color: #f23f2c; }
 
-.interval-section .about .open-create-your-account form label.error input { color: #f23f2c; border-color: #f23f2c; }
+.wrap .about .open-create-your-account form label.error input { color: #f23f2c; border-color: #f23f2c; }
 
-.interval-section .about .open-create-your-account form button { cursor: pointer; }
-.interval-section .about .open-create-your-account form button.loading { text-indent: -5000em; }
+.wrap .about .open-create-your-account form button { cursor: pointer; }
+.wrap .about .open-create-your-account form button.loading { text-indent: -5000em; }
 
 /* Ipad */
 @media (max-width: 768px) {
@@ -403,7 +403,7 @@ left: 46% !important;
 
 .advantages .each { width: 225px; }
 .advantages .first-ipad { margin-left: 17px !important; }
-.advantages .each .each-sub-title { margin-left: 0; }
+.advantages .each .each-sub-title { width: 210px; }
 .advantages-section .each .more-application, .advantages-section .each .more-publish, .advantages-section .each .more-climb { width: 165px; }
 
 /* Price */
@@ -439,16 +439,17 @@ left: 46% !important;
 
 /* Interval */
 
-.interval-section { width: 768px; }
-.interval-section .about { width: 100%; }
-.interval-section .about .introduction { width: 55%; text-align: right; }
+.wrap { width: 768px; }
+.wrap .about { width: 100%; }
+.wrap .about .introduction { width: 55%; text-align: right; }
 
-.interval-section .about .open-create-your-account { margin-left: 20px; width: 710px; }
+.wrap .about .open-create-your-account { margin-left: 20px; width: 710px; }
 
-.interval-section .about .open-create-your-account form .passwords { margin-left: 0; }
+.wrap .about .open-create-your-account form .passwords { margin-left: 0; }
 
 /* Get in touch */
 
+.get-in-touch-section { width: 750px; }
 .get-in-touch-section .right ul.contact li { float: none; margin-bottom: 50px; }
 .get-in-touch-section ul.talk { margin-left: 20px; }
 .get-in-touch-section .right { margin-left: 110px; }
@@ -486,7 +487,7 @@ footer.secondary .footer-section .left .nav-footer a.first-child { margin-left: 
 header { height: 70px; }
 header .logo { margin-top: 20px; margin-left: 20px; }
 header nav { width: 100%; height: auto; margin: 0; padding-left: 20px; display: none; }
-header nav a { line-height: 50px; }
+header nav a { line-height: 50px; display: block; }
 header .fix { width: 100%; }
 header .button-mobile { margin-right: 20px; display: block; }
 .right-side { display: none; }
@@ -498,7 +499,7 @@ header .button-mobile { margin-right: 20px; display: block; }
 .flexslider .slides { height: 320px !important; }
 .flexslider .slides .caption h1 { font-size: 24px !important; }
 .flexslider .slides .caption h2 { font-size: 12px !important; }
-.flexslider .slides .caption { width: 280px !important; padding-left: 20px; bottom: 290px !important; }
+.flexslider .slides .caption { width: 94% !important; padding-left: 20px; bottom: 290px !important; }
 
 .flex-direction-nav .flex-next {
 position: absolute;
@@ -516,7 +517,7 @@ left: 41% !important;
 
 /* Advantages */
 
-.advantages-section { width: 100%; }
+.advantages-section { width: 100%; margin: 40px auto; }
 .advantages .each { width: 280px !important; margin-top: 15px; margin-left: 20px; }
 .advantages .each .each-arrow { display: none; }
 
@@ -526,7 +527,7 @@ left: 41% !important;
 .price-section .left dl.first dt { width: 130px; }
 .price-section .left dl.first dd { width: 150px; }
 
-.price-section { width: 100%; }
+.price-section { width: 100%; margin: 40px auto; }
 .price-section .left { width: 100%; }
 .price-section .left dl.first .separator { width: 100%; }
 .price-section .left dl.second { width: 280px; margin: 30px 20px 0 20px; }
@@ -545,39 +546,41 @@ left: 41% !important;
 .price-section .right .comparative .title-info { width: 130px; float: left; margin-top: 10px; margin-left: 40px; }
 .price-section .right .comparative .description { width: 256px; clear: both; }*/
 .register { float: none; }
+.price-section .info-gear-show { display: none; }
+.price-section .left dl.second .info-gear img { display: none; }
 
 /* Interval */
 
-.interval-section { width: 320px; padding: 0 20px; }
-.interval-section .about { width: 320px; }
-.interval-section .about .register { margin: 20px auto; width: 142px; float: none; overflow: hidden; padding-top: 20px; }
-.interval-section .about .introduction { width: 100%; text-align: center; }
+.wrap { width: 320px; padding: 0 20px; margin: 40px auto; }
+.wrap .about { width: 320px; }
+.wrap .about .register { margin: 20px auto; width: 142px; float: none; overflow: hidden; padding-top: 20px; }
+.wrap .about .introduction { width: 100%; text-align: center; }
 
-.interval-section .about .open-create-your-account { width: 280px;margin-left: 0; }
+.wrap .about .open-create-your-account { width: 280px;margin-left: 0; }
 
-.interval-section .about .open-create-your-account form .passwords { margin-left: 0; }
+.wrap .about .open-create-your-account form .passwords { margin-left: 0; }
 .continue { margin-top: 20px; float: left; }
 
 /* Get in Touch */
 
-.get-in-touch-section { padding-left: 20px; padding-right: 20px; }
-.get-in-touch-section ul.talk { float: none; width: 280px !important; margin-left: 0 !important; }
+.get-in-touch-section { width: 100%; padding-left: 20px; padding-right: 20px; margin: 40px auto; }
+.get-in-touch-section ul.talk { float: left; margin: 50px 0 0 0; width: 280px !important; }
 .get-in-touch-section .right { margin: 0; float: none; }
 .get-in-touch-section .right ul.contact li { margin: 50px 0 50px 0; float: none; }
 .get-in-touch-section .right ul.contact li:last-child { margin: 50px 0 0 0; float: none; }
 .get-in-touch-section .title { margin: 0; }
 
-.separator-talk { display: block; }
+.separator-talk { display: block; float: left; }
 
 /* Footer primary */
 
-footer.primary .footer-section { width: 100%; }
+footer.primary .footer-section { width: 100%; margin: 40px auto; }
 footer.primary .footer-section .infrastructure { float: none; margin: 0 auto; }
 footer.primary .footer-section .mark { display: none; }
 
 /* Footer secondary */
 
-footer.secondary { min-height: 145px; }
+footer.secondary {}
 footer.secondary .footer-section .left { padding: 0 5px; }
 footer.secondary .footer-section .left .nav-footer a { margin-left: 23px; }
 
@@ -585,6 +588,8 @@ footer.secondary .footer-section .right { float: none; clear: left; }
 footer.secondary .footer-section .right .terms { width: 400px; margin-bottom: 20px; }
 footer.secondary .footer-section .right .terms a { display: block; height: 25px; }
 footer.secondary .footer-section .right .terms a.first-child { margin-left: 20px !important; }
+
+form div { margin-left: 0 !important; }
 
 /* Fonts */
 
