@@ -551,7 +551,7 @@ footer.secondary .footer-section .left nav a.first-child { margin-left: 20px !im
 
 /* Modal */
 
-.modal { display: none; height: 100%; left: 349px; position: fixed; top: 0; width: 100%; z-index: 20; }
+.modal { display: none; height: 100%; left: 169px; position: fixed; top: 0; width: 100%; z-index: 20; }
 
 .modal-mask { background: #000; height: 100%; left: 0; opacity: 0.5; position: fixed; top: 0; width: 100%; z-index: 1; }
 .modal-content { background: #fff; height: 400px; left: 50%; position: absolute; top: 50%; width: 90%; z-index: 2; }
@@ -566,7 +566,7 @@ footer.secondary .footer-section .left nav a.first-child { margin-left: 20px !im
 #terms p, #terms a, #terms p, #terms li { font-size: 13px; }
 #terms ul { list-style: none; }
 
-#terms .scroll { height: 298px; margin: 10px; overflow: auto; width: 94%; }
+#terms .scroll { height: 280px; margin: 10px; overflow: auto; width: 94%; }
 
 /* Default */
 
