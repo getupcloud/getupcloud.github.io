@@ -724,7 +724,7 @@ cat <<EOF
 
         <article class="get-in-touch-section">
 
-            <h1 class="title">$(gettext "Don't br shy!") $(gettext "Let's talk")<br class="mobile-space"> $(gettext "about clouds.")</h1>
+            <h1 class="title">$(gettext "Don't be shy!") $(gettext "Let's talk")<br class="mobile-space"> $(gettext "about clouds.")</h1>
 
             <br>
             <br>

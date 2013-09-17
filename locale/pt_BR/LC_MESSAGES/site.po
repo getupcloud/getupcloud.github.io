@@ -397,7 +397,7 @@ msgstr "Bem vindo à bordo."
 msgid "We sent you a email confirmation. Thank you!"
 msgstr "Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado por se cadastrar."
 
-msgid "Don't br shy!"
+msgid "Don't be shy!"
 msgstr "Não seja tímido!"
 
 msgid "Let's talk"
