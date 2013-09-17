@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://getupcloud.com">
 <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
 <meta property="og:description" name="description" content="Getup é uma plataforma para hospedagem na nuvem. Uma forma fácil e rápida de desenvolver e publicar aplicações web. Você se preocupa com o código - nós cuidamos do resto.">
-<meta property="gc:build_id" content="testing-20130917134718">
+<meta property="gc:build_id" content="testing-20130917153722">
 
 <script>var U = { register: 'https://broker.getupcloud.com/getup/account/signup/', language: 'pt-br', debug: 0 };</script>
 <script src="http://www.getupcloud.com/static/js/language.js"></script>
@@ -29,6 +29,8 @@
 
 <link href="static/css/main.css" rel="stylesheet" />
 <link href="static/css/slide.css" rel="stylesheet" />
+
+<script src="static/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
@@ -47,7 +49,7 @@
                 <a class="advantages-link" onclick="_gaq.push(['_trackPageview', '/pt/como']);">Como Funciona</a>
                 <a class="price-link" onclick="_gaq.push(['_trackPageview', '/pt/preco']);">Preço</a>
                 <a class="contact-link" onclick="_gaq.push(['_trackPageview', '/pt/contato']);">Contato</a>
-                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;" onclick="_gaq.push(['_trackEvent', 'pt', 'secao', 'suporte]);">Suporte</a>
+                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;" target="_blank" onclick="_gaq.push(['_trackEvent', 'pt', 'secao', 'suporte]);">Suporte</a>
                 <br class="mobile-space">
                 <a href="/blog" class="blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog')]);">Blog</a>
 
@@ -56,13 +58,15 @@
                     <a href="index_en.html" style="color: #232323; margin-left: 20px;" class="fl" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">English</a>
                 </div>
 
-                <div class="register mobile-space">
+                <div class="separator-register_mobile"></div>
 
-                    <a class="enter fl" href="#entrar" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'login']);">Entrar</a>
+                <div class="register_mobile mobile-space">
+
+                    <a class="enter fl" href="https://broker.getupcloud.com/console/signin" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'login']);" target="_blank">Entrar</a>
 
                     <a class="btn create-your-account fl" href="#criesuaconta" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'crieconta']);">Crie sua Conta</a>
 
-                </div><!-- register -->
+                </div><!-- register mobile -->
 
             </nav><!-- menu -->
 
@@ -72,7 +76,7 @@
 
                 <div class="for-ipad">
 
-                    <a href="https://getup.zendesk.com/home/" rel="support" style="color: #232323;" onclick="_gaq.push(['_trackEvent', 'pt', 'secao', 'suporte]);">Suporte</a>
+                    <a href="https://getup.zendesk.com/home/" rel="support" target="_blank" style="color: #232323;" onclick="_gaq.push(['_trackEvent', 'pt', 'secao', 'suporte]);">Suporte</a>
                     <a href="/blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog')]);">Blog</a>
 
                 </div><!-- for ipad -->
@@ -88,7 +92,7 @@
 
                 <div class="register">
 
-                    <a class="enter fl" href="#entrar" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'login']);">Entrar</a>
+                    <a class="enter fl" href="https://broker.getupcloud.com/console/signin" target="_blank" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'login']);">Entrar</a>
 
                     <a class="btn create-your-account fl" href="#criesuaconta" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'crieconta']);">Crie sua Conta</a>
 
@@ -355,7 +359,7 @@
 
             <div class="right">
 
-                <div class="comparative">
+                <div class="comparative comparative-show">
 
                     <img src="static/img/prices-1.png" border="0" />
 
@@ -366,7 +370,7 @@
                         </div>
                         <br>
                         <div class="description">
-                            <h2 class="roboto_14c">Compare Getup com outros serviços durante um mês com um Pico de acesso como exemplo. <b><u><a class="comparative-show"   onclick="_gaq.push(['_trackPageview', '/pt/preco/confira')]);">Confira</a></u></b></h2>
+                            <h2 class="roboto_14c">Compare Getup com outros serviços durante um mês com um Pico de acesso como exemplo. <b><u><a class="comparative-show" onclick="_gaq.push(['_trackPageview', '/pt/preco/confira')]);">Confira</a></u></b></h2>
                         </div>
 
                     </div><!-- info -->
@@ -719,6 +723,11 @@
                 </article>
             </section>
 
+            <section class="modal" id="modal-terms">
+                <div class="modal-mask"></div>
+                <div class="modal-content"></div>
+            </section>
+
     <section class="get-in-touch">
 
         <article class="get-in-touch-section">
@@ -800,10 +809,10 @@
 
                 <nav class="terms">
 
-                    <a href="/termos-de-uso.html" onclick="_gaq.push(['_trackPageview', '/pt/termos_de_uso')]);">Termos de uso</a>
-                    <a href="/politica-de-privacidade.html" onclick="_gaq.push(['_trackPageview', '/pt/politica_privacidade')]);">Política de privacidade</a>
-                    <a href="/politica-de-utilizacao-aceitavel.html" onclick="_gaq.push(['_trackPageview', '/pt/pua')]);">Política de utilização aceitável - PUA</a>
-                    <a href="/politica-de-suporte.html" onclick="_gaq.push(['_trackPageview', '/pt/politica_suporte')]);">Política de suporte</a>
+                    <a href="termos-de-uso.html" onclick="_gaq.push(['_trackPageview', '/pt/termos_de_uso')]);">Termos de uso</a>
+                    <a href="politica-de-privacidade.html" onclick="_gaq.push(['_trackPageview', '/pt/politica_privacidade')]);">Política de privacidade</a>
+                    <a href="politica-de-utilizacao-aceitavel.html" onclick="_gaq.push(['_trackPageview', '/pt/pua')]);">Política de utilização aceitável - PUA</a>
+                    <a href="politica-de-suporte.html" onclick="_gaq.push(['_trackPageview', '/pt/politica_suporte')]);">Política de suporte</a>
 
                 </nav><!-- terms -->
 
@@ -813,10 +822,9 @@
 
     </footer><!-- footer secondary -->
     
-    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
-    <script>window.jQuery || document.write('<script src="http://www.getupcloud.com/static/js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="http://www.getupcloud.com/static/js/plugins.js"></script>
-    <script src="http://getupcloud.com/static/js/main.js"></script>
+    <script>window.jQuery || document.write('<script src="static/js/jquery-1.9.1.min.js"><\/script>')</script>    
+    <script src="static/js/plugins.js"></script>
+    <script src="static/js/main.js"></script>
 
     <script type="text/javascript">
 

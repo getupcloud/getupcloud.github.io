@@ -24,17 +24,6 @@
         Getup.elements.window.scroll(Getup.scroll)
     };
 
-    Getup.scroll = function() {
-        Getup.scrollTop = Getup.elements.window.scrollTop();
-
-        var fixMenu = (Getup.scrollTop > Getup.sections.what.elements.content.height());
-        Getup.menu.elements.content[fixMenu ? 'addClass' : 'removeClass']('fixed');
-
-        if (!Getup.menu.scrolling) {
-            Getup.menu.setActive();
-        }
-    };
-
     Getup.resize = function() {
 
     };
@@ -136,7 +125,7 @@
     Getup.sections.howItWorks.elements = {};
 
     Getup.sections.howItWorks.init = function() {
-        Getup.sections.howItWorks.elements.content = $('#how-it-works');
+        Getup.sections.howItWorks.elements.content = $('.advantages');
         Getup.sections.howItWorks.elements.options = Getup.sections.howItWorks.elements.content.find('ul:first li');
         Getup.sections.howItWorks.elements.details = Getup.sections.howItWorks.elements.content.find('.details');
 
@@ -177,7 +166,7 @@
     Getup.sections.pricing.elements = {};
 
     Getup.sections.pricing.init = function() {
-        Getup.sections.pricing.elements.content = $('.interval');
+        Getup.sections.pricing.elements.content = $('#pricing');
         Getup.sections.pricing.config.startHeight = Getup.sections.pricing.elements.content.height();
 
         Getup.sections.pricing.elements.infoPanel = Getup.sections.pricing.elements.content.find('.right .panel');
@@ -383,7 +372,7 @@
     Getup.sections.getInTouch.elements = {};
 
     Getup.sections.getInTouch.init = function() {
-        Getup.sections.getInTouch.elements.content = $('#get-in-touch');
+        Getup.sections.getInTouch.elements.content = $('.get-in-touch');
 
         Getup.sections.itemsToScroll.push(Getup.sections.getInTouch.elements.content);
     };
