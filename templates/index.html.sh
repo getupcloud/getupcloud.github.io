@@ -50,13 +50,13 @@ cat <<EOF
                 <a class="advantages-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")']);">$(gettext "How it Works")</a>
                 <a class="price-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")']);">$(gettext "Pricing")</a>
                 <a class="contact-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "get_in_touch")']);">$(gettext "Get in Touch")</a>
-                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;" target="_blank" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")]);">$(gettext "Support")</a>
+                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;" target="_blank" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")
                 <br class="mobile-space">
-                <a href="/blog" class="blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog')]);">Blog</a>
+                <a href="/blog" class="blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog']);">Blog</a>
 
                 <div class="fl mobile-space" style="width: 100%;">
-                    <a href="index.html" rel="pt-br" class="fl pt" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'pt']);">Português</a>
-                    <a href="index_en.html" style="color: #232323; margin-left: 20px;" class="fl" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">English</a>
+                    <a href="/index.html" rel="pt-br" class="fl pt" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'pt']);">Português</a>
+                    <a href="/index_en.html" style="color: #232323; margin-left: 20px;" class="fl" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">English</a>
                 </div>
 
                 <div class="separator-register_mobile"></div>
@@ -78,14 +78,14 @@ cat <<EOF
                 <div class="for-ipad">
 
                     <a href="https://getup.zendesk.com/home/" rel="support" target="_blank" style="color: #232323;" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")]);">$(gettext "Support")</a>
-                    <a href="/blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog')]);">Blog</a>
+                    <a href="/blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog']);">Blog</a>
 
                 </div><!-- for ipad -->
 
                 <div class="languages fr">
 
-                    <a href="index.html" rel="pt-br" class="pt" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'pt']);">PT</a>
-                    <a href="index_en.html" style="color: #232323;" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">EN</a>
+                    <a href="/index.html" rel="pt-br" class="pt" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'pt']);">PT</a>
+                    <a href="/index_en.html" style="color: #232323;" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">EN</a>
 
                 </div><!-- languages -->
 
@@ -121,8 +121,8 @@ cat <<EOF
                             <h2>$(gettext "An easy and fast way to build and deploy web apps.")<div class="mobile-hidden"><br class="dekstop-space">$(gettext "You only have to worry about coding your app - we take care of everything else.")</div></h2>
 
                             <div class="buttons">
-                                <a class="btn compare" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")')]);">$(gettext "Compare benefits")</a>
-                                <a class="btn create-your-account" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'carrossel', '$(gettext "signup")')]);">$(gettext "Sign Up")</a>
+                                <a class="btn compare" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")']);">$(gettext "Compare benefits")</a>
+                                <a class="btn create-your-account" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'carrossel', '$(gettext "signup")']);">$(gettext "Sign Up")</a>
                             </div><!-- buttons -->
 
                         </div><!-- caption -->
@@ -142,8 +142,8 @@ cat <<EOF
                             <h2 style="color: #80d2d1;">$(gettext "Compute power when you need it most.")</h2>
 
                             <div class="buttons">
-                                <a class="btn compare" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")')]);">$(gettext "Compare benefits")</a>
-                                <a class="btn create-your-account" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'carrossel', '$(gettext "signup")')]);">$(gettext "Sign Up")</a>
+                                <a class="btn compare" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")']);">$(gettext "Compare benefits")</a>
+                                <a class="btn create-your-account" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'carrossel', '$(gettext "signup")']);">$(gettext "Sign Up")</a>
                             </div><!-- buttons -->
 
                         </div><!-- caption -->
@@ -163,8 +163,8 @@ cat <<EOF
                             <h2>$(gettext "Don't get caught by traffic spikes.")<br>$(gettext "Deploy and scale to millions of users.")</h2>
 
                             <div class="buttons">
-                                <a class="btn compare" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")')]);">$(gettext "Compare benefits")</a>
-                                <a class="btn create-your-account" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'carrossel', '$(gettext "signup")')]);">$(gettext "Sign Up")</a>
+                                <a class="btn compare" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")']);">$(gettext "Compare benefits")</a>
+                                <a class="btn create-your-account" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', 'carrossel', '$(gettext "signup")']);">$(gettext "Sign Up")</a>
                             </div><!-- buttons -->
 
                         </div><!-- caption -->
@@ -198,7 +198,7 @@ cat <<EOF
                 <h1 class="each-title">$(gettext "Create your application")</h1>
                 <br>
                 <h2 class="each-sub-title">$(gettext "Choose the technology")<br class="mobile-space"><br class="ipad-space"> <br>PHP, Ruby, Python, Node.js</h2>
-                <h3 class="each-see-more see-application" id="application" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")/$(gettext "create")')]);"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
+                <h3 class="each-see-more see-application" id="application" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")/$(gettext "create")']);"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
                 <div class="more-application roboto_14ce">
                   <b>SSL</b>
@@ -227,7 +227,7 @@ cat <<EOF
                 <h1 class="each-title">$(gettext "Deploy")</h1>
                 <br>
                 <h2 class="each-sub-title">$(gettext "Just type 'git push' and voil&aacute;!")<br class="mobile-space"><br class="ipad-space"> $(gettext "Your application")<br class="desktop-space"> $(gettext "is up")<br class="ipad-space"> $(gettext "and")<br class="mobile-space"> $(gettext "running!")</h2>
-                <h3 class="each-see-more see-publish" id="publish" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")/$(gettext "deploy")')]);"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
+                <h3 class="each-see-more see-publish" id="publish" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")/$(gettext "deploy")']);"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
                 <div class="more-publish roboto_14ce">
 
@@ -252,7 +252,7 @@ cat <<EOF
                 <h1 class="each-title">$(gettext "Scale")</h1>
                 <br>
                 <h2 class="each-sub-title">$(gettext "With auto-scale")<br class="mobile-space"><br class="ipad-space"><br class="desktop-space"> $(gettext "you don't need")<br class="mobile-space"> $(gettext "to worry about")<br class="desktop-space"> $(gettext "growth,")<span class="hidden-work"><br class="desktop-space"> $(gettext "don't get caught by traffic spikes.")</span></h2>
-                <h3 class="each-see-more see-climb" id="climb"  onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")/$(gettext "scale")')]);"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
+                <h3 class="each-see-more see-climb" id="climb"  onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")/$(gettext "scale")']);"><span class="see-more-text">$(gettext "See More")</span><span class="see-less-text">$(gettext "Less")</span></h3>
 
                 <div class="more-climb roboto_14ce">
 
@@ -371,7 +371,7 @@ cat <<EOF
                         </div>
                         <br>
                         <div class="description">
-                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <b><u><a class="comparative-show" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")/$(gettext "checkitout")')]);">$(gettext "Check it out.")</a></u></b></h2>
+                            <h2 class="roboto_14c">$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <b><u><a class="comparative-show" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")/$(gettext "checkitout")']);">$(gettext "Check it out.")</a></u></b></h2>
                         </div>
 
                     </div><!-- info -->
@@ -642,13 +642,13 @@ cat <<EOF
 
                         <div class="introduction">
 
-                            <h1 class="roboto_20v">Na Getup você paga apenas<br class="mobile-space"> pelo que usou <br class="ipad-space">e ainda<br class="mobile-space"> economiza seu tempo.</h1>
+                            <h1 class="roboto_20v">$(gettext "With Getup you pay only")<br class="mobile-space"> $(gettext "for what you use") <br class="ipad-space">$(gettext "and saves time.")</h1>
 
                         </div><!-- introduction -->
 
                         <div class="register">
 
-                            <a class="btn create-account fl">Crie sua conta</a>
+                            <a class="btn create-account fl">$(gettext "Sign Up")</a>
 
                         </div><!-- register -->
 
@@ -657,7 +657,7 @@ cat <<EOF
                         <div class="open-create-your-account">
 
                         <div class="start-register">
-                            <h1 class="fl">Criar conta</h1>
+                            <h1 class="fl">$(gettext "Create Account")</h1>
                             <a class="fr close-register"></a>
                         </div>
 
@@ -668,28 +668,28 @@ cat <<EOF
 
                                 <div class="fl">
                                     <label>
-                                        <span>Qual seu nome?</span>
+                                        <span>$(gettext "What's your name ?")</span>
                                         <input tabindex="1" type="text" class="name" name="name" id="name" />
                                     </label>
                                     <label>
-                                        <span>Qual seu e-mail?</span>
+                                        <span>$(gettext "What's your e-mail ?")</span>
                                         <input tabindex="2" type="text" name="email" id="email" class="email" />
                                     </label>
                                     <div class="promotional-code">
-                                        <h1 class="fl roboto_14ce">Código promocional?</h1>
+                                        <h1 class="fl roboto_14ce">$(gettext "Promo code ?")</h1>
                                         <label>
-                                            <span>Código promocional</span>
-                                            <input tabindex="3" type="text" class="promotional" name="coupon_code" id="coupon-code" />
+                                            <span>$(gettext "Insert the Code (Optional)")</span>
+                                            <input tabindex="5" type="text" class="promotional" name="coupon_code" id="coupon-code" />
                                         </label>
                                     </div>
                                 </div>
                                 <div class="fl" style="margin-left: 31px;">
                                     <label>
-                                        <span>Senha</span>
+                                        <span>$(gettext "Password")</span>
                                         <input tabindex="3" type="password" name="password1" id="password" class="pass" />
                                     </label>
                                     <label>
-                                        <span>Confirme a senha</span>
+                                        <span>$(gettext "Confirm password")</span>
                                         <input tabindex="4" type="password" name="password2" id="password-confirm" class="confirm-pass" />
                                     </label>
 
@@ -701,12 +701,12 @@ cat <<EOF
 
                                     <fieldset class="fl checkbox" id="check-terms" style="margin-right: 20px;">
                                         <input id="use_terms" class="css-checkbox" type="checkbox" name="use_terms" value="5">
-                                        <label for="use_terms" name="use_terms" class="c18r css-label">Li e aceito os <u><a href="#termodeuso" style="color: #585858;">Termos de uso</a>.</u></label>
+                                        <label for="use_terms" name="use_terms" class="c18r css-label">$(gettext "I have read and agree to the")<u><a href="termos-de-uso.html" style="color: #585858;">$(gettext "Terms of use")</a>.</u></label>
                                     </fieldset>
 
                                     <p id="message"></p>
 
-                                    <button tabindex="8" class="fl btn continue">Continuar</button>
+                                    <button tabindex="8" class="fl btn continue">$(gettext "Continue")</button>
 
                                 </div>
 
@@ -810,10 +810,10 @@ cat <<EOF
 
                 <nav class="terms">
 
-                    <a href="termos-de-uso.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "terms_of_use")')]);">$(gettext "Terms of use")</a>
-                    <a href="politica-de-privacidade.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "privacy_police")')]);">$(gettext "Privacy policy")</a>
-                    <a href="politica-de-utilizacao-aceitavel.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "aup")')]);">$(gettext "Acceptable use policy")</a>
-                    <a href="politica-de-suporte.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "support_policy")')]);">$(gettext "Support policy")</a>
+                    <a href="termos-de-uso.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "terms_of_use")']);">$(gettext "Terms of use")</a>
+                    <a href="politica-de-privacidade.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "privacy_police")']);">$(gettext "Privacy policy")</a>
+                    <a href="politica-de-utilizacao-aceitavel.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "aup")']);">$(gettext "Acceptable use policy")</a>
+                    <a href="politica-de-suporte.html" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "support_policy")']);">$(gettext "Support policy")</a>
 
                 </nav><!-- terms -->
 

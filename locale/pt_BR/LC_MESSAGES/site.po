@@ -359,19 +359,17 @@ msgid "for what you use"
 msgstr "apenas pelo que usou"
 
 msgid "and saves time."
-msgstr "e ainda economiza tempo"
+msgstr "e ainda economiza tempo."
 
 msgid "Create Account"
 msgstr "Criar Conta"
 
-msgid "First Step"
-msgstr "PRIMEIRO PASSO"
 
-msgid "What's your name"
-msgstr "Qual seu nome"
+msgid "What's your name ?"
+msgstr "Qual seu nome ?"
 
-msgid "What's your e-mail"
-msgstr "Qual seu e-mail"
+msgid "What's your e-mail ?"
+msgstr "Qual seu e-mail ?"
 
 msgid "Password"
 msgstr "Senha"
@@ -379,10 +377,13 @@ msgstr "Senha"
 msgid "Confirm password"
 msgstr "Confirme a senha"
 
-msgid "Promo code (optional)"
-msgstr "Código promocional (opcional)"
+msgid "Promo code ?"
+msgstr "Código promocional ?"
 
-msgid "I read and agree to the"
+msgid "Insert the Code (Optional)"
+msgstr "Insira o Código (Opcional)"
+
+msgid "I have read and agree to the"
 msgstr "Li e aceito os "
 
 msgid "Terms of use"
