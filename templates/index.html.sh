@@ -50,7 +50,7 @@ cat <<EOF
                 <a class="advantages-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "how")']);">$(gettext "How it Works")</a>
                 <a class="price-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "pricing")']);">$(gettext "Pricing")</a>
                 <a class="contact-link" onclick="_gaq.push(['_trackPageview', '/$(gettext "en")/$(gettext "get_in_touch")']);">$(gettext "Get in Touch")</a>
-                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;" target="_blank" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")
+                <a href="https://getup.zendesk.com/home/" class="support" rel="support" style="color: #232323;" target="_blank" onclick="_gaq.push(['_trackEvent', '$(gettext "en")', '$(gettext "section")', '$(gettext "support")]);">$(gettext "Support")</a>
                 <br class="mobile-space">
                 <a href="/blog" class="blog" style="color: #232323;" onclick="_gaq.push(['_trackPageview', '/blog']);">Blog</a>
 
