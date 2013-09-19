@@ -254,7 +254,7 @@ cat <<EOF
                     <b>$(gettext "Monitor")</b>
                     <br>
                     $(gettext "New gears to handle traffic spikes.")
-                    <h2>$(gettext "Scale to millions of users")</h2>
+                    <h2>$(gettext "Scale to millions of users.")</h2>
                     <br><br>
                     <b>Pay as you go</b>
                     <br>$(gettext "Pay by hour usage and just for the time that each gear was active.")
