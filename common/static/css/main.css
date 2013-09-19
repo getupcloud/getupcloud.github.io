@@ -385,7 +385,7 @@ footer.primary .footer-section .infrastructure ul li { float: left; background: 
 footer.primary .footer-section .infrastructure ul li.amazon { width: 112px; height: 43px; margin: 10px 44px 0 0; background-position: 0 !important; }
 footer.primary .footer-section .infrastructure ul li.openshift { width: 59px; height: 59px; background-position: -158px 0; }
 footer.primary .footer-section .mark { float: left; margin-left: 80px; }
-footer.primary .footer-section .mark strong { display: block; font-family: 'ostrich medium'; line-height: 110px; font-size: 110px; color: #323232; font-weight: normal; }
+footer.primary .footer-section .mark strong { display: block; font-family: 'ostrich medium'; line-height: 110px; font-size: 110px; color: #666; font-weight: normal; }
 
 /* Footer secondary */
 
