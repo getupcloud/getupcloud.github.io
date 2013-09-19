@@ -18,15 +18,10 @@ cat <<EOF
 <meta property="gc:build_id" content="$BUILD_ID">
 
 <script>var U = { register: '$SIGNUP', language: '$LANGUAGE_ID', debug: $DEBUG };</script>
-<script src="http://www.getupcloud.com/static/js/language.js"></script>
 
 <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico"> 
 
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="static/js/html5_ie.js"></script>
-
-<script src="static/js/getup.js"></script>
-<script src="static/js/jquery.flexslider-min.js"></script>
+<script src="static/js/language.js"></script>
 
 <link href="static/css/main.css" rel="stylesheet" />
 <link href="static/css/slide.css" rel="stylesheet" />
@@ -56,7 +51,7 @@ cat <<EOF
 
                 <div class="fl mobile-space" style="width: 100%;">
                     <a href="/index.html" rel="pt-br" class="fl pt" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'pt']);">Português</a>
-                    <a href="/index_en.html" style="color: #232323; margin-left: 20px;" class="fl" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">English</a>
+                    <a href="/index_en.html" rel="en-us" style="color: #232323; margin-left: 20px;" class="fl" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">English</a>
                 </div>
 
                 <div class="separator-register_mobile"></div>
@@ -85,7 +80,7 @@ cat <<EOF
                 <div class="languages fr">
 
                     <a href="/index.html" rel="pt-br" class="pt" onclick="_gaq.push(['_trackEvent', 'pt', 'menu_superior', 'pt']);">PT</a>
-                    <a href="/index_en.html" style="color: #232323;" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">EN</a>
+                    <a href="/index_en.html" rel="en-us" style="color: #232323;" onclick="_gaq.push(['_trackEvent', 'en', 'menu_superior', 'en']);">EN</a>
 
                 </div><!-- languages -->
 
@@ -259,7 +254,7 @@ cat <<EOF
                     <b>$(gettext "Monitor")</b>
                     <br>
                     $(gettext "New gears to handle traffic spikes.")
-                    <h2>$(gettext "Scale to millions of users")
+                    <h2>$(gettext "Scale to millions of users")</h2>
                     <br><br>
                     <b>Pay as you go</b>
                     <br>$(gettext "Pay by hour usage and just for the time that each gear was active.")
@@ -274,6 +269,7 @@ cat <<EOF
                             <img src="static/img/beer.png" style="margin: 20px 0;" border="0"/>
                         </div>
                     </center>
+
 
                 </div><!-- more about climb -->
 
@@ -656,71 +652,67 @@ cat <<EOF
 
                         <div class="open-create-your-account">
 
-                        <div class="start-register">
-                            <h1 class="fl">$(gettext "Create Account")</h1>
-                            <a class="fr close-register"></a>
-                        </div>
+                            <div class="start-register">
+                                <h1 class="fl">$(gettext "Create Account")</h1>
+                                <a class="fr close-register"></a>
+                            </div>
 
-                        <div id="create-account"></div>
-                        <form action="" method="post" id="signup">
-                            <fieldset>
-                                <input type="hidden" name="lang" id="language" value="pt-br">
+                            <div id="create-account"></div>
+                            <form action="" method="post" id="signup">
+                                <fieldset>
+                                    <input type="hidden" name="lang" id="language" value="pt-br">
 
-                                <div class="fl">
-                                    <label>
-                                        <span>$(gettext "What's your name ?")</span>
-                                        <input tabindex="1" type="text" class="name" name="name" id="name" />
-                                    </label>
-                                    <label>
-                                        <span>$(gettext "What's your e-mail ?")</span>
-                                        <input tabindex="2" type="text" name="email" id="email" class="email" />
-                                    </label>
-                                    <div class="promotional-code">
-                                        <h1 class="fl roboto_14ce">$(gettext "Promo code ?")</h1>
+                                    <div class="fl">
                                         <label>
-                                            <span>$(gettext "Insert the Code (Optional)")</span>
-                                            <input tabindex="5" type="text" class="promotional" name="coupon_code" id="coupon-code" />
+                                            <span>$(gettext "What's your name ?")</span>
+                                            <input tabindex="1" type="text" class="name" name="name" id="name" />
                                         </label>
+                                        <label>
+                                            <span>$(gettext "What's your e-mail ?")</span>
+                                            <input tabindex="2" type="text" name="email" id="email" class="email" />
+                                        </label>
+                                        <div class="promotional-code">
+                                            <h1 class="fl roboto_14ce">$(gettext "Promo code ?")</h1>
+                                            <label>
+                                                <span>$(gettext "Insert the Code (Optional)")</span>
+                                                <input tabindex="5" type="text" class="promotional" name="coupon_code" id="coupon-code" />
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="fl" style="margin-left: 31px;">
-                                    <label>
-                                        <span>$(gettext "Password")</span>
-                                        <input tabindex="3" type="password" name="password1" id="password" class="pass" />
-                                    </label>
-                                    <label>
-                                        <span>$(gettext "Confirm password")</span>
-                                        <input tabindex="4" type="password" name="password2" id="password-confirm" class="confirm-pass" />
-                                    </label>
+                                    <div class="fl" style="margin-left: 31px;">
+                                        <label>
+                                            <span>$(gettext "Password")</span>
+                                            <input tabindex="3" type="password" name="password1" id="password" class="pass" />
+                                        </label>
+                                        <label>
+                                            <span>$(gettext "Confirm password")</span>
+                                            <input tabindex="4" type="password" name="password2" id="password-confirm" class="confirm-pass" />
+                                        </label>
 
-                                </div>
+                                    </div>
 
-                                <div class="fl separator-button"></div>
+                                    <div class="fl separator-button"></div>
 
-                                <div class="fr">
+                                    <div class="fr" style="width: 420px;">
+                                        <p id="message"></p>
 
-                                    <fieldset class="fl checkbox" id="check-terms" style="margin-right: 20px;">
-                                        <input id="use_terms" class="css-checkbox" type="checkbox" name="use_terms" value="5">
-                                        <label for="use_terms" name="use_terms" class="c18r css-label">$(gettext "I have read and agree to the")<u><a href="termos-de-uso.html" style="color: #585858;">$(gettext "Terms of use")</a>.</u></label>
-                                    </fieldset>
+                                        <fieldset class="fl checkbox" id="check-terms" style="margin-top: 13px;">
+                                            <input id="use_terms" class="css-checkbox" type="checkbox" name="use_terms" value="5">
+                                            <label for="use_terms" name="use_terms" class="c18r css-label">$(gettext "I have read and agree to the")<u><a href="termos-de-uso.html" style="color: #585858;">$(gettext "Terms of use")</a>.</u></label>
+                                        </fieldset>
 
-                                    <p id="message"></p>
+                                        <button tabindex="8" class="fr btn continue">$(gettext "Continue")</button>
 
-                                    <button tabindex="8" class="fl btn continue">$(gettext "Continue")</button>
+                                    </div>
 
-                                </div>
+                                </fieldset>
+                            </form>
 
-                            </fieldset>
-                        </form>
-
-                        <p id="success">
-                            <p class="roboto_20ver">$(gettext "Welcome aboard.")</h1>
-                            <p class="roboto_14ce">$(gettext "We sent you a email confirmation. Thank you!")</h2>
-                        </p>
-            
-                        </div></div></div>
-
-                    
+                            <p id="success">
+                                <span class="roboto_20ver">$(gettext "Welcome aboard.")</span>
+                                <span class="roboto_14ce">$(gettext "We sent you a email confirmation. Thank you!")</span>
+                            </p>
+                        </div>
                 </article>
             </section>
 
@@ -823,7 +815,14 @@ cat <<EOF
 
     </footer><!-- footer secondary -->
     
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>window.jQuery || document.write('<script src="static/js/jquery-1.9.1.min.js"><\/script>')</script>    
+
+    <script src="static/js/html5_ie.js"></script>
+
+    <script src="static/js/getup.js"></script>
+    <script src="static/js/jquery.flexslider-min.js"></script>
+
     <script src="static/js/plugins.js"></script>
     <script src="static/js/main.js"></script>
 

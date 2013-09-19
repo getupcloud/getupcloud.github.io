@@ -426,7 +426,8 @@ footer.secondary .footer-section .right .terms a { text-decoration: none; color:
 
 /* Thank */
 
-#success {}
+#success { display: none; padding: 50px 0 0; text-align: center; width: 942px; }
+#success span { display: block; }
 
 /* Thank. */
 
@@ -441,7 +442,7 @@ footer.secondary .footer-section .right .terms a { text-decoration: none; color:
 .wrap .about .open-create-your-account form label.error input { color: #f23f2c; border-color: #f23f2c; }
 
 .wrap .about .open-create-your-account form button { cursor: pointer; }
-.wrap .about .open-create-your-account form button.loading { text-indent: -5000em; }
+.wrap .about .open-create-your-account form button.loading { background: #de3527 url(../img/loader.gif) no-repeat center center; text-indent: -5000em; }
 
 /* Ipad */
 @media (max-width: 768px) {

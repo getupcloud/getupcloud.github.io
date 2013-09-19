@@ -51,13 +51,6 @@ $("#custo-adicional-cloud").mouseleave(function(){
 
 });
 
-$(".close-register").click(function(){
-
-    $(".open-create-your-account").slideUp();
-    $(".register, .introduction").show();
-
-});
-
 $("#info-gear").hover(function(){
 
     $(this).next().show("fast");
@@ -136,46 +129,55 @@ jQuery(".info-gear").click(function(){
 
 });
 
-$(".wrap .about .register").click(function(){
-
-    $(this).next().next().slideDown();
-    $(this).prev().hide();
-    $(this).hide();
-    jQuery('html, body').animate({
-        scrollTop: jQuery("#pricing").offset().top - 122
-        }, 2000);
-});
-
 jQuery(".advantages-link").click(function() {
     jQuery('html, body').animate({
         scrollTop: jQuery(".advantages").offset().top - 122
-        }, 2000);
+        });
     });
 
 jQuery(".price-link").click(function() {
     jQuery('html, body').animate({
         scrollTop: jQuery(".price").offset().top - 122
-        }, 2000);
+        });
     });
 
 jQuery(".contact-link").click(function() {
     jQuery('html, body').animate({
         scrollTop: jQuery(".get-in-touch").offset().top - 122
-        }, 2000);
+        });
     });
 
 jQuery(".compare").click(function() {
     jQuery(".comparative-opened").show();
     jQuery('html, body').animate({
         scrollTop: jQuery(".comparative-opened").offset().top - 122
-        }, 2000);
+        });
     });
 
+/*$(".wrap .about .register").click(function(){
+$(this).next().next().slideDown();
+$(this).prev().hide();
+$(this).hide();
+jQuery('html, body').animate({
+scrollTop: jQuery("#pricing").offset().top - 122
+}, 2000);
+});
+
 jQuery(".create-your-account").click(function() {
-    jQuery(".open-create-your-account").show();
-    $(".wrap .about .register, .wrap-section .about .introduction").hide();
-    jQuery('html, body').animate({
-        scrollTop: jQuery("#pricing").offset().top - 122
-        }, 2000);
+jQuery(".open-create-your-account").show();
+$(".wrap .about .register, .wrap-section .about .introduction").hide();
+jQuery('html, body').animate({
+scrollTop: jQuery("#pricing").offset().top - 122
+}, 2000);
+});*/
+
+    $('.wrap .about .register, .create-your-account').click(function() {
+        _pricing.signup.show();
+        $('html, body').animate({ scrollTop: $("#pricing").offset().top - 122 });
     });
+
+    $(".close-register").click(function(){
+        _pricing.signup.hide(true);
+    });
+
 });

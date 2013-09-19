@@ -177,6 +177,7 @@
 
         Getup.sections.pricing.elements.gear = $('#gear');
         Getup.sections.pricing.elements.form = $('#signup');
+        Getup.sections.pricing.elements.formContent = $('.open-create-your-account');
         Getup.sections.pricing.elements.inputs = {};
         Getup.sections.pricing.elements.inputs.name = $('#name');
         Getup.sections.pricing.elements.inputs.terms = $('#check-terms input');
@@ -187,6 +188,9 @@
         Getup.sections.pricing.elements.postButton = Getup.sections.pricing.elements.form.find('button');
         Getup.sections.pricing.elements.message = $('#message');
         Getup.sections.pricing.elements.success = $('#success');
+
+        Getup.sections.pricing.elements.introduction = Getup.sections.pricing.elements.content.find('.introduction')
+        Getup.sections.pricing.elements.call = Getup.sections.pricing.elements.content.find('.register')
 
         Getup.sections.pricing.elements.checkTerms = $('#check-terms a');
 
@@ -200,10 +204,6 @@
     };
 
     Getup.sections.pricing.bindEvents = function() {
-        Getup.sections.pricing.elements.gearInfo.click(function() {
-            Getup.sections.pricing.gear.show();
-            return false;
-        });
         Getup.sections.pricing.elements.signupButton.click(function() {
             Getup.sections.pricing.signup.show();
             return false;
@@ -229,34 +229,28 @@
         Getup.sections.pricing.elements.content.animate({ height: height }, { queue: false, duration: 400, easing: 'easeInOutQuad', complete: callback });
     };
 
-    Getup.sections.pricing.gear = {};
-    
-    Getup.sections.pricing.gear.show = function() {
-        Getup.sections.pricing.signup.hide(false, function() {
-            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight + 150);
-            Getup.sections.pricing.elements.gear.fadeIn();
-        });
-    };
-
-    Getup.sections.pricing.gear.hide = function(resize, callback) {
-        Getup.sections.pricing.elements.gear.fadeOut(function() {
-            if (resize) Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight);
-            if (callback) callback();
-        });
-    };
-
     Getup.sections.pricing.signup = {};
     
     Getup.sections.pricing.signup.show = function() {
-        Getup.sections.pricing.gear.hide(false, function() {
-            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight + 300)
-            Getup.sections.pricing.elements.form.fadeIn();
-        });
+        Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight + 300);
+        Getup.sections.pricing.elements.formContent.fadeIn();
+
+        Getup.sections.pricing.elements.introduction.slideUp();
+        Getup.sections.pricing.elements.call.slideUp();
+        //Getup.sections.pricing.elements.form.fadeIn();
     };
     
     Getup.sections.pricing.signup.hide = function(resize, callback) {
-        Getup.sections.pricing.elements.form.fadeOut(function() {
-            if (resize) Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight);
+        Getup.sections.pricing.elements.introduction.slideDown();
+        Getup.sections.pricing.elements.call.slideDown();        
+
+        if (resize) Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight);
+
+        Getup.sections.pricing.elements.formContent.fadeOut(function() {
+
+            Getup.sections.pricing.elements.form.show();
+            Getup.sections.pricing.elements.success.hide();
+
             if (callback) callback();
         });
     };
@@ -299,11 +293,16 @@
                     if (transport.status == "ok") {
                         Getup.sections.pricing.elements.form.fadeOut(function() {
                             Getup.sections.pricing.elements.success.fadeIn();
-
                             Getup.sections.pricing.elements.postButton.removeClass('loading');
                             Getup.sections.pricing.signup.submiting = false;
 
-                            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight);
+                            Getup.sections.pricing.resize(Getup.sections.pricing.config.startHeight + 150);
+
+                            Getup.sections.pricing.elements.inputs.name.val('').blur();
+                            Getup.sections.pricing.elements.inputs.email.val('').blur();
+                            Getup.sections.pricing.elements.inputs.password.val('').blur();
+                            Getup.sections.pricing.elements.inputs.passwordConfirm.val('').blur();
+                            Getup.sections.pricing.elements.inputs.couponCode.val('').blur();
                         });
                     } else {
                         Getup.sections.pricing.elements.postButton.removeClass('loading');
@@ -487,4 +486,6 @@
 
     // Initialize
     Getup.init();
+
+    window._pricing = Getup.sections.pricing;
 }())
