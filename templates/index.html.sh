@@ -202,7 +202,7 @@ cat <<EOF
                     <b>Cartridges</b>
                     <br>$(gettext "Add components to your app.")
                     <br>
-                    <br>$ rhc cartridge add MySQL-5.1 -a AppName
+                    <br>$ rhc app-create AppName PHP-5 MySQL-5
          
 
                 </div><!-- more about application -->
@@ -230,7 +230,7 @@ cat <<EOF
                     <br>
                     $(gettext "Add a database just adding a new cartridge.")
                     <br><br>
-                    $  rhc cartridge add mysql-5.1 -a AppName
+                    $  rhc cartridge-add MySQL-5 -a AppName
 
                 </div><!-- more about publish -->
 
@@ -521,10 +521,10 @@ cat <<EOF
 
                             <tr>
                                 <td class="normal-big-without-border-bg">
-                                    <h1 class="roboto_13ae">$(gettext "~US$ 17")</h1>
+                                    <h1 class="roboto_13ae">$(gettext "US$ ~17")</h1>
                                 </td>
                                 <td class="normal-without-border-bg">
-                                    <h1 class="roboto_13ae">$(gettext "~US$ 20")</h1>
+                                    <h1 class="roboto_13ae">$(gettext "US$ ~20")</h1>
                                 </td>
                             </tr>
 
@@ -539,10 +539,10 @@ cat <<EOF
 
                             <tr>
                                 <td class="normal-big-without-border-bg">
-                                    <h1 class="roboto_13ae">$(gettext "~US$ 103.66")</h1>
+                                    <h1 class="roboto_13ae">$(gettext "US$ ~103.66")</h1>
                                 </td>
                                 <td class="normal-without-border-bg">
-                                    <h1 class="roboto_13ae">$(gettext "~US$ 20")</h1>
+                                    <h1 class="roboto_13ae">$(gettext "US$ ~20")</h1>
                                 </td>
                             </tr>
 
@@ -569,7 +569,7 @@ cat <<EOF
                             <tr>
                                 <td class="normal-big-without-border-bg">
                                     <div style="width: 221px; margin: auto;">
-                                        <h1 class="fl roboto_14ce">$(gettext "24hs x ~US$ 0.06 (1GB) =")</h1> <h1 class="fl roboto_13ae" style="margin-left: 3px;">$(gettext "US$ 1.44")</h1>
+                                        <h1 class="fl roboto_14ce">$(gettext "24hs x US$ ~0.06 (1GB) =")</h1> <h1 class="fl roboto_13ae" style="margin-left: 3px;">$(gettext "US$ 1.44")</h1>
                                         <div id="custo-adicional-cloud">
                                             <img src="static/img/info-gear.png" class="fr" border="0" />
                                         </div>

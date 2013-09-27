@@ -1,4 +1,4 @@
-msgid ""
+	msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -286,11 +286,11 @@ msgstr "1 hospedagem"
 msgid "What?"
 msgstr "Hein?"
 
-msgid "~US$ 17"
-msgstr "~R$ 99,00"
+msgid "US$ ~17"
+msgstr "R$ ~99,00"
 
-msgid "~US$ 20"
-msgstr "~R$ 25,00"
+msgid "US$ ~20"
+msgstr "R$ ~25,00"
 
 msgid "US$ 20"
 msgstr "R$ 25,00"
@@ -298,8 +298,8 @@ msgstr "R$ 25,00"
 msgid "need subscription"
 msgstr "Precisa contratar"
 
-msgid "~US$ 103.66"
-msgstr "~R$ 299,00"
+msgid "US$ ~103.66"
+msgstr "R$ ~299,00"
 
 msgid "turn off server, add"
 msgstr "desliga servidor, adiciona"
@@ -313,8 +313,8 @@ msgstr "Acenda uma vela!"
 msgid "turn off server, remove"
 msgstr "desliga servidor, remove"
 
-msgid "24hs x ~US$ 0.06 (1GB) ="
-msgstr "24hs x ~R$ 0,14 (1GB) ="
+msgid "24hs x US$ ~0.06 (1GB) ="
+msgstr "24hs x R$ ~0,14 (1GB) ="
 
 msgid "US$ 1.44"
 msgstr "R$ 3,36"
