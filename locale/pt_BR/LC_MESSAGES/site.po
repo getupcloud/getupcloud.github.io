@@ -41,16 +41,16 @@ msgid "Sign Up"
 msgstr "Crie sua Conta"
 
 msgid "GETUP IS A"
-msgstr "Getup é uma"
+msgstr "GETUP É UMA"
 
 msgid "SCALABLE CLOUD"
-msgstr "plataforma para"
+msgstr "PLATAFORMA PARA"
 
 msgid "APPLICATION"
-msgstr "hospedagem"
+msgstr "HOSPEDAGEM"
 
 msgid "PLATFORM"
-msgstr "na nuvem"
+msgstr "NA NUVEM"
 
 msgid "Compare benefits"
 msgstr "Compare"
@@ -353,7 +353,7 @@ msgid "you lost pageviews."
 msgstr "você perdeu conversão."
 
 msgid "With Getup you pay only"
-msgstr "Na Getup voce paga"
+msgstr "Na Getup você	 paga"
 
 msgid "for what you use"
 msgstr "apenas pelo que usou"
