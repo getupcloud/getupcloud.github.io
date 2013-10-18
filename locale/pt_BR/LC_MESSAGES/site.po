@@ -10,8 +10,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "X-Generator: Poedit 1.5.5\n"
 
-msgid "Getup - Grow in the cloud"
-msgstr "Getup - Grow in the cloud"
+msgid "Getup Cloud | Scalable Cloud Application | Grow in the cloud"
+msgstr "Getup Cloud | Hospedagem na nuvem | Grow in the cloud"
+
+msgid "getup"
+msgstr "getup"
 
 msgid "Getup is a scalable cloud application platform."
 msgstr "Getup é uma plataforma para hospedagem na nuvem."
