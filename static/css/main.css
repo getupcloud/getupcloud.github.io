@@ -86,7 +86,7 @@ body {
 
 /* Header */
 
-.header-container {}
+.header-container { background: #ccc; }
 
 .header-container h1 {}
 
