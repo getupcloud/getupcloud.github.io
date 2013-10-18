@@ -52,6 +52,7 @@ git push origin "source-$BUILD_ID"
 
 # prepare master to push
 git checkout master
+git pull origin master
 rm -rf .build
 mv build .build
 rm -rf *  # dont remove .build
