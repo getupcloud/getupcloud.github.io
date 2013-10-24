@@ -57,11 +57,14 @@ ROOT_LANG=pt_BR
 
 echo
 echo Generating build...
-rm -rf build
-mkdir build
-for po in locale/*/LC_MESSAGES/*po; do
-	msgfmt $po -o ${po%.po}.mo
-done
+
+if [ $ONLY_ASSETS -eq 0 ]; then
+	rm -rf build
+	mkdir build
+	for po in locale/*/LC_MESSAGES/*po; do
+		msgfmt $po -o ${po%.po}.mo
+	done
+fi
 
 # copy common files
 echo Copying common files...

@@ -31,71 +31,85 @@ cat <<EOF
         <link rel="stylesheet" href="static/css/normalize.min.css">
         <link rel="stylesheet" href="static/css/main.css">
 
-        <script src="static/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body class="preloader">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="header-container closed">
+        <!-- <img src="static/img/pp-mobile-menu.jpg" style="margin: 0 auto; pointer-events: none; position: absolute; opacity: 0.5;" /> -->
+
+        <div class="header-container closed"> <!-- start closed for mobile -->
             <header class="wrapper clearfix">
-                <h1>$(gettext "getup")</h1>
+                <h1 class="ir">$(gettext "getup")</h1>
                 <nav>
                     <ul>
                         <li><a href="#how-it-works">$(gettext "How it Works")</a></li>
                         <li><a href="#pricing">$(gettext "Pricing")</a></li>
                         <li><a href="#get-in-touch">$(gettext "Get in Touch")</a></li>
-                        <li class="black"><a href="https://getup.zendesk.com/home/">$(gettext "Support")</a></li>
-                        <li class="black"><a href="blog/">$(gettext "Blog")</a></li>
-
-                        <li class="separator"><a href="https://broker.getupcloud.com/console/signin">$(gettext "Log In")</a></li>
-                        <li><a href="#sign-up">$(gettext "Sign Up")</a></li>
+                        <li class="secondary"><a class="black" href="https://getup.zendesk.com/home/">$(gettext "Support")</a></li>
+                        <li class="secondary separator"><a class="black" href="blog/">$(gettext "Blog")</a></li>
+                    </ul>
+                    <ul class="side">
+                        <li><a class="button orange flat" href="https://broker.getupcloud.com/console/signin">$(gettext "Log In")</a></li>
+                        <li><a class="button red flat" href="#sign-up">$(gettext "Sign Up")</a></li>                        
                     </ul>
                 </nav>
 
                 <aside>
-                    <a href="index.html" rel="pt-br">Português</a>
-                    <a href="index_en.html" rel="en-us">English</a>
+                    <a href="index.html" rel="pt-br" class="pt">Português</a>
+                    <a href="index_en.html" rel="en-us" class="black en">English</a>
                 </aside>
+
+                <a class="menu-control" href="javascript:;">-</a>
             </header>
         </div>
 
         <div class="main-container">
-            <div class="main wrapper clearfix">
+            <div class="main clearfix">
 
                 <article id="home" class="carousel">
-                    <section>
-                        <h2>$(gettext "Getup is a scalable cloud application plataform")</h2>
-                        <p>$(gettext "An easy and fast way to build and deploy web apps. You only have to worry about coding your app - we take care of everything else.")</p>
+                    <section class="item-01">
+                        <div class="wrapper">
+                            <h2>$(gettext "Getup is a scalable cloud application plataform")</h2>
+                            <p>$(gettext "An easy and fast way to build and deploy web apps.")</p>
+                            <p>$(gettext "You only have to worry about coding your app - we take care of everything else.")</p>
 
-                        <div class="actions">
-                            <a class="button" href="#benefits">$(gettext "Compare benefits")</a>
-                            <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
-                        </div>
-                    </section>
-                    <section>
-                        <h2>$(gettext "Grow in the cloud")</h2>
-                        <p>$(gettext "Compute power when you need it most.")</p>
-
-                        <div class="actions">
-                            <a class="button" href="#benefits">$(gettext "Compare benefits")</a>
-                            <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
+                            <div class="actions">
+                                <a class="button" href="#benefits">$(gettext "Compare benefits")</a>
+                                <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
+                            </div>
                         </div>
                     </section>
 
-                    <section>
-                        <h2>$(gettext "Auto scale")</h2>
-                        <p>$(gettext "Don't get caught by traffic spikes. Deploy and scale to millions of users.")</p>
+                    <section class="item-02 white">
+                        <div class="wrapper">
+                            <h2>$(gettext "Grow in the cloud")</h2>
+                            <p>$(gettext "Compute power when you need it most.")</p>
 
-                        <div class="actions">
-                            <a class="button" href="#benefits">$(gettext "Compare benefits")</a>
-                            <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
+                            <div class="actions">
+                                <a class="button" href="#benefits">$(gettext "Compare benefits")</a>
+                                <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="item-03">
+                        <div class="wrapper">
+                            <h2>$(gettext "Auto scale")</h2>
+                            <p>$(gettext "Don't get caught by traffic spikes.")</p>
+                            <p>$(gettext "Deploy and scale to millions of users.")</p>
+
+                            <div class="actions">
+                                <a class="button" href="#benefits">$(gettext "Compare benefits")</a>
+                                <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
+                            </div>
                         </div>
                     </section>
                 </article> <!-- #home -->
 
-                <article id="how-it-works">
+                <article id="how-it-works" class="wrapper">
                     <header>
                         <h2>$(gettext "Deploy your application in minutes")</h2>
                         <p>$(gettext "Create and deploy web applications without the cost and complexity of buying and managing servers. It's faster and cheaper than create AWS instances.")</p>
@@ -115,7 +129,7 @@ cat <<EOF
                     </section><!-- .create -->
                     <section>
                         <h3 class="deploy">$(gettext "Deploy")</h3>
-                        <p>$(gettext "Just type 'git push' and voil&aacute;! Your application is up and running!")</p>
+                        <p>$(gettext "Just type 'git push' and voilá! Your application is up and running!")</p>
 
                         <dl>
                             <dt>$(gettext "Built-in Databases")<dt>
@@ -140,7 +154,7 @@ cat <<EOF
                     </section><!-- .scale -->
                 </article> <!-- #how-it-works -->
 
-                <article id="pricing">
+                <article id="pricing" class="wrapper">
                     <header>
                         <h2>$(gettext "Pricing and Benefits")</h2>
                     </header>
@@ -188,7 +202,7 @@ cat <<EOF
                     </section><!-- .compare -->                    
                 </article> <!-- #pricing -->
 
-                <article id="sign-up">
+                <article id="sign-up" class="wrapper">
                     <header>
                         <h2>$(gettext "With Getup you pay only for what you use and saves time.")</h2>
                         <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
@@ -198,7 +212,7 @@ cat <<EOF
                     </section><!-- . -->
                 </article> <!-- #sign-up -->      
 
-                <article id="get-in-touch">
+                <article id="get-in-touch" class="wrapper">
                     <header>
                         <h2>$(gettext "Don't be shy! Let's talk about clouds.")</h2>
                     </header>
@@ -250,7 +264,7 @@ cat <<EOF
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-        <script src="js/main.js"></script>
+        <script src="static/js/main.js"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

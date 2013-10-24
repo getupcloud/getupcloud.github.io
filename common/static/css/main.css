@@ -74,9 +74,15 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px 'Roboto';
+    font: 16px 'Roboto';
+    padding: 70px 0 0;
     zoom: 1;    
 }
+
+body.preloader { overflow: hidden; }
+body.preloader .header-container { top: -70px; }
+body.preloader .main-container,
+body.preloader .footer-container { display: none; }
 
 /* ==========================================================================
    Author's custom styles
@@ -84,31 +90,130 @@ body {
 
 /* General */
 
+.wrapper { padding: 0 5%; position: relative; width: 90%; }
+
+a { text-decoration: none; }
+
+nav ul { margin: 0; padding: 0; }
+
+h2 { color: #eb3e33; font-weight: 400; }
+
+.black { color: #000!important; }
+.black:hover { color: #d0322a!important; }
+
+.ir { background-image: url(../img/sprite.png); background-repeat: no-repeat; }
+
+.button {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+.button:hover { background-color: #fff; color: #000; }
+
+.button.orange { background-color: #fa4f48; }
+.button.orange:hover { color: #fa4f48; background-color: #fff; }
+
+.button.red { background-color: #d9381d; }
+.button.red:hover { color: #d9381d; background-color: #fff; }
+
+.button.flat { font-size: 14px; padding: 5px 20px; }
+
+#preloader { background-color: #fa4f48; color: #fff; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 5; }
+#preloader p { font-size: 17px; font-weight: 300; left: 0; margin-top: -20px; position: absolute; text-align: center; top: 50%; width: 100%; }
+#percent { color: #d0322a; display: block; font-size: 12px; font-weight: 300; }
+
 /* Header */
 
-.header-container { background: #fa4f48; }
+.header-container { background: #fa4f48; height: auto; position: fixed; top: 0; width: 100%; z-index: 2; }
 
-.header-container h1 {}
+.header-container h1 { background-position: -1px 0px; height: 34px; margin: 20px 0 0; width: 100px; }
 
-.header-container nav {}
-.header-container nav ul {}
+.header-container a { color: #fff; font-weight: 300; }
+.header-container a:hover { color: #d0322a; }
 
-.header-container.closed { }
+.header-container nav { margin: 38px 0; }
+
+.header-container nav ul li { line-height: 32px; }
+.header-container nav ul li.separator { border-bottom: 1px solid #d9381d; margin: 0 0 10px; padding: 0 0 60px; }
+.header-container nav ul.side li { display: inline-block; }
+
+.header-container aside { position: absolute; top: 270px; }
+.header-container aside a { font-size: 13px; }
+
+.header-container.closed { height: 70px; }
 
 .header-container.closed aside,
 .header-container.closed nav { display: none; }
 
+.menu-control {
+    background: #fa4f48;
+    background: -moz-linear-gradient(top,  #fa4f48 0%, #fa4f48 60%, #ffffff 61%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fa4f48), color-stop(60%,#fa4f48), color-stop(61%,#ffffff), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top,  #fa4f48 0%,#fa4f48 60%,#ffffff 61%,#ffffff 100%);
+    background: -o-linear-gradient(top,  #fa4f48 0%,#fa4f48 60%,#ffffff 61%,#ffffff 100%);
+    background: -ms-linear-gradient(top,  #fa4f48 0%,#fa4f48 60%,#ffffff 61%,#ffffff 100%);
+    background: linear-gradient(to bottom,  #fa4f48 0%,#fa4f48 60%,#ffffff 61%,#ffffff 100%);
+    background-size: 20px 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 7px solid #fff; display: block; height: 16px; position: absolute; right: 5%; text-indent: -5000em; top: 20px; width: 20px;
+}
+
 /* Home */
+
+#home { }
+
+.carousel { height: 320px; position: relative; width: 100%; }
+
+.carousel section { background-position: top center; background-size: auto 100%; position: absolute; height: 100%; left: -100%; top: 0; width: 100%; }
+
+.carousel section.item-01 { background-image: url(../img/mobile/clouds.jpg); }
+.carousel section.item-02 { background-image: url(../img/mobile/world.jpg); }
+.carousel section.item-03 { background-image: url(../img/mobile/mountains.jpg); }
+
+.carousel h2, .carousel p { color: #000; margin: 0; position: relative; text-transform: uppercase; }
+.carousel p { font-size: 12px; }
+.carousel h2 { font-size: 24px; }
+
+.carousel section.white p, 
+.carousel section.white h2 { color: #fff; }
+
+.carousel .wrapper { height: 192px; left: 0; margin: 64px 0; position: relative; }
+
+.carousel .actions { bottom: 0; position: absolute; }
 
 /* How works */
 
+#how-it-works {}
+
+
 /* Pricing */
 
-/* Contact */
+#pricing {}
+
+
+/* Sign up */
+
+#sign-up {}
+
+
+/* Get in touch */
+
+#get-in-touch { }
+
 
 /* Footer */
 
+/* no-js */
 
+.no-js .header-container.closed aside,
+.no-js .header-container.closed nav { display: block; }
 
 /* ==========================================================================
    Media Queries
@@ -116,14 +221,71 @@ body {
 
 @media only screen and (min-width: 480px) {
 
+    body { padding: 122px 0 0; }
+
+    body.preloader .header-container { top: -122px; }
+    body.preloader .main-container,
+    body.preloader .footer-container { display: none!important; }
+
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
+
+    .header-container,
+    .header-container.closed { height: 122px!important; }
+
+    .header-container h1 { margin: 46px 0 0; }
+    .header-container a { font-size: 12px; }
+
+    .header-container aside { display: inline-block!important; right: 5%; top: 5px; width: 44px; }
+    .header-container aside a { display: inline-block; font-size: 11px; position: relative; text-indent: -5000em; width: 20px; }
+    .header-container aside a:after { display: inline-block; left: 0; position: absolute; text-align: center; text-indent: 0; }
+
+    .header-container aside .en:after { content: 'EN'; }
+    .header-container aside .pt:after { content: 'PT'; }
+
+    .header-container nav { display: block!important; left: 5%; position: absolute; top: 0; width: 90%; }
+
+    .header-container nav { margin: 0; padding: 40px 0; }
+    .header-container nav ul { margin: 4px 0; position: absolute; top: 0; width: 100%; }
+    .header-container nav ul.side { margin: 0; padding-left: 0; position: absolute; right: 0; top: 40px; width: auto; }
+
+    .header-container nav ul li { display: inline-block; line-height: 32px; margin: 0 0 0 3%; }
+
+    .header-container nav ul li.secondary { margin: 0 104px 0 0; position: absolute; right: 3%; top: -4px; }
+    .header-container nav ul li.secondary a { font-size: 12px; }
+
+    .header-container nav ul li.separator { border-bottom: none; margin: 0 64px 0 0; padding: 0; }
+
+    .header-container nav ul.side li { margin: 0; }
+
+    .menu-control { display: none; }
+
+/* ============
+    INTERMEDIATE: Main
+   ============ */
+
+    .carousel p { font-size: 13px; }
+    .carousel h2 { font-size: 38px; line-height: 40px; }
+
+    .carousel section.item-01 { background-image: url(../img/clouds.jpg); }
+    .carousel section.item-02 { background-image: url(../img/world.jpg); }
+    .carousel section.item-03 { background-image: url(../img/mountains.jpg); }
 
 
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
+}
+
+@media only screen and (min-width: 620px) {
+
+    .header-container a { font-size: 14px; }
+
+    .header-container nav ul { padding-left: 100px; position: static; }
+    .header-container nav ul li.secondary { top: 0; }
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -132,28 +294,50 @@ body {
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container {
+/*    .header-container {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
-    }
+    }*/
 
 /* ============
     WIDE: Menu
    ============ */
 
+    .header-container nav ul li.secondary { margin: 0 0 0 3%; position: static; }
+    .header-container nav ul li.secondary a { font-size: 14px; }
 
 /* ============
     WIDE: Main
    ============ */
 
+    .carousel { height: 470px; }
+    .carousel .wrapper { height: 342px; }
+
+    .carousel p { font-size: 17px; }
+    .carousel h2 { font-size: 62px; line-height: 64px; }
+
+
 }
+
+@media only screen and (min-width: 860px) {
+
+    .header-container nav ul li { margin: 0 0 0 4%; }
+    .header-container nav ul li.secondary { margin: 0 0 0 4%; }
+
+}
+
+
 
 @media only screen and (min-width: 1140px) {
 
 /* ===============
     Maximal Width
    =============== */
+
+   /* .wrapper { max-width: 1000px; margin: 0 auto; } */
+
+   /*.carousel .wrapper { left: 50%; margin-left: -500px; }*/
 }
 
 /* ==========================================================================
