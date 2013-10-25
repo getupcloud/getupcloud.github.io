@@ -32,6 +32,11 @@ cat <<EOF
         <link rel="stylesheet" href="static/css/main.css">
 
         <script src="static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript"> window.\$zopim || (function(d,s){var z=\$zopim=function(c){z._.push(c)},\$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];\$.async=!0;$.setAttribute('charset','utf-8'); \$.src='//v2.zopim.com/?1aNSsavBi1e9Gs5y9Olsh4R2HJYYQFNP';z.t=+new Date; \$.type='text/javascript';e.parentNode.insertBefore(\$,e)})(document,'script');
+        </script>
+        <!--End of Zopim Live Chat Script-->        
     </head>
     <body class="preloader">
         <!--[if lt IE 7]>
@@ -234,16 +239,20 @@ cat <<EOF
                                 <li><a href="http://www.facebook.com/getupcloud" target="_blank">fb.com/getupcloud</a></li>                        
                             </ul>
 
-                            <dl>
-                                <dt>Porto Alegre</dt>
-                                <dd>poa@getupcloud.com</dd>
-                                
-                                <dt>São Paulo</dt>
-                                <dd>sampa@getupcloud.com</dd>
-
-                                <dt>Overseas</dt>
-                                <dd>overseas@getupcloud.com</dd>
-                            </dl>
+                            <div class="right">
+                                <dl>
+                                    <dt>Porto Alegre</dt>
+                                    <dd>poa@getupcloud.com</dd>
+                                </dl>
+                                <dl>
+                                    <dt>São Paulo</dt>
+                                    <dd>sampa@getupcloud.com</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Overseas</dt>
+                                    <dd>overseas@getupcloud.com</dd>
+                                </dl>
+                            </div>
                         </section><!-- . -->
                     </article>
                 <div> <!-- #pricing -->                     
@@ -252,18 +261,20 @@ cat <<EOF
         </div> <!-- #main-container -->
 
         <div class="footer-container">
-            <footer class="wrapper">
-                <h3>$(gettext "Infrastructure is based on:")</h3>
-                
-                <ul>
-                    <li class="amazon">Amazon</li>
-                    <li class="openshift">Openshift</li>
-                </ul>
+            <footer>
+                <div class="wrapper">
+                    <h3>$(gettext "Infrastructure is based on:")</h3>
+                    
+                    <ul>
+                        <li class="amazon">Amazon</li>
+                        <li class="openshift">Openshift</li>
+                    </ul>
 
-                <p>GROW IN THE CLOUD</p>
+                    <p>GROW IN THE CLOUD</p>
+                </div>
 
                 <nav>
-                    <ul>
+                    <ul class="wrapper">
                         <li><a href="termos-de-uso.html">$(gettext "Terms of use")</a></li>
                         <li><a href="politica-de-privacidade.html">$(gettext "Privacy policy")</a></li>
                         <li><a href="politica-de-utilizacao-aceitavel.html">$(gettext "Acceptable use policy")</a></li>

@@ -64,7 +64,7 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 	 * Directories configuration
 	 */
 	Getup.preload.config.directories = {
-		'image': location.origin + location.pathname + '/static/img/'
+		'image': '/static/img/'
 	};
 
 	/**
@@ -233,6 +233,18 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 	 * Element: home/carousel
 	 */
 	Getup.elements.home = Getup.elements.carousel = $('#home');
+
+	/**
+	 * Elements
+	 * Element: how it works
+	 */
+	Getup.elements.how_it_works = $('#how-it-works');
+
+	/**
+	 * Elements
+	 * Element: see more form how it works
+	 */
+	Getup.elements.see_more = Getup.elements.how_it_works.find("a");
 
 	/**
 	 * Elements
@@ -569,6 +581,36 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 		 */
 	};
 
+
+	/**
+	 * Articles
+	 */
+	Getup.articles = {};
+
+
+	/**
+	 * Articles
+	 * How it works
+	 */
+	Getup.articles.how_it_works = {};
+
+	/** (element scope)
+	 * Articles
+	 * How it works
+	 * Toggle hidden information
+	 */
+	Getup.articles.how_it_works.toggle = function() {
+		var element = $(this);
+		var hidden = element.next();
+		var text = element.data('text');
+
+		hidden.slideToggle();
+
+		element.data('text', element.text());
+		element.text(text);
+	};
+
+
 	/**
 	 * Site resize
 	 */
@@ -606,6 +648,12 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 	 * Event: mobile menu controller
 	 */
 	Getup.elements.header.menu_control.click(Getup.mobile.menu.toggle);
+
+	/**
+	 * General events
+	 * Event: mobile menu controller
+	 */
+	Getup.elements.see_more.click(Getup.articles.how_it_works.toggle);
 
 	/**
 	 * General events
