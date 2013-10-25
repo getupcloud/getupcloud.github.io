@@ -43,6 +43,7 @@ cat <<EOF
         <div class="header-container closed"> <!-- start closed for mobile -->
             <header class="wrapper clearfix">
                 <h1 class="ir">$(gettext "getup")</h1>
+                <a class="menu-control" href="javascript:;">Menu</a>
                 <nav>
                     <ul>
                         <li><a href="#how-it-works">$(gettext "How it Works")</a></li>
@@ -61,8 +62,6 @@ cat <<EOF
                     <a href="index.html" rel="pt-br" class="pt">Português</a>
                     <a href="index_en.html" rel="en-us" class="black en">English</a>
                 </aside>
-
-                <a class="menu-control" href="javascript:;">-</a>
             </header>
         </div>
 
@@ -114,93 +113,104 @@ cat <<EOF
                         <h2>$(gettext "Deploy your application in minutes")</h2>
                         <p>$(gettext "Create and deploy web applications without the cost and complexity of buying and managing servers. It's faster and cheaper than create AWS instances.")</p>
                     </header>
-                    <section>
-                        <h3 class="create">$(gettext "Create your application")</h3>
-                        <p>$(gettext "Choose the technology"): PHP, Ruby, Python, Node.js</p>
 
-                        <dl>
-                            <dt>$(gettext "SSL")<dt>
-                            <dd>$(gettext "Included to all applications.")<dd>
+                    <div class="centralized">
+                        <section>
+                            <h3 class="create">$(gettext "Create your application")</h3>
+                            <p>$(gettext "Choose the technology"): PHP, Ruby, Python, Node.js</p>
 
-                            <dt>$(gettext "Cartridges")<dt>
-                            <dd>$(gettext "Add components to your app.")<dd>
-                            <dd>$ rhc app-create AppName PHP-5 MySQL-5</dd>
-                        </dl>
-                    </section><!-- .create -->
-                    <section>
-                        <h3 class="deploy">$(gettext "Deploy")</h3>
-                        <p>$(gettext "Just type 'git push' and voilá! Your application is up and running!")</p>
+                            <a href="javascript:;" data-text="$(gettext "Less")">$(gettext "See More")</a>
 
-                        <dl>
-                            <dt>$(gettext "Built-in Databases")<dt>
-                            <dd>$(gettext "Add a database just adding a new cartridge.")<dd>
-                            <dd>$ rhc cartridge-add MySQL-5 -a AppName</dd>
-                        </dl>
-                    </section><!-- .deploy -->
-                    <section>
-                        <h3 class="scale">$(gettext "Scale")</h3>
-                        <p>$(gettext "With auto-scale you don't need to worry about growth, don't get caught by traffic spikes.")</p>
+                            <dl>
+                                <dt>$(gettext "SSL")</dt>
+                                <dd>$(gettext "Included to all applications.")</dd>
 
-                        <dl>
-                            <dt>$(gettext "Monitor")<dt>
-                            <dd>$(gettext "New gears to handle traffic spikes. Scale to millions of users.")<dd>
+                                <dt>$(gettext "Cartridges")<dt>
+                                <dd>$(gettext "Add components to your app.")</dd>
+                                <dd>$ rhc app-create AppName PHP-5 MySQL-5</dd>
+                            </dl>
+                        </section><!-- .create -->
+                        <section>
+                            <h3 class="deploy">$(gettext "Deploy")</h3>
+                            <p>$(gettext "Just type 'git push' and voilá! Your application is up and running!")</p>
 
-                            <dt>$(gettext "Pay as you go")<dt>
-                            <dd>$(gettext "Pay by hour usage and just for the time that each gear was active. It's more efficient and versatile than traditional computing.")<dd>
+                            <a href="javascript:;" data-text="$(gettext "Less")">$(gettext "See More")</a>
 
-                            <dt>$(gettext "That's it.")<dt>
-                            <dd>$(gettext "Just lean back and enjoy the ride. And don't forget the liquid gold!") <img src="" alt="$(gettext 'Liquid gold!')" title="$(gettext 'Liquid gold!')" /><dd>
-                        </dl>
-                    </section><!-- .scale -->
+                            <dl>
+                                <dt>$(gettext "Built-in Databases")</dt>
+                                <dd>$(gettext "Add a database just adding a new cartridge.")</dd>
+                                <dd>$ rhc cartridge-add MySQL-5 -a AppName</dd>
+                            </dl>
+                        </section><!-- .deploy -->
+                        <section>
+                            <h3 class="scale">$(gettext "Scale")</h3>
+                            <p>$(gettext "With auto-scale you don't need to worry about growth, don't get caught by traffic spikes.")</p>
+
+                            <a href="javascript:;" data-text="$(gettext "Less")">$(gettext "See More")</a>
+
+                            <dl>
+                                <dt>$(gettext "Monitor")</dt>
+                                <dd>$(gettext "New gears to handle traffic spikes. Scale to millions of users.")</dd>
+
+                                <dt>$(gettext "Pay as you go")</dt>
+                                <dd>$(gettext "Pay by hour usage and just for the time that each gear was active. It's more efficient and versatile than traditional computing.")</dd>
+
+                                <dt>$(gettext "That's it.")</dt>
+                                <dd>$(gettext "Just lean back and enjoy the ride. And don't forget the liquid gold!") <img src="" alt="$(gettext 'Liquid gold!')" title="$(gettext 'Liquid gold!')" /></dd>
+                            </dl>
+                        </section><!-- .scale -->
+                    </div>
                 </article> <!-- #how-it-works -->
 
-                <article id="pricing" class="wrapper">
-                    <header>
-                        <h2>$(gettext "Pricing and Benefits")</h2>
-                    </header>
-                    <section>
-                        <div class="right">
-                            <p>$(gettext "Getup is the best hosting option for those who do not want to waste time setting up servers.")</p>
-                            <p>$(gettext "An application can run using one or more gears and the amount will be determined by the volume of access.")</p>
-                            <p>$(gettext "The monthly cost is calculated by the number of gears used and the number of hours that each gear were active.")</p>
+                <div class="background gray">
+                    <article id="pricing" class="wrapper">
+                        <header>
+                            <h2>$(gettext "Pricing and Benefits")</h2>
+                        </header>
+                        <section>
+                            <div class="right">
+                                <p>$(gettext "Getup is the best hosting option for those who do not want to waste time setting up servers.")</p>
+                                <p>$(gettext "An application can run using one or more gears and the amount will be determined by the volume of access.")</p>
+                                <p>$(gettext "The monthly cost is calculated by the number of gears used and the number of hours that each gear were active.")</p>
 
-                            <div class="white-border round">
-                                <h3>$(gettext "Compare with other services")</h3>
-                                <p>$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <a href="#compare">$(gettext "Check it out.")</a></p>
+                                <div class="white-border round">
+                                    <h3>$(gettext "Compare with other services")</h3>
+                                    <p>$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <a href="#compare">$(gettext "Check it out.")</a></p>
+                                </div>
+                            </div>                        
+
+                            <div class="left">
+                                <dl>
+                                    <dt>$(gettext "Auto Scaling")</dt>
+                                    <dd>$(gettext "included")</dd>
+
+                                    <dt class="separator">$(gettext "Support")</dt>
+                                    <dd>$(gettext "Ticket, Forum, Community")</dd>
+
+                                    <dt class="separator">SSL</dt>
+                                    <dd>$(gettext "Shared SSL included")</dd>
+
+                                    <dt class="separator">$(gettext "Additional Storage")</dt>
+                                    <dd>$(gettext "US$ 0,935/GB/Month")</dd>
+
+                                    <dt class="separator">$(gettext "API requests")</dt>
+                                    <dd>$(gettext "Unlimited")</dd>
+                                </dl>
+
+                                <dl class="blue-background round">
+                                    <dt data-tooltip="$(gettext 'Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.')">$(gettext "GEAR")</dt>
+                                    <dd>$(gettext "US$ 0,074/hour")</dd>
+
+                                    <dt class="separator">$(gettext "Monthly cost")</dt>
+                                    <dd>$(gettext "US$ ~54,23")</dd>
+                                </dl>
                             </div>
-                        </div>                        
-
-                        <div class="left">
-                            <dl>
-                                <dt>$(gettext "Auto Scaling")</dt>
-                                <dd>$(gettext "included")</dd>
-
-                                <dt class="separator">$(gettext "Support")</dt>
-                                <dd>$(gettext "Ticket, Forum, Community")</dd>
-
-                                <dt class="separator">SSL</dt>
-                                <dd>$(gettext "Shared SSL included")</dd>
-
-                                <dt class="separator">$(gettext "Additional Storage")</dt>
-                                <dd>$(gettext "US$ 0,935/GB/Month")</dd>
-
-                                <dt class="separator">$(gettext "API requests")</dt>
-                                <dd>$(gettext "Unlimited")</dd>
-                            </dl>
-
-                            <dl class="blue-background round">
-                                <dt data-tooltip="$(gettext 'Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.')">$(gettext "GEAR")</dt>
-                                <dd>$(gettext "US$ 0,074/hour")</dd>
-
-                                <dt class="separator">$(gettext "Monthly cost")</dt>
-                                <dd>$(gettext "US$ ~54,23")</dd>
-                            </dl>
-                        </div>
-                    </section><!-- .prices -->
-                    <section>
-                        <table><!-- TODO--></table>
-                    </section><!-- .compare -->                    
-                </article> <!-- #pricing -->
+                        </section><!-- .prices -->
+                        <section>
+                            <table><!-- TODO--></table>
+                        </section><!-- .compare -->                    
+                    </article> <!-- #pricing -->
+                </div>
 
                 <article id="sign-up" class="wrapper">
                     <header>
@@ -212,29 +222,31 @@ cat <<EOF
                     </section><!-- . -->
                 </article> <!-- #sign-up -->      
 
-                <article id="get-in-touch" class="wrapper">
-                    <header>
-                        <h2>$(gettext "Don't be shy! Let's talk about clouds.")</h2>
-                    </header>
-                    <section>
-                        <ul>
-                            <li><a href="mailto:ship@getupcloud.com">ship@getupcloud.com</a></li>
-                            <li><a href="http://www.twitter.com/getupcloud" target="_blank">twitter.com/getupcloud</a></li>
-                            <li><a href="http://www.facebook.com/getupcloud" target="_blank">fb.com/getupcloud</a></li>                        
-                        </ul>
+                <div class="background orange">
+                    <article id="get-in-touch" class="wrapper">
+                        <header>
+                            <h2>$(gettext "Don't be shy! Let's talk about clouds.")</h2>
+                        </header>
+                        <section>
+                            <ul>
+                                <li><a href="mailto:ship@getupcloud.com">ship@getupcloud.com</a></li>
+                                <li><a href="http://www.twitter.com/getupcloud" target="_blank">twitter.com/getupcloud</a></li>
+                                <li><a href="http://www.facebook.com/getupcloud" target="_blank">fb.com/getupcloud</a></li>                        
+                            </ul>
 
-                        <dl>
-                            <dt>Porto Alegre</dt>
-                            <dd>poa@getupcloud.com</dd>
-                            
-                            <dt>São Paulo</dt>
-                            <dd>sampa@getupcloud.com</dd>
+                            <dl>
+                                <dt>Porto Alegre</dt>
+                                <dd>poa@getupcloud.com</dd>
+                                
+                                <dt>São Paulo</dt>
+                                <dd>sampa@getupcloud.com</dd>
 
-                            <dt>Overseas</dt>
-                            <dd>overseas@getupcloud.com</dd>
-                        </dl>
-                    </section><!-- . -->
-                </article> <!-- #pricing -->                          
+                                <dt>Overseas</dt>
+                                <dd>overseas@getupcloud.com</dd>
+                            </dl>
+                        </section><!-- . -->
+                    </article>
+                <div> <!-- #pricing -->                     
 
             </div> <!-- #main -->
         </div> <!-- #main-container -->
