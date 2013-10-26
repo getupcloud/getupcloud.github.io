@@ -295,7 +295,16 @@ article { padding-bottom: 30px; padding-top: 30px; }
 /* Footer */
 
 .footer-container { background: #282828; }
-.footer-container h3 { margin: 0; }
+.footer-container h3 { color: #fff; margin: 0 0 10px; font-size: 12px; font-weight: 100; text-align: center; }
+
+.footer-container div.wrapper { padding-bottom: 40px; padding-top: 40px; }
+.footer-container .wrapper ul { display: table; list-style: none; margin: 0 auto 0; padding: 0; }
+.footer-container .wrapper ul li { background: url(../img/sprite.png) no-repeat; display: inline-block; text-indent: -5000em; }
+
+.footer-container .wrapper ul li.amazon { background-position: -182px -142px; height: 35px; margin-right: 25px; width: 90px; }
+.footer-container .wrapper ul li.openshift { background-position: -279px -133px; height: 45px; width: 45px; }
+
+.footer-container p { display: none; }
 
 .footer-container nav { background: #fff; width: 100%; }
 
@@ -383,6 +392,11 @@ article { padding-bottom: 30px; padding-top: 30px; }
     #get-in-touch ul li { margin: 0; }
     #get-in-touch .right { width: 40%; margin-top: 60px; }
     #get-in-touch dl { float: left; margin: 20px 0 0 60px; }
+
+    .footer-container h3 { text-align: left; }
+    .footer-container div.wrapper { overflow: hidden; padding-bottom: 80px; padding-top: 80px; }
+    .footer-container .wrapper ul { float: left; margin: 0; width: 40%; }
+    .footer-container p { color: #333; display: inline-block; font-family: 'Ostrich'; font-size: 60px; position: relative; text-align: center; top: -10px; width: 59%; }
 }
 
 
@@ -437,6 +451,9 @@ article { padding-bottom: 30px; padding-top: 30px; }
 
     #get-in-touch ul { width: 40%; }
     #get-in-touch .right { width: 60%; }
+
+    .footer-container .wrapper ul { width: 30%; }
+    .footer-container p { font-size: 100px; top: -20px; width: 69%; }
 }
 
 /* ========================
