@@ -90,7 +90,7 @@ cat <<EOF
                     <section class="item-02 white">
                         <div class="wrapper">
                             <h2>$(gettext "Grow in the cloud")</h2>
-                            <p>$(gettext "Compute power when you need it most.")</p>
+                            <p class="cyan">$(gettext "Compute power when you need it most.")</p>
 
                             <div class="actions">
                                 <a class="button" href="#benefits">$(gettext "Compare benefits")</a>
@@ -225,26 +225,26 @@ cat <<EOF
                     <section>
                         <form>
                             <fieldset>
-                                <legend></legend>
+                                <legend>Criar conta</legend>
 
                                 <input type="hidden" name="lang" value="$(gettext "en-us")">
 
                                 <div class="group">
-                                    <input tabindex="1" placeholder="$(gettext "What's your name?")" name="name" />
-                                    <input tabindex="2" placeholder="$(gettext "What's your e-mail?")" name="email" />
+                                    <input type="text" tabindex="1" placeholder="$(gettext "What's your name")?" name="name" />
+                                    <input type="text" tabindex="2" placeholder="$(gettext "What's your e-mail")?" name="email" />
                                 </div>
 
                                 <div class="group">
-                                    <p>Cadastre uma senah de acesso:</p>
+                                    <p>Cadastre uma senha de acesso:</p>
 
-                                    <input tabindex="3" placeholder="$(gettext "Password")" name="password1" />
-                                    <input tabindex="4" placeholder="$(gettext "Confirm password")" name="password2" />
+                                    <input type="text" tabindex="3" placeholder="$(gettext "Password")" name="password1" />
+                                    <input type="text" tabindex="4" placeholder="$(gettext "Confirm password")" name="password2" />
                                 </div>
 
                                 <div class="group">
                                     <p>Código promocional?</p>
 
-                                    <input tabindex="5" placeholder="$(gettext "Promo code (optional)")" name="coupon_code" />
+                                    <input type="text" tabindex="5" placeholder="$(gettext "Promo code (optional)")" name="coupon_code" />
                                 </div>
 
                                 <div class="actions">
@@ -255,7 +255,6 @@ cat <<EOF
                                     </label>
                                     <button class="button orange">$(gettext "Continue")</button>
                                 </div>
-
                             </fieldset>
                         </form>
                     </section><!-- . -->

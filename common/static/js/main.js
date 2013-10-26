@@ -248,6 +248,30 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 
 	/**
 	 * Elements
+	 * Element: sign up
+	 */
+	Getup.elements.signup = $('#sign-up');
+
+	/**
+	 * Elements
+	 * Element: section content of sign up
+	 */
+	Getup.elements.signup.header = Getup.elements.signup.find('header');
+
+	/**
+	 * Elements
+	 * Element: section button
+	 */
+	Getup.elements.signup.call = Getup.elements.signup.header.find('a');
+
+	/**
+	 * Elements
+	 * Element: section content of sign up
+	 */
+	Getup.elements.signup.form = Getup.elements.signup.find('section');
+
+	/**
+	 * Elements
 	 * Element: footer container
 	 */
 	Getup.elements.footer = $('.footer-container');
@@ -609,6 +633,8 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 
 		element.data('text', element.text());
 		element.text(text);
+
+		return false;
 	};
 
 	/**
@@ -623,6 +649,7 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 	 * Toggle hidden information
 	 */
 	Getup.articles.compare.toggle = function() {
+		return false;
 	};
 
 	/**
@@ -635,9 +662,16 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 	 * Articles
 	 * Sign up
 	 * Toggle hidden form
+	 * (element scope)
 	 */
 	Getup.articles.signup.toggle = function() {
+		Getup.elements.signup.header.slideToggle(function() {
+			
+		});
 
+		Getup.elements.signup.form.slideToggle();
+
+		return false;
 	};
 
 	/**
@@ -690,6 +724,12 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 	 * Event: mobile menu controller
 	 */
 	Getup.elements.see_more.click(Getup.articles.how_it_works.toggle);
+
+	/**
+	 * General events
+	 * Event: call to sign up
+	 */
+	 Getup.elements.signup.call.click(Getup.articles.signup.toggle);
 
 	/**
 	 * General events
