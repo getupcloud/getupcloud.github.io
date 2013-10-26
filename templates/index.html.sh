@@ -178,7 +178,7 @@ cat <<EOF
                                 <p>$(gettext "An application can run using one or more gears and the amount will be determined by the volume of access.")</p>
                                 <p>$(gettext "The monthly cost is calculated by the number of gears used and the number of hours that each gear were active.")</p>
 
-                                <div class="white-border round">
+                                <div class="white-border round compare">
                                     <h3>$(gettext "Compare with other services")</h3>
                                     <p>$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <a href="#compare">$(gettext "Check it out.")</a></p>
                                 </div>
@@ -189,29 +189,29 @@ cat <<EOF
                                     <dt>$(gettext "Auto Scaling")</dt>
                                     <dd>$(gettext "included")</dd>
 
-                                    <dt class="separator">$(gettext "Support")</dt>
+                                    <dt>$(gettext "Support")</dt>
                                     <dd>$(gettext "Ticket, Forum, Community")</dd>
 
-                                    <dt class="separator">SSL</dt>
+                                    <dt>SSL</dt>
                                     <dd>$(gettext "Shared SSL included")</dd>
 
-                                    <dt class="separator">$(gettext "Additional Storage")</dt>
+                                    <dt>$(gettext "Additional Storage")</dt>
                                     <dd>$(gettext "US$ 0,935/GB/Month")</dd>
 
-                                    <dt class="separator">$(gettext "API requests")</dt>
-                                    <dd>$(gettext "Unlimited")</dd>
+                                    <dt class="no-border">$(gettext "API requests")</dt>
+                                    <dd class="no-border">$(gettext "Unlimited")</dd>
                                 </dl>
 
-                                <dl class="blue-background round">
+                                <dl class="blue round">
                                     <dt data-tooltip="$(gettext 'Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.')">$(gettext "GEAR")</dt>
                                     <dd>$(gettext "US$ 0,074/hour")</dd>
 
-                                    <dt class="separator">$(gettext "Monthly cost")</dt>
-                                    <dd>$(gettext "US$ ~54,23")</dd>
+                                    <dt class="no-border">$(gettext "Monthly cost")</dt>
+                                    <dd class="no-border">$(gettext "US$ ~54,23")</dd>
                                 </dl>
                             </div>
                         </section><!-- .prices -->
-                        <section>
+                        <section id="compare">
                             <table><!-- TODO--></table>
                         </section><!-- .compare -->                    
                     </article> <!-- #pricing -->
@@ -223,10 +223,43 @@ cat <<EOF
                         <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
                     </header>
                     <section>
-                        <form></form>
+                        <form>
+                            <fieldset>
+                                <legend></legend>
+
+                                <input type="hidden" name="lang" value="$(gettext "en-us")">
+
+                                <div class="group">
+                                    <input tabindex="1" placeholder="$(gettext "What's your name?")" name="name" />
+                                    <input tabindex="2" placeholder="$(gettext "What's your e-mail?")" name="email" />
+                                </div>
+
+                                <div class="group">
+                                    <p>Cadastre uma senah de acesso:</p>
+
+                                    <input tabindex="3" placeholder="$(gettext "Password")" name="password1" />
+                                    <input tabindex="4" placeholder="$(gettext "Confirm password")" name="password2" />
+                                </div>
+
+                                <div class="group">
+                                    <p>Código promocional?</p>
+
+                                    <input tabindex="5" placeholder="$(gettext "Promo code (optional)")" name="coupon_code" />
+                                </div>
+
+                                <div class="actions">
+                                    <label>
+                                        <input type="checkbox" name="terms-of-use" value="1" />
+                                        <span>$(gettext "I read and agree to the") <a href="#terms-of-use">$(gettext "Terms of use")</a></span>
+
+                                    </label>
+                                    <button class="button orange">$(gettext "Continue")</button>
+                                </div>
+
+                            </fieldset>
+                        </form>
                     </section><!-- . -->
                 </article> <!-- #sign-up -->      
-
                 <div class="background orange">
                     <article id="get-in-touch" class="wrapper">
                         <header>
@@ -255,8 +288,7 @@ cat <<EOF
                             </div>
                         </section><!-- . -->
                     </article>
-                <div> <!-- #pricing -->                     
-
+                <div> <!-- #pricing -->
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
