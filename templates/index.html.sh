@@ -213,7 +213,7 @@ cat <<EOF
                         </section><!-- .prices -->
                         <section id="compare">
                             <table><!-- TODO--></table>
-                        </section><!-- .compare -->                    
+                        </section><!-- .compare -->
                     </article> <!-- #pricing -->
                 </div>
 
@@ -223,22 +223,22 @@ cat <<EOF
                         <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
                     </header>
                     <section>
-                        <form>
+                        <form method="post" action="">
                             <fieldset>
                                 <legend>Criar conta</legend>
 
                                 <input type="hidden" name="lang" value="$(gettext "en-us")">
 
                                 <div class="group">
-                                    <input type="text" tabindex="1" placeholder="$(gettext "What's your name")?" name="name" />
-                                    <input type="text" tabindex="2" placeholder="$(gettext "What's your e-mail")?" name="email" />
+                                    <input type="text" required tabindex="1" placeholder="$(gettext "What's your name")?" name="name" />
+                                    <input type="text" required tabindex="2" placeholder="$(gettext "What's your e-mail")?" name="email" />
                                 </div>
 
                                 <div class="group">
                                     <p>Cadastre uma senha de acesso:</p>
 
-                                    <input type="text" tabindex="3" placeholder="$(gettext "Password")" name="password1" />
-                                    <input type="text" tabindex="4" placeholder="$(gettext "Confirm password")" name="password2" />
+                                    <input type="text" required tabindex="3" placeholder="$(gettext "Password")" name="password1" />
+                                    <input type="text" required tabindex="4" placeholder="$(gettext "Confirm password")" name="password2" />
                                 </div>
 
                                 <div class="group">

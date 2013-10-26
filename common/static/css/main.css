@@ -463,6 +463,8 @@ input[type=text] {
     #sign-up header a { display: block; float: left; margin: 0 0 0 8%; }
 
     #sign-up form p { font-size: 12px; }
+    #sign-up form .actions { text-align: right; }
+    #sign-up form .actions label { display: inline-block; margin-right: 10px; }
 
     #get-in-touch a { color: #fff; font-size: 24px; }
 
