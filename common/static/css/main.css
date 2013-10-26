@@ -458,8 +458,11 @@ input[type=text] {
     #compare { display: none; }
 
     #sign-up { overflow: hidden; }
+
     #sign-up header h2 { display: block; float: left; font-size: 26px; margin: 0; text-align: right; width: 60%; }
     #sign-up header a { display: block; float: left; margin: 0 0 0 8%; }
+
+    #sign-up form p { font-size: 12px; }
 
     #get-in-touch a { color: #fff; font-size: 24px; }
 
