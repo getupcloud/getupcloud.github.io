@@ -19,7 +19,7 @@
         <meta property="og:url" content="http://getupcloud.com">
         <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
         <meta property="og:description" name="description" content="Getup é uma plataforma para hospedagem na nuvem. Uma forma fácil e rápida de desenvolver e publicar aplicações web. Você se preocupa com o código - nós cuidamos do resto.">
-        <meta property="gc:build_id" content="build-20131025175020">
+        <meta property="gc:build_id" content="build-20131026130008">
 
         <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico"> 
 
@@ -177,7 +177,7 @@
                                 <p>Uma aplicação poderá rodar usando um ou mais gears e a quantidade será determinada pelo volume de acessos.</p>
                                 <p>Já o valor mensal é calculado através do número de gears utilizados e o número de horas em que ficaram ativos.</p>
 
-                                <div class="white-border round">
+                                <div class="white-border round compare">
                                     <h3>Comparativo com outros serviços</h3>
                                     <p>Compare Getup com outros serviços durante um mês com um Pico de acesso como exemplo. <a href="#compare">Confira</a></p>
                                 </div>
@@ -188,29 +188,29 @@
                                     <dt>Auto Escalável</dt>
                                     <dd>incluso</dd>
 
-                                    <dt class="separator">Suporte</dt>
+                                    <dt>Suporte</dt>
                                     <dd>Ticket, Fórum, Comunidade</dd>
 
-                                    <dt class="separator">SSL</dt>
+                                    <dt>SSL</dt>
                                     <dd>SSL compartilhado incluso</dd>
 
-                                    <dt class="separator">Storage adicional</dt>
+                                    <dt>Storage adicional</dt>
                                     <dd>R$ 1,87/GB/Mês</dd>
 
-                                    <dt class="separator">Requisições de API</dt>
-                                    <dd>Ilimitadas</dd>
+                                    <dt class="no-border">Requisições de API</dt>
+                                    <dd class="no-border">Ilimitadas</dd>
                                 </dl>
 
-                                <dl class="blue-background round">
+                                <dl class="blue round">
                                     <dt data-tooltip="Gear is a resource constrained container which allows users to run their application. Its Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.')">GEAR</dt>
                                     <dd>R$ 0,156/hora</dd>
 
-                                    <dt class="separator">Custo Mensal</dt>
-                                    <dd>R$ ~113,88</dd>
+                                    <dt class="no-border">Custo Mensal</dt>
+                                    <dd class="no-border">R$ ~113,88</dd>
                                 </dl>
                             </div>
                         </section><!-- .prices -->
-                        <section>
+                        <section id="compare">
                             <table><!-- TODO--></table>
                         </section><!-- .compare -->                    
                     </article> <!-- #pricing -->
@@ -222,10 +222,43 @@
                         <a class="button orange" href="#sign-up">Crie sua Conta</a>
                     </header>
                     <section>
-                        <form></form>
+                        <form>
+                            <fieldset>
+                                <legend></legend>
+
+                                <input type="hidden" name="lang" value="en-us">
+
+                                <div class="group">
+                                    <input tabindex="1" placeholder="What's your name?" name="name" />
+                                    <input tabindex="2" placeholder="What's your e-mail?" name="email" />
+                                </div>
+
+                                <div class="group">
+                                    <p>Cadastre uma senah de acesso:</p>
+
+                                    <input tabindex="3" placeholder="Senha" name="password1" />
+                                    <input tabindex="4" placeholder="Confirme a senha" name="password2" />
+                                </div>
+
+                                <div class="group">
+                                    <p>Código promocional?</p>
+
+                                    <input tabindex="5" placeholder="Promo code (optional)" name="coupon_code" />
+                                </div>
+
+                                <div class="actions">
+                                    <label>
+                                        <input type="checkbox" name="terms-of-use" value="1" />
+                                        <span>I read and agree to the <a href="#terms-of-use">Termos de uso</a></span>
+
+                                    </label>
+                                    <button class="button orange">Continuar</button>
+                                </div>
+
+                            </fieldset>
+                        </form>
                     </section><!-- . -->
                 </article> <!-- #sign-up -->      
-
                 <div class="background orange">
                     <article id="get-in-touch" class="wrapper">
                         <header>
@@ -254,8 +287,7 @@
                             </div>
                         </section><!-- . -->
                     </article>
-                <div> <!-- #pricing -->                     
-
+                <div> <!-- #pricing -->
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 

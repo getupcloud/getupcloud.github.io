@@ -587,17 +587,18 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 	 */
 	Getup.articles = {};
 
-
 	/**
 	 * Articles
 	 * How it works
 	 */
 	Getup.articles.how_it_works = {};
 
-	/** (element scope)
+	/** 
 	 * Articles
 	 * How it works
 	 * Toggle hidden information
+	 *
+	 * (element scope)
 	 */
 	Getup.articles.how_it_works.toggle = function() {
 		var element = $(this);
@@ -610,6 +611,41 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 		element.text(text);
 	};
 
+	/**
+	 * Articles
+	 * Compare
+	 */
+	Getup.articles.compare = {};
+
+	/**
+	 * Articles
+	 * Compare
+	 * Toggle hidden information
+	 */
+	Getup.articles.compare.toggle = function() {
+	};
+
+	/**
+	 * Articles
+	 * Sign up
+	 */
+	Getup.articles.signup = {};
+
+	/**
+	 * Articles
+	 * Sign up
+	 * Toggle hidden form
+	 */
+	Getup.articles.signup.toggle = function() {
+
+	};
+
+	/**
+	 * Articles
+	 * Sign up
+	 * Toggle hidden form
+	 */
+	Getup.articles.signup.send = function() {};
 
 	/**
 	 * Site resize

@@ -106,6 +106,9 @@ nav ul { margin: 0; padding: 0; }
 article { padding-bottom: 30px; padding-top: 30px; }
 
 .right { float: right; }
+.left { float: left; }
+
+.no-border { border: none!important; }
 
 .black { color: #000!important; }
 .black:hover { color: #666!important; }
@@ -115,8 +118,15 @@ article { padding-bottom: 30px; padding-top: 30px; }
 
 .background { width: 100%; }
 
+.round {
+    -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+            border-radius: 7px;
+}
+
 .button {
     background-color: #000;
+    border: none;
     color: #fff;
     display: inline-block;
     padding: 15px;
@@ -125,6 +135,7 @@ article { padding-bottom: 30px; padding-top: 30px; }
        -moz-border-radius: 7px;
             border-radius: 7px;
 }
+
 .button:hover { background-color: #fff; color: #000; }
 
 .orange { background-color: #fa4f48; }
@@ -135,6 +146,8 @@ article { padding-bottom: 30px; padding-top: 30px; }
 
 .gray { background-color: #f1f1f1; }
 .button.gray:hover { color: #f1f1f1; background-color: #fff; }
+
+.blue { background-color: #82d3d1; }
 
 .button.flat { font-size: 14px; padding: 5px 20px; }
 
@@ -262,15 +275,42 @@ article { padding-bottom: 30px; padding-top: 30px; }
 
 /* Pricing */
 
-#pricing {}
+#pricing { overflow: hidden; }
 
+#pricing h2 { font-weight: 100; }
+#pricing p { color: #666; font-weight: 300; margin: 15px 0 0; }
+
+#pricing dl { margin: 25px 10px 10px; overflow: hidden; }
+
+#pricing dl dt, #pricing dl dd { border-bottom: 1px solid #8fe8e5; float: left; font-size: 12px; font-weight: 300; line-height: 30px; }
+
+#pricing dl dt { color: #eb3e33; width: 40%; }
+#pricing dl dd { color: #666; margin: 0; width: 60%; }
+
+#pricing dl.blue { margin: 0; padding: 10px 20px; }
+
+#pricing dl.blue dt, #pricing dl.blue dd { color: #fff; font-size: 13px; font-weight: 100; line-height: 40px; text-transform: uppercase; width: 50%; }
+
+#pricing .compare { display: none; }
 
 /* Sign up */
 
-#sign-up {}
-
 #sign-up h2 { display: inline-block; font-size: 22px; margin: 0 5%; text-align: center; width: 90%; }
 #sign-up a { display: table; margin: 15px auto 0; }
+
+/*#sign-up section { display: none; }*/
+
+#sign-up form { }
+
+#sign-up form fieldset { }
+#sign-up form fieldset legend { }
+
+#sign-up form .group { }
+#sign-up form .actions { }
+
+#sign-up form button { }
+#sign-up form input { }
+#sign-up form label { }
 
 /* Get in touch */
 
@@ -295,7 +335,16 @@ article { padding-bottom: 30px; padding-top: 30px; }
 /* Footer */
 
 .footer-container { background: #282828; }
-.footer-container h3 { margin: 0; }
+.footer-container h3 { color: #fff; margin: 0 0 10px; font-size: 12px; font-weight: 100; text-align: center; }
+
+.footer-container div.wrapper { padding-bottom: 40px; padding-top: 40px; }
+.footer-container .wrapper ul { display: table; list-style: none; margin: 0 auto 0; padding: 0; }
+.footer-container .wrapper ul li { background: url(../img/sprite.png) no-repeat; display: inline-block; text-indent: -5000em; }
+
+.footer-container .wrapper ul li.amazon { background-position: -182px -142px; height: 35px; margin-right: 25px; width: 90px; }
+.footer-container .wrapper ul li.openshift { background-position: -279px -133px; height: 45px; width: 45px; }
+
+.footer-container p { display: none; }
 
 .footer-container nav { background: #fff; width: 100%; }
 
@@ -373,6 +422,15 @@ article { padding-bottom: 30px; padding-top: 30px; }
     #how-it-works section { min-height: 100px; margin: 30px 18px 3px 0; }
     #how-it-works section:last-child { margin-right: 0; }
 
+    #pricing dl { margin: 25px 0 10px; }
+
+    #pricing .left { width: 55%; }
+    #pricing .right { width: 35%; }
+
+    #pricing p { font-size: 12px; }
+
+    #compare { display: none; }
+
     #sign-up { overflow: hidden; }
     #sign-up h2 { display: block; float: left; font-size: 26px; margin: 0; text-align: right; width: 60%; }
     #sign-up a { display: block; float: left; margin: 0 0 0 8%; }
@@ -383,6 +441,11 @@ article { padding-bottom: 30px; padding-top: 30px; }
     #get-in-touch ul li { margin: 0; }
     #get-in-touch .right { width: 40%; margin-top: 60px; }
     #get-in-touch dl { float: left; margin: 20px 0 0 60px; }
+
+    .footer-container h3 { text-align: left; }
+    .footer-container div.wrapper { overflow: hidden; padding-bottom: 80px; padding-top: 80px; }
+    .footer-container .wrapper ul { float: left; margin: 0; width: 40%; }
+    .footer-container p { color: #333; display: inline-block; font-family: 'Ostrich'; font-size: 60px; position: relative; text-align: center; top: -10px; width: 59%; }
 }
 
 
@@ -401,6 +464,13 @@ article { padding-bottom: 30px; padding-top: 30px; }
 
     .carousel p { font-size: 13px; }
     .carousel h2 { font-size: 38px; line-height: 44px; }
+
+    #pricing dl dt, #pricing dl dd { font-size: 14px; }
+    #pricing dl.blue dt, #pricing dl.blue dd { font-size: 14px; }
+
+    #pricing p { font-size: 15px; }
+
+    #pricing .compare { display: block; }
 }
 
 /* ========================
@@ -414,6 +484,12 @@ article { padding-bottom: 30px; padding-top: 30px; }
     h2 { font-size: 55px; }
     h3 { font-size: 22px; }
     dl, p { font-size: 15px; }
+
+    .header-container {
+        -webkit-box-shadow: 0 1px 6px #333;
+           -moz-box-shadow: 0 1px 6px #333;
+                box-shadow: 0 1px 6px #333;
+    }    
 
     .header-container nav ul li.secondary { margin: 0 0 0 3%; position: static; }
     .header-container nav ul li.secondary a { font-size: 14px; }
@@ -433,10 +509,16 @@ article { padding-bottom: 30px; padding-top: 30px; }
     #how-it-works section:after { background: url(../img/sprite.png) no-repeat -536px 0; content: ''; height: 176px; position: absolute; right: -53px; top: 44px; width: 53px; z-index: 2; }
     #how-it-works section:last-child:after { display: none; }
 
+    #pricing dl { margin: 25px 15px 10px; }
+    #pricing .left, #pricing .right { width: 45%; }
+
     #sign-up h2 { width: 70%; }
 
     #get-in-touch ul { width: 40%; }
     #get-in-touch .right { width: 60%; }
+
+    .footer-container .wrapper ul { width: 30%; }
+    .footer-container p { font-size: 100px; top: -20px; width: 69%; }
 }
 
 /* ========================
