@@ -1,9 +1,9 @@
 cat <<EOF
-<!DOCTYPE html lang="$LANGUAGE_ID">
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="$LANGUAGE_ID"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="$LANGUAGE_ID"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="$LANGUAGE_ID"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="$LANGUAGE_ID"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
 
