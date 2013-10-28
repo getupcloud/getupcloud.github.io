@@ -586,7 +586,7 @@ input[type=text] {
     article { padding-bottom: 80px; padding-top: 80px; }
 
     #how-it-works .centralized { width: auto; }
-    #how-it-works section { min-height: 130px; max-width: 300px; width: 30%; }
+    #how-it-works section { min-height: 130px; /*max-width: 300px;*/ width: 30%; }
     #how-it-works section:first-child { margin-left: 2%; }
 
     #how-it-works section:after { background: url(../img/sprite.png) no-repeat -536px 0; content: ''; height: 176px; position: absolute; right: -53px; top: 44px; width: 53px; z-index: 2; }
