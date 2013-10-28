@@ -105,8 +105,8 @@ msgid "Deploy"
 msgstr "Publique"
 
 msgid ""
-"Just type 'git push' and voil&aacute! Your application is up and running!"
-msgstr "Digite 'git push' e voil&aacute! Sua aplicação está up e rodando!"
+"Just type 'git push' and voil&aacute;! Your application is up and running!"
+msgstr "Digite 'git push' e voil&aacute;! Sua aplicação está up e rodando!"
 
 msgid "Built-in Databases"
 msgstr "Built-in Databases"
@@ -363,11 +363,11 @@ msgstr "Na Getup você paga apenas pelo que usou e ainda economiza tempo."
 msgid "Create Account"
 msgstr "Criar Conta"
 
-msgid "What's your name ?"
-msgstr "Qual seu nome ?"
+msgid "What's your name?"
+msgstr "Qual seu nome?"
 
-msgid "What's your e-mail ?"
-msgstr "Qual seu e-mail ?"
+msgid "What's your e-mail?"
+msgstr "Qual seu e-mail?"
 
 msgid "Password"
 msgstr "Senha"
@@ -375,8 +375,8 @@ msgstr "Senha"
 msgid "Confirm password"
 msgstr "Confirme a senha"
 
-msgid "Promo code ?"
-msgstr "Código promocional ?"
+msgid "Promo code?"
+msgstr "Código promocional?"
 
 msgid "Insert the Code (Optional)"
 msgstr "Insira o Código (Opcional)"

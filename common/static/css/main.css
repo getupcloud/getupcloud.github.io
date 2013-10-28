@@ -307,6 +307,8 @@ input[type=text] {
 #how-it-works section dl dt { margin: 20px 0 0; font-weight: 500; }
 #how-it-works section dl dd { margin: 0; }
 
+#how-it-works section dl dd.beer:after { background: url(../img/sprite.png) no-repeat -343px 0; content: ''; display: block; height: 178px; margin: 20px auto; width: 184px; }
+
 #how-it-works section h3:before { background-image: url(../img/sprite.png); background-repeat: no-repeat; content: ''; left: 50%; position: absolute; top: 30px; }
 
 #how-it-works section h3.create:before { background-position: -126px -137px; height: 41px; margin-left: -23px; width: 46px; }

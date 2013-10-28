@@ -51,21 +51,21 @@ cat <<EOF
                 <a class="menu-control" href="javascript:;">Menu</a>
                 <nav>
                     <ul>
-                        <li><a href="#how-it-works">$(gettext "How it Works")</a></li>
-                        <li><a href="#pricing">$(gettext "Pricing")</a></li>
-                        <li><a href="#get-in-touch">$(gettext "Get in Touch")</a></li>
+                        <li><a href="#how-it-works" data-article="how-it-works" class="article">$(gettext "How it Works")</a></li>
+                        <li><a href="#pricing" data-article="pricing" class="article">$(gettext "Pricing")</a></li>
+                        <li><a href="#get-in-touch" data-article="get-in-touch" class="article">$(gettext "Get in Touch")</a></li>
                         <li class="secondary"><a class="black" href="https://getup.zendesk.com/home/">$(gettext "Support")</a></li>
                         <li class="secondary separator"><a class="black" href="blog/">$(gettext "Blog")</a></li>
                     </ul>
                     <ul class="side">
                         <li><a class="button orange flat" href="https://broker.getupcloud.com/console/signin">$(gettext "Log In")</a></li>
-                        <li><a class="button red flat" href="#sign-up">$(gettext "Sign Up")</a></li>                        
+                        <li><a class="button red flat article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a></li>                        
                     </ul>
                 </nav>
 
                 <aside>
-                    <a href="index.html" rel="pt-br" class="pt">Português</a>
-                    <a href="index_en.html" rel="en-us" class="black en">English</a>
+                    <a href="index.html" data-lang="pt-br" class="pt">Português</a>
+                    <a href="index_en.html" data-lang="en-us" class="black en">English</a>
                 </aside>
             </header>
         </div>
@@ -81,8 +81,8 @@ cat <<EOF
                             <p>$(gettext "You only have to worry about coding your app - we take care of everything else.")</p>
 
                             <div class="actions">
-                                <a class="button" href="#benefits">$(gettext "Compare benefits")</a>
-                                <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
+                                <a class="button article" href="#compare" data-article="compare">$(gettext "Compare benefits")</a>
+                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a>
                             </div>
                         </div>
                     </section>
@@ -93,8 +93,8 @@ cat <<EOF
                             <p class="cyan">$(gettext "Compute power when you need it most.")</p>
 
                             <div class="actions">
-                                <a class="button" href="#benefits">$(gettext "Compare benefits")</a>
-                                <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
+                                <a class="button article" href="#compare" data-article="compare">$(gettext "Compare benefits")</a>
+                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a>
                             </div>
                         </div>
                     </section>
@@ -106,8 +106,8 @@ cat <<EOF
                             <p>$(gettext "Deploy and scale to millions of users.")</p>
 
                             <div class="actions">
-                                <a class="button" href="#benefits">$(gettext "Compare benefits")</a>
-                                <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
+                                <a class="button article" href="#compare" data-article="compare">$(gettext "Compare benefits")</a>
+                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a>
                             </div>
                         </div>
                     </section>
@@ -137,7 +137,7 @@ cat <<EOF
                         </section><!-- .create -->
                         <section>
                             <h3 class="deploy">$(gettext "Deploy")</h3>
-                            <p>$(gettext "Just type 'git push' and voil&aacute! Your application is up and running!")</p>
+                            <p>$(gettext "Just type 'git push' and voil&aacute;! Your application is up and running!")</p>
 
                             <a href="javascript:;" data-text="$(gettext "Less")">$(gettext "See More")</a>
 
@@ -161,7 +161,7 @@ cat <<EOF
                                 <dd>$(gettext "Pay by hour usage and just for the time that each gear was active. It's more efficient and versatile than traditional computing.")</dd>
 
                                 <dt>$(gettext "That's it.")</dt>
-                                <dd>$(gettext "Just lean back and enjoy the ride. And don't forget the liquid gold!") <img src="" alt="$(gettext 'Liquid gold!')" title="$(gettext 'Liquid gold!')" /></dd>
+                                <dd class="beer">$(gettext "Just lean back and enjoy the ride. And don't forget the liquid gold!")</dd>
                             </dl>
                         </section><!-- .scale -->
                     </div>
@@ -180,7 +180,7 @@ cat <<EOF
 
                                 <div class="white-border round compare">
                                     <h3>$(gettext "Compare with other services")</h3>
-                                    <p>$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <a href="#compare">$(gettext "Check it out.")</a></p>
+                                    <p>$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <a href="#compare" class="article" data-article="compare">$(gettext "Check it out.")</a></p>
                                 </div>
                             </div>                        
 
@@ -220,18 +220,18 @@ cat <<EOF
                 <article id="sign-up" class="wrapper">
                     <header>
                         <h2>$(gettext "With Getup you pay only for what you use and saves time.")</h2>
-                        <a class="button orange" href="#sign-up">$(gettext "Sign Up")</a>
+                        <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a>
                     </header>
                     <section>
-                        <form method="post" action="">
+                        <form method="post" action="$SIGNUP">
                             <fieldset>
                                 <legend>Criar conta</legend>
 
                                 <input type="hidden" name="lang" value="$(gettext "en-us")">
 
                                 <div class="group">
-                                    <input type="text" required tabindex="1" placeholder="$(gettext "What's your name")?" name="name" />
-                                    <input type="text" required tabindex="2" placeholder="$(gettext "What's your e-mail")?" name="email" />
+                                    <input type="text" required tabindex="1" placeholder="$(gettext "What's your name?")" name="name" />
+                                    <input type="text" required tabindex="2" placeholder="$(gettext "What's your e-mail?")" name="email" />
                                 </div>
 
                                 <div class="group">
@@ -287,7 +287,7 @@ cat <<EOF
                             </div>
                         </section><!-- . -->
                     </article>
-                <div> <!-- #pricing -->
+                </div> <!-- #pricing -->
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
