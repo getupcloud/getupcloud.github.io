@@ -19,7 +19,7 @@
         <meta property="og:url" content="http://getupcloud.com">
         <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
         <meta property="og:description" name="description" content="Getup é uma plataforma para hospedagem na nuvem. Uma forma fácil e rápida de desenvolver e publicar aplicações web. Você se preocupa com o código - nós cuidamos do resto.">
-        <meta property="gc:build_id" content="build-20131028092250">
+        <meta property="gc:build_id" content="build-20131028100115">
 
         <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico"> 
 
@@ -50,21 +50,21 @@
                 <a class="menu-control" href="javascript:;">Menu</a>
                 <nav>
                     <ul>
-                        <li><a href="#how-it-works">Como Funciona</a></li>
-                        <li><a href="#pricing">Preço</a></li>
-                        <li><a href="#get-in-touch">Contato</a></li>
+                        <li><a href="#how-it-works" data-article="how-it-works" class="article">Como Funciona</a></li>
+                        <li><a href="#pricing" data-article="pricing" class="article">Preço</a></li>
+                        <li><a href="#get-in-touch" data-article="get-in-touch" class="article">Contato</a></li>
                         <li class="secondary"><a class="black" href="https://getup.zendesk.com/home/">Suporte</a></li>
                         <li class="secondary separator"><a class="black" href="blog/">Blog</a></li>
                     </ul>
                     <ul class="side">
                         <li><a class="button orange flat" href="https://broker.getupcloud.com/console/signin">Entrar</a></li>
-                        <li><a class="button red flat" href="#sign-up">Crie sua Conta</a></li>                        
+                        <li><a class="button red flat article" href="#sign-up" data-article="sign-up">Crie sua Conta</a></li>                        
                     </ul>
                 </nav>
 
                 <aside>
-                    <a href="index.html" rel="pt-br" class="pt">Português</a>
-                    <a href="index_en.html" rel="en-us" class="black en">English</a>
+                    <a href="index.html" data-lang="pt-br" class="pt">Português</a>
+                    <a href="index_en.html" data-lang="en-us" class="black en">English</a>
                 </aside>
             </header>
         </div>
@@ -80,8 +80,8 @@
                             <p>Você se preocupa com o código - nós cuidamos do resto.</p>
 
                             <div class="actions">
-                                <a class="button" href="#benefits">Compare</a>
-                                <a class="button orange" href="#sign-up">Crie sua Conta</a>
+                                <a class="button article" href="#compare" data-article="compare">Compare</a>
+                                <a class="button orange article" href="#sign-up" data-article="sign-up">Crie sua Conta</a>
                             </div>
                         </div>
                     </section>
@@ -92,8 +92,8 @@
                             <p class="cyan">Recursos disponíveis na hora que você mais precisa.</p>
 
                             <div class="actions">
-                                <a class="button" href="#benefits">Compare</a>
-                                <a class="button orange" href="#sign-up">Crie sua Conta</a>
+                                <a class="button article" href="#compare" data-article="compare">Compare</a>
+                                <a class="button orange article" href="#sign-up" data-article="sign-up">Crie sua Conta</a>
                             </div>
                         </div>
                     </section>
@@ -105,8 +105,8 @@
                             <p>Publique e escale para milhões de usuários.</p>
 
                             <div class="actions">
-                                <a class="button" href="#benefits">Compare</a>
-                                <a class="button orange" href="#sign-up">Crie sua Conta</a>
+                                <a class="button article" href="#compare" data-article="compare">Compare</a>
+                                <a class="button orange article" href="#sign-up" data-article="sign-up">Crie sua Conta</a>
                             </div>
                         </div>
                     </section>
@@ -136,7 +136,7 @@
                         </section><!-- .create -->
                         <section>
                             <h3 class="deploy">Publique</h3>
-                            <p>Digite 'git push' e voil&aacute! Sua aplicação está up e rodando!</p>
+                            <p>Digite 'git push' e voil&aacute;! Sua aplicação está up e rodando!</p>
 
                             <a href="javascript:;" data-text="Menos">Veja Mais</a>
 
@@ -160,7 +160,7 @@
                                 <dd>Pague por hora e apenas pelo período que o gear ficou ativo. É mais eficiente e versátil que os modelos tradicionais de hosting.</dd>
 
                                 <dt>É isso!</dt>
-                                <dd>É reclinar na poltrona e curtir o passeio. E não esqueça do néctar dourado! <img src="" alt="Liquid gold!" title="Liquid gold!" /></dd>
+                                <dd class="beer">É reclinar na poltrona e curtir o passeio. E não esqueça do néctar dourado!</dd>
                             </dl>
                         </section><!-- .scale -->
                     </div>
@@ -179,7 +179,7 @@
 
                                 <div class="white-border round compare">
                                     <h3>Comparativo com outros serviços</h3>
-                                    <p>Compare Getup com outros serviços durante um mês com um Pico de acesso como exemplo. <a href="#compare">Confira</a></p>
+                                    <p>Compare Getup com outros serviços durante um mês com um Pico de acesso como exemplo. <a href="#compare" class="article" data-article="compare">Confira</a></p>
                                 </div>
                             </div>                        
 
@@ -219,18 +219,18 @@
                 <article id="sign-up" class="wrapper">
                     <header>
                         <h2>Na Getup você paga apenas pelo que usou e ainda economiza tempo.</h2>
-                        <a class="button orange" href="#sign-up">Crie sua Conta</a>
+                        <a class="button orange article" href="#sign-up" data-article="sign-up">Crie sua Conta</a>
                     </header>
                     <section>
-                        <form method="post" action="">
+                        <form method="post" action="https://broker.getupcloud.com/getup/account/signup/">
                             <fieldset>
                                 <legend>Criar conta</legend>
 
                                 <input type="hidden" name="lang" value="en-us">
 
                                 <div class="group">
-                                    <input type="text" required tabindex="1" placeholder="What's your name?" name="name" />
-                                    <input type="text" required tabindex="2" placeholder="What's your e-mail?" name="email" />
+                                    <input type="text" required tabindex="1" placeholder="Qual seu nome?" name="name" />
+                                    <input type="text" required tabindex="2" placeholder="Qual seu e-mail?" name="email" />
                                 </div>
 
                                 <div class="group">
@@ -286,7 +286,7 @@
                             </div>
                         </section><!-- . -->
                     </article>
-                <div> <!-- #pricing -->
+                </div> <!-- #pricing -->
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
