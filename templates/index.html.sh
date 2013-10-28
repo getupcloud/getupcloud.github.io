@@ -130,14 +130,14 @@ cat <<EOF
                                 <dt>$(gettext "SSL")</dt>
                                 <dd>$(gettext "Included to all applications.")</dd>
 
-                                <dt>$(gettext "Cartridges")<dt>
+                                <dt>$(gettext "Cartridges")</dt>
                                 <dd>$(gettext "Add components to your app.")</dd>
                                 <dd>$ rhc app-create AppName PHP-5 MySQL-5</dd>
                             </dl>
                         </section><!-- .create -->
                         <section>
                             <h3 class="deploy">$(gettext "Deploy")</h3>
-                            <p>$(gettext "Just type 'git push' and voilá! Your application is up and running!")</p>
+                            <p>$(gettext "Just type 'git push' and voil&aacute! Your application is up and running!")</p>
 
                             <a href="javascript:;" data-text="$(gettext "Less")">$(gettext "See More")</a>
 
