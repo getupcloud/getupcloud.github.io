@@ -256,20 +256,24 @@ input[type=text] {
 .carousel ul li.active .rotator.move span { left: 0; }
 
 .carousel ul li.next,
-.carousel ul li.previous { border-bottom: 0; border-right: 0; height: 7px; position: relative; top: 2px; width: 7px; }
+.carousel ul li.prev { height: 7px; position: relative; top: 2px; width: 7px; }
 
 .carousel ul li.next {
+    border-bottom: 0;
+    border-right: 0;
     -webkit-transform:rotate(130deg);
     -moz-transform:rotate(130deg);
     -o-transform:rotate(130deg);
     -ms-transform:rotate(130deg);
 }
 
-.carousel ul li.previous {
-    -webkit-transform:rotate(310deg);
-    -moz-transform:rotate(310deg);
-    -o-transform:rotate(310deg);
-    -ms-transform:rotate(310deg);
+.carousel ul li.prev {
+    border-top: 0;
+    border-left: 0;
+    -webkit-transform:rotate(130deg);
+    -moz-transform:rotate(130deg);
+    -o-transform:rotate(130deg);
+    -ms-transform:rotate(130deg);
 }
 
 /* How works */
