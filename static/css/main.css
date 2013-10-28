@@ -133,6 +133,7 @@ input[type=text] {
 .left { float: left; }
 
 .no-border { border: none!important; }
+.white-border { border: 1px solid #fff; }
 
 .black { color: #000!important; }
 .black:hover { color: #666!important; }
@@ -242,6 +243,35 @@ input[type=text] {
 
 .carousel .actions { bottom: 0; position: absolute; }
 
+.carousel ul { bottom: 0; left: 50%; margin-left: -41px; padding: 0; position: absolute; z-index: 2; }
+.carousel ul li { border: 1px solid #8b8b8b; cursor: pointer; display: inline-block; height: 10px; margin: 0 3px; text-indent: -5000em; width: 10px; }
+.carousel ul li.itens { -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; }
+.carousel ul li.itens:hover { background: #8b8b8b; }
+
+.carousel ul li.active { background: #fff; border: none; cursor: default; display: none; height: 12px; left: 14px; top: 0; position: absolute; width: 12px; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; }
+.carousel ul li.active .rotator { background: transparent; display: block; height: 12px; left: 6px; overflow: hidden; position: absolute; top: 0; width: 6px; }
+.carousel ul li.active .rotator span { background: url(../img/sprite.png) transparent -143px -116px; display: block; height: 12px; left: -6px; position: absolute; top: 0; width: 12px; }
+
+.carousel ul li.active .rotator.move { background: url(../img/sprite.png) transparent -143px -116px; left: 0; width: 12px; }
+.carousel ul li.active .rotator.move span { left: 0; }
+
+.carousel ul li.next,
+.carousel ul li.previous { border-bottom: 0; border-right: 0; height: 7px; position: relative; top: 2px; width: 7px; }
+
+.carousel ul li.next {
+    -webkit-transform:rotate(130deg);
+    -moz-transform:rotate(130deg);
+    -o-transform:rotate(130deg);
+    -ms-transform:rotate(130deg);
+}
+
+.carousel ul li.previous {
+    -webkit-transform:rotate(310deg);
+    -moz-transform:rotate(310deg);
+    -o-transform:rotate(310deg);
+    -ms-transform:rotate(310deg);
+}
+
 /* How works */
 
 #how-it-works { overflow: hidden; }
@@ -301,7 +331,7 @@ input[type=text] {
 
 /* Pricing */
 
-#pricing { overflow: hidden; }
+#pricing { overflow: hidden; position: relative; }
 
 #pricing h2 { font-weight: 100; }
 #pricing p { color: #666; font-weight: 300; margin: 15px 0 0; }
@@ -463,6 +493,8 @@ input[type=text] {
     #sign-up header a { display: block; float: left; margin: 0 0 0 8%; }
 
     #sign-up form p { font-size: 12px; }
+    #sign-up form .actions { text-align: right; }
+    #sign-up form .actions label { display: inline-block; margin-right: 10px; }
 
     #get-in-touch a { color: #fff; font-size: 24px; }
 
@@ -477,10 +509,10 @@ input[type=text] {
 
     .footer-container div.wrapper { overflow: hidden; padding-bottom: 80px; padding-top: 80px; }
 
-    .footer-container .wrapper ul { float: left; margin: 0; width: 40%; }
+    .footer-container .wrapper ul { float: left; margin: 0; width: 45%; }
 
     .footer-container .wrapper ul li.amazon { background-position: -114px -67px; height: 43px; width: 112px; }
-    .footer-container .wrapper ul li.openshift { background-position: -235px -63px; height: 59px; width: 59px; }
+    .footer-container .wrapper ul li.openshift { background-position: -235px -63px; height: 59px; width: 54px; }
 
     .footer-container p { color: #333; display: inline-block; font-family: 'Ostrich'; font-size: 60px; position: relative; text-align: center; top: -10px; width: 59%; }
 }
@@ -507,7 +539,15 @@ input[type=text] {
 
     #pricing p { font-size: 15px; }
 
-    #pricing .compare { display: block; }
+    #pricing .right { padding-bottom: 117px; }
+
+    #pricing .compare { border-width: 2px; bottom: 60px; cursor: pointer; display: block; left: 5%; min-height: 97px; margin: 20px 0 0; position: absolute; width: 90%; }
+    #pricing .compare:hover { background: #fff; }
+    #pricing .compare:before  { background: url(../img/sprite.png) no-repeat -1px -77px; content: ''; left: 0; height: 53px; margin-top: -26px; position: absolute; top: 50%; width: 103px; }
+
+    #pricing .compare h3 { color: #eb3e33; font-size: 16px; margin: 15px 0 10px 130px; }
+    #pricing .compare p { color: #666; font-size: 13px; margin: 0 0 7px 130px; }
+    #pricing .compare a { color: #666; font-weight: 500; text-decoration: underline; }
 }
 
 /* ========================
@@ -549,6 +589,11 @@ input[type=text] {
     #pricing dl { margin: 25px 15px 10px; }
     #pricing .left, #pricing .right { width: 45%; }
 
+    #pricing .right { padding-bottom: 0; }
+
+    #pricing .compare { bottom: auto; left: auto; margin: 20px 0 0; position: relative; width: auto; }
+    #pricing .compare h3 { margin: 7px 0 10px 130px; }
+
     #sign-up header h2 { width: 70%; }
 
     #get-in-touch ul { width: 40%; }
@@ -571,6 +616,14 @@ input[type=text] {
 }
 
 /* ========================
+    min-width 900px
+   ======================== */
+
+@media only screen and (min-width: 900px) {
+    #pricing .compare { bottom: 80px; margin: 0 4% 0 0; position: absolute; }
+}
+
+/* ========================
     min-width 1049px
    ======================== */
 
@@ -579,6 +632,8 @@ input[type=text] {
 
     #sign-up form .group { display: inline-block; width: 49%; }
     #sign-up form .group input[type=text] { width: 40%; }
+
+    #pricing .compare h3 { margin: 7px 0 10px 130px; }
 }
 
 /* ========================
@@ -590,6 +645,8 @@ input[type=text] {
 
     #get-in-touch ul { width: 30%; }
     #get-in-touch .right { width: 70%; }
+
+    #pricing .compare h3 { margin-top: 15px; }
 }
 
 /* ========================
