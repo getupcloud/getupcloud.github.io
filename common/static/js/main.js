@@ -540,12 +540,12 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 	 * Carousel
 	 * Animate the carousel start
 	 */
-	 Getup.carousel.show = function() {
+	 Getup.carousel.show = function(callback) {
 
 		/**
 		 * Slide down th carousel
-		 Getup.elements.carousel.show();
 		 */
+		 Getup.elements.carousel.animate({ 'margin-top': 0 }, { complete: callback });
 	};
 
 	/**
@@ -601,8 +601,9 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 
 		/**
 		 * Hide the carousel
-		 Getup.elements.carousel.hide();
 		 */
+		 Getup.elements.carousel.animate({ 'margin-top': - Getup.elements.carousel.height() });
+		 //Getup.elements.carousel.hide();
 	};
 
 
@@ -704,8 +705,9 @@ jQuery.effects||function(e,t){var n="ui-effects-";e.effects={effect:{}},function
 
 
 		// Verify and move to page X ...
-		//Getup.carousel.slideDown();
-		Getup.carousel.start_timer();
+		Getup.carousel.show(function() {
+			Getup.carousel.start_timer();
+		});
 	};
 
 	/**

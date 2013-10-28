@@ -133,6 +133,7 @@ input[type=text] {
 .left { float: left; }
 
 .no-border { border: none!important; }
+.white-border { border: 1px solid #fff; }
 
 .black { color: #000!important; }
 .black:hover { color: #666!important; }
@@ -301,7 +302,7 @@ input[type=text] {
 
 /* Pricing */
 
-#pricing { overflow: hidden; }
+#pricing { overflow: hidden; position: relative; }
 
 #pricing h2 { font-weight: 100; }
 #pricing p { color: #666; font-weight: 300; margin: 15px 0 0; }
@@ -479,10 +480,10 @@ input[type=text] {
 
     .footer-container div.wrapper { overflow: hidden; padding-bottom: 80px; padding-top: 80px; }
 
-    .footer-container .wrapper ul { float: left; margin: 0; width: 40%; }
+    .footer-container .wrapper ul { float: left; margin: 0; width: 45%; }
 
     .footer-container .wrapper ul li.amazon { background-position: -114px -67px; height: 43px; width: 112px; }
-    .footer-container .wrapper ul li.openshift { background-position: -235px -63px; height: 59px; width: 59px; }
+    .footer-container .wrapper ul li.openshift { background-position: -235px -63px; height: 59px; width: 54px; }
 
     .footer-container p { color: #333; display: inline-block; font-family: 'Ostrich'; font-size: 60px; position: relative; text-align: center; top: -10px; width: 59%; }
 }
@@ -509,7 +510,15 @@ input[type=text] {
 
     #pricing p { font-size: 15px; }
 
-    #pricing .compare { display: block; }
+    #pricing .right { padding-bottom: 117px; }
+
+    #pricing .compare { border-width: 2px; bottom: 60px; cursor: pointer; display: block; left: 5%; min-height: 97px; margin: 20px 0 0; position: absolute; width: 90%; }
+    #pricing .compare:hover { background: #fff; }
+    #pricing .compare:before  { background: url(../img/sprite.png) no-repeat -1px -77px; content: ''; left: 0; height: 53px; margin-top: -26px; position: absolute; top: 50%; width: 103px; }
+
+    #pricing .compare h3 { color: #eb3e33; font-size: 16px; margin: 15px 0 10px 130px; }
+    #pricing .compare p { color: #666; font-size: 13px; margin: 0 0 7px 130px; }
+    #pricing .compare a { color: #666; font-weight: 500; text-decoration: underline; }
 }
 
 /* ========================
@@ -551,6 +560,11 @@ input[type=text] {
     #pricing dl { margin: 25px 15px 10px; }
     #pricing .left, #pricing .right { width: 45%; }
 
+    #pricing .right { padding-bottom: 0; }
+
+    #pricing .compare { bottom: auto; left: auto; margin: 20px 0 0; position: relative; width: auto; }
+    #pricing .compare h3 { margin: 7px 0 10px 130px; }
+
     #sign-up header h2 { width: 70%; }
 
     #get-in-touch ul { width: 40%; }
@@ -573,6 +587,14 @@ input[type=text] {
 }
 
 /* ========================
+    min-width 900px
+   ======================== */
+
+@media only screen and (min-width: 900px) {
+    #pricing .compare { bottom: 80px; margin: 0 4% 0 0; position: absolute; }
+}
+
+/* ========================
     min-width 1049px
    ======================== */
 
@@ -581,6 +603,8 @@ input[type=text] {
 
     #sign-up form .group { display: inline-block; width: 49%; }
     #sign-up form .group input[type=text] { width: 40%; }
+
+    #pricing .compare h3 { margin: 7px 0 10px 130px; }
 }
 
 /* ========================
@@ -592,6 +616,8 @@ input[type=text] {
 
     #get-in-touch ul { width: 30%; }
     #get-in-touch .right { width: 70%; }
+
+    #pricing .compare h3 { margin-top: 15px; }
 }
 
 /* ========================
