@@ -243,7 +243,7 @@ input[type=text] {
 
 .carousel .actions { bottom: 0; position: absolute; }
 
-.carousel ul { bottom: 0; left: 50%; margin-left: -41px; padding: 0; position: absolute; z-index: 2; }
+.carousel ul { bottom: 0; left: 50%; margin-left: -41px; overflow: hidden; padding: 0; position: absolute; z-index: 2; }
 .carousel ul li { border: 1px solid #8b8b8b; cursor: pointer; display: inline-block; height: 10px; margin: 0 3px; text-indent: -5000em; width: 10px; }
 .carousel ul li.itens { -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; }
 .carousel ul li.itens:hover { background: #8b8b8b; }
@@ -304,7 +304,7 @@ input[type=text] {
 /*#how-it-works section dl { display: none; }*/
 
 #how-it-works section dl { display: none; margin: 0; padding: 0 10%; width: 80%; }
-#how-it-works section dl dt { margin: 20px 0 0; font-weight: 400; }
+#how-it-works section dl dt { margin: 20px 0 0; font-weight: 500; }
 #how-it-works section dl dd { margin: 0; }
 
 #how-it-works section h3:before { background-image: url(../img/sprite.png); background-repeat: no-repeat; content: ''; left: 50%; position: absolute; top: 30px; }
