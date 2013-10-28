@@ -437,12 +437,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		/**
 		 * Carousel control next element
 		 */
-		Getup.carousel.elements.next = $('<li class="next">Next</li>');
+		Getup.carousel.elements.next = $('<li class="next">></li>');
 
 		/**
 		 * Carousel control previous element
 		 */
-		Getup.carousel.elements.previous = $('<li class="previous">Previous</li>');
+		Getup.carousel.elements.previous = $('<li class="prev"><</li>');
 
 		/**
 		 * Carousel control active element
