@@ -176,9 +176,9 @@ cat <<EOF
                                 <p>$(gettext "An application can run using one or more gears and the amount will be determined by the volume of access.")</p>
                                 <p>$(gettext "The monthly cost is calculated by the number of gears used and the number of hours that each gear were active.")</p>
 
-                                <div class="white-border round compare">
+                                <div class="white-border round compare article" data-article="compare">
                                     <h3>$(gettext "Compare with other services")</h3>
-                                    <p>$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <a href="#compare" class="article" data-article="compare">$(gettext "Check it out.")</a></p>
+                                    <p>$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <a href="javacript:;">$(gettext "Check it out.")</a></p>
                                 </div>
                             </div>                        
 
