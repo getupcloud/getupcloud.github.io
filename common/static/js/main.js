@@ -138,6 +138,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		var directory = (is_mobile) ? 'mobile/' : '';
 		Getup.preload.config.data = [
 			{type: 'image', file: 'sprite.png'},
+			{type: 'image', file: 'loader.gif'},
 			{type: 'image', file: directory + 'clouds.jpg'},
 			{type: 'image', file: directory + 'mountains.jpg'},
 			{type: 'image', file: directory + 'world.jpg'}
@@ -278,6 +279,18 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 	/**
 	 * Elements
+	 * Element: pricing
+	 */
+	Getup.elements.pricing = $('#pricing')
+
+	/**
+	 * Elements
+	 * Element: get in touch
+	 */
+	Getup.elements.get_in_touch = $('#get-in-touch');
+
+	/**
+	 * Elements
 	 * Element: section content of sign up
 	 */
 	Getup.elements.signup.header = Getup.elements.signup.find('header');
@@ -292,7 +305,13 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Elements
 	 * Element: section content of sign up
 	 */
-	Getup.elements.signup.form = Getup.elements.signup.find('section');
+	Getup.elements.signup.section = Getup.elements.signup.find('section');
+
+	/**
+	 * Elements
+	 * Element: section content of sign up
+	 */
+	Getup.elements.signup.actions = Getup.elements.signup.section.find('.actions');
 
 	/**
 	 * Elements
@@ -759,15 +778,92 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	/**
 	 * Articles
 	 * Compare
+	 * Link
+	 */
+	Getup.articles.how_it_works.link = function() {
+
+		var top = Getup.elements.how_it_works.offset().top - parseInt(Getup.elements.how_it_works.css('paddingTop'), 10);
+
+		Getup.elements.body.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
+
+
+		}});
+
+
+		return false;
+	};
+
+	/**
+	 * Articles
+	 * How it works
+	 */
+	Getup.articles.get_in_touch = {};
+
+	/**
+	 * Articles
+	 * Compare
+	 * Link
+	 */
+	Getup.articles.get_in_touch.link = function() {
+
+		var top = Getup.elements.get_in_touch.offset().top - parseInt(Getup.elements.get_in_touch.css('paddingTop'), 10);
+
+		Getup.elements.body.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
+
+
+		}});
+
+
+		return false;
+	};	
+
+	/**
+	 * Articles
+	 * Home
+	 */
+	Getup.articles.home = {};
+
+	/**
+	 * Articles
+	 * Home
+	 * Link
+	 */
+	Getup.articles.home.link = function() {
+		Getup.elements.body.animate({ 'scroll-top': 0 }, { queue: false, easing: 'easeInOutCirc' });
+
+		return false;
+	};
+
+	/**
+	 * Articles
+	 * Pricing
+	 */
+	Getup.articles.pricing = {};
+
+	/**
+	 * Articles
+	 * Home
+	 * Link
+	 */
+	Getup.articles.pricing.link = function() {
+		var top = Getup.elements.pricing.offset().top - parseInt(Getup.elements.pricing.css('paddingTop'), 10);
+		Getup.elements.body.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc' });
+
+		return false;
+	};
+
+	/**
+	 * Articles
+	 * Compare
 	 */
 	Getup.articles.compare = {};
 
 	/**
 	 * Articles
 	 * Compare
-	 * Toggle hidden information
+	 * Link
 	 */
-	Getup.articles.compare.toggle = function() {
+	Getup.articles.compare.link = function() {
 		return false;
 	};
 
@@ -775,7 +871,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Articles
 	 * Sign up
 	 */
-	Getup.articles.signup = {};
+	Getup.articles.sign_up = {};
 
 	/**
 	 * Articles
@@ -783,12 +879,17 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Toggle hidden form
 	 * (element scope)
 	 */
-	Getup.articles.signup.toggle = function() {
-		Getup.elements.signup.header.slideToggle(function() {
-			
-		});
+	Getup.articles.sign_up.link = function() {
 
-		Getup.elements.signup.form.slideToggle();
+		var top = Getup.elements.signup.offset().top - parseInt(Getup.elements.signup.css('paddingTop'), 10);
+
+		Getup.elements.body.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
+
+			Getup.elements.signup.header.slideUp();
+			Getup.elements.signup.section.slideDown();
+
+		}});
+
 
 		return false;
 	};
@@ -796,9 +897,221 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	/**
 	 * Articles
 	 * Sign up
-	 * Toggle hidden form
+	 * Elements
 	 */
-	Getup.articles.signup.send = function() {};
+	Getup.articles.sign_up.elements = {};
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.form = Getup.elements.signup.find('form');
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.success = $('#success');
+	
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.inputs = {};
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.inputs.name = Getup.articles.sign_up.elements.form.find('input[name=name]');
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.inputs.email = Getup.articles.sign_up.elements.form.find('input[name=email]');
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.inputs.password = Getup.articles.sign_up.elements.form.find('input[name=password1]');
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.inputs.passwordConfirm = Getup.articles.sign_up.elements.form.find('input[name=password2]');
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.inputs.couponCode = Getup.articles.sign_up.elements.form.find('input[name=coupon_code]');
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.inputs.terms = Getup.articles.sign_up.elements.form.find('input[name=use_terms]');
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.button = Getup.articles.sign_up.elements.form.find('button');
+
+	/**
+	 *
+	 */
+	 Getup.articles.sign_up.elements.message = $('<p class="mesasge"></p>');
+	 Getup.elements.signup.actions.append(Getup.articles.sign_up.elements.message);
+
+	/**
+	 * Articles
+	 * Sign up
+	 */
+	Getup.articles.sign_up.submiting = false;
+
+	/**
+	 *
+	 */
+    Getup.articles.sign_up.validation = {};
+
+	/**
+	 *
+	 */
+    Getup.articles.sign_up.validation.exclude  = /[^@\-\.\w]|^[_@\.\-]|[\._\-]{2}|[@\.]{2}|(@)[^@]*\1/;
+
+	/**
+	 *
+	 */
+    Getup.articles.sign_up.validation.check    = /@[\w\-]+\./;
+
+	/**
+	 *
+	 */
+    Getup.articles.sign_up.validation.checkend = /\.[a-zA-Z]{2,3}$/;
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.send = function() {
+		if (Getup.articles.sign_up.submiting) return false;
+
+        var name            = Getup.articles.sign_up.elements.inputs.name;
+        var email           = Getup.articles.sign_up.elements.inputs.email;
+        var password        = Getup.articles.sign_up.elements.inputs.password;
+        var passwordConfirm = Getup.articles.sign_up.elements.inputs.passwordConfirm;
+        var couponCode      = Getup.articles.sign_up.elements.inputs.couponCode;
+        var terms           = Getup.articles.sign_up.elements.inputs.terms;
+
+        var valid        = true;
+        var emailValue   = email.val();
+        var emailInvalid = ((emailValue.search(Getup.articles.sign_up.validation.exclude) != -1) || (emailValue.search(Getup.articles.sign_up.validation.check)) == -1) || (emailValue.search(Getup.articles.sign_up.validation.checkend) == -1);
+
+        (name.val().length < 1)                   ? valid = !name.addClass('error') : name.removeClass('error');
+        (emailInvalid)                            ? valid = !email.addClass('error') : email.removeClass('error');
+        (password.val().length < 8)               ? valid = !password.addClass('error') : password.removeClass('error');
+        (passwordConfirm.val() != password.val()) ? valid = !passwordConfirm.addClass('error')   : passwordConfirm.removeClass('error');
+        (!terms.is(':checked'))                   ? valid = !terms.parent().addClass('error') : terms.parent().removeClass('error');
+
+        if (valid) {
+            Getup.articles.sign_up.submiting = true;
+            Getup.articles.sign_up.elements.button.addClass('loading');
+
+            var save = $.post(U.register, Getup.articles.sign_up.elements.form.serialize());
+
+            save
+                .done(function(transport) {
+                    if (transport.status == "ok") {
+                        Getup.articles.sign_up.elements.form.slideUp(function() {
+                            Getup.articles.sign_up.elements.button.removeClass('loading');
+                            Getup.articles.sign_up.submiting = false;
+
+                            Getup.articles.sign_up.elements.inputs.name.val('').blur();
+                            Getup.articles.sign_up.elements.inputs.email.val('').blur();
+                            Getup.articles.sign_up.elements.inputs.password.val('').blur();
+                            Getup.articles.sign_up.elements.inputs.passwordConfirm.val('').blur();
+                            Getup.articles.sign_up.elements.inputs.couponCode.val('').blur();
+                        });
+
+                        Getup.articles.sign_up.elements.success.slideDown();
+
+                        setTimeout(function() {
+
+                        	Getup.articles.sign_up.elements.success.slideUp();
+                        	Getup.elements.signup.header.slideDown();
+
+                        }, 5000);
+
+                    } else {
+                        Getup.articles.sign_up.elements.button.removeClass('loading');
+                        Getup.articles.sign_up.submiting = false;                        
+                    }
+                })
+
+                .fail(function(transport) {
+                    var errors = $.parseJSON(transport.responseText).errors;
+
+                    Getup.articles.sign_up.error.clear();
+
+                    for (var i = 0, t = errors.length; i < t; ++i) {
+                        var error = errors[i];
+                        Getup.articles.sign_up.error.append(error);
+                    }
+
+                    Getup.articles.sign_up.error.show();
+
+                    Getup.articles.sign_up.elements.button.removeClass('loading');
+                    Getup.articles.sign_up.submiting = false;
+                }, 'json');
+        }
+
+        return false;
+	};
+
+	/**
+	 *
+	 */
+	Getup.articles.sign_up.elements.form.submit(Getup.articles.sign_up.send);
+
+
+	/**
+	 *
+	 */
+    Getup.articles.sign_up.error = {};
+
+	/**
+	 *
+	 */
+    Getup.articles.sign_up.error._content = '';
+
+	/**
+	 *
+	 */
+    Getup.articles.sign_up.error.append = function(error) {
+        if (error.name != '_all_') {
+            $('input[name=' + error.name + ']').parent().addClass('error');
+        }
+
+        if (error.value != 'This field is required.') {
+            Getup.articles.sign_up.error._content
+                += (Getup.articles.sign_up.error._content == '' ? '' : '<br/>')
+                +  error.value;
+        }
+    };
+
+	/**
+	 *
+	 */
+    Getup.articles.sign_up.error.clear = function() {
+        Getup.articles.sign_up.error._content = '';
+    };
+
+	/**
+	 *
+	 */
+    Getup.articles.sign_up.error.show = function() {
+        Getup.articles.sign_up.elements.message.html(Getup.articles.sign_up.error._content).fadeIn();
+    };
+
+	/**
+	 *
+	 */
+    Getup.articles.sign_up.error.hide = function() {
+        Getup.articles.sign_up.elements.message.fadeOut();
+    };
 
 	/**
 	 * Site resize
@@ -846,9 +1159,17 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 	/**
 	 * General events
-	 * Event: call to sign up
+	 * Event: all articles links
 	 */
-	 Getup.elements.signup.call.click(Getup.articles.signup.toggle);
+	Getup.elements.body.find('.article').click(function() {
+		var article = $(this).data('article');
+		location.href = "/#/" + article;
+
+		Getup.articles[article.replace(/\-/g, '_')].link();
+
+		return false;
+	});
+	//Getup.elements.signup.call.click(Getup.articles.sign_up.show);
 
 	/**
 	 * General events

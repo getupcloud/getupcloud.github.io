@@ -45,7 +45,7 @@ cat <<EOF
 
         <div class="header-container closed"> <!-- start closed for mobile -->
             <header class="wrapper clearfix">
-                <h1 class="ir">$(gettext "getup")</h1>
+                <h1 class="ir article" data-article="home">$(gettext "getup")</h1>
                 <a class="menu-control" href="javascript:;">Menu</a>
                 <nav>
                     <ul>
@@ -228,15 +228,15 @@ cat <<EOF
                                 <input type="hidden" name="lang" value="$(gettext "en-us")">
 
                                 <div class="group">
-                                    <input type="text" required tabindex="1" placeholder="$(gettext "What's your name?")" name="name" />
-                                    <input type="text" required tabindex="2" placeholder="$(gettext "What's your e-mail?")" name="email" />
+                                    <input type="text" tabindex="1" placeholder="$(gettext "What's your name?")" name="name" />
+                                    <input type="text" tabindex="2" placeholder="$(gettext "What's your e-mail?")" name="email" />
                                 </div>
 
                                 <div class="group">
                                     <p>Cadastre uma senha de acesso:</p>
 
-                                    <input type="text" required tabindex="3" placeholder="$(gettext "Password")" name="password1" />
-                                    <input type="text" required tabindex="4" placeholder="$(gettext "Confirm password")" name="password2" />
+                                    <input type="text" tabindex="3" placeholder="$(gettext "Password")" name="password1" />
+                                    <input type="text" tabindex="4" placeholder="$(gettext "Confirm password")" name="password2" />
                                 </div>
 
                                 <div class="group">
@@ -247,7 +247,7 @@ cat <<EOF
 
                                 <div class="actions">
                                     <label>
-                                        <input type="checkbox" name="terms-of-use" value="1" />
+                                        <input type="checkbox" name="use_terms" value="1" />
                                         <span>$(gettext "I read and agree to the") <a href="#terms-of-use">$(gettext "Terms of use")</a></span>
 
                                     </label>
@@ -255,6 +255,10 @@ cat <<EOF
                                 </div>
                             </fieldset>
                         </form>
+                        <p id="success">
+                            <strong>$(gettext "Welcome aboard.")</strong>
+                            <span>$(gettext "We sent you a email confirmation. Thank you!")</span>
+                        </p>       
                     </section><!-- . -->
                 </article> <!-- #sign-up -->      
                 <div class="background orange">
