@@ -870,6 +870,8 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Link
 	 */
 	Getup.articles.compare.link = function() {
+		if (is_mobile) return false;
+
 		Getup.elements.compare.slideDown();
 
 		var top = Getup.elements.compare.offset().top - Getup.config.menu_height;

@@ -201,7 +201,7 @@ cat <<EOF
                                 </dl>
 
                                 <dl class="blue round">
-                                    <dt>$(gettext "GEAR") <i class="tooltip" data-text="$(gettext 'Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.')">?</i></dt>
+                                    <dt>$(gettext "GEAR") <i class="tooltip" data-text="$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")">?</i></dt>
                                     <dd>$(gettext "US$ 0,074/hour")</dd>
 
                                     <dt class="no-border">$(gettext "Monthly cost")</dt>
@@ -215,7 +215,7 @@ cat <<EOF
                 <div class="background gray">
                     <article id="compare" class="wrapper">
                         <section>
-                            <table class="round" title="$(gettext 'Other hosting companies')">
+                            <table class="round" caption="$(gettext 'Other hosting companies')">
                                 <thead>
                                     <tr>
                                         <th>&nbsp;</th>
@@ -227,7 +227,7 @@ cat <<EOF
                                 <tbody>
                                     <tr>
                                         <td>$(gettext "Resource")</td>
-                                        <td>1 gear <i class="tooltip" data-text="$(gettext 'Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.')">?</i></td>
+                                        <td>1 gear <i class="tooltip" data-text="$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")">?</i></td>
                                         <td>$(gettext "Cloud Server") 512Mb RAM</td>
                                         <td>1 $(gettext "hosting")</td>
                                     </tr>
@@ -267,7 +267,7 @@ cat <<EOF
                                         <td>$(gettext "turn off server, remove 1GB, turn on server")</td>
                                         <td>$(gettext "-")</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="light-blue">
                                         <td><small>$(gettext "Additional charge")</small></td>
                                         <td>$(gettext "2 gears x 6 hours x US$ 0.074 =")  <strong>$(gettext "US$ 0.89")</strong> </td>
                                         <td>$(gettext "24hs x US$ ~0.06 (1GB) =") <strong>$(gettext "US$ 1.44")</strong> <i class="tooltip" data-text="$(gettext 'Trying minimize the user impact you did upgrade one day before and returned on day after the peak.')">?</i></td>
@@ -277,9 +277,9 @@ cat <<EOF
                                 <tfoot>
                                     <tr>
                                         <td>$(gettext "Total")</td>
-                                        <td><strong>$(gettext "US$ 56.38")</strong> $(gettext "Peace of mind! You just get the traffics peaks on analytics")</td>
-                                        <td><strong>$(gettext "US$ 105.10")</strong> $(gettext "Hard Work. You had to reboot your server twice")</td>
-                                        <td><strong>$(gettext "US$ 20")</strong> $(gettext "Don't be cheap! Your site went down and you lost pageviews.")</td>
+                                        <td><strong>$(gettext "US$ 56.38")</strong> <b>$(gettext "Peace of mind")</b> $(gettext "You just get the traffics peaks on analytics.")</td>
+                                        <td><strong>$(gettext "US$ 105.10")</strong> <b>$(gettext "Hard Work.")</b> $(gettext "You had to reboot your server twice.")</td>
+                                        <td><strong>$(gettext "US$ 20")</strong> <b>$(gettext "Don't be cheap!")</b> $(gettext "Your site went down and you lost pageviews.")</td>
                                     </tr>
                                 </tfoot>
                             </table>

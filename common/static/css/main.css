@@ -596,14 +596,14 @@ i.tooltip { display: none; }
 
     table tr { width: 100%; }
     table th,
-    table td { font-size: 13px; padding: 0 3%; }
+    table td { font-size: 13px; padding: 0 2%; }
     table th { color: #f44240; }
     table td { border-top: 1px solid #eaeaea; color: #585858; height: 43px; text-align: center; vertical-align: middle; }
     
     table tr td:nth-child(1) { text-align: right; width: 15%; padding: 0; }
-    table tr td:nth-child(2) { width: 27%; }
-    table tr td:nth-child(3) { width: 23%; }
-    table tr td:nth-child(4) { width: 17%; }
+    table tr td:nth-child(2) { width: 29%; }
+    table tr td:nth-child(3) { width: 25%; }
+    table tr td:nth-child(4) { width: 19%; }
 
     table tr th:nth-child(1) { width: 15%; padding: 0; }
     table tr th:nth-child(2) { width: 27%; }
@@ -623,9 +623,10 @@ i.tooltip { display: none; }
     table tr.no-border td { border-top: none; }
 
     table tfoot td strong { color: #fff; display: block; font-size: 30px; font-weight: 300; }
+    table tfoot td b { display: block; text-transform: uppercase; }
     table tfoot td:first-child { color: #fff; font-size: 16px; font-weight: 100; padding-top: 15px; text-transform: uppercase; }
 
-    table:after { border: 1px solid #e0e0e0; border-top-width: 2px; content: ''; height: 100%; position: absolute; right: 2%; top: 25px; width: 47%; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+    table:after { border: 1px solid #e0e0e0; border-top-width: 2px; content: ''; height: 100%; position: absolute; pointer-events: none; right: 2%; top: 25px; width: 47%; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
     table:before { 
         background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
         background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,1)), color-stop(70%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
@@ -635,7 +636,7 @@ i.tooltip { display: none; }
         background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
 
-        color: #999; content: attr(title); font-family: 'Roboto'; font-size: 12px; font-weight: 300; position: absolute; right: 2%; text-align: center; top: 17px; width: 47%; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; z-index: 3; }
+        color: #999; content: attr(caption); font-family: 'Roboto'; font-size: 12px; font-weight: 300; position: absolute; right: 2%; text-align: center; top: 17px; width: 47%; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; z-index: 3; }
 }
 
 

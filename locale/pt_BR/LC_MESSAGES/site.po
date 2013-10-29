@@ -279,11 +279,8 @@ msgstr "Serviços de outras empresas"
 msgid "Cloud Server"
 msgstr "Servidor Cloud"
 
-msgid "Shared"
-msgstr "Hospedagem"
-
-msgid "Hosting"
-msgstr "Compartilhada"
+msgid "Shared Hosting"
+msgstr "Hospedagem Compartilhada"
 
 msgid "1 hosting"
 msgstr "1 hospedagem"
@@ -327,11 +324,8 @@ msgstr "R$ 115,75"
 msgid "Peace of mind"
 msgstr "Tranquilidade"
 
-msgid "You just get the traffics"
-msgstr "Você só sabe que teve picos pelo"
-
-msgid "peaks on analytics"
-msgstr "impacto nas vendas."
+msgid "You just get the traffics peaks on analytics."
+msgstr "Você só sabe que teve picos pelo impacto nas vendas."
 
 msgid "US$ 105.10"
 msgstr "R$ 302,36"
@@ -339,20 +333,14 @@ msgstr "R$ 302,36"
 msgid "Hard Work."
 msgstr "CAOS TOTAL."
 
-msgid "You had to reboot"
-msgstr "Voce precisou reiniciar"
+msgid "You had to reboot your server twice."
+msgstr "Voce precisou reiniciar seu servidor 2x."
 
-msgid "your server twice"
-msgstr "seu servidor 2x"
-
-msgid "Don't be cheap"
+msgid "Don't be cheap!"
 msgstr "Mão de Vaca!"
 
-msgid "Your site went down and"
-msgstr "Seu site ficou fora do ar e"
-
-msgid "you lost pageviews."
-msgstr "você perdeu conversão."
+msgid "Your site went down and you lost pageviews."
+msgstr "Seu site ficou fora do ar e você perdeu conversão."
 
 msgid "With Getup you pay only for what you use and saves time."
 msgstr "Na Getup você paga apenas pelo que usou e ainda economiza tempo."
