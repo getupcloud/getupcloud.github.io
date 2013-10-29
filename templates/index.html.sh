@@ -320,7 +320,7 @@ cat <<EOF
                                 <div class="actions">
                                     <label>
                                         <input type="checkbox" name="use_terms" value="1" />
-                                        <span>$(gettext "I read and agree to the") <a a class="modal-link" href="termos-de-uso.html">$(gettext "Terms of use")</a></span>
+                                        <span>$(gettext "I have read and agree to the") <a a class="modal-link" href="termos-de-uso.html">$(gettext "Terms of use")</a></span>
 
                                     </label>
                                     <button class="button orange">$(gettext "Continue")</button>
