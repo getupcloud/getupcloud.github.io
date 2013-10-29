@@ -713,7 +713,7 @@ i.tooltip { display: none; }
 
     #pricing .right { padding-bottom: 0; }
 
-    #pricing .compare { bottom: auto; left: auto; margin: 20px 0 0; position: relative; width: auto; }
+    #pricing .compare { bottom: auto; left: auto; max-width: 447px; margin: 20px 0 0; position: relative; width: auto; }
     #pricing .compare h3 { margin: 7px 0 10px 130px; }
 
     #sign-up header h2 { width: 70%; }
