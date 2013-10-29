@@ -17,7 +17,7 @@
         <meta property="og:url" content="http://getupcloud.com">
         <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
         <meta property="og:description" name="description" content="Getup is a scalable cloud application platform. An easy and fast way to build and deploy web apps. You only have to worry about coding your app - we take care of everything else.">
-        <meta property="gc:build_id" content="build-20131028101238">
+        <meta property="gc:build_id" content="build-20131029014239">
 
         <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico"> 
 
@@ -44,7 +44,7 @@
 
         <div class="header-container closed"> <!-- start closed for mobile -->
             <header class="wrapper clearfix">
-                <h1 class="ir">getup</h1>
+                <h1 class="ir article" data-article="home">getup</h1>
                 <a class="menu-control" href="javascript:;">Menu</a>
                 <nav>
                     <ul>
@@ -227,15 +227,15 @@
                                 <input type="hidden" name="lang" value="en-us">
 
                                 <div class="group">
-                                    <input type="text" required tabindex="1" placeholder="What's your name?" name="name" />
-                                    <input type="text" required tabindex="2" placeholder="What's your e-mail?" name="email" />
+                                    <input type="text" tabindex="1" placeholder="What's your name?" name="name" />
+                                    <input type="text" tabindex="2" placeholder="What's your e-mail?" name="email" />
                                 </div>
 
                                 <div class="group">
                                     <p>Cadastre uma senha de acesso:</p>
 
-                                    <input type="text" required tabindex="3" placeholder="Password" name="password1" />
-                                    <input type="text" required tabindex="4" placeholder="Confirm password" name="password2" />
+                                    <input type="text" tabindex="3" placeholder="Password" name="password1" />
+                                    <input type="text" tabindex="4" placeholder="Confirm password" name="password2" />
                                 </div>
 
                                 <div class="group">
@@ -246,7 +246,7 @@
 
                                 <div class="actions">
                                     <label>
-                                        <input type="checkbox" name="terms-of-use" value="1" />
+                                        <input type="checkbox" name="use_terms" value="1" />
                                         <span>I read and agree to the <a href="#terms-of-use">Terms of use</a></span>
 
                                     </label>
@@ -254,6 +254,10 @@
                                 </div>
                             </fieldset>
                         </form>
+                        <p id="success">
+                            <strong>Welcome aboard.</strong>
+                            <span>We sent you a email confirmation. Thank you!</span>
+                        </p>       
                     </section><!-- . -->
                 </article> <!-- #sign-up -->      
                 <div class="background orange">

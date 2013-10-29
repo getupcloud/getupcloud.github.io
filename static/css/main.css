@@ -129,6 +129,23 @@ input[type=text] {
 
 }
 
+input.error { border-top-color: #f23f2c; color: #f23f2c; }
+label.error, 
+label.error a { color: #f23f2c; }
+
+.error::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #f23f2c;
+}
+.error:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #f23f2c;
+}
+.error::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #f23f2c;
+}
+.error:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #f23f2c;
+}
+
 .right { float: right; }
 .left { float: left; }
 
@@ -163,10 +180,15 @@ input[type=text] {
             border-radius: 7px;
 }
 
+button { outline: none; }
+
 .button:hover { background-color: #fff; color: #000; }
 
 .orange { background-color: #fa4f48; }
 .button.orange:hover { color: #fa4f48; background-color: #fff; }
+
+.button.loading { background: #fa4f48 url(../img/loader.gif) no-repeat center center; min-width: 100px; text-indent: -5000em; }
+.button.loading:hover { background-color: #fa4f48; }
 
 .red { background-color: #d9381d; }
 .button.red:hover { color: #d9381d; background-color: #fff; }
@@ -186,7 +208,7 @@ input[type=text] {
 
 .header-container { background: #fa4f48; height: auto; position: fixed; top: 0; width: 100%; z-index: 3; }
 
-.header-container h1 { background-position: -1px 0px; height: 34px; margin: 20px 0 0; width: 100px; }
+.header-container h1 { background-position: -1px 0px; height: 34px; margin: 20px 0 0; position: relative; width: 100px; z-index: 7; }
 
 .header-container a { color: #fff; font-weight: 300; }
 .header-container a:hover { color: #d0322a; }
@@ -373,6 +395,12 @@ input[type=text] {
 #sign-up form input[type=text] { margin: 0 10px 10px 0; width: 205px; }
 #sign-up form label { margin: 0 0 10px 0; font-size: 13px; }
 #sign-up form label a { color: #333; text-decoration: underline; }
+
+#sign-up #success { display: none; text-align: center; width: 100%; }
+#sign-up #success strong,
+#sign-up #success span { display: block; width: 100%; }
+#sign-up #success strong { color: #eb3e33; font-size: 20px; font-weight: 500; }
+#sign-up #success span { color: #585858; font-size: 14px; font-weight: 300; }
 
 /* Get in touch */
 
@@ -661,9 +689,9 @@ input[type=text] {
 
 @media only screen and (min-width: 1140px) {
 
-   /* .wrapper { max-width: 1000px; margin: 0 auto; } */
+   .wrapper { max-width: 1000px; margin: 0 auto; }
 
-   /*.carousel .wrapper { left: 50%; margin-left: -500px; }*/
+   /*.carousel .wrapper { left: 50%; margin-left: -500px; } */
 }
 
 /* ==========================================================================
