@@ -1113,6 +1113,124 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
         Getup.articles.sign_up.elements.message.fadeOut();
     };
 
+    /**
+     * Modal
+     */
+    Getup.modal = {};
+
+    /**
+     * Modal
+     * Cache
+     */
+    Getup.modal._cache = {};
+
+    /**
+     * Modal
+     * Elements
+     */
+    Getup.modal.elements = {};
+
+    /**
+     * Modal
+     * Elements main
+     */
+    Getup.modal.elements.main = $('<div id="modal" />');
+
+    /**
+     * Modal
+     * Elements mask
+     */
+    Getup.modal.elements.mask = $('<div class="modal-mask" />');
+
+    /**
+     * Modal
+     * Elements content
+     */
+    Getup.modal.elements.content = $('<div class="modal-content" />');
+
+    /**
+     * Modal
+     * Elements close
+     */
+    Getup.modal.elements.close = $('<a href="javascript:;" class="close">X</a>');
+
+    /**
+     * Modal
+     * Elements links
+     */
+     Getup.modal.elements.links = $('.modal-link');
+
+    /**
+     * Modal
+     * Init
+     */
+    Getup.modal.init = function() {
+    	Getup.modal.elements.main.append(Getup.modal.elements.mask);
+    	Getup.modal.elements.main.append(Getup.modal.elements.content);
+
+    	Getup.elements.body.append(Getup.modal.elements.main);
+
+    	Getup.modal.elements.main.hide();
+
+        Getup.modal.elements.links.click(function() {
+            Getup.modal.show(this.href.replace(location.origin + '/', ''));
+
+            return false;
+        });
+
+    };
+
+    /**
+     * Modal
+     * show
+     */
+    Getup.modal.show = function(section) {
+        Getup.elements.body.css('overflow', 'hidden');
+
+        if (Getup.modal._cache[section]) {
+            Getup.modal.elements.content.html(Getup.modal._cache[section]);
+            Getup.modal.elements.main.fadeIn();
+
+            Getup.modal.elements.content.append(Getup.modal.elements.close);
+            Getup.modal.close_event();
+        } else {
+            Getup.modal.load(section);
+        }
+
+    };
+
+    /**
+     * Modal
+     * load
+     */
+    Getup.modal.load = function(section) {
+        $.get('/' + section, function(transport) {
+            Getup.modal._cache[section] = transport;
+            Getup.modal.show(section);
+        });
+    };
+
+    /**
+     * Modal
+     * close event
+     */
+    Getup.modal.close_event = function() {
+        Getup.modal.elements.close.click(function() {
+            Getup.modal.hide();
+
+            return false;
+        });
+    };
+
+    /**
+     * Modal
+     * hide
+     */
+    Getup.modal.hide = function() {
+        Getup.elements.body.css('overflow', 'auto');
+        Getup.modal.elements.main.fadeOut();
+    };
+
 	/**
 	 * Site resize
 	 */
@@ -1133,6 +1251,8 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Site initialization
 	 */
 	var init = function() {
+
+		Getup.modal.init();
 
 		Getup.carousel.show(!location.hash, function() {
 			Getup.carousel.start_timer();

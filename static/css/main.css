@@ -442,6 +442,26 @@ button { outline: none; }
 .footer-container nav ul li a { color: #999; font-size: 11px; }
 .footer-container nav ul li a:hover { color: #666; }
 
+/* modal */
+
+#modal { display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 20; }
+
+.modal-mask { background: #000; height: 100%; left: 0; opacity: 0.5; position: fixed; top: 0; width: 100%; z-index: 1; }
+.modal-content { background: #fff; height: 400px; left: 5%; max-width: 700px; position: absolute; top: 10%; width: 90%; z-index: 2; }
+
+#modal .close { font-weight: normal; font-weight: 300; font-size: 30px; text-decoration: none; color: #333333; position: absolute; right: 20px; top: 20px; }
+
+#terms h1 { background: #efefef; font-size: 30px; margin: 0; padding: 20px; }
+#terms h2 { font-size: 16px; margin: 10px 10px; }
+#terms p { margin: 15px 10px; }
+
+#terms p, #terms a,
+#terms p, #terms li { font-size: 13px; }
+
+#terms ul { list-style: none; }
+
+#terms .scroll { height: 300px; margin: 10px 5%; overflow: auto; width: 90%; }
+
 
 /* no-js */
 
@@ -635,6 +655,8 @@ button { outline: none; }
 
     .footer-container .wrapper ul { width: 30%; }
     .footer-container p { font-size: 100px; top: -20px; width: 69%; }
+
+    .modal-content { left: 50%; margin-left: -350px; }
 }
 
 /* ========================
