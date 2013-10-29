@@ -584,14 +584,14 @@ i.tooltip { display: none; }
 
     /* Compare */
 
-    table { background: #fff; position: relative; overflow: hidden; }
+    table { background: #fff; position: relative; overflow: hidden; width: 100%; }
 
     table thead,
     table tfoot,
     table tbody { display: table; }
 
     table thead { margin: 0 2%; width: 96%; }
-    table tfoot { background: #82d3d1; position: relative; z-index: 2; }
+    table tfoot { background: #82d3d1; position: relative; z-index: 2; width: 100%; }
     table tbody { margin: 0 2%; width: 96%; }
 
     table tr { width: 100%; }
