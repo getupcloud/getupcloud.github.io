@@ -1134,10 +1134,19 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 */
 	var init = function() {
 
-		// Verify and move to page X ...
-		Getup.carousel.show(true, function() {
+		Getup.carousel.show(!location.hash, function() {
 			Getup.carousel.start_timer();
+
+			if (location.hash) {
+				var article = location.hash.replace(/\/|\#/g, '').replace(/\-/g, '_');
+
+				if (Getup.articles[article]) {
+					Getup.articles[article].link();
+				}
+			}
+
 		});
+
 	};
 
 	/**
@@ -1163,7 +1172,9 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 */
 	Getup.elements.body.find('.article').click(function() {
 		var article = $(this).data('article');
+
 		location.href = "/#/" + article;
+
 
 		Getup.articles[article.replace(/\-/g, '_')].link();
 
@@ -1193,7 +1204,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	Getup.carousel.init();
 
 	/**
+	 * Move to top
+	 */
+	Getup.elements.body.css({ 'scroll-top': 0 });
+
+	/**
 	 * Export getup class to window scope
 	 */
 	 window.Getup = Getup;
-}();
+}(); 
