@@ -248,7 +248,7 @@ cat <<EOF
                                 <div class="actions">
                                     <label>
                                         <input type="checkbox" name="use_terms" value="1" />
-                                        <span>$(gettext "I read and agree to the") <a href="#terms-of-use">$(gettext "Terms of use")</a></span>
+                                        <span>$(gettext "I read and agree to the") <a a class="modal-link" href="termos-de-uso.html">$(gettext "Terms of use")</a></span>
 
                                     </label>
                                     <button class="button orange">$(gettext "Continue")</button>
@@ -308,10 +308,10 @@ cat <<EOF
 
                 <nav>
                     <ul class="wrapper">
-                        <li><a href="termos-de-uso.html">$(gettext "Terms of use")</a></li>
-                        <li><a href="politica-de-privacidade.html">$(gettext "Privacy policy")</a></li>
-                        <li><a href="politica-de-utilizacao-aceitavel.html">$(gettext "Acceptable use policy")</a></li>
-                        <li><a href="politica-de-suporte.html">$(gettext "Support policy")</a></li>
+                        <li><a class="modal-link" href="termos-de-uso.html">$(gettext "Terms of use")</a></li>
+                        <li><a class="modal-link" href="politica-de-privacidade.html">$(gettext "Privacy policy")</a></li>
+                        <li><a class="modal-link" href="politica-de-utilizacao-aceitavel.html">$(gettext "Acceptable use policy")</a></li>
+                        <li><a class="modal-link" href="politica-de-suporte.html">$(gettext "Support policy")</a></li>
                     </ul>
                 </nav>
             </footer>
