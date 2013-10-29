@@ -206,9 +206,9 @@ button { outline: none; }
 
 /* Header */
 
-.header-container { background: #fa4f48; height: auto; position: fixed; top: 0; width: 100%; z-index: 3; }
+.header-container { background: #fa4f48; height: auto; position: fixed; top: 0; width: 100%; z-index: 4; }
 
-.header-container h1 { background-position: -1px 0px; height: 34px; margin: 20px 0 0; position: relative; width: 100px; z-index: 7; }
+.header-container h1 { background-position: -1px 0px; cursor: pointer; height: 34px; margin: 20px 0 0; position: relative; width: 100px; z-index: 7; }
 
 .header-container a { color: #fff; font-weight: 300; }
 .header-container a:hover { color: #d0322a; }
@@ -377,6 +377,10 @@ button { outline: none; }
 
 #pricing .compare { display: none; }
 
+/* cmpare */
+
+#compare { display: none; padding-top: 0; }
+
 /* Sign up */
 
 #sign-up header h2 { display: inline-block; font-size: 22px; margin: 0 5%; text-align: center; width: 90%; }
@@ -442,6 +446,9 @@ button { outline: none; }
 .footer-container nav ul li a { color: #999; font-size: 11px; }
 .footer-container nav ul li a:hover { color: #666; }
 
+/* tooltip */
+i.tooltip { display: none; }
+
 /* modal */
 
 #modal { display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 20; }
@@ -461,7 +468,6 @@ button { outline: none; }
 #terms ul { list-style: none; }
 
 #terms .scroll { height: 300px; margin: 10px 5%; overflow: auto; width: 90%; }
-
 
 /* no-js */
 
@@ -569,6 +575,68 @@ button { outline: none; }
     .footer-container .wrapper ul li.openshift { background-position: -235px -63px; height: 59px; width: 54px; }
 
     .footer-container p { color: #333; display: inline-block; font-family: 'Ostrich'; font-size: 60px; position: relative; text-align: center; top: -10px; width: 59%; }
+
+    /* tooltip */
+
+    i.tooltip { background: #8fe8e5; color: #fff; cursor: pointer; display: inline-block; font-size: 13px; font-style: normal; font-weight: 300; height: 18px; line-height: 18px; text-align: center; width: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; border-radius: 18px; }
+
+    .tooltip-content { background: #fff; border: 1px solid #82d3d1; color: #585858; font-size: 13px; left: 0; max-width: 400px; padding: 5px; position: absolute; top: 0; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; z-index: 10; -webkit-box-shadow: 3px 3px 15px -3px #333; -moz-box-shadow: 3px 3px 15px -3px #333; box-shadow: 3px 3px 15px -3px #333; }
+
+    /* Compare */
+
+    table { background: #fff; position: relative; overflow: hidden; }
+
+    table thead,
+    table tfoot,
+    table tbody { display: table; }
+
+    table thead { margin: 0 2%; width: 96%; }
+    table tfoot { background: #82d3d1; position: relative; z-index: 2; }
+    table tbody { margin: 0 2%; width: 96%; }
+
+    table tr { width: 100%; }
+    table th,
+    table td { font-size: 13px; padding: 0 2%; }
+    table th { color: #f44240; }
+    table td { border-top: 1px solid #eaeaea; color: #585858; height: 43px; text-align: center; vertical-align: middle; }
+    
+    table tr td:nth-child(1) { text-align: right; width: 15%; padding: 0; }
+    table tr td:nth-child(2) { width: 29%; }
+    table tr td:nth-child(3) { width: 25%; }
+    table tr td:nth-child(4) { width: 19%; }
+
+    table tr th:nth-child(1) { width: 15%; padding: 0; }
+    table tr th:nth-child(2) { width: 27%; }
+    table tr th:nth-child(3) { width: 23%; }
+    table tr th:nth-child(4) { width: 17%; }
+
+    table thead th { height: 40px; padding-top: 40px; }
+    table tfoot td { border-top: none; height: 80px; padding: 15px 3%; vertical-align: top; }
+    table tfoot tr { display: table; margin: 0 2%; width: auto; }
+
+    table thead th strong { background-position: -1px -44px; cursor: pointer; display: inline-block; height: 22px; position: relative; width: 62px; }
+
+    table tbody td strong { color: #4e9ba5; font-weight: 300; }
+    table tbody td small { color: #999; font-size: 11px; }
+
+    table tr.light-blue td { border-top-color: #ecf7f6; background: #ecf7f6; }
+    table tr.no-border td { border-top: none; }
+
+    table tfoot td strong { color: #fff; display: block; font-size: 30px; font-weight: 300; }
+    table tfoot td b { display: block; text-transform: uppercase; }
+    table tfoot td:first-child { color: #fff; font-size: 16px; font-weight: 100; padding-top: 15px; text-transform: uppercase; }
+
+    table:after { border: 1px solid #e0e0e0; border-top-width: 2px; content: ''; height: 100%; position: absolute; pointer-events: none; right: 2%; top: 25px; width: 47%; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+    table:before { 
+        background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,1)), color-stop(70%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%);
+        background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%);
+        background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%);
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+
+        color: #999; content: attr(caption); font-family: 'Roboto'; font-size: 12px; font-weight: 300; position: absolute; right: 2%; text-align: center; top: 17px; width: 47%; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; z-index: 3; }
 }
 
 
