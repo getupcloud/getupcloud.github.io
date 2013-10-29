@@ -285,6 +285,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 	/**
 	 * Elements
+	 * Element: compare
+	 */
+	Getup.elements.compare = $('#compare')
+
+	/**
+	 * Elements
 	 * Element: get in touch
 	 */
 	Getup.elements.get_in_touch = $('#get-in-touch');
@@ -777,12 +783,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 	/**
 	 * Articles
-	 * Compare
+	 * How it wroks
 	 * Link
 	 */
 	Getup.articles.how_it_works.link = function() {
 
-		var top = Getup.elements.how_it_works.offset().top - parseInt(Getup.elements.how_it_works.css('paddingTop'), 10);
+		var top = Getup.elements.how_it_works.offset().top - Getup.config.menu_height;
 
 		Getup.elements.body.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
 
@@ -795,18 +801,18 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 	/**
 	 * Articles
-	 * How it works
+	 * Get in touch
 	 */
 	Getup.articles.get_in_touch = {};
 
 	/**
 	 * Articles
-	 * Compare
+	 * Get in touch
 	 * Link
 	 */
 	Getup.articles.get_in_touch.link = function() {
 
-		var top = Getup.elements.get_in_touch.offset().top - parseInt(Getup.elements.get_in_touch.css('paddingTop'), 10);
+		var top = Getup.elements.get_in_touch.offset().top - Getup.config.menu_height;
 
 		Getup.elements.body.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
 
@@ -846,7 +852,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Link
 	 */
 	Getup.articles.pricing.link = function() {
-		var top = Getup.elements.pricing.offset().top - parseInt(Getup.elements.pricing.css('paddingTop'), 10);
+		var top = Getup.elements.pricing.offset().top - Getup.config.menu_height;
 		Getup.elements.body.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc' });
 
 		return false;
@@ -864,6 +870,11 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Link
 	 */
 	Getup.articles.compare.link = function() {
+		Getup.elements.compare.slideDown();
+
+		var top = Getup.elements.compare.offset().top - Getup.config.menu_height;
+		Getup.elements.body.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc' });
+
 		return false;
 	};
 
@@ -881,7 +892,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 */
 	Getup.articles.sign_up.link = function() {
 
-		var top = Getup.elements.signup.offset().top - parseInt(Getup.elements.signup.css('paddingTop'), 10);
+		var top = Getup.elements.signup.offset().top - Getup.config.menu_height;
 
 		Getup.elements.body.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
 
@@ -1231,6 +1242,74 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
         Getup.modal.elements.main.fadeOut();
     };
 
+    /**
+     * Tooltip
+     */
+    Getup.tooltip = {};
+
+    /**
+     * Tooltip
+     * Elements
+     */
+    Getup.tooltip.elements = {};
+
+    /**
+     * Tooltip
+     * Elements icons
+     */
+    Getup.tooltip.elements.main = $('<div class="tooltip-content" />');
+
+    /**
+     * Tooltip
+     * Elements icons
+     */
+    Getup.tooltip.elements.icons = $('i.tooltip');
+
+    /**
+     * Tooltip
+     * Set events
+     */
+    Getup.tooltip.init = function() {
+    	Getup.elements.body.append(Getup.tooltip.elements.main);
+    	Getup.tooltip.elements.main.hide();
+
+    	Getup.tooltip.elements.icons.hover(Getup.tooltip.show, Getup.tooltip.hide);
+    };
+
+    /**
+     * Tooltip
+     * Show tooltip
+     */
+    Getup.tooltip.show = function(event) {
+
+    	/**
+    	 * Set tooltip text
+    	 */
+    	Getup.tooltip.elements.main.text($(this).data('text'));
+
+    	/**
+    	 * Set tooltip position
+    	 */
+
+    	var position = $(this).offset();
+    	Getup.tooltip.elements.main.show();
+    	Getup.tooltip.elements.main.css({ top: position.top - Getup.tooltip.elements.main.height() - 16, left: position.left });
+    	Getup.tooltip.elements.main.hide();
+
+    	/**
+    	 * Show tooltip
+    	 */
+    	Getup.tooltip.elements.main.fadeIn();
+    };
+
+    /**
+     * Tooltip
+     * Hide tooltip
+     */
+    Getup.tooltip.hide = function() {
+    	Getup.tooltip.elements.main.fadeOut();
+    };
+
 	/**
 	 * Site resize
 	 */
@@ -1245,6 +1324,13 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		 * Height of menu
 		 */
 		Getup.config.menu_height = is_mobile ? 70 : 122;
+
+		/**
+		 * Hide compare in mobile
+		 */
+		if (is_mobile) {
+			Getup.elements.compare.hide();
+		}
 	};
 
 	/**
@@ -1253,20 +1339,21 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	var init = function() {
 
 		Getup.modal.init();
+		Getup.tooltip.init();
 
 		Getup.carousel.show(!location.hash, function() {
 			Getup.carousel.start_timer();
 
 			if (location.hash) {
 				var article = location.hash.replace(/\/|\#/g, '').replace(/\-/g, '_');
+				var module = Getup.articles[article];
 
-				if (Getup.articles[article]) {
-					Getup.articles[article].link();
+				if (module && module.link) {
+					module.link();
 				}
 			}
 
 		});
-
 	};
 
 	/**
@@ -1292,11 +1379,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 */
 	Getup.elements.body.find('.article').click(function() {
 		var article = $(this).data('article');
+		var module = Getup.articles[article.replace(/\-/g, '_')];
 
-		location.href = "/#/" + article;
-
-
-		Getup.articles[article.replace(/\-/g, '_')].link();
+		if (module && module.link) {
+			location.href = "/#/" + article;
+			module.link();	
+		}
 
 		return false;
 	});

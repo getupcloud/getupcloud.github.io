@@ -306,17 +306,14 @@ msgstr "Precisa contratar"
 msgid "US$ ~103.66"
 msgstr "R$ ~299,00"
 
-msgid "turn off server, add"
-msgstr "desliga servidor, adiciona"
-
-msgid "1GB, turn on server"
-msgstr "1GB, liga servidor"
+msgid "turn off server, add 1GB, turn on server"
+msgstr "desliga servidor, adiciona 1GB, liga servidor"
 
 msgid "Light a candle!"
 msgstr "Acenda uma vela!"
 
-msgid "turn off server, remove"
-msgstr "desliga servidor, remove"
+msgid "turn off server, remove 1GB, turn on server"
+msgstr "desliga servidor, remove 1GB, liga servidor"
 
 msgid "24hs x US$ ~0.06 (1GB) ="
 msgstr "24hs x R$ ~0,14 (1GB) ="
