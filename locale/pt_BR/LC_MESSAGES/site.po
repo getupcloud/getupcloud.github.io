@@ -445,3 +445,18 @@ msgstr "pua"
 
 msgid "support_policy"
 msgstr "politica_suporte"
+
+msgid "Free Trial"
+msgstr "Experimente grátis"
+
+msgid "No credit card required"
+msgstr "Não necessita cartão de crédito"
+
+msgid "Worth the promo code credits if you have one."
+msgstr "Se você possui um código promocional, valém os créditos do código."
+
+msgid "Get 750 hours free for evaluating Getup"
+msgstr "São 750 horas grátis para você experimentar a Getup"
+
+msgid "Signup for 30 days free. Start your Evaluation right now."
+msgstr "30 dias grátis, aproveite e experimente a solução agora mesmo"

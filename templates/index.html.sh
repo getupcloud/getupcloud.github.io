@@ -79,8 +79,8 @@ cat <<EOF
                             <p>$(gettext "You only have to worry about coding your app - we take care of everything else.")</p>
 
                             <div class="actions">
-                                <a class="button article" href="#compare" data-article="compare">$(gettext "Compare benefits")</a>
-                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a>
+                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
+                                <small>$(gettext "No credit card required")</small>
                             </div>
                         </div>
                     </section>
@@ -91,8 +91,8 @@ cat <<EOF
                             <p class="cyan">$(gettext "Compute power when you need it most.")</p>
 
                             <div class="actions">
-                                <a class="button article" href="#compare" data-article="compare">$(gettext "Compare benefits")</a>
-                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a>
+                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
+                                <small>$(gettext "No credit card required")</small>
                             </div>
                         </div>
                     </section>
@@ -104,8 +104,8 @@ cat <<EOF
                             <p>$(gettext "Deploy and scale to millions of users.")</p>
 
                             <div class="actions">
-                                <a class="button article" href="#compare" data-article="compare">$(gettext "Compare benefits")</a>
-                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a>
+                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
+                                <small>$(gettext "No credit card required")</small>
                             </div>
                         </div>
                     </section>
@@ -295,9 +295,12 @@ cat <<EOF
                     <section>
                         <form method="post" action="$SIGNUP">
                             <fieldset>
-                                <legend>Criar conta</legend>
+                                <legend>$(gettext "Create Account")</legend>
 
                                 <input type="hidden" name="lang" value="$(gettext "en-us")">
+
+                                <p class="no-margin">$(gettext "Get 750 hours free for evaluating Getup")</p>
+                                <p>$(gettext "Signup for 30 days free. Start your Evaluation right now.")</p>
 
                                 <div class="group">
                                     <input type="text" tabindex="1" placeholder="$(gettext "What's your name?")" name="name" />
