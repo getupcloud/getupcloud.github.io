@@ -266,7 +266,7 @@ button { outline: none; }
 .carousel .actions { bottom: 0; position: absolute; }
 
 .carousel ul { bottom: 0; left: 50%; margin-left: -41px; overflow: hidden; padding: 0; position: absolute; z-index: 2; }
-.carousel ul li { border: 1px solid #8b8b8b; cursor: pointer; display: inline-block; height: 10px; margin: 0 3px; text-indent: -5000em; width: 10px; }
+.carousel ul li { border: 1px solid #8b8b8b; cursor: pointer; display: inline-block; float: left; height: 10px; margin: 0 3px; text-indent: -5000em; width: 10px; }
 .carousel ul li.itens { -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; }
 .carousel ul li.itens:hover { background: #8b8b8b; }
 
@@ -626,7 +626,7 @@ i.tooltip { display: none; }
     table tfoot td b { display: block; text-transform: uppercase; }
     table tfoot td:first-child { color: #fff; font-size: 16px; font-weight: 100; padding-top: 15px; text-transform: uppercase; }
 
-    table:after { border: 1px solid #e0e0e0; border-top-width: 2px; content: ''; height: 100%; position: absolute; pointer-events: none; right: 2%; top: 25px; width: 47%; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+    table:after { border: 1px solid #e0e0e0; border-top-width: 2px; content: ''; height: 70%; position: absolute; pointer-events: none; right: 2%; top: 25px; width: 47%; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
     table:before { 
         background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
         background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,1)), color-stop(70%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
@@ -781,7 +781,7 @@ i.tooltip { display: none; }
 
    .wrapper { max-width: 1000px; margin: 0 auto; }
 
-   /*.carousel .wrapper { left: 50%; margin-left: -500px; } */
+   .carousel .wrapper { margin-left: -500px; padding: 0 0 0 50%; } 
 }
 
 /* ==========================================================================
