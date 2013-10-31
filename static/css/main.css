@@ -150,6 +150,7 @@ label.error a { color: #f23f2c; }
 .left { float: left; }
 
 .no-border { border: none!important; }
+.no-margin { margin: 0!important; }
 .white-border { border: 1px solid #fff; }
 
 .black { color: #000!important; }
@@ -297,6 +298,8 @@ button { outline: none; }
     -o-transform:rotate(130deg);
     -ms-transform:rotate(130deg);
 }
+
+.carousel small { display: block; font-size: 11px; }
 
 /* How works */
 
