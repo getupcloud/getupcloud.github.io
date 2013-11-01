@@ -96,7 +96,7 @@ body.preloader .footer-container { display: none; }
 a { text-decoration: none; }
 
 h2 { color: #eb3e33; font-size: 24px;  font-weight: 400; }
-h3 { font-size: 16px; font-weight: 400; }
+h3 { color: #2d2d2d; font-size: 16px; font-weight: 400; }
 dl, p { font-size: 12px; }
 
 h2, h3 { line-height: 1.1; }
@@ -156,6 +156,8 @@ label.error a { color: #f23f2c; }
 
 .black { color: #000!important; }
 .black:hover { color: #666!important; }
+
+.white { color: #fff!important; }
 
 .cyan { color: #81d2d1!important; }
 

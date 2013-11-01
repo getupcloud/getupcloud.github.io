@@ -92,7 +92,7 @@ cat <<EOF
 
                             <div class="actions">
                                 <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
-                                <small>$(gettext "No credit card required")</small>
+                                <small class="white">$(gettext "No credit card required")</small>
                             </div>
                         </div>
                     </section>
