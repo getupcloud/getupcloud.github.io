@@ -201,7 +201,7 @@ cat <<EOF
                                 </dl>
 
                                 <dl class="blue round">
-                                    <dt>$(gettext "GEAR") <i class="tooltip" data-text="$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")">?</i></dt>
+                                    <dt>$(gettext "GEAR") <i class="tooltip" data-text="$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")">?</i></dt>
                                     <dd>$(gettext "US$ 0,074/hour")</dd>
 
                                     <dt class="no-border">$(gettext "Monthly cost")</dt>
@@ -299,8 +299,8 @@ cat <<EOF
 
                                 <input type="hidden" name="lang" value="$(gettext "en-us")">
 
-                                <p class="no-margin">$(gettext "Get 750 hours free for evaluating Getup")</p>
-                                <p>$(gettext "Worth the promo code credits if you have one.")</p>
+                                <p class="no-margin">$(gettext "You got 750 hours to verify Getup is the s#&@!")</p>
+                                <p>$(gettext "If you have a promo code, use it!")</p>
 
                                 <div class="group">
                                     <input type="text" tabindex="1" placeholder="$(gettext "What's your name?")" name="name" />

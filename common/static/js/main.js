@@ -1384,7 +1384,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		var module = Getup.articles[article.replace(/\-/g, '_')];
 
 		if (module && module.link) {
-			location.href = "/#/" + article;
+			location.href = "#/" + article;
 			module.link();	
 		}
 
