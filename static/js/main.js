@@ -719,6 +719,19 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 	/**
 	 * Carousel
+	 * Vertical align
+	 */
+	Getup.carousel.align = function() {
+		Getup.carousel.elements.sections.each(function() {
+			var element = $(this);
+			var wrapper = element.find('.wrapper');
+
+			wrapper.animate({'margin-top': element.height() / 2 - wrapper.height() / 2 - 50}, { queue: false, duration: 200 });
+		});
+	};
+
+	/**
+	 * Carousel
 	 * Initialization
 	 */
 	Getup.carousel.init = function() {
@@ -1333,6 +1346,11 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		if (is_mobile) {
 			Getup.elements.compare.hide();
 		}
+
+		/**
+		 * Align carousel
+		 */
+		Getup.carousel.align();		
 	};
 
 	/**
@@ -1342,6 +1360,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 		Getup.modal.init();
 		Getup.tooltip.init();
+
+		/**
+		 * Align
+		 */
+		Getup.carousel.align();		
+		
 
 		Getup.carousel.show(!location.hash, function() {
 			Getup.carousel.start_timer();
