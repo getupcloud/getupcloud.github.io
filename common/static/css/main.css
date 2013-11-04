@@ -269,7 +269,7 @@ button { outline: none; }
 .carousel section.white p, 
 .carousel section.white h2 { color: #fff; }
 
-.carousel .wrapper { height: 192px; left: 0; margin: 64px 0; position: relative; }
+.carousel .wrapper { left: 0; margin: 0; padding-bottom: 100px; position: relative; top: 0; }
 
 .carousel .actions { bottom: 0; position: absolute; }
 .carousel .actions small { text-align: center; width: 100%; }
@@ -706,7 +706,7 @@ i.tooltip { display: none; }
     .header-container nav ul li.secondary a { font-size: 14px; }
 
     .carousel { height: 470px; padding: 0; }
-    .carousel .wrapper { height: 342px; }
+    /*.carousel .wrapper { height: 342px; }*/
 
     .carousel p { font-size: 17px; }
     .carousel h2 { font-size: 62px; line-height: 64px; }
@@ -793,7 +793,7 @@ i.tooltip { display: none; }
 
    .wrapper { max-width: 1000px; margin: 0 auto; }
 
-   .carousel .wrapper { margin-left: -500px; padding: 0 0 0 50%; } 
+   .carousel .wrapper { margin-left: -500px; padding: 0 0 100px 50%; } 
 
    .footer-container nav ul { margin: 0 auto; }
 }
