@@ -56,7 +56,7 @@ cat <<EOF
                         <li class="secondary separator"><a class="black" href="blog/">$(gettext "Blog")</a></li>
                     </ul>
                     <ul class="side">
-                        <li><a class="button orange flat" href="https://broker.getupcloud.com/console/signin">$(gettext "Log In")</a></li>
+                        <li><a class="button orange flat" target="_blank" href="https://broker.getupcloud.com/console/signin">$(gettext "Log In")</a></li>
                         <li><a class="button red flat article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a></li>                        
                     </ul>
                 </nav>
@@ -79,7 +79,7 @@ cat <<EOF
                             <p>$(gettext "You only have to worry about coding your app - we take care of everything else.")</p>
 
                             <div class="actions">
-                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
+                                <a class="button orange article btn-large" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
                                 <small>$(gettext "No credit card required")</small>
                             </div>
                         </div>
@@ -91,7 +91,7 @@ cat <<EOF
                             <p class="cyan">$(gettext "Compute power when you need it most.")</p>
 
                             <div class="actions">
-                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
+                                <a class="button orange article btn-large" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
                                 <small class="white">$(gettext "No credit card required")</small>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ cat <<EOF
                             <p>$(gettext "Deploy and scale to millions of users.")</p>
 
                             <div class="actions">
-                                <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
+                                <a class="button orange article btn-large" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
                                 <small>$(gettext "No credit card required")</small>
                             </div>
                         </div>
@@ -290,7 +290,7 @@ cat <<EOF
                 <article id="sign-up" class="wrapper">
                     <header>
                         <h2>$(gettext "Signup for 30 days free. Start your Evaluation right now.")</h2>
-                        <a class="button orange article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a>
+                        <a class="button orange article btn-large" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
                     </header>
                     <section>
                         <form method="post" action="$SIGNUP">
@@ -308,14 +308,14 @@ cat <<EOF
                                 </div>
 
                                 <div class="group">
-                                    <p>Cadastre uma senha de acesso:</p>
+                                    <p>$(gettext "Inform a password:")</p>
 
                                     <input type="text" tabindex="3" placeholder="$(gettext "Password")" name="password1" />
                                     <input type="text" tabindex="4" placeholder="$(gettext "Confirm password")" name="password2" />
                                 </div>
 
                                 <div class="group">
-                                    <p>Código promocional?</p>
+                                    <p>$(gettext "Promo Code?")</p>
 
                                     <input type="text" tabindex="5" placeholder="$(gettext "Promo code (optional)")" name="coupon_code" />
                                 </div>

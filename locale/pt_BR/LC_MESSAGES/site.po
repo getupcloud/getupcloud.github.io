@@ -460,3 +460,9 @@ msgstr "São 750 horas pra você comprovar que a Getup é f$@#!."
 
 msgid "Signup for 30 days free. Start your Evaluation right now."
 msgstr "30 dias grátis, aproveite e experimente a solução agora mesmo"
+
+msgid "Inform a password:"
+msgstr "Cadastre uma senha de acesso:"
+
+msgid "Promo Code?"
+msgstr "Código promocional?"

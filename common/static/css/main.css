@@ -95,8 +95,8 @@ body.preloader .footer-container { display: none; }
 
 a { text-decoration: none; }
 
-h2 { color: #eb3e33; font-size: 24px;  font-weight: 400; }
-h3 { color: #2d2d2d; font-size: 16px; font-weight: 400; }
+h2 { color: #eb3e33; font-size: 24px;  font-weight: 300; }
+h3 { color: #2d2d2d; font-size: 16px; font-weight: 300; }
 dl, p { font-size: 12px; }
 
 h2, h3 { line-height: 1.1; }
@@ -184,6 +184,8 @@ label.error a { color: #f23f2c; }
             border-radius: 7px;
 }
 
+.btn-large { padding: 15px 40px; }
+
 button { outline: none; }
 
 .button:hover { background-color: #fff; color: #000; }
@@ -262,12 +264,15 @@ button { outline: none; }
 
 .carousel h2, .carousel p { color: #000; margin: 0; position: relative; text-transform: uppercase; }
 
+.carousel h2 { font-weight: 400; }
+
 .carousel section.white p, 
 .carousel section.white h2 { color: #fff; }
 
 .carousel .wrapper { height: 192px; left: 0; margin: 64px 0; position: relative; }
 
 .carousel .actions { bottom: 0; position: absolute; }
+.carousel .actions small { text-align: center; width: 100%; }
 
 .carousel ul { bottom: 0; left: 50%; margin-left: -41px; overflow: hidden; padding: 0; position: absolute; z-index: 2; }
 .carousel ul li { border: 1px solid #8b8b8b; cursor: pointer; display: inline-block; float: left; height: 10px; margin: 0 3px; text-indent: -5000em; width: 10px; }
@@ -309,6 +314,7 @@ button { outline: none; }
 #how-it-works { overflow: hidden; }
 
 #how-it-works h2 { margin: 0 0 15px; }
+#how-it-works p { font-weight: 300; }
 
 #how-it-works .centralized { width: 280px; }
 #how-it-works section {
@@ -691,9 +697,9 @@ i.tooltip { display: none; }
     dl, p { font-size: 15px; }
 
     .header-container {
-        -webkit-box-shadow: 0 1px 6px #333;
-           -moz-box-shadow: 0 1px 6px #333;
-                box-shadow: 0 1px 6px #333;
+        -webkit-box-shadow: 0 -1px 8px #666;
+           -moz-box-shadow: 0 -1px 8px #666;
+                box-shadow: 0 -1px 8px #666;
     }    
 
     .header-container nav ul li.secondary { margin: 0 0 0 3%; position: static; }
@@ -788,6 +794,8 @@ i.tooltip { display: none; }
    .wrapper { max-width: 1000px; margin: 0 auto; }
 
    .carousel .wrapper { margin-left: -500px; padding: 0 0 0 50%; } 
+
+   .footer-container nav ul { margin: 0 auto; }
 }
 
 /* ==========================================================================
