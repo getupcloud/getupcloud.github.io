@@ -106,7 +106,7 @@ nav ul { margin: 0; padding: 0; }
 
 article { padding-bottom: 30px; padding-top: 30px; }
 
-input[type=text] {
+input[type=text], input[type=password] {
     background: #eee;
     border: 1px solid #e7e7e7;
     border-top-color: #c6c6c6;
@@ -339,7 +339,7 @@ button { outline: none; }
 
 #how-it-works section dl { display: none; margin: 0; padding: 0 10%; width: 80%; }
 #how-it-works section dl dt { margin: 20px 0 0; font-weight: 500; }
-#how-it-works section dl dd { margin: 0; }
+#how-it-works section dl dd { font-weight: 300; margin: 0; }
 
 #how-it-works section dl dd.beer:after { background: url(../img/sprite.png) no-repeat -343px 0; content: ''; display: block; height: 178px; margin: 20px auto; width: 184px; }
 
@@ -360,9 +360,10 @@ button { outline: none; }
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
 
     bottom: -5px;
-    color: #000; 
+    color: #666; 
     display: block;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 400;
     position: absolute;
     width: 100%;
 }
@@ -408,7 +409,7 @@ button { outline: none; }
 
 #sign-up form p { margin: 0 0 10px; }
 
-#sign-up form input[type=text] { margin: 0 10px 10px 0; width: 205px; }
+#sign-up form input[type=text], #sign-up form input[type=password] { margin: 0 10px 10px 0; width: 205px; }
 #sign-up form label { margin: 0 0 10px 0; font-size: 13px; }
 #sign-up form label a { color: #333; text-decoration: underline; }
 
@@ -767,7 +768,7 @@ i.tooltip { display: none; }
     #sign-up header h2 { line-height: 45px; }
 
     #sign-up form .group { display: inline-block; width: 49%; }
-    #sign-up form .group input[type=text] { width: 40%; }
+    #sign-up form .group input[type=text], #sign-up form .group input[type=password] { width: 40%; }
 
     #pricing .compare h3 { margin: 7px 0 10px 130px; }
 }
