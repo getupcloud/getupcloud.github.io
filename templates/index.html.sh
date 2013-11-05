@@ -227,7 +227,7 @@ cat <<EOF
                                 <tbody>
                                     <tr>
                                         <td>$(gettext "Resource")</td>
-                                        <td>1 gear <i class="tooltip" data-text="$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 1GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")">?</i></td>
+                                        <td>1 gear <i class="tooltip" data-text="$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")">?</i></td>
                                         <td>$(gettext "Cloud Server") 512Mb RAM</td>
                                         <td>1 $(gettext "hosting")</td>
                                     </tr>
@@ -310,8 +310,8 @@ cat <<EOF
                                 <div class="group">
                                     <p>$(gettext "Inform a password:")</p>
 
-                                    <input type="text" tabindex="3" placeholder="$(gettext "Password")" name="password1" />
-                                    <input type="text" tabindex="4" placeholder="$(gettext "Confirm password")" name="password2" />
+                                    <input type="password" tabindex="3" placeholder="$(gettext "Password")" name="password1" />
+                                    <input type="password" tabindex="4" placeholder="$(gettext "Confirm password")" name="password2" />
                                 </div>
 
                                 <div class="group">
