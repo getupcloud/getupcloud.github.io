@@ -167,7 +167,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		//console.log('Tracker:', tracker, translated);
 
 		// Track pageview
-		_gaq.push(['_trackPageview', translated);
+		_gaq.push(['_trackPageview', translated]);
 	};
 
 	/**
