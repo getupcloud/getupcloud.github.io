@@ -1096,7 +1096,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
             save
                 .done(function(transport) {
                     if (transport.status == "ok") {
-                        Getup.elements.signup.section.slideUp(function() {
+                        Getup.articles.sign_up.elements.form.slideUp(function() {
                             Getup.articles.sign_up.elements.button.removeClass('loading');
                             Getup.articles.sign_up.submiting = false;
 
@@ -1111,7 +1111,11 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
                         setTimeout(function() {
 
-                        	Getup.articles.sign_up.elements.success.slideUp();
+                        	Getup.elements.signup.section.slideUp(function() {
+                        		Getup.articles.sign_up.elements.success.hide();
+                        		Getup.articles.sign_up.elements.form.show();
+                        	});
+                        	
                         	Getup.elements.signup.header.slideDown();
 
                         }, 5000);
