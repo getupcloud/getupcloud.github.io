@@ -324,7 +324,7 @@ msgstr "R$ 115,75"
 msgid "Peace of mind"
 msgstr "Tranquilidade"
 
-msgid "You just get the traffics peaks on analytics."
+msgid "You just get the traffic peaks on analytics."
 msgstr "Você só sabe que teve picos pelo impacto nas vendas."
 
 msgid "US$ 105.10"

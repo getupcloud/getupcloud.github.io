@@ -277,7 +277,7 @@ cat <<EOF
                                 <tfoot>
                                     <tr>
                                         <td>$(gettext "Total")</td>
-                                        <td><strong>$(gettext "US$ 56.38")</strong> <b>$(gettext "Peace of mind")</b> $(gettext "You just get the traffics peaks on analytics.")</td>
+                                        <td><strong>$(gettext "US$ 56.38")</strong> <b>$(gettext "Peace of mind")</b> $(gettext "You just get the traffic peaks on analytics.")</td>
                                         <td><strong>$(gettext "US$ 105.10")</strong> <b>$(gettext "Hard Work.")</b> $(gettext "You had to reboot your server twice.")</td>
                                         <td><strong>$(gettext "US$ 20")</strong> <b>$(gettext "Don't be cheap!")</b> $(gettext "Your site went down and you lost pageviews.")</td>
                                     </tr>
@@ -294,6 +294,7 @@ cat <<EOF
                     </header>
                     <section>
                         <form method="post" action="$SIGNUP">
+                            <input type="hidden" name="lang" id="language" value="$LANGUAGE_ID">
                             <fieldset>
                                 <legend>$(gettext "Create Account")</legend>
 
@@ -395,14 +396,14 @@ cat <<EOF
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-        <script src="static/js/main.js"></script>
-
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            var _gaq=[['_setAccount','UA-39510729-1']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+
+        <script src="static/js/main.js"></script>
     </body>
 </html>
 EOF
