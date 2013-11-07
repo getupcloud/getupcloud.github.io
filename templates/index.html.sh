@@ -289,7 +289,7 @@ cat <<EOF
 
                 <article id="sign-up" class="wrapper">
                     <header>
-                        <h2>$(gettext "You got 750 hours to verify Getup is the s#&@!")</h2>
+                        <h2>$(gettext "You get 750 hours to verify Getup is the s#&@!")</h2>
                         <a class="button orange article btn-large" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
                     </header>
                     <section>
