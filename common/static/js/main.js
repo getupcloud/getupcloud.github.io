@@ -203,7 +203,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		//console.log('Event:', track_event.concat(track));
 
 		// Track event
-		_gaq.push(track_event);
+		_gaq.push(track_event.concat(track));
 	};
 
 	/**
