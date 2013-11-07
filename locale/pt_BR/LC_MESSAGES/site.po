@@ -455,7 +455,7 @@ msgstr "Não necessita cartão de crédito"
 msgid "If you have a promo code, use it!"
 msgstr "Se você possui um código promocional, use-o!"
 
-msgid "You got 750 hours to verify Getup is the s#&@!"
+msgid "You get 750 hours to verify Getup is the s#&@!"
 msgstr "São 750 horas pra você comprovar que a Getup é f$@#!."
 
 msgid "Signup for 30 days free. Start your Evaluation right now."

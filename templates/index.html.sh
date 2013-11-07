@@ -289,7 +289,7 @@ cat <<EOF
 
                 <article id="sign-up" class="wrapper">
                     <header>
-                        <h2>$(gettext "Signup for 30 days free. Start your Evaluation right now.")</h2>
+                        <h2>$(gettext "You got 750 hours to verify Getup is s#&@!")</h2>
                         <a class="button orange article btn-large" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
                     </header>
                     <section>
@@ -300,7 +300,7 @@ cat <<EOF
 
                                 <input type="hidden" name="lang" value="$(gettext "en-us")">
 
-                                <p class="no-margin">$(gettext "You got 750 hours to verify Getup is the s#&@!")</p>
+                                <p class="no-margin">$(gettext "You get 750 hours to verify Getup is the s#&@!")</p>
                                 <p>$(gettext "If you have a promo code, use it!")</p>
 
                                 <div class="group">
