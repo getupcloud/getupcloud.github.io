@@ -67,6 +67,58 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	};
 
 	/**
+	 * Anaytics
+	 */
+	Getup.Analytics = {};
+
+	Getup.Analytics.prefix = false;
+
+	/**
+	 * Anaytics
+	 * Set the prefix
+	 */
+	Getup.Analytics.set_prefix = function(prefix) {
+
+		// Set the prefix
+		Getup.Analytics.prefix = prefix;
+	};
+
+	/**
+	 * Anaytics
+	 * track pageview
+	 */
+	Getup.Analytics.track_pageview = function(tracker) {
+
+		console.log('Tracker:', tracker);
+
+		// Track pageview
+		//_gaq.push(['_trackPageview', (Getup.Analytics.prefix || '') + tracker]);
+	};
+
+	/**
+	 * Anaytics
+	 * track event
+	 */
+	Getup.Analytics.track_event = function() {
+
+		// Event
+		var track_event = ['_trackEvent'];
+	
+		// Add prefix
+		if (Getup.Analytics.prefix) {
+			track_event.push(Getup.Analytics.prefix);
+		}
+
+		// Add arguments to track event
+		track_event = track_event.concat(arguments());
+
+		console.log('Event:', track_event);
+
+		// Track event
+		//_gaq.push(track_event);
+	};
+
+	/**
 	 * Preloader
 	 */
 	Getup.preload = {};
@@ -824,6 +876,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Link
 	 */
 	Getup.articles.get_in_touch.link = function() {
+		Getup.Analytics.track_pageview('home');
 
 		var top = Getup.elements.get_in_touch.offset().top - Getup.config.menu_height;
 
@@ -848,6 +901,8 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Link
 	 */
 	Getup.articles.home.link = function() {
+		Getup.Analytics.track_pageview('home');
+
 		Getup.elements.body.animate({ 'scroll-top': 0 }, { queue: false, easing: 'easeInOutCirc' });
 
 		return false;
@@ -1041,7 +1096,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
             save
                 .done(function(transport) {
                     if (transport.status == "ok") {
-                        Getup.articles.sign_up.elements.form.slideUp(function() {
+                        Getup.elements.signup.section.slideUp(function() {
                             Getup.articles.sign_up.elements.button.removeClass('loading');
                             Getup.articles.sign_up.submiting = false;
 
@@ -1358,6 +1413,14 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 */
 	var init = function() {
 
+		/**
+		 * Set the prefix of analytics
+		 */
+		Getup.Analytics.set_prefix('/' + U.language.slice(0, 2));
+
+		/*
+		 * Initilize components
+		 */
 		Getup.modal.init();
 		Getup.tooltip.init();
 
@@ -1365,8 +1428,10 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		 * Align
 		 */
 		Getup.carousel.align();		
-		
 
+		/*
+		 * Load carousel
+		 */
 		Getup.carousel.show(!location.hash, function() {
 			Getup.carousel.start_timer();
 
@@ -1377,6 +1442,8 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 				if (module && module.link) {
 					module.link();
 				}
+			} else {
+				Getup.Analytics.track_pageview('home');
 			}
 
 		});
