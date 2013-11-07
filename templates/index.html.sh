@@ -49,21 +49,21 @@ cat <<EOF
                 <a class="menu-control" href="javascript:;">Menu</a>
                 <nav>
                     <ul>
-                        <li><a href="#how-it-works" data-article="how-it-works" class="article">$(gettext "How it Works")</a></li>
-                        <li><a href="#pricing" data-article="pricing" class="article">$(gettext "Pricing")</a></li>
-                        <li><a href="#get-in-touch" data-article="get-in-touch" class="article">$(gettext "Get in Touch")</a></li>
-                        <li class="secondary"><a class="black" href="https://getup.zendesk.com/home/">$(gettext "Support")</a></li>
-                        <li class="secondary separator"><a class="black" href="blog/">$(gettext "Blog")</a></li>
+                        <li><a href="#how-it-works" data-event="Menu,Link,How it works" data-article="how-it-works" class="article">$(gettext "How it Works")</a></li>
+                        <li><a href="#pricing" data-event="Menu,Link,Pricing" data-article="pricing" class="article">$(gettext "Pricing")</a></li>
+                        <li><a href="#get-in-touch" data-event="Menu,Link,Get in touch" data-article="get-in-touch" class="article">$(gettext "Get in Touch")</a></li>
+                        <li class="secondary"><a class="black" data-event="Menu,External link,Support" href="https://getup.zendesk.com/home/">$(gettext "Support")</a></li>
+                        <li class="secondary separator"><a class="black" data-event="Menu,External link,Blog" href="blog/">$(gettext "Blog")</a></li>
                     </ul>
                     <ul class="side">
-                        <li><a class="button orange flat" target="_blank" href="https://broker.getupcloud.com/console/signin">$(gettext "Log In")</a></li>
-                        <li><a class="button red flat article" href="#sign-up" data-article="sign-up">$(gettext "Sign Up")</a></li>                        
+                        <li><a class="button orange flat" target="_blank" data-event="Menu,Button,Signin" href="https://broker.getupcloud.com/console/signin">$(gettext "Log In")</a></li>
+                        <li><a class="button red flat article" href="#sign-up" data-event="Menu,Button,Signup" data-article="sign-up">$(gettext "Sign Up")</a></li>                        
                     </ul>
                 </nav>
 
                 <aside>
-                    <a href="index.html" data-lang="pt-br" class="pt">Português</a>
-                    <a href="index_en.html" data-lang="en-us" class="black en">English</a>
+                    <a href="index.html" data-event="Language,Link,Portuguese" data-lang="pt-br" class="pt">Português</a>
+                    <a href="index_en.html" data-event="Language,Link,English" data-lang="en-us" class="black en">English</a>
                 </aside>
             </header>
         </div>
@@ -71,7 +71,7 @@ cat <<EOF
         <div class="main-container">
             <div class="main clearfix">
 
-                <article id="home" class="carousel">
+                <article id="home" class="carousel pageview" data-pageview="home">
                     <section class="item-01">
                         <div class="wrapper">
                             <h2>$(gettext "Getup is a scalable cloud application plataform")</h2>
@@ -79,7 +79,7 @@ cat <<EOF
                             <p>$(gettext "You only have to worry about coding your app - we take care of everything else.")</p>
 
                             <div class="actions">
-                                <a class="button orange article btn-large" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
+                                <a class="button orange article btn-large" data-event="Carousel,Button,Free Trial,1"  href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
                                 <small>$(gettext "No credit card required")</small>
                             </div>
                        </div>
@@ -91,7 +91,7 @@ cat <<EOF
                             <p class="cyan">$(gettext "Compute power when you need it most.")</p>
 
                             <div class="actions">
-                                <a class="button orange article btn-large" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
+                                <a class="button orange article btn-large" data-event="Carousel,Button,Free Trial,2" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
                                 <small class="white">$(gettext "No credit card required")</small>
                             </div>
                         </div>
@@ -104,14 +104,14 @@ cat <<EOF
                             <p>$(gettext "Deploy and scale to millions of users.")</p>
 
                             <div class="actions">
-                                <a class="button orange article btn-large" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
+                                <a class="button orange article btn-large" data-event="Carousel,Button,Free Trial,3" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
                                 <small>$(gettext "No credit card required")</small>
                             </div>
                         </div>
                     </section>
                 </article> <!-- #home -->
 
-                <article id="how-it-works" class="wrapper">
+                <article id="how-it-works" class="wrapper pageview" data-pageview="how">
                     <header>
                         <h2>$(gettext "Deploy your application in minutes")</h2>
                         <p>$(gettext "Create and deploy web applications without the cost and complexity of buying and managing servers. It's faster and cheaper than create AWS instances.")</p>
@@ -122,7 +122,7 @@ cat <<EOF
                             <h3 class="create">$(gettext "Create your application")</h3>
                             <p>$(gettext "Choose the technology"): PHP, Ruby, Python, Node.js</p>
 
-                            <a href="javascript:;" data-text="$(gettext "Less")">$(gettext "See More")</a>
+                            <a href="javascript:;" data-event="How it works,See More,Create" data-text="$(gettext "Less")">$(gettext "See More")</a>
 
                             <dl>
                                 <dt>$(gettext "SSL")</dt>
@@ -137,7 +137,7 @@ cat <<EOF
                             <h3 class="deploy">$(gettext "Deploy")</h3>
                             <p>$(gettext "Just type 'git push' and voil&aacute;! Your application is up and running!")</p>
 
-                            <a href="javascript:;" data-text="$(gettext "Less")">$(gettext "See More")</a>
+                            <a href="javascript:;" data-event="How it works,See More,Deploy" data-text="$(gettext "Less")">$(gettext "See More")</a>
 
                             <dl>
                                 <dt>$(gettext "Built-in Databases")</dt>
@@ -149,7 +149,7 @@ cat <<EOF
                             <h3 class="scale">$(gettext "Scale")</h3>
                             <p>$(gettext "With auto-scale you don't need to worry about growth, don't get caught by traffic spikes.")</p>
 
-                            <a href="javascript:;" data-text="$(gettext "Less")">$(gettext "See More")</a>
+                            <a href="javascript:;" data-event="How it works,See More,Scale" data-text="$(gettext "Less")">$(gettext "See More")</a>
 
                             <dl>
                                 <dt>$(gettext "Monitor")</dt>
@@ -166,7 +166,7 @@ cat <<EOF
                 </article> <!-- #how-it-works -->
 
                 <div class="background gray">
-                    <article id="pricing" class="wrapper">
+                    <article id="pricing" class="wrapper pageview" data-pageview="pricing">
                         <header>
                             <h2>$(gettext "Pricing and Benefits")</h2>
                         </header>
@@ -176,7 +176,7 @@ cat <<EOF
                                 <p>$(gettext "An application can run using one or more gears and the amount will be determined by the volume of access.")</p>
                                 <p>$(gettext "The monthly cost is calculated by the number of gears used and the number of hours that each gear were active.")</p>
 
-                                <div class="white-border round compare article" data-article="compare">
+                                <div class="white-border round compare article trackevent" data-event="Pricing,Button,Compare" data-article="compare">
                                     <h3>$(gettext "Compare with other services")</h3>
                                     <p>$(gettext "Compare Getup with other services for a month with a traffic peak as an example") <a href="javacript:;">$(gettext "Check it out.")</a></p>
                                 </div>
@@ -201,7 +201,7 @@ cat <<EOF
                                 </dl>
 
                                 <dl class="blue round">
-                                    <dt>$(gettext "GEAR") <i class="tooltip" data-text="$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")">?</i></dt>
+                                    <dt>$(gettext "GEAR") <i class="tooltip" data-text='$(gettext "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.")'>?</i></dt>
                                     <dd>$(gettext "US$ 0,074/hour")</dd>
 
                                     <dt class="no-border">$(gettext "Monthly cost")</dt>
@@ -213,7 +213,7 @@ cat <<EOF
                 </div>
 
                 <div class="background gray">
-                    <article id="compare" class="wrapper">
+                    <article id="compare" class="wrapper pageview" data-pageview="pricing/gear">
                         <section>
                             <table class="round" caption="$(gettext 'Other hosting companies')">
                                 <thead>
@@ -287,10 +287,10 @@ cat <<EOF
                     </article> <!-- #pricing -->
                 </div>
 
-                <article id="sign-up" class="wrapper">
+                <article id="sign-up" class="wrapper pageview" data-pageview="signup">
                     <header>
                         <h2>$(gettext "You get 750 hours to verify Getup is the s#&@!")</h2>
-                        <a class="button orange article btn-large" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
+                        <a class="button orange article btn-large" data-event="Signup,Button,Free trial" href="#sign-up" data-article="sign-up">$(gettext "Free Trial")</a>
                     </header>
                     <section>
                         <form method="post" action="$SIGNUP">
@@ -327,7 +327,7 @@ cat <<EOF
                                         <span>$(gettext "I have read and agree to the") <a a class="modal-link" href="termos-de-uso.html">$(gettext "Terms of use")</a></span>
 
                                     </label>
-                                    <button class="button orange">$(gettext "Continue")</button>
+                                    <button class="button orange trackevent" data-event="Signup,Button,Continue">$(gettext "Continue")</button>
                                 </div>
                             </fieldset>
                         </form>
@@ -338,27 +338,27 @@ cat <<EOF
                     </section><!-- . -->
                 </article> <!-- #sign-up -->      
                 <div class="background orange">
-                    <article id="get-in-touch" class="wrapper">
+                    <article id="get-in-touch" class="wrapper pageview" data-pageview="get_in_touch">
                         <header>
                             <h2>$(gettext "Don't be shy! Let's talk about clouds.")</h2>
                         </header>
                         <section>
                             <ul>
-                                <li><a href="mailto:ship@getupcloud.com">ship@getupcloud.com</a></li>
-                                <li><a href="http://www.twitter.com/getupcloud" target="_blank">twitter.com/getupcloud</a></li>
-                                <li><a href="http://www.facebook.com/getupcloud" target="_blank">fb.com/getupcloud</a></li>                        
+                                <li><a data-event="Get in touch,Link,E-mail" href="mailto:ship@getupcloud.com">ship@getupcloud.com</a></li>
+                                <li><a data-event="Get in touch,Link,Twitter" href="http://www.twitter.com/getupcloud" target="_blank">twitter.com/getupcloud</a></li>
+                                <li><a data-event="Get in touch,Link,Facebook" href="http://www.facebook.com/getupcloud" target="_blank">fb.com/getupcloud</a></li>                        
                             </ul>
 
                             <div class="right">
-                                <dl>
+                                <dl class="trackevent" data-event="Get in touch,Maps,Porto Alegre">
                                     <dt>Porto Alegre</dt>
                                     <dd>poa@getupcloud.com</dd>
                                 </dl>
-                                <dl>
+                                <dl class="trackevent" data-event="Get in touch,Maps,São Paulo">
                                     <dt>São Paulo</dt>
                                     <dd>sampa@getupcloud.com</dd>
                                 </dl>
-                                <dl>
+                                <dl class="trackevent" data-event="Get in touch,Maps,Overseas">
                                     <dt>Overseas</dt>
                                     <dd>overseas@getupcloud.com</dd>
                                 </dl>
@@ -384,10 +384,10 @@ cat <<EOF
 
                 <nav>
                     <ul class="wrapper">
-                        <li><a class="modal-link" href="termos-de-uso.html">$(gettext "Terms of use")</a></li>
-                        <li><a class="modal-link" href="politica-de-privacidade.html">$(gettext "Privacy policy")</a></li>
-                        <li><a class="modal-link" href="politica-de-utilizacao-aceitavel.html">$(gettext "Acceptable use policy")</a></li>
-                        <li><a class="modal-link" href="politica-de-suporte.html">$(gettext "Support policy")</a></li>
+                        <li><a class="modal-link" data-event="Footer,Link,Terms of use" href="termos-de-uso.html" data-pageview="terms_of_use">$(gettext "Terms of use")</a></li>
+                        <li><a class="modal-link" data-event="Footer,Link,Privacy Policy" href="politica-de-privacidade.html" data-pageview="privacy_policy">$(gettext "Privacy policy")</a></li>
+                        <li><a class="modal-link" data-event="Footer,Link,Acceptable use policy" href="politica-de-utilizacao-aceitavel.html" data-pageview="aup">$(gettext "Acceptable use policy")</a></li>
+                        <li><a class="modal-link" data-event="Footer,Link,Support policy" href="politica-de-suporte.html" data-pageview="support_policy">$(gettext "Support policy")</a></li>
                     </ul>
                 </nav>
             </footer>

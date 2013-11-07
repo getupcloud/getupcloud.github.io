@@ -75,6 +75,77 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 	/**
 	 * Anaytics
+	 * Tracker map
+	 */
+	Getup.Analytics.map = {
+		'en' : false,
+		'pt' : {
+			pageviews : {
+
+			// Site
+				'home'			 : 'home',
+				'how'			 : 'como',
+				'pricing'		 : 'preco',
+				'get_in_touch' 	 : 'contato',
+				'pricing/gear' 	 : 'preco/gear',
+				'signup'		 : 'cadastro',
+
+			// Modal
+				'terms_of_use' 	 : 'termos_de_uso',
+				'privacy_police' : 'politica_privacidade',
+				'aup' 			 : 'pua',
+				'support_policy' : 'politica_suporte'
+			},
+			events : {
+				// Menu
+				'Menu,Link,How it works' 	: 'Menu,Link,Como funciona',
+				'Menu,Link,Pricing'		 	: 'Menu,Link,Preço',
+				'Menu,Link,Get in touch'	: 'Menu,Link,Contato',
+				'Menu,External link,Support': 'Menu,Link externo,Suporte',
+				'Menu,External link,Blog'	: 'Menu,Link externo,Blog',
+				'Menu,Button,Signin' 		: 'Menu,Botão,Entrar',
+				'Menu,Button,Signup' 		: 'Menu,Botão,Criar sua conta',
+
+				// Language
+				'Language,Link,Portuguese'  : 'Language,Link,Português',
+				'Language,Link,English'     : 'Language,Link,Inglês',
+
+				// Carousel
+				'Carousel,Button,Free Trial,1'  : 'Carousel,Botão,Experimente grátis,1',
+				'Carousel,Button,Free Trial,2'  : 'Carousel,Botão,Experimente grátis,2',
+				'Carousel,Button,Free Trial,3'  : 'Carousel,Botão,Experimente grátis,3',
+
+				// How it works
+				'How it works,See More,Create' : 'Como funciona,Ver mais,Criar',
+				'How it works,See More,Deploy' : 'Como funciona,Ver mais,Publicar',
+				'How it works,See More,Scale'  : 'Como funciona,Ver mais,Escalar',
+
+				// Pricing
+				'Pricing,Button,Compare' : 'Preço,Botão,Comparar',
+
+				// Signup
+				'Signup,Button,Free trial' : 'Cadastro,Botão,Experimente grátis',
+				'Signup,Button,Continue'   : 'Cadastro,Botão,Continuar',
+
+				// Get in touch
+				'Get in touch,Link,E-mail' 		 : 'Contato,Link,E-mail',
+				'Get in touch,Link,Twitter'		 : 'Contato,Link,Twitter',
+				'Get in touch,Link,Facebook' 	 : 'Contato,Link,Facebook',
+				'Get in touch,Maps,Porto Alegre' : 'Contato,Maps,Porto Alegre',
+				'Get in touch,Maps,São Paulo' 	 : 'Contato,Maps,São Paulo',
+				'Get in touch,Maps,Overseas' 	 : 'Contato,Maps,Overseas',
+
+				// Footer
+				'Footer,Link,Terms of use' 			: 'Rodapé,Link,Termos de uso',
+				'Footer,Link,Privacy Policy' 		: 'Rodapé,Link,Política de privacidade',
+				'Footer,Link,Acceptable use policy' : 'Rodapé,Link,PUA',
+				'Footer,Link,Support policy' 		: 'Rodapé,Link,Política de suporte'
+			}
+		}
+	}
+
+	/**
+	 * Anaytics
 	 * Set the prefix
 	 */
 	Getup.Analytics.set_prefix = function(prefix) {
@@ -89,10 +160,14 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 */
 	Getup.Analytics.track_pageview = function(tracker) {
 
-		console.log('Tracker:', tracker);
+		var translated = '/' + Getup.Analytics.prefix + '/' + (Getup.Analytics.map[Getup.Analytics.prefix]
+			? Getup.Analytics.map[Getup.Analytics.prefix]['pageviews'][tracker]
+			: tracker);
+
+		//console.log('Tracker:', tracker, translated);
 
 		// Track pageview
-		//_gaq.push(['_trackPageview', (Getup.Analytics.prefix || '') + tracker]);
+		_gaq.push(['_trackPageview', translated);
 	};
 
 	/**
@@ -103,19 +178,32 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 		// Event
 		var track_event = ['_trackEvent'];
-	
-		// Add prefix
-		if (Getup.Analytics.prefix) {
-			track_event.push(Getup.Analytics.prefix);
+		var args = arguments;
+		var translated = null;
+		var track = [];
+
+		if (args.length == 1) {
+
+			translated = (Getup.Analytics.map[Getup.Analytics.prefix]
+				? Getup.Analytics.map[Getup.Analytics.prefix]['events'][args[0]]
+				: args[0]);
+
+			track = (Getup.Analytics.prefix.toUpperCase() + ' - ' + translated).split(',');
+			
+		} else {
+			// Add prefix
+			if (Getup.Analytics.prefix) {
+				track_event.push(Getup.Analytics.prefix);
+			}			
+
+			// Add arguments to track event
+			// track = track_event.concat();
 		}
 
-		// Add arguments to track event
-		track_event = track_event.concat(arguments());
-
-		console.log('Event:', track_event);
+		//console.log('Event:', track_event.concat(track));
 
 		// Track event
-		//_gaq.push(track_event);
+		_gaq.push(track_event);
 	};
 
 	/**
@@ -280,6 +368,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Elements
 	 */
 	Getup.elements = {};
+
+	/**
+	 * Elements
+	 * Element: window
+	 */
+	Getup.elements.window = $(window);
 
 	/**
 	 * Elements
@@ -876,7 +970,6 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Link
 	 */
 	Getup.articles.get_in_touch.link = function() {
-		Getup.Analytics.track_pageview('home');
 
 		var top = Getup.elements.get_in_touch.offset().top - Getup.config.menu_height;
 
@@ -901,7 +994,6 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Link
 	 */
 	Getup.articles.home.link = function() {
-		Getup.Analytics.track_pageview('home');
 
 		Getup.elements.body.animate({ 'scroll-top': 0 }, { queue: false, easing: 'easeInOutCirc' });
 
@@ -920,6 +1012,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Link
 	 */
 	Getup.articles.pricing.link = function() {
+
 		var top = Getup.elements.pricing.offset().top - Getup.config.menu_height;
 		Getup.elements.body.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc' });
 
@@ -1258,7 +1351,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
     	Getup.modal.elements.main.hide();
 
         Getup.modal.elements.links.click(function() {
-            Getup.modal.show(this.href.replace(location.origin + '/', ''));
+            Getup.modal.show(this.href.replace(location.origin + '/', ''), $(this).data('pageview'));
 
             return false;
         });
@@ -1269,12 +1362,17 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
      * Modal
      * show
      */
-    Getup.modal.show = function(section) {
+    Getup.modal.show = function(section, tracker) {
         Getup.elements.body.css('overflow', 'hidden');
 
         if (Getup.modal._cache[section]) {
             Getup.modal.elements.content.html(Getup.modal._cache[section]);
             Getup.modal.elements.main.fadeIn();
+
+        	// Tracker
+        	if (tracker) {
+        		Getup.Analytics.track_pageview(tracker);
+        	}
 
             Getup.modal.elements.content.append(Getup.modal.elements.close);
             Getup.modal.close_event();
@@ -1384,6 +1482,78 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
     	Getup.tooltip.elements.main.fadeOut();
     };
 
+    /**
+     * Getup
+     * Track
+     */
+    Getup.track = {}
+
+    /**
+     * Getup
+     * Track
+     * Events allowed
+     */
+    Getup.track.events = $('a, .trackevent');
+
+    /**
+     * Getup
+     * Add links event track
+     */
+    Getup.track.events.click(function() {
+
+    	var track_event = $(this).data('event');
+
+    	if (track_event) {
+	    	Getup.Analytics.track_event(track_event);
+    	}
+    });
+
+    /**
+     * Getup
+     * Track
+     * Pageviews allowed
+     */
+    Getup.track.pageviews = $('.pageview');
+
+    /**
+     * Getup
+     * Last tracked pageview
+     */
+    Getup.track.last = null;
+
+    /**
+     * Getup
+     * scroll timer
+     */
+    Getup.track.scroll_timer = null;
+
+	/**
+	 * Site scroll
+	 */
+	var scroll = function() {
+		clearTimeout(Getup.track.scroll_timer);
+
+		Getup.track.scroll_timer = setTimeout(function() {
+
+			var top = Getup.elements.window.scrollTop();
+			var half = Getup.elements.window.height() / 2;
+			var next = null;
+
+			Getup.track.pageviews.each(function() {
+				var element = $(this);
+				var pageview = element.data('pageview');
+
+				if (!element.is(':visible') || (element.offset().top) > (top + 120 + half) || next == pageview) return;			
+				next = pageview
+			});
+
+			if (next && Getup.track.last != next) {
+				Getup.track.last = next;
+				Getup.Analytics.track_pageview(next);
+			}
+		}, 100);
+	};
+
 	/**
 	 * Site resize
 	 */
@@ -1420,7 +1590,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		/**
 		 * Set the prefix of analytics
 		 */
-		Getup.Analytics.set_prefix('/' + U.language.slice(0, 2));
+		Getup.Analytics.set_prefix(U.language.slice(0, 2));
 
 		/*
 		 * Initilize components
@@ -1446,8 +1616,6 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 				if (module && module.link) {
 					module.link();
 				}
-			} else {
-				Getup.Analytics.track_pageview('home');
 			}
 
 		});
@@ -1494,9 +1662,20 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	$(window).resize(resize);
 
 	/**
+	 * General events
+	 * Event: window scroll
+	 */
+	$(document).scroll(scroll);
+
+	/**
 	 * Call resize to update config values
 	 */
 	resize();
+
+	/**
+	 * Call scroll to update tracker
+	 */
+	scroll();
 
 	/**
 	 * Preload initialization
