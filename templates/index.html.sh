@@ -215,7 +215,7 @@ cat <<EOF
                 <div class="background gray">
                     <article id="compare" class="wrapper pageview" data-pageview="pricing/gear">
                         <section>
-                            <table class="round" caption="$(gettext 'Other hosting companies')">
+                            <table class="round" alt="$(gettext 'Other hosting companies')">
                                 <thead>
                                     <tr>
                                         <th>&nbsp;</th>
@@ -298,8 +298,6 @@ cat <<EOF
                             <fieldset>
                                 <legend>$(gettext "Create Account")</legend>
 
-                                <input type="hidden" name="lang" value="$(gettext "en-us")">
-
                                 <p class="no-margin">$(gettext "You get 750 hours to verify Getup is the s#&@!")</p>
                                 <p>$(gettext "If you have a promo code, use it!")</p>
 
@@ -324,7 +322,7 @@ cat <<EOF
                                 <div class="actions">
                                     <label>
                                         <input type="checkbox" name="use_terms" value="1" />
-                                        <span>$(gettext "I have read and agree to the") <a a class="modal-link" href="termos-de-uso.html">$(gettext "Terms of use")</a></span>
+                                        <span>$(gettext "I have read and agree to the") <a class="modal-link" href="termos-de-uso.html">$(gettext "Terms of use")</a></span>
 
                                     </label>
                                     <button class="button orange trackevent" data-event="Signup,Button,Continue">$(gettext "Continue")</button>
