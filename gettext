@@ -1,8 +1,0 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-import gettext, sys, os
-
-gettext.bindtextdomain(os.environ['TEXTDOMAIN'], os.environ['TEXTDOMAINDIR'])
-gettext.textdomain(os.environ['TEXTDOMAIN'])
-print gettext.gettext(sys.argv[1]),
