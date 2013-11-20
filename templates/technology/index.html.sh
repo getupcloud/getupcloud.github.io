@@ -83,41 +83,39 @@ cat <<EOF
                         <h3>Technologies</h3>
 
                         <ul>
-                            <li><a href="#/">Tomcat (JBOSS EWS) 6 / 7</a></li>
-                            <li><a class="active" href="#/PHP5x">PHP 5.3 / 5.4 / 5.5</a></li>
-                            <li><a href="#/">Ruby 1.8 / 1.9  </a></li>
-                            <li><a href="#/">Python 2.6 / 2.7 / 3.3 </a></li>
-                            <li><a href="#/">Node.js</a></li>
-                            <li><a href="#/">Perl</a></li>
-                            <li><a href="#/">MongoDB</a></li>
-                            <li><a href="#/">MySQL</a></li>
-                            <li><a href="#/">PostgreSQL 8.4 / 9.2</a></li>
+                            <li><a href="$(gettext "technology")/php">PHP 5.3 / 5.4 / 5.5</a></li>
+                            <li><a href="$(gettext "technology")/ruby">Ruby 1.8 / 1.9  </a></li>
+                            <li><a href="$(gettext "technology")/nodejs">Node.js</a></li>
+                            <li><a href="$(gettext "technology")/python">Python 2.6 / 2.7 / 3.3 </a></li>
+                            <li><a href="$(gettext "technology")/tomcat">Tomcat (JBOSS EWS) 6 / 7</a></li>
+                            <li><a href="$(gettext "technology")/perl">Perl</a></li>
+                            <li><a href="$(gettext "technology")/mysql">MySQL</a></li>
+                            <li><a href="$(gettext "technology")/postgresql">PostgreSQL 8.4 / 9.2</a></li>
+                            <li><a href="$(gettext "technology")/mongodb">MongoDB</a></li>
                         </ul>
                     </nav>
 
                     <section>
-                        <article id="PHP5x" class="tecnology">
-                            <h4>PHP 5.3 / 5.4 / 5.5</h4>
+                        <h4>PHP 5.3 / 5.4 / 5.5</h4>
 
-                            <p>$(gettext "PHP is a general-purpose server-side scripting language originally designed for Web development to produce dynamic Web pages.")</p>
-                            <p>$(gettext "With Getup you can easily deploy and run PHP applications using your favorite framework and databases. Auto-Scale to millions of users without breaking a sweat about server setup and administration. Forget about servers and focus on the code.")</p>
+                        <p>$(gettext "PHP is a general-purpose server-side scripting language originally designed for Web development to produce dynamic Web pages.")</p>
+                        <p>$(gettext "With Getup you can easily deploy and run PHP applications using your favorite framework and databases. Auto-Scale to millions of users without breaking a sweat about server setup and administration. Forget about servers and focus on the code.")</p>
 
-                            <h5>$(gettext "Simplify the lifecycle")</h5>
-                            <p>$(gettext "Deploying PHP application with MySQL is as easy as it can be:")</p>
-                            <code>$ rhc app-create App php-5.5 mysql-5.1</code>
-                            <p>$(gettext "The command will create your gear (server), install and configure PHP, MySQL and git repository on the server. Access your application on the web at http://App-namespace.getup.io - HTTPS works just fine as well, and all applications have a SSL certificate.")</p>
+                        <h5>$(gettext "Simplify the lifecycle")</h5>
+                        <p>$(gettext "Deploying PHP application with MySQL is as easy as it can be:")</p>
+                        <code>$ rhc app-create App php-5.5 mysql-5.1</code>
+                        <p>$(gettext "The command will create your gear (server), install and configure PHP, MySQL and git repository on the server. Access your application on the web at http://App-namespace.getup.io - HTTPS works just fine as well, and all applications have a SSL certificate.")</p>
 
-                            <h5>$(gettext "Auto scale")</h5>
-                            <p>$(gettext "What about scale? Don't worry about it, we are specialists in high traffic, simple add the -s parameter when creating your application and voilá - the platform will scale your application.")</p>
-                            <code>$ rhc app-create App php-5.5 -s</code>
-                            <p>$(gettext "The scalability is based on simultaneous connections. The platform will add new gears every time your application receives a traffic spike, automatically.")</p>
+                        <h5>$(gettext "Auto scale")</h5>
+                        <p>$(gettext "What about scale? Don't worry about it, we are specialists in high traffic, simple add the -s parameter when creating your application and voilá - the platform will scale your application.")</p>
+                        <code>$ rhc app-create App php-5.5 -s</code>
+                        <p>$(gettext "The scalability is based on simultaneous connections. The platform will add new gears every time your application receives a traffic spike, automatically.")</p>
 
-                            <h5>$(gettext "Frameworks, databases and other tools")</h5>
-                            <p>$(gettext "Work with frameworks like CakePHP, Symfony, CodeIgniter")</p>
-                            <code>$ rhc app-create App php-5.3 mysql-5.1 --from-code=https://github.com/openshift/CodeIgniterQuickStart</code>
-                            <p>$(gettext "Work with database like MySQL, PostgreSQL or MongoDB through cartridges")</p>
-                            <code>$ rhc cartridge add mysql-5.1 -a App</code>
-                        </article>
+                        <h5>$(gettext "Frameworks, databases and other tools")</h5>
+                        <p>$(gettext "Work with frameworks like CakePHP, Symfony, CodeIgniter")</p>
+                        <code>$ rhc app-create App php-5.3 mysql-5.1 --from-code=https://github.com/openshift/CodeIgniterQuickStart</code>
+                        <p>$(gettext "Work with database like MySQL, PostgreSQL or MongoDB through cartridges")</p>
+                        <code>$ rhc cartridge add mysql-5.1 -a App</code>
                     </section>
                 </article> <!-- #technologies -->
 
