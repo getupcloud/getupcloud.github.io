@@ -8,7 +8,6 @@ var cons = require('./libraries/consolidate')
 var Gettext = require('node-gettext');
 
 var fs = require('fs')
-var http = require('http');
 var path = require('path');
 
 //_ = require('underscore');
@@ -75,7 +74,3 @@ gettext.textdomain(app.get('language'));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
-
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});

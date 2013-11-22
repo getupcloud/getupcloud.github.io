@@ -1,4 +1,17 @@
 /**
+ * Require app
+ */
+require('./app')
+
+// Requires
+var fs = require('fs');
+
+/**
+ * Config
+ */
+var url = '/';
+
+/**
  * Builder tree
  */
 
@@ -37,5 +50,5 @@ var tree = {
 };
 
 /**
- * Build script
+ *
  */
