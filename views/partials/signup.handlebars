@@ -1,0 +1,48 @@
+				<article id="sign-up" class="wrapper pageview" data-pageview="signup">
+                    <header>
+                        <h2>{{ _ "You get 750 hours to verify Getup is the s#&@!"}}</h2>
+                        <a class="button orange article btn-large" data-event="Signup,Button,Free trial" href="#sign-up" data-article="sign-up">{{ _ "Free Trial"}}</a>
+                    </header>
+                    <section>
+                        <form method="post" action="{{ signup }}">
+                            <input type="hidden" name="lang" id="language" value="{{ language }}">
+                            <fieldset>
+                                <legend>{{ _ "Create Account"}}</legend>
+
+                                <p class="no-margin">{{ _ "You get 750 hours to verify Getup is the s#&@!"}}</p>
+                                <p>{{ _ "If you have a promo code, use it!"}}</p>
+
+                                <div class="group">
+                                    <input type="text" tabindex="1" placeholder="{{ _ "What's your name?"}}" name="name" />
+                                    <input type="text" tabindex="2" placeholder="{{ _ "What's your e-mail?"}}" name="email" />
+                                </div>
+
+                                <div class="group">
+                                    <p>{{ _ "Inform a password:"}}</p>
+
+                                    <input type="password" tabindex="3" placeholder="{{ _ "Password"}}" name="password1" />
+                                    <input type="password" tabindex="4" placeholder="{{ _ "Confirm password"}}" name="password2" />
+                                </div>
+
+                                <div class="group">
+                                    <p>{{ _ "Promo Code?"}}</p>
+
+                                    <input type="text" tabindex="5" placeholder="{{ _ "Promo code (optional)"}}" name="coupon_code" />
+                                </div>
+
+                                <div class="actions">
+                                    <label>
+                                        <input type="checkbox" name="use_terms" value="1" />
+                                        <span>{{ _ "I have read and agree to the"}} <a class="modal-link" href="termos-de-uso.html">{{ _ "Terms of use"}}</a></span>
+
+                                    </label>
+                                    <button class="button orange trackevent" data-event="Signup,Button,Continue">{{ _ "Continue"}}</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p id="success">
+                            <strong>{{ _ "Welcome aboard."}}</strong>
+                            <span>{{ _ "We sent you a email confirmation. Thank you!"}}</span>
+                        </p>       
+                    </section><!-- . -->
+                </article> <!-- #sign-up -->      

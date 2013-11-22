@@ -1,0 +1,35 @@
+        <div class="footer-container">
+            <footer>
+                <div class="wrapper">
+                    <h3>{{ _ "Infrastructure is based on:"}}</h3>
+                    
+                    <ul>
+                        <li class="amazon">Amazon</li>
+                        <li class="openshift">Openshift</li>
+                    </ul>
+
+                    <p>GROW IN THE CLOUD</p>
+                </div>
+
+                <nav>
+                    <ul class="wrapper">
+                        <li><a class="modal-link" data-event="Footer,Link,Terms of use" href="termos-de-uso.html" data-pageview="terms_of_use">{{ _ "Terms of use"}}</a></li>
+                        <li><a class="modal-link" data-event="Footer,Link,Privacy Policy" href="politica-de-privacidade.html" data-pageview="privacy_policy">{{ _ "Privacy policy"}}</a></li>
+                        <li><a class="modal-link" data-event="Footer,Link,Acceptable use policy" href="politica-de-utilizacao-aceitavel.html" data-pageview="aup">{{ _ "Acceptable use policy"}}</a></li>
+                        <li><a class="modal-link" data-event="Footer,Link,Support policy" href="politica-de-suporte.html" data-pageview="support_policy">{{ _ "Support policy"}}</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ path "javascripts/vendor/jquery-1.10.1.min.js" }}"><\/script>')</script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-39510729-1']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+        {{{ javascripts "main" }}}        

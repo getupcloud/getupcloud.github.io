@@ -1,0 +1,17 @@
+{
+  "name": "Getupcloud.com",
+  "description": "Getupcloud Site",
+  
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "consolidate": "*",
+    "handlebars": "*",
+    "node-gettext": "*",
+    "underscore": "*"
+  }
+}

@@ -1,0 +1,34 @@
+    <head>
+        <meta charset="utf-8">
+
+        <title>{{ _ "Getup Cloud | Scalable Cloud Application | Grow in the cloud"}}</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="fb:app_id" content="360523914066509">
+        <meta property="og:title" content="{{ _ "Getup - Grow in the cloud"}}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://getupcloud.com">
+        <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
+        <meta property="og:description" name="description" content="{{ _ "Getup is a scalable cloud application platform."}} {{ _ "An easy and fast way to build and deploy web apps."}} {{ _ "You only have to worry about coding your app - we take care of everything else."}}">
+        <meta property="gc:build_id" content="{{ build }}">
+
+        <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico">
+
+        <script>var U = { register: '{{ register }}', language: '{{ language }}', debug: {{ debug }} };</script>
+
+        {{{ javascripts "language" }}}
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+        {{{ stylesheets "normalize.min" }}}
+        {{{ stylesheets "main" }}}
+
+        {{{ javascripts "vendor/modernizr-2.6.2-respond-1.1.0.min" }}}
+
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript"> window.$zopim || (function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8'); $.src='//v2.zopim.com/?1aNSsavBi1e9Gs5y9Olsh4R2HJYYQFNP';z.t=+new Date; $.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+        </script>
+        <!--End of Zopim Live Chat Script-->        
+    </head>
