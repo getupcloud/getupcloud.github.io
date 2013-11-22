@@ -14,14 +14,6 @@ var path = require('path');
 gettext = new Gettext();
 app = express();
 
-// load controllers
-controllers = {
-	main: require('./controllers/main')
-};
-
-// load routes
-var routes = require('./routes');
-
 // assign the mustache engine to .html files
 app.engine('handlebars', cons.handlebars);
 
@@ -41,8 +33,6 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 
-app.use(app.router);
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 // consolidate options
@@ -58,7 +48,8 @@ cons.partials({
 	header: 'partials/header',
 	footer: 'partials/footer',
 	signup: 'partials/signup',
-	contact: 'partials/contact'
+	contact: 'partials/contact',
+	technology: 'partials/technologies/index'
 });
 
 
