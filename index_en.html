@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-us"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en-us"> <!--<![endif]-->
-    <head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt"> <!--<![endif]-->
+
+        <head>
         <meta charset="utf-8">
 
         <title>Getup Cloud | Scalable Cloud Application | Grow in the cloud</title>
@@ -17,26 +18,30 @@
         <meta property="og:url" content="http://getupcloud.com">
         <meta property="og:image" content="http://getupcloud.com/static/img/fb-big.png">
         <meta property="og:description" name="description" content="Getup is a scalable cloud application platform. An easy and fast way to build and deploy web apps. You only have to worry about coding your app - we take care of everything else.">
-        <meta property="gc:build_id" content="build-20131120015833">
+        <meta property="gc:build_id" content="">
 
-        <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico"> 
+        <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico">
 
-        <script>var U = { register: 'https://broker.getupcloud.com/getup/account/signup/', language: 'en-us', debug: 0 };</script>
-        <script src="static/js/language.js"></script>
+        <script>var U = { register: '', language: 'pt', debug: true };</script>
+
+        <script src="/javascripts/language.js"></script>
 
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="static/css/normalize.min.css">
-        <link rel="stylesheet" href="static/css/main.css">
 
-        <script src="static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link rel="stylesheet" href="/stylesheets/normalize.min.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+
+        <script src="/javascripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
         <!--Start of Zopim Live Chat Script-->
         <script type="text/javascript"> window.$zopim || (function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8'); $.src='//v2.zopim.com/?1aNSsavBi1e9Gs5y9Olsh4R2HJYYQFNP';z.t=+new Date; $.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
         </script>
         <!--End of Zopim Live Chat Script-->        
     </head>
-    <body class="preloader">
-        <!--[if lt IE 7]>
+
+    <body class="preloader article-links">
+
+                <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
@@ -48,11 +53,12 @@
                 <a class="menu-control" href="javascript:;">Menu</a>
                 <nav>
                     <ul>
-                        <li><a href="#how-it-works" data-event="Menu,Link,How it works" data-article="how-it-works" class="article">How it Works</a></li>
-                        <li><a href="#pricing" data-event="Menu,Link,Pricing" data-article="pricing" class="article">Pricing</a></li>
-                        <li><a href="#get-in-touch" data-event="Menu,Link,Get in touch" data-article="get-in-touch" class="article">Get in Touch</a></li>
-                        <li class="secondary"><a class="black" data-event="Menu,External link,Support" href="https://getup.zendesk.com/home/">Support</a></li>
-                        <li class="secondary separator"><a class="black" data-event="Menu,External link,Blog" href="blog/">Blog</a></li>
+                        <li><a href="/#/how-it-works" data-event="Menu,Link,How it works" data-article="how-it-works" class="article">How it Works</a></li>
+                        <li><a href="/#/pricing" data-event="Menu,Link,Pricing" data-article="pricing" class="article">Pricing</a></li>
+                        <li><a href="/technology" data-event="Menu,Link,Technology">Technology</a></li>
+                        <li><a class="black" data-event="Menu,External link,Support" href="https://getup.zendesk.com/home/">Support</a></li>
+                        <li><a class="black" data-event="Menu,External link,Blog" href="blog/">Blog</a></li>
+                        <li><a href="/#/get-in-touch" data-event="Menu,Link,Get in touch" data-article="get-in-touch" class="article">Get in Touch</a></li>
                     </ul>
                     <ul class="side">
                         <li><a class="button orange flat" target="_blank" data-event="Menu,Button,Signin" href="https://broker.getupcloud.com/console/signin">Log In</a></li>
@@ -61,8 +67,8 @@
                 </nav>
 
                 <aside>
-                    <a href="index.html" data-event="Language,Link,Portuguese" data-lang="pt-br" class="pt">Português</a>
-                    <a href="index_en.html" data-event="Language,Link,English" data-lang="en-us" class="black en">English</a>
+                    <a href="/" data-event="Language,Link,Portuguese" data-lang="pt-br" class="pt">Português</a>
+                    <a href="/index_en.html" data-event="Language,Link,English" data-lang="en-us" class="black en">English</a>
                 </aside>
             </header>
         </div>
@@ -99,7 +105,7 @@
                     <section class="item-03">
                         <div class="wrapper">
                             <h2>Auto scale</h2>
-                            <p>Don't get caught by traffic spikes.</p>
+                            <p>Don&#x27;t get caught by traffic spikes.</p>
                             <p>Deploy and scale to millions of users.</p>
 
                             <div class="actions">
@@ -113,7 +119,7 @@
                 <article id="how-it-works" class="wrapper pageview" data-pageview="how">
                     <header>
                         <h2>Deploy your application in minutes</h2>
-                        <p>Create and deploy web applications without the cost and complexity of buying and managing servers. It's faster and cheaper than create AWS instances.</p>
+                        <p>Create and deploy web applications without the cost and complexity of buying and managing servers. It&#x27;s faster and cheaper than create AWS instances.</p>
                     </header>
 
                     <div class="centralized">
@@ -134,7 +140,7 @@
                         </section><!-- .create -->
                         <section>
                             <h3 class="deploy">Deploy</h3>
-                            <p>Just type 'git push' and voil&aacute;! Your application is up and running!</p>
+                            <p>Just type &#x27;git push&#x27; and voil&amp;aacute;! Your application is up and running!</p>
 
                             <a href="javascript:;" data-event="How it works,See More,Deploy" data-text="Less">See More</a>
 
@@ -146,7 +152,7 @@
                         </section><!-- .deploy -->
                         <section>
                             <h3 class="scale">Scale</h3>
-                            <p>With auto-scale you don't need to worry about growth, don't get caught by traffic spikes.</p>
+                            <p>With auto-scale you don&#x27;t need to worry about growth, don&#x27;t get caught by traffic spikes.</p>
 
                             <a href="javascript:;" data-event="How it works,See More,Scale" data-text="Less">See More</a>
 
@@ -155,10 +161,10 @@
                                 <dd>New gears to handle traffic spikes. Scale to millions of users.</dd>
 
                                 <dt>Pay as you go</dt>
-                                <dd>Pay by hour usage and just for the time that each gear was active. It's more efficient and versatile than traditional computing.</dd>
+                                <dd>Pay by hour usage and just for the time that each gear was active. It&#x27;s more efficient and versatile than traditional computing.</dd>
 
-                                <dt>That's it.</dt>
-                                <dd class="beer">Just lean back and enjoy the ride. And don't forget the liquid gold!</dd>
+                                <dt>That&#x27;s it.</dt>
+                                <dd class="beer">Just lean back and enjoy the ride. And don&#x27;t forget the liquid gold!</dd>
                             </dl>
                         </section><!-- .scale -->
                     </div>
@@ -200,7 +206,7 @@
                                 </dl>
 
                                 <dl class="blue round">
-                                    <dt>GEAR <i class="tooltip" data-text='Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.'>?</i></dt>
+                                    <dt>GEAR <i class="tooltip" data-text="Gear is a resource constrained container which allows users to run their application. It&#x27;s like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.">?</i></dt>
                                     <dd>US$ 0,074/hour</dd>
 
                                     <dt class="no-border">Monthly cost</dt>
@@ -214,7 +220,7 @@
                 <div class="background gray">
                     <article id="compare" class="wrapper pageview" data-pageview="pricing/gear">
                         <section>
-                            <table class="round" alt="Other hosting companies">
+                            <table class="round" alt="$(gettext 'Other hosting companies')">
                                 <thead>
                                     <tr>
                                         <th>&nbsp;</th>
@@ -226,7 +232,7 @@
                                 <tbody>
                                     <tr>
                                         <td>Resource</td>
-                                        <td>1 gear <i class="tooltip" data-text="Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.">?</i></td>
+                                        <td>1 gear <i class="tooltip" data-text="Gear is a resource constrained container which allows users to run their application. It&#x27;s like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.">?</i></td>
                                         <td>Cloud Server 512Mb RAM</td>
                                         <td>1 hosting</td>
                                     </tr>
@@ -238,7 +244,7 @@
                                     </tr>
                                     <tr class="light-blue">
                                         <td><small>Monthly fee</small></td>
-                                        <td><strong>US$ ~54,23</strong> <i class="tooltip" data-text="730h monthly.">?</i></td>
+                                        <td><strong>US$ ~54,23</strong> <i class="tooltip" data-text="$(gettext '730h monthly.')">?</i></td>
                                         <td><strong>US$ ~17</strong></td>
                                         <td><strong>US$ ~20</strong></td>
                                     </tr>
@@ -269,7 +275,7 @@
                                     <tr class="light-blue">
                                         <td><small>Additional charge</small></td>
                                         <td>2 gears x 6 hours x US$ 0.074 =  <strong>US$ 0.89</strong> </td>
-                                        <td>24hs x US$ ~0.06 (1GB) = <strong>US$ 1.44</strong> <i class="tooltip" data-text="Trying minimize the user impact you did upgrade one day before and returned on day after the peak.">?</i></td>
+                                        <td>24hs x US$ ~0.06 (1GB) = <strong>US$ 1.44</strong> <i class="tooltip" data-text="$(gettext 'Trying minimize the user impact you did upgrade one day before and returned on day after the peak.')">?</i></td>
                                         <td>-</td>
                                     </tr>
                                 </tbody>
@@ -278,7 +284,7 @@
                                         <td>Total</td>
                                         <td><strong>US$ 56.38</strong> <b>Peace of mind</b> You just get the traffic peaks on analytics.</td>
                                         <td><strong>US$ 105.10</strong> <b>Hard Work.</b> You had to reboot your server twice.</td>
-                                        <td><strong>US$ 20</strong> <b>Don't be cheap!</b> Your site went down and you lost pageviews.</td>
+                                        <td><strong>US$ 20</strong> <b>Don&#x27;t be cheap!</b> Your site went down and you lost pageviews.</td>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -286,23 +292,23 @@
                     </article> <!-- #pricing -->
                 </div>
 
-                <article id="sign-up" class="wrapper pageview" data-pageview="signup">
+                				<article id="sign-up" class="wrapper pageview" data-pageview="signup">
                     <header>
-                        <h2>You get 750 hours to verify Getup is the s#&@!</h2>
+                        <h2>You get 750 hours to verify Getup is the s#&amp;@!</h2>
                         <a class="button orange article btn-large" data-event="Signup,Button,Free trial" href="#sign-up" data-article="sign-up">Free Trial</a>
                     </header>
                     <section>
-                        <form method="post" action="https://broker.getupcloud.com/getup/account/signup/">
-                            <input type="hidden" name="lang" id="language" value="en-us">
+                        <form method="post" action="">
+                            <input type="hidden" name="lang" id="language" value="pt">
                             <fieldset>
                                 <legend>Create Account</legend>
 
-                                <p class="no-margin">You get 750 hours to verify Getup is the s#&@!</p>
+                                <p class="no-margin">You get 750 hours to verify Getup is the s#&amp;@!</p>
                                 <p>If you have a promo code, use it!</p>
 
                                 <div class="group">
-                                    <input type="text" tabindex="1" placeholder="What's your name?" name="name" />
-                                    <input type="text" tabindex="2" placeholder="What's your e-mail?" name="email" />
+                                    <input type="text" tabindex="1" placeholder="What&#x27;s your name?" name="name" />
+                                    <input type="text" tabindex="2" placeholder="What&#x27;s your e-mail?" name="email" />
                                 </div>
 
                                 <div class="group">
@@ -334,10 +340,11 @@
                         </p>       
                     </section><!-- . -->
                 </article> <!-- #sign-up -->      
-                <div class="background orange">
+
+                                <div class="background orange">
                     <article id="get-in-touch" class="wrapper pageview" data-pageview="get_in_touch">
                         <header>
-                            <h2>Don't be shy! Let's talk about clouds.</h2>
+                            <h2>Don&#x27;t be shy! Let&#x27;s talk about clouds.</h2>
                         </header>
                         <section>
                             <ul>
@@ -362,11 +369,12 @@
                             </div>
                         </section><!-- . -->
                     </article>
-                </div> <!-- #pricing -->
+                </div> <!-- #get-in-touch -->
+
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
-        <div class="footer-container">
+                <div class="footer-container">
             <footer>
                 <div class="wrapper">
                     <h3>Infrastructure is based on:</h3>
@@ -389,9 +397,9 @@
                 </nav>
             </footer>
         </div>
-
+        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="/javascripts/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script>
             var _gaq=[['_setAccount','UA-39510729-1']];
@@ -400,6 +408,6 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
 
-        <script src="static/js/main.js"></script>
+        <script src="/javascripts/main.js"></script>        
     </body>
 </html>

@@ -100,6 +100,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 				// Menu
 				'Menu,Link,How it works' 	: 'Menu,Link,Como funciona',
 				'Menu,Link,Pricing'		 	: 'Menu,Link,Preço',
+				'Menu,Link,Technology'	    : 'Menu,Link,Tecnologia',
 				'Menu,Link,Get in touch'	: 'Menu,Link,Contato',
 				'Menu,External link,Support': 'Menu,Link externo,Suporte',
 				'Menu,External link,Blog'	: 'Menu,Link externo,Blog',
@@ -228,7 +229,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Directories configuration
 	 */
 	Getup.preload.config.directories = {
-		'image': '/static/img/'
+		'image': '/images/'
 	};
 
 	/**
@@ -272,6 +273,18 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Initialization
 	 */
 	Getup.preload.init = function(callback) {
+
+		/**
+		 * Preload
+		 */
+		if (!Getup.elements.body.is('.preloader')) {
+			Getup.elements.main.show();
+			Getup.elements.footer.show();
+			Getup.elements.header.css('top', 0);
+
+			return callback();
+		}
+
 		/**
 		 * Files to donwload on page load (general or mobile)
 		 */
@@ -464,6 +477,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Element: section content of sign up
 	 */
 	Getup.elements.signup.actions = Getup.elements.signup.section.find('.actions');
+
+	/**
+	 * Elements
+	 * Element: technologies nav
+	 */
+	Getup.elements.technologies_nav = $('#technologies-nav');
 
 	/**
 	 * Elements
@@ -1533,9 +1552,10 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	var scroll = function() {
 		clearTimeout(Getup.track.scroll_timer);
 
+		var top = Getup.elements.window.scrollTop();
+
 		Getup.track.scroll_timer = setTimeout(function() {
 
-			var top = Getup.elements.window.scrollTop();
 			var half = Getup.elements.window.height() / 2;
 			var next = null;
 
@@ -1552,6 +1572,18 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 				Getup.Analytics.track_pageview(next);
 			}
 		}, 100);
+
+		// Technologies Menu
+		if (!is_mobile) {
+
+			// if (top >= 280) {
+			// 	Getup.elements.technologies_nav.css({ position: 'fixed', width: 'auto', top: 145});	
+			// } else {
+			// 	Getup.elements.technologies_nav.css({ position: 'static', width: false, top: 0 });	
+			// }
+			
+		}
+		
 	};
 
 	/**
@@ -1642,17 +1674,19 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * General events
 	 * Event: all articles links
 	 */
-	Getup.elements.body.find('.article').click(function() {
-		var article = $(this).data('article');
-		var module = Getup.articles[article.replace(/\-/g, '_')];
+	if (Getup.elements.body.is('.article-links')) {
+		Getup.elements.body.find('.article').click(function() {
+			var article = $(this).data('article');
+			var module = Getup.articles[article.replace(/\-/g, '_')];
 
-		if (module && module.link) {
-			location.href = "#/" + article;
-			module.link();	
-		}
+			if (module && module.link) {
+				location.href = "#/" + article;
+				module.link();	
+			}
 
-		return false;
-	});
+			return false;
+		});
+	}
 	//Getup.elements.signup.call.click(Getup.articles.sign_up.show);
 
 	/**
