@@ -37,7 +37,7 @@ if git tag|grep -q "^$BUILD_ID$"; then
 fi
 
 if [ "$DONT_BUILD" == 0 ]; then
-	./build.sh
+	sh ./build.sh
 fi
 
 set -xu
