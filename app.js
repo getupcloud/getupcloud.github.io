@@ -48,8 +48,7 @@ cons.partials({
 	header: 'partials/header',
 	footer: 'partials/footer',
 	signup: 'partials/signup',
-	contact: 'partials/contact',
-	technology: 'partials/technologies/index'
+	contact: 'partials/contact'
 });
 
 

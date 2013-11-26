@@ -462,6 +462,7 @@ button { outline: none; }
 #technologies section article { padding: 0; }
 
 #technologies nav h3 { border-left: 2px solid #ee473a; font-size: 18px; font-weight: 300; padding: 0 10px 0 8px; }
+#technologies nav h3 a { color: #000; }
 
 #technologies nav ul { margin-top: 20px; }
 #technologies nav li { border-bottom: 1px solid #9aebe8; height: 34px; line-height: 34px; }
@@ -472,7 +473,8 @@ button { outline: none; }
 #technologies section h4 { border-left: 2px solid #ee473a; font-size: 18px; font-weight: 300; margin: 40px 0 20px; padding: 0 10px 0 8px; }
 #technologies section h5 { font-size: 20px; margin: 40px 0 0; font-weight: 300; }
 
-#technologies section code { background-color: #f4f4f4; border: 1px solid #d2d2d2; color: #666; display: block; font-size: 11px; margin: 10px 0; padding: 10px; }
+#technologies section pre { background-color: #f4f4f4; border: 1px solid #d2d2d2; color: #666; display: block; font-size: 10px; margin: 10px 0; padding: 10px; }
+#technologies section p a { color: #333; text-decoration: underline; }
 
 /* Footer */
 

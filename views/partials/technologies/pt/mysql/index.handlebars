@@ -1,0 +1,27 @@
+<h4>MySQL</h4>
+
+<p>MySQL é o mais popular banco de dados relacional open source.</p>
+
+<h5>Simplificando</h5>
+<p>Fazer o deploy de uma aplicação PHP com banco de dados MySQL a um comando de distância:</p>
+<pre>$ rhc app-create App php-5.5 mysql-5.1</pre>
+
+<p>O comando acima irá criar seu gear (servidor), instalar e configurar o PHP, MySQL e um repositório git no servidor. </p>
+<p>Acesse a aplicação no endereço http://App-namespace.getup.io - acesso HTTPS também suportado e todas as aplicações possuem certificado SSL válido.</p>
+
+<h5>Ferramentas</h5>
+<p>Para administração via PHPMyAdmin adicione o cartridge:</p>
+<pre>$ rhc cartridge add phpmyadmin -a App</pre>
+<p>Acesse na URL <a href="https://App-namespace.getup.io/phpmyadmin" target="_blank">https://App-namespace.getup.io/phpmyadmin</a></p>
+
+<p>Ou se preferir administrar o banco pelo seu cliente favorito, faça um port-forward e acesse o banco via túnel SSH com total segurança.</p>
+<pre>$ rhc port-foward -a App</pre>
+
+<h5>Explore mais</h5>
+<p>Aprenda a usar o RHC - <a href="https://getup.zendesk.com/entries/26727613" target="_blank">Guia rápido do RHC</a>
+<br>Deploy com Integração Contínua: <a href="http://getupcloud.com/blog/integracao-continua-com-jenkins" target="_blank">Integração Contínua com Jenkins</a>
+<br>Saiba mais sobre as <a href="https://getup.zendesk.com/entries/27591228" target="_blank">variáveis de ambiente</a></p>
+
+<h5>Investigue, solucione</h5>
+<p><a href="#">Como fazer acesso SSH no gear?</a>
+<br><a href="http://getupcloud.com/blog/dica-logs-da-aplicacao" target="_blank">Como ter acesso aos logs?</a></p>

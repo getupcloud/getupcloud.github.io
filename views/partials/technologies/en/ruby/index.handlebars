@@ -1,0 +1,24 @@
+<h4>Ruby 1.8 / 1.9</h4>
+
+<p>{{ _ "Ruby is a dynamic, interpreted, open source programming language with a focus on simplicity and productivity. Here you can work with frameworks like Sinatra, and Rails." }}</p>
+
+<p>{{ _ "With Getup you can easily deploy and run PHP applications using your favorite framework and databases. Auto-Scale to millions of users without breaking a sweat about server setup and administration. Forget about servers and focus on the code." }}</p>
+
+<h5>{{ _ "Simplify the lifecycle" }}</h5>
+<p>{{ _ "Deploying Ruby application with MySQL is as easy as it can be:" }}</p>
+<pre>$ rhc app-create App ruby-1.9 mysql-5.1</pre>
+
+<p>{{ _ "The command will create your gear (server), install and configure Ruby, MySQL and git repository on the server. Access your application on the web at http://App-namespace.getup.io - HTTPS works just fine as well, and all applications have a SSL certificate." }}</p>
+
+<h5>{{ _ "Auto scale" }}</h5>
+<p>{{ _ "What about scale? Don't worry about it, we are specialists in high traffic, simple add the -s parameter when creating your application and voilá - the platform will scale your application." }}</p>
+<pre>$ rhc app-create App ruby-1.9 -s</pre>
+
+<p>{{ _ "The scalability is based on simultaneous connections. The platform will add new gears every time your application receives a traffic spike, automatically. " }}</p>
+
+<h5>{{ _ "Frameworks, databases and other tools" }}</h5>
+<p>{{ _ "Work with frameworks like Sinatra and Rails" }}</p>
+<pre>$ rhc app create rails ruby-1.9 mysql-5.1 --from-code=https://github.com/getupcloud/rails-example.git</pre>
+
+<p>{{ _ "Work with database like MySQL, PostgreSQL or MongoDB through cartridges" }}</p>
+<pre>$ rhc cartridge add mysql-5.1 -a App</pre>

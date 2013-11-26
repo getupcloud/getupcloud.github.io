@@ -1,30 +1,66 @@
 
 /*
- * GET home page.
+ * GET home page (PT).
  */
 
-app.get('/', controllers.main.index);
+app.get('/', function(req, res) {
+	gettext.textdomain('pt');
+	
+	controllers.main.index(req, res);
+});
+
+app.get('/index.html', function(req, res) {
+	gettext.textdomain('pt');
+	
+	controllers.main.index(req, res);
+});
+
+/*
+ * GET home page (EN).
+ */
+
+app.get('/index_en.html', function(req, res) {
+	gettext.textdomain('en');
+	
+	controllers.main.index(req, res);
+});
 
 /*
  * GET technology page (EN).
  */
 
-app.get('/technology', controllers.main.technologies);
+app.get('/technology', function(req, res) {
+	gettext.textdomain('en');
+
+	controllers.main.technologies(req, res);
+});
 
 /*
- * GET tecnologia page (EN).
+ * GET tecnologia page (PT).
  */
 
-app.get('/tecnologia', controllers.main.technologies);
+app.get('/tecnologia', function(req, res) {
+	gettext.textdomain('pt');
+
+	controllers.main.technologies(req, res);
+});
 
 /*
  * GET technology/:technology page (EN).
  */
 
-app.get('/technology/:technology', controllers.main.technologies);
+app.get('/technology/:technology', function(req, res) {
+	gettext.textdomain('en');
+	
+	controllers.main.technologies(req, res);
+});
 
 /*
  * GET tecnologia/:technology page (PT).
  */
 
-app.get('/tecnologia/:technology', controllers.main.technologies);
+app.get('/tecnologia/:technology', function(req, res) {
+	gettext.textdomain('pt');
+	
+	controllers.main.technologies(req, res);
+});

@@ -465,3 +465,18 @@ msgstr "Cadastre uma senha de acesso:"
 
 msgid "Promo Code?"
 msgstr "Código promocional?"
+
+msgid "Technology"
+msgstr "Tecnologia"
+
+msgid "technology"
+msgstr "tecnologia"
+
+msgid "Technologies"
+msgstr "Tecnologias suportadas na Getup Cloud"
+
+msgid "We say we’re polyglots because we offer support to a wide list of programming languages and services deployed through a cartridge. Cartridges can be web frameworks, databases, monitoring services or connectors to external backends."
+msgstr "Gostamos de dizer que somos poliglotas, pois oferecemos suporte a diversas linguagens e serviços através de um sistema chamado de cartridges, ou cartuchos. Os cartridges podem ser frameworks, bancos de dados, serviços de monitoramento ou qualquer outro código que sua aplicação use."
+
+msgid "Delivering services and frameworks through a cartridge offers developers and system administrators a way to get more productivity and standardization. Focus on your code, that’s the message!"
+msgstr "A entrega de componentes através de cartridges oferece aos desenvolvedores e administradores de sistema agilidade e padronização. Foque no código, esse é o recado!"
