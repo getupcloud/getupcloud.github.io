@@ -4,11 +4,10 @@
 
 var fs = require('fs');
 
-
 module.exports = function(app) { 
 
   return {
-    render: function(name, destination, options){
+    render: function(name, destination, options, callback){
       var opts = {}
         , engines = app.engines
         , view;
@@ -35,6 +34,8 @@ module.exports = function(app) {
       try {
         view.render(opts, function(req, content) {
           fs.writeFileSync(destination, content);
+
+          callback();
         });
       } catch (err) {
         console.log(err);

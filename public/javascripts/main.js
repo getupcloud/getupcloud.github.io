@@ -480,6 +480,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 	/**
 	 * Elements
+	 * Element: technologies nav
+	 */
+	Getup.elements.technologies_nav = $('#technologies-nav');
+
+	/**
+	 * Elements
 	 * Element: footer container
 	 */
 	Getup.elements.footer = $('.footer-container');
@@ -1546,9 +1552,10 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	var scroll = function() {
 		clearTimeout(Getup.track.scroll_timer);
 
+		var top = Getup.elements.window.scrollTop();
+
 		Getup.track.scroll_timer = setTimeout(function() {
 
-			var top = Getup.elements.window.scrollTop();
 			var half = Getup.elements.window.height() / 2;
 			var next = null;
 
@@ -1565,6 +1572,18 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 				Getup.Analytics.track_pageview(next);
 			}
 		}, 100);
+
+		// Technologies Menu
+		if (!is_mobile) {
+
+			// if (top >= 280) {
+			// 	Getup.elements.technologies_nav.css({ position: 'fixed', width: 'auto', top: 145});	
+			// } else {
+			// 	Getup.elements.technologies_nav.css({ position: 'static', width: false, top: 0 });	
+			// }
+			
+		}
+		
 	};
 
 	/**

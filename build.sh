@@ -1,10 +1,6 @@
 #!/bin/bash
 set -e
 
-usage()
-{
-}
-
 echo
 echo Generating build...
 
