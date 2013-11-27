@@ -472,6 +472,9 @@ msgstr "Tecnologia"
 msgid "technology"
 msgstr "tecnologia"
 
+msgid "Technologies "
+msgstr "Tecnologias"
+
 msgid "Technologies"
 msgstr "Tecnologias suportadas na Getup Cloud"
 
