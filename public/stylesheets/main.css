@@ -222,6 +222,7 @@ button { outline: none; }
 .header-container { background: #fa4f48; height: auto; position: fixed; top: 0; width: 100%; z-index: 4; }
 
 .header-container h1 { background-position: -1px 0px; cursor: pointer; height: 34px; margin: 20px 0 0; position: relative; width: 100px; z-index: 7; }
+.header-container a.logo { display: block; }
 
 .header-container a { color: #fff; font-weight: 300; }
 .header-container a:hover { color: #d0322a; }
