@@ -70,7 +70,7 @@ msgstr "Publique sua aplicação em minutos"
 
 msgid ""
 "Create and deploy web applications without the cost and complexity of buying "
-"and managing servers. It's faster and cheaper than create AWS instances."
+"and managing servers. It's faster and cheaper than creating AWS instances."
 msgstr ""
 "Crie e publique aplicações web sem o custo e a complexidade de comprar e "
 "administrar servidores. É mais rápido e barato que subir servidores na "
