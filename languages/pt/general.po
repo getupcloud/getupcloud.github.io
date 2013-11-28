@@ -484,5 +484,5 @@ msgstr "Gostamos de dizer que somos poliglotas, pois oferecemos suporte a divers
 msgid "Delivering services and frameworks through a cartridge offers developers and system administrators a way to get more productivity and standardization. Focus on your code, that’s the message!"
 msgstr "A entrega de componentes através de cartridges oferece aos desenvolvedores e administradores de sistema agilidade e padronização. Foque no código, esse é o recado!"
 
-msgid "index_en.html"
-msgstr ""
+msgid "/index_en.html/"
+msgstr "/"
