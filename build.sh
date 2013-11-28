@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-echo
-echo Updating npm
-npm update
+#echo
+#echo Updating npm
+#npm update
 
 echo
 echo Generating build...

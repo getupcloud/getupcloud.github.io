@@ -39,7 +39,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 cons.options({
 	path: app.get('path'),
 	language: app.get('language'),
-	debug: app.get('debug')
+	debug: app.get('debug'),
+	register: app.get('register'),
+	build: new Date().getTime() + 'N'
 });
 
 // consolidade partials
