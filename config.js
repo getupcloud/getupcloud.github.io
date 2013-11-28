@@ -15,7 +15,7 @@ app.set('path', 	'/');
 /**
  * Getup register path
  */
-app.set('register', '/');
+app.set('register', 'https://broker.getupcloud.com/getup/account/signup/');
 
 /**
  * Default language
