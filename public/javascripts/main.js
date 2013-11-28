@@ -1691,6 +1691,19 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 			return false;
 		});
+	} else {
+		Getup.elements.body.find('.all-article').click(function() {
+			var article = $(this).data('article');
+
+			var module = Getup.articles[article.replace(/\-/g, '_')];
+
+			if (module && module.link) {
+				location.href = "#/" + article;
+				module.link();	
+			}
+
+			return false;
+		});	
 	}
 	//Getup.elements.signup.call.click(Getup.articles.sign_up.show);
 
