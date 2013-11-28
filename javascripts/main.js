@@ -1677,6 +1677,11 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	if (Getup.elements.body.is('.article-links')) {
 		Getup.elements.body.find('.article').click(function() {
 			var article = $(this).data('article');
+
+			if (article == 'home' && location.pathname != '/' && location.pathname != '/index.html' && location.pathname != '/index_en.html') {
+				location.href = (U.language.slice(0, 2) == 'pt' ? '/index.html' : '/index_en.html');
+			}
+
 			var module = Getup.articles[article.replace(/\-/g, '_')];
 
 			if (module && module.link) {
