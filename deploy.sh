@@ -71,3 +71,6 @@ git push origin "$BUILD_ID"
 
 echo You are now on branch:
 git checkout source-node
+
+# Install npm
+npm install
