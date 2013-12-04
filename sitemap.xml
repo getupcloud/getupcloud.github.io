@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>http://getupcloud.com/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/index_en.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/blog/</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Technology -->
+  <url>
+    <loc>http://getupcloud.com/technology/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/tecnologia/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Technology PHP -->
+  <url>
+    <loc>http://getupcloud.com/technology/php/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/tecnologia/php/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Technology Ruby -->
+  <url>
+    <loc>http://getupcloud.com/technology/ruby/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/tecnologia/ruby/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Technology Nodejs -->
+  <url>
+    <loc>http://getupcloud.com/technology/nodejs/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/tecnologia/nodejs/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Technology Python -->
+  <url>
+    <loc>http://getupcloud.com/technology/python/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/tecnologia/python/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Technology Tomcat -->
+  <url>
+    <loc>http://getupcloud.com/technology/tomcat/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/tecnologia/tomcat/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Technology Perl -->
+  <url>
+    <loc>http://getupcloud.com/technology/perl/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/tecnologia/perl/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Technology MySQL -->
+  <url>
+    <loc>http://getupcloud.com/technology/mysql/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/tecnologia/mysql/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Technology Postgresql -->
+  <url>
+    <loc>http://getupcloud.com/technology/postgresql/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/tecnologia/postgresql/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Technology MongoDB -->
+  <url>
+    <loc>http://getupcloud.com/technology/mongodb/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/tecnologia/mongodb/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Terms -->
+
+  <url>
+    <loc>http://getupcloud.com/termos-de-uso.html</loc>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/politica-de-privacidade.html</loc>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/politica-de-utilizacao-aceitavel.html</loc>
+  </url>
+  <url>
+    <loc>http://getupcloud.com/politica-de-suporte.html</loc>
+  </url>
+</urlset>
