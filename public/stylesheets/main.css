@@ -260,7 +260,7 @@ button { outline: none; }
 
 /* Home */
 
-#home { }
+#home { overflow: hidden; }
 
 .carousel { height: 320px; padding: 0; position: relative; width: 100%; }
 
