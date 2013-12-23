@@ -23,6 +23,7 @@ app.set('view engine', 'handlebars');
 
 // all environments config
 require('./config');
+require('./pages');
 
 // general
 app.use(express.favicon());
