@@ -2,7 +2,7 @@
  * Pages configuration
  */
 
-globals.pages = [
+global.pages = [
 	//EN
 	{ language: 'en-us', route: '/',                      view: 'index',      destination: '/index_en.html',                                                            urls: { en: '/index_en.html',         pt: '/' }, title: 'Getup Cloud | Scalable Cloud Application | Grow in the cloud', keywords: 'Cloud, getup, getup cloud, host sites', description: 'Getup is a scalable cloud application plataform' },
 	{ language: 'en-us', route: '/technology',            view: 'technology', destination: '/technology/index.html',            partial: 'technologies/en/',            urls: { en: '/technology',            pt: '/tecnologia' }, title: 'Getup Cloud | Scalable Cloud Application | Grow in the cloud', keywords: 'Cloud, getup, getup cloud, host sites', description: 'Getup is a scalable cloud application plataform' },
