@@ -57,6 +57,7 @@ rm -rf .build
 mv build .build
 rm -rf *  # dont remove .build
 mv -v .build/* .
+mv -v .build/.htaccess ./.htaccess
 find . -name '*.swp' -exec rm -f {} \;
 rmdir .build
 
