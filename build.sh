@@ -17,4 +17,4 @@ node builder
 echo Copying common files...
 echo
 cp -a public/* build/
-cp public/.htaccess build/.htaccess
+cp -a public/.htaccess build/
