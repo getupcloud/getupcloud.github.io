@@ -20,7 +20,7 @@
         <meta property="og:url" content="http://getupcloud.com">
         <meta property="og:image" content="http://getupcloud.com/images/getup.png">
         <meta property="og:description" name="description" content="Getup é uma plataforma para hospedagem na nuvem. Uma forma fácil e rápida de desenvolver e publicar aplicações web. Você se preocupa com o código - nós cuidamos do resto.">
-        <meta property="gc:build_id" content="1387803378671N">
+        <meta property="gc:build_id" content="1387806338267N">
 
         <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico">
 
@@ -49,7 +49,7 @@
 
         <div class="header-container closed"> <!-- start closed for mobile -->
             <header class="wrapper clearfix">
-                <a href="/" class="article" data-article="home"><h1 class="ir">Getup Cloud</h1></a>
+                <a href="/" class="article" data-article="home"><span class="ir logo">Getup Cloud</span></a>
                 <img src="/images/getup.png" alt="Getup cloud" class="hidden" />
                 
                 <a class="menu-control" href="javascript:;">Menu</a>
@@ -79,13 +79,13 @@
             <div class="main clearfix">
                 <article id="technologies" class="wrapper pageview" data-pageview="technologies">
                     <header>
-                        <h2>Tecnologias suportadas na Getup Cloud</h2>
+                        <p class="h2">Tecnologias suportadas na Getup Cloud</p>
                         <p>Gostamos de dizer que somos poliglotas, pois oferecemos suporte a diversas linguagens e serviços através de um sistema chamado de cartridges, ou cartuchos. Os cartridges podem ser frameworks, bancos de dados, serviços de monitoramento ou qualquer outro código que sua aplicação use.</p>
                         <p>A entrega de componentes através de cartridges oferece aos desenvolvedores e administradores de sistema agilidade e padronização. Foque no código, esse é o recado!</p>
                     </header>
 
                     <nav id="technologies-nav">
-                        <h3><a href="/tecnologia">Tecnologias</a></h3>
+                        <p class="h3"><a href="/tecnologia">Tecnologias</a></p>
 
                         <ul>
                             <li><a href="/tecnologia/php">PHP 5.3 / 5.4 / 5.5</a></li>
@@ -101,41 +101,40 @@
                     </nav>
 
                     <section>
-                    <h4>Python 2.6 / 2.7 / 3.3</h4>
+                    <h1 class="h4">Python 2.6 / 2.7 / 3.3</h1>
 
 <p>Python é uma linguagem de alto nível, largamente utilizada e prega a filosofia de fácil leitura do código. A WSGI define uma interface simples e universal entre o servidor e as aplicações web ou frameworks da linguagem.</p>
 
 <p>Na Getup hospedar uma aplicação Python usando seu framework e banco de dados favorito é muito simples. Escale automático para milhões de usuários sem precisar configurar e administrar servidores. Esqueça servidores e foque no código.</p>
 
-<h5>Simplificando a Hospedagem</h5>
+<h2 class="h5">Simplificando a Hospedagem</h2>
 <p>Fazer o deploy e rodar uma aplicação Python é simples e rápido, esqueça o setup de servidores, instalação de bibliotecas e configuração de frameworks.</p>
 <pre>$ rhc app-create App python-2.7 mysql-5.1</pre>
 
 <p>O comando acima irá criar seu gear (servidor), instalar e configurar o Python, MySQL e um repositório git no servidor. 
 Acesse a aplicação no endereço http://App-namespace.getup.io - acesso HTTPS também suportado e todas as aplicações possuem certificado SSL válido.</p>
 
-<h5>Escalando aplicações</h5>
+<h2 class="h5">Escalando aplicações</h2>
 <p>E como atender milhões de acessos?  Somos especialistas quando o assunto é escalabilidade e alto volume de tráfego, adicione o parâmetro -s ao criar sua aplicação e voilá - escalabilidade automática.</p>
 <pre>$ rhc app-create App python-2.7 -s</pre>
 
 <p>A escalabilidade é baseada na quantidade de acessos. Toda vez que sua aplicação receber um pico de acessos, a plataforma irá criar novos gears para atender a demanda.</p>
 
-<h5>Frameworks, Banco de dados e outras ferramentas</h5>
+<h3 class="h5">Frameworks, Bancos de dados e outras ferramentas</h3>
 <p>Quer rodar Django, Flask, TurboGears ou Web2Py?</p>
 <pre>$ rhc app-create django python-2.7 --from-code=https://github.com/openshift/django-example.git</pre>
 
 <p>Adicione banco de dados como MySQL, PostgreSQL ou MongoDB através dos cartridges</p>
 <pre>$ rhc cartridge add mysql-5.1 -a App</pre>
 
-<h5>Explore mais</h5>
+<h3 class="h5">Explore mais</h3>
 <p>Aprenda a usar o RHC - <a href="http://getupcloud.com/blog/guia-rapido-rhc" target="_blank">Guia rápido do RHC</a>
 <br>Deploy com Integração Contínua: <a href="http://getupcloud.com/blog/integracao-continua-com-jenkins" target="_blank">Integração Contínua com Jenkins</a>
 <br>Saiba mais sobre as <a href="https://getup.zendesk.com/entries/27591228" target="_blank">variáveis de ambiente</a></p>
 
-<h5>Investigue, solucione</h5>
+<h3 class="h5">Investigue, solucione</h3>
 <p><a href="http://getupcloud.com/blog/acessando-aplicacao-ssh">Como fazer acesso SSH no gear?</a>
 <br><a href="http://getupcloud.com/blog/dica-logs-da-aplicacao" target="_blank">Como ter acesso aos logs?</a></p>
-
                     </section>
                 </article> <!-- #technologies -->
 
