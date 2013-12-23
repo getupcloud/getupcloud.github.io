@@ -1201,7 +1201,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
         (name.val().length < 1)                   ? valid = !name.addClass('error') : name.removeClass('error');
         (emailInvalid)                            ? valid = !email.addClass('error') : email.removeClass('error');
-        (password.val().length < 8)               ? valid = !password.addClass('error') : password.removeClass('error');
+        //(password.val().length < 8)               ? valid = !password.addClass('error') : password.removeClass('error');
         (passwordConfirm.val() != password.val()) ? valid = !passwordConfirm.addClass('error')   : passwordConfirm.removeClass('error');
         (!terms.is(':checked'))                   ? valid = !terms.parent().addClass('error') : terms.parent().removeClass('error');
 
