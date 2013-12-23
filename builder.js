@@ -102,6 +102,7 @@ function build () {
     
     options.description = route.description;
     options.keywords = route.keywords;
+    options.title = route.title;
 
 	// Build
 	builder.render(route.view, base + route.destination, options, build);
