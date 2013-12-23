@@ -422,6 +422,7 @@ button { outline: none; }
 #sign-up form .actions label { display: block; }
 
 #sign-up form p { margin: 0 0 10px; }
+#sign-up form p.message { color: #eb3e33; margin-top: 10px; }
 
 #sign-up form input[type=text], #sign-up form input[type=password] { margin: 0 10px 10px 0; width: 205px; }
 #sign-up form label { margin: 0 0 10px 0; font-size: 13px; }
