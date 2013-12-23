@@ -2,7 +2,6 @@
  * Require app
  */
 require('./app');
-require('./pages');
 
 // Requires
 var fs = require('fs');

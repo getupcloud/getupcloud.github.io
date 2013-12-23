@@ -17,10 +17,21 @@ exports.index = function(req, res){
 exports.technologies = function(req, res){
   var technology = req.param('technology');
   var partial = 'views/partials/technologies/' + app.get('language') + '/' + (technology ? (technology + '/') : '') + 'index.handlebars';
+  var options = {};
 
-  var partials = {
+  options.partials = {
   	technology: fs.readFileSync(__dirname + '/../' +  partial, 'utf8')
   };
+  
+/*  var route = pages
+  options.pt_url = route.urls.pt;
+  options.en_url = route.urls.en;
+  
+  options.language = route.language;
+  
+  options.description = route.description;
+  options.keywords = route.keywords;
+  options.title = route.title;*/
 
-  res.render('technology', { partials: partials });
+  res.render('technology', options);
 };

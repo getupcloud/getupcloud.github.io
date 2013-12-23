@@ -95,18 +95,23 @@ body.preloader .footer-container { display: none; }
 
 a { text-decoration: none; }
 
-h2 { color: #eb3e33; font-size: 24px; }
-h3 { color: #2d2d2d; font-size: 16px; }
+.h2, h2 { color: #eb3e33; font-size: 24px; }
+.h3, h3 { color: #2d2d2d; font-size: 16px; }
 
+.h2,
+.h3,
+.h4,
+.h5,
 h2,
 h3,
 h4,
 h5 { font-weight: 300; }
 
+span.logo { display: block; }
 
 dl, p { font-size: 12px; }
 
-h2, h3 { line-height: 1.1; }
+.h2, h2, .h3, h3 { line-height: 1.1; }
 h2, h3, p { margin: 0; }
 
 nav ul { margin: 0; padding: 0; }
@@ -221,7 +226,8 @@ button { outline: none; }
 
 .header-container { background: #fa4f48; height: auto; position: fixed; top: 0; width: 100%; z-index: 4; }
 
-.header-container h1 { background-position: -1px 0px; cursor: pointer; height: 34px; margin: 20px 0 0; position: relative; width: 100px; z-index: 7; }
+.header-container h1,
+.header-container span.logo { background-position: -1px 0px; cursor: pointer; height: 34px; margin: 20px 0 0; position: relative; width: 100px; z-index: 7; }
 .header-container a.logo { display: block; }
 
 .header-container a { color: #fff; font-weight: 300; }
@@ -455,15 +461,15 @@ button { outline: none; }
 
 #technologies header { margin-bottom: 40px; }
 
-#technologies header h2 { margin: 0 0 20px; }
 #technologies header p { margin: 20px 0 0; }
+#technologies header .h2 { margin: 0 0 20px; }
 
 #technologies nav { float: left; width: 100%; }
 #technologies section { float: right; width: 100%; }
 #technologies section article { padding: 0; }
 
-#technologies nav h3 { border-left: 2px solid #ee473a; font-size: 18px; font-weight: 300; padding: 0 10px 0 8px; }
-#technologies nav h3 a { color: #000; }
+#technologies nav .h3 { border-left: 2px solid #ee473a; font-size: 18px; font-weight: 300; margin: 0; padding: 0 10px 0 8px; }
+#technologies nav .h3 a { color: #000; }
 
 #technologies nav ul { margin-top: 20px; }
 #technologies nav li { border-bottom: 1px solid #9aebe8; height: 34px; line-height: 34px; }
@@ -471,8 +477,8 @@ button { outline: none; }
 #technologies nav li a { color: #666; font-size: 12px; padding: 0 10px; font-weight: 300; }
 #technologies nav li a.active { color: #eb3e33; }
 
-#technologies section h4 { border-left: 2px solid #ee473a; font-size: 18px; font-weight: 300; margin: 40px 0 20px; padding: 0 10px 0 8px; }
-#technologies section h5 { font-size: 20px; margin: 40px 0 0; font-weight: 300; }
+#technologies section .h4 { border-left: 2px solid #ee473a; font-size: 18px; font-weight: 300; margin: 40px 0 20px; padding: 0 10px 0 8px; }
+#technologies section .h5 { color: #666; font-size: 20px; margin: 40px 0 0; font-weight: 300; }
 
 #technologies section pre { background-color: #f4f4f4; border: 1px solid #d2d2d2; color: #666; display: block; font-size: 12px; margin: 10px 0; padding: 10px; }
 #technologies section p a { color: #333; text-decoration: underline; }
@@ -543,14 +549,15 @@ i.tooltip { display: none; }
     body.preloader .main-container,
     body.preloader .footer-container { display: none!important; }
 
-    h2 { font-size: 40px; }
-    h3 { font-size: 18px; }
+    .h2, h2 { font-size: 40px; }
+    .h3, h3 { font-size: 18px; }
     dl, p { font-size: 15px; }
 
     .header-container,
     .header-container.closed { height: 122px!important; }
 
-    .header-container h1 { margin: 46px 0 0; }
+    .header-container h1,
+    .header-container span.logo { margin: 46px 0 0; }
     .header-container a { font-size: 12px; }
 
     .header-container aside { display: inline-block!important; right: 5%; top: 5px; width: 44px; }
@@ -621,7 +628,7 @@ i.tooltip { display: none; }
     #technologies nav { float: left; width: 30%; }
     #technologies section { float: right; width: 65%; }
 
-    #technologies section h4 { border-left: none; border-bottom: 1px solid #9aebe8; color: #eb3e33; font-size: 36px; margin: 0 0 40px; }
+    #technologies section .h4 { border-left: none; border-bottom: 1px solid #9aebe8; color: #eb3e33; font-size: 36px; margin: 0 0 40px; }
 
     .footer-container h3 { text-align: left; }
 
@@ -738,8 +745,8 @@ i.tooltip { display: none; }
 
     .wrapper { padding-left: 4%; padding-right: 4%; position: relative; width: 92%; }
 
-    h2 { font-size: 55px; }
-    h3 { font-size: 22px; }
+    .h2, h2 { font-size: 55px; }
+    .h3, h3 { font-size: 22px; }
     dl, p { font-size: 15px; }
 
     .header-container {

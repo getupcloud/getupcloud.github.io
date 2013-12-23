@@ -51,7 +51,9 @@ cons.partials({
 	header: 'partials/header',
 	footer: 'partials/footer',
 	signup: 'partials/signup',
-	contact: 'partials/contact'
+	contact: 'partials/contact',
+    technology_header: 'partials/technologies/header',
+    more: 'partials/technologies/pt/more'
 });
 
 

@@ -1,34 +1,27 @@
-<h4>Python 2.6 / 2.7 / 3.3</h4>
+<h1 class="h4">Python 2.6 / 2.7 / 3.3</h1>
 
 <p>Python é uma linguagem de alto nível, largamente utilizada e prega a filosofia de fácil leitura do código. A WSGI define uma interface simples e universal entre o servidor e as aplicações web ou frameworks da linguagem.</p>
 
 <p>Na Getup hospedar uma aplicação Python usando seu framework e banco de dados favorito é muito simples. Escale automático para milhões de usuários sem precisar configurar e administrar servidores. Esqueça servidores e foque no código.</p>
 
-<h5>Simplificando a Hospedagem</h5>
+<h2 class="h5">Simplificando a Hospedagem</h2>
 <p>Fazer o deploy e rodar uma aplicação Python é simples e rápido, esqueça o setup de servidores, instalação de bibliotecas e configuração de frameworks.</p>
 <pre>$ rhc app-create App python-2.7 mysql-5.1</pre>
 
 <p>O comando acima irá criar seu gear (servidor), instalar e configurar o Python, MySQL e um repositório git no servidor. 
 Acesse a aplicação no endereço http://App-namespace.getup.io - acesso HTTPS também suportado e todas as aplicações possuem certificado SSL válido.</p>
 
-<h5>Escalando aplicações</h5>
+<h2 class="h5">Escalando aplicações</h2>
 <p>E como atender milhões de acessos?  Somos especialistas quando o assunto é escalabilidade e alto volume de tráfego, adicione o parâmetro -s ao criar sua aplicação e voilá - escalabilidade automática.</p>
 <pre>$ rhc app-create App python-2.7 -s</pre>
 
 <p>A escalabilidade é baseada na quantidade de acessos. Toda vez que sua aplicação receber um pico de acessos, a plataforma irá criar novos gears para atender a demanda.</p>
 
-<h5>Frameworks, Banco de dados e outras ferramentas</h5>
+<h3 class="h5">Frameworks, Bancos de dados e outras ferramentas</h3>
 <p>Quer rodar Django, Flask, TurboGears ou Web2Py?</p>
 <pre>$ rhc app-create django python-2.7 --from-code=https://github.com/openshift/django-example.git</pre>
 
 <p>Adicione banco de dados como MySQL, PostgreSQL ou MongoDB através dos cartridges</p>
 <pre>$ rhc cartridge add mysql-5.1 -a App</pre>
 
-<h5>Explore mais</h5>
-<p>Aprenda a usar o RHC - <a href="http://getupcloud.com/blog/guia-rapido-rhc" target="_blank">Guia rápido do RHC</a>
-<br>Deploy com Integração Contínua: <a href="http://getupcloud.com/blog/integracao-continua-com-jenkins" target="_blank">Integração Contínua com Jenkins</a>
-<br>Saiba mais sobre as <a href="https://getup.zendesk.com/entries/27591228" target="_blank">variáveis de ambiente</a></p>
-
-<h5>Investigue, solucione</h5>
-<p><a href="http://getupcloud.com/blog/acessando-aplicacao-ssh">Como fazer acesso SSH no gear?</a>
-<br><a href="http://getupcloud.com/blog/dica-logs-da-aplicacao" target="_blank">Como ter acesso aos logs?</a></p>
+{{> more }}
