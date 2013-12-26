@@ -287,7 +287,7 @@ msgstr "1 hospedagem"
 msgid "What?"
 msgstr "Hein?"
 
-msgid "US$ ~10.13"
+msgid "US$ ~10,13"
 msgstr "R$ ~59,00"
 
 msgid "US$ ~20"
@@ -311,7 +311,7 @@ msgstr "Acenda uma vela!"
 msgid "turn off server, remove 1GB, turn on server"
 msgstr "desliga servidor, remove 1GB, liga servidor"
 
-msgid "24hs x US$ ~0.06 (1GB) ="
+msgid "24hs x US$ ~0,06 (1GB) ="
 msgstr "24hs x R$ ~0,14 (1GB) ="
 
 msgid "US$ 1,44"
