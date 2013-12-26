@@ -266,7 +266,7 @@ msgstr "Scale down automático"
 msgid "Additional charge"
 msgstr "Custo adicional"
 
-msgid "2 gears x 6 hours x US$ 0.058 ="
+msgid "2 gears x 6 hours x US$ 0,058 ="
 msgstr "2 gears x 6 horas x R$ 0,122 ="
 
 msgid "US$ 0.69"
