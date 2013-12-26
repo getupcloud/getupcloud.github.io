@@ -143,7 +143,7 @@
                                 </dl>
 
                                 <dl class="blue round">
-                                    <dt>{{ _ "GEAR"}} <i class="tooltip" data-text="{{ _ "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing."}}">?</i></dt>
+                                    <dt>{{ _ "GEAR"}} <i class="tooltip" data-text="{{ _ 'Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.'}} ">?</i></dt>
                                     <dd>{{ _ "US$ 0,058/hour"}}</dd>
 
                                     <dt class="no-border">{{ _ "Monthly cost"}}</dt>
@@ -157,7 +157,7 @@
                 <div class="background gray">
                     <article id="compare" class="wrapper pageview" data-pageview="pricing/gear">
                         <section>
-                            <table class="round" alt="$(gettext 'Other hosting companies')">
+                            <table class="round" alt="{{ _ 'Other hosting companies' }}">
                                 <thead>
                                     <tr>
                                         <th>&nbsp;</th>
@@ -169,7 +169,7 @@
                                 <tbody>
                                     <tr>
                                         <td>{{ _ "Resource"}}</td>
-                                        <td>1 gear <i class="tooltip" data-text="{{ _ "Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing."}}">?</i></td>
+                                        <td>1 gear <i class="tooltip" data-text="{{ _ 'Gear is a resource constrained container which allows users to run their application. It's like a server on the cloud ;) Each gear has 512MB RAM and 3GB storage. If one application needs more resources, it can use multiple gears - that scalability thing.' }}">?</i></td>
                                         <td>{{ _ "Cloud Server"}} 512Mb RAM</td>
                                         <td>1 {{ _ "hosting"}}</td>
                                     </tr>
@@ -181,8 +181,8 @@
                                     </tr>
                                     <tr class="light-blue">
                                         <td><small>{{ _ "Monthly fee"}}</small></td>
-                                        <td><strong>{{ _ "US$ ~54,23"}}</strong> <i class="tooltip" data-text="$(gettext '730h monthly.')">?</i></td>
-                                        <td><strong>{{ _ "US$ ~10.13"}}</strong></td>
+                                        <td><strong>{{ _ "US$ ~42,50"}}</strong> <i class="tooltip" data-text="{{ _ '730h monthly.' }}">?</i></td>
+                                        <td><strong>{{ _ "US$ ~10,13"}}</strong></td>
                                         <td><strong>{{ _ "US$ ~20"}}</strong></td>
                                     </tr>
                                     <tr class="no-border">
@@ -193,8 +193,8 @@
                                     </tr>
                                     <tr class="light-blue">
                                         <td><small>{{ _ "Monthly fee"}}</small></td>
-                                        <td><strong>{{ _ "US$ ~54,23"}}</strong></td>
-                                        <td><strong>{{ _ "US$ ~89.79"}}</strong></td>
+                                        <td><strong>{{ _ "US$ ~42,50"}}</strong></td>
+                                        <td><strong>{{ _ "US$ ~89,79"}}</strong></td>
                                         <td><strong>{{ _ "US$ ~20"}}</strong></td>
                                     </tr>
                                     <tr class="no-border">
@@ -211,16 +211,16 @@
                                     </tr>
                                     <tr class="light-blue">
                                         <td><small>{{ _ "Additional charge"}}</small></td>
-                                        <td>{{ _ "2 gears x 6 hours x US$ 0.058 ="}}  <strong>{{ _ "US$ 0.69"}}</strong> </td>
-                                        <td>{{ _ "24hs x US$ ~0.06 (1GB) ="}} <strong>{{ _ "US$ 1.44"}}</strong> <i class="tooltip" data-text="$(gettext 'Trying minimize the user impact you did upgrade one day before and returned on day after the peak.')">?</i></td>
+                                        <td>{{ _ "2 gears x 6 hours x US$ 0,058 ="}}  <strong>{{ _ "US$ 0,69"}}</strong> </td>
+                                        <td>{{ _ "24hs x US$ ~0,06 (1GB) ="}} <strong>{{ _ "US$ 1,44"}}</strong> <i class="tooltip" data-text="$(gettext 'Trying minimize the user impact you did upgrade one day before and returned on day after the peak.')">?</i></td>
                                         <td>{{ _ "-"}}</td>
                                     </tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <td>{{ _ "Total"}}</td>
-                                        <td><strong>{{ _ "US$ 44.09"}}</strong> <b>{{ _ "Peace of mind"}}</b> {{ _ "You just get the traffic peaks on analytics."}}</td>
-                                        <td><strong>{{ _ "US$ 91.19"}}</strong> <b>{{ _ "Hard Work."}}</b> {{ _ "You had to reboot your server twice."}}</td>
+                                        <td><strong>{{ _ "US$ 44,09"}}</strong> <b>{{ _ "Peace of mind"}}</b> {{ _ "You just get the traffic peaks on analytics."}}</td>
+                                        <td><strong>{{ _ "US$ 91,19"}}</strong> <b>{{ _ "Hard Work."}}</b> {{ _ "You had to reboot your server twice."}}</td>
                                         <td><strong>{{ _ "US$ 20"}}</strong> <b>{{ _ "Don't be cheap!"}}</b> {{ _ "Your site went down and you lost pageviews."}}</td>
                                     </tr>
                                 </tfoot>

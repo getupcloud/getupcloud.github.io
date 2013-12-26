@@ -199,7 +199,7 @@ msgstr "R$ 0,122/hora"
 msgid "Monthly cost"
 msgstr "Custo Mensal"
 
-msgid "US$ ~42,34"
+msgid "US$ ~42,50"
 msgstr "R$ ~89,06"
 
 msgid ""
@@ -314,10 +314,10 @@ msgstr "desliga servidor, remove 1GB, liga servidor"
 msgid "24hs x US$ ~0.06 (1GB) ="
 msgstr "24hs x R$ ~0,14 (1GB) ="
 
-msgid "US$ 1.44"
+msgid "US$ 1,44"
 msgstr "R$ 3,36"
 
-msgid "US$ 44.09"
+msgid "US$ 44,09"
 msgstr "R$ 90,52"
 
 msgid "Peace of mind"
@@ -326,7 +326,7 @@ msgstr "Tranquilidade"
 msgid "You just get the traffic peaks on analytics."
 msgstr "Você só sabe que teve picos pelo impacto nas vendas."
 
-msgid "US$ 91.19"
+msgid "US$ 91,19"
 msgstr "R$ 262,36"
 
 msgid "Hard Work."
