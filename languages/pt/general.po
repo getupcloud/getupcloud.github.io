@@ -299,7 +299,7 @@ msgstr "R$ 25,00"
 msgid "need subscription"
 msgstr "Precisa contratar"
 
-msgid "US$ ~89.79"
+msgid "US$ ~89,79"
 msgstr "R$ ~259,00"
 
 msgid "turn off server, add 1GB, turn on server"
