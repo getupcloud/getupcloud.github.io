@@ -326,8 +326,8 @@ msgstr "Tranquilidade"
 msgid "You just get the traffic peaks on analytics."
 msgstr "Você só sabe que teve picos pelo impacto nas vendas."
 
-msgid "US$ 105.10"
-msgstr "R$ 302,36"
+msgid "US$ 91.19"
+msgstr "R$ 262,36"
 
 msgid "Hard Work."
 msgstr "CAOS TOTAL."
