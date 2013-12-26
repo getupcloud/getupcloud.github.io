@@ -193,14 +193,14 @@ msgstr "Requisições de API"
 msgid "Unlimited"
 msgstr "Ilimitadas"
 
-msgid "US$ 0,074/hour"
-msgstr "R$ 0,156/hora"
+msgid "US$ 0,058/hour"
+msgstr "R$ 0,122/hora"
 
 msgid "Monthly cost"
 msgstr "Custo Mensal"
 
-msgid "US$ ~54,23"
-msgstr "R$ ~113,88"
+msgid "US$ ~42,34"
+msgstr "R$ ~89,06"
 
 msgid ""
 "Gear is a resource constrained container which allows users to run their "
@@ -266,11 +266,11 @@ msgstr "Scale down automático"
 msgid "Additional charge"
 msgstr "Custo adicional"
 
-msgid "2 gears x 6 hours x US$ 0.074 ="
-msgstr "2 gears x 6 horas x R$ 0,156 ="
+msgid "2 gears x 6 hours x US$ 0.058 ="
+msgstr "2 gears x 6 horas x R$ 0,122 ="
 
-msgid "US$ 0.89"
-msgstr "R$ 1,87"
+msgid "US$ 0.69"
+msgstr "R$ 1,46"
 
 msgid "Other hosting companies"
 msgstr "Serviços de outras empresas"
@@ -287,8 +287,8 @@ msgstr "1 hospedagem"
 msgid "What?"
 msgstr "Hein?"
 
-msgid "US$ ~17"
-msgstr "R$ ~99,00"
+msgid "US$ ~10.13"
+msgstr "R$ ~59,00"
 
 msgid "US$ ~20"
 msgstr "R$ ~25,00"
@@ -299,8 +299,8 @@ msgstr "R$ 25,00"
 msgid "need subscription"
 msgstr "Precisa contratar"
 
-msgid "US$ ~103.66"
-msgstr "R$ ~299,00"
+msgid "US$ ~89.79"
+msgstr "R$ ~259,00"
 
 msgid "turn off server, add 1GB, turn on server"
 msgstr "desliga servidor, adiciona 1GB, liga servidor"
@@ -317,8 +317,8 @@ msgstr "24hs x R$ ~0,14 (1GB) ="
 msgid "US$ 1.44"
 msgstr "R$ 3,36"
 
-msgid "US$ 56.38"
-msgstr "R$ 115,75"
+msgid "US$ 44.09"
+msgstr "R$ 90,52"
 
 msgid "Peace of mind"
 msgstr "Tranquilidade"
