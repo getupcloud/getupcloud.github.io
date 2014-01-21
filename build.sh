@@ -20,3 +20,7 @@ echo Copying common files...
 echo
 cp -a public/* build/
 cp -a public/.htaccess build/.htaccess
+
+case "$1" in
+  -s|--server) npm start;
+esac
