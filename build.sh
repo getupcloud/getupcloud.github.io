@@ -5,6 +5,8 @@ set -e
 #echo Updating npm
 #npm update
 
+npm install
+
 echo
 echo Generating build...
 
