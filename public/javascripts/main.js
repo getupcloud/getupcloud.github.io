@@ -1191,7 +1191,9 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 	var partner = $.getQueryString('partner');
 	if (partner) {
-		document.cookie = "partner=" + partner + ';domain=.getupcloud.com&path=/';
+		var expires = new Date();
+		expires.setYear(expires.getFullYear() + 10);
+		document.cookie = "partner=" + partner + ';domain=.getupcloud.com;path=/;expires=' + expires;
 		Getup.articles.sign_up.elements.inputs.partner.val($.getQueryString('partner'));
 	}
 
