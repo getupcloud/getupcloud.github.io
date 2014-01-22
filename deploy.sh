@@ -74,4 +74,4 @@ echo You are now on branch:
 git checkout source-node
 
 # Install npm
-npm install
+#npm install
