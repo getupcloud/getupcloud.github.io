@@ -5,9 +5,21 @@ set -e
 #echo Updating npm
 #npm update
 
-npm install
+npm_install=0
+npm_start=0
+for i; do
+	case "$1" in
+		-i|--npm-install) npm_install=1;;
+		-s|--server) npm_start=1;
+	esac
+	shift
+done
 
-echo
+if [ "$npm_install" -eq 1 ]; then
+	echo Installing npm modules...
+	npm install
+fi
+
 echo Generating build...
 
 rm -rf build
@@ -17,10 +29,9 @@ node builder
 
 # copy common files
 echo Copying common files...
-echo
 cp -a public/* build/
 cp -a public/.htaccess build/.htaccess
 
-case "$1" in
-  -s|--server) npm start;
-esac
+if [ "$npm_start" -eq 1 ]; then
+	npm start
+fi
