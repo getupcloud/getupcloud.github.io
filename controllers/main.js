@@ -20,7 +20,8 @@ exports.technologies = function(req, res){
   var options = {};
 
   options.partials = {
-  	technology: fs.readFileSync(__dirname + '/../' +  partial, 'utf8')
+  	technology: fs.readFileSync(__dirname + '/../' +  partial, 'utf8'),
+    resource: (technology ? ('-' + technology) : '')
   };
   
 /*  var route = pages
