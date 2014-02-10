@@ -193,10 +193,11 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 			? Getup.Analytics.map[Getup.Analytics.prefix]['pageviews'][tracker]
 			: tracker);
 
-		//console.log('Tracker:', tracker, translated);
+		// Old track pageview
+		//_gaq.push(['_trackPageview', translated]);
 
 		// Track pageview
-		_gaq.push(['_trackPageview', translated]);
+		ga('send', 'pageview', translated);
 	};
 
 	/**
@@ -206,7 +207,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	Getup.Analytics.track_event = function() {
 
 		// Event
-		var track_event = ['_trackEvent'];
+		var track_event = ['send', 'event'];
 		var args = arguments;
 		var translated = null;
 		var track = [];
@@ -229,10 +230,11 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 			// track = track_event.concat();
 		}
 
-		//console.log('Event:', track_event.concat(track));
+		// Old tracker event
+		// _gaq.push(track_event.concat(track));
 
 		// Track event
-		_gaq.push(track_event.concat(track));
+		ga.apply(undefined, track_event.concat(track));
 	};
 
 	/**
