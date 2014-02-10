@@ -54,6 +54,7 @@ function build () {
 
  	// Options
 	var options = {};
+	var resource = route.route.split('/');
 
 	// Partials
 	if (route.partial) {
@@ -68,6 +69,7 @@ function build () {
 	options.en_url = route.urls.en;
 
 	options.language = route.language;
+	options.resource = (resource.length > 2 ? '-' + resource[2] : '');
     
     options.description = route.description;
     options.keywords = route.keywords;

@@ -21,9 +21,11 @@ exports.technologies = function(req, res){
 
   options.partials = {
   	technology: fs.readFileSync(__dirname + '/../' +  partial, 'utf8'),
-    resource: (technology ? ('-' + technology) : '')
+    
   };
-  
+
+  options.resource = technology ? ('-' + technology) : '';
+
 /*  var route = pages
   options.pt_url = route.urls.pt;
   options.en_url = route.urls.en;
