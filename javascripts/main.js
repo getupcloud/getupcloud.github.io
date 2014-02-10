@@ -122,7 +122,19 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 				'terms_of_use' 	 : 'termos_de_uso',
 				'privacy_police' : 'politica_privacidade',
 				'aup' 			 : 'pua',
-				'support_policy' : 'politica_suporte'
+				'support_policy' : 'politica_suporte',
+
+			// Technologies
+				'technologies'	 : 'technologias',
+				'php'	 		 : 'php',
+				'ruby'	 		 : 'ruby',
+				'nodejs'	 	 : 'nodejs',
+				'python'	 	 : 'python',
+				'java'	 		 : 'java',
+				'perl'	 		 : 'perl',
+				'mysql'	 		 : 'mysql',
+				'postgresql'	 : 'postgresql',
+				'mongodb'	 	 : 'mongodb'
 			},
 			events : {
 				// Menu
