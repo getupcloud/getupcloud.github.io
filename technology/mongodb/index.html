@@ -20,7 +20,7 @@
         <meta property="og:url" content="http://getupcloud.com">
         <meta property="og:image" content="http://getupcloud.com/images/getup.png">
         <meta property="og:description" name="description" content="Getup is a scalable cloud application platform. An easy and fast way to build and deploy web apps. You only have to worry about coding your app - we take care of everything else.">
-        <meta property="gc:build_id" content="1390398874393N">
+        <meta property="gc:build_id" content="1392075026139N">
 
         <link rel="shortcut icon" type="image/x-icon" href="http://getupcloud.com/favicon.ico">
 
@@ -230,14 +230,20 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/javascripts/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
+        <!-- Google Analytics -->
         <script>
-            var _gaq=[['_setAccount','UA-39510729-1']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        <script src="/javascripts/main.js"></script>        
+        ga('create', 'UA-39510729-1', 'auto');  // Replace with your property ID.
+        // ga('send', 'pageview');
+
+        </script>
+        <!-- End Google Analytics -->        
+
+        <script src="/javascripts/main.js"></script>
     </body>
 </html>
 
