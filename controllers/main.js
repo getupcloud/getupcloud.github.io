@@ -24,7 +24,7 @@ exports.technologies = function(req, res){
     
   };
 
-  options.resource = technology ? ('-' + technology) : '';
+  options.resource = technology ? ('/' + technology) : '';
 
 /*  var route = pages
   options.pt_url = route.urls.pt;
