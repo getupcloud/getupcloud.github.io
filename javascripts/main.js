@@ -126,15 +126,16 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 			// Technologies
 				'technologies'	 : 'technologias',
-				'php'	 		 : 'php',
-				'ruby'	 		 : 'ruby',
-				'nodejs'	 	 : 'nodejs',
-				'python'	 	 : 'python',
-				'java'	 		 : 'java',
-				'perl'	 		 : 'perl',
-				'mysql'	 		 : 'mysql',
-				'postgresql'	 : 'postgresql',
-				'mongodb'	 	 : 'mongodb'
+				
+				'technologies/php'	 		 : 'technologias/php',
+				'technologies/ruby'	 		 : 'technologias/ruby',
+				'technologies/nodejs'	 	 : 'technologias/nodejs',
+				'technologies/python'	 	 : 'technologias/python',
+				'technologies/java'	 		 : 'technologias/java',
+				'technologies/perl'	 		 : 'technologias/perl',
+				'technologies/mysql'	 	 : 'technologias/mysql',
+				'technologies/postgresql'	 : 'technologias/postgresql',
+				'technologies/mongodb'	 	 : 'technologias/mongodb'
 			},
 			events : {
 				// Menu
