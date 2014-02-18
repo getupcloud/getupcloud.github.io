@@ -104,8 +104,8 @@ msgid "Deploy"
 msgstr "Publique"
 
 msgid ""
-"Just type 'git push' and voil&aacute;! Your application is up and running!"
-msgstr "Digite 'git push' e voil&aacute;! Sua aplicação está up and running!"
+"Just type 'git push' and voilá! Your application is up and running!"
+msgstr "Digite 'git push' e voilá! Sua aplicação está up and running!"
 
 msgid "Built-in Databases"
 msgstr "Built-in Databases"
