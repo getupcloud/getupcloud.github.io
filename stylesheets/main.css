@@ -852,7 +852,7 @@ i.tooltip { display: none; }
 
 @media only screen and (min-width: 1140px) {
 
-   .wrapper { max-width: 1000px; margin: 0 auto; }
+   .wrapper { max-width: 1050px; margin: 0 auto; }
 
    .carousel .wrapper { margin-left: -500px; padding: 0 0 100px 50%; } 
 
