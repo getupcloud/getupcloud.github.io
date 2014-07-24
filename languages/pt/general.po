@@ -44,9 +44,6 @@ msgstr "Entrar"
 msgid "Sign Up"
 msgstr "Crie sua Conta"
 
-msgid "Getup is a scalable cloud application plataform"
-msgstr "Getup é uma plataforma para hospedagem na nuvem"
-
 msgid "Compare benefits"
 msgstr "Compare"
 
