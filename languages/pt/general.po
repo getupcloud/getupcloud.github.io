@@ -15,8 +15,8 @@ msgstr "Getup Cloud | Hospedagem na nuvem | Grow in the cloud"
 msgid "getup"
 msgstr "getup"
 
-msgid "Getup is a scalable cloud application platform."
-msgstr "Getup é uma plataforma para hospedagem na nuvem."
+msgid "Getup is a scalable cloud application platform"
+msgstr "Getup é uma plataforma para hospedagem na nuvem"
 
 msgid "An easy and fast way to build and deploy web apps."
 msgstr "Uma forma fácil e rápida de desenvolver e publicar aplicações web."
