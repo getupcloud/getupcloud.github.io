@@ -48,7 +48,7 @@ msgid "Compare benefits"
 msgstr "Compare"
 
 msgid "Auto Scale"
-msgstr "Auto escalável"
+msgstr "Auto Escalável"
 
 msgid "Don't get caught by traffic spikes."
 msgstr "Não seja pego pelos picos de acesso."
