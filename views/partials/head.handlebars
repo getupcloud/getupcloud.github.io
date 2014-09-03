@@ -18,7 +18,13 @@
 
         <link rel="shortcut icon" type="image/x-icon" href="//getupcloud.com/favicon.ico">
 
-        <script>var U = { register: '{{ register }}', language: '{{ language }}', debug: {{ debug }} };</script>
+        <script>
+            var U = {
+                register: '{{ register }}',
+                language: '{{ language }}',
+                debug: {{ debug }}
+            };
+        </script>
 
         {{{ javascripts "language" }}}
 

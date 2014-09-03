@@ -190,20 +190,35 @@ msgstr "Requisições de API"
 msgid "Unlimited"
 msgstr "Ilimitadas"
 
-msgid "US$ 0,058/hour "
-msgstr "R$ 0,122/hora "
+msgid "Region"
+msgstr "Região"
 
-msgid "US$ 0,159/hour "
-msgstr "R$ 0,305/hora "
+msgid "US$ 0,058/hour"
+msgstr "R$ 0,122/hora"
+
+msgid "US$ 0,070/hour"
+msgstr "R$ 0,148/hora"
+
+msgid "US$ 0,145/hour"
+msgstr "R$ 0,305/hora"
+
+msgid "US$ 0,176/hour"
+msgstr "R$ 0,370/hora"
+
+msgid "US$ ~42,34/month"
+msgstr "R$ ~89,06/mês"
+
+msgid "US$ 51,10/month"
+msgstr "R$ ~108,04/mês"
+
+msgid "US$ ~105,85/month"
+msgstr "R$ ~222,65/mês"
+
+msgid "US$ 128.48/month"
+msgstr "R$ ~270,10/mês"
 
 msgid "Monthly cost"
 msgstr "Custo Mensal"
-
-msgid "US$ ~42,50 "
-msgstr "R$ ~89,06 "
-
-msgid "US$ ~116,53 "
-msgstr "R$ ~222,65 "
 
 msgid ""
 "Gear is your cloud instance. The Small Gear has 512MB RAM / 3GB storage "
