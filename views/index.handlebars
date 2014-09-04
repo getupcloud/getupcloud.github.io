@@ -120,7 +120,7 @@
 
                                 <div class="white-border round compare article trackevent" data-event="Pricing,Button,Compare" data-article="compare">
                                     <h3>{{ _ "Compare with other services"}}</h3>
-                                    <p>{{ _ "Compare Getup with other services for a month with a traffic peak as an example"}} <a href="javacript:;">{{ _ "Check it out."}}</a></p>
+                                    <p>{{ _ "Application running PHP+MySQL stack with 500k visits average and 10 peaks/month."}} <a href="javacript:;">{{ _ "Check it out."}}</a></p>
                                 </div>
                             </div>                        
 
@@ -140,15 +140,15 @@
                                 </dl>
                                 <br/>
                                 <dl class="blue round">
-                                    <dt class="no-border">{{ _ "GEAR"}} <i class="tooltip" data-text="{{ _ 'Gear is your cloud instance. The Small Gear has 512MB RAM / 3GB storage and the Medium Gear has 1GB RAM / 6GB storage. If one application needs more resources, it can use multiple - that scalability thing.' }} ">?</i></dt>
-                                    <dd class="no-border">{{ _ "US$ 0,058/hour "}}<small>Small</small></dd>
+                                    <dt class="no-border">{{ _ "GEAR/HOURLY"}} <i class="tooltip" data-text="{{ _ 'Gear is your cloud instance. The Small Gear has 512MB RAM / 3GB storage and the Medium Gear has 1GB RAM / 6GB storage. If one application needs more resources, it can use multiple - that scalability thing.' }} ">?</i></dt>
+                                    <dd class="no-border">{{ _ "US$ 0.058/hour "}}<small>Small</small></dd>
                                     <dt>&nbsp</dt>
-                                    <dd>{{ _ "US$ 0,159/hour "}}<small>Medium</small></dd>
+                                    <dd>{{ _ "US$ 0.159/hour "}}<small>Medium</small></dd>
 
-                                    <dt class="no-border">{{ _ "Monthly cost"}}</dt>
-                                    <dd class="no-border">{{ _ "US$ ~42,50 "}}<small>Small</small></dd>
+                                    <dt class="no-border">{{ _ "GEAR/MONTHLY"}}</dt>
+                                    <dd class="no-border">{{ _ "US$ ~42.50 "}}<small>Small</small></dd>
                                     <dt class="no-border">&nbsp</dt>
-                                    <dd class="no-border">{{ _ "US$ ~116,53 "}}<small>Medium</small></dd>
+                                    <dd class="no-border">{{ _ "US$ ~116.53 "}}<small>Medium</small></dd>
                                 </dl>
                             </div>
                         </section><!-- .prices -->
@@ -170,20 +170,20 @@
                                 <tbody>
                                     <tr>
                                         <td>{{ _ "Resource"}}</td>
-                                        <td>1 gear <i class="tooltip" data-text="{{ _ 'Gear is your cloud instance. The Small Gear has 512MB RAM / 3GB storage and the Medium Gear has 1GB RAM / 6GB storage. If one application needs more resources, it can use multiple - that scalability thing.' }}">?</i></td>
-                                        <td>{{ _ "Cloud Server"}} 512Mb RAM</td>
+                                        <td>4 gears <small>(Small)</small> <i class="tooltip" data-text="{{ _ 'Gear is your cloud instance. The Small Gear has 512MB RAM / 3GB storage and the Medium Gear has 1GB RAM / 6GB storage. If one application needs more resources, it can use multiple - that scalability thing.' }}">?</i></td>
+                                        <td>2 {{ _ "Cloud Server"}} 1GB RAM</td>
                                         <td>1 {{ _ "hosting"}}</td>
                                     </tr>
                                     <tr>
                                         <td>{{ _ "Auto Scaling"}}</td>
                                         <td>{{ _ "Yes"}}</td>
                                         <td>{{ _ "No"}}</td>
-                                        <td>{{ _ "What?"}}</td>
+                                        <td>{{ _ "No"}}</td>
                                     </tr>
                                     <tr class="light-blue">
                                         <td><small>{{ _ "Monthly fee"}}</small></td>
-                                        <td><strong>{{ _ "US$ ~42,50 "}}<small>Small</small></strong> <i class="tooltip" data-text="{{ _ '730h monthly.' }}">?</i></td>
-                                        <td><strong>{{ _ "US$ ~10,13"}}</strong></td>
+                                        <td><strong>{{ _ "US$ ~170 "}}<small>Small</small></strong> <i class="tooltip" data-text="{{ _ '730h monthly.' }}">?</i></td>
+                                        <td><strong>{{ _ "US$ ~46.72"}}</strong></td>
                                         <td><strong>{{ _ "US$ ~20"}}</strong></td>
                                     </tr>
                                     <tr class="no-border">
@@ -194,35 +194,35 @@
                                     </tr>
                                     <tr class="light-blue">
                                         <td><small>{{ _ "Monthly fee"}}</small></td>
-                                        <td><strong>{{ _ "US$ ~42,50 "}}<small>Small</small></strong></td>
-                                        <td><strong>{{ _ "US$ ~89,79"}}</strong></td>
+                                        <td><strong>{{ _ "US$ ~170 "}}<small>Small</small></strong></td>
+                                        <td><strong>{{ _ "US$ ~500"}}</strong></td>
                                         <td><strong>{{ _ "US$ ~20"}}</strong></td>
                                     </tr>
                                     <tr class="no-border">
                                         <td>{{ _ "Traffic Peak"}}</td>
-                                        <td>{{ _ "Auto Scale out"}} +2 web gears</td>
-                                        <td>{{ _ "turn off server, add 1GB, turn on server"}}</td>
-                                        <td>{{ _ "Light a candle!"}}</td>
+                                        <td><red>{{ _ "Auto Scale out"}} +5 web gears<red></td>
+                                        <td>{{ _ "turn off server, add memory, turn on server"}}</td>
+                                        <td>{{ _ "Contact Support"}}</td>
                                     </tr>
                                     <tr>
-                                        <td>{{ _ "End of Peak - 6 hours"}}</td>
+                                        <td>{{ _ "6 hours peak"}}</td>
                                         <td>{{ _ "Auto Scale down"}}</td>
-                                        <td>{{ _ "turn off server, remove 1GB, turn on server"}}</td>
+                                        <td>{{ _ "turn off server, remove memory, turn on server"}}</td>
                                         <td>{{ _ "-"}}</td>
                                     </tr>
                                     <tr class="light-blue">
                                         <td><small>{{ _ "Additional charge"}}</small></td>
-                                        <td>{{ _ "2 gears x 6 hours x US$ 0,058 ="}}  <strong>{{ _ "US$ 0,69"}}</strong> </td>
-                                        <td>{{ _ "24hs x US$ ~0,06 (1GB) ="}} <strong>{{ _ "US$ 1,44"}}</strong> <i class="tooltip" data-text="{{ _ 'Trying minimize the user impact you did upgrade one day before and returned on day after the peak.' }}">?</i></td>
+                                        <td>{{ _ "10 peaks x 5 gears x 6 hours x US$ 0.058 ="}}  <strong>{{ _ "US$ 17.40"}}</strong> </td>
+                                        <td>{{ _ "Impossible to estimate!"}}</strong> <i class="tooltip" data-text="{{ _ 'Due the type of your plan, contract and either automation API available or not turns impossible to calculate the cost'}}">?</i></td>
                                         <td>{{ _ "-"}}</td>
                                     </tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <td>{{ _ "Total"}}</td>
-                                        <td><strong>{{ _ "US$ 44,09"}}</strong> <b>{{ _ "Peace of mind"}}</b> {{ _ "You just get the traffic peaks on analytics."}}</td>
-                                        <td><strong>{{ _ "US$ 91,19"}}</strong> <b>{{ _ "Hard Work."}}</b> {{ _ "You had to reboot your server twice."}}</td>
-                                        <td><strong>{{ _ "US$ 20"}}</strong> <b>{{ _ "Don't be cheap!"}}</b> {{ _ "Your site went down and you lost pageviews."}}</td>
+                                        <td><strong>{{ _ "US$ 187.40"}}</strong> <b>{{ _ "Peace and Quiet!"}}</b> {{ _ "You knew about peaks looking at sales increase."}}</td>
+                                        <td><strong>{{ _ "US$ 546.72"}}</strong> <b>{{ _ "Hard Work."}}</b> {{ _ "You had to reboot your server"}} <b>20x</b></td>
+                                        <td><strong>{{ _ "US$ 20"}}</strong> <b>{{ _ "Risky!"}}</b> {{ _ "Site down == lose deals."}}</td>
                                     </tr>
                                 </tfoot>
                             </table>

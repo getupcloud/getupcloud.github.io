@@ -190,19 +190,25 @@ msgstr "Requisições de API"
 msgid "Unlimited"
 msgstr "Ilimitadas"
 
-msgid "US$ 0,058/hour "
+msgid "US$ 0.058/hour "
 msgstr "R$ 0,122/hora "
 
-msgid "US$ 0,159/hour "
+msgid "US$ 0.159/hour "
 msgstr "R$ 0,305/hora "
 
-msgid "Monthly cost"
-msgstr "Custo Mensal"
+msgid "GEAR/HOURLY"
+msgstr "GEAR/HORA"
 
-msgid "US$ ~42,50 "
+msgid "GEAR/MONTHLY"
+msgstr "GEAR/MENSAL"
+
+msgid "US$ ~42.50 "
 msgstr "R$ ~89,06 "
 
-msgid "US$ ~116,53 "
+msgid "US$ ~170 "
+msgstr "R$ ~356,00 "
+
+msgid "US$ ~116.53 "
 msgstr "R$ ~222,65 "
 
 msgid ""
@@ -229,11 +235,9 @@ msgid "Compare with other services"
 msgstr "Comparativo com outros serviços"
 
 msgid ""
-"Compare Getup with other services for a month with a traffic peak as an "
-"example"
+"Application running PHP+MySQL stack with 500k visits average and 10 peaks/month."
 msgstr ""
-"Compare Getup com outros serviços durante um mês com um Pico de acesso como "
-"exemplo."
+"Exemplo de uma aplicação PHP+MySQL com uma média de 500K visitas e 10 picos de acesso/mês."
 
 msgid "Check it out."
 msgstr "Confira"
@@ -268,11 +272,11 @@ msgstr "Scale down automático"
 msgid "Additional charge"
 msgstr "Custo adicional"
 
-msgid "2 gears x 6 hours x US$ 0,058 ="
-msgstr "2 gears x 6 horas x R$ 0,122 ="
+msgid "10 peaks x 5 gears x 6 hours x US$ 0.058 ="
+msgstr "10 picos x 5 gears x 6 horas x R$ 0,122 ="
 
-msgid "US$ 0,69"
-msgstr "R$ 1,46"
+msgid "US$ 17.40"
+msgstr "R$ 36,60"
 
 msgid "Other hosting companies"
 msgstr "Serviços de outras empresas"
@@ -289,8 +293,8 @@ msgstr "1 hospedagem"
 msgid "What?"
 msgstr "Hein?"
 
-msgid "US$ ~10,13"
-msgstr "R$ ~59,00"
+msgid "US$ ~46.72"
+msgstr "R$ ~198,00"
 
 msgid "US$ ~20"
 msgstr "R$ ~25,00"
@@ -301,47 +305,44 @@ msgstr "R$ 25,00"
 msgid "need subscription"
 msgstr "Precisa contratar"
 
-msgid "US$ ~89,79"
-msgstr "R$ ~259,00"
+msgid "US$ ~500"
+msgstr "R$ ~300,00"
 
-msgid "turn off server, add 1GB, turn on server"
+msgid "turn off server, add memory, turn on server"
 msgstr "desliga servidor, adiciona 1GB, liga servidor"
 
-msgid "Light a candle!"
-msgstr "Acenda uma vela!"
+msgid "Contact Support"
+msgstr "Ligue para o Suporte"
 
-msgid "turn off server, remove 1GB, turn on server"
+msgid "turn off server, remove memory, turn on server"
 msgstr "desliga servidor, remove 1GB, liga servidor"
 
 msgid "24hs x US$ ~0,06 (1GB) ="
 msgstr "24hs x R$ ~0,14 (1GB) ="
 
-msgid "US$ 1,44"
-msgstr "R$ 3,36"
+msgid "US$ 187.40"
+msgstr "R$ 392,60"
 
-msgid "US$ 44,09"
-msgstr "R$ 90,52"
-
-msgid "Peace of mind"
+msgid "Peace and Quiet!"
 msgstr "Tranquilidade"
 
-msgid "You just get the traffic peaks on analytics."
+msgid "You knew about peaks looking at sales increase."
 msgstr "Você só sabe que teve picos pelo impacto nas vendas."
 
-msgid "US$ 91,19"
-msgstr "R$ 262,36"
+msgid "US$ 546.72"
+msgstr "R$ 392,60"
 
 msgid "Hard Work."
-msgstr "CAOS TOTAL."
+msgstr "Preocupação."
 
-msgid "You had to reboot your server twice."
-msgstr "Voce precisou reiniciar seu servidor 2x."
+msgid "You had to reboot your server"
+msgstr "Voce precisou reiniciar seu servidor"
 
-msgid "Don't be cheap!"
-msgstr "Mão de Vaca!"
+msgid "Risky!"
+msgstr "Arriscado!"
 
-msgid "Your site went down and you lost pageviews."
-msgstr "Seu site ficou fora do ar e você perdeu conversão."
+msgid "Site down == lose deals."
+msgstr "Site ficou fora do ar == perder negócios."
 
 msgid "With Getup you pay only for what you use and saves time."
 msgstr "Na Getup você paga apenas pelo que usou e ainda economiza tempo."
