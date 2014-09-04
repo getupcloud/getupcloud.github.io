@@ -190,6 +190,9 @@ msgstr "Requisições de API"
 msgid "Unlimited"
 msgstr "Ilimitadas"
 
+msgid "Region"
+msgstr "Região"
+
 msgid "US$ 0.058/hour "
 msgstr "R$ 0,122/hora "
 
