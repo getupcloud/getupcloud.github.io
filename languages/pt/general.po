@@ -193,20 +193,38 @@ msgstr "Ilimitadas"
 msgid "Region"
 msgstr "Região"
 
-msgid "US$ 0.058/hour "
-msgstr "R$ 0,122/hora "
-
-msgid "US$ 0.159/hour "
-msgstr "R$ 0,305/hora "
-
 msgid "GEAR/HOURLY"
 msgstr "GEAR/HORA"
 
 msgid "GEAR/MONTHLY"
 msgstr "GEAR/MENSAL"
 
-msgid "US$ ~42.50 "
-msgstr "R$ ~89,06 "
+msgid "US$ 0.058"
+msgstr "R$ 0,122"
+
+msgid "US$ 0.070"
+msgstr "R$ 0,148"
+
+msgid "US$ 0.145"
+msgstr "R$ 0,305"
+
+msgid "US$ 0.176"
+msgstr "R$ 0,370"
+
+msgid "US$ 0.159"
+msgstr "R$ 0,305"
+
+msgid "US$ 51.10"
+msgstr "R$ ~108,04"
+
+msgid "US$ ~105.85"
+msgstr "R$ ~222,65"
+
+msgid "US$ 128.48"
+msgstr "R$ ~270,10"
+
+msgid "US$ ~42.34"
+msgstr "R$ ~89,06"
 
 msgid "US$ ~170 "
 msgstr "R$ ~356,00 "
