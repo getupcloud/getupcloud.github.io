@@ -17,7 +17,7 @@ done
 
 if [ "$npm_install" -eq 1 ]; then
 	echo Installing npm modules...
-	npm -g install
+	npm install
 fi
 
 echo Generating build...
