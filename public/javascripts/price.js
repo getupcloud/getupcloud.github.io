@@ -8,5 +8,5 @@
 		$('.price.' + region).show();
 	});
 
-	$(U.language == 'en-us' ? '#region-us' : '#region-br').click();
+	$('#region-us').click();
 }());
