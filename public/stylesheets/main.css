@@ -691,7 +691,7 @@ i.tooltip { display: none; }
     table tbody td strong { color: #4e9ba5; font-weight: 300; }
     table tbody td small { color: #999; font-size: 11px; }
 
-    table tbody td red { color: #d9381d; font-weight: bold;}
+    table tbody td red { color: #f44240; font-weight: bold;}
 
     table tr.light-blue td { border-top-color: #ecf7f6; background: #ecf7f6; }
     table tr.no-border td { border-top: none; }
