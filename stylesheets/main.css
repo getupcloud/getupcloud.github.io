@@ -391,7 +391,13 @@ button { outline: none; }
 #pricing h2 { font-weight: 100; }
 #pricing p { color: #666; font-weight: 300; margin: 15px 0 0; }
 
-#pricing dl { margin: 25px 10px 10px; overflow: hidden; }
+#pricing div.region-button { margin: 0px -4px 0px 0px; display: inline-flex; }
+#pricing div input[type="radio"] { display: none }
+#pricing div label:hover { background-color:#fff; }
+#pricing div label { color: #666; background: none; border-radius: 7px 7px 0px 0px; width: 120px; padding-left: 18px; font-size: 14px; font-weight: 100; line-height: 40px; text-transform: uppercase; }
+#pricing div input[type="radio"]:checked + label { background-color:#82d3d1; }
+
+#pricing dl { margin: 25px 10px 10px; overflow: hidden; border-radius: 0px 7px 7px 7px; }
 
 #pricing dl dt, #pricing dl dd { border-bottom: 1px solid #8fe8e5; float: left; font-size: 12px; font-weight: 300; line-height: 30px; }
 
