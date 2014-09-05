@@ -278,13 +278,13 @@ msgstr "Valor mensal"
 msgid "+ Server Admin"
 msgstr "+ Admin do Servidor"
 
-msgid "10 Traffic Peaks"
+msgid "10 Traffic Spikes"
 msgstr "10 Picos de Acesso"
 
 msgid "Auto Scale"
 msgstr "Escalabilidade automática"
 
-msgid "Length 6 hours"
+msgid "6 hours length"
 msgstr "Duração 6 horas"
 
 msgid "Auto Scale down"
