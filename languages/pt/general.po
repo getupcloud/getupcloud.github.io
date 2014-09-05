@@ -335,6 +335,9 @@ msgstr "desligar servidor, adicionar memória, ligar servidor"
 msgid "Contact Support"
 msgstr "Ligue para o Suporte"
 
+msgid "turn off server, remove memory, turn on server"
+msgstr "desligar servidor, remover memória, ligar servidor"
+
 msgid "impossible to estimate"
 msgstr "impossível calcular"
 
