@@ -252,11 +252,11 @@ msgstr ""
 "Considerando que para reduzir o impacto, você fez o upgrade um dia antes do "
 "pico e retornou um dia depois."
 
-msgid "Compare with other services"
-msgstr "Comparativo com outros serviços"
+msgid "Compare Getup with other services"
+msgstr "Compare a Getup com os outros serviços"
 
 msgid ""
-"Application running PHP+MySQL stack with 500k visits average and 10 peaks/month."
+"Application running PHP+MySQL stack with 500k visits average and 10 spikes/month."
 msgstr ""
 "Exemplo de uma aplicação PHP+MySQL com uma média de 500K visitas e 10 picos de acesso/mês."
 
@@ -278,14 +278,14 @@ msgstr "Valor mensal"
 msgid "+ Server Admin"
 msgstr "+ Admin do Servidor"
 
-msgid "Traffic Peak"
-msgstr "Pico de Acesso"
+msgid "10 Traffic Peaks"
+msgstr "10 Picos de Acesso"
 
-msgid "Auto Scale out"
-msgstr "Scale out automático"
+msgid "Auto Scale"
+msgstr "Escalabilidade automática"
 
-msgid "End of Peak - 6 hours"
-msgstr "Fim - duração 6hs"
+msgid "Length 6 hours"
+msgstr "Duração 6 horas"
 
 msgid "Auto Scale down"
 msgstr "Scale down automático"
@@ -299,11 +299,11 @@ msgstr "10 picos x 5 gears x 6 horas x R$ 0,122 ="
 msgid "US$ 17.40"
 msgstr "R$ 36,60"
 
+msgid "The type of contract and the existence or not of automation\'s APIs make it impossible to predict spending."
+msgstr "A forma de contratação e existência ou não de APIs para automatização torna impossível prever o gasto"
+
 msgid "Other hosting companies"
 msgstr "Serviços de outras empresas"
-
-msgid "Cloud Server"
-msgstr "Servidor Cloud"
 
 msgid "Shared Hosting"
 msgstr "Hospedagem Compartilhada"
@@ -330,16 +330,16 @@ msgid "US$ ~500"
 msgstr "R$ ~300,00"
 
 msgid "turn off server, add memory, turn on server"
-msgstr "desliga servidor, adiciona 1GB, liga servidor"
+msgstr "desliga servidor, adiciona memória, liga servidor"
 
 msgid "Contact Support"
 msgstr "Ligue para o Suporte"
 
 msgid "turn off server, remove memory, turn on server"
-msgstr "desliga servidor, remove 1GB, liga servidor"
+msgstr "desliga servidor, remove memória, liga servidor"
 
-msgid "24hs x US$ ~0,06 (1GB) ="
-msgstr "24hs x R$ ~0,14 (1GB) ="
+msgid "impossible to estimate"
+msgstr "impossível calcular"
 
 msgid "US$ 187.40"
 msgstr "R$ 392,60"
@@ -351,7 +351,7 @@ msgid "You knew about peaks looking at sales increase."
 msgstr "Você só sabe que teve picos pelo impacto nas vendas."
 
 msgid "US$ 546.72"
-msgstr "R$ 392,60"
+msgstr "R$ 498,60"
 
 msgid "Hard Work."
 msgstr "Preocupação."
@@ -362,8 +362,8 @@ msgstr "Voce precisou reiniciar seu servidor"
 msgid "Risky!"
 msgstr "Arriscado!"
 
-msgid "Site down == lose deals."
-msgstr "Site ficou fora do ar == perder negócios."
+msgid "Site down = lose deals."
+msgstr "Site ficou fora do ar = perder negócios."
 
 msgid "With Getup you pay only for what you use and saves time."
 msgstr "Na Getup você paga apenas pelo que usou e ainda economiza tempo."
