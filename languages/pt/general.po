@@ -330,13 +330,10 @@ msgid "US$ ~500"
 msgstr "R$ ~300,00"
 
 msgid "turn off server, add memory, turn on server"
-msgstr "desliga servidor, adiciona memória, liga servidor"
+msgstr "desligar servidor, adicionar memória, ligar servidor"
 
 msgid "Contact Support"
 msgstr "Ligue para o Suporte"
-
-msgid "turn off server, remove memory, turn on server"
-msgstr "desliga servidor, remove memória, liga servidor"
 
 msgid "impossible to estimate"
 msgstr "impossível calcular"
@@ -363,7 +360,7 @@ msgid "Risky!"
 msgstr "Arriscado!"
 
 msgid "Site down = lose deals."
-msgstr "Site ficou fora do ar = perder negócios."
+msgstr "Site fora do ar = perder negócios."
 
 msgid "With Getup you pay only for what you use and saves time."
 msgstr "Na Getup você paga apenas pelo que usou e ainda economiza tempo."
