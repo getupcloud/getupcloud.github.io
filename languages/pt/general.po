@@ -409,8 +409,8 @@ msgstr ""
 msgid "Don't be shy! Let's talk about clouds."
 msgstr "Não seja tímido! Venha conversar sobre nuvem."
 
-msgid "Infrastructure is based on:"
-msgstr "Infraestrutura é baseada em:"
+msgid "Powered by"
+msgstr "Powered by"
 
 msgid "Privacy policy"
 msgstr "Política de privacidade"
