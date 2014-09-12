@@ -644,7 +644,7 @@ i.tooltip { display: none; }
     .footer-container .wrapper ul { float: left; margin: 0; width: 45%; }
 
     .footer-container .wrapper ul li.amazon { background-position: -114px -67px; height: 43px; width: 112px; }
-    .footer-container .wrapper ul li.openshift { background-position: -235px -63px; height: 59px; width: 54px; }
+    .footer-container .wrapper ul li.openshift { background-position: -235px -63px; height: 59px; width: 54px; padding-left: 3px; }
 
     .footer-container p { color: #333; display: inline-block; font-family: 'Ostrich'; font-size: 60px; position: relative; text-align: center; top: -10px; width: 59%; }
 
