@@ -518,7 +518,7 @@ i.tooltip { display: none; }
 #modal { display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 20; }
 
 .modal-mask { background: #000; height: 100%; left: 0; opacity: 0.5; position: fixed; top: 0; width: 100%; z-index: 1; }
-.modal-content { background: #fff; height: 400px; left: 5%; max-width: 700px; position: absolute; top: 10%; width: 90%; z-index: 2; }
+.modal-content { background: #fff; height: 640px; left: 5%; max-width: 700px; position: absolute; top: 10%; width: 90%; z-index: 2; }
 
 #modal .close { font-weight: normal; font-weight: 300; font-size: 30px; text-decoration: none; color: #333333; position: absolute; right: 20px; top: 20px; }
 
@@ -531,7 +531,7 @@ i.tooltip { display: none; }
 
 #terms ul { list-style: none; }
 
-#terms .scroll { height: 300px; margin: 10px 5%; overflow: auto; width: 90%; }
+#terms .scroll { height: 530px; margin: 10px 5%; overflow: auto; width: 90%; }
 
 /* no-js */
 
