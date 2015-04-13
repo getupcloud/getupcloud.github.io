@@ -7,4 +7,5 @@ ExpiresByType text/html "access plus 86400 seconds"
 
 RewriteEngine On
 RewriteCond %{HTTP:CloudFront-Forwarded-Proto} !=https [NC]
+RewriteCond %{HTTP_USER_AGENT} !^Amazon\ Route\ 53\ Health\ Check.*
 RewriteRule ^/?(.*)$ https://getupcloud.com/$1 [R=301,L]
