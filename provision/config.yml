@@ -1,0 +1,3 @@
+vm:
+  memory: 256
+  name: getup-website

@@ -1,0 +1,58 @@
+<article id="sign-up" class="pageview" data-pageview="signup">
+    <header>
+        <div class="background map">
+            <div class="wrapper">
+                <h2>{{ _ "750 free hours to test Getup: create your account and take it, it's free."}}</h2>
+                <a class="button orange fsize3 padX15Y0 article all-article"  data-event="Signup,Button,Free trial" href="#sign-up" data-article="sign-up">{{ _ "Free Trial"}}</a>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper">
+        <form method="post" action="{{ signup }}">
+            <input type="hidden" name="lang" id="language" value="{{ language }}">
+            <input type="hidden" name="partner" id="partner" value="">
+            <fieldset>
+                <legend>{{ _ "Create Account"}}</legend>
+                <p class="no-margin">{{ _ "You get 750 hours to verify Getup is the s#&@!" }}</p>
+                <p>{{ _ "If you have a promo code, use it!" }}</p>
+
+                <div class="form">
+                    <label>
+                        <span>{{ _ "What's your name?"}}</span>
+                        <input type="text" tabindex="1" name="name" />
+                    </label>
+                    <label>
+                        <span>{{ _ "What's your e-mail?"}}</span>
+                        <input type="text" tabindex="2" name="email" />
+                    </label>
+                    <label>
+                        <span>{{ _ "Create a password" }}:</span>
+                        <input type="password" tabindex="3" name="password1" />    
+                        <small>{{ _ "Minimum 6 characters" }}</small>
+                    </label>
+                    <label style="display:none;">
+                        <span>{{ _ "Insert the discount voucher"}}</span>
+                        <input type="text" tabindex="4" name="coupon_code" />
+                    </label>
+                    <label class="invisible"><!-- Layout placeholder --></label>
+                    <label class="invisible"><!-- Layout placeholder --></label>
+
+                    <input class="visuallyhidden" type="password" tabindex="3" name="password2" />
+                    <input class="visuallyhidden" type="checkbox" name="use_terms" value="1" checked="true">
+                </div>
+
+                <div class="actions">
+                    <p>{{ _ "You have a discount coupon?" }} <a href="javascript:;" class="discount-coupon" title="">{{ _ "Click here" }}.</a></p>
+                    <div class="right">
+                        <button class="button tblack fsize1 trackevent sign-up-cancel" data-event="Signup,Button,Cancel">{{ _ "Cancel"}}</button>
+                        <button class="button orange fsize1 trackevent" data-event="Signup,Button,Continue"><span>{{ _ "Continue"}}</span></button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <p id="success">
+            <strong>{{ _ "Welcome aboard."}}</strong>
+            <span>{{ _ "We sent you a email confirmation. Thank you!"}}</span>
+        </p>       
+    </section><!-- . -->
+</article>

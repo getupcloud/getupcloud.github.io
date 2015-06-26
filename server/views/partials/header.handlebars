@@ -1,0 +1,55 @@
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container closed"> <!-- start closed for mobile -->
+            <header class="wrapper clearfix">
+                <a href="{{ _ '/index_en.html' }}" class="article" data-article="home"><h1 class="ir">Getup Cloud</h1></a>
+                <img src="/images/getup.png" alt="Getup cloud" class="hidden" />
+                
+                <a class="menu-control" href="javascript:;">Menu</a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="{{ _ "/pricing" }}" data-event="Menu,Link,Pricing">
+                                <span>{{ _ "Pricing"}}</span>
+                                <span class="over">{{ _ "Pricing"}}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ _ "/technology" }}" data-event="Menu,Link,Technology">
+                                <span>{{ _ "Technology"}}</span>
+                                <span class="over">{{ _ "Technology"}}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://getup.zendesk.com/forums/" data-event="Menu,External link,Support">
+                                <span>{{ _ "Support"}}</span>                                
+                                <span class="over">{{ _ "Support"}}</span>                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://getupcloud.com/blog/" data-event="Menu,External link,Blog">
+                                <span>{{ _ "Blog"}}</span>
+                                <span class="over">{{ _ "Blog"}}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ _ "/contact" }}" data-event="Menu,Link,Get in touch">
+                                <span>{{ _ "Get in Touch"}}</span>
+                                <span class="over">{{ _ "Get in Touch"}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side">
+                        <li><a class="link upper fsize1" href="https://broker.getupcloud.com/console/signin" data-event="Menu,Button,Signin" target="_blank">{{ _ "Log In"}}</a></li>
+                        <li><a class="button white upper fsize1" onclick="Getup.articles.sign_up.link()" href="javascript:;" data-event="Menu,Button,Signup">{{ _ "Sign Up"}}</a></li>                        
+                    </ul>
+                </nav>
+
+                <aside>
+                    <a href="{{ pt_url }}" data-event="Language,Link,Portuguese" data-lang="pt-br" class="pt">Português</a>
+                    <a href="{{ en_url }}" data-event="Language,Link,English" data-lang="en-us" class="black en">English</a>
+                </aside>
+            </header>
+        </div>

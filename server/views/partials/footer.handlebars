@@ -1,0 +1,68 @@
+        <div class="footer-container">
+            <footer class="wrapper">
+                <div class="clearfix">                    
+                    <nav class="nav-footer">
+                        <ul>
+                            <li><a href="{{ _ '/index_en.html' }}">{{ _ "Home Page"}}</a></li>
+                            <li><a href="{{ _ "/pricing" }}" data-event="Footer,Link,Pricing">{{ _ "Pricing"}}</a></li>
+                            <li><a href="{{ _ "/technology" }}" data-event="Footer,Link,Technology">{{ _ "Technology"}}</a></li>
+                            <li><a href="https://getup.zendesk.com/forums/" data-event="Footer,External link,Support">{{ _ "Support"}}</a></li>
+                            <li><a href="https://getupcloud.com/blog/" data-event="Footer,External link,Blog">{{ _ "Blog"}}</a></li>
+                            <li><a href="{{ _ "/contact" }}" data-event="Footer,Link,Get in Touch">{{ _ "Get in Touch"}}</a></li>
+                        </ul>
+                    </nav>                    
+                    <div class="news" id="newsletter">
+                        <h2>{{ _ "GET GETUP NEWS" }}</h2>
+                        <p>{{ _ "Get the latest about cloud, hosting, tips and tricks and news from Getup in your e-mail." }}</p>
+                        <div id="mc_embed_signup">
+                            <form action="http://xxxxxxx.list-manage.com/subscribe/post-json?u=xxxxx&amp;id=xxxxx&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <input type="text" name="EMAIL" id="mce-EMAIL">
+                                <div style="position: absolute; left: -5000px;"><input type="text" name="b_58abcfa203271a9db312e69fc_ee0af79b60" value=""></div>
+                                <button type="submit" id="mc-embedded-subscribe" data-event="Footer,Button,Newsletter" class="button twhite fsize1">ENVIAR</button>
+                            </form>
+                        </div>
+                        <p id="success" style="display:none;">
+                            <strong>{{ _ "Welcome aboard."}}</strong><br>
+                            <span>{{ _ "We sent you a email confirmation. Thank you!"}}</span>
+                        </p> 
+                        <small>{{ _ "Don't worry, we do not send spam neither will we share your e-mail with \"partners\" or something." }}</small>
+                    </div>
+                    <div class="power-by">
+                        <h3>Powered by:</h3>
+                        <h2 class="ir openshift">OpenShift</h2>
+                    </div>
+                </div>
+                <nav class="terms-social clearfix">
+                    <ul class="social">
+                        <li><a href="https://plus.google.com/+Getupcloud/" data-event="Footer,External link,Google+" target="_blank"><i class="icon-google-plus"></i></a></li>
+                        <li><a href="http://www.twitter.com/getupcloud" data-event="Footer,External link,Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/getup-cloud" data-event="Footer,External link,Linkedin" target="_blank"><i class="icon-linkedin"></i></a></li>
+                        <li><a href="http://www.facebook.com/getupcloud" data-event="Footer,External link,Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                    </ul>
+                    <ul class="terms">
+                        <li><a href="{{ _ "/terms-of-use" }}" data-event="Footer,Link,Terms of use">{{ _ "Terms of use"}}</a></li>
+                        <li><a href="{{ _ "/privacy-policy" }}" data-event="Footer,Link,Privacy Policy">{{ _ "Privacy policy"}}</a></li>
+                        <li><a href="{{ _ "/acceptable-use-policy" }}" data-event="Footer,Link,Acceptable use policy">{{ _ "Acceptable use policy"}}</a></li>
+                        <li><a href="{{ _ "/support-policy" }}" data-event="Footer,Link,Support policy">{{ _ "Support policy"}}</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ path "javascripts/vendor/jquery-1.10.1.min.js" }}"><\/script>')</script>
+
+        <!-- Google Analytics -->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-39510729-1', 'auto');  // Replace with your property ID.
+        // ga('send', 'pageview');
+
+        </script>
+        <!-- End Google Analytics -->        
+
+        {{{ javascripts "main" }}}        

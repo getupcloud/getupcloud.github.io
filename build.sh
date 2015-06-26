@@ -5,6 +5,8 @@ set -e
 #echo Updating npm
 #npm update
 
+cd server
+
 npm_install=0
 npm_start=0
 for i; do
@@ -22,15 +24,15 @@ fi
 
 echo Generating build...
 
-rm -rf build
+rm -rf ../build
 
 # node build
 node builder
 
 # copy common files
 echo Copying common files...
-cp -a public/* build/
-cp -a public/.htaccess build/.htaccess
+cp -a public/* ../build/
+cp -a public/.htaccess ../build/.htaccess
 
 if [ "$npm_start" -eq 1 ]; then
 	npm start

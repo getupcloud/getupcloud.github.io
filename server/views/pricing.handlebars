@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ language }}"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="{{ language }}"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="{{ language }}"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ language }}"> <!--<![endif]-->
+
+    {{> head }}
+
+    <body class="article-links page-price">
+
+        {{> header }}
+
+        <div class="main-container">
+            <div class="main clearfix">
+
+                <article id="price" class="wrapper pageview" data-pageview="pricing">
+                    <header class="intro-filters">
+                        <h2>{{ _ "Deploy in minutes and auto scale." }}</h2>
+                        <ul class="filters">
+	                    		<li>
+                    			<span class="label">{{ _ "Per" }}:</span>
+	                    			<div class="bar">
+		                    			<a href="javascript:;" data-activing="active-month" data-disable="active-hour" class="active" title="{{ _ "Month" }}">{{ _ "Month" }}</a>
+		                    			<a href="javascript:;" data-activing="active-hour" data-disable="active-month" title="{{ _ "Hour" }}">{{ _ "Hour" }}</a>
+	                    			</div>
+	                    		</li>
+	                    		<li>
+	                    			<span class="label">{{ _ "Region"}}:</span>
+	                    			<div class="bar">
+		                    			<a href="javascript:;" data-activing="active-br" data-disable="active-us" class="active" title="{{ _ "Brazil" }}">{{ _ "Brazil" }}</a>
+		                    			<a href="javascript:;" data-activing="active-us" data-disable="active-br" title="{{ _ "USA" }}">{{ _ "USA" }}</a>
+	                    			</div>
+	                    		</li>
+	                    	</ul>
+                    </header>
+                    <div class="plans clearfix active-month active-br">
+	                    <section class="plan">
+												<header>
+													<h2 class="type">Small</h2>
+													<h3>
+														<span>R$</span>
+														<strong class="plan-br plan-month">108,04</strong>
+														<strong class="plan-us plan-month">89,06</strong>
+														<strong class="plan-br plan-hour">0,148</strong>
+														<strong class="plan-us plan-hour">0,122</strong>
+														<span class="plan-month">{{ _ "/mo" }}</span>
+														<span class="plan-hour">{{ _ "/hour" }}</span>
+													</h3>
+												</header>
+												<div class="body">
+													<ul>
+														<li><strong>512MB</strong> {{ _ "RAM" }}</li>
+														<li>
+															<strong>3GB</strong> {{ _ "SSD Disc" }}
+															<em class="icon-help">
+																<i>?</i>
+																<div class="tooltip">
+																	<p><strong>Lorem ipsum</strong> - dolor sit amet, consectetur adipisicing elit. Accusantium voluptatibus eos doloremque consequuntur deleniti explicabo esse quidem hic magni, inventore, perspiciatis, voluptas voluptate! Inventore minima, dolorum totam veritatis illo nemo.</p>
+																	<span><!--  --></span>
+																</div>
+															</em>
+														</li>
+														<li><strong>{{ _ "Auto Scaling"}}</strong></li>
+													</ul>
+												</div>
+												<a href="javascript:;" onclick="Getup.articles.sign_up.link()" class="btn">
+													<div class="content">
+														<strong>{{ _ "Sign up now" }}</strong>
+														<span>{{ _ "Free Trial" }}</span>
+														<em class="icon-help">
+															<i>?</i>
+															<div class="tooltip">
+																<p><strong>Lorem ipsum</strong> - dolor sit amet, consectetur adipisicing elit. Accusantium voluptatibus eos doloremque consequuntur deleniti explicabo esse quidem hic magni, inventore, perspiciatis, voluptas voluptate! Inventore minima, dolorum totam veritatis illo nemo.</p>
+																<span><!--  --></span>
+															</div>
+														</em>
+													</div>
+												</a>
+	                    </section>
+	                    <span class="separator"><!--   --></span>
+	                    <section class="plan">
+												<header>
+													<h2 class="type">Medium</h2>
+													<h3>
+														<span>R$</span>
+														<strong class="plan-br plan-month">270,10</strong>
+														<strong class="plan-us plan-month">222,65</strong>
+														<strong class="plan-br plan-hour">0,370</strong>
+														<strong class="plan-us plan-hour">0,305</strong>
+														<span class="plan-month">{{ _ "/mo" }}</span>
+														<span class="plan-hour">{{ _ "/hour" }}</span>
+													</h3>
+												</header>
+												<div class="body">
+													<ul>
+														<li><strong>1GB</strong> {{ _ "RAM"}}</li>
+														<li>
+															<strong>6GB</strong> {{ _ "SSD Disc"}}
+															<em class="icon-help">
+																<i>?</i>
+																<div class="tooltip">
+																	<p><strong>Lorem ipsum</strong> - dolor sit amet, consectetur adipisicing elit. Accusantium voluptatibus eos doloremque consequuntur deleniti explicabo esse quidem hic magni, inventore, perspiciatis, voluptas voluptate! Inventore minima, dolorum totam veritatis illo nemo.</p>
+																	<span><!--  --></span>
+																</div>
+															</em>
+														</li>
+														<li><strong>{{ _ "Auto Scaling" }}</strong></li>
+													</ul>
+												</div>
+												<a href="javascript:;" class="btn" onclick="Getup.articles.sign_up.link()">
+													<div class="content">
+														<strong>{{ _ "Sign up now" }}</strong>
+													</div>
+												</a>
+	                    </section>
+	                    <span class="separator"><!--   --></span>
+	                    <section class="plan">
+												<header>
+													<h2 class="label">{{ _ "Dedicated Servers" }}</h2>													
+												</header>
+												<div class="body">
+													<p>{{ _ "Dedicated servers for custom gear size, multiple regions and auto scale"}}</p>
+												</div>
+												<a href="javascript:;" class="btn" onclick="Getup.articles.dedicated_servers.link()">
+													<div class="content">
+														<strong>{{ _ "More" }}</strong>
+													</div>
+												</a>
+	                    </section>
+                    </div>
+                    <div class="what-is-included">
+                    	<h3>{{ _ "All Plans include" }}:</h3>
+                    	<ul>
+                    		<li><i class="ir ico-multiple-language"></i>{{ _ "Multiple Languages and Frameworks" }}</li>
+												<li><i class="ir ico-multiple-region"></i>{{ _ "Multiple Regions and Datacenters" }}</li>
+												<li><i class="ir ico-auto-Scaling"></i>{{ _ "Auto Scaling" }}</li>
+                    	</ul>
+                    	<ul>
+                    		<li><i class="ir ico-devops"></i>{{ _ "DevOps Support" }}</li>
+												<li><i class="ir ico-ssl-suport"></i>{{ _ "Shared SSL Certificate" }}</li>
+												<li><i class="ir ico-ssd-disc"></i>{{ _ "SSD Discs" }}</li>
+                    	</ul>
+                    </div>
+                </article>
+
+                {{> multiple_datacenter }}
+
+                <article id="dedicated-servers-price" class="wrapper pageview" data-pageview="dedicated_servers">
+                	<figure>
+                        <img src="/images/image-dedicated-servers_{{ language }}.png">
+                    </figure>
+                    <section>
+                        <h2>{{ _ "Dedicated Servers" }}</h2>                        
+                        <p>{{ _ "Getup Platform on Dedicated Servers allows you to define custom size and the number of gears running on a server, offers the flexibility to deploy on any Amazon AWS region and better isolation, running only your gears and applications in the server." }}</p>
+                       	<p>{{ _ "For developer teams it means more agility: clone an application from DEV to QA on a single command:" }}</p>
+                       	<img src="/images/image-dedicated-servers.gif" alt="{{ _ "Dedicated Servers" }}">
+												<p>{{ _ "All of it without having to worry about server administration, monitoring, backup, maintenance and updates." }}</p>
+												<a href="{{ _ "/contact" }}" class="button gray fsize2 padX15Y0" title="{{ _ "Drop us a line" }}">{{ _ "Drop us a line" }}</a>
+                    </section>
+                </article>
+
+                {{> cases }}
+
+                <div class="background faq">
+	                <article id="faq" class="wrapper pageview" data-pageview="faq">
+	                	<header>
+	                		<h2>Perguntas Frequentes</h2>
+	                	</header>
+	                	<section>
+	                		<ul class="clearfix">
+	                			<li>
+		                			<h3>{{ _ "For whom Getup was created?" }}</h3>
+													<p>{{ _ "Getup was built for developers, startups, digital agencies and companies of all sizes looking for cloud computing services to run their sites and applications. Our platform allows you to start small and grow in the cloud as your business moves forward, without the headache of having to deal with servers and infrastructure." }}</p>
+													</li>
+													<li>
+													<h3>{{ _ "What is the gear?" }}</h3>
+													<p>{{ _ "Gear is a secure container where your application or database runs. Think on a gear as your server. Each gear has its own CPU, RAM memory, bandwidth and disc storage. Your application and database can run on a single gear (non-scalable) or in multiple gears (scalable applications)." }}</p>
+													</li>
+													<li>
+													<h3>{{ _ "How Getup scalability works?" }}</h3>
+													<p>{{ _ "The auto scaling feature allows your site to spin up new gears when a traffic spike occurs, making it possible to serve virtually any amount of traffic. When the traffic spike ceases, the platform will remove automatically the additional gears. We call this horizontal scaling." }}</p>
+													</li>
+													<li>
+													<h3>{{ _ "How much does the service cost?" }}</h3>
+													<p>{{ _ "The monthly fee is based on the number of gears running and for how long each gear was running on a month. For example, if your site consumed 1 small gear for an entire month then 730h * R$ 0,122 = R$ 89,06." }}</p>
+													</li>
+													<li>
+													<h3>{{ _ "How much does it cost to scale one application?" }}</h3>
+													<p>{{ _ "To run your application, you will need at least one single gear. Let’s assume that this gear was running for the entire month. In this particularly month you had a single event with a traffic spike where 4 additional gears were created and the traffic spike lasted for 6 hours. For your mainly gear you will have 730h. For the additional gears you will have 24 hours (4 gears * 6h). 730h + 24h = 754h * R$ 0,122 = R$ 91,98" }}</p>
+													</li>
+													<li>
+													<h3>{{ _ "How do I pay?" }}</h3>
+													<p>{{ _ "You can pay using Paypal or credit card." }}</p>
+													</li>
+													<li>
+													<h3>{{ _ "Do I have to pay something when informing my credit card?" }}</h3>
+													<p>{{ _ "No, nothing, niente, nada." }}</p>
+													</li>
+													<li>
+													<h3>{{ _ "Am I billed if my gear is on a Stop state?" }}</h3>
+													<p>{{ _ "Yes, our billing system uses the time that the gears existed, not the state. If you want to stop paying, you need to remove the gears." }}</p>
+													</li>
+													<li>
+													<h3>{{ _ "What do I need to do to cancel the service?" }}</h3>
+													<p>{{ _ "Just remove your application. There is no minimum time commitment or extra charge." }}</p>
+													</li>
+													<li>
+													<h3>{{ _ "Is it possible to run gears bigger than 1GB RAM?" }}</h3>
+													<p>{{ _ "Yep. Have a look at our Dedicated Servers option, it allows you to run any size you need on a server." }}</p>
+													</li>
+													<li>
+													<h3>{{ _ "Can I add more disc space in my gear?" }}</h3>
+													<p>{{ _ "Yes." }}</p>
+												</li>
+	                		</ul>
+	                	</section>
+	                </article>
+                </div>
+
+                {{> signup }}
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        {{> footer }}
+
+        {{{ javascripts "price" }}}
+    </body>
+</html>

@@ -1,0 +1,452 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Mateus Caruccio <mateus.caruccio@getupcloud.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+
+msgid "Getup Cloud | Scalable Cloud Application | Grow in the cloud"
+msgstr "Getup Cloud | Hospedagem na nuvem | Grow in the cloud"
+
+msgid "getup"
+msgstr "getup"
+
+msgid "/index_en.html"
+msgstr "/"
+
+msgid "/pricing"
+msgstr "/preco"
+
+msgid "Pricing"
+msgstr "Preço"
+
+msgid "Legal Definitions"
+msgstr "Definições Legais"
+
+msgid "Home Page"
+msgstr "Página Inicial"
+
+msgid "Get in Touch"
+msgstr "Contato"
+
+msgid "/contact"
+msgstr "/contato"
+
+msgid "Support"
+msgstr "Suporte"
+
+msgid "Technology"
+msgstr "Tecnologia"
+
+msgid "/technology"
+msgstr "/tecnologia"
+
+msgid "Terms of Use"
+msgstr "Termos de Uso"
+
+msgid "/terms-of-use"
+msgstr "/termos-de-uso"
+
+msgid "Privacy Policy"
+msgstr "Política de Privacidade"
+
+msgid "/privacy-policy"
+msgstr "/politica-de-privacidade"
+
+msgid "Acceptable use Policy"
+msgstr "Política de Utilização Aceitável - PUA"
+
+msgid "/acceptable-use-policy"
+msgstr "/politica-de-utilizacao-aceitavel"
+
+msgid "Support Policy"
+msgstr "Política de Suporte"
+
+msgid "/support-policy"
+msgstr "/politica-de-suporte"
+
+msgid "Log In"
+msgstr "Entrar"
+
+msgid "Sign Up"
+msgstr "Crie sua Conta"
+
+msgid "GET GETUP NEWS"
+msgstr "RECEBA CONTEÚDOS GETUP"
+
+msgid "Get the latest about cloud, hosting, tips and tricks and news from Getup in your e-mail."
+msgstr "Receba novidades sobre nuvem, hospedagem, tutoriais, dicas, macetes e novidades Getup em seu e-mail."
+
+msgid "Don't worry, we do not send spam neither will we share your e-mail with \"partners\" or something."
+msgstr "Fique tranquilo, não enviamos spam nem iremos compartilhar seu e-mail com \"parceiros\"."
+
+msgid "Getup is a scalable cloud application platform"
+msgstr "Getup é uma plataforma para hospedagem na nuvem"
+
+msgid "An easy and fast way to build and deploy web apps."
+msgstr "Uma forma fácil e rápida de desenvolver e publicar aplicações web."
+
+msgid "Hosting to high performance applications and websites"
+msgstr "Desenvolva, hospede e escale sites e aplicações na nuvem"
+
+msgid "Everything you need to grow in the cloud."
+msgstr "Tudo o que você precisa para crescer na nuvem."
+
+msgid "UP and running in 2 minutes"
+msgstr "Servidores prontos em 2 minutos"
+
+msgid "Pick the technologies and the installation of frameworks, libs, databases and updates are automated. In the end you get an URL and an SSL Certificate."
+msgstr "Você escolhe as tecnologias e a instalação das bibliotecas, frameworks e atualizações são automatizados. Você recebe a URL para acesso e Certificado SSL."
+
+msgid "Scale your application automatically"
+msgstr "Escale seu site automaticamente"
+
+msgid "Getup auto-scaling gives you the power to add more capacity as your site traffic increases and remove it when not needed, automatically."
+msgstr "A Getup lhe dá o poder de adicionar mais capacidade quando o tráfego crescer e remover quando o tráfego diminuir, tudo automático."
+
+msgid "Bring us your biggest problem."
+msgstr "Nos traga seu maior problema"
+
+msgid "Our DevOps support team will help you to build a rock solid architecture using technologies like Redis, Memcached, MongoDB and CDN."
+msgstr "Nosso suporte irá ajudá-lo com a arquitetura da sua aplicação, dimensionamento de acessos e tecnologias como Redis, Memcached, MongoDB ou CDN."
+
+msgid "Auto Scaling for traffic spikes."
+msgstr "Escalabilidade automática para os picos de acesso."
+
+msgid "Circuito Banco do Brasil is a music, sports and culture festival held by a Brazilian Bank. The 2014 edition featured bands like Linkin Park, Nação Zumbi e Kings of Leon."}}
+msgstr "O Circuito Banco do Brasil é um festival de música, esporte e cultura realizado pelo Banco do Brasil, trazendo shows como Linkin Park, Nação Zumbi e Kings of Leon."
+
+msgid "The website, based on WordPress, got +400 blog posts from journalists and"
+msgstr "O site, baseado em WordPress, recebeu +400 posts de jornalistas e atingiu"
+
+msgid "4 million HTTP requests"
+msgstr "4 milhões de requisições HTTP"
+
+msgid "on the day of the launch press conference."
+msgstr "no dia da coletiva de imprensa de lançamento."
+
+msgid "The auto scale feature ensured the site performance, even in traffic spike periods."
+msgstr "A escalabilidade automática garantiu a performance do site mesmo nos períodos de picos."
+
+msgid "Learn more about this case"
+msgstr "Saiba mais sobre o case"
+
+msgid "on our blog."
+msgstr "em nosso blog."
+
+msgid "Multiple Datacenters"
+msgstr "Múltiplos Datacenters"
+
+msgid "Deploy your application closer to your users for better latency or in more than one location for high availability."
+msgstr "Faça o deploy na região mais próxima dos seus usuários ou em mais de uma região para alta disponibilidade."
+
+msgid "Resources Available"
+msgstr "Recursos Disponíveis"
+
+msgid "Dedicated Server"
+msgstr "Servidor Dedicado"
+
+msgid "Get in touch"
+msgstr "Entre em contato"
+
+msgid "Check the price"
+msgstr "Veja o preço"
+
+msgid "Virginia"
+msgstr "Virgínia"
+
+msgid "Oregon"
+msgstr "Oregon"
+
+msgid "California"
+msgstr "Califórnia"
+
+msgid "Ireland"
+msgstr "Irlanda"
+
+msgid "Frankfurt"
+msgstr "Frankfurt"
+
+msgid "Singapore"
+msgstr "Cingapura"
+
+msgid "Tokyo"
+msgstr "Tóquio"
+
+msgid "Sydney"
+msgstr "Sydney"
+
+msgid "São Paulo"
+msgstr "São Paulo"
+
+msgid "Dedicated Servers"
+msgstr "Servidores Dedicados"
+
+msgid "Startup agility for big companies"
+msgstr "Agilidade de startup para grandes empresas"
+
+msgid "You're big, we get it! But it does not mean you need to move slowly. Our platform on dedicated servers might be what you've been looking for - Startup agility designed to enterprise requirements."
+msgstr "Você é grande, nós entendemos! Isso não significa que você não possa inovar. Nossa plataforma em servidores dedicados pode ser o que você estava procurando - Agilidade e inovação de Startup desenhado para os requisitos de grandes empresas."
+
+msgid "Drop us a line"
+msgstr "Entre em contato"
+
+msgid "Trust is everything"
+msgstr "Confiança é tudo"
+
+msgid "Not just big brands, we proud ourselves in helping small companies and cool startups"
+msgstr "Não apenas para grandes marcas, temos orgulho em ajudar pequenas empresas e startups de grande potencial"
+
+msgid "750 free hours to test Getup: create your account and take it, it's free."
+msgstr "750 horas grátis para você conhecer a Getup, aproveite e crie sua conta."
+
+msgid "What's your name?"
+msgstr "Qual seu nome?"
+
+msgid "What's your e-mail?"
+msgstr "Qual seu e-mail?"
+
+msgid "Insert the discount voucher"
+msgstr "Insira o cupom de desconto"
+
+msgid "Create Account"
+msgstr "Criar Conta"
+
+msgid "If you have a promo code, use it!"
+msgstr "Se você possui um código promocional, use-o!"
+
+msgid "You get 750 hours to verify Getup is the s#&@!"
+msgstr "São 750 horas pra você comprovar que a Getup é f$@#!."
+
+msgid "Create a password"
+msgstr "Crie uma senha de acesso"
+
+msgid "Minimum 6 characters"
+msgstr "Mínimo 6 caracteres"
+
+msgid "You have a discount coupon?"
+msgstr "Tem algum cupom de desconto?"
+
+msgid "Click here"
+msgstr "Clique aqui"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Deploy in minutes and auto scale."
+msgstr "Deploy em minutos e escalabilidade automática."
+
+msgid "Per"
+msgstr "Valor por"
+
+msgid "Month"
+msgstr "Mês"
+
+msgid "Hour"
+msgstr "Hora"
+
+msgid "Region"
+msgstr "Região"
+
+msgid "Brazil"
+msgstr "Brasil"
+
+msgid "USA"
+msgstr "EUA"
+
+msgid "Sign up now"
+msgstr "Crie sua conta agora"
+
+msgid "/mo"
+msgstr "/mês"
+
+msgid "/hour"
+msgstr "/hora"
+
+msgid "Auto Scaling"
+msgstr "Escalabilidade Automática"
+
+msgid "SSD Disc"
+msgstr "disco SSD"
+
+msgid "RAM"
+msgstr "memória"
+
+msgid "Free Trial"
+msgstr "Experimente grátis"
+
+msgid "Dedicated Servers"
+msgstr "Servidores Dedicados"
+
+msgid "Dedicated servers for custom gear size, multiple regions and auto scale"
+msgstr "Servidores Dedicados para tamanho de gear sob medida, múltiplas regiões e escalabilidade automática"
+
+msgid "More"
+msgstr "Saiba mais"
+
+msgid "All Plans include"
+msgstr "Todos os planos incluem"
+
+msgid "Multiple Languages and Frameworks"
+msgstr "Multiplas Linguagens e Frameworks"
+
+msgid "Shared SSL Certificate"
+msgstr "Certificado SSL Compartilhado"
+
+msgid "Multiple Regions and Datacenters"
+msgstr "Múltiplas Regiões e Datacenters"
+
+msgid "DevOps Support"
+msgstr "Suporte Técnico DevOps"
+
+msgid "SSD Discs"
+msgstr "Discos SSD"
+
+msgid "Getup Platform on Dedicated Servers allows you to define custom size and the number of gears running on a server, offers the flexibility to deploy on any Amazon AWS region and better isolation, running only your gears and applications in the server."
+msgstr "A Plataforma Getup em servidores dedicados permite customizar o tamanho e quantidade de gears de cada servidor, oferece a flexibilidade de deploy em qualquer região Amazon e maior nível de isolamento, rodando somente suas aplicações no servidor."
+
+msgid "For developer teams it means more agility: clone an application from DEV to QA on a single command:"
+msgstr "Para times de desenvolvimento oferece maior agilidade, clonar uma aplicação de DEV para QA está a um comando de distância:"
+
+msgid "All of it without having to worry about server administration, monitoring, backup, maintenance and updates."
+msgstr "Tudo isso sem se preocupar com administração, monitoramento, backup e atualizações."
+
+
+msgid "For whom Getup was created?"
+msgstr "Para quem a Getup foi criada?"
+
+msgid "Getup was built for developers, startups, digital agencies and companies of all sizes looking for cloud computing services to run their sites and applications. Our platform allows you to start small and grow in the cloud as your business moves forward, without the headache of having to deal with servers and infrastructure."
+msgstr "A Getup foi criada para desenvolvedores, startups, agências digitais e empresas de todos os tamanhos. Nossa plataforma permite que você comece pequeno e cresça conforme seu negócio, sem desperdícios e sem a dor de cabeça de lidar com servidores e infraestrutura."
+
+msgid "What is the gear?"
+msgstr "O que é um gear?"
+
+msgid "Gear is a secure container where your application or database runs. Think on a gear as your server. Each gear has its own CPU, RAM memory, bandwidth and disc storage. Your application and database can run on a single gear (non-scalable) or in multiple gears (scalable applications)."
+msgstr "Gear é um container onde seu site, aplicação ou banco de dados será hospedado. Pense no gear como seu servidor."
+
+msgid "How Getup scalability works?"
+msgstr "O que é a escalabilidade e como funciona?"
+
+msgid "The auto scaling feature allows your site to spin up new gears when a traffic spike occurs, making it possible to serve virtually any amount of traffic. When the traffic spike ceases, the platform will remove automatically the additional gears. We call this horizontal scaling."
+msgstr "O auto-scale permite que seu site consiga se adaptar para atender mudanças no volume de acessos, adicionando e removendo novos gears sempre que houver necessidade por mais recursos. A escalabilidade é horizontal, sua aplicação ganha mais recursos com novos gears."
+
+msgid "How much does the service cost?"
+msgstr "Como é calculado o custo mensal?"
+
+msgid "The monthly fee is based on the number of gears running and for how long each gear was running on a month. For example, if your site consumed 1 small gear for an entire month then 730h * R$ 0,122 = R$ 89,06."
+msgstr "O valor mensal é baseado no número de horas/gear utilizadas no mês, onde o consumo é calculado levando em consideração um único fator, tempo decorrido no relógio. Se seu site estiver rodando em 1 gear small, então R$ 89,06/mês (730h * R$ 0,122)."
+
+msgid "How much does it cost to scale one application?"
+msgstr "Quanto custa escalar uma aplicação? "
+
+msgid "To run your application, you will need at least one single gear. Let’s assume that this gear was running for the entire month. In this particularly month you had a single event with a traffic spike where 4 additional gears were created and the traffic spike lasted for 6 hours. For your mainly gear you will have 730h. For the additional gears you will have 24 hours (4 gears * 6h). 730h + 24h = 754h * R$ 0,122 = R$ 91,98"
+msgstr "Sua aplicação possui um gear principal e que ficou rodando todo o mês, mas para atender um pico de acessos escalou para +4 gears por 6 horas. O gear principal será cobrado o mês completo, porém os 4 gears que rodaram por 6 horas serão cobrados apenas pelas 6h que permaneceram em uso."
+
+msgid "How do I pay?"
+msgstr "Como é feito o pagamento?"
+
+msgid "You can pay using Paypal or credit card."
+msgstr "Você pode efetuar o pagamento usando cartão de crédito ou através do Paypal."
+
+msgid "Do I have to pay something when informing my credit card?"
+msgstr "É cobrado algo na autorização de cobrança?"
+
+msgid "No, nothing, niente, nada."
+msgstr "Não, nada, niente."
+
+msgid "Am I billed if my gear is on a Stop state?"
+msgstr "Sou cobrado se meu gear estiver desligado?"
+
+msgid "Yes, our billing system uses the time that the gears existed, not the state. If you want to stop paying, you need to remove the gears."
+msgstr "Sim, nossa cobrança considera se o gear existe, não o seu estado."
+
+msgid "What do I need to do to cancel the service?"
+msgstr "Como proceder se eu quiser cancelar o serviço?"
+
+msgid "Just remove your application. There is no minimum time commitment or extra charge."
+msgstr "Basta remover sua aplicação. Não há tempo mínimo de contratação ou multa pelo cancelamento."
+
+msgid "Is it possible to run gears bigger than 1GB RAM?"
+msgstr "É possível rodar gears maiores que 1GB memória?"
+
+msgid "Yep. Have a look at our Dedicated Servers option, it allows you to run any size you need on a server."
+msgstr "Sim, é possível através da oferta de servidores dedicados, onde você pode definir o tamanho de gear que precisar."
+
+msgid "Can I add more disc space in my gear?"
+msgstr "Posso adicionar mais área em disco no meu gear?"
+
+msgid "Yes."
+msgstr "Sim."
+
+msgid "Don't be shy. Let's talk about cloud!"
+msgstr "Não seja tímido. Vamos falar sobre nuvem?"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Company"
+msgstr "Empresa"
+
+msgid "Phone"
+msgstr "Telefone"
+
+msgid "Message"
+msgstr "Mensagem"
+
+msgid "Send"
+msgstr "Enviar"
+
+msgid "Required fields"
+msgstr "Campos Obrigatórios"
+
+msgid "ask@getupcloud.com"
+msgstr "contato@getupcloud.com"
+
+msgid "sales@getupcloud.com"
+msgstr "comercial@getupcloud.com"
+
+msgid "support@getupcloud.com"
+msgstr "suporte@getupcloud.com"
+
+msgid "Technologies "
+msgstr "Tecnologias"
+
+msgid "Technologies"
+msgstr "Tecnologias Suportadas"
+
+msgid "We say we’re polyglots because we offer support to a wide list of programming languages and services deployed through a cartridge. Cartridges can be web frameworks, databases, monitoring services or connectors to external backends."
+msgstr "Gostamos de dizer que somos poliglotas, pois oferecemos suporte a diversas linguagens e serviços através de um sistema chamado de cartridges, ou cartuchos. Os cartridges podem ser frameworks, bancos de dados, serviços de monitoramento ou qualquer outro código que sua aplicação use."
+
+msgid "Delivering services and frameworks through a cartridge offers developers and system administrators a way to get more productivity and standardization. Focus on your code, that’s the message!"
+msgstr "A entrega de componentes através de cartridges oferece aos desenvolvedores e administradores de sistema agilidade e padronização. Foque no código, esse é o recado!"
+
+msgid "Your message has been sent. Thank you."
+msgstr "Sua mensagem foi enviada. Obrigado."
+
+msgid "Welcome aboard."
+msgstr "Bem vindo à bordo."
+
+msgid "We sent you a email confirmation. Thank you!"
+msgstr ""
+"Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado "
+"por se cadastrar."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
