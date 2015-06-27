@@ -17,6 +17,10 @@ fs.mkdirSync(base);
 // EN
 fs.mkdirSync(base + '/contact');
 fs.mkdirSync(base + '/pricing');
+fs.mkdirSync(base + '/terms-of-use');
+fs.mkdirSync(base + '/support-policy');
+fs.mkdirSync(base + '/privacy-policy');
+fs.mkdirSync(base + '/acceptable-use-policy');
 
 fs.mkdirSync(base + '/technology');
 fs.mkdirSync(base + '/technology/php');
@@ -32,6 +36,10 @@ fs.mkdirSync(base + '/technology/mongodb');
 // PT
 fs.mkdirSync(base + '/contato');
 fs.mkdirSync(base + '/preco');
+fs.mkdirSync(base + '/termos-de-uso');
+fs.mkdirSync(base + '/politica-de-suporte');
+fs.mkdirSync(base + '/politica-de-privacidade');
+fs.mkdirSync(base + '/politica-de-utilizacao-aceitavel');
 
 fs.mkdirSync(base + '/tecnologia');
 fs.mkdirSync(base + '/tecnologia/php');
