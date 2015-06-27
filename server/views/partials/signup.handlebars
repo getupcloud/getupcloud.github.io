@@ -3,7 +3,7 @@
         <div class="background map">
             <div class="wrapper">
                 <h2>{{ _ "750 free hours to test Getup: create your account and take it, it's free."}}</h2>
-                <a class="button orange fsize3 padX15Y0 article all-article"  data-event="Signup,Button,Free trial" href="#sign-up" data-article="sign-up">{{ _ "Free Trial"}}</a>
+                <a class="button orange fsize3 padX15Y0 article all-article"  data-event="Signup,Button,Free trial" href="javascript:;"  onclick="Getup.articles.sign_up.link()" >{{ _ "Free Trial"}}</a>
             </div>
         </div>
     </header>
@@ -13,22 +13,22 @@
             <input type="hidden" name="partner" id="partner" value="">
             <fieldset>
                 <legend>{{ _ "Create Account"}}</legend>
-                <p class="no-margin">{{ _ "You get 750 hours to verify Getup is the s#&@!" }}</p>
-                <p>{{ _ "If you have a promo code, use it!" }}</p>
+                <p>{{ _ "750h small gear - create an app, add a database and run it free for 1 month." }}</p>
 
                 <div class="form">
                     <label>
-                        <span>{{ _ "What's your name?"}}</span>
+                        <span>{{ _ "Name"}}</span>
                         <input type="text" tabindex="1" name="name" />
                     </label>
                     <label>
-                        <span>{{ _ "What's your e-mail?"}}</span>
+                        <span>{{ _ "E-mail"}}</span>
                         <input type="text" tabindex="2" name="email" />
                     </label>
                     <label>
-                        <span>{{ _ "Create a password" }}:</span>
+                        <span>{{ _ "Password" }}</span>
                         <input type="password" tabindex="3" name="password1" />    
-                        <small>{{ _ "Minimum 6 characters" }}</small>
+                        <small>{{ _ "*Minimum 6 characters" }}</small>
+                        <small class="no-padding" >{{ _ "Letters, numbers and/or symbols" }}</small>
                     </label>
                     <label style="display:none;">
                         <span>{{ _ "Insert the discount voucher"}}</span>

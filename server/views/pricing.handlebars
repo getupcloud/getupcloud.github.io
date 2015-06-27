@@ -147,24 +147,32 @@
 
                 <article id="dedicated-servers-price" class="wrapper pageview" data-pageview="dedicated_servers">
                 	<figure>
-                        <img src="/images/image-dedicated-servers_{{ language }}.png">
+                		<div class="dedicated-server-gear">
+                			<div class="tooltip">
+                			    <h2>GEARS?</h2>
+                			    <p>{{ _ "Gears are the 'containers' running your code." }}</p>    
+                			</div>
+                		</div>
+                        <img class="dedicated-server-placeholder" src="/images/image-dedicated-servers_{{ language }}.png">
+                        <img class="dedicated-server-normal" src="/images/image-dedicated-servers_{{ language }}.png">
+                        <img class="dedicated-server-hover" src="/images/image-dedicated-servers-cube_{{ language }}.png">
                     </figure>
                     <section>
                         <h2>{{ _ "Dedicated Servers" }}</h2>                        
                         <p>{{ _ "Getup Platform on Dedicated Servers allows you to define custom size and the number of gears running on a server, offers the flexibility to deploy on any Amazon AWS region and better isolation, running only your gears and applications in the server." }}</p>
                        	<p>{{ _ "For developer teams it means more agility: clone an application from DEV to QA on a single command:" }}</p>
-                       	<img src="/images/image-dedicated-servers.gif" alt="{{ _ "Dedicated Servers" }}">
+                       	<div class="background"><img src="/images/image-dedicated-servers.gif" alt="{{ _ "Dedicated Servers" }}"></div>
 												<p>{{ _ "All of it without having to worry about server administration, monitoring, backup, maintenance and updates." }}</p>
 												<a href="{{ _ "/contact" }}" class="button gray fsize2 padX15Y0" title="{{ _ "Drop us a line" }}">{{ _ "Drop us a line" }}</a>
                     </section>
                 </article>
 
-                {{> cases }}
+               {{> cases }}
 
                 <div class="background faq">
 	                <article id="faq" class="wrapper pageview" data-pageview="faq">
 	                	<header>
-	                		<h2>Perguntas Frequentes</h2>
+	                		<h2>{{ _ "FAQ" }}</h2>
 	                	</header>
 	                	<section>
 	                		<ul class="clearfix">

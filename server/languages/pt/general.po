@@ -111,8 +111,8 @@ msgstr "A Getup lhe dá o poder de adicionar mais capacidade quando o tráfego c
 msgid "Bring us your biggest problem."
 msgstr "Nos traga seu maior problema"
 
-msgid "Our DevOps support team will help you to build a rock solid architecture using technologies like Redis, Memcached, MongoDB and CDN."
-msgstr "Nosso suporte irá ajudá-lo com a arquitetura da sua aplicação, dimensionamento de acessos e tecnologias como Redis, Memcached, MongoDB ou CDN."
+msgid "Our DevOps support team will help you to build a rock solid architecture using technologies like CDN and NoSQL."
+msgstr "Nosso suporte irá ajudá-lo com a arquitetura da sua aplicação, dimensionamento de acessos e tecnologias como CDN, NoSQL e Mensageria."
 
 msgid "Auto Scaling for traffic spikes."
 msgstr "Escalabilidade automática para os picos de acesso."
@@ -137,6 +137,21 @@ msgstr "Saiba mais sobre o case"
 
 msgid "on our blog."
 msgstr "em nosso blog."
+
+msgid "Scalability when you need it the most."
+msgstr "Escalabilidade na hora certa."
+
+msgid "An exclusive, free party on the rooftop of the Martinelli building."
+msgstr "Festa exclusiva e gratuita na cobertura do Edifício Martinelli."
+
+msgid "The challenge: get one of the 125 tickets per edition by signing up on the website, which was open every Monday at 6pm. This is the sum up of the Heineken Up On The Roof Garden Edition Party."
+msgstr "O desafio: conseguir um dos 125  ingressos por edição através do cadastro no site, que era aberto sempre segunda às 18h. Esse é o resumo da Festa Heineken Up On The Roof Garden Edition."
+
+msgid "Thousands of people trying their chances at the same time, thousands of simultaneous visitors the moment the sign up was open."
+msgstr "Milhares de pessoas ao mesmo tempo buscando sua chance, milhares de acessos simultâneos tão logo o cadastro fosse liberado."
+
+msgid "The right spice to bring down a server, but not here!"
+msgstr "Fórmula perfeita para derrubar um servidor? Não aqui!"
 
 msgid "Multiple Datacenters"
 msgstr "Múltiplos Datacenters"
@@ -189,8 +204,11 @@ msgstr "Servidores Dedicados"
 msgid "Startup agility for big companies"
 msgstr "Agilidade de startup para grandes empresas"
 
-msgid "You're big, we get it! But it does not mean you need to move slowly. Our platform on dedicated servers might be what you've been looking for - Startup agility designed to enterprise requirements."
-msgstr "Você é grande, nós entendemos! Isso não significa que você não possa inovar. Nossa plataforma em servidores dedicados pode ser o que você estava procurando - Agilidade e inovação de Startup desenhado para os requisitos de grandes empresas."
+msgid "You're big, we get it! But it does not mean you need to move slowly. Our platform on dedicated servers might be what you've been looking for."
+msgstr "Você é grande, nós entendemos! Isso não significa que você não possa inovar. Nossa plataforma em servidores dedicados pode ser o que você estava procurando."
+
+msgid "Startup agility designed to enterprise requirements."
+msgstr "Agilidade e inovação de Startup desenhado para os requisitos de grandes empresas."
 
 msgid "Drop us a line"
 msgstr "Entre em contato"
@@ -204,11 +222,11 @@ msgstr "Não apenas para grandes marcas, temos orgulho em ajudar pequenas empres
 msgid "750 free hours to test Getup: create your account and take it, it's free."
 msgstr "750 horas grátis para você conhecer a Getup, aproveite e crie sua conta."
 
-msgid "What's your name?"
-msgstr "Qual seu nome?"
+msgid "Name"
+msgstr "Nome"
 
-msgid "What's your e-mail?"
-msgstr "Qual seu e-mail?"
+msgid "E-mail"
+msgstr "Email"
 
 msgid "Insert the discount voucher"
 msgstr "Insira o cupom de desconto"
@@ -222,11 +240,17 @@ msgstr "Se você possui um código promocional, use-o!"
 msgid "You get 750 hours to verify Getup is the s#&@!"
 msgstr "São 750 horas pra você comprovar que a Getup é f$@#!."
 
-msgid "Create a password"
-msgstr "Crie uma senha de acesso"
+msgid "750h small gear - create an app, add a database and run it free for 1 month."
+msgstr "750h small gear - crie uma aplicação, adicione banco de dados e rode por 1 mês gratuitamente."
 
-msgid "Minimum 6 characters"
-msgstr "Mínimo 6 caracteres"
+msgid "Password"
+msgstr "Senha"
+
+msgid "*Minimum 6 characters"
+msgstr "*Mínimo 6 caracteres"
+
+msgid "Letters, numbers and/or symbols"
+msgstr "Letras, números e/ou símbolos"
 
 msgid "You have a discount coupon?"
 msgstr "Tem algum cupom de desconto?"
@@ -305,6 +329,9 @@ msgstr "Suporte Técnico DevOps"
 
 msgid "SSD Discs"
 msgstr "Discos SSD"
+
+msgid "FAQ"
+msgstr "Perguntas Frequentes"
 
 msgid "Getup Platform on Dedicated Servers allows you to define custom size and the number of gears running on a server, offers the flexibility to deploy on any Amazon AWS region and better isolation, running only your gears and applications in the server."
 msgstr "A Plataforma Getup em servidores dedicados permite customizar o tamanho e quantidade de gears de cada servidor, oferece a flexibilidade de deploy em qualquer região Amazon e maior nível de isolamento, rodando somente suas aplicações no servidor."
@@ -385,6 +412,9 @@ msgstr "Sim."
 msgid "Don't be shy. Let's talk about cloud!"
 msgstr "Não seja tímido. Vamos falar sobre nuvem?"
 
+msgid "(999) 999-9999"
+msgstr "(99) 9999-9999?9"
+
 msgid "Name"
 msgstr "Nome"
 
@@ -435,7 +465,26 @@ msgstr ""
 "Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado "
 "por se cadastrar."
 
+msgid "Register your e-mail"
+msgstr "Cadastre seu e-mail"
 
+msgid "SEND"
+msgstr "ENVIAR"
+
+msgid "Gears are the 'containers' running your code."
+msgstr "Gears são os ‘containers’ que executam seu código."
+
+msgid "Mind Pills is a mobile app platform for study and memorization improvement."
+msgstr "Mind Pills é uma plataforma de aplicativos para estudo e memorização no celular. "
+
+msgid "Our application traffic increases on the exams season, pushing the infrastructure to the limit."
+msgstr "Nossos aplicativos para concursos geram maior tráfego em épocas de provas, exigindo da infraestrutura de backend."
+
+msgid "With Getup scalability we can easily adapt the infrastructure to follow the seasonal traffic spikes without compromising the performance."
+msgstr "Com a escalabilidade da Getup conseguimos adaptar facilmente a quantidade de recursos nas épocas de picos de acesso."
+
+msgid "Marcon Zanin - Co-Founder on Mind Pills"
+msgstr "Marcon Zanin - Co-Founder da Mind Pills"
 
 
 

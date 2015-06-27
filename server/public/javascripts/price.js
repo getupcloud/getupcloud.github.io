@@ -12,5 +12,15 @@
 
 		$('#price .plans').removeClass(dsb).addClass(act);
 	});
+
+
+	$('#dedicated-servers-price .dedicated-server-gear').on({
+		mouseover: function() {
+			$('.dedicated-server-hover').addClass('hide');
+		},
+		mouseout: function() {
+			$('.dedicated-server-hover').removeClass('hide');
+		}
+	});
 	
 }());

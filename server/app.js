@@ -54,8 +54,10 @@ cons.partials({
   multiple_datacenter_complex: 'partials/datacenters/complex',
   multiple_datacenter_simple: 'partials/datacenters/simple',
 	cases: 'partials/cases',
+	cases_startups: 'partials/cases_startups',
 	multiple_datacenter: 'partials/datacenters/index',
-	legal_definitions_header: 'partials/legal_definitions_header'
+	legal_definitions_header: 'partials/legal_definitions_header',
+	more: 'partials/technologies/pt/more'
 });
 
 
