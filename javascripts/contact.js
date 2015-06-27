@@ -69,7 +69,11 @@ var ContactForm = function() {
 
   this.submiting = false;
 
-  this.fields.phone.mask("(999) 9999-9999?9");
+  $('[data-mask]').each(function() {
+    var m = $(this).data('mask');
+    $(this).mask(m);
+  });
+
   this.form.on('submit' , function() {
     _this.send();
     return false;

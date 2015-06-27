@@ -20,7 +20,7 @@
             <meta property="og:url" content="https://getupcloud.com">
             <meta property="og:image" content="https://getupcloud.com/images/getup.png">
             <meta property="og:description" name="description" content="Getup is a scalable cloud application platform. An easy and fast way to build and deploy web apps. You only have to worry about coding your app - we take care of everything else.">
-            <meta property="gc:build_id" content="1435367059667N">
+            <meta property="gc:build_id" content="1435368819089N">
     
             <link rel="profile" href="http://microformats.org/profile/hcard">
     
@@ -142,7 +142,7 @@
                                 </label>
                                 <label>
                                     <span>Phone</span>
-                                    <input type="text" name="phone">
+                                    <input type="text" name="phone" data-mask="(999) 999-9999">
                                 </label>
                             </fieldset>
                             <fieldset>
@@ -169,11 +169,11 @@
                                     <address class="vcard">
                                         <h3 class="locality">São Paulo - SP</h3>
                                         <h4 class="tel"><span class="value">+55 11 3230-4112</span></h4>
-                                        <h4 class="email">ask@getupcloud.com</h4>
                                         <h4 class="email">sales@getupcloud.com</h4>
                                         <h4 class="email">support@getupcloud.com</h4>
-                                        <h4><span class="street-address">Rua Dr. Fláquer, 115/34A</span><span class="region">Paraíso</span></h4>
-                                        <h4><span class="postal-code">04006-010</span> - <span class="locality">São Paulo - SP</span> - <span class="country">Brazil</span></h4>
+                                        <br>
+                                        <a href="https://goo.gl/maps/Cl1af" target="_blank"><h4><span class="street-address">Rua Dr. Fláquer, 115/34A</span><span class="region"> Paraíso</span></h4>
+                                        <h4><span class="postal-code">04006-010</span> - <span class="locality">São Paulo - SP</span> - <span class="country">Brazil</span></h4></a>
                                     </address>
                                     <address class="vcard">
                                         <h3 class="locality">Overseas</h3>
@@ -183,11 +183,67 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="map-canvas"></div>
+                        <a href="https://goo.gl/maps/Cl1af" target="_blank"><div id="map-canvas"></div></a>
                     </section>
                 </article>
-
-            </div> <!-- #main -->
+                <article id="sign-up" class="pageview" data-pageview="signup">
+                    <header>
+                        <div class="background map">
+                            <div class="wrapper">
+                                <h2>750 free hours to test Getup: create your account and take it, it&#x27;s free.</h2>
+                                <a class="button orange fsize3 padX15Y0 article all-article"  data-event="Signup,Button,Free trial" href="javascript:;"  onclick="Getup.articles.sign_up.link()" >Free Trial</a>
+                            </div>
+                        </div>
+                    </header>
+                    <section class="wrapper">
+                        <form method="post" action="">
+                            <input type="hidden" name="lang" id="language" value="en-us">
+                            <input type="hidden" name="partner" id="partner" value="">
+                            <fieldset>
+                                <legend>Create Account</legend>
+                                <p>750h small gear - create an app, add a database and run it free for 1 month.</p>
+                
+                                <div class="form">
+                                    <label>
+                                        <span>Name</span>
+                                        <input type="text" tabindex="1" name="name" />
+                                    </label>
+                                    <label>
+                                        <span>E-mail</span>
+                                        <input type="text" tabindex="2" name="email" />
+                                    </label>
+                                    <label>
+                                        <span>Password</span>
+                                        <input type="password" tabindex="3" name="password1" />    
+                                        <small>*Minimum 6 characters</small>
+                                        <small class="no-padding" >Letters, numbers and/or symbols</small>
+                                    </label>
+                                    <label style="display:none;">
+                                        <span>Insert the discount voucher</span>
+                                        <input type="text" tabindex="4" name="coupon_code" />
+                                    </label>
+                                    <label class="invisible"><!-- Layout placeholder --></label>
+                                    <label class="invisible"><!-- Layout placeholder --></label>
+                
+                                    <input class="visuallyhidden" type="password" tabindex="3" name="password2" />
+                                    <input class="visuallyhidden" type="checkbox" name="use_terms" value="1" checked="true">
+                                </div>
+                
+                                <div class="actions">
+                                    <p>You have a discount coupon? <a href="javascript:;" class="discount-coupon" title="">Click here.</a></p>
+                                    <div class="right">
+                                        <button class="button tblack fsize1 trackevent sign-up-cancel" data-event="Signup,Button,Cancel">Cancel</button>
+                                        <button class="button orange fsize1 trackevent" data-event="Signup,Button,Continue"><span>Continue</span></button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p id="success">
+                            <strong>Welcome aboard.</strong>
+                            <span>We sent you a email confirmation. Thank you!</span>
+                        </p>       
+                    </section><!-- . -->
+                </article>            </div> <!-- #main -->
         </div> <!-- #main-container -->
 
                 <div class="footer-container">
@@ -209,9 +265,9 @@
                                 <p>Get the latest about cloud, hosting, tips and tricks and news from Getup in your e-mail.</p>
                                 <div id="mc_embed_signup">
                                     <form action="http://xxxxxxx.list-manage.com/subscribe/post-json?u=xxxxx&amp;id=xxxxx&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                        <input type="text" name="EMAIL" id="mce-EMAIL">
+                                        <input type="text" name="EMAIL" id="mce-EMAIL" placeholder="Register your e-mail">
                                         <div style="position: absolute; left: -5000px;"><input type="text" name="b_58abcfa203271a9db312e69fc_ee0af79b60" value=""></div>
-                                        <button type="submit" id="mc-embedded-subscribe" data-event="Footer,Button,Newsletter" class="button twhite fsize1">ENVIAR</button>
+                                        <button type="submit" id="mc-embedded-subscribe" data-event="Footer,Button,Newsletter" class="button twhite fsize1">SEND</button>
                                     </form>
                                 </div>
                                 <p id="success" style="display:none;">
@@ -234,10 +290,10 @@
                                 <li><a href="http://www.facebook.com/getupcloud" data-event="Footer,External link,Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
                             </ul>
                             <ul class="terms">
-                                <li><a href="/terms-of-use" data-event="Footer,Link,Terms of use">Terms of use</a></li>
-                                <li><a href="/privacy-policy" data-event="Footer,Link,Privacy Policy">Privacy policy</a></li>
-                                <li><a href="/acceptable-use-policy" data-event="Footer,Link,Acceptable use policy">Acceptable use policy</a></li>
-                                <li><a href="/support-policy" data-event="Footer,Link,Support policy">Support policy</a></li>
+                                <li><a href="/terms-of-use" data-event="Footer,Link,Terms of use">Terms of Use</a></li>
+                                <li><a href="/privacy-policy" data-event="Footer,Link,Privacy Policy">Privacy Policy</a></li>
+                                <li><a href="/acceptable-use-policy" data-event="Footer,Link,Acceptable use policy">Acceptable use Policy</a></li>
+                                <li><a href="/support-policy" data-event="Footer,Link,Support policy">Support Policy</a></li>
                             </ul>
                         </nav>
                     </footer>

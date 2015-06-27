@@ -41,444 +41,446 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 !function() {
 
-	'use strict';
-
-	/*
-	 * Function getQueryString.
-	 * Return querystring value from URL.
-	 * Usage: $.getQueryString('name');
-	 */
-	$.extend({
-		getQueryString: function (name) {
-			function parseParams() {
-				var params = {},
-					e,
-					a = /\+/g,  // Regex for replacing addition symbol with a space
-					r = /([^&=]+)=?([^&]*)/g,
-					d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
-					q = window.location.search.substring(1);
-
-				while (e = r.exec(q))
-					params[d(e[1])] = d(e[2]);
-
-				return params;
-			}
-
-			if (!this.queryStringParams)
-				this.queryStringParams = parseParams();
-
-			return this.queryStringParams[name];
-		}
-	});
-
-	/**
-	 * Mobile resolution? Default is true.
-	 */
-	var is_mobile = true;//Modernizr.mq('only all and (max-width: 480px)');
-
-	/**
-	 * Getup
-	 */
-	var Getup = window.Getup || {};
-
-	/**
-	 * Getup
-	 * Configuration
-	 */
-	Getup.config = {
-
-		/**
-		 * Height of menu (update on window resize and load)
-		 */
-		menu_height: 70
-	};
-
-	/**
-	 * Anaytics
-	 */
-	Getup.Analytics = {};
-
-	Getup.Analytics.prefix = false;
-
-	/**
-	 * Anaytics
-	 * Tracker map
-	 */
-	Getup.Analytics.map = {
-		'en' : false,
-		'pt' : {
-			pageviews : {
-
-			// Site
-				'home'			 					: 'home',
-				'everything_you_need'	: 'tudo_voce_precisa',
-				'cases'								: 'cases_pt',
-				'multiple_datacenters': 'multiplos_datacenters',
-				'dedicated_servers'		: 'servidores_dedicados',
-				'faq'									: 'faq',
-				'trust_is_everything'	: 'confianca_e_tudo',
-				'cases_startups'			: 'cases_startups_pt',
-				'pricing'		 					: 'preco',
-				'get_in_touch' 				: 'contato',
-				'signup'		 					: 'cadastro',			
-				'terms_of_use' 				: 'termos_de_uso',
-				'privacy_policy'			: 'politica_privacidade',
-				'acceptable_use_policy': 'politica_utilizacao_aceitavel',
-				'support_policy'			: 'politica_suporte',
-
-			// Technologies
-				'technologies'	 					: 'technologias',
-				
-				'technologies/php'	 		 	: 'technologias/php',
-				'technologies/ruby'	 		 	: 'technologias/ruby',
-				'technologies/nodejs'	 	 	: 'technologias/nodejs',
-				'technologies/python'	 	 	: 'technologias/python',
-				'technologies/java'	 		 	: 'technologias/java',
-				'technologies/perl'	 		 	: 'technologias/perl',
-				'technologies/mysql'	 	 	: 'technologias/mysql',
-				'technologies/postgresql'	: 'technologias/postgresql',
-				'technologies/mongodb'	 	: 'technologias/mongodb'
-			},
-			events : {
-				// Menu
-				'Menu,Link,Pricing'		 			: 'Menu,Link,Preço',
-				'Menu,Link,Technology'	  	: 'Menu,Link,Tecnologia',
-				'Menu,Link,Get in touch'		: 'Menu,Link,Contato',
-				'Menu,External link,Support': 'Menu,Link externo,Suporte',
-				'Menu,External link,Blog'		: 'Menu,Link externo,Blog',
-				'Menu,Button,Signin' 				: 'Menu,Botão,Entrar',
-				'Menu,Button,Signup' 				: 'Menu,Botão,Criar sua conta',
-
-				// Language
-				'Language,Link,Portuguese'  : 'Language,Link,Português',
-				'Language,Link,English'     : 'Language,Link,Inglês',				
-
-				// Signup
-				'Signup,Button,Free trial' 			: 'Cadastro,Botão,Experimente grátis',
-				'Signup,Button,Continue'   			: 'Cadastro,Botão,Continuar',
-				'Signup,Button,Cancel'   	 			: 'Cadastro,Botão,Cancelar',
-
-				// Home Page
-				'Home Page,Button,Drop us a line'	: 'Página Inicial,Botão,Entre em contato',
-
-				// Get in touch
-				'Get in touch,Button,Send' 		 	: 'Contato,Botão,Enviar',
-
-				// Footer
-				'Footer,Link,Pricing'		 				: 'Rodapé,Link,Preço',
-				'Footer,Link,Technology'	  		: 'Rodapé,Link,Tecnologia',
-				'Footer,Link,Get in touch'			: 'Rodapé,Link,Contato',
-				'Footer,External link,Support'	: 'Rodapé,Link externo,Suporte',
-				'Footer,External link,Blog'			: 'Rodapé,Link externo,Blog',
-
-				'Footer,External link,Google+'	: 'Rodapé,Link externo,Google+',
-				'Footer,External link,Twitter'	: 'Rodapé,Link externo,Twitter',
-				'Footer,External link,Linkedin'	: 'Rodapé,Link externo,Linkedin',
-				'Footer,External link,Facebook'	: 'Rodapé,Link externo,Facebook',
-				
-				'Footer,Button,Newsletter'			: 'Rodapé,Botão,Newsletter',
-
-				'Footer,Link,Terms of use' 			: 'Rodapé,Link,Termos de uso',
-				'Footer,Link,Privacy Policy' 		: 'Rodapé,Link,Política de privacidade',
-				'Footer,Link,Acceptable use policy' : 'Rodapé,Link,PUA',
-				'Footer,Link,Support policy' 		: 'Rodapé,Link,Política de suporte'
-			}
-		}
-	}
-
-	/**
-	 * Anaytics
-	 * Set the prefix
-	 */
-	Getup.Analytics.set_prefix = function(prefix) {
-
-		// Set the prefix
-		Getup.Analytics.prefix = prefix;
-	};
-
-	/**
-	 * Anaytics
-	 * track pageview
-	 */
-	Getup.Analytics.track_pageview = function(tracker) {
-
-		var translated = '/' + Getup.Analytics.prefix + '/' + (Getup.Analytics.map[Getup.Analytics.prefix]
-			? Getup.Analytics.map[Getup.Analytics.prefix]['pageviews'][tracker]
-			: tracker);
-
-		// Old track pageview
-		//_gaq.push(['_trackPageview', translated]);
-
-		// Track pageview
-		ga('send', 'pageview', translated);
-	};
-
-	/**
-	 * Anaytics
-	 * track event
-	 */
-	Getup.Analytics.track_event = function() {
-
-		// Event
-		var track_event = ['send', 'event'];
-		var args = arguments;
-		var translated = null;
-		var track = [];
-
-		if (args.length == 1) {
-
-			translated = (Getup.Analytics.map[Getup.Analytics.prefix]
-				? Getup.Analytics.map[Getup.Analytics.prefix]['events'][args[0]]
-				: args[0]);
-
-			track = (Getup.Analytics.prefix.toUpperCase() + ' - ' + translated).split(',');
-			
-		} else {
-			// Add prefix
-			if (Getup.Analytics.prefix) {
-				track_event.push(Getup.Analytics.prefix);
-			}			
-
-			// Add arguments to track event
-			// track = track_event.concat();
-		}
-
-		// Old tracker event
-		// _gaq.push(track_event.concat(track));
-
-		// Track event
-		ga.apply(undefined, track_event.concat(track));
-	};
-
-	/**
-	 * Preloader
-	 */
-	Getup.preload = {};
-
-	/**
-	 * Preloader
-	 * Configuration
-	 */
-	Getup.preload.config = {};
-
-	/**
-	 * Preloader
-	 * Loader content
-	 */
-	Getup.preload.config.content = $('<div id="preloader"><p>fitting the clouds... <span id="percent">0%</span></p></div>');
-
-	/**
-	 * Preloader
-	 * Directories configuration
-	 */
-	Getup.preload.config.directories = {
-		'image': '/images/'
-	};
-
-	/**
-	 * Preloader
-	 * Elements
-	 */
-	Getup.preload.elements = {};
-
-	/**
-	 * Preloader
-	 * Is loading?
-	 */
-	Getup.preload.loading = false;
-
-	/**
-	 * Preloader
-	 * Actual preloader precent
-	 */
-	Getup.preload.percent = 0;
-
-	/**
-	 * Preloader
-	 * Number of files to preload
-	 */
-	Getup.preload.total = 0;
-
-	/**
-	 * Preloader
-	 * Representative percent value of each file from the total
-	 */
-	Getup.preload.eachLoad = 0;
-
-	/**
-	 * Preloader
-	 * Callback function on preloader finish to load all files
-	 */
-	Getup.preload.onComplete = null;
-
-	/**
-	 * Preloader
-	 * Initialization
-	 */
-	Getup.preload.init = function(callback) {
-
-		/**
-		 * Preload
-		 */
-		if (!Getup.elements.body.is('.preloader')) {
-			Getup.elements.main.show();
-			Getup.elements.footer.show();
-			Getup.elements.header.css('top', 0);
-
-			return callback();
-		}
-
-		/**
-		 * Files to donwload on page load (general or mobile)
-		 */
-		// var directory = (is_mobile) ? 'mobile/' : '';
-		var directory = '';
-		Getup.preload.config.data = [
-			{type: 'image', file: 'sprite.png'},
-			{type: 'image', file: 'loader.gif'},
-			{type: 'image', file: directory + 'icon-up-and-running.png'},
-			{type: 'image', file: directory + 'icon-scale-your-app.png'},
-			{type: 'image', file: directory + 'icon-bring-us-your-problem.png'}
-		];
-
-		/**
-		 * Number of files to preload
-		 */
-		Getup.preload.total = Getup.preload.config.data.length;
-
-		/**
-		 * Representative percent value of each file from the total
-		 */
-		Getup.preload.eachLoad = Math.floor(100 / Getup.preload.total);
-
-		/**
-		 * Append hide loader content to body
-		 */
-		Getup.elements.body.append(Getup.preload.config.content.hide());
-
-		/**
-		 * Show the loader content and start the loader
-		 */
-		Getup.preload.config.content.fadeIn(function() {
-			Getup.preload.elements.percent = $('#percent');
-			Getup.preload.elements.text = Getup.preload.config.content.find('p');
-
-			Getup.preload.onComplete = callback;
-			Getup.preload.load();
-		});
-	};
-
-	/**
-	 * Preloader
-	 * Load next file
-	 */
-	Getup.preload.load = function() {
-		if (Getup.preload.config.data < 1) {
-			Getup.preload.percent = 100;
-			Getup.preload.updatePercent();
-
-			return Getup.preload.hide();
-		}
-
-		var data = Getup.preload.config.data.shift();
-		var file = Getup.preload.config.directories[data.type] + data.file;
-
-		var loader = $('<img />');
-		loader.load(function() {
-			Getup.preload.updatePercent();
-			Getup.preload.load();
-		});
-		loader.attr('src', file);
-	};
-
-	/**
-	 * Preloader
-	 * Hide preload
-	 */
-	Getup.preload.hide = function() {
-		Getup.preload.elements.text.fadeOut(300, function() {
-			Getup.elements.main.show();
-			Getup.elements.footer.show();
-			Getup.elements.header.css('top', 0);
-
-			Getup.preload.config.content.animate({ height: Getup.config.menu_height }, { easing: 'easeInOutCirc', complete: function() {
-				Getup.preload.config.content.fadeOut();
-				Getup.elements.body.removeClass('preloader');
-
-				Getup.preload.onComplete();
-			}});
-		});
-	};
-
-	/**
-	 * Preloader
-	 * Update the percent of preload
-	 */
-	Getup.preload.updatePercent = function() {
-		Getup.preload.percent += Getup.preload.eachLoad;
-		if (Getup.preload.percent > 100) Getup.preload.percent = 100;
-
-		Getup.preload.elements.percent.text(Getup.preload.percent + ' %');
-	}
-
-	/**
-	 * Elements
-	 */
-	Getup.elements = {};
-
-	/**
-	 * Elements
-	 * Element: window
-	 */
-	Getup.elements.window = $(window);
+    'use strict';
+
+    /*
+     * Function getQueryString.
+     * Return querystring value from URL.
+     * Usage: $.getQueryString('name');
+     */
+    $.extend({
+        getQueryString: function (name) {
+            function parseParams() {
+                var params = {},
+                    e,
+                    a = /\+/g,  // Regex for replacing addition symbol with a space
+                    r = /([^&=]+)=?([^&]*)/g,
+                    d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+                    q = window.location.search.substring(1);
+
+                while (e = r.exec(q))
+                    params[d(e[1])] = d(e[2]);
+
+                return params;
+            }
+
+            if (!this.queryStringParams)
+                this.queryStringParams = parseParams();
+
+            return this.queryStringParams[name];
+        }
+    });
+
+    /**
+     * Mobile resolution? Default is true.
+     */
+    var is_mobile = true;//Modernizr.mq('only all and (max-width: 480px)');
+
+    /**
+     * Getup
+     */
+    var Getup = window.Getup || {};
+
+    /**
+     * Getup
+     * Configuration
+     */
+    Getup.config = {
+
+        /**
+         * Height of menu (update on window resize and load)
+         */
+        menu_height: 70
+    };
+
+    /**
+     * Anaytics
+     */
+    Getup.Analytics = {};
+
+    Getup.Analytics.prefix = false;
+
+    /**
+     * Anaytics
+     * Tracker map
+     */
+    Getup.Analytics.map = {
+        'en' : false,
+        'pt' : {
+            pageviews : {
+
+            // Site
+                'home'                              : 'home',
+                'everything_you_need'   : 'tudo_voce_precisa',
+                'cases'                             : 'cases_pt',
+                'multiple_datacenters': 'multiplos_datacenters',
+                'dedicated_servers'     : 'servidores_dedicados',
+                'faq'                                   : 'faq',
+                'trust_is_everything'   : 'confianca_e_tudo',
+                'cases_startups'            : 'cases_startups_pt',
+                'pricing'                           : 'preco',
+                'get_in_touch'              : 'contato',
+                'signup'                            : 'cadastro',           
+                'terms_of_use'              : 'termos_de_uso',
+                'privacy_policy'            : 'politica_privacidade',
+                'acceptable_use_policy': 'politica_utilizacao_aceitavel',
+                'support_policy'            : 'politica_suporte',
+
+            // Technologies
+                'technologies'                      : 'technologias',
+                
+                'technologies/php'              : 'technologias/php',
+                'technologies/ruby'             : 'technologias/ruby',
+                'technologies/nodejs'           : 'technologias/nodejs',
+                'technologies/python'           : 'technologias/python',
+                'technologies/java'             : 'technologias/java',
+                'technologies/perl'             : 'technologias/perl',
+                'technologies/mysql'            : 'technologias/mysql',
+                'technologies/postgresql'   : 'technologias/postgresql',
+                'technologies/mongodb'      : 'technologias/mongodb'
+            },
+            events : {
+                // Menu
+                'Menu,Link,Pricing'                 : 'Menu,Link,Preço',
+                'Menu,Link,Technology'      : 'Menu,Link,Tecnologia',
+                'Menu,Link,Get in touch'        : 'Menu,Link,Contato',
+                'Menu,External link,Support': 'Menu,Link externo,Suporte',
+                'Menu,External link,Blog'       : 'Menu,Link externo,Blog',
+                'Menu,Button,Signin'                : 'Menu,Botão,Entrar',
+                'Menu,Button,Signup'                : 'Menu,Botão,Criar sua conta',
+
+                // Language
+                'Language,Link,Portuguese'  : 'Language,Link,Português',
+                'Language,Link,English'     : 'Language,Link,Inglês',               
+
+                // Signup
+                'Signup,Button,Free trial'          : 'Cadastro,Botão,Experimente grátis',
+                'Signup,Button,Continue'            : 'Cadastro,Botão,Continuar',
+                'Signup,Button,Cancel'                  : 'Cadastro,Botão,Cancelar',
+
+                // Home Page
+                'Home Page,Button,Drop us a line'   : 'Página Inicial,Botão,Entre em contato',
+
+                // Get in touch
+                'Get in touch,Button,Send'          : 'Contato,Botão,Enviar',
+
+                // Footer
+                'Footer,Link,Pricing'                       : 'Rodapé,Link,Preço',
+                'Footer,Link,Technology'            : 'Rodapé,Link,Tecnologia',
+                'Footer,Link,Get in touch'          : 'Rodapé,Link,Contato',
+                'Footer,External link,Support'  : 'Rodapé,Link externo,Suporte',
+                'Footer,External link,Blog'         : 'Rodapé,Link externo,Blog',
+
+                'Footer,External link,Google+'  : 'Rodapé,Link externo,Google+',
+                'Footer,External link,Twitter'  : 'Rodapé,Link externo,Twitter',
+                'Footer,External link,Linkedin' : 'Rodapé,Link externo,Linkedin',
+                'Footer,External link,Facebook' : 'Rodapé,Link externo,Facebook',
+                
+                'Footer,Button,Newsletter'          : 'Rodapé,Botão,Newsletter',
+
+                'Footer,Link,Terms of use'          : 'Rodapé,Link,Termos de uso',
+                'Footer,Link,Privacy Policy'        : 'Rodapé,Link,Política de privacidade',
+                'Footer,Link,Acceptable use policy' : 'Rodapé,Link,PUA',
+                'Footer,Link,Support policy'        : 'Rodapé,Link,Política de suporte'
+            }
+        }
+    }
+
+    /**
+     * Anaytics
+     * Set the prefix
+     */
+    Getup.Analytics.set_prefix = function(prefix) {
+
+        // Set the prefix
+        Getup.Analytics.prefix = prefix;
+    };
+
+    /**
+     * Anaytics
+     * track pageview
+     */
+    Getup.Analytics.track_pageview = function(tracker) {
+
+        var translated = '/' + Getup.Analytics.prefix + '/' + (Getup.Analytics.map[Getup.Analytics.prefix]
+            ? Getup.Analytics.map[Getup.Analytics.prefix]['pageviews'][tracker]
+            : tracker);
+
+        // Old track pageview
+        //_gaq.push(['_trackPageview', translated]);
+
+        // Track pageview
+        ga('send', 'pageview', translated);
+    };
+
+    /**
+     * Anaytics
+     * track event
+     */
+    Getup.Analytics.track_event = function() {
+
+        // Event
+        var track_event = ['send', 'event'];
+        var args = arguments;
+        var translated = null;
+        var track = [];
+
+        if (args.length == 1) {
+
+            translated = (Getup.Analytics.map[Getup.Analytics.prefix]
+                ? Getup.Analytics.map[Getup.Analytics.prefix]['events'][args[0]]
+                : args[0]);
+
+            track = (Getup.Analytics.prefix.toUpperCase() + ' - ' + translated).split(',');
+            
+        } else {
+            // Add prefix
+            if (Getup.Analytics.prefix) {
+                track_event.push(Getup.Analytics.prefix);
+            }           
+
+            // Add arguments to track event
+            // track = track_event.concat();
+        }
+
+        // Old tracker event
+        // _gaq.push(track_event.concat(track));
+
+        // Track event
+        ga.apply(undefined, track_event.concat(track));
+    };
+
+    /**
+     * Preloader
+     */
+    Getup.preload = {};
+
+    /**
+     * Preloader
+     * Configuration
+     */
+    Getup.preload.config = {};
+
+    /**
+     * Preloader
+     * Loader content
+     */
+    Getup.preload.config.content = $('<div id="preloader"><p>fitting the clouds... <span id="percent">0%</span></p></div>');
+
+    /**
+     * Preloader
+     * Directories configuration
+     */
+    Getup.preload.config.directories = {
+        'image': '/images/'
+    };
+
+    /**
+     * Preloader
+     * Elements
+     */
+    Getup.preload.elements = {};
+
+    /**
+     * Preloader
+     * Is loading?
+     */
+    Getup.preload.loading = false;
+
+    /**
+     * Preloader
+     * Actual preloader precent
+     */
+    Getup.preload.percent = 0;
+
+    /**
+     * Preloader
+     * Number of files to preload
+     */
+    Getup.preload.total = 0;
+
+    /**
+     * Preloader
+     * Representative percent value of each file from the total
+     */
+    Getup.preload.eachLoad = 0;
+
+    /**
+     * Preloader
+     * Callback function on preloader finish to load all files
+     */
+    Getup.preload.onComplete = null;
+
+    /**
+     * Preloader
+     * Initialization
+     */
+    Getup.preload.init = function(callback) {
+
+        /**
+         * Preload
+         */
+        if (!Getup.elements.body.is('.preloader')) {
+            Getup.elements.main.show();
+            Getup.elements.footer.show();
+            Getup.elements.header.css('top', 0);
+
+            return callback();
+        }
+
+        /**
+         * Files to donwload on page load (general or mobile)
+         */
+        // var directory = (is_mobile) ? 'mobile/' : '';
+        var directory = '';
+        Getup.preload.config.data = [
+            {type: 'image', file: 'sprite.png'},
+            {type: 'image', file: 'loader.gif'},
+            {type: 'image', file: directory + 'icon-up-and-running.png'},
+            {type: 'image', file: directory + 'icon-scale-your-app.png'},
+            {type: 'image', file: directory + 'icon-bring-us-your-problem.png'},
+      {type: 'image', file: directory + 'bgr-header-home.jpg'}
+        ];
+
+        /**
+         * Number of files to preload
+         */
+        Getup.preload.total = Getup.preload.config.data.length;
+
+        /**
+         * Representative percent value of each file from the total
+         */
+        Getup.preload.eachLoad = Math.floor(100 / Getup.preload.total);
+
+        /**
+         * Append hide loader content to body
+         */
+        Getup.elements.body.append(Getup.preload.config.content.hide());
+
+        /**
+         * Show the loader content and start the loader
+         */
+        Getup.preload.config.content.fadeIn(function() {
+            Getup.preload.elements.percent = $('#percent');
+            Getup.preload.elements.text = Getup.preload.config.content.find('p');
+
+            Getup.preload.onComplete = callback;
+            Getup.preload.load();
+        });
+    };
+
+    /**
+     * Preloader
+     * Load next file
+     */
+    Getup.preload.load = function() {
+        if (Getup.preload.config.data < 1) {
+            Getup.preload.percent = 100;
+            Getup.preload.updatePercent();
+
+            return Getup.preload.hide();
+        }
+
+        var data = Getup.preload.config.data.shift();
+        var file = Getup.preload.config.directories[data.type] + data.file;
+
+        var loader = $('<img />');
+        loader.load(function() {
+            Getup.preload.updatePercent();
+            Getup.preload.load();
+        });
+        loader.attr('src', file);
+    };
+
+    /**
+     * Preloader
+     * Hide preload
+     */
+    Getup.preload.hide = function() {
+        Getup.preload.elements.text.fadeOut(300, function() {
+            Getup.elements.main.show();
+            Getup.elements.footer.show();
+            Getup.elements.header.css('top', 0);
+
+            Getup.elements.body.removeClass('preloader');
+            
+            Getup.preload.config.content.animate({ height: Getup.config.menu_height }, { easing: 'easeInOutCirc', complete: function() {
+                Getup.preload.config.content.fadeOut();
+
+                Getup.preload.onComplete();
+            }});
+        });
+    };
+
+    /**
+     * Preloader
+     * Update the percent of preload
+     */
+    Getup.preload.updatePercent = function() {
+        Getup.preload.percent += Getup.preload.eachLoad;
+        if (Getup.preload.percent > 100) Getup.preload.percent = 100;
+
+        Getup.preload.elements.percent.text(Getup.preload.percent + ' %');
+    }
+
+    /**
+     * Elements
+     */
+    Getup.elements = {};
+
+    /**
+     * Elements
+     * Element: window
+     */
+    Getup.elements.window = $(window);
   
-  	/**
-	 * Elements
-	 * Element: body
-	 */
-	Getup.elements.bodyWindow = $('body, html');
+    /**
+     * Elements
+     * Element: body
+     */
+    Getup.elements.bodyWindow = $('body, html');
 
-	/**
-	 * Elements
-	 * Element: body
-	 */
-	Getup.elements.body = $('body');
+    /**
+     * Elements
+     * Element: body
+     */
+    Getup.elements.body = $('body');
 
-	/**
-	 * Elements
-	 * Element: header container
-	 */
-	Getup.elements.header = $('.header-container');
+    /**
+     * Elements
+     * Element: header container
+     */
+    Getup.elements.header = $('.header-container');
 
-	/**
-	 * Elements
-	 * Element: menu control
-	 */
-	Getup.elements.header.menu_control = $('.menu-control');
+    /**
+     * Elements
+     * Element: menu control
+     */
+    Getup.elements.header.menu_control = $('.menu-control');
 
-	/**
-	 * Elements
-	 * Element: main container
-	 */
-	Getup.elements.main = $('.main-container');	
+    /**
+     * Elements
+     * Element: main container
+     */
+    Getup.elements.main = $('.main-container'); 
 
-	/**
-	 * Elements
-	 * Element: how it works
-	 */
-	Getup.elements.how_it_works = $('#how-it-works');
+    /**
+     * Elements
+     * Element: how it works
+     */
+    Getup.elements.how_it_works = $('#how-it-works');
 
-	/**
-	 * Elements
-	 * Element: see more form how it works
-	 */
-	Getup.elements.see_more = Getup.elements.how_it_works.find("a");
+    /**
+     * Elements
+     * Element: see more form how it works
+     */
+    Getup.elements.see_more = Getup.elements.how_it_works.find("a");
 
-	/**
-	 * Elements
-	 * Element: sign up
-	 */
-	Getup.elements.signup = $('#sign-up');
+    /**
+     * Elements
+     * Element: sign up
+     */
+    Getup.elements.signup = $('#sign-up');
 
    /**
     * Elements
@@ -492,47 +494,47 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
     */
    Getup.elements.newsletter = $('#newsletter');
 
-	/**
-	 * Elements
-	 * Element: pricing
-	 */
-	Getup.elements.pricing = $('#pricing')
+    /**
+     * Elements
+     * Element: pricing
+     */
+    Getup.elements.pricing = $('#pricing')
 
-	/**
-	 * Elements
-	 * Element: compare
-	 */
-	Getup.elements.compare = $('#compare')
+    /**
+     * Elements
+     * Element: compare
+     */
+    Getup.elements.compare = $('#compare')
 
-	/**
-	 * Elements
-	 * Element: get in touch
-	 */
-	Getup.elements.get_in_touch = $('#get-in-touch');
+    /**
+     * Elements
+     * Element: get in touch
+     */
+    Getup.elements.get_in_touch = $('#get-in-touch');
 
-	/**
-	 * Elements
-	 * Element: section content of sign up
-	 */
-	Getup.elements.signup.header = Getup.elements.signup.find('header');
+    /**
+     * Elements
+     * Element: section content of sign up
+     */
+    Getup.elements.signup.header = Getup.elements.signup.find('header');
 
-	/**
-	 * Elements
-	 * Element: section button
-	 */
-	Getup.elements.signup.call = Getup.elements.signup.header.find('a');
+    /**
+     * Elements
+     * Element: section button
+     */
+    Getup.elements.signup.call = Getup.elements.signup.header.find('a');
 
-	/**
-	 * Elements
-	 * Element: section content of sign up
-	 */
-	Getup.elements.signup.section = Getup.elements.signup.find('section');
+    /**
+     * Elements
+     * Element: section content of sign up
+     */
+    Getup.elements.signup.section = Getup.elements.signup.find('section');
 
-	/**
-	 * Elements
-	 * Element: section content of sign up
-	 */
-	Getup.elements.signup.actions = Getup.elements.signup.section.find('.actions');
+    /**
+     * Elements
+     * Element: section content of sign up
+     */
+    Getup.elements.signup.actions = Getup.elements.signup.section.find('.actions');
 
    /**
     * Elements
@@ -546,204 +548,205 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
     */
    Getup.elements.newsletter.actions = Getup.elements.newsletter.section.find('.actions');
 
-	/**
-	 * Elements
-	 * Element: technologies nav
-	 */
-	Getup.elements.technologies_nav = $('#technologies-nav');
+    /**
+     * Elements
+     * Element: technologies nav
+     */
+    Getup.elements.technologies_nav = $('#technologies-nav');
 
-	/**
-	 * Elements
-	 * Element: footer container
-	 */
-	Getup.elements.footer = $('.footer-container');
+    /**
+     * Elements
+     * Element: footer container
+     */
+    Getup.elements.footer = $('.footer-container');
 
-	/**
-	 * Mobile
-	 */
-	Getup.mobile = {};
+    /**
+     * Mobile
+     */
+    Getup.mobile = {};
 
-	/**
-	 * Mobile Menu
-	 */
-	Getup.mobile.menu = {}
+    /**
+     * Mobile Menu
+     */
+    Getup.mobile.menu = {}
 
-	/**
-	 * Mobile Menu
-	 * Configuration
-	 */
-	Getup.mobile.menu.configuration = {
+    /**
+     * Mobile Menu
+     * Configuration
+     */
+    Getup.mobile.menu.configuration = {
 
-		/**
-		 * Height of menu when closed
-		 */
-		closed_height : Getup.config.menu_height
-	}		
+        /**
+         * Height of menu when closed
+         */
+        closed_height : Getup.config.menu_height
+    }       
 
-	/**
-	 * Mobile Menu
-	 * Open mobile menu
-	 */
-	Getup.mobile.menu.open = function() {
+    /**
+     * Mobile Menu
+     * Open mobile menu
+     */
+    Getup.mobile.menu.open = function() {
 
-		/**
-		 * Remove the closed class and set the height to auto
-		 */
-		Getup.elements.header.removeClass('closed').height('auto');
+        /**
+         * Remove the closed class and set the height to auto
+         */
+        Getup.elements.header.removeClass('closed').height('auto');
 
-		/**
-		 * Retrieve the open height.
-		 */
-		var open_height = Getup.elements.header.height();
+        /**
+         * Retrieve the open height.
+         */
+        var open_height = Getup.elements.header.height();
 
-		/**
-		 * set the original height to closed.
-		 */
-		Getup.elements.header.height(Getup.mobile.menu.configuration.closed_height);
+        /**
+         * set the original height to closed.
+         */
+        Getup.elements.header.height(Getup.mobile.menu.configuration.closed_height);
 
-		/**
-		 * Animate the height of the menu to open height.
-		 */
-		Getup.elements.header.animate({ height: open_height }, { queue: false, easing: 'easeInOutCirc' });
-	};
+        /**
+         * Animate the height of the menu to open height.
+         */
+         console.log(open_height);
+        Getup.elements.header.animate({ height: open_height }, { queue: false, easing: 'easeInOutCirc' });
+    };
 
-	/**
-	 * Mobile Menu
-	 * Close mobile menu
-	 */
-	Getup.mobile.menu.close = function() {
-		/**
-		 * Animate the height of the menu to closed height.
-		 */
-		Getup.elements.header.animate({ height: Getup.mobile.menu.configuration.closed_height }, { queue: false, easing: 'easeInOutCirc', complete: function() {
+    /**
+     * Mobile Menu
+     * Close mobile menu
+     */
+    Getup.mobile.menu.close = function() {
+        /**
+         * Animate the height of the menu to closed height.
+         */
+        Getup.elements.header.animate({ height: Getup.mobile.menu.configuration.closed_height }, { queue: false, easing: 'easeInOutCirc', complete: function() {
 
-			/**
-			 * Remove the closed class.
-			 */
-			Getup.elements.header.addClass('closed');
-		}});
-	};
+            /**
+             * Remove the closed class.
+             */
+            Getup.elements.header.addClass('closed');
+        }});
+    };
 
-	/**
-	 * Mobile Menu
-	 * Mobile menu toggle status
-	 */
-	Getup.mobile.menu.toggle = function() {
-		Getup.elements.header.hasClass('closed') ? Getup.mobile.menu.open() : Getup.mobile.menu.close();
-	};	
+    /**
+     * Mobile Menu
+     * Mobile menu toggle status
+     */
+    Getup.mobile.menu.toggle = function() {
+        Getup.elements.header.hasClass('closed') ? Getup.mobile.menu.open() : Getup.mobile.menu.close();
+    };  
 
-	/**
-	 * Articles
-	 */
-	Getup.articles = {};
+    /**
+     * Articles
+     */
+    Getup.articles = {};
 
-	/**
-	 * Articles
-	 * How it works
-	 */
-	Getup.articles.how_it_works = {};
+    /**
+     * Articles
+     * How it works
+     */
+    Getup.articles.how_it_works = {};
 
-	/** 
-	 * Articles
-	 * How it works
-	 * Toggle hidden information
-	 *
-	 * (element scope)
-	 */
-	Getup.articles.how_it_works.toggle = function() {
-		var element = $(this);
-		var hidden = element.next();
-		var text = element.data('text');
+    /** 
+     * Articles
+     * How it works
+     * Toggle hidden information
+     *
+     * (element scope)
+     */
+    Getup.articles.how_it_works.toggle = function() {
+        var element = $(this);
+        var hidden = element.next();
+        var text = element.data('text');
 
-		hidden.slideToggle();
+        hidden.slideToggle();
 
-		element.data('text', element.text());
-		element.text(text);
+        element.data('text', element.text());
+        element.text(text);
 
-		return false;
-	};
+        return false;
+    };
 
-	/**
-	 * Articles
-	 * How it wroks
-	 * Link
-	 */
-	Getup.articles.how_it_works.link = function() {
+    /**
+     * Articles
+     * How it wroks
+     * Link
+     */
+    Getup.articles.how_it_works.link = function() {
 
-		var top = Getup.elements.how_it_works.offset().top - Getup.config.menu_height;
+        var top = Getup.elements.how_it_works.offset().top - Getup.config.menu_height;
 
-		Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
-
-
-		}});
+        Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
 
 
-		return false;
-	};
-
-	/**
-	 * Articles
-	 * Get in touch
-	 */
-	Getup.articles.get_in_touch = {};
-
-	/**
-	 * Articles
-	 * Get in touch
-	 * Link
-	 */
-	Getup.articles.get_in_touch.link = function() {
-
-		var top = Getup.elements.get_in_touch.offset().top - Getup.config.menu_height;
-
-		Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
+        }});
 
 
-		}});
+        return false;
+    };
+
+    /**
+     * Articles
+     * Get in touch
+     */
+    Getup.articles.get_in_touch = {};
+
+    /**
+     * Articles
+     * Get in touch
+     * Link
+     */
+    Getup.articles.get_in_touch.link = function() {
+
+        var top = Getup.elements.get_in_touch.offset().top - Getup.config.menu_height;
+
+        Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
 
 
-		return false;
-	};	
+        }});
 
-	/**
-	 * Articles
-	 * Home
-	 */
-	Getup.articles.home = {};
 
-	/**
-	 * Articles
-	 * Home
-	 * Link
-	 */
-	Getup.articles.home.link = function() {
+        return false;
+    };  
 
-		Getup.elements.bodyWindow.animate({ 'scroll-top': 0 }, { queue: false, easing: 'easeInOutCirc' });
+    /**
+     * Articles
+     * Home
+     */
+    Getup.articles.home = {};
 
-		return false;
-	};
+    /**
+     * Articles
+     * Home
+     * Link
+     */
+    Getup.articles.home.link = function() {
 
-	/**
-	 * Articles
-	 * Compare
-	 */
-	Getup.articles.compare = {};
+        Getup.elements.bodyWindow.animate({ 'scroll-top': 0 }, { queue: false, easing: 'easeInOutCirc' });
 
-	/**
-	 * Articles
-	 * Compare
-	 * Link
-	 */
-	Getup.articles.compare.link = function() {
-		if (is_mobile) return false;
+        return false;
+    };
 
-		Getup.elements.compare.slideDown();
+    /**
+     * Articles
+     * Compare
+     */
+    Getup.articles.compare = {};
 
-		var top = Getup.elements.compare.offset().top - Getup.config.menu_height;
-		Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc' });
+    /**
+     * Articles
+     * Compare
+     * Link
+     */
+    Getup.articles.compare.link = function() {
+        if (is_mobile) return false;
 
-		return false;
-	};
+        Getup.elements.compare.slideDown();
+
+        var top = Getup.elements.compare.offset().top - Getup.config.menu_height;
+        Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc' });
+
+        return false;
+    };
 
    /**
     * Articles
@@ -766,147 +769,151 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
       return false;
    };
 
-	/**
-	 * Articles
-	 * Sign up
-	 */
-	Getup.articles.sign_up = {};
+    /**
+     * Articles
+     * Sign up
+     */
+    Getup.articles.sign_up = {};
 
-	/**
-	 * Articles
-	 * Sign up
-	 * Toggle hidden form
-	 * (element scope)
-	 */
-	Getup.articles.sign_up.link = function() {
+    /**
+     * Articles
+     * Sign up
+     * Toggle hidden form
+     * (element scope)
+     */
+    
+    Getup.articles.sign_up.link = function() {
+      var top = Getup.elements.signup.offset().top - Getup.config.menu_height;      
 
-		var top = Getup.elements.signup.offset().top - Getup.config.menu_height;
+      Getup.articles.sign_up.scrolling = false;
 
-		Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
+      if (!Getup.articles.sign_up.scrolling) {
+         Getup.articles.sign_up.scrolling = true;
+        Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { easing: 'easeInOutCirc', complete: function() {
 
-			Getup.elements.signup.header.slideUp();
-			Getup.elements.signup.section.slideDown();
+            Getup.elements.signup.header.slideUp();
+            Getup.elements.signup.section.slideDown();
+            Getup.articles.sign_up.scrolling = false;
 
-		}});
-
-
-		return false;
-	};
-	
+        }});
+      }
+        return false;
+    };
+    
    // move this later
    $('.sign-up-cancel').on('click', function(ev) {
-   	ev.preventDefault();
+    ev.preventDefault();
 
-   	Getup.elements.signup.header.slideDown();
-   	Getup.elements.signup.section.slideUp();
+    Getup.elements.signup.header.slideDown();
+    Getup.elements.signup.section.slideUp();
    });
 
    $('.discount-coupon').on('click', function(ev) {
       Getup.articles.sign_up.elements.inputs.couponCode.closest('label').slideDown();
    });
 
-	/**
-	 * Articles
-	 * Sign up
-	 * Elements
-	 */
-	Getup.articles.sign_up.elements = {};
+    /**
+     * Articles
+     * Sign up
+     * Elements
+     */
+    Getup.articles.sign_up.elements = {};
 
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.elements.form = Getup.elements.signup.find('form');
+    /**
+     *
+     */
+    Getup.articles.sign_up.elements.form = Getup.elements.signup.find('form');
 
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.elements.success = $('#success');
-	
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.elements.inputs = {};
+    /**
+     *
+     */
+    Getup.articles.sign_up.elements.success = $('#success');
+    
+    /**
+     *
+     */
+    Getup.articles.sign_up.elements.inputs = {};
 
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.elements.inputs.name = Getup.articles.sign_up.elements.form.find('input[name=name]');
+    /**
+     *
+     */
+    Getup.articles.sign_up.elements.inputs.name = Getup.articles.sign_up.elements.form.find('input[name=name]');
 
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.elements.inputs.email = Getup.articles.sign_up.elements.form.find('input[name=email]');
+    /**
+     *
+     */
+    Getup.articles.sign_up.elements.inputs.email = Getup.articles.sign_up.elements.form.find('input[name=email]');
 
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.elements.inputs.password = Getup.articles.sign_up.elements.form.find('input[name=password1]');
+    /**
+     *
+     */
+    Getup.articles.sign_up.elements.inputs.password = Getup.articles.sign_up.elements.form.find('input[name=password1]');
 
    /**
-	 *
-	 */
-	Getup.articles.sign_up.elements.inputs.passwordConfirm = Getup.articles.sign_up.elements.form.find('input[name=password2]');	
+     *
+     */
+    Getup.articles.sign_up.elements.inputs.passwordConfirm = Getup.articles.sign_up.elements.form.find('input[name=password2]');    
 
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.elements.inputs.couponCode = Getup.articles.sign_up.elements.form.find('input[name=coupon_code]');	
+    /**
+     *
+     */
+    Getup.articles.sign_up.elements.inputs.couponCode = Getup.articles.sign_up.elements.form.find('input[name=coupon_code]');   
 
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.elements.button = Getup.articles.sign_up.elements.form.find('button.orange');
+    /**
+     *
+     */
+    Getup.articles.sign_up.elements.button = Getup.articles.sign_up.elements.form.find('button.orange');
 
-	/**
-	 *
-	 */
-	 Getup.articles.sign_up.elements.message = $('<p class="message"></p>');
-	 Getup.elements.signup.actions.append(Getup.articles.sign_up.elements.message);
+    /**
+     *
+     */
+     Getup.articles.sign_up.elements.message = $('<p class="message"></p>');
+     Getup.elements.signup.actions.append(Getup.articles.sign_up.elements.message);
 
-	/**
-	 * Setup partner ident
-	 */
-	Getup.articles.sign_up.elements.inputs.partner = Getup.articles.sign_up.elements.form.find('input[name=partner]');
+    /**
+     * Setup partner ident
+     */
+    Getup.articles.sign_up.elements.inputs.partner = Getup.articles.sign_up.elements.form.find('input[name=partner]');
 
-	var partner = $.getQueryString('partner');
-	if (partner) {
-		var expires = new Date();
-		expires.setYear(expires.getFullYear() + 10);
-		document.cookie = "partner=" + partner + ';domain=.getupcloud.com;path=/;expires=' + expires;
-		Getup.articles.sign_up.elements.inputs.partner.val($.getQueryString('partner'));
-	}
+    var partner = $.getQueryString('partner');
+    if (partner) {
+        var expires = new Date();
+        expires.setYear(expires.getFullYear() + 10);
+        document.cookie = "partner=" + partner + ';domain=.getupcloud.com;path=/;expires=' + expires;
+        Getup.articles.sign_up.elements.inputs.partner.val($.getQueryString('partner'));
+    }
 
-	/**
-	 * Articles
-	 * Sign up
-	 */
-	Getup.articles.sign_up.submiting = false;
+    /**
+     * Articles
+     * Sign up
+     */
+    Getup.articles.sign_up.submiting = false;
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
     Getup.articles.sign_up.validation = {};
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
     Getup.articles.sign_up.validation.exclude  = /[^@\-\.\w]|^[_@\.\-]|[\._\-]{2}|[@\.]{2}|(@)[^@]*\1/;
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
     Getup.articles.sign_up.validation.check    = /@[\w\-]+\./;
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
     Getup.articles.sign_up.validation.checkend = /\.[a-zA-Z]{2,3}$/;
 
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.send = function() {
-		if (Getup.articles.sign_up.submiting) return false;
+    /**
+     *
+     */
+    Getup.articles.sign_up.send = function() {
+        if (Getup.articles.sign_up.submiting) return false;
 
         var name            = Getup.articles.sign_up.elements.inputs.name;
         var email           = Getup.articles.sign_up.elements.inputs.email;
@@ -920,7 +927,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
         (name.val().length < 1)                   ? valid = !name.addClass('error') : name.removeClass('error');
         (emailInvalid)                            ? valid = !email.addClass('error') : email.removeClass('error');
-        (password.val().length < 1)               ? valid = !password.addClass('error') : password.removeClass('error');
+        (password.val().length < 6)               ? valid = !password.addClass('error') : password.removeClass('error');
         // (passwordConfirm.val() != password.val()) ? valid = !passwordConfirm.addClass('error')   : passwordConfirm.removeClass('error');
         // (!terms.is(':checked'))                   ? valid = !terms.parent().addClass('error') : terms.parent().removeClass('error');
 
@@ -945,18 +952,23 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
                             Getup.articles.sign_up.elements.inputs.email.val('').blur();
                             Getup.articles.sign_up.elements.inputs.password.val('').blur();                            
                             Getup.articles.sign_up.elements.inputs.couponCode.val('').blur();
+
+                            Getup.articles.sign_up.elements.message.html('');
+                            Getup.articles.sign_up.elements.form.find('.error').each(function() {
+                              $(this).removeClass('error');
+                            });
                         });
 
                         Getup.articles.sign_up.elements.success.slideDown();
 
                         setTimeout(function() {
 
-                        	Getup.elements.signup.section.slideUp(function() {
-                        		Getup.articles.sign_up.elements.success.hide();
-                        		Getup.articles.sign_up.elements.form.show();
-                        	});
-                        	
-                        	Getup.elements.signup.header.slideDown();
+                            Getup.elements.signup.section.slideUp(function() {
+                                Getup.articles.sign_up.elements.success.hide();
+                                Getup.articles.sign_up.elements.form.show();
+                            });
+                            
+                            Getup.elements.signup.header.slideDown();
 
                         }, 5000);
 
@@ -984,27 +996,27 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
         }
 
         return false;
-	};
+    };
 
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.elements.form.submit(Getup.articles.sign_up.send);
+    /**
+     *
+     */
+    Getup.articles.sign_up.elements.form.submit(Getup.articles.sign_up.send);
 
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
     Getup.articles.sign_up.error = {};
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
     Getup.articles.sign_up.error._content = '';
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
     Getup.articles.sign_up.error.append = function(error) {
         if (error.name != '_all_') {
             $('input[name=' + error.name + ']').parent().addClass('error');
@@ -1017,23 +1029,23 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
         }
     };
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
     Getup.articles.sign_up.error.clear = function() {
         Getup.articles.sign_up.error._content = '';
     };
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
     Getup.articles.sign_up.error.show = function() {
         Getup.articles.sign_up.elements.message.html(Getup.articles.sign_up.error._content).fadeIn();
     };
 
-	/**
-	 *
-	 */
+    /**
+     *
+     */
     Getup.articles.sign_up.error.hide = function() {
         Getup.articles.sign_up.elements.message.fadeOut();
     };
@@ -1281,12 +1293,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
      * Init
      */
     Getup.modal.init = function() {
-    	Getup.modal.elements.main.append(Getup.modal.elements.mask);
-    	Getup.modal.elements.main.append(Getup.modal.elements.content);
+        Getup.modal.elements.main.append(Getup.modal.elements.mask);
+        Getup.modal.elements.main.append(Getup.modal.elements.content);
 
-    	Getup.elements.body.append(Getup.modal.elements.main);
+        Getup.elements.body.append(Getup.modal.elements.main);
 
-    	Getup.modal.elements.main.hide();
+        Getup.modal.elements.main.hide();
 
         Getup.modal.elements.links.click(function() {
             Getup.modal.show(this.href.replace(location.origin + '/', ''), $(this).data('pageview'));
@@ -1307,10 +1319,10 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
             Getup.modal.elements.content.html(Getup.modal._cache[section]);
             Getup.modal.elements.main.fadeIn();
 
-        	// Tracker
-        	if (tracker) {
-        		Getup.Analytics.track_pageview(tracker);
-        	}
+            // Tracker
+            if (tracker) {
+                Getup.Analytics.track_pageview(tracker);
+            }
 
             Getup.modal.elements.content.append(Getup.modal.elements.close);
             Getup.modal.close_event();
@@ -1358,6 +1370,11 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
     Getup.tooltip = {};
 
     /**
+     * Cases
+     */
+    Getup.cases = {};
+
+    /**
      * Tooltip
      * Elements
      */
@@ -1380,10 +1397,10 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
      * Set events
      */
     Getup.tooltip.init = function() {
-    	Getup.elements.body.append(Getup.tooltip.elements.main);
-    	Getup.tooltip.elements.main.hide();
+        Getup.elements.body.append(Getup.tooltip.elements.main);
+        Getup.tooltip.elements.main.hide();
 
-    	Getup.tooltip.elements.icons.hover(Getup.tooltip.show, Getup.tooltip.hide);
+        Getup.tooltip.elements.icons.hover(Getup.tooltip.show, Getup.tooltip.hide);
     };
 
     /**
@@ -1392,24 +1409,24 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
      */
     Getup.tooltip.show = function(event) {
 
-    	/**
-    	 * Set tooltip text
-    	 */
-    	Getup.tooltip.elements.main.text($(this).data('text'));
+        /**
+         * Set tooltip text
+         */
+        Getup.tooltip.elements.main.text($(this).data('text'));
 
-    	/**
-    	 * Set tooltip position
-    	 */
+        /**
+         * Set tooltip position
+         */
 
-    	var position = $(this).offset();
-    	Getup.tooltip.elements.main.show();
-    	Getup.tooltip.elements.main.css({ top: position.top - Getup.tooltip.elements.main.height() - 16, left: position.left });
-    	Getup.tooltip.elements.main.hide();
+        var position = $(this).offset();
+        Getup.tooltip.elements.main.show();
+        Getup.tooltip.elements.main.css({ top: position.top - Getup.tooltip.elements.main.height() - 16, left: position.left });
+        Getup.tooltip.elements.main.hide();
 
-    	/**
-    	 * Show tooltip
-    	 */
-    	Getup.tooltip.elements.main.fadeIn();
+        /**
+         * Show tooltip
+         */
+        Getup.tooltip.elements.main.fadeIn();
     };
 
     /**
@@ -1417,7 +1434,28 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
      * Hide tooltip
      */
     Getup.tooltip.hide = function() {
-    	Getup.tooltip.elements.main.fadeOut();
+        Getup.tooltip.elements.main.fadeOut();
+    };
+
+    /**
+     * Cases
+     * Set events
+     */
+    Getup.cases.init = function() {
+        // Randomize cases
+        var singleCases = $('.cases-wrapper .single-case');
+        var totalCases = $('.cases-wrapper .single-case').length;
+        var randomCase = Math.floor(Math.random() * totalCases) + 1;
+
+        var singleStartupCases = $('.cases-wrapper .single-startup-case');
+        var totalStartupCases = $('.cases-wrapper .single-startup-case').length;
+        var randomStartupCase = Math.floor(Math.random() * totalStartupCases) + 1;
+
+        singleCases.removeClass('visible');
+        singleCases.eq(randomCase - 1).addClass('visible');
+
+        singleStartupCases.removeClass('visible');
+        singleStartupCases.eq(randomStartupCase - 1).addClass('visible');
     };
 
     /**
@@ -1439,11 +1477,11 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
      */
     Getup.track.events.click(function() {
 
-    	var track_event = $(this).data('event');
+        var track_event = $(this).data('event');
 
-    	if (track_event) {
-	    	Getup.Analytics.track_event(track_event);
-    	}
+        if (track_event) {
+            Getup.Analytics.track_event(track_event);
+        }
     });
 
     /**
@@ -1465,206 +1503,207 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
      */
     Getup.track.scroll_timer = null;
 
-	/**
-	 * Site scroll
-	 */
-	var scroll = function() {
-		clearTimeout(Getup.track.scroll_timer);
+    /**
+     * Site scroll
+     */
+    var scroll = function() {
+        clearTimeout(Getup.track.scroll_timer);
 
-		var top = Getup.elements.window.scrollTop();
+        var top = Getup.elements.window.scrollTop();
 
-		Getup.track.scroll_timer = setTimeout(function() {
+        Getup.track.scroll_timer = setTimeout(function() {
 
-			var half = Getup.elements.window.height() / 2;
-			var next = null;
+            var half = Getup.elements.window.height() / 2;
+            var next = null;
 
-			Getup.track.pageviews.each(function() {
-				var element = $(this);
-				var pageview = element.data('pageview');
+            Getup.track.pageviews.each(function() {
+                var element = $(this);
+                var pageview = element.data('pageview');
 
-				if (!element.is(':visible') || (element.offset().top) > (top + 120 + half) || next == pageview) return;			
-				next = pageview
-			});
+                if (!element.is(':visible') || (element.offset().top) > (top + 120 + half) || next == pageview) return;         
+                next = pageview
+            });
 
-			if (next && Getup.track.last != next) {
-				Getup.track.last = next;
-				Getup.Analytics.track_pageview(next);
-			}
+            if (next && Getup.track.last != next) {
+                Getup.track.last = next;
+                Getup.Analytics.track_pageview(next);
+            }
 
-			// header fixed
-			if (top > 1) $('.header-container').addClass('header-fixed');
-			else $('.header-container').removeClass('header-fixed');
+            // header fixed
+            if (top > 1) $('.header-container').addClass('header-fixed');
+            else $('.header-container').removeClass('header-fixed');
 
-		}, 100);		
+        }, 100);        
 
-		// Technologies Menu
-		if (!is_mobile) {
+        // Technologies Menu
+        if (!is_mobile) {
 
-			// if (top >= 280) {
-			// 	Getup.elements.technologies_nav.css({ position: 'fixed', width: 'auto', top: 145});	
-			// } else {
-			// 	Getup.elements.technologies_nav.css({ position: 'static', width: false, top: 0 });	
-			// }
-			
-		}
-		
-	};
+            // if (top >= 280) {
+            //  Getup.elements.technologies_nav.css({ position: 'fixed', width: 'auto', top: 145}); 
+            // } else {
+            //  Getup.elements.technologies_nav.css({ position: 'static', width: false, top: 0 });  
+            // }
+            
+        }
+        
+    };
 
-	/**
-	 * Site resize
-	 */
-	var resize = function() {
+    /**
+     * Site resize
+     */
+    var resize = function() {
 
-		/**
-		 * Update mobile validation using Modernizr.mq
-		 */
-		is_mobile = Modernizr.mq('only all and (max-width: 480px)');
+        /**
+         * Update mobile validation using Modernizr.mq
+         */
+        is_mobile = Modernizr.mq('only all and (max-width: 480px)');
 
-		/**
-		 * Height of menu
-		 */
-		Getup.config.menu_height = is_mobile ? 70 : 122;
+        /**
+         * Height of menu
+         */
+        Getup.config.menu_height = is_mobile ? 70 : 122;
 
-		/**
-		 * Hide compare in mobile
-		 */
-		if (is_mobile) {
-			Getup.elements.compare.hide();
-			
-			/*
-			 * Mobile Nav - Begin
-			 */
+        /**
+         * Hide compare in mobile
+         */
+        if (is_mobile) {
+            Getup.elements.compare.hide();
+            
+            /*
+             * Mobile Nav - Begin
+             */
 
-			var nav = $('.mobile-custom-nav');
+            var nav = $('.mobile-custom-nav');
 
-			// Nav menu options
-			nav.find('.h3 a').on('click', function() {
-			   nav.toggleClass('active');
-			});
+            // Nav menu options
+            nav.find('.h3 a').on('click', function() {
+               nav.toggleClass('active');
+            });
 
-			// Check page location and update nav 
-			var currentPage = location.href.substr(location.href.lastIndexOf('/') + 1);
+            // Check page location and update nav 
+            var currentPage = location.href.substr(location.href.lastIndexOf('/') + 1);
 
-			nav.find('li a').each(function(index, element) {
-			   var currentNav = $(element).attr('href').substr($(element).attr('href').lastIndexOf('/') + 1);
-			   
-			   if (currentNav === currentPage) {
-			      $(element).addClass('active');
-			      nav.find('.h3 a').text($(element).text());
-			   };
-			});
+            nav.find('li a').each(function(index, element) {
+               var currentNav = $(element).attr('href').substr($(element).attr('href').lastIndexOf('/') + 1);
+               
+               if (currentNav === currentPage) {
+                  $(element).addClass('active');
+                  nav.find('.h3 a').text($(element).text());
+               };
+            });
 
-			/*
-			 * Mobile Nav - End
-			 */
-		}		
-	};
+            /*
+             * Mobile Nav - End
+             */
+        }       
+    };
 
-	/**
-	 * Site initialization
-	 */
-	var init = function() {
+    /**
+     * Site initialization
+     */
+    var init = function() {
 
-		/**
-		 * Set the prefix of analytics
-		 */
-		Getup.Analytics.set_prefix(U.language.slice(0, 2));
+        /**
+         * Set the prefix of analytics
+         */
+        Getup.Analytics.set_prefix(U.language.slice(0, 2));
 
-		/*
-		 * Initilize components
-		 */
-		Getup.modal.init();
-		Getup.tooltip.init();
-	};
+        /*
+         * Initilize components
+         */
+        Getup.modal.init();
+        Getup.tooltip.init();
+        Getup.cases.init();
+    };
 
-	/**
-	 * General events
-	 */
-	Getup.events = {};
+    /**
+     * General events
+     */
+    Getup.events = {};
 
-	/**
-	 * General events
-	 * Event: mobile menu controller
-	 */
-	Getup.elements.header.menu_control.click(Getup.mobile.menu.toggle);
+    /**
+     * General events
+     * Event: mobile menu controller
+     */
+    Getup.elements.header.menu_control.click(Getup.mobile.menu.toggle);
 
-	/**
-	 * General events
-	 * Event: mobile menu controller
-	 */
-	Getup.elements.see_more.click(Getup.articles.how_it_works.toggle);
+    /**
+     * General events
+     * Event: mobile menu controller
+     */
+    Getup.elements.see_more.click(Getup.articles.how_it_works.toggle);
 
-	/**
-	 * General events
-	 * Event: all articles links
-	 */
-	if (Getup.elements.body.is('.article-links')) {
-		Getup.elements.body.find('.article').click(function() {
-			var article = $(this).data('article');
+    /**
+     * General events
+     * Event: all articles links
+     */
+    // if (Getup.elements.body.is('.article-links')) {
+    //  Getup.elements.body.find('.article').click(function() {
+    //      var article = $(this).data('article');
 
-			if (article == 'home' && location.pathname != '/' && location.pathname != '/index.html' && location.pathname != '/index_en.html') {
-				location.href = (U.language.slice(0, 2) == 'pt' ? '/index.html' : '/index_en.html');
-			}
+    //      if (article == 'home' && location.pathname != '/' && location.pathname != '/index.html' && location.pathname != '/index_en.html') {
+    //          location.href = (U.language.slice(0, 2) == 'pt' ? '/index.html' : '/index_en.html');
+    //      }
 
-			var module = Getup.articles[article.replace(/\-/g, '_')];
+    //      var module = Getup.articles[article.replace(/\-/g, '_')];
 
-			if (module && module.link) {
-				location.href = "#/" + article;
-				module.link();	
-			}
+    //      if (module && module.link) {
+    //          location.href = "#/" + article;
+    //          module.link();  
+    //      }
 
-			return false;
-		});
-	} else {
-		Getup.elements.body.find('.all-article').click(function() {
-			var article = $(this).data('article');
+    //      return false;
+    //  });
+    // } else {
+    //  Getup.elements.body.find('.all-article').click(function() {
+    //      var article = $(this).data('article');
 
-			var module = Getup.articles[article.replace(/\-/g, '_')];
+    //      var module = Getup.articles[article.replace(/\-/g, '_')];
 
-			if (module && module.link) {
-				location.href = "#/" + article;
-				module.link();	
-			}
+    //      if (module && module.link) {
+    //          location.href = "#/" + article;
+    //          module.link();  
+    //      }
 
-			return false;
-		});	
-	}
-	//Getup.elements.signup.call.click(Getup.articles.sign_up.show);
+    //      return false;
+    //  }); 
+    // }
+    //Getup.elements.signup.call.click(Getup.articles.sign_up.show);
 
-	/**
-	 * General events
-	 * Event: mobile menu controller
-	 */
-	$(window).resize(resize);
+    /**
+     * General events
+     * Event: mobile menu controller
+     */
+    $(window).resize(resize);
 
-	/**
-	 * General events
-	 * Event: window scroll
-	 */
-	$(document).scroll(scroll);
+    /**
+     * General events
+     * Event: window scroll
+     */
+    $(document).scroll(scroll);
 
-	/**
-	 * Call resize to update config values
-	 */
-	resize();
+    /**
+     * Call resize to update config values
+     */
+    resize();
 
-	/**
-	 * Call scroll to update tracker
-	 */
-	scroll();
+    /**
+     * Call scroll to update tracker
+     */
+    scroll();
 
-	/**
-	 * Preload initialization
-	 */
-	Getup.preload.init(init);
-	
-	/**
-	 * Move to top
-	 */
-	Getup.elements.body.css({ 'scroll-top': 0 });
+    /**
+     * Preload initialization
+     */
+    Getup.preload.init(init);
+    
+    /**
+     * Move to top
+     */
+    Getup.elements.body.css({ 'scroll-top': 0 });
 
-	/**
-	 * Export getup class to window scope
-	 */
-	 window.Getup = Getup;
+    /**
+     * Export getup class to window scope
+     */
+     window.Getup = Getup;
 }(); 
