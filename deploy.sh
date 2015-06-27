@@ -9,6 +9,7 @@ usage()
 
 DONT_BUILD=0
 export BUILD_ID=
+source_branch=source-v2
 
 for opt; do
 	case $opt in
@@ -24,8 +25,8 @@ for opt; do
 	shift
 done
 
-if ! git branch --no-color | grep -q '* source-node'; then
-	echo Must deploy only from branch source-node
+if ! git branch --no-color | grep -q "* $source_branch"; then
+	echo Must deploy only from branch $source_branch
 	exit 1
 fi
 
@@ -47,7 +48,7 @@ git commit -a || true
 git tag "source-$BUILD_ID"
 
 # push latests changes
-git push origin source-node
+git push origin $source_branch
 git push origin "source-$BUILD_ID"
 
 # prepare master to push
@@ -71,7 +72,7 @@ git push origin master
 git push origin "$BUILD_ID"
 
 echo You are now on branch:
-git checkout source-node
+git checkout $source_branch
 
 # Install npm
 #npm install
