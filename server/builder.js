@@ -21,6 +21,7 @@ fs.mkdirSync(base + '/terms-of-use');
 fs.mkdirSync(base + '/support-policy')
 fs.mkdirSync(base + '/privacy-policy')
 fs.mkdirSync(base + '/acceptable-use-policy')
+
 fs.mkdirSync(base + '/technology');
 fs.mkdirSync(base + '/technology/php');
 fs.mkdirSync(base + '/technology/ruby');

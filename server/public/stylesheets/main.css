@@ -530,7 +530,7 @@ figure.cFigureWrapper .image {width:100%;}
 .ir.openshift {background-position:0 -45px; width:200px; height:30px; display:inline-block;}
 
 .footer-container {padding-top:30px; background:#282828; font-size:13px;}
-.footer-container .clearfix {position:relative;}
+.footer-container .clearfix {position:relative; height: 100px; }
 
 .footer-container .nav-footer {width:100%; margin-bottom:30px;}
 .footer-container .nav-footer ul li {margin-bottom:10px;}
