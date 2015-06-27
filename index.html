@@ -19,8 +19,15 @@
             <meta property="og:type" content="website">
             <meta property="og:url" content="https://getupcloud.com">
             <meta property="og:image" content="https://getupcloud.com/images/getup.png">
-            <meta property="og:description" name="description" content="Getup is a scalable cloud application platform. Uma forma fácil e rápida de desenvolver e publicar aplicações web. Você se preocupa com o código - nós cuidamos do resto.">
-            <meta property="gc:build_id" content="1432729177218N">
+            <meta property="og:description" name="description" content="Getup is a scalable cloud application platform. Uma forma fácil e rápida de desenvolver e publicar aplicações web. You only have to worry about coding your app - we take care of everything else.">
+            <meta property="gc:build_id" content="1435367059667N">
+    
+            <link rel="profile" href="http://microformats.org/profile/hcard">
+    
+            <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1, maximum-scale=1">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black">
+            <meta name="format-detection" content="telephone=no">
     
             <link rel="shortcut icon" type="image/x-icon" href="//getupcloud.com/favicon.ico">
     
@@ -41,13 +48,13 @@
     
             <script src="/javascripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     
-            <!--Start of Zopim Live Chat Script-->
+            <!--Start of Zopim Live Chat Script
             <script type="text/javascript"> window.$zopim || (function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8'); $.src='//v2.zopim.com/?1aNSsavBi1e9Gs5y9Olsh4R2HJYYQFNP';z.t=+new Date; $.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
             </script>
-            <!--End of Zopim Live Chat Script-->        
+            End of Zopim Live Chat Script-->        
         </head>
 
-    <body class="preloader article-links">
+    <body class="preloader article-links page-home">
 
                 <!--[if lt IE 7]>
                     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -61,16 +68,40 @@
                         <a class="menu-control" href="javascript:;">Menu</a>
                         <nav>
                             <ul>
-                                <li><a href="/#/how-it-works" data-event="Menu,Link,How it works" data-article="how-it-works" class="article">Como Funciona</a></li>
-                                <li><a href="/#/pricing" data-event="Menu,Link,Pricing" data-article="pricing" class="article">Preço</a></li>
-                                <li><a href="/tecnologia/" data-event="Menu,Link,Technology">Tecnologia</a></li>
-                                <li><a data-event="Menu,External link,Support" href="https://getup.zendesk.com/home/">Suporte</a></li>
-                                <li><a data-event="Menu,External link,Blog" href="/blog/">Blog</a></li>
-                                <li><a href="/#/get-in-touch" data-event="Menu,Link,Get in touch" data-article="get-in-touch" class="article">Contato</a></li>
+                                <li>
+                                    <a href="/preco" data-event="Menu,Link,Pricing">
+                                        <span>Preço</span>
+                                        <span class="over">Preço</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tecnologia" data-event="Menu,Link,Technology">
+                                        <span>Tecnologia</span>
+                                        <span class="over">Tecnologia</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://getup.zendesk.com/forums/" data-event="Menu,External link,Support">
+                                        <span>Suporte</span>                                
+                                        <span class="over">Suporte</span>                                
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://getupcloud.com/blog/" data-event="Menu,External link,Blog">
+                                        <span>Blog</span>
+                                        <span class="over">Blog</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/contato" data-event="Menu,Link,Get in touch">
+                                        <span>Contato</span>
+                                        <span class="over">Contato</span>
+                                    </a>
+                                </li>
                             </ul>
                             <ul class="side">
-                                <li><a class="button orange flat" target="_blank" data-event="Menu,Button,Signin" href="https://broker.getupcloud.com/console/signin">Entrar</a></li>
-                                <li><a class="button red flat article all-article" href="#sign-up" data-event="Menu,Button,Signup" data-article="sign-up">Crie sua Conta</a></li>                        
+                                <li><a class="link upper fsize1" href="https://broker.getupcloud.com/console/signin" data-event="Menu,Button,Signin" target="_blank">Entrar</a></li>
+                                <li><a class="button white upper fsize1" onclick="Getup.articles.sign_up.link()" href="javascript:;" data-event="Menu,Button,Signup">Crie sua Conta</a></li>                        
                             </ul>
                         </nav>
         
@@ -83,343 +114,356 @@
 
         <div class="main-container">
             <div class="main clearfix">
+                <div class="background-home-header">
+                    <article id="grow-in-the-cloud" class="wrapper pageview" data-pageview="home">
+                        <h2>Grow in the cloud</h2>
+                        <h3>Desenvolva, hospede e escale sites e aplicações na nuvem</h3>
+                        <a href="javascript:;" onclick="Getup.articles.sign_up.link()" class="button white upper fsize2" title="Experimente grátis">Experimente grátis</a>
+                    </article>
+                </div>
 
-                <article id="home" class="carousel pageview" data-pageview="home">
-                    <section class="item-01">
-                        <div class="wrapper">
-                            <h2>Getup é uma plataforma para hospedagem na nuvem</h2>
-                            <p>Uma forma fácil e rápida de desenvolver e publicar aplicações web.</p>
-                            <p>Você se preocupa com o código - nós cuidamos do resto.</p>
-
-                            <div class="actions">
-                                <a class="button orange article btn-large" data-event="Carousel,Button,Free Trial,1"  href="#sign-up" data-article="sign-up">Experimente grátis</a>
-                                <small>Não necessita cartão de crédito</small>
-                            </div>
-                       </div>
-                    </section>
-
-                    <section class="item-02 white">
-                        <div class="wrapper">
-                            <h2>Grow in the cloud</h2>
-                            <p class="cyan">Recursos disponíveis na hora que você mais precisa.</p>
-
-                            <div class="actions">
-                                <a class="button orange article btn-large" data-event="Carousel,Button,Free Trial,2" href="#sign-up" data-article="sign-up">Experimente grátis</a>
-                                <small class="white">Não necessita cartão de crédito</small>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="item-03">
-                        <div class="wrapper">
-                            <h2>Escalabilidade automática</h2>
-                            <p>Não seja pego pelos picos de acesso.</p>
-                            <p>Publique e escale para milhões de usuários.</p>
-
-                            <div class="actions">
-                                <a class="button orange article btn-large" data-event="Carousel,Button,Free Trial,3" href="#sign-up" data-article="sign-up">Experimente grátis</a>
-                                <small>Não necessita cartão de crédito</small>
-                            </div>
-                        </div>
-                    </section>
-                </article> <!-- #home -->
-
-                <article id="how-it-works" class="wrapper pageview" data-pageview="how">
+                <article id="all-you-need" class="wrapper pageview" data-pageview="everything_you_need">
                     <header>
-                        <h2>Publique sua aplicação em minutos</h2>
-                        <p>Crie e publique aplicações web sem o custo e a complexidade de comprar e administrar servidores. É mais rápido e barato que subir servidores na Amazon.</p>
+                        <h2>Tudo o que você precisa para crescer na nuvem.</h2>                        
                     </header>
-
                     <div class="centralized">
                         <section>
-                            <h3 class="create">Crie sua aplicação</h3>
-                            <p>Escolha a tecnologia: PHP, Ruby, Python, Node.js</p>
-
-                            <a href="javascript:;" data-event="How it works,See More,Create" data-text="Menos">Veja Mais</a>
-
-                            <dl>
-                                <dt>SSL</dt>
-                                <dd>Incluso para todas as aplicações.</dd>
-
-                                <dt>Cartridges</dt>
-                                <dd>Adicione componentes na aplicação.</dd>
-                                <dd>$ rhc app-create AppName PHP-5 MySQL-5</dd>
-                            </dl>
-                        </section><!-- .create -->
+                            <img src="/images/icon-up-and-running.png" height="107" width="150">
+                            <h3>Servidores prontos em 2 minutos</h3>
+                            <p>Você escolhe as tecnologias e a instalação das bibliotecas, frameworks e atualizações são automatizados. Você recebe a URL para acesso e Certificado SSL.</p>
+                        </section>
                         <section>
-                            <h3 class="deploy">Publique</h3>
-                            <p>Digite &#x27;git push&#x27; e voilá! Sua aplicação está up and running!</p>
-
-                            <a href="javascript:;" data-event="How it works,See More,Deploy" data-text="Menos">Veja Mais</a>
-
-                            <dl>
-                                <dt>Built-in Databases</dt>
-                                <dd>Adicione um banco de dados adicionando um cartridge.</dd>
-                                <dd>$ rhc cartridge-add MySQL-5 -a AppName</dd>
-                            </dl>
-                        </section><!-- .deploy -->
+                            <img src="/images/icon-scale-your-app.png" height="107" width="149">
+                            <h3>Escale seu site automaticamente</h3>
+                            <p>A Getup lhe dá o poder de adicionar mais capacidade quando o tráfego crescer e remover quando o tráfego diminuir, tudo automático.</p>
+                        </section>
                         <section>
-                            <h3 class="scale">Escale</h3>
-                            <p>Com a escalabilidade automática você não precisa se preocupar com o crescimento, mesmo que aconteça do dia para a noite.</p>
-
-                            <a href="javascript:;" data-event="How it works,See More,Scale" data-text="Menos">Veja Mais</a>
-
-                            <dl>
-                                <dt>Monitoramento</dt>
-                                <dd>Mais ou menos gears, de acordo com o tráfego. Escale para milhões de usuários.</dd>
-
-                                <dt>Pay as you go</dt>
-                                <dd>Pague por hora e apenas pelo período que o gear ficou ativo. É mais eficiente e versátil que os modelos tradicionais de hosting.</dd>
-
-                                <dt>É isso!</dt>
-                                <dd class="beer">É reclinar na poltrona e curtir o passeio. E não esqueça do néctar dourado!</dd>
-                            </dl>
-                        </section><!-- .scale -->
+                            <img src="/images/icon-bring-us-your-problem.png" height="107" width="138">
+                            <h3>Nos traga seu maior problema</h3>
+                            <p>Nosso suporte irá ajudá-lo com a arquitetura da sua aplicação, dimensionamento de acessos e tecnologias como Redis, Memcached, MongoDB ou CDN.</p>
+                        </section>
                     </div>
-                </article> <!-- #how-it-works -->
+                </article>
 
                 <div class="background gray">
-                    <article id="pricing" class="wrapper pageview" data-pageview="pricing">
-                        <header>
-                            <h2>Preços e benefícios</h2>
+                    <article id="cases" class="wrapper clearfix pageview" data-pageview="cases">
+                        <figure class="cFigureWrapper">
+                            <img src="/images/image-cloud-over-1.png" class="cFloat-top">
+                            <img src="/images/image-cloud-over-2.png" class="cFloat-left">
+                            <img src="/images/image-case.png" class="image">
+                            <figcaption class="caption">Circuito Banco do Brasil</figcaption>
+                        </figure>
+                        <section>
+                            <h2>Cases</h2>
+                            <h3>Escalabilidade automática para os picos de acesso.</h3>
+                            <p>
+                                O Circuito Banco do Brasil é um festival de música, esporte e cultura realizado pelo Banco do Brasil, trazendo shows como Linkin Park, Nação Zumbi e Kings of Leon.
+                            </p>
+                            <p>
+                                O site, baseado em WordPress, recebeu +400 posts de jornalistas e atingiu
+                                <strong>4 milhões de requisições HTTP</strong>
+                                no dia da coletiva de imprensa de lançamento.
+                            </p>
+                            <p>
+                                A escalabilidade automática garantiu a performance do site mesmo nos períodos de picos.
+                            </p>
+                            <p>
+                                Saiba mais sobre o case
+                                <a href="https://getupcloud.com/blog/case-circuito-banco-do-brasil" target="_blank" title="em nosso blog.">em nosso blog.</a>
+                            </p>
+                        </section>
+                    </article>
+                </div>
+                <div class="background map">
+                    <article id="multiple-datacenters" class="pageview" data-pageview="multiple_datacenters">
+                        <header class="wrapper">
+                            <h2>Múltiplos Datacenters</h2>
+                            <h3>Faça o deploy na região mais próxima dos seus usuários ou em mais de uma região para alta disponibilidade.</h3>
                         </header>
                         <section>
-                            <div class="right">
-                                <p>A Getup é a melhor opção de hospedagem para quem não quer perder tempo configurando servidores.</p>
-                                <p>Uma aplicação poderá rodar usando um ou mais gears e a quantidade será determinada pelo volume de acessos.</p>
-                                <p>Já o valor mensal é calculado através do número de gears utilizados e o número de horas em que ficaram ativos.</p>
-
-                                <div class="white-border round compare article trackevent" data-event="Pricing,Button,Compare" data-article="compare">
-                                    <h3>Compare a Getup com os outros serviços</h3>
-                                    <p>Exemplo de uma aplicação PHP+MySQL com uma média de 500K visitas e 10 picos de acesso/mês. <a href="javacript:;">Confira</a></p>
-                                </div>
-                            </div>                        
-
-                            <div class="left">
-                                <dl>
-                                    <dt>Auto Escalável</dt>
-                                    <dd>incluso</dd>
-
-                                    <dt>Suporte</dt>
-                                    <dd>Ticket, Fórum, Comunidade</dd>
-
-                                    <dt>SSL</dt>
-                                    <dd>SSL compartilhado incluso</dd>
-
-                                    <dt class="no-border">Requisições de API</dt>
-                                    <dd class="no-border">Ilimitadas</dd>
-                                </dl>
-                                <br/>
-
-                                <div class="region-button">
-                                    <input id="region-us" type="radio" value="US" name="region" class="region"/>
-                                    <label for="region-us" class="blue">US</label>
-                                </div>
-                                <div class="region-button">
-                                    <input id="region-br" type="radio" value="BR" name="region" class="region">
-                                    <label for="region-br" class="blue">BR</label>
-                                </div>
-
-                                <dl class="blue round">
-
-                                    <dt></dt>
-                                    <dd></dd>
-
-                                    <dt class="no-border">GEAR/HORA <i class="tooltip" data-text="O gear é sua instância na nuvem. O Gear Small possui 512MB RAM / 3GB disco e o Gear Medium possui 1GB RAM / 6GB disco. Se uma aplicação precisar de mais recursos, ela poderá usar múltiplos gears, o que chamamos de escalabilidade.  ">?</i></dt>
-                                    <dd class="no-border"><span class="price region-us">R$ 0,122</span><span class="price region-br">R$ 0,148</span> <small>Small</small></dd>
-                                    <dt class="no-border">&nbsp</dt>
-                                    <dd class="no-border"><span class="price region-us">R$ 0,305</span><span class="price region-br">R$ 0,370</span> <small>Medium</small></dd>
-
-                                    <dt></dt>
-                                    <dd></dd>
-
-
-                                    <dt class="no-border">GEAR/MENSAL</dt>
-                                    <dd class="no-border"><span class="price region-us">R$ ~89,06</span><span class="price region-br">R$ ~108,04</span> <small>Small</small></dd>
-                                    <dt class="no-border">&nbsp</dt>
-                                    <dd class="no-border"><span class="price region-us">R$ ~222,65</span><span class="price region-br">R$ ~270,10</span> <small>Medium</small></dd>
-                                </dl>
-                            </div>
-                        </section><!-- .prices -->
-                    </article> <!-- #pricing -->
-                </div>
-
-                <div class="background gray">
-                    <article id="compare" class="wrapper pageview" data-pageview="pricing/gear">
-                        <section>
-                            <table class="round" alt="Serviços de outras empresas">
-                                <thead>
-                                    <tr>
-                                        <th>&nbsp;</th>
-                                        <th><strong class="ir">Getup</strong></th>
-                                        <th>Cloud Server</th>
-                                        <th>Hospedagem Compartilhada</th>
-                                    </tr>                                
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Recurso</td>
-                                        <td>4 gears <small>(Small)</small> <i class="tooltip" data-text="O gear é sua instância na nuvem. O Gear Small possui 512MB RAM / 3GB disco e o Gear Medium possui 1GB RAM / 6GB disco. Se uma aplicação precisar de mais recursos, ela poderá usar múltiplos gears, o que chamamos de escalabilidade. ">?</i></td>
-                                        <td>2 Cloud Server 1GB RAM</td>
-                                        <td>1 hosting</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Auto Escalável</td>
-                                        <td>Sim</td>
-                                        <td>Não</td>
-                                        <td>Não</td>
-                                    </tr>
-                                    <tr class="light-blue">
-                                        <td><small>Valor mensal</small></td>
-                                        <td><strong>R$ ~356,00 </strong> <i class="tooltip" data-text="Considere uma média de 730hs mensais.">?</i></td>
-                                        <td><strong>R$ ~198,00</strong></td>
-                                        <td><strong>R$ ~25,00</strong></td>
-                                    </tr>
-                                    <tr class="no-border">
-                                        <td>+ Admin do Servidor</td>
-                                        <td>incluso</td>
-                                        <td>Precisa contratar</td>
-                                        <td>incluso</td>
-                                    </tr>
-                                    <tr class="light-blue">
-                                        <td><small>Valor mensal</small></td>
-                                        <td><strong>R$ ~356,00 </strong></td>
-                                        <td><strong>R$ ~300,00</strong></td>
-                                        <td><strong>R$ ~25,00</strong></td>
-                                    </tr>
-                                    <tr class="no-border">
-                                        <td>10 Picos de Acesso</td>
-                                        <td><red>Escalabilidade automática +5 web gears<red></td>
-                                        <td>desligar servidor, adicionar memória, ligar servidor</td>
-                                        <td>Ligue para o Suporte</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Duração 6 horas</td>
-                                        <td>Scale down automático</td>
-                                        <td>desligar servidor, remover memória, ligar servidor</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr class="light-blue">
-                                        <td><small>Custo adicional</small></td>
-                                        <td>10 picos x 5 gears x 6 horas x R$ 0,122 =  <strong>R$ 36,60</strong> </td>
-                                        <td>impossível calcular</strong> <i class="tooltip" data-text="A forma de contratação e existência ou não de APIs para automatização torna impossível prever o gasto">?</i></td>
-                                        <td>-</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td>Total</td>
-                                        <td><strong>R$ 392,60</strong> <b>Tranquilidade</b> Você só sabe que teve picos pelo impacto nas vendas.</td>
-                                        <td><strong>R$ 498,60</strong> <b>Preocupação.</b> Voce precisou reiniciar seu servidor <b>20x</b></td>
-                                        <td><strong>R$ 25,00</strong> <b>Arriscado!</b> Site fora do ar = perder negócios.</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </section><!-- .compare -->
-                    </article> <!-- #pricing -->
-                </div>
-
-                				<article id="sign-up" class="wrapper pageview" data-pageview="signup">
-                                    <header>
-                                        <h2>São 750 horas pra você comprovar que a Getup é f$@#!.</h2>
-                                        <a class="button orange article btn-large all-article" data-event="Signup,Button,Free trial" href="#sign-up" data-article="sign-up">Experimente grátis</a>
-                                    </header>
-                                    <section>
-                                        <form method="post" action="">
-                                            <input type="hidden" name="lang" id="language" value="pt-br">
-                                            <input type="hidden" name="partner" id="partner" value="">
-                                            <fieldset>
-                                                <legend>Criar Conta</legend>
-                
-                                                <p class="no-margin">São 750 horas pra você comprovar que a Getup é f$@#!.</p>
-                                                <p>Se você possui um código promocional, use-o!</p>
-                
-                                                <div class="group">
-                                                    <input type="text" tabindex="1" placeholder="Qual seu nome?" name="name" />
-                                                    <input type="text" tabindex="2" placeholder="Qual seu e-mail?" name="email" />
-                                                </div>
-                
-                                                <div class="group">
-                                                    <p>Cadastre uma senha de acesso:</p>
-                
-                                                    <input type="password" tabindex="3" placeholder="Senha" name="password1" />
-                                                    <input type="password" tabindex="4" placeholder="Confirme a senha" name="password2" />
-                                                </div>
-                
-                                                <div class="group">
-                                                    <p>Código promocional?</p>
-                
-                                                    <input type="text" tabindex="5" placeholder="Promo code (optional)" name="coupon_code" />
-                                                </div>
-                
-                                                <div class="actions">
-                                                    <label>
-                                                        <input type="checkbox" name="use_terms" value="1" />
-                                                        <span>Li e aceito os  <a class="modal-link" href="termos-de-uso.html">Termos de uso</a></span>
-                
-                                                    </label>
-                                                    <button class="button orange trackevent" data-event="Signup,Button,Continue">Continuar</button>
-                                                </div>
-                                            </fieldset>
-                                        </form>
-                                        <p id="success">
-                                            <strong>Bem vindo à bordo.</strong>
-                                            <span>Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado por se cadastrar.</span>
-                                        </p>       
-                                    </section><!-- . -->
-                                </article> <!-- #sign-up -->      
-                                <div class="background orange">
-                                    <article id="get-in-touch" class="wrapper pageview" data-pageview="get_in_touch">
-                                        <header>
-                                            <h2>Não seja tímido! Venha conversar sobre nuvem.</h2>
-                                        </header>
-                                        <section>
+                            <div class="point oregon left">
+                                <div class="tooltip">
+                                    <div class="wr">
+                                        <h2>Oregon</h2>
+                                        <h3>Recursos Disponíveis:</h3>
+                                        <div>
                                             <ul>
-                                                <li><a data-event="Get in touch,Link,E-mail" href="mailto:ship@getupcloud.com">ship@getupcloud.com</a></li>
-                                                <li><a data-event="Get in touch,Link,Twitter" href="http://www.twitter.com/getupcloud" target="_blank">twitter.com/getupcloud</a></li>
-                                                <li><a data-event="Get in touch,Link,Facebook" href="http://www.facebook.com/getupcloud" target="_blank">fb.com/getupcloud</a></li>                        
+                                                <li>Gear Small</li>
+                                                <li>Gear Medium</li>
                                             </ul>
+                                            <a href="" title="Veja o preço">Veja o preço</a>
+                                        </div>
+                                        <div class="border">
+                                            <ul>
+                                                <li>Servidor Dedicado</li>
+                                            </ul>
+                                            <a href="" title="Entre em contato">Entre em contato</a>
+                                        </div>                    </div>
+                                </div>
+                            </div>
+                            <div class="point virginia left">
+                                <div class="tooltip">
+                                    <div class="wr">
+                                        <h2>Virgínia</h2>
+                                        <h3>Recursos Disponíveis:</h3>
+                                        <div>
+                                            <ul>
+                                                <li>Servidor Dedicado</li>
+                                            </ul>
+                                            <a href="/contato" title="Entre em contato">Entre em contato</a>
+                                        </div>                    </div>
+                                </div>
+                            </div>
+                            <div class="point california left">
+                                <div class="tooltip">
+                                    <div class="wr">
+                                        <h2>Califórnia</h2>
+                                        <h3>Recursos Disponíveis:</h3>
+                                        <div>
+                                            <ul>
+                                                <li>Servidor Dedicado</li>
+                                            </ul>
+                                            <a href="/contato" title="Entre em contato">Entre em contato</a>
+                                        </div>                    </div>
+                                </div>
+                            </div>
+                            <div class="point ireland left">
+                                <div class="tooltip">
+                                    <div class="wr">
+                                        <h2>Irlanda</h2>
+                                        <h3>Recursos Disponíveis:</h3>
+                                        <div>
+                                            <ul>
+                                                <li>Servidor Dedicado</li>
+                                            </ul>
+                                            <a href="/contato" title="Entre em contato">Entre em contato</a>
+                                        </div>                    </div>
+                                </div>
+                            </div>
+                            <div class="point frankfurt left">
+                                <div class="tooltip">
+                                    <div class="wr">
+                                        <h2>Frankfurt</h2>
+                                        <h3>Recursos Disponíveis:</h3>
+                                        <div>
+                                            <ul>
+                                                <li>Servidor Dedicado</li>
+                                            </ul>
+                                            <a href="/contato" title="Entre em contato">Entre em contato</a>
+                                        </div>                    </div>
+                                </div>
+                            </div>
+                            <div class="point singapore right">
+                                <div class="tooltip">
+                                    <div class="wr">
+                                        <h2>Cingapura</h2>
+                                        <h3>Recursos Disponíveis:</h3>
+                                        <div>
+                                            <ul>
+                                                <li>Servidor Dedicado</li>
+                                            </ul>
+                                            <a href="/contato" title="Entre em contato">Entre em contato</a>
+                                        </div>                    </div>
+                                </div>
+                            </div>
+                            <div class="point tokyo right">
+                                <div class="tooltip">
+                                    <div class="wr">
+                                        <h2>Tóquio</h2>
+                                        <h3>Recursos Disponíveis:</h3>
+                                        <div>
+                                            <ul>
+                                                <li>Servidor Dedicado</li>
+                                            </ul>
+                                            <a href="/contato" title="Entre em contato">Entre em contato</a>
+                                        </div>                    </div>
+                                </div>
+                            </div>
+                            <div class="point sydney right">
+                                <div class="tooltip">
+                                    <div class="wr">
+                                        <h2>Sydney</h2>
+                                        <h3>Recursos Disponíveis:</h3>
+                                        <div>
+                                            <ul>
+                                                <li>Servidor Dedicado</li>
+                                            </ul>
+                                            <a href="/contato" title="Entre em contato">Entre em contato</a>
+                                        </div>                    </div>
+                                </div>
+                            </div>
+                            <div class="point saopaulo left">
+                                <div class="tooltip">
+                                    <div class="wr">
+                                        <h2>São Paulo</h2>
+                                        <h3>Recursos Disponíveis:</h3>
+                                        <div>
+                                            <ul>
+                                                <li>Gear Small</li>
+                                                <li>Gear Medium</li>
+                                            </ul>
+                                            <a href="" title="Veja o preço">Veja o preço</a>
+                                        </div>
+                                        <div class="border">
+                                            <ul>
+                                                <li>Servidor Dedicado</li>
+                                            </ul>
+                                            <a href="" title="Entre em contato">Entre em contato</a>
+                                        </div>                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </div>                
+
+                <article id="dedicated-servers" class="wrapper clearfix pageview" data-pageview="dedicated_servers">
+                    <figure>
+                        <img src="/images/img-dedicated-servers.png">
+                    </figure>
+                    <section>
+                        <h2>Servidores Dedicados</h2>
+                        <h3>Agilidade de startup para grandes empresas</h3>
+                        <p>Você é grande, nós entendemos! Isso não significa que você não possa inovar. Nossa plataforma em servidores dedicados pode ser o que você estava procurando - Agilidade e inovação de Startup desenhado para os requisitos de grandes empresas.</p>
+                        <a href="/contato" data-event="Home Page,Button,Drop us a line" class="button gray fsize2 padX15Y0" title="Entre em contato">Entre em contato</a>
+                    </section>
+                </article>
                 
-                                            <div class="right">
-                                                <dl class="trackevent" data-event="Get in touch,Maps,Porto Alegre">
-                                                    <dt>Porto Alegre</dt>
-                                                    <dd>poa@getupcloud.com</dd>
-                                                    <dd>Av. Wenceslau Escobar, 1823 - 204</dd>
-                                                </dl>
-                                                <dl class="trackevent" data-event="Get in touch,Maps,São Paulo">
-                                                    <dt>São Paulo</dt>
-                                                    <dd>sampa@getupcloud.com</dd>
-                                                </dl>
-                                                <dl class="trackevent" data-event="Get in touch,Maps,Overseas">
-                                                    <dt>Overseas</dt>
-                                                    <dd>overseas@getupcloud.com</dd>
-                                                </dl>
-                                            </div>
-                                        </section><!-- . -->
-                                    </article>
-                                </div> <!-- #get-in-touch -->
+                <div class="background trust">
+                    <article id="trust-is-everything" class="wrapper pageview" data-pageview="trust_is_everything">
+                        <section>
+                            <h2>Confiança é tudo</h2>
+                            <h3>Não apenas para grandes marcas, temos orgulho em ajudar pequenas empresas e startups de grande potencial</h3>
+                        </section>
+                        <figure>
+                            <img src="/images/img-brands.png">
+                        </figure>
+                    </article>
+                </div>
+
+                <article id="cases-startups" class="wrapper clearfix pageview" data-pageview="cases_startups">
+                    <figure class="cFigureWrapper">
+                        <img src="/images/image-cloud-over-1.png" class="cFloat-top">
+                        <img src="/images/image-cloud-over-2.png" class="cFloat-left">
+                        <img src="/images/image-case.png" class="image">
+                        <figcaption class="caption">Circuito Banco do Brasil</figcaption>
+                    </figure>
+                    <section>
+                        <h2>Cases Startups</h2>
+                        <h3>Picos de acesso controlados com escalabilidade automática.</h3>
+                        <p>A Getup lhe dá o poder de adicionar mais capacidade quando o tráfego crescer e remover quando o tráfego diminuir, tudo automático.</p>
+                        <p>A Getup lhe dá o poder de adicionar mais capacidade quando o tráfego crescer e remover quando o tráfego diminuir, tudo automático.</p>
+                    </section>
+                </article>
+
+                <article id="sign-up" class="pageview" data-pageview="signup">
+                    <header>
+                        <div class="background map">
+                            <div class="wrapper">
+                                <h2>750 horas grátis para você conhecer a Getup, aproveite e crie sua conta.</h2>
+                                <a class="button orange fsize3 padX15Y0 article all-article"  data-event="Signup,Button,Free trial" href="#sign-up" data-article="sign-up">Experimente grátis</a>
+                            </div>
+                        </div>
+                    </header>
+                    <section class="wrapper">
+                        <form method="post" action="">
+                            <input type="hidden" name="lang" id="language" value="pt-br">
+                            <input type="hidden" name="partner" id="partner" value="">
+                            <fieldset>
+                                <legend>Criar Conta</legend>
+                                <p class="no-margin">São 750 horas pra você comprovar que a Getup é f$@#!.</p>
+                                <p>Se você possui um código promocional, use-o!</p>
+                
+                                <div class="form">
+                                    <label>
+                                        <span>Qual seu nome?</span>
+                                        <input type="text" tabindex="1" name="name" />
+                                    </label>
+                                    <label>
+                                        <span>Qual seu e-mail?</span>
+                                        <input type="text" tabindex="2" name="email" />
+                                    </label>
+                                    <label>
+                                        <span>Crie uma senha de acesso:</span>
+                                        <input type="password" tabindex="3" name="password1" />    
+                                        <small>Mínimo 6 caracteres</small>
+                                    </label>
+                                    <label style="display:none;">
+                                        <span>Insira o cupom de desconto</span>
+                                        <input type="text" tabindex="4" name="coupon_code" />
+                                    </label>
+                                    <label class="invisible"><!-- Layout placeholder --></label>
+                                    <label class="invisible"><!-- Layout placeholder --></label>
+                
+                                    <input class="visuallyhidden" type="password" tabindex="3" name="password2" />
+                                    <input class="visuallyhidden" type="checkbox" name="use_terms" value="1" checked="true">
+                                </div>
+                
+                                <div class="actions">
+                                    <p>Tem algum cupom de desconto? <a href="javascript:;" class="discount-coupon" title="">Clique aqui.</a></p>
+                                    <div class="right">
+                                        <button class="button tblack fsize1 trackevent sign-up-cancel" data-event="Signup,Button,Cancel">Cancelar</button>
+                                        <button class="button orange fsize1 trackevent" data-event="Signup,Button,Continue"><span>Continue</span></button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p id="success">
+                            <strong>Bem vindo à bordo.</strong>
+                            <span>Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado por se cadastrar.</span>
+                        </p>       
+                    </section><!-- . -->
+                </article>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
                 <div class="footer-container">
-                    <footer>
-                        <div class="wrapper">
-                            <h3>Powered by:</h3>
-                            
-                            <ul>
-                                <li class="openshift">Openshift</li>
-                            </ul>
-        
-        
-                            <p>GROW IN THE CLOUD</p>
+                    <footer class="wrapper">
+                        <div class="clearfix">                    
+                            <nav class="nav-footer">
+                                <ul>
+                                    <li><a href="/">Página Inicial</a></li>
+                                    <li><a href="/preco" data-event="Footer,Link,Pricing">Preço</a></li>
+                                    <li><a href="/tecnologia" data-event="Footer,Link,Technology">Tecnologia</a></li>
+                                    <li><a href="https://getup.zendesk.com/forums/" data-event="Footer,External link,Support">Suporte</a></li>
+                                    <li><a href="https://getupcloud.com/blog/" data-event="Footer,External link,Blog">Blog</a></li>
+                                    <li><a href="/contato" data-event="Footer,Link,Get in Touch">Contato</a></li>
+                                </ul>
+                            </nav>                    
+        <!--
+                            <div class="news" id="newsletter">
+                                <h2>RECEBA CONTEÚDOS GETUP</h2>
+                                <p>Receba novidades sobre nuvem, hospedagem, tutoriais, dicas, macetes e novidades Getup em seu e-mail.</p>
+                                <div id="mc_embed_signup">
+                                    <form action="http://xxxxxxx.list-manage.com/subscribe/post-json?u=xxxxx&amp;id=xxxxx&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <input type="text" name="EMAIL" id="mce-EMAIL">
+                                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_58abcfa203271a9db312e69fc_ee0af79b60" value=""></div>
+                                        <button type="submit" id="mc-embedded-subscribe" data-event="Footer,Button,Newsletter" class="button twhite fsize1">ENVIAR</button>
+                                    </form>
+                                </div>
+                                <p id="success" style="display:none;">
+                                    <strong>Bem vindo à bordo.</strong><br>
+                                    <span>Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado por se cadastrar.</span>
+                                </p> 
+                                <small>Fique tranquilo, não enviamos spam nem iremos compartilhar seu e-mail com &quot;parceiros&quot;.</small>
+                            </div>
+        -->
+                            <div class="power-by">
+                                <h3>Powered by:</h3>
+                                <h2 class="ir openshift">OpenShift</h2>
+                            </div>
                         </div>
-        
-                        <nav>
-                            <ul class="wrapper">
-                                <li><a class="modal-link" data-event="Footer,Link,Terms of use" href="/termos-de-uso.html" data-pageview="terms_of_use">Termos de uso</a></li>
-                                <li><a class="modal-link" data-event="Footer,Link,Privacy Policy" href="/politica-de-privacidade.html" data-pageview="privacy_policy">Política de privacidade</a></li>
-                                <li><a class="modal-link" data-event="Footer,Link,Acceptable use policy" href="/politica-de-utilizacao-aceitavel.html" data-pageview="aup">Política de utilização aceitável - PUA</a></li>
-                                <li><a class="modal-link" data-event="Footer,Link,Support policy" href="/politica-de-suporte.html" data-pageview="support_policy">Política de suporte</a></li>
+                        <nav class="terms-social clearfix">
+                            <ul class="social">
+                                <li><a href="https://plus.google.com/+Getupcloud/" data-event="Footer,External link,Google+" target="_blank"><i class="icon-google-plus"></i></a></li>
+                                <li><a href="http://www.twitter.com/getupcloud" data-event="Footer,External link,Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/getup-cloud" data-event="Footer,External link,Linkedin" target="_blank"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="http://www.facebook.com/getupcloud" data-event="Footer,External link,Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            </ul>
+                            <ul class="terms">
+                                <li><a href="/termos-de-uso" data-event="Footer,Link,Terms of use">Terms of use</a></li>
+                                <li><a href="/politica-de-privacidade" data-event="Footer,Link,Privacy Policy">Privacy policy</a></li>
+                                <li><a href="/politica-de-utilizacao-aceitavel" data-event="Footer,Link,Acceptable use policy">Acceptable use policy</a></li>
+                                <li><a href="/politica-de-suporte" data-event="Footer,Link,Support policy">Support policy</a></li>
                             </ul>
                         </nav>
                     </footer>
@@ -441,7 +485,6 @@
                 </script>
                 <!-- End Google Analytics -->        
         
-                <script src="/javascripts/main.js"></script>
-                <script src="/javascripts/price.js"></script>
+                <script src="/javascripts/main.js"></script>        
     </body>
 </html>

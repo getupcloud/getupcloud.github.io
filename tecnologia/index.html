@@ -19,8 +19,15 @@
             <meta property="og:type" content="website">
             <meta property="og:url" content="https://getupcloud.com">
             <meta property="og:image" content="https://getupcloud.com/images/getup.png">
-            <meta property="og:description" name="description" content="Getup is a scalable cloud application platform. Uma forma fácil e rápida de desenvolver e publicar aplicações web. Você se preocupa com o código - nós cuidamos do resto.">
-            <meta property="gc:build_id" content="1432729177218N">
+            <meta property="og:description" name="description" content="Getup is a scalable cloud application platform. Uma forma fácil e rápida de desenvolver e publicar aplicações web. You only have to worry about coding your app - we take care of everything else.">
+            <meta property="gc:build_id" content="1435367059667N">
+    
+            <link rel="profile" href="http://microformats.org/profile/hcard">
+    
+            <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1, maximum-scale=1">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black">
+            <meta name="format-detection" content="telephone=no">
     
             <link rel="shortcut icon" type="image/x-icon" href="//getupcloud.com/favicon.ico">
     
@@ -41,10 +48,10 @@
     
             <script src="/javascripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     
-            <!--Start of Zopim Live Chat Script-->
+            <!--Start of Zopim Live Chat Script
             <script type="text/javascript"> window.$zopim || (function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8'); $.src='//v2.zopim.com/?1aNSsavBi1e9Gs5y9Olsh4R2HJYYQFNP';z.t=+new Date; $.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
             </script>
-            <!--End of Zopim Live Chat Script-->        
+            End of Zopim Live Chat Script-->        
         </head>
 
     <body>
@@ -55,22 +62,46 @@
         
                 <div class="header-container closed"> <!-- start closed for mobile -->
                     <header class="wrapper clearfix">
-                        <a href="/" class="article" data-article="home"><span class="ir logo">Getup Cloud</span></a>
+                        <a href="/" class="article" data-article="home"><h1 class="ir">Getup Cloud</h1></a>
                         <img src="/images/getup.png" alt="Getup cloud" class="hidden" />
                         
                         <a class="menu-control" href="javascript:;">Menu</a>
                         <nav>
                             <ul>
-                                <li><a href="/#/how-it-works" data-event="Menu,Link,How it works" data-article="how-it-works" class="article">Como Funciona</a></li>
-                                <li><a href="/#/pricing" data-event="Menu,Link,Pricing" data-article="pricing" class="article">Preço</a></li>
-                                <li><a href="/tecnologia" data-event="Menu,Link,Technology">Tecnologia</a></li>
-                                <li><a data-event="Menu,External link,Support" href="https://getup.zendesk.com/home/">Suporte</a></li>
-                                <li><a data-event="Menu,External link,Blog" href="/blog/">Blog</a></li>
-                                <li><a href="/#/get-in-touch" data-event="Menu,Link,Get in touch" data-article="get-in-touch" class="article">Contato</a></li>
+                                <li>
+                                    <a href="/preco" data-event="Menu,Link,Pricing">
+                                        <span>Preço</span>
+                                        <span class="over">Preço</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tecnologia" data-event="Menu,Link,Technology">
+                                        <span>Tecnologia</span>
+                                        <span class="over">Tecnologia</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://getup.zendesk.com/forums/" data-event="Menu,External link,Support">
+                                        <span>Suporte</span>                                
+                                        <span class="over">Suporte</span>                                
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://getupcloud.com/blog/" data-event="Menu,External link,Blog">
+                                        <span>Blog</span>
+                                        <span class="over">Blog</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/contato" data-event="Menu,Link,Get in touch">
+                                        <span>Contato</span>
+                                        <span class="over">Contato</span>
+                                    </a>
+                                </li>
                             </ul>
                             <ul class="side">
-                                <li><a class="button orange flat" target="_blank" data-event="Menu,Button,Signin" href="https://broker.getupcloud.com/console/signin">Entrar</a></li>
-                                <li><a class="button red flat article all-article" href="#sign-up" data-event="Menu,Button,Signup" data-article="sign-up">Crie sua Conta</a></li>                        
+                                <li><a class="link upper fsize1" href="https://broker.getupcloud.com/console/signin" data-event="Menu,Button,Signin" target="_blank">Entrar</a></li>
+                                <li><a class="button white upper fsize1" onclick="Getup.articles.sign_up.link()" href="javascript:;" data-event="Menu,Button,Signup">Crie sua Conta</a></li>                        
                             </ul>
                         </nav>
         
@@ -80,17 +111,18 @@
                         </aside>
                     </header>
                 </div>
+
         <div class="main-container">
             <div class="main clearfix">
-                <article id="technologies" class="wrapper pageview" data-pageview="technologies">
+                <article id="technologies" class="wrapper pageview clearfix" data-pageview="technologies">
                     <header>
-                        <p class="h2">Tecnologias suportadas na Getup Cloud</p>
+                        <h2>Tecnologias Suportadas</h2>
                         <p>Gostamos de dizer que somos poliglotas, pois oferecemos suporte a diversas linguagens e serviços através de um sistema chamado de cartridges, ou cartuchos. Os cartridges podem ser frameworks, bancos de dados, serviços de monitoramento ou qualquer outro código que sua aplicação use.</p>
                         <p>A entrega de componentes através de cartridges oferece aos desenvolvedores e administradores de sistema agilidade e padronização. Foque no código, esse é o recado!</p>
                     </header>
 
-                    <nav id="technologies-nav">
-                        <p class="h3"><a href="/tecnologia">Tecnologias</a></p>
+                    <nav class="mobile-custom-nav">
+                        <p class="h3"><a href="javascript:;">Tecnologias</a></p>
 
                         <ul>
                             <li><a href="/tecnologia/php">PHP</a></li>
@@ -106,13 +138,13 @@
                     </nav>
 
                     <section>
-                    <h1 class="h4">Instale e use as ferramentas</h1>
+                    <h2 class="h5">Instale e use as ferramentas</h2>
                     
                     <p>Você usa <a href="http://git-scm.com/book/pt-br" target="_blank">Git</a> para fazer o deploy de seu código e <a href="https://getup.zendesk.com/entries/23056511">RHC</a> para criar e gerenciar suas aplicações.</p>
                     
                     <p>Disponibilizamos um <a href="https://github.com/getupcloud/openshift-rhc-installer/raw/master/RHC-Tools-Installer.exe">instalador para Windows</a> (<a href="https://www.youtube.com/watch?v=NWGV5e5BHgA" target="_blank">video demonstrativo</a>) e um <a href="https://getup.zendesk.com/entries/23056511" target="_blank">guia de instalação para Linux e Mac</a>.
                     
-                    <h1 class="h4">Quer saber sobre infraestrutura?</h1>
+                    <h2 class="h5">Quer saber sobre infraestrutura?</h2>
                     
                     <p>Você é um desenvolvedor que não resiste à tentação de saber mais da infraestrutura? Nós entendemos a curiosidade! ;)</p>
                     
@@ -122,107 +154,115 @@
                     </section>
                 </article> <!-- #technologies -->
 
-                				<article id="sign-up" class="wrapper pageview" data-pageview="signup">
-                                    <header>
-                                        <h2>São 750 horas pra você comprovar que a Getup é f$@#!.</h2>
-                                        <a class="button orange article btn-large all-article" data-event="Signup,Button,Free trial" href="#sign-up" data-article="sign-up">Experimente grátis</a>
-                                    </header>
-                                    <section>
-                                        <form method="post" action="">
-                                            <input type="hidden" name="lang" id="language" value="pt-br">
-                                            <input type="hidden" name="partner" id="partner" value="">
-                                            <fieldset>
-                                                <legend>Criar Conta</legend>
+                <article id="sign-up" class="pageview" data-pageview="signup">
+                    <header>
+                        <div class="background map">
+                            <div class="wrapper">
+                                <h2>750 horas grátis para você conhecer a Getup, aproveite e crie sua conta.</h2>
+                                <a class="button orange fsize3 padX15Y0 article all-article"  data-event="Signup,Button,Free trial" href="#sign-up" data-article="sign-up">Experimente grátis</a>
+                            </div>
+                        </div>
+                    </header>
+                    <section class="wrapper">
+                        <form method="post" action="">
+                            <input type="hidden" name="lang" id="language" value="pt-br">
+                            <input type="hidden" name="partner" id="partner" value="">
+                            <fieldset>
+                                <legend>Criar Conta</legend>
+                                <p class="no-margin">São 750 horas pra você comprovar que a Getup é f$@#!.</p>
+                                <p>Se você possui um código promocional, use-o!</p>
                 
-                                                <p class="no-margin">São 750 horas pra você comprovar que a Getup é f$@#!.</p>
-                                                <p>Se você possui um código promocional, use-o!</p>
+                                <div class="form">
+                                    <label>
+                                        <span>Qual seu nome?</span>
+                                        <input type="text" tabindex="1" name="name" />
+                                    </label>
+                                    <label>
+                                        <span>Qual seu e-mail?</span>
+                                        <input type="text" tabindex="2" name="email" />
+                                    </label>
+                                    <label>
+                                        <span>Crie uma senha de acesso:</span>
+                                        <input type="password" tabindex="3" name="password1" />    
+                                        <small>Mínimo 6 caracteres</small>
+                                    </label>
+                                    <label style="display:none;">
+                                        <span>Insira o cupom de desconto</span>
+                                        <input type="text" tabindex="4" name="coupon_code" />
+                                    </label>
+                                    <label class="invisible"><!-- Layout placeholder --></label>
+                                    <label class="invisible"><!-- Layout placeholder --></label>
                 
-                                                <div class="group">
-                                                    <input type="text" tabindex="1" placeholder="Qual seu nome?" name="name" />
-                                                    <input type="text" tabindex="2" placeholder="Qual seu e-mail?" name="email" />
-                                                </div>
+                                    <input class="visuallyhidden" type="password" tabindex="3" name="password2" />
+                                    <input class="visuallyhidden" type="checkbox" name="use_terms" value="1" checked="true">
+                                </div>
                 
-                                                <div class="group">
-                                                    <p>Cadastre uma senha de acesso:</p>
-                
-                                                    <input type="password" tabindex="3" placeholder="Senha" name="password1" />
-                                                    <input type="password" tabindex="4" placeholder="Confirme a senha" name="password2" />
-                                                </div>
-                
-                                                <div class="group">
-                                                    <p>Código promocional?</p>
-                
-                                                    <input type="text" tabindex="5" placeholder="Promo code (optional)" name="coupon_code" />
-                                                </div>
-                
-                                                <div class="actions">
-                                                    <label>
-                                                        <input type="checkbox" name="use_terms" value="1" />
-                                                        <span>Li e aceito os  <a class="modal-link" href="termos-de-uso.html">Termos de uso</a></span>
-                
-                                                    </label>
-                                                    <button class="button orange trackevent" data-event="Signup,Button,Continue">Continuar</button>
-                                                </div>
-                                            </fieldset>
-                                        </form>
-                                        <p id="success">
-                                            <strong>Bem vindo à bordo.</strong>
-                                            <span>Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado por se cadastrar.</span>
-                                        </p>       
-                                    </section><!-- . -->
-                                </article> <!-- #sign-up -->      
-                                <div class="background orange">
-                                    <article id="get-in-touch" class="wrapper pageview" data-pageview="get_in_touch">
-                                        <header>
-                                            <h2>Não seja tímido! Venha conversar sobre nuvem.</h2>
-                                        </header>
-                                        <section>
-                                            <ul>
-                                                <li><a data-event="Get in touch,Link,E-mail" href="mailto:ship@getupcloud.com">ship@getupcloud.com</a></li>
-                                                <li><a data-event="Get in touch,Link,Twitter" href="http://www.twitter.com/getupcloud" target="_blank">twitter.com/getupcloud</a></li>
-                                                <li><a data-event="Get in touch,Link,Facebook" href="http://www.facebook.com/getupcloud" target="_blank">fb.com/getupcloud</a></li>                        
-                                            </ul>
-                
-                                            <div class="right">
-                                                <dl class="trackevent" data-event="Get in touch,Maps,Porto Alegre">
-                                                    <dt>Porto Alegre</dt>
-                                                    <dd>poa@getupcloud.com</dd>
-                                                    <dd>Av. Wenceslau Escobar, 1823 - 204</dd>
-                                                </dl>
-                                                <dl class="trackevent" data-event="Get in touch,Maps,São Paulo">
-                                                    <dt>São Paulo</dt>
-                                                    <dd>sampa@getupcloud.com</dd>
-                                                </dl>
-                                                <dl class="trackevent" data-event="Get in touch,Maps,Overseas">
-                                                    <dt>Overseas</dt>
-                                                    <dd>overseas@getupcloud.com</dd>
-                                                </dl>
-                                            </div>
-                                        </section><!-- . -->
-                                    </article>
-                                </div> <!-- #get-in-touch -->
+                                <div class="actions">
+                                    <p>Tem algum cupom de desconto? <a href="javascript:;" class="discount-coupon" title="">Clique aqui.</a></p>
+                                    <div class="right">
+                                        <button class="button tblack fsize1 trackevent sign-up-cancel" data-event="Signup,Button,Cancel">Cancelar</button>
+                                        <button class="button orange fsize1 trackevent" data-event="Signup,Button,Continue"><span>Continue</span></button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p id="success">
+                            <strong>Bem vindo à bordo.</strong>
+                            <span>Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado por se cadastrar.</span>
+                        </p>       
+                    </section><!-- . -->
+                </article>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
                 <div class="footer-container">
-                    <footer>
-                        <div class="wrapper">
-                            <h3>Powered by:</h3>
-                            
-                            <ul>
-                                <li class="openshift">Openshift</li>
-                            </ul>
-        
-        
-                            <p>GROW IN THE CLOUD</p>
+                    <footer class="wrapper">
+                        <div class="clearfix">                    
+                            <nav class="nav-footer">
+                                <ul>
+                                    <li><a href="/">Página Inicial</a></li>
+                                    <li><a href="/preco" data-event="Footer,Link,Pricing">Preço</a></li>
+                                    <li><a href="/tecnologia" data-event="Footer,Link,Technology">Tecnologia</a></li>
+                                    <li><a href="https://getup.zendesk.com/forums/" data-event="Footer,External link,Support">Suporte</a></li>
+                                    <li><a href="https://getupcloud.com/blog/" data-event="Footer,External link,Blog">Blog</a></li>
+                                    <li><a href="/contato" data-event="Footer,Link,Get in Touch">Contato</a></li>
+                                </ul>
+                            </nav>                    
+        <!--
+                            <div class="news" id="newsletter">
+                                <h2>RECEBA CONTEÚDOS GETUP</h2>
+                                <p>Receba novidades sobre nuvem, hospedagem, tutoriais, dicas, macetes e novidades Getup em seu e-mail.</p>
+                                <div id="mc_embed_signup">
+                                    <form action="http://xxxxxxx.list-manage.com/subscribe/post-json?u=xxxxx&amp;id=xxxxx&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <input type="text" name="EMAIL" id="mce-EMAIL">
+                                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_58abcfa203271a9db312e69fc_ee0af79b60" value=""></div>
+                                        <button type="submit" id="mc-embedded-subscribe" data-event="Footer,Button,Newsletter" class="button twhite fsize1">ENVIAR</button>
+                                    </form>
+                                </div>
+                                <p id="success" style="display:none;">
+                                    <strong>Bem vindo à bordo.</strong><br>
+                                    <span>Enviamos um pedido de confirmação de e-mail para sua caixa postal. Obrigado por se cadastrar.</span>
+                                </p> 
+                                <small>Fique tranquilo, não enviamos spam nem iremos compartilhar seu e-mail com &quot;parceiros&quot;.</small>
+                            </div>
+        -->
+                            <div class="power-by">
+                                <h3>Powered by:</h3>
+                                <h2 class="ir openshift">OpenShift</h2>
+                            </div>
                         </div>
-        
-                        <nav>
-                            <ul class="wrapper">
-                                <li><a class="modal-link" data-event="Footer,Link,Terms of use" href="/termos-de-uso.html" data-pageview="terms_of_use">Termos de uso</a></li>
-                                <li><a class="modal-link" data-event="Footer,Link,Privacy Policy" href="/politica-de-privacidade.html" data-pageview="privacy_policy">Política de privacidade</a></li>
-                                <li><a class="modal-link" data-event="Footer,Link,Acceptable use policy" href="/politica-de-utilizacao-aceitavel.html" data-pageview="aup">Política de utilização aceitável - PUA</a></li>
-                                <li><a class="modal-link" data-event="Footer,Link,Support policy" href="/politica-de-suporte.html" data-pageview="support_policy">Política de suporte</a></li>
+                        <nav class="terms-social clearfix">
+                            <ul class="social">
+                                <li><a href="https://plus.google.com/+Getupcloud/" data-event="Footer,External link,Google+" target="_blank"><i class="icon-google-plus"></i></a></li>
+                                <li><a href="http://www.twitter.com/getupcloud" data-event="Footer,External link,Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/getup-cloud" data-event="Footer,External link,Linkedin" target="_blank"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="http://www.facebook.com/getupcloud" data-event="Footer,External link,Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            </ul>
+                            <ul class="terms">
+                                <li><a href="/termos-de-uso" data-event="Footer,Link,Terms of use">Terms of use</a></li>
+                                <li><a href="/politica-de-privacidade" data-event="Footer,Link,Privacy Policy">Privacy policy</a></li>
+                                <li><a href="/politica-de-utilizacao-aceitavel" data-event="Footer,Link,Acceptable use policy">Acceptable use policy</a></li>
+                                <li><a href="/politica-de-suporte" data-event="Footer,Link,Support policy">Support policy</a></li>
                             </ul>
                         </nav>
                     </footer>
@@ -244,8 +284,7 @@
                 </script>
                 <!-- End Google Analytics -->        
         
-                <script src="/javascripts/main.js"></script>
-                <script src="/javascripts/price.js"></script>
+                <script src="/javascripts/main.js"></script>        
     </body>
 </html>
 

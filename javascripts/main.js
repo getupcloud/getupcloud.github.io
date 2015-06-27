@@ -37,7 +37,6 @@ this._rotate(~~(10*a)/10);this._parameters.step&&this._parameters.step(this._ang
 this._rotationCenterY);this._cnv.rotate(b);this._cnv.translate(-this._rotationCenterX,-this._rotationCenterY);this._cnv.scale(this._aspectW,this._aspectH);this._cnv.drawImage(this._img,0,0)}}()};IE&&(Wilq32.PhotoEffect.prototype.createVMLNode=function(){document.createStyleSheet().addRule(".rvml","behavior:url(#default#VML)");try{return!document.namespaces.rvml&&document.namespaces.add("rvml","urn:schemas-microsoft-com:vml"),function(a){return document.createElement("<rvml:"+a+' class="rvml">')}}catch(a){return function(a){return document.createElement("<"+
 a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
-
 /* Main */
 
 !function() {
@@ -111,73 +110,74 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 			pageviews : {
 
 			// Site
-				'home'			 : 'home',
-				'how'			 : 'como',
-				'pricing'		 : 'preco',
-				'get_in_touch' 	 : 'contato',
-				'pricing/gear' 	 : 'preco/gear',
-				'signup'		 : 'cadastro',
-
-			// Modal
-				'terms_of_use' 	 : 'termos_de_uso',
-				'privacy_police' : 'politica_privacidade',
-				'aup' 			 : 'pua',
-				'support_policy' : 'politica_suporte',
+				'home'			 					: 'home',
+				'everything_you_need'	: 'tudo_voce_precisa',
+				'cases'								: 'cases_pt',
+				'multiple_datacenters': 'multiplos_datacenters',
+				'dedicated_servers'		: 'servidores_dedicados',
+				'faq'									: 'faq',
+				'trust_is_everything'	: 'confianca_e_tudo',
+				'cases_startups'			: 'cases_startups_pt',
+				'pricing'		 					: 'preco',
+				'get_in_touch' 				: 'contato',
+				'signup'		 					: 'cadastro',			
+				'terms_of_use' 				: 'termos_de_uso',
+				'privacy_policy'			: 'politica_privacidade',
+				'acceptable_use_policy': 'politica_utilizacao_aceitavel',
+				'support_policy'			: 'politica_suporte',
 
 			// Technologies
-				'technologies'	 : 'technologias',
+				'technologies'	 					: 'technologias',
 				
-				'technologies/php'	 		 : 'technologias/php',
-				'technologies/ruby'	 		 : 'technologias/ruby',
-				'technologies/nodejs'	 	 : 'technologias/nodejs',
-				'technologies/python'	 	 : 'technologias/python',
-				'technologies/java'	 		 : 'technologias/java',
-				'technologies/perl'	 		 : 'technologias/perl',
-				'technologies/mysql'	 	 : 'technologias/mysql',
-				'technologies/postgresql'	 : 'technologias/postgresql',
-				'technologies/mongodb'	 	 : 'technologias/mongodb'
+				'technologies/php'	 		 	: 'technologias/php',
+				'technologies/ruby'	 		 	: 'technologias/ruby',
+				'technologies/nodejs'	 	 	: 'technologias/nodejs',
+				'technologies/python'	 	 	: 'technologias/python',
+				'technologies/java'	 		 	: 'technologias/java',
+				'technologies/perl'	 		 	: 'technologias/perl',
+				'technologies/mysql'	 	 	: 'technologias/mysql',
+				'technologies/postgresql'	: 'technologias/postgresql',
+				'technologies/mongodb'	 	: 'technologias/mongodb'
 			},
 			events : {
 				// Menu
-				'Menu,Link,How it works' 	: 'Menu,Link,Como funciona',
-				'Menu,Link,Pricing'		 	: 'Menu,Link,Preço',
-				'Menu,Link,Technology'	    : 'Menu,Link,Tecnologia',
-				'Menu,Link,Get in touch'	: 'Menu,Link,Contato',
+				'Menu,Link,Pricing'		 			: 'Menu,Link,Preço',
+				'Menu,Link,Technology'	  	: 'Menu,Link,Tecnologia',
+				'Menu,Link,Get in touch'		: 'Menu,Link,Contato',
 				'Menu,External link,Support': 'Menu,Link externo,Suporte',
-				'Menu,External link,Blog'	: 'Menu,Link externo,Blog',
-				'Menu,Button,Signin' 		: 'Menu,Botão,Entrar',
-				'Menu,Button,Signup' 		: 'Menu,Botão,Criar sua conta',
+				'Menu,External link,Blog'		: 'Menu,Link externo,Blog',
+				'Menu,Button,Signin' 				: 'Menu,Botão,Entrar',
+				'Menu,Button,Signup' 				: 'Menu,Botão,Criar sua conta',
 
 				// Language
 				'Language,Link,Portuguese'  : 'Language,Link,Português',
-				'Language,Link,English'     : 'Language,Link,Inglês',
-
-				// Carousel
-				'Carousel,Button,Free Trial,1'  : 'Carousel,Botão,Experimente grátis,1',
-				'Carousel,Button,Free Trial,2'  : 'Carousel,Botão,Experimente grátis,2',
-				'Carousel,Button,Free Trial,3'  : 'Carousel,Botão,Experimente grátis,3',
-
-				// How it works
-				'How it works,See More,Create' : 'Como funciona,Ver mais,Criar',
-				'How it works,See More,Deploy' : 'Como funciona,Ver mais,Publicar',
-				'How it works,See More,Scale'  : 'Como funciona,Ver mais,Escalar',
-
-				// Pricing
-				'Pricing,Button,Compare' : 'Preço,Botão,Comparar',
+				'Language,Link,English'     : 'Language,Link,Inglês',				
 
 				// Signup
-				'Signup,Button,Free trial' : 'Cadastro,Botão,Experimente grátis',
-				'Signup,Button,Continue'   : 'Cadastro,Botão,Continuar',
+				'Signup,Button,Free trial' 			: 'Cadastro,Botão,Experimente grátis',
+				'Signup,Button,Continue'   			: 'Cadastro,Botão,Continuar',
+				'Signup,Button,Cancel'   	 			: 'Cadastro,Botão,Cancelar',
+
+				// Home Page
+				'Home Page,Button,Drop us a line'	: 'Página Inicial,Botão,Entre em contato',
 
 				// Get in touch
-				'Get in touch,Link,E-mail' 		 : 'Contato,Link,E-mail',
-				'Get in touch,Link,Twitter'		 : 'Contato,Link,Twitter',
-				'Get in touch,Link,Facebook' 	 : 'Contato,Link,Facebook',
-				'Get in touch,Maps,Porto Alegre' : 'Contato,Maps,Porto Alegre',
-				'Get in touch,Maps,São Paulo' 	 : 'Contato,Maps,São Paulo',
-				'Get in touch,Maps,Overseas' 	 : 'Contato,Maps,Overseas',
+				'Get in touch,Button,Send' 		 	: 'Contato,Botão,Enviar',
 
 				// Footer
+				'Footer,Link,Pricing'		 				: 'Rodapé,Link,Preço',
+				'Footer,Link,Technology'	  		: 'Rodapé,Link,Tecnologia',
+				'Footer,Link,Get in touch'			: 'Rodapé,Link,Contato',
+				'Footer,External link,Support'	: 'Rodapé,Link externo,Suporte',
+				'Footer,External link,Blog'			: 'Rodapé,Link externo,Blog',
+
+				'Footer,External link,Google+'	: 'Rodapé,Link externo,Google+',
+				'Footer,External link,Twitter'	: 'Rodapé,Link externo,Twitter',
+				'Footer,External link,Linkedin'	: 'Rodapé,Link externo,Linkedin',
+				'Footer,External link,Facebook'	: 'Rodapé,Link externo,Facebook',
+				
+				'Footer,Button,Newsletter'			: 'Rodapé,Botão,Newsletter',
+
 				'Footer,Link,Terms of use' 			: 'Rodapé,Link,Termos de uso',
 				'Footer,Link,Privacy Policy' 		: 'Rodapé,Link,Política de privacidade',
 				'Footer,Link,Acceptable use policy' : 'Rodapé,Link,PUA',
@@ -331,13 +331,14 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		/**
 		 * Files to donwload on page load (general or mobile)
 		 */
-		var directory = (is_mobile) ? 'mobile/' : '';
+		// var directory = (is_mobile) ? 'mobile/' : '';
+		var directory = '';
 		Getup.preload.config.data = [
 			{type: 'image', file: 'sprite.png'},
 			{type: 'image', file: 'loader.gif'},
-			{type: 'image', file: directory + 'clouds.jpg'},
-			{type: 'image', file: directory + 'mountains.jpg'},
-			{type: 'image', file: directory + 'world.jpg'}
+			{type: 'image', file: directory + 'icon-up-and-running.png'},
+			{type: 'image', file: directory + 'icon-scale-your-app.png'},
+			{type: 'image', file: directory + 'icon-bring-us-your-problem.png'}
 		];
 
 		/**
@@ -459,13 +460,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Elements
 	 * Element: main container
 	 */
-	Getup.elements.main = $('.main-container');
-
-	/**
-	 * Elements
-	 * Element: home/carousel
-	 */
-	Getup.elements.home = Getup.elements.carousel = $('#home');
+	Getup.elements.main = $('.main-container');	
 
 	/**
 	 * Elements
@@ -484,6 +479,18 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Element: sign up
 	 */
 	Getup.elements.signup = $('#sign-up');
+
+   /**
+    * Elements
+    * Element: dedicated_servers
+    */
+   Getup.elements.dedicated_servers = $('#dedicated-servers-price');
+
+      /**
+    * Elements
+    * Element: newsletter
+    */
+   Getup.elements.newsletter = $('#newsletter');
 
 	/**
 	 * Elements
@@ -526,6 +533,18 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Element: section content of sign up
 	 */
 	Getup.elements.signup.actions = Getup.elements.signup.section.find('.actions');
+
+   /**
+    * Elements
+    * Element: section content of sign up
+    */
+   Getup.elements.newsletter.section = Getup.elements.newsletter.find('section');
+
+   /**
+    * Elements
+    * Element: section content of sign up
+    */
+   Getup.elements.newsletter.actions = Getup.elements.newsletter.section.find('.actions');
 
 	/**
 	 * Elements
@@ -611,371 +630,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 */
 	Getup.mobile.menu.toggle = function() {
 		Getup.elements.header.hasClass('closed') ? Getup.mobile.menu.open() : Getup.mobile.menu.close();
-	};
-
-	/**
-	 * Carousel
-	 */
-	Getup.carousel = {};
-
-	/**
-	 * Carousel
-	 * Configuration
-	 */
-	Getup.carousel.config = {
-		/**
-		 * Selected index 
-		 */
-		index: 0,
-
-		/**
-		 * Directions
-		 */
-		directions: { '1': '-100%', '-1': '100%' },
-
-		/**
-		 * Timer interval
-		 * default: 7000 ms
-		 */
-		interval: 7000
-	};
-
-	/**
-	 * Carousel
-	 * Elements
-	 */
-	Getup.carousel.elements = {
-
-		/**
-		 * All sections
-		 */
-		sections: Getup.elements.carousel.find('section'),
-
-		/**
-		 * Selected section 
-		 */
-		selected: null,
-
-		/**
-		 * Content of selected section 
-		 */
-		content: null
-	};
-
-	/**
-	 * Carousel
-	 * Create the controls of carousel
-	 */
-	Getup.carousel.controls = function() {
-
-		/**
-		 * Carousel controls element
-		 */
-		Getup.carousel.elements.controls = $('<ul />');
-
-		/**
-		 * Carousel control next element
-		 */
-		Getup.carousel.elements.next = $('<li class="next">></li>');
-
-		/**
-		 * Carousel control previous element
-		 */
-		Getup.carousel.elements.previous = $('<li class="prev"><</li>');
-
-		/**
-		 * Carousel control active element
-		 */
-		Getup.carousel.elements.active = $('<li class="active" />');
-		Getup.carousel.elements.rotator = $('<span class="rotator"></span>');
-		Getup.carousel.elements.rotator.inside = $('<span></span>');
-
-		Getup.carousel.elements.active.append(Getup.carousel.elements.rotator);
-		Getup.carousel.elements.rotator.append(Getup.carousel.elements.rotator.inside);
-		
-		/**
-		 * Carousel control itens element
-		 */
-		 var itens = '';
-		 for (var i = 0, t = Getup.carousel.elements.sections.size(); i < t; i++) {
-		 	itens += '<li class="itens" rel="' + i + '">' + (i + 1) + '</li>'
-		 }
-
-		Getup.carousel.elements.itens = $(itens);
-
-		/**
-		 * Append the controls
-		 */
-		 Getup.carousel.elements.controls.append(Getup.carousel.elements.previous)
-		 								 .append(Getup.carousel.elements.itens)
-		 								 .append(Getup.carousel.elements.next)
-		 								 .append(Getup.carousel.elements.active)
-
-		 Getup.elements.home.append(Getup.carousel.elements.controls);
-
-		/**
-		 * Control events
-		 */
-		Getup.carousel.elements.next.click(function() {
-			Getup.carousel.move('n');
-		});
-
-		Getup.carousel.elements.previous.click(function() {
-			Getup.carousel.move('p');
-		});
-
-		Getup.carousel.elements.itens.click(function() {
-			Getup.carousel.move(parseInt($(this).attr('rel'), 10));
-		});
 	};	
-
-	/**
-	 * Carousel
-	 * Show the selected carousel
-	 */
-	Getup.carousel.next = function(callback) {
-
-		/**
-		 * Show the actual section
-		 */
-		Getup.carousel.elements.selected.animate({ left: 0 }, { queue: false, easing: 'easeInCirc' });
-
-		/**
-		 * Show the actual content of section
-		 */
-		setTimeout(function() {
-			Getup.carousel.elements.content.animate({ left: 0 }, { queue: false, easing: 'easeInOutCirc', complete: function() {
-
-				/**
-				 * Before transictions, start a new timer
-				 */
-				Getup.carousel.start_timer();
-
-				/**
-				 * Callback if exists
-				 */
-				if (callback) callback();
-			}});
-		}, 300);
-	};
-
-	/**
-	 * Carousel
-	 * Move to next/previous section
-	 */
-	Getup.carousel.move = function(change, callback) {
-		var direction = (change === 'p') ? -1 : 1;
-
-		/**
-		 * Call the hide function
-		 */
-		Getup.carousel.hide(direction, function() {
-
-			/**
-			 * Set the new index
-			 */
-			if (isNaN(change)) {
-				Getup.carousel.config.index += direction;
-			} else {
-				Getup.carousel.config.index = change;	
-			}
-
-			/**
-			 * Get the total of sections
-			 */
-			var total_sections = Getup.carousel.elements.sections.size();
-
-			/**
-			 * Get the index of the last section
-			 */
-			var last_section = total_sections - 1;
-
-			/**
-			 * Validate the index of section
-			 */
-			Getup.carousel.config.index = (Getup.carousel.config.index < 0 
-				? last_section
-				: (Getup.carousel.config.index > last_section
-					? 0
-					: Getup.carousel.config.index));
-
-			/**
-			 * Show the new section
-			 */
-			Getup.carousel.change(direction, callback);			
-		});
-	};
-
-	/**
-	 * Carousel
-	 * Hide actual section
-	 */
-	Getup.carousel.hide = function(direction, callback) {
-
-		/**
-		 * Hide the actual section
-		 */
-		Getup.carousel.elements.content.animate({ left: Getup.carousel.config.directions[direction] }, { queue: false, easing: 'easeInOutCirc' });
-
-		/**
-		 * Hide the actual content of section
-		 */
-		setTimeout(function() {
-			Getup.carousel.elements.selected.animate({ left: Getup.carousel.config.directions[direction] }, { queue: false, easing: 'easeInCirc' });
-
-			callback();
-		}, 200);
-	};	
-
-	/**
-	 * Carousel
-	 * Change the carousel
-	 */
-	Getup.carousel.change = function(direction, callback) {
-
-		/**
-		 * Get the selected section and content section
-		 */
-		Getup.carousel.get_selected();
-
-		/**
-		 * Set the start position of the selected section
-		 */
-		Getup.carousel.elements.selected.css('left', Getup.carousel.config.directions[-direction]);
-
-		/**
-		 * Set the start position of the selected content
-		 */
-		Getup.carousel.elements.content.css('left', Getup.carousel.config.directions[-direction]);
-
-		/**
-		 * Show the selected section
-		 */
-		Getup.carousel.next(callback);
-	};
-
-	/**
-	 * Carousel
-	 * Get selected section
-	 */
-	Getup.carousel.get_selected = function() {
-
-		/**
-		 * Get the selected section
-		 */
-		Getup.carousel.elements.selected = Getup.carousel.elements.sections.eq(Getup.carousel.config.index);
-
-		/**
-		 * Get the content of the selected section
-		 */
-		Getup.carousel.elements.content = Getup.carousel.elements.selected.find('.wrapper');
-	};
-
-	/**
-	 * Carousel
-	 * Animate the carousel start
-	 */
-	 Getup.carousel.show = function(animate, callback) {
-
-		/**
-		 * if animate, slide down the carousel and call callback
-		 */
-	 	if (animate) {
-			 Getup.elements.carousel.animate({ 'margin-top': 0 }, { complete: callback });
-
-		/**
-		 * if not animate, only show the carousel and call callback
-		 */
-		} else {
-			Getup.elements.carousel.css('margin-top', 0);
-			callback();
-		}
-	};
-
-	/**
-	 * Carousel
-	 * Start timer count
-	 */
-	Getup.carousel.start_timer = function(stop) {
-
-		/**
-		 * Clear the timer
-		 */
-		if (stop) {
-			Getup.carousel.elements.rotator.inside.rotate.stopRotate();
-		}
-
-		/**
-		 * Set the initial values to timer
-		 */
-		Getup.carousel.elements.active.css('left', -4 + ((Getup.carousel.config.index +1) * 18));
-		Getup.carousel.elements.rotator.removeClass('move');
-		Getup.carousel.elements.active.show();
-
-		/**
-		 * Create a new timer
-		 */
-		Getup.carousel.elements.rotator.inside.rotate({
-			angle: -180, 
-			animateTo: 180,
-			duration: Getup.carousel.config.interval,
-			easing: function(x, t, b, c, d) { return b+(t/d)*c ; },
-			step: function(angle) {
-				if (angle < 0) return;
-
-				Getup.carousel.elements.rotator.addClass('move');
-			},
-			callback: function() {
-				Getup.carousel.move('n');
-			}
-		});
-	};
-
-	/**
-	 * Carousel
-	 * Vertical align
-	 */
-	Getup.carousel.align = function() {
-		Getup.carousel.elements.sections.each(function() {
-			var element = $(this);
-			var wrapper = element.find('.wrapper');
-
-			wrapper.animate({'margin-top': element.height() / 2 - wrapper.height() / 2 - 50}, { queue: false, duration: 200 });
-		});
-	};
-
-	/**
-	 * Carousel
-	 * Initialization
-	 */
-	Getup.carousel.init = function() {
-
-		/**
-		 * Get the selected section and content section
-		 */
-		Getup.carousel.get_selected();
-
-		/**
-		 * Set the start position of the selected section
-		 */
-		Getup.carousel.elements.selected.css('left', 0);
-
-		/**
-		 * Set the start position of the selected content
-		 */
-		Getup.carousel.elements.content.css('left', 0);
-
-		/**
-		 * Hide the carousel
-		 */
-		 Getup.elements.carousel.animate({ 'margin-top': - Getup.elements.carousel.height() });
-
-		/**
-		 * Start carousel controls
-		 */
-		Getup.carousel.controls();
-	};
-
 
 	/**
 	 * Articles
@@ -1070,25 +725,6 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 	/**
 	 * Articles
-	 * Pricing
-	 */
-	Getup.articles.pricing = {};
-
-	/**
-	 * Articles
-	 * Home
-	 * Link
-	 */
-	Getup.articles.pricing.link = function() {
-
-		var top = Getup.elements.pricing.offset().top - Getup.config.menu_height;
-		Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc' });
-
-		return false;
-	};
-
-	/**
-	 * Articles
 	 * Compare
 	 */
 	Getup.articles.compare = {};
@@ -1108,6 +744,27 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 		return false;
 	};
+
+   /**
+    * Articles
+    * Dedicated Servers
+    */
+   Getup.articles.dedicated_servers = {};
+
+   /**
+    * Articles
+    * Dedicated Serveres
+    * Link
+    */
+   Getup.articles.dedicated_servers.link = function() {
+     var top = Getup.elements.dedicated_servers.offset().top - Getup.config.menu_height;
+
+      Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { queue: false, easing: 'easeInOutCirc', complete: function() {
+
+      }});
+
+      return false;
+   };
 
 	/**
 	 * Articles
@@ -1135,6 +792,18 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
 		return false;
 	};
+	
+   // move this later
+   $('.sign-up-cancel').on('click', function(ev) {
+   	ev.preventDefault();
+
+   	Getup.elements.signup.header.slideDown();
+   	Getup.elements.signup.section.slideUp();
+   });
+
+   $('.discount-coupon').on('click', function(ev) {
+      Getup.articles.sign_up.elements.inputs.couponCode.closest('label').slideDown();
+   });
 
 	/**
 	 * Articles
@@ -1173,25 +842,20 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 */
 	Getup.articles.sign_up.elements.inputs.password = Getup.articles.sign_up.elements.form.find('input[name=password1]');
 
-	/**
+   /**
 	 *
 	 */
-	Getup.articles.sign_up.elements.inputs.passwordConfirm = Getup.articles.sign_up.elements.form.find('input[name=password2]');
+	Getup.articles.sign_up.elements.inputs.passwordConfirm = Getup.articles.sign_up.elements.form.find('input[name=password2]');	
 
 	/**
 	 *
 	 */
-	Getup.articles.sign_up.elements.inputs.couponCode = Getup.articles.sign_up.elements.form.find('input[name=coupon_code]');
+	Getup.articles.sign_up.elements.inputs.couponCode = Getup.articles.sign_up.elements.form.find('input[name=coupon_code]');	
 
 	/**
 	 *
 	 */
-	Getup.articles.sign_up.elements.inputs.terms = Getup.articles.sign_up.elements.form.find('input[name=use_terms]');
-
-	/**
-	 *
-	 */
-	Getup.articles.sign_up.elements.button = Getup.articles.sign_up.elements.form.find('button');
+	Getup.articles.sign_up.elements.button = Getup.articles.sign_up.elements.form.find('button.orange');
 
 	/**
 	 *
@@ -1247,9 +911,8 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
         var name            = Getup.articles.sign_up.elements.inputs.name;
         var email           = Getup.articles.sign_up.elements.inputs.email;
         var password        = Getup.articles.sign_up.elements.inputs.password;
-        var passwordConfirm = Getup.articles.sign_up.elements.inputs.passwordConfirm;
+        var passwordConfirm = Getup.articles.sign_up.elements.inputs.passwordConfirm;     
         var couponCode      = Getup.articles.sign_up.elements.inputs.couponCode;
-        var terms           = Getup.articles.sign_up.elements.inputs.terms;
 
         var valid        = true;
         var emailValue   = email.val();
@@ -1258,12 +921,16 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
         (name.val().length < 1)                   ? valid = !name.addClass('error') : name.removeClass('error');
         (emailInvalid)                            ? valid = !email.addClass('error') : email.removeClass('error');
         (password.val().length < 1)               ? valid = !password.addClass('error') : password.removeClass('error');
-        (passwordConfirm.val() != password.val()) ? valid = !passwordConfirm.addClass('error')   : passwordConfirm.removeClass('error');
-        (!terms.is(':checked'))                   ? valid = !terms.parent().addClass('error') : terms.parent().removeClass('error');
+        // (passwordConfirm.val() != password.val()) ? valid = !passwordConfirm.addClass('error')   : passwordConfirm.removeClass('error');
+        // (!terms.is(':checked'))                   ? valid = !terms.parent().addClass('error') : terms.parent().removeClass('error');
+
+        passwordConfirm.val(password.val()); // not needed anymore, only for response success
 
         if (valid) {
             Getup.articles.sign_up.submiting = true;
             Getup.articles.sign_up.elements.button.addClass('loading');
+
+            console.log(Getup.articles.sign_up.elements.form);
 
             var save = $.post(U.register, Getup.articles.sign_up.elements.form.serialize());
 
@@ -1276,8 +943,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
                             Getup.articles.sign_up.elements.inputs.name.val('').blur();
                             Getup.articles.sign_up.elements.inputs.email.val('').blur();
-                            Getup.articles.sign_up.elements.inputs.password.val('').blur();
-                            Getup.articles.sign_up.elements.inputs.passwordConfirm.val('').blur();
+                            Getup.articles.sign_up.elements.inputs.password.val('').blur();                            
                             Getup.articles.sign_up.elements.inputs.couponCode.val('').blur();
                         });
 
@@ -1371,6 +1037,197 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
     Getup.articles.sign_up.error.hide = function() {
         Getup.articles.sign_up.elements.message.fadeOut();
     };
+
+   /**
+    * Articles
+    * Sign up
+    */
+   Getup.articles.newsletter = {};
+
+   /**
+    * Articles
+    * Sign up
+    * Elements
+    */
+   Getup.articles.newsletter.elements = {};
+
+   /**
+    *
+    */
+   Getup.articles.newsletter.elements.form = Getup.elements.newsletter.find('form');
+
+   /**
+    *
+    */
+   Getup.articles.newsletter.elements.success = $('#newsletter #success');
+   
+   /**
+    *
+    */
+   Getup.articles.newsletter.elements.inputs = {};
+
+   /**
+    *
+    */
+   Getup.articles.newsletter.elements.inputs.email = Getup.articles.newsletter.elements.form.find('input[name=EMAIL]');
+
+   /**
+    *
+    */
+   Getup.articles.newsletter.elements.button = Getup.articles.newsletter.elements.form.find('.button');
+
+   /**
+    *
+    */
+    Getup.articles.newsletter.elements.message = $('<p class="message"></p>');
+    Getup.elements.newsletter.append(Getup.articles.newsletter.elements.message);
+
+   /**
+    * Articles
+    * Sign up
+    */
+   Getup.articles.newsletter.submiting = false;
+
+   /**
+    *
+    */
+     Getup.articles.newsletter.validation = {};
+
+   /**
+    *
+    */
+     Getup.articles.newsletter.validation.exclude  = /[^@\-\.\w]|^[_@\.\-]|[\._\-]{2}|[@\.]{2}|(@)[^@]*\1/;
+
+   /**
+    *
+    */
+     Getup.articles.newsletter.validation.check    = /@[\w\-]+\./;
+
+   /**
+    *
+    */
+     Getup.articles.newsletter.validation.checkend = /\.[a-zA-Z]{2,3}$/;
+
+   /**
+    *
+    */
+   Getup.articles.newsletter.send = function() {
+      if (Getup.articles.newsletter.submiting) return false;
+
+         var email           = Getup.articles.newsletter.elements.inputs.email;
+
+         var valid        = true;
+         var emailValue   = email.val();
+         var emailInvalid = ((emailValue.search(Getup.articles.newsletter.validation.exclude) != -1) || (emailValue.search(Getup.articles.newsletter.validation.check)) == -1) || (emailValue.search(Getup.articles.newsletter.validation.checkend) == -1);
+
+         (emailInvalid)                            ? valid = !email.addClass('error') : email.removeClass('error');
+
+         if (valid) {
+             Getup.articles.newsletter.submiting = true;
+             Getup.articles.newsletter.elements.button.addClass('loading');
+
+             console.log(Getup.articles.newsletter.elements.form);
+
+             var save =  $.ajax({
+                type: Getup.articles.newsletter.elements.form.attr('method'),
+                url: Getup.articles.newsletter.elements.form.attr('action'),
+                data: Getup.articles.newsletter.elements.form.serialize(),
+                cache       : false,
+                dataType    : 'json',
+                contentType: "application/json; charset=utf-8"
+              });
+
+             save
+                 .done(function(transport) {
+                     console.log('done', transport);
+                     if (transport.result == "success") {
+                         Getup.articles.newsletter.elements.form.slideUp(function() {
+                             Getup.articles.newsletter.elements.button.removeClass('loading');
+                             Getup.articles.newsletter.submiting = false;
+
+                             Getup.articles.newsletter.elements.inputs.email.val('').blur();
+                         });
+
+                         Getup.articles.newsletter.elements.success.slideDown();
+
+                     } else {
+                         Getup.articles.newsletter.elements.button.removeClass('loading');
+                         Getup.articles.newsletter.submiting = false;                        
+                     }
+                 })
+
+                 .fail(function(transport) {
+                     console.log('fail', transport);
+                     var errors = $.parseJSON(transport.responseText).errors;
+
+                     Getup.articles.newsletter.error.clear();
+
+                     for (var i = 0, t = errors.length; i < t; ++i) {
+                         var error = errors[i];
+                         Getup.articles.newsletter.error.append(error);
+                     }
+
+                     Getup.articles.newsletter.error.show();
+
+                     Getup.articles.newsletter.elements.button.removeClass('loading');
+                     Getup.articles.newsletter.submiting = false;
+                 }, 'json');
+         }
+
+         return false;
+   };
+
+   /**
+    *
+    */
+   Getup.articles.newsletter.elements.form.submit(Getup.articles.newsletter.send);
+
+
+   /**
+    *
+    */
+     Getup.articles.newsletter.error = {};
+
+   /**
+    *
+    */
+     Getup.articles.newsletter.error._content = '';
+
+   /**
+    *
+    */
+     Getup.articles.newsletter.error.append = function(error) {
+         if (error.name != '_all_') {
+             $('input[name=' + error.name + ']').parent().addClass('error');
+         }
+
+         if (error.value != 'This field is required.') {
+             Getup.articles.newsletter.error._content
+                 += (Getup.articles.newsletter.error._content == '' ? '' : '<br/>')
+                 +  error.value;
+         }
+     };
+
+   /**
+    *
+    */
+     Getup.articles.newsletter.error.clear = function() {
+         Getup.articles.newsletter.error._content = '';
+     };
+
+   /**
+    *
+    */
+     Getup.articles.newsletter.error.show = function() {
+         Getup.articles.newsletter.elements.message.html(Getup.articles.newsletter.error._content).fadeIn();
+     };
+
+   /**
+    *
+    */
+     Getup.articles.newsletter.error.hide = function() {
+         Getup.articles.newsletter.elements.message.fadeOut();
+     };
 
     /**
      * Modal
@@ -1633,7 +1490,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 				Getup.track.last = next;
 				Getup.Analytics.track_pageview(next);
 			}
-		}, 100);
+
+			// header fixed
+			if (top > 1) $('.header-container').addClass('header-fixed');
+			else $('.header-container').removeClass('header-fixed');
+
+		}, 100);		
 
 		// Technologies Menu
 		if (!is_mobile) {
@@ -1668,12 +1530,34 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		 */
 		if (is_mobile) {
 			Getup.elements.compare.hide();
-		}
+			
+			/*
+			 * Mobile Nav - Begin
+			 */
 
-		/**
-		 * Align carousel
-		 */
-		Getup.carousel.align();		
+			var nav = $('.mobile-custom-nav');
+
+			// Nav menu options
+			nav.find('.h3 a').on('click', function() {
+			   nav.toggleClass('active');
+			});
+
+			// Check page location and update nav 
+			var currentPage = location.href.substr(location.href.lastIndexOf('/') + 1);
+
+			nav.find('li a').each(function(index, element) {
+			   var currentNav = $(element).attr('href').substr($(element).attr('href').lastIndexOf('/') + 1);
+			   
+			   if (currentNav === currentPage) {
+			      $(element).addClass('active');
+			      nav.find('.h3 a').text($(element).text());
+			   };
+			});
+
+			/*
+			 * Mobile Nav - End
+			 */
+		}		
 	};
 
 	/**
@@ -1691,28 +1575,6 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 		 */
 		Getup.modal.init();
 		Getup.tooltip.init();
-
-		/**
-		 * Align
-		 */
-		Getup.carousel.align();		
-
-		/*
-		 * Load carousel
-		 */
-		Getup.carousel.show(!location.hash, function() {
-			Getup.carousel.start_timer();
-
-			if (location.hash) {
-				var article = location.hash.replace(/\/|\#/g, '').replace(/\-/g, '_');
-				var module = Getup.articles[article];
-
-				if (module && module.link) {
-					module.link();
-				}
-			}
-
-		});
 	};
 
 	/**
@@ -1795,12 +1657,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 	 * Preload initialization
 	 */
 	Getup.preload.init(init);
-
-	/**
-	 * Carousel initialization
-	 */
-	Getup.carousel.init();
-
+	
 	/**
 	 * Move to top
 	 */

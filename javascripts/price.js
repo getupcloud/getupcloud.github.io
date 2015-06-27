@@ -2,11 +2,15 @@
 
 (function() {
 	'use strict';
-	$('.region').change(function(e) {
-		var region = e.target.id;
-		$('.price:not(.' + region + ')').hide();
-		$('.price.' + region).show();
-	});
+	
+	$('#price .filters a').on('click' , function(e) {
+		var act = $(this).data('activing');
+		var dsb = $(this).data('disable');
 
-	$('#region-us').click();
+		$(this).parent().find('.active').removeClass('active');
+		$(this).addClass('active');
+
+		$('#price .plans').removeClass(dsb).addClass(act);
+	});
+	
 }());
