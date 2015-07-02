@@ -12,7 +12,8 @@ npm_start=0
 for i; do
 	case "$1" in
 		-i|--npm-install) npm_install=1;;
-		-s|--server) npm_start=1;
+		-s|--server) npm_start=1;;
+		*) echo '$0 [--npm-install] [--server]'; exit 1;
 	esac
 	shift
 done
