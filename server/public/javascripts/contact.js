@@ -98,20 +98,16 @@ ContactForm.prototype.send = function() {
     this.submiting = true;
     this.fields.button.addClass('loading');
 
-    var htmlMsg = [];
-    htmlMsg.push('<p><strong>Nome:</strong> ' + this.fields.name.val() + '</p>');
-    htmlMsg.push('<p><strong>E-mail:</strong> ' + this.fields.email.val() + '</p>');
-    htmlMsg.push('<p><strong>Empresa:</strong> ' + this.fields.company.val() + '</p>');
-    htmlMsg.push('<p><strong>Telefone:</strong> ' + this.fields.phone.val() + '</p>');
-    htmlMsg.push('<p><strong>Mensagem:</strong> ' + this.fields.message.val() + '</p>');
-
-    var dataFields = {      
+    var dataFields = {
+      name: this.fields.name.val(),
       email: this.fields.email.val(),
-      subject: 'getup website - contato',
-      body: htmlMsg.join('')
+      company: this.fields.company.val(),
+      phone: this.fields.phone.val(),
+      message: this.fields.message.val(),
     };
 
-    var save = $.post('http://broker.getupcloud.com/getup/contato' , dataFields);
+    var save = $.post('http://127.0.0.1:8080/contact/' , dataFields);
+    //var save = $.post('http://broker.getupcloud.com/getup/contato' , dataFields);
     save.done(
       function(transport) {
         _this.messageReport.errorContent.empty();
@@ -134,20 +130,16 @@ ContactForm.prototype.send = function() {
       }
     ).fail(function(transport) {
 
-      if (transport.status != 0) {
-        var errors = $.parseJSON(transport.responseText).errors;
-        var msg = [];      
+      if (transport.status == 400) {
+        var errors = transport.responseJSON;
+        var msg = [];
 
         _this.messageReport.errorContent.empty();
 
-        for (var i = 0, t = errors.length; i < t; ++i) {
-          var error = errors[i];
-          if (error.name != '_all_') {
-            $('[name=' + error.name + ']').addClass('error');
-          }
-          if (error.value != 'This field is required.') {
-            msg.push('<li>' + error.value + '</li>');
-          }        
+        for (var field in errors) {
+          var value = errors[field][0];
+          $('[name=' + field + ']').addClass('error');
+          msg.push('<li>' + field + ': ' + value + '</li>');
         }
 
         _this.messageReport.errorContent.append('<ul>' + msg.join('') + '</ul>');
@@ -155,7 +147,7 @@ ContactForm.prototype.send = function() {
 
         setTimeout(function() {
           _this.messageReport.content.removeClass('active status-error');
-        },3000);
+        },5000);
       }
       else {
         _this.messageReport.errorContent.append('<ul><li>Server error</li></ul>');
@@ -163,7 +155,7 @@ ContactForm.prototype.send = function() {
 
         setTimeout(function() {
           _this.messageReport.content.removeClass('active status-error');
-        },3000); 
+        },5000);
       }
 
       _this.submiting = false;
