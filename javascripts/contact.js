@@ -106,8 +106,7 @@ ContactForm.prototype.send = function() {
       message: this.fields.message.val(),
     };
 
-    var save = $.post('//broker.getupcloud.com/contact/' , dataFields);
-    //var save = $.post('http://broker.getupcloud.com/getup/contato' , dataFields);
+    var save = $.post('//broker.getupcloud.com/getup/contact/' , dataFields);
     save.done(
       function(transport) {
         _this.messageReport.errorContent.empty();
