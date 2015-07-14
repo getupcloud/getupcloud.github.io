@@ -34,6 +34,7 @@ node builder
 echo Copying common files...
 cp -a public/* ../build/
 cp -a public/.htaccess ../build/.htaccess
+cp -a ../CNAME ../build/CNAME
 
 if [ "$npm_start" -eq 1 ]; then
 	npm start
