@@ -1194,6 +1194,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
     */
    Getup.articles.newsletter.elements.form.submit(Getup.articles.newsletter.send);
 
+   /**
+    *
+    */
+   Getup.articles.newsletter.elements.inputs.email.on('focus', function() {
+   	Getup.articles.newsletter.error.clearClass();
+   });
 
    /**
     *
@@ -1226,6 +1232,13 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
      Getup.articles.newsletter.error.clear = function() {
          Getup.articles.newsletter.error._content = '';
      };
+
+    /**
+     *
+     */
+      Getup.articles.newsletter.error.clearClass = function() {
+         Getup.articles.newsletter.elements.inputs.email.removeClass('error');
+      };
 
    /**
     *
