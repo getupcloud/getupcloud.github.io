@@ -421,14 +421,18 @@ figure.cFigureWrapper .image {width:100%;}
 #price .plan-hour,
 #price .plan-month,
 #price .plan-us,
-#price .plan-br {position:absolute; visibility:hidden; left:-999em;}
+#price .plan-br,
+#price .currency-us,
+#price .currency-br {position:absolute; visibility:hidden; left:-999em;}
 
 #price .active-month span.plan-month,
 #price .active-hour span.plan-hour,
 #price .active-hour.active-us .plan-hour.plan-us,
 #price .active-hour.active-br .plan-hour.plan-br,
 #price .active-month.active-br .plan-month.plan-br,
-#price .active-month.active-us .plan-month.plan-us {visibility:visible; position:inherit; left:auto;}
+#price .active-month.active-us .plan-month.plan-us,
+#price .active-br .currency-br,
+#price .active-us .currency-us {visibility:visible; position:inherit; left:auto;}
 
 #faq {}
 #faq h2 {color:#DE3527; font-size:2.5em; padding-bottom:1em; font-weight:300; text-align:center;}
