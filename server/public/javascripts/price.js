@@ -22,5 +22,13 @@
 			$('.dedicated-server-hover').removeClass('hide');
 		}
 	});
+
+	/* Check URL hash and update plans values by region */
+	$(window).on('hashchange',function() {
+		if (!window.location.hash) return;
+		var location = window.location.hash.substring(1);
+		$('#price .filters').find("[data-activing='active-" + location + "']").trigger('click');
+		history.pushState('', document.title, window.location.pathname);
+	}).trigger('hashchange');
 	
 }());
