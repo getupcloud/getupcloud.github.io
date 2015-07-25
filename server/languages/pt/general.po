@@ -457,8 +457,8 @@ msgstr "A entrega de componentes através de cartridges oferece aos desenvolvedo
 msgid "Your message has been sent. Thank you."
 msgstr "Sua mensagem foi enviada. Obrigado."
 
-msgid "Welcome aboard."
-msgstr "Bem vindo à bordo."
+msgid "Welcome aboard!"
+msgstr "Bem vindo à bordo!"
 
 msgid "We sent you a email confirmation. Thank you!"
 msgstr ""
