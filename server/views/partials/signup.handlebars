@@ -17,22 +17,18 @@
 
                 <div class="form">
                     <label>
-                        <span>{{ _ "Name"}}</span>
-                        <input type="text" tabindex="1" name="name" />
+                        <input type="text" tabindex="1" name="name" placeholder="{{ _ "Full name" }}" />
                     </label>
                     <label>
-                        <span>{{ _ "E-mail"}}</span>
-                        <input type="text" tabindex="2" name="email" />
+                        <input type="text" tabindex="2" name="email" placeholder="{{ _ "E-mail" }}"/>
                     </label>
                     <label>
-                        <span>{{ _ "Password" }}</span>
-                        <input type="password" tabindex="3" name="password1" />    
+                        <input type="password" tabindex="3" name="password1" placeholder="{{ _ "Password" }}"/>
                         <small>{{ _ "*Minimum 6 characters" }}</small>
                         <small class="no-padding" >{{ _ "Letters, numbers and/or symbols" }}</small>
                     </label>
-                    <label style="display:none;">
-                        <span>{{ _ "Insert the discount voucher"}}</span>
-                        <input type="text" tabindex="4" name="coupon_code" />
+                    <label>
+                        <input type="text" tabindex="4" name="coupon_code" placeholder="{{ _ "Insert your PROMOCODE, if you have one" }}"/>
                     </label>
                     <label class="invisible"><!-- Layout placeholder --></label>
                     <label class="invisible"><!-- Layout placeholder --></label>
@@ -42,7 +38,6 @@
                 </div>
 
                 <div class="actions">
-                    <p>{{ _ "You have a discount coupon?" }} <a href="javascript:;" class="discount-coupon" title="">{{ _ "Click here" }}.</a></p>
                     <div class="right">
                         <button class="button tblack fsize1 trackevent sign-up-cancel" data-event="Signup,Button,Cancel">{{ _ "Cancel"}}</button>
                         <button class="button orange fsize1 trackevent" data-event="Signup,Button,Continue"><span>{{ _ "Continue"}}</span></button>

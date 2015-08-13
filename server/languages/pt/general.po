@@ -486,16 +486,11 @@ msgstr "Com a escalabilidade da Getup conseguimos adaptar facilmente a quantidad
 msgid "Marcon Zanin - Co-Founder on Mind Pills"
 msgstr "Marcon Zanin - Co-Founder da Mind Pills"
 
+msgid "Full name"
+msgstr "Nome completo"
 
+msgid "Choose a password"
+msgstr "Escolha uma senha"
 
-
-
-
-
-
-
-
-
-
-
-
+msgid "Insert your PROMOCODE, if you have one"
+msgstr "Insira seu PROMOCODE, caso possua um"
