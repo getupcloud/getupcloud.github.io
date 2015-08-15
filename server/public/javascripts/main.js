@@ -1388,6 +1388,11 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
     Getup.cases = {};
 
     /**
+     * Hashlinks
+     */
+    Getup.hashlinks = {};
+
+    /**
      * Tooltip
      * Elements
      */
@@ -1469,6 +1474,18 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
         singleStartupCases.removeClass('visible');
         singleStartupCases.eq(randomStartupCase - 1).addClass('visible');
+    };
+
+    /**
+     * Hashlinks
+     * deep linking sections
+     */
+    Getup.hashlinks.init = function() {
+        var section = window.location.hash.substring(2);
+
+        if (section.length) {
+        	Getup.articles[section.replace(/\-/g, '_')].link();
+        };
     };
 
     /**
@@ -1627,6 +1644,7 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
         Getup.modal.init();
         Getup.tooltip.init();
         Getup.cases.init();
+        Getup.hashlinks.init();
     };
 
     /**
