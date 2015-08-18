@@ -636,6 +636,14 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
     };  
 
     /**
+     * http://stackoverflow.com/questions/46155/validate-email-address-in-javascript
+     */
+    Getup.is_valid_email = function(email) {
+      var re = /[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+      return re.test(email);
+    }
+
+    /**
      * Articles
      */
     Getup.articles = {};
@@ -892,26 +900,6 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
     /**
      *
      */
-    Getup.articles.sign_up.validation = {};
-
-    /**
-     *
-     */
-    Getup.articles.sign_up.validation.exclude  = /[^@\-\.\w]|^[_@\.\-]|[\._\-]{2}|[@\.]{2}|(@)[^@]*\1/;
-
-    /**
-     *
-     */
-    Getup.articles.sign_up.validation.check    = /@[\w\-]+\./;
-
-    /**
-     *
-     */
-    Getup.articles.sign_up.validation.checkend = /\.[a-zA-Z]{2,3}$/;
-
-    /**
-     *
-     */
     Getup.articles.sign_up.send = function() {
         if (Getup.articles.sign_up.submiting) return false;
 
@@ -923,11 +911,11 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
         var valid        = true;
         var emailValue   = email.val();
-        var emailInvalid = ((emailValue.search(Getup.articles.sign_up.validation.exclude) != -1) || (emailValue.search(Getup.articles.sign_up.validation.check)) == -1) || (emailValue.search(Getup.articles.sign_up.validation.checkend) == -1);
+        var isValidEmail = Getup.is_valid_email(emailValue);
 
-        (name.val().length < 1)                   ? valid = !name.addClass('error') : name.removeClass('error');
-        (emailInvalid)                            ? valid = !email.addClass('error') : email.removeClass('error');
-        (password.val().length < 6)               ? valid = !password.addClass('error') : password.removeClass('error');
+        (name.val().length > 0)                   ? name.removeClass('error')     : valid = !name.addClass('error');
+        (isValidEmail)                            ? email.removeClass('error')    : valid = !email.addClass('error');
+        (password.val().length >= 6)              ? password.removeClass('error') : valid = !password.addClass('error');
         // (passwordConfirm.val() != password.val()) ? valid = !passwordConfirm.addClass('error')   : passwordConfirm.removeClass('error');
         // (!terms.is(':checked'))                   ? valid = !terms.parent().addClass('error') : terms.parent().removeClass('error');
 
@@ -1130,9 +1118,9 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
          var valid        = true;
          var emailValue   = email.val();
-         var emailInvalid = ((emailValue.search(Getup.articles.newsletter.validation.exclude) != -1) || (emailValue.search(Getup.articles.newsletter.validation.check)) == -1) || (emailValue.search(Getup.articles.newsletter.validation.checkend) == -1);
+         var isValidEmail = Getup.is_valid_email(emailValue);
 
-         (emailInvalid)                            ? valid = !email.addClass('error') : email.removeClass('error');
+         (isValidEmail) ? email.removeClass('error') : valid = !email.addClass('error');
 
          if (valid) {
              Getup.articles.newsletter.submiting = true;
