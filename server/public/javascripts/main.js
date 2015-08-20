@@ -797,12 +797,12 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
 
       if (!Getup.articles.sign_up.scrolling) {
          Getup.articles.sign_up.scrolling = true;
+
+        Getup.elements.signup.header.slideUp();
+        Getup.elements.signup.section.slideDown();
+
         Getup.elements.bodyWindow.animate({ 'scroll-top': top }, { easing: 'easeInOutCirc', complete: function() {
-
-            Getup.elements.signup.header.slideUp();
-            Getup.elements.signup.section.slideDown();
             Getup.articles.sign_up.scrolling = false;
-
         }});
       }
         return false;
