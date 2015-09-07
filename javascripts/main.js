@@ -967,7 +967,8 @@ a+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}}())})(jQuery);
                 })
 
                 .fail(function(transport) {
-                    var errors = $.parseJSON(transport.responseText).errors;
+                    var json_data = $.parseJSON(transport.responseText);
+                    var errors = json_data.errors || json_data.data;
 
                     Getup.articles.sign_up.error.clear();
 

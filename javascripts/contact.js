@@ -6,11 +6,11 @@ GMaps.prototype.initialize = function() {
   
   this.vrt = 0.005 / 1920;
   this.width = function() { return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth; };
-  this.lat = -46.6497544;
+  this.lat = -46.6820624;
 
 	this.myLatlng = {
-    map: new google.maps.LatLng(-23.5778483,lat + ( this.vrt * this.width() )),
-    local: new google.maps.LatLng(-23.5778483,-46.6497544)
+    map: new google.maps.LatLng(-23.597673,lat + ( this.vrt * this.width() )),
+    local: new google.maps.LatLng(-23.597673,-46.6820624)
   };
   this.mapOptions = {
     center: _this.myLatlng.map,
@@ -31,14 +31,14 @@ GMaps.prototype.initialize = function() {
   this.marker = new google.maps.Marker({
     position: _this.myLatlng.local,
     map: map,
-    title: 'Rua Doutor Fláquer, 115/34A'
+    title: 'Rua Casa do Ator, 919'
   });
 };
 
 GMaps.prototype.resize = function() {
   this.myLatlng = {
-    map: new google.maps.LatLng(-23.5778483,lat + ( this.vrt * this.width() )),
-    local: new google.maps.LatLng(-23.5778483,-46.6497544)
+    map: new google.maps.LatLng(-23.597673,lat + ( this.vrt * this.width() )),
+    local: new google.maps.LatLng(-23.597673,-46.6820624)
   };
 
 	this.map.setCenter(this.myLatlng.map);
